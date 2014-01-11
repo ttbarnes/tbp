@@ -45,6 +45,105 @@ main container/s
 	
 }
 
+/********************
+intro stuff
+*********************/
+@mixin animation-name($name) {
+
+}
+
+@-webkit-keyframes testAnimation {
+  0%   { opacity: 0;margin-left:-500px;}
+  100% { opacity: 1;margin-left:40px; }
+}
+/*
+@-moz-keyframes testAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes testAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes testAnimation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+*/
+
+
+@-webkit-keyframes introAnimation2 {
+  0% {opacity: 0;margin-left:-300px;}
+  40% {opacity: 0;margin-left:-300px;}
+  100% {opacity: 1;margin-left:40px;}
+}
+
+@-webkit-keyframes introAnimation3 {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes introAnimation4 {
+  0% {opacity: 0;}
+  80% {opacity: 0;bottom:-100px;}
+  100% {opacity: 1;bottom:0;}
+}
+
+
+.jumbotron {
+	position:relative;
+  h1,
+	h2 {
+	  text-align:left;
+	}
+	.buttons,
+	h1 {
+		margin-left:40px;
+	}
+}
+
+.jumbotron h1 {	
+	-webkit-animation: testAnimation 0.5s;
+	animation: testAnimation 0.5s;
+}
+
+.jumbotron h2 > {
+	span {
+		display:block;
+		
+		&.first {
+			-webkit-animation: introAnimation2 0.8s;
+			animation: introAnimation2 0.8s;
+		}
+		&.last {
+			-webkit-animation: introAnimation3 3s;
+			animation: introAnimation3 3s;
+		}
+		
+		&.last {
+			clear:both;
+		}	
+		&.first,
+		&.last {
+			margin-left:40px;
+		}
+		/*
+		&.amp,
+		&.last {
+			opacity:0;
+		}
+		*/
+	}
+}
+
+.buttons {
+	opacity:100;
+	bottom:0;
+	-webkit-animation: introAnimation4 3.2s;
+	animation: introAnimation4 3.2s;
+}
+
 
 
 /********************

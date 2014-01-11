@@ -1,20 +1,40 @@
 
-      
-      <p>Intro, home page stuff here...</p>
-      
-      <div class="recentWork">
-        <h3>Recent stuff</h3>
-      
-      
-        <ul class="phones">
-          <li ng-repeat="phone in phones | limitTo:8 | filter:query | orderBy:orderProp"
-              class="thumbnail phone-listing">
-            <a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-            <a href="#/showcase/{{phone.id}}">{{phone.name}}</a>
-          </li>
-        </ul>
-        
-				<h4><a href="#/showcase/">View all</a></h4>
-        
-      </div>
+<div class="jumbotron">
+  <h1>Tony Barnes</h1>
+  <h2><span class="first">Front end developer</span>
+  <span class="last"><span class="amp">&amp; </span> <span class="last">designer</span></span>
+  </h2>
+
+ 	<div class="buttons">
+	  <button type="button" class="btn btn-primary btn-lg">Button 1</button>
+	  <button type="button" class="btn btn-primary btn-lg">Button 2</button>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+<!--
+<div class="recentWork">
+	<h3>Recent stuff</h3>
   
+  <ul class="phones">
+    <li ng-repeat="phone in phones | limitTo:8 | filter:query | orderBy:orderProp"
+        class="thumbnail phone-listing">
+      <a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+      <a href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+    </li>
+  </ul>
+  
+  <h4><a href="#/showcase/">View all</a></h4>
+
+</div>
+-->
+
+
+<h4 style="clear:both;margin-top:200px;"><a href="#/showcase/">View all</a></h4>
