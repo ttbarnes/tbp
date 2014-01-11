@@ -14,6 +14,7 @@ tbpControllers.controller('showcaseGrid', ['$scope', '$http',
     $http.get('showcase/phones.json').success(function(data) {
       $scope.phones = data;
     });
+		//$scope.orderPop = 'type: 2';
   }]);
 
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
