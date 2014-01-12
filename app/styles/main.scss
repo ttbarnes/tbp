@@ -52,53 +52,96 @@ main container/s
 }
 
 /********************
-intro stuff
+intro/home
 *********************/
-@mixin animation-name($name) {
-
-}
-
+/*testAnimation*/
 @-webkit-keyframes testAnimation {
   0%   { opacity: 0;margin-left:-500px;}
   100% { opacity: 1;margin-left:40px; }
 }
-/*
 @-moz-keyframes testAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0;margin-left:-500px;}
+  100% { opacity: 1;margin-left:40px; }
 }
 @-o-keyframes testAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0;margin-left:-500px;}
+  100% { opacity: 1;margin-left:40px; }
 }
 @keyframes testAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { opacity: 0;margin-left:-500px;}
+  100% { opacity: 1;margin-left:40px; }
 }
-*/
 
-
+/*introAnimation2*/
 @-webkit-keyframes introAnimation2 {
   0% {opacity: 0;margin-left:-300px;}
   40% {opacity: 0;margin-left:-300px;}
   100% {opacity: 1;margin-left:40px;}
 }
+@-moz-keyframes introAnimation2 {
+  0% {opacity: 0;margin-left:-300px;}
+  40% {opacity: 0;margin-left:-300px;}
+  100% {opacity: 1;margin-left:40px;}
+}
+@-o-keyframes introAnimation2 {
+  0% {opacity: 0;margin-left:-300px;}
+  40% {opacity: 0;margin-left:-300px;}
+  100% {opacity: 1;margin-left:40px;}
+}
+@keyframes introAnimation2 {
+  0% {opacity: 0;margin-left:-300px;}
+  40% {opacity: 0;margin-left:-300px;}
+  100% {opacity: 1;margin-left:40px;}
+}
 
+/*introAnimation3*/
 @-webkit-keyframes introAnimation3 {
   0% {opacity: 0;}
   30% {opacity: 0;}
   100% {opacity: 1;}
 }
+@-moz-keyframes introAnimation3 {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes introAnimation3 {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes introAnimation3 {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
+/*introAnimation4*/
 @-webkit-keyframes introAnimation4 {
   0% {opacity: 0;}
   80% {opacity: 0;bottom:-100px;}
   100% {opacity: 1;bottom:0;}
 }
+@-moz-keyframes introAnimation4 {
+  0% {opacity: 0;}
+  80% {opacity: 0;bottom:-100px;}
+  100% {opacity: 1;bottom:0;}
+}
+@-o-keyframes introAnimation4 {
+  0% {opacity: 0;}
+  80% {opacity: 0;bottom:-100px;}
+  100% {opacity: 1;bottom:0;}
+}
+@keyframes introAnimation4 {
+  0% {opacity: 0;}
+  80% {opacity: 0;bottom:-100px;}
+  100% {opacity: 1;bottom:0;}
+}
 
-
+/*intro*/
 .jumbotron {
 	position:relative;
+	height:100%;
   h1,
 	h2 {
 	  text-align:left;
@@ -107,47 +150,30 @@ intro stuff
 	h1 {
 		margin-left:40px;
 	}
-}
-
-.jumbotron h1 {	
-	-webkit-animation: testAnimation 0.5s;
-	animation: testAnimation 0.5s;
-}
-
-.jumbotron h2 > {
-	span {
-		display:block;
-		
-		&.first {
-			-webkit-animation: introAnimation2 0.8s;
-			animation: introAnimation2 0.8s;
-		}
-		&.last {
-			-webkit-animation: introAnimation3 3s;
-			animation: introAnimation3 3s;
-		}
-		
-		&.last {
-			clear:both;
-		}	
-		&.first,
-		&.last {
-			margin-left:40px;
-		}
-		/*
-		&.amp,
-		&.last {
-			opacity:0;
-		}
-		*/
+	h1 {	
+		-webkit-animation: testAnimation 0.5s;
+		animation: testAnimation 0.5s;
 	}
-}
-
-.buttons {
-	opacity:100;
-	bottom:0;
-	-webkit-animation: introAnimation4 3.2s;
-	animation: introAnimation4 3.2s;
+	h2 > {
+		span {
+			display:inline-block;
+			&.first {
+				-webkit-animation: introAnimation2 0.8s;
+				animation: introAnimation2 0.8s;
+				margin-left:40px;
+			}
+			&.last {
+				-webkit-animation: introAnimation3 3s;
+				animation: introAnimation3 3s;
+			}
+		}
+	}
+	.buttons {
+		opacity:100;
+		bottom:0;
+		-webkit-animation: introAnimation4 3.2s;
+		animation: introAnimation4 3.2s;
+	}
 }
 
 /*recent releases*/
@@ -170,6 +196,10 @@ intro stuff
 	  clear:both;
 	}
 }	
+
+
+
+
 
 
 
