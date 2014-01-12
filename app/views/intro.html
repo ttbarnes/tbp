@@ -13,21 +13,16 @@
 </div>
 
 
-
-
-
-
-
-
-
-<div class="recentWork">
+<div class="row recentReleases">
 	<h3 style="color:#EEE;font-weight:normal;">Recently released</h3>
   
   <ul class="phones">
-    <li ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp"
+    <li class="col-md-4" ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp"
         class="thumbnail phone-listing">
-      <a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-      <a href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+      <div class="cont">
+      	<a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+	      <a href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+      </div>
     </li>
   </ul>
   <h4><a href="#/showcase/">View all projects</a></h4>
