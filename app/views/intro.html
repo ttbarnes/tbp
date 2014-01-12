@@ -1,9 +1,8 @@
 
 <div class="jumbotron">
+  <img src="images/intro.jpg" alt="Introduction"/>
   <h1>Tony Barnes</h1>
-  <h2><span class="first">Front end developer</span><span class="middle">, </span><span class="last">designer</span>
-  </h2>
-
+  <h2><span class="first">Front end developer</span><span class="middle">, </span><span class="last">designer</span></h2>
  	<div class="buttons">
 	  <button type="button" class="btn btn-primary btn-lg">Button 1</button>
 	  <button type="button" class="btn btn-primary btn-lg">Button 2</button>
@@ -11,40 +10,23 @@
  
 </div>
 
-<br/>
-<br/>
-<!--
-<div id="hud">
-  <ul>
-    <li ng-repeat="l in inviewLogs" ng-bind-html="l.message"></li>
-  </ul>
-</div>
-
-<ul id="lines">
-  <li ng-repeat="t in testLines" in-view="lineInView($index, $inview, $inviewpart)">This is test line #{{$index}}</li>
-</ul>
-
--->
-
-<br/>
-<br/>
-
-
 <div class="row recentReleases" id="recentReleases" ng-class="{obj.value1 : 'test1'}">
-	<h3>Recently released</h3>
-  <ul class="phones">
-    <li class="col-md-4" ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
-        class="thumbnail phone-listing">
-      <div class="cont">
-      	<a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-	      <a class="title" href="#/showcase/{{phone.id}}">{{phone.name}}</a>
-        <div class="tags">
-          <div class="col-md-3 {{phone.category}}">{{phone.category}}</div>
-          <div class="col-md-3 {{phone.tech.html5css3}}">{{phone.tech.html5css3}}</div>
-          <div class="col-md-3 {{phone.tech.jQuery}}">{{phone.tech.jQuery}}</div>
+  <div class="cont">
+    <h3>Recently released</h3>
+    <ul class="phones">
+      <li class="col-md-4" ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
+          class="thumbnail phone-listing">
+        <div class="cont">
+          <a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+          <a class="title" href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+          <div class="tags">
+            <div class="col-md-3 {{phone.category}}">{{phone.category}}</div>
+            <div class="col-md-3 {{phone.tech.html5css3}}">{{phone.tech.html5css3}}</div>
+            <div class="col-md-3 {{phone.tech.jQuery}}">{{phone.tech.jQuery}}</div>
+          </div>
         </div>
-      </div>
-    </li>
-  </ul>
-  <h4><a href="#/showcase/">View all projects</a></h4>
+      </li>
+    </ul>
+    <h4><a href="#/showcase/">View all projects</a></h4>
+  </div>
 </div>
