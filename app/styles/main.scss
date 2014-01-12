@@ -7,6 +7,12 @@
     padding: 0.2em 0;
 }
 
+/*do we have a normaliser?!*/
+ul,ol {
+	padding:0;
+	margin:0;
+}
+
 
 /********************
 vars, mixins
@@ -144,6 +150,27 @@ intro stuff
 	animation: introAnimation4 3.2s;
 }
 
+/*recent releases*/
+.recentReleases {
+  text-align:center;
+	.col-md-4 {
+		margin-bottom:1em;
+		text-align:center;
+		width:24.4444444444%;
+		float:left;
+		.cont {
+			background:#CCC;
+			padding:1em;
+			img {
+			width:100%;
+			}
+		}
+	}
+	h4 {
+	  clear:both;
+	}
+}	
+
 
 
 /********************
@@ -155,18 +182,50 @@ responsive
 	}
 
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.recentReleases .col-md-4 {
+		width:24.4444444444%;
+	}
+}
+
 @media (min-width: 992px) {
 	.container {
 		width:100%;
 	}
 
 }
+
 @media (min-width: 768px) {
 	.container {
 		width:100%;
 	}
 }
 
+@media (max-width: 767px) {
+	.recentReleases .col-md-4 {	
+		width: 40%;
+		max-width: 250px;
+		float: none;
+		display: inline-block;
+		vertical-align:top;
+	}
+}
+
+@media (max-width: 480px) {
+	.recentReleases .col-md-4 {	
+		width:100%;
+		max-width:300px;
+		float:none;
+	}
+}
+
+
+@media (max-width: 300px) {
+	.recentReleases .col-md-4 {	
+		max-width:100%;
+	}
+}
 
 
 
