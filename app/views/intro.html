@@ -31,14 +31,18 @@
 
 
 <div class="row recentReleases" id="recentReleases" ng-class="{obj.value1 : 'test1'}">
-	<h3 style="color:#EEE;font-weight:normal;">Recently released</h3>
-  
+	<h3>Recently released</h3>
   <ul class="phones">
     <li class="col-md-4" ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
         class="thumbnail phone-listing">
       <div class="cont">
       	<a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-	      <a href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+	      <a class="title" href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+        <div class="tags">
+          <div class="col-md-3 {{phone.category}}">{{phone.category}}</div>
+          <div class="col-md-3 {{phone.tech.html5css3}}">{{phone.tech.html5css3}}</div>
+          <div class="col-md-3 {{phone.tech.jQuery}}">{{phone.tech.jQuery}}</div>
+        </div>
       </div>
     </li>
   </ul>

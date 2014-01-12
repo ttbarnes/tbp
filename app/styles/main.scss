@@ -52,6 +52,32 @@ main container/s
 }
 
 /********************
+shared
+*********************/
+/*tags*/
+div.tags {
+  div {
+		width: auto;
+		float: none;
+		padding: 5px;
+		display: inline-block;			
+		margin: 3px;
+		font-size: 0.850em;
+		vertical-align: middle;
+
+	  &.ecommerce {
+		  background:#888;
+		}
+		&.HTML5, &.CSS3 {
+		  background:#BADA55;
+		}
+		&.jQuery {
+		  background:#A9A9A9;
+		}
+	}
+}
+
+/********************
 intro/home
 *********************/
 /*testAnimation*/
@@ -179,6 +205,12 @@ intro/home
 /*recent releases*/
 .recentReleases {
   text-align:center;
+	 h3 {
+	   text-align:left;
+		 color:#EEE;
+		 font-weight:normal;
+		 margin:15px;
+	 }
 	.col-md-4 {
 		margin-bottom:1em;
 		text-align:center;
@@ -188,7 +220,11 @@ intro/home
 			background:#CCC;
 			padding:1em;
 			img {
-			width:100%;
+				width:100%;
+			}
+			a.title {
+				display:inline-block;
+			  padding:5px 0;
 			}
 		}
 	}
@@ -196,8 +232,6 @@ intro/home
 	  clear:both;
 	}
 }	
-
-
 
 
 
