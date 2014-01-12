@@ -183,7 +183,7 @@ intro/home
 	height:100%;
 	overflow:hidden;
 	border-radius:0 !important;
-	
+	margin-bottom:0;
 	
 	img {			
 		position: absolute;
@@ -240,23 +240,28 @@ intro/home
 .recentReleases {
   text-align:center;
 	margin:0;
+	background:$colorBlueLight;
 	
 	.cont {
 		padding:0 15px;
 		
 		 h3 {
 			 text-align:left;
-			 color:#EEE;
+			 color:#93B5C5;
 			 font-weight:normal;
-			 margin:15px;
+			 margin:40px 15px;
 		 }
 		.col-md-4 {
 			margin-bottom:1em;
 			text-align:center;
 			width:24.4444444444%;
 			float:left;
+			opacity:0.88;
+					
+			&:hover {		
+				opacity:1;
+			}
 			.cont {
-				background:#CCC;
 				padding:1em;
 				img {
 					width:100%;
@@ -372,10 +377,15 @@ responsive
 		}
 		
 	}
-	.recentReleases .cont .col-md-4 {	
-		width:100%;
-		max-width:300px;
-		float:none;
+	.recentReleases .cont {
+	  h3 {
+	    text-align:center;
+	  }			
+		.col-md-4 {	
+			width:100%;
+			max-width:300px;
+			float:none;
+		}
 	}
 }
 
