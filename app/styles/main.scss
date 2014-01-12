@@ -89,41 +89,41 @@ intro/home
 *********************/
 /*testAnimation*/
 @-webkit-keyframes testAnimation {
-  0%   { opacity: 0;margin-left:-500px;}
-  100% { opacity: 1;margin-left:0; }
+  0%   { opacity: 0;margin-top:-500px;}
+  100% { opacity: 1;margin-top:25px; }
 }
 @-moz-keyframes testAnimation {
-  0%   { opacity: 0;margin-left:-500px;}
-  100% { opacity: 1;margin-left:0; }
+  0%   { opacity: 0;margin-top:-500px;}
+  100% { opacity: 1;margin-top:0; }
 }
 @-o-keyframes testAnimation {
-  0%   { opacity: 0;margin-left:-500px;}
-  100% { opacity: 1;margin-left:0; }
+  0%   { opacity: 0;margin-top:-500px;}
+  100% { opacity: 1;margin-top:0; }
 }
 @keyframes testAnimation {
-  0%   { opacity: 0;margin-left:-500px;}
-  100% { opacity: 1;margin-left:0; }
+  0%   { opacity: 0;margin-top:-500px;}
+  100% { opacity: 1;margin-left:25px; }
 }
 
 /*introAnimation2*/
 @-webkit-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-300px;}
-  40% {opacity: 0;margin-left:-0;}
+  0% {opacity: 0;margin-left:-200px;}
+  80% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @-moz-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-300px;}
-  40% {opacity: 0;margin-left:-300px;}
+  0% {opacity: 0;margin-left:-200px;}
+  80% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @-o-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-300px;}
-  40% {opacity: 0;margin-left:-300px;}
+  0% {opacity: 0;margin-left:-200px;}
+  80% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-300px;}
-  40% {opacity: 0;margin-left:-300px;}
+  0% {opacity: 0;margin-left:-200px;}
+  80% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 
@@ -152,23 +152,23 @@ intro/home
 /*introAnimation4*/
 @-webkit-keyframes introAnimation4 {
   0% {opacity: 0;}
-  80% {opacity: 0;bottom:-100px;}
-  100% {opacity: 1;bottom:0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
 }
 @-moz-keyframes introAnimation4 {
   0% {opacity: 0;}
-  80% {opacity: 0;bottom:-100px;}
-  100% {opacity: 1;bottom:0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
 }
 @-o-keyframes introAnimation4 {
   0% {opacity: 0;}
-  80% {opacity: 0;bottom:-100px;}
-  100% {opacity: 1;bottom:0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
 }
 @keyframes introAnimation4 {
   0% {opacity: 0;}
-  80% {opacity: 0;bottom:-100px;}
-  100% {opacity: 1;bottom:0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 /*intro*/
@@ -231,8 +231,8 @@ intro/home
 	.buttons {
 		opacity:100;
 		bottom:0;
-		-webkit-animation: introAnimation4 3.2s;
-		animation: introAnimation4 3.2s;
+		-webkit-animation: introAnimation4 2s;
+		animation: introAnimation4 2s;
 	}
 }
 
