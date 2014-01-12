@@ -5,7 +5,13 @@
         "id": "motorola-xoom-with-wi-fi", 
         "imageUrl": "images/showcase/dummy1.jpg",
         "name": "Motorola XOOM\u2122 with Wi-Fi", 
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
+				"category": "ecommerce",
+				"tech":{
+					"html5css3":"HTML5, CSS3",
+					"jQuery":"jQuery"
+				}
+				
     }, 
     {
         "age": 1, 
