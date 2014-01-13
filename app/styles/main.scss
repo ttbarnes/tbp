@@ -4,16 +4,10 @@
 	color: #000;
 	padding: 0.2em 0;
 }
-/********************
-typography
-*********************/
 /*do we have a normaliser?!*/
 ul,ol {
 	padding:0;
 	margin:0;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family:Century Gothic, Helvetica, Arial, sans-serif;
 }
 img {
   width:100%;
@@ -29,11 +23,39 @@ $colorBlueDark:#84A8b9;
 
 
 /********************
+typography
+*********************/
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	/*font-family:Century Gothic, Helvetica, Arial, sans-serif;*/
+	font-family:Roboto Slab, Times New Roman;
+}
+
+/********************
+buttons
+*********************/
+.btn {
+  border-radius:0;
+}
+.btn-lg, 
+.btn-group-lg > .btn {
+	padding:12px 20px;
+}
+
+/********************
 main container/s
 *********************/
 body {
-	background:$colorBlueLight;
-	font-family:Century Gothic, Helvetica, Arial, sans-serif;
+	background:#F3F3F3;
+/*	font-family:Century Gothic, Helvetica, Arial, sans-serif;*/
+	font-family:Roboto Slab, Times New Roman;
+	
+	/*'Roboto Slab', Helvetica, Arial, sans-serif*/
 }
 .container {
 	width:100%;
@@ -67,7 +89,7 @@ body {
 
 /*main/middle container*/
 #containerMiddle {
-	background:$colorBlueLight;
+	background:#F3F3F3;
   padding-bottom:200px;
 }
 
@@ -75,18 +97,20 @@ body {
 footer {
   background:#F3F3F3;
 	color:#CACACA;
-	padding: 0 15px 200px 15px;
+	padding:200px 15px 0 15px;
   .navbar-default {
 		background:none;
 	  text-align:center;
 	  float:none;
+		margin-bottom:0;
+		
 		ul.navbar-nav  {
 		  float:none !important;				
 			> li {
 				float:none;
 				display:inline-block;
 				a {
-				  padding:15px 20px;
+				  padding:20px;
 					color:#BDBDBD;
 					font-size:12px;
 				}
@@ -329,6 +353,12 @@ intro/home
 			clear:both;
 		}
 	}
+	.row:last-child {
+	  clear:both;
+	}
+	.btn {
+	  margin-bottom:40px;
+	}
 }	
 
 
@@ -445,6 +475,10 @@ responsive
 	}
 }
 @media (max-width: 480px) {
+	.btn {
+	  width:100%;
+		padding:14px 20px;
+	}
 	.jumbotron {
 		overflow:hidden;
 		height:auto;
@@ -458,6 +492,13 @@ responsive
 		h2,
 		.buttons {
 			text-align:center;
+			.btn {
+				width:auto;
+			  min-width:40%;
+				&:first-child {
+				  margin-right:3.3333333333%;
+				}
+			}
 		}
 		
 	}
