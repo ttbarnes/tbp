@@ -43,7 +43,7 @@
   <div class="row">
     <div class="span4">
       <ul ng-controller="showcaseGrid" class="showcaseGalleryGrid">
-        <li class="item repeat-item toggle" ng-repeat="person in phones | filter:myFilter | orderBy:something">
+        <li class="item repeat-item toggle col-xs-3 col-md-2" ng-repeat="person in phones | filter:myFilter | orderBy:something">
           <a href="#/showcase/{{person.id}}">
             <img ng-src="{{person.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{person.name}}"/>
           </a>
