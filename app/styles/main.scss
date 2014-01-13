@@ -366,13 +366,24 @@ intro/home
 /********************
 showcase
 *********************/
-.showcaseGalleryNav span {
-	cursor:pointer;
-	background:#666;
-	color:#CCC;
-	padding:5px;
-	margin-right:5px;
+.showcaseGalleryNav {
+	padding:0 15px 15px 15px;
+  span {
+		display:inline-block;
+		background:#666;
+		color:#CCC;
+		padding:5px;
+		margin-right:5px;
+		cursor:pointer;
+	}
 }
+ul.showcaseGalleryGrid {
+  padding:0 10px;
+  li.col-md-2 {
+	  padding:5px;
+	}
+}
+
 
 
 
