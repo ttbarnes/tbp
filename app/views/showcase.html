@@ -1,6 +1,4 @@
 <ng-include src="'views/headerNav.html'"></ng-include>
-
-
 <style type="text/css">
 .repeat-item:hover {
 	opacity:1;
@@ -29,25 +27,30 @@
   opacity: 0;
 }
 </style>
-
-
-<h1>Showcase Home</h1>
-<p>Dummy placeholder categories:</p>
-<div class="showcaseGalleryNav" ng-model="orderPop">
-  <span ng-click="myFilter = null;app.toggle=!app.toggle" value="0">All</span>
-  <span ng-click="myFilter = {type: 1};app.toggle=!app.toggle" value="1">Ecommerce</span>
-  <span ng-click="myFilter = {type: 2};app.toggle=!app.toggle" value="2">Static, 'informative'</span>
-  <span ng-click="myFilter = {type: 3};app.toggle=!app.toggle" value="3">Holding, landing pages</span>
-  <span ng-click="myFilter = {type: 4};app.toggle=!app.toggle" value="4">Brand identity</span>
-  <span>Designs, mockups</span>
+<div id="containerMiddle">
+  <div class="row">  
+	    <div class="span4">
+      <div class="showcaseGalleryNav" ng-model="orderPop">
+        <span ng-click="myFilter = null;app.toggle=!app.toggle" value="0">All</span>
+        <span ng-click="myFilter = {type: 1};app.toggle=!app.toggle" value="1">Ecommerce</span>
+        <span ng-click="myFilter = {type: 2};app.toggle=!app.toggle" value="2">Static, 'informative'</span>
+        <span ng-click="myFilter = {type: 3};app.toggle=!app.toggle" value="3">Holding, landing pages</span>
+        <span ng-click="myFilter = {type: 4};app.toggle=!app.toggle" value="4">Brand identity</span>
+        <span>Designs, mockups</span>
+      </div>
+		</div>  
+  </div>  
+  <div class="row">
+    <div class="span4">
+      <ul ng-controller="showcaseGrid" class="showcaseGalleryGrid">
+        <li class="item repeat-item toggle" ng-repeat="person in phones | filter:myFilter | orderBy:something">
+          <a href="#/showcase/{{person.id}}">
+            <img ng-src="{{person.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{person.name}}"/>
+          </a>
+        </li>
+      </ul>
+	  </div>
+  </div>
 </div>
 
-
-<ul ng-controller="showcaseGrid" class="showcaseGalleryGrid">
-  <li class="item repeat-item toggle" ng-repeat="person in phones | filter:myFilter | orderBy:something">
-    <a href="#/showcase/{{person.id}}">
-	    <img ng-src="{{person.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{person.name}}"/>
-    </a>
-  </li>
-</ul>
-
+<ng-include src="'views/footer.html'"></ng-include>
