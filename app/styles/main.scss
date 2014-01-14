@@ -133,8 +133,9 @@ div.tags {
 		font-size: 0.850em;
 		vertical-align: middle;
 		
-		span.punchHole {
-		  background:transparent;
+		&::before {
+			content:'';
+			background:transparent;
 			border: solid 1px #000;
 			width: 10px;
 			height: 10px;
@@ -145,9 +146,8 @@ div.tags {
 			-webkit-border-radius:50%;
 			-moz-border-radius:50%;
 			border-radius:50%;
-
+			opacity:0.20;
 		}
-
 	  &.ecommerce {
 		  background:#888;
 		}
