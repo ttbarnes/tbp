@@ -2,10 +2,10 @@
 
 var tbpControllers = angular.module('tbangControllers', []);
 
-tbpControllers.controller('introCtrl2', ['$scope', '$http',
+tbpControllers.controller('introCtrl', ['$scope', '$http',
   function($scope,$http) {
-    $http.get('showcase/phones.json').success(function(data) {
-      $scope.phones = data;
+    $http.get('showcase/projects.json').success(function(data) {
+      $scope.projects = data;
     });
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
 			if (typeof(inviewpart) !== 'undefined') {
@@ -19,10 +19,10 @@ tbpControllers.controller('introCtrl2', ['$scope', '$http',
 		};
   }]);
 	
-tbpControllers.controller('showcaseGrid', ['$scope', '$http',
+tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
   function($scope, $http) {
-    $http.get('showcase/phones.json').success(function(data) {
-      $scope.phones = data;
+    $http.get('showcase/projects.json').success(function(data) {
+      $scope.projects = data;
     });
 		//$scope.orderPop = 'type: 2';
   }]);

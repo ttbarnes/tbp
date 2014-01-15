@@ -14,11 +14,11 @@ tbangApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
 			templateUrl: 'views/intro.html',
-			controller: 'introCtrl2'
+			controller: 'introCtrl'
 		})
 		.when('/showcase', {
 			templateUrl: 'views/showcase.html',
-			controller: 'showcaseGrid'
+			controller: 'showcaseGridCtrl'
 		})
 		.when('/showcase/:phoneId', {
 			templateUrl: 'views/showcase-individual.html',
