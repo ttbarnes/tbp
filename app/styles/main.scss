@@ -543,31 +543,62 @@ responsive
 
 
 
+/*temp new - fading in the view/s*/
+.recentReleases,
+footer {
+  display:none;
+}
 
-
-#hud {
-		background: white;
-		border: 1px solid gray;
-		bottom: 0;
-		margin: 20px;
-		min-width: 220px;
-		position: fixed;
-		right: 0;
-		top: 0;
-		width: 25%;
-		overflow: auto;
-	}
-
-	#lines {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	#lines li {
-		height: 100px;
-	}
-
-	#lines li:nth-child(odd) {
-		background-color: lightgray;
-	}
+.container {
+  position: relative;
+}
+ 
+.container.ng-enter, .container.ng-leave {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+ 
+.container.ng-enter {
+  -webkit-animation: 2s fade-in;
+  -moz-animation: 2s fade-in;
+  -o-animation: 2s fade-in;
+  animation: 2s fade-in;
+  z-index: 100;
+}
+ 
+.container.ng-leave {
+  -webkit-animation: 0.5s fade-out;
+  -moz-animation: 0.5s fade-out;
+  -o-animation: 0.5s fade-out;
+  animation: 0.5s fade-out;
+  z-index:99;
+}
+ 
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-webkit-keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+ 
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-moz-keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-webkit-keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
