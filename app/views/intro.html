@@ -12,16 +12,16 @@
   <div class="row recentReleases" id="recentReleases" ng-class="{obj.value1 : 'test1'}">
     <div class="span4">
       <h3>Recently released</h3>
-      <ul class="phones">
-        <li class="col-md-4" ng-repeat="phone in phones | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
+      <ul class="projects">
+        <li class="col-md-4" ng-repeat="project in projects | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
             class="thumbnail phone-listing">
           <div class="cont">
-            <a href="#/showcase/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-            <a class="title" href="#/showcase/{{phone.id}}">{{phone.name}}</a>
+            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="{{project.imageUrl}}"></a>
+            <a class="title" href="#/showcase/{{project.id}}">{{phone.name}}</a>
             <div class="tags">
-              <div class="col-md-3 {{phone.category}}">{{phone.category}}</div>
-              <div class="col-md-3 {{phone.tech.html5css3}}">{{phone.tech.html5css3}}</div>
-              <div class="col-md-3 {{phone.tech.jQuery}}">{{phone.tech.jQuery}}</div>
+              <div class="col-md-3 {{project.category}}">{{project.category}}</div>
+              <div class="col-md-3 {{project.tech.html5css3}}">{{project.tech.html5css3}}</div>
+              <div class="col-md-3 {{project.tech.jQuery}}">{{project.tech.jQuery}}</div>
             </div>
           </div>
         </li>
