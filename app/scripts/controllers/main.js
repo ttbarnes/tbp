@@ -3,11 +3,10 @@
 var tbpControllers = angular.module('tbangControllers', []);
 
 tbpControllers.controller('introCtrl2', ['$scope', '$http',
-  function($scope, $http) {
+  function($scope,$http) {
     $http.get('showcase/phones.json').success(function(data) {
       $scope.phones = data;
     });
-		
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
 			if (typeof(inviewpart) !== 'undefined') {
 				console.log('VISIBLE: recent releases');
@@ -18,8 +17,6 @@ tbpControllers.controller('introCtrl2', ['$scope', '$http',
 				return $scope.obj.value === 'testing1 - back to normal';
 			}
 		};
-		
-		
   }]);
 	
 tbpControllers.controller('showcaseGrid', ['$scope', '$http',
