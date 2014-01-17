@@ -64,6 +64,14 @@ body {
   margin:0;
 }
 
+/*shared css transitions*/
+.navbar-default h1 a.navbar-brand,
+.navbar-default .navbar-nav li a {
+	-webkit-transition:color 0.150s ease-out;
+	-moz-transition:color 0.150s ease-out;
+	-o-transition:color 0.150s ease-out;
+	transition:color 0.150s ease-out;
+}
 
 /*navbar*/
 .navbar-default {
@@ -72,16 +80,26 @@ body {
 	
 	/*logo*/
 	h1 {
+	  margin:0;
 		a.navbar-brand {
-			color:#FFF;
+			color:#A8CADB;
 			font-size:30px;
+			padding:20px 10px;
+			
+			&:hover {
+			  color:#7FA5B8;
+			}
 		}
 	}
 	/*right nav*/
 	.navbar-nav {
 	  li {
 			a {
-				color:$colorBlueDark;
+				color:#A8CADB;
+				padding:20px 10px;
+				&:hover {
+					color:#7FA5B8;
+				}
 			}	
 		}
 	}
@@ -294,7 +312,7 @@ intro/home
 		margin-top:25px;
 	}
 	h2 {
-		color:#AAA;
+		color:#DBDBDB;
 		> {
 			span {
 				display:inline-block;
