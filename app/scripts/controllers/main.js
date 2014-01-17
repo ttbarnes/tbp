@@ -37,3 +37,12 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
     });
 		
   }]);
+	
+	
+tbpControllers.controller('contactCtrl', function($scope){
+	$scope.tonyDetails = {
+		email:'tony@tonybarnes.me'
+	};
+	console.log($scope.tonyDetails.email);
+		//$scope.
+});
