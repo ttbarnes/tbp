@@ -135,8 +135,11 @@ footer {
 				display:inline-block;
 				a {
 				  padding:20px;
-					color:#BDBDBD;
+					color:#8AB7CE;
 					font-size:12px;
+					&:hover {
+					  color:#5F93AE;
+					}
 				}
 			}
 		}
@@ -382,6 +385,17 @@ intro/home
 	}
 	.btn {
 	  margin-bottom:40px;
+		background:#F3F3F3;
+		color:#8CB9CF;
+		border:0 none;
+		
+		&:hover, 
+		&:focus, 
+		&:active, 
+		&.active {
+			background:#FFF;
+			color:#5F93AC;
+		}
 	}
 }	
 
