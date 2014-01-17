@@ -38,11 +38,19 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
 		
   }]);
 	
+
+tbpControllers.controller('aboutCtrl', function($scope){
+	$scope.tonySocial = {
+		github:'http://github.com/ttbarnes',
+		twitter:'http://twitter.com/ttbarnes',
+		//stackoverflow:'http://stackoverflow.com',
+		linkedin:'http://uk.linkedin.com/in/ttbarnes'
+	};
+	
+});
 	
 tbpControllers.controller('contactCtrl', function($scope){
 	$scope.tonyDetails = {
 		email:'tony@tonybarnes.me'
 	};
-	console.log($scope.tonyDetails.email);
-		//$scope.
 });

@@ -24,6 +24,10 @@ tbangApp.config(function ($routeProvider) {
 			templateUrl: 'views/showcase-individual.html',
 			controller: 'indShowcasePieceCtrl'
 		})
+		.when('/about', {
+			templateUrl: 'views/about.html',
+			controller: 'aboutCtrl'
+		})
 		.when('/contact', {
 			templateUrl: 'views/contact.html',
 			controller: 'contactCtrl'
