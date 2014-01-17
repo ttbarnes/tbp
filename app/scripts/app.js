@@ -23,6 +23,10 @@ tbangApp.config(function ($routeProvider) {
 		.when('/showcase/:phoneId', {
 			templateUrl: 'views/showcase-individual.html',
 			controller: 'indShowcasePieceCtrl'
+		})
+		.when('/contact', {
+			templateUrl: 'views/contact.html',
+			controller: 'contactCtrl'
 		});
 	//.otherwise({
 	//	redirectTo: '/'
