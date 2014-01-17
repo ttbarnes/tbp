@@ -7,6 +7,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
+		
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
 			if (typeof(inviewpart) !== 'undefined') {
 				console.log('VISIBLE: recent releases');
