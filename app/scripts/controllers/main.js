@@ -3,24 +3,63 @@
 var tbpControllers = angular.module('tbangControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
+/*
+  function($scope,$n otifyService,$http) {
+		
+		//$scope.$on('$routeChangeSuccess', function() {
+			//window.scrollTo(0,90);
+			//console.log('TB route changed success! ');
+		//});
+		
+		//callNotify(message);
+		$scope.callNotify = function(msg) {
+			notifyService(msg);
+		};
+		introCtrl.$inject = ['$scope','notify'];
+		*/
+		
   function($scope,$http) {
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
-		
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
+			var elm = angular.element($scope);
 			if (typeof(inviewpart) !== 'undefined') {
 				console.log('VISIBLE: recent releases');
-				return $scope.obj.value === 'testing2!';
+				//return $scope.obj.value === 'testing2!';
+				//$scope.addClass('tbTesting09121823012903');
+				//angular.element($scope).addClass('tbTesting09121823012903');
+        elm.addClass('tbtest1290123091239012');
 			}
 			else {
 				console.log('INVISIBLE: recent releases');
-				return $scope.obj.value === 'testing1 - back to normal';
+				//return $scope.obj.value === 'testing1 - back to normal';
+				//$scope.addClass('tbTesting11111111');
+        elm.addClass('tbtest1221132123');
 			}
 		};
   }]);
 	
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
+/*
+	function($scope,myService) {
+		tbTestService.foo();
+	},*/
+	
+	/*
+function($scope,tbTestService){
+	$scope.callFoo = function() {
+	  tbTestService.foo();
+	};
+},
+*/
+/*
+myApp.controller('MainCtrl', ['$scope', 'myService', function($scope, myService) {
+		$scope.callFoo = function() {
+				myService.foo();
+		}
+}]);
+*/
   function($scope, $http) {
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
@@ -40,6 +79,7 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
 	
 
 tbpControllers.controller('aboutCtrl', function($scope){
+	
 	$scope.tonySocial = {
 		github:'http://github.com/ttbarnes',
 		twitter:'http://twitter.com/ttbarnes',
@@ -54,3 +94,4 @@ tbpControllers.controller('contactCtrl', function($scope){
 		email:'tony@tonybarnes.me'
 	};
 });
+
