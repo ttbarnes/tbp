@@ -3,6 +3,8 @@
 var tbpControllers = angular.module('tbangControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
+
+		
 /*
   function($scope,$n otifyService,$http) {
 		
@@ -19,6 +21,8 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		*/
 		
   function($scope,$http) {
+		$scope.pageClass = 'introPage';
+		
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
@@ -60,7 +64,9 @@ myApp.controller('MainCtrl', ['$scope', 'myService', function($scope, myService)
 		}
 }]);
 */
+
   function($scope, $http) {
+		$scope.pageClass = 'showcaseHomePage';
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
@@ -69,7 +75,7 @@ myApp.controller('MainCtrl', ['$scope', 'myService', function($scope, myService)
 
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
-    //$scope.phoneId = $routeParams.phoneId;
+		$scope.pageClass = 'showcaseIndPage';
 		
     $http.get('showcase/' + $routeParams.phoneId + '.json').success(function(data) {
       $scope.phone = data;
@@ -79,6 +85,7 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
 	
 
 tbpControllers.controller('aboutCtrl', function($scope){
+	$scope.pageClass = 'aboutPage';
 	
 	$scope.tonySocial = {
 		github:'http://github.com/ttbarnes',
@@ -90,6 +97,7 @@ tbpControllers.controller('aboutCtrl', function($scope){
 });
 	
 tbpControllers.controller('contactCtrl', function($scope){
+	$scope.pageClass = 'contactPage';
 	$scope.tonyDetails = {
 		email:'tony@tonybarnes.me'
 	};
