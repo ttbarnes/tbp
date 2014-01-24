@@ -461,9 +461,9 @@ responsive
 @media (max-width: 992px) {
 	.container {
 		width:100%;
-		#containerMiddle {
-		  padding-bottom:150px;
-		}
+	}
+	footer {
+	  padding-top:200px;
 	}
 	.jumbotron {
 		height:auto;
@@ -523,10 +523,8 @@ responsive
 }
 
 @media (max-width: 700px) {
-  .container {
-		#containerMiddle {
-			padding-bottom:100px;
-		}
+	footer {
+	  padding-top:100px;
 	}
   .jumbotron {
 	  height:auto;
