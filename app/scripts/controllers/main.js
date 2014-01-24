@@ -4,22 +4,6 @@ var tbpControllers = angular.module('tbangControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
 
-		
-/*
-  function($scope,$n otifyService,$http) {
-		
-		//$scope.$on('$routeChangeSuccess', function() {
-			//window.scrollTo(0,90);
-			//console.log('TB route changed success! ');
-		//});
-		
-		//callNotify(message);
-		$scope.callNotify = function(msg) {
-			notifyService(msg);
-		};
-		introCtrl.$inject = ['$scope','notify'];
-		*/
-		
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
 		
@@ -45,25 +29,6 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
   }]);
 	
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
-/*
-	function($scope,myService) {
-		tbTestService.foo();
-	},*/
-	
-	/*
-function($scope,tbTestService){
-	$scope.callFoo = function() {
-	  tbTestService.foo();
-	};
-},
-*/
-/*
-myApp.controller('MainCtrl', ['$scope', 'myService', function($scope, myService) {
-		$scope.callFoo = function() {
-				myService.foo();
-		}
-}]);
-*/
 
   function($scope, $http) {
 		$scope.pageClass = 'showcaseHomePage';
