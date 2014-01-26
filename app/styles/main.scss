@@ -465,6 +465,10 @@ div.introPage {
 	.row:last-child {
 	  clear:both;
 	}
+}	
+.row-btn-lg {
+  background:$colorBlueLight;
+	text-align:center;
 	.btn {
 		margin-top:1em;
 	  margin-bottom:40px;
@@ -480,7 +484,7 @@ div.introPage {
 			color:#5F93AC;
 		}
 	}
-}	
+}
 
 .tbtest1290123091239012aaaaa .span4 .col-md-4 {
   opacity:0;
