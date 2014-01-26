@@ -69,7 +69,8 @@ body {
 
 /*shared css transitions*/
 .navbar-default h1 a.navbar-brand,
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a,
+.contactPage .row .span4 a.contactAddress {
 	-webkit-transition:color 0.150s ease-out;
 	-moz-transition:color 0.150s ease-out;
 	-o-transition:color 0.150s ease-out;
@@ -496,8 +497,49 @@ showcase home page
 }
 
 
+/********************
+contact page
+*********************/
+.contactPage {
+	#containerMiddle {
+	  min-height:initial;
+	}
 
-
+	.row {
+	  margin-top:15%;
+	  margin-bottom:15%;
+	  .span4	{
+			position:relative;
+			text-align:center;
+			vertical-align:middle;
+			
+			a.contactAddress {
+				font-size:50px;
+				color:#D2D2D2;
+				-ms-word-break:break-all;
+				 word-break:break-all;
+				 word-break:break-word;
+				-webkit-hyphens:auto;
+				-moz-hyphens:auto;
+				hyphens:auto;
+				
+				&:hover {
+					color:#B6B6B6;
+				}
+				
+				&:hover, 
+				&:focus, 
+				&:active {
+				  text-decoration:none;
+				}
+			}		
+		}
+	}
+	
+	footer {
+	  padding-top:150px !important;
+	}
+}
 
 /********************
 responsive
@@ -581,6 +623,15 @@ responsive
 			vertical-align: top;
 		}
 	}
+	
+	/*contact page*/
+	.contactPage  {
+	  .row .span4 a.contactAddress {
+		  font-size:33px;
+			color:#B6B6B6;
+		}
+	}
+	
 }
 
 @media (max-width: 700px) {
@@ -638,6 +689,13 @@ responsive
 	  li.col-xs-3 {						
 			width:40%;
 			max-width:250px;
+		}
+	}
+	
+	/*contact page*/
+	.contactPage  {
+	  .row .span4 a.contactAddress {
+		  font-size:22px;
 		}
 	}
 	
