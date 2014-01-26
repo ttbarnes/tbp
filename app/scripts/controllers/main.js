@@ -10,20 +10,17 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
+		
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
-			var elm = angular.element($scope);
+			var rRel = angular.element('#recentReleases');
 			if (typeof(inviewpart) !== 'undefined') {
-				console.log('VISIBLE: recent releases');
-				//return $scope.obj.value === 'testing2!';
-				//$scope.addClass('tbTesting09121823012903');
-				//angular.element($scope).addClass('tbTesting09121823012903');
-        elm.addClass('tbtest1290123091239012');
+				console.log('VISIBLE: recent releases'); //remove me
+        rRel.removeClass('tbtest1290123091239012aaaaa').addClass('tbtest1290123091239012');
 			}
 			else {
-				console.log('INVISIBLE: recent releases');
-				//return $scope.obj.value === 'testing1 - back to normal';
-				//$scope.addClass('tbTesting11111111');
-        elm.addClass('tbtest1221132123');
+				console.log('INVISIBLE: recent releases'); //remove me
+				rRel.removeClass('tbtest1290123091239012').addClass('tbtest1290123091239012aaaaa');
+        //rRel.removeClass('tbtest1290123091239012');
 			}
 		};
   }]);
