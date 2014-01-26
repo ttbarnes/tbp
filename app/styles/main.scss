@@ -20,6 +20,12 @@ vars, mixins
 *********************/
 $colorBlueLight:#B9D9E9;
 $colorBlueDark:#84A8b9;
+$colorBlueDark2:#7FA5B8;
+$colorRedLight:#B88080;
+$colorOrangeLight:#B38d6F;
+$colorGreenLight:#6FB387;
+$colorYellowLight:#B2B36F;
+$colorGreyX:#c5c5c5;
 
 
 /********************
@@ -82,12 +88,12 @@ body {
 	h1 {
 	  margin:0;
 		a.navbar-brand {
-			color:#7FA5B8;
+			color:$colorBlueDark2;
 			font-size:30px;
 			padding:20px 10px;
 			
 			&:hover {
-				color:#7FA5B8;
+				color:$colorBlueDark2;
 			}
 		}
 	}
@@ -98,7 +104,7 @@ body {
 				color:#A8CADB;
 				padding:20px 10px;
 				&:hover {
-					color:#7FA5B8;
+					color:$colorBlueDark2;
 				}
 			}	
 		}
@@ -152,22 +158,29 @@ div.tags {
 		margin: 3px;
 		font-size: 0.850em;
 		vertical-align: middle;
-		
-		&::before {
-			content:'';
-			background:transparent;
-			border: solid 1px #000;
-			width: 10px;
-			height: 10px;
-			display: block;
-			float: left;
-			margin-top:3px;
-			margin-right:5px;
-			-webkit-border-radius:50%;
-			-moz-border-radius:50%;
-			border-radius:50%;
-			opacity:0.20;
+		/*showcase categories*/
+		&.all {
+		  background:$colorBlueDark2;
 		}
+		&.ecommerce {
+		  background:$colorRedLight;
+		}
+		&.staticInfo {
+		  background:$colorOrangeLight;
+		}
+		&.holding {
+		  background:$colorGreenLight;
+		}
+		&.brandIdentity {
+		  background:$colorYellowLight;
+		}
+		&.designs {
+		  background:$colorGreyX;
+		}
+		
+		
+		
+		/*tech
 	  &.ecommerce {
 		  background:#888;
 		}
@@ -177,6 +190,7 @@ div.tags {
 		&.jQuery {
 		  background:#A9A9A9;
 		}
+		*/
 	}
 }
 
@@ -424,6 +438,24 @@ div.introPage {
 					display:inline-block;
 					padding:5px 0;
 				}
+				.tags .col-md-3 {
+					&::before {
+						content:'';
+						background:transparent;
+						border: solid 1px #000;
+						width: 10px;
+						height: 10px;
+						display: block;
+						float: left;
+						margin-top:3px;
+						margin-right:5px;
+						-webkit-border-radius:50%;
+						-moz-border-radius:50%;
+						border-radius:50%;
+						opacity:0.20;
+					}
+				}
+				
 			}
 		}
 		h4 {
@@ -477,23 +509,21 @@ div.introPage {
 /********************
 showcase
 *********************/
-.showcaseGalleryNav {
-	padding:0 15px 15px 15px;
-  span {
-		display:inline-block;
-		background:#666;
-		color:#CCC;
-		padding:5px;
-		margin-right:5px;
-		cursor:pointer;
+.showcaseHomePage {
+  .tags {
+		padding:0 15px 15px 15px;
+		div {
+			cursor:pointer;
+		}
+	}
+	ul.showcaseGalleryGrid {
+		padding:0 10px;
+		li.col-md-2 {
+			padding:5px;
+		}
 	}
 }
-ul.showcaseGalleryGrid {
-  padding:0 10px;
-  li.col-md-2 {
-	  padding:5px;
-	}
-}
+
 
 
 
