@@ -51,7 +51,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
-		//$scope.orderPop = 'type: 2';
+		
   }]);
 
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
