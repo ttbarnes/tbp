@@ -36,13 +36,10 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
 			var rRel = angular.element('#recentReleases');
 			if (typeof(inviewpart) !== 'undefined') {
-				console.log('VISIBLE: recent releases'); //remove me
-        rRel.removeClass('tbtest1290123091239012aaaaa').addClass('tbtest1290123091239012');
+        rRel.removeClass('rRel-invisible').addClass('rRel-inView');
 			}
 			else {
-				console.log('INVISIBLE: recent releases'); //remove me
-				rRel.removeClass('tbtest1290123091239012').addClass('tbtest1290123091239012aaaaa');
-        //rRel.removeClass('tbtest1290123091239012');
+				rRel.removeClass('rRel-inView').addClass('rRel-invisible');
 			}
 		};
   }]);
