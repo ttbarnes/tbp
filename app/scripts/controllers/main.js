@@ -48,6 +48,8 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
 
   function($scope, $http) {
 		$scope.pageClass = 'showcaseHomePage';
+		//$scope.myFilter = 2;
+						
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
