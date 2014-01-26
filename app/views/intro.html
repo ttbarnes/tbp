@@ -12,18 +12,43 @@
     <div class="span4">
       <h3>Recently released</h3>
       <ul class="projects">
+      
+     <!-- <ul ng-repeat="project in projects" ng-model="sample">
+   <li>{{project.name}}
+       <ul ng-repeat="children in project.children">
+           <li>{{child.title}}</li>
+       </ul>
+   </li>
+  </ul>
+  -->
+  
         <li class="col-md-4" ng-repeat="project in projects | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
             class="thumbnail phone-listing">
           <div class="cont">
+          <!--
+          <p>{{project.children}}</p>
+	        <div class="col-md-3" ng-repeat="children in project">{{project.child}}</div>
+            
+          <div class="tags" style="border:solid 2px red;">
+	        	<div class="col-md-3" ng-repeat="child in project.children">{{child.title}}</div>
+          </div>
+            -->
             <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="{{project.imageUrl}}"></a>
-            <a class="title" href="#/showcase/{{project.id}}">{{phone.name}}</a>
-            <div class="tags">
+            <a class="title" href="#/showcase/{{project.id}}">{{project.name}}</a>
+            
+            
+            
+	        <!--<div class="col-md-3" ng-repeat="category in project">{{project.category}}</div>-->
+	        	<!--<div class="col-md-3" ng-repeat="children in project">{{project.children}}</div>-->
+            <!--
               <div class="col-md-3 {{project.category}}">{{project.category}}</div>
               <div class="col-md-3 {{project.tech.html5css3}}">{{project.tech.html5css3}}</div>
               <div class="col-md-3 {{project.tech.jQuery}}">{{project.tech.jQuery}}</div>
-              <div class="col-md-3 {{project.tech.somethiasgnladsfgk}}">{{project.tech.somethiasgnladsfgk}}</div>
-            </div>
+              <div class="col-md-3 {{project.tech.somethiasgnladsfgk}}">{{project.tech.somethiasgnladsfgk}}</div>-->
+                
           </div>
+          
+          
         </li>
       </ul>
     </div>
