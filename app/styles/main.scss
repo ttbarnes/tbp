@@ -56,8 +56,35 @@ body {
 	background:#F3F3F3;
 	font-family:Roboto Slab, Times New Roman;
 }
+
+/*main wrapper/container - fade in/out*/
 .container {
+  position: relative;
 	width:100%;
+	opacity:1;
+}
+.container.ng-enter {
+	opacity:0;
+  -webkit-animation: 1s fade-in;
+  -moz-animation: 1s fade-in;
+  -o-animation: 1s fade-in;
+  animation: 1s fade-in;
+  z-index: 100;
+}
+.container.ng-leave {
+  z-index:99;
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-webkit-keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
 }
 .row {
   margin:0;
@@ -707,33 +734,4 @@ responsive
 
 
 
-/*temp new - fading in the view/s*/
 
-.container {
-  position: relative;
-}
- 
-.container.ng-enter {
-  -webkit-animation: 1s fade-in;
-  -moz-animation: 1s fade-in;
-  -o-animation: 1s fade-in;
-  animation: 1s fade-in;
-  z-index: 100;
-}
-
-.container.ng-leave {
-  z-index:99;
-}
- 
-@keyframes fade-in {
-  0% { opacity: 0; }
-100% { opacity: 1; }
-}
-@-moz-keyframes fade-in {
-  0% { opacity: 0; }
-100% { opacity: 1; }
-}
-@-webkit-keyframes fade-in {
-  0% { opacity: 0; }
-100% { opacity: 1; }
-}
