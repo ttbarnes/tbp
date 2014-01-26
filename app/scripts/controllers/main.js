@@ -7,6 +7,28 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
 		
+		/*
+		$scope.sample = {
+			'items': [
+					{
+					  'title': 'Sample Title 1',
+					  'children': [
+					    {'title': 'Child Title 1'},
+						  {'title': 'Child Title 2'}
+					  ]
+					},
+
+					{
+					  'title': 'Sample Title 2',
+					  'children': [
+					    {'title': 'Child Title 1'},
+						  {'title': 'Child Title 2'}
+					  ]
+					}
+			  ]
+      };	
+		*/
+		
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
