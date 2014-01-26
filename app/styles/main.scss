@@ -411,7 +411,7 @@ div.introPage {
 			 margin:40px 15px;
 		 }
 		 ul.projects {
-		   width:1000%;
+		   /*width:1000%;*/
 			 overflow:hidden;
 		 }
 		.col-md-4 {
@@ -495,12 +495,12 @@ div.introPage {
   animation:0.5s red-to-blue;
 }
 @keyframes red-to-blue {
-  from { margin-left:800px;opacity:0;}
-  to { margin-left:0;opacity:1;}
+  from { margin-left:-800px;opacity:0;}
+  to { margin-left:0;opacity:0.40;}
 }
 @-webkit-keyframes red-to-blue {
-  from { margin-left:800px;opacity:0.88;}
-  to { margin-left:0;opacity:0.88;}
+  from { margin-left:-800px;opacity:0.40;}
+  to { margin-left:0;opacity:0.40;}
 }
 
 
@@ -601,6 +601,9 @@ responsive
 		img {
 			top:-32%;
 		}
+	}
+	.recentReleases  {
+		max-height:initial;
 	}
 }	
 
