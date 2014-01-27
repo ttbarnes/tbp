@@ -44,7 +44,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		};
   }]);
 	
-	
+/*
 tbpControllers.controller('testTableCtrl', function($scope, $q) {
 	
 	  $scope.setSelectedTitle = function (value) {
@@ -76,6 +76,38 @@ tbpControllers.controller('testTableCtrl', function($scope, $q) {
     };
 		
 		$scope.selectedTitle = 'anothertitle';
+		
+	});
+	*/
+	
+tbpControllers.controller('testTableCtrl2', function($scope, $q) {
+	
+	  $scope.setSelectedCategory = function (value) {
+			$scope.selectedCategory = value;
+    };
+    
+    $q.when({ data: [
+        { category: 'ecommerce'},
+        { category: 'static'},
+        { category: 'ecommerce'},
+        { category: 'jquery'},
+        { category: 'ecommerce'},
+        { category: 'static'},
+        { category: 'static'},
+        { category: 'vanilla css'},
+				
+      ]})
+    .then(function(res){
+        $scope.entries = res.data;
+      });
+
+    $scope.categories = ['ecommerce','static','jquery'];
+
+    $scope.byCategory = function(entry){
+			return entry.category === $scope.selectedCategory || $scope.selectedCategory === undefined;
+    };
+		
+		$scope.selectedCategory = 'static';
 		
 	});
 

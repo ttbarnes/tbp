@@ -1,0 +1,42 @@
+<div id="containerMiddle">
+
+
+  <div class="row">
+    <div class="span4">
+    	<h1>table2</h1>
+			<hr/>
+      <div ng-controller="testTableCtrl2" class="testTableCtrl">
+      
+      
+      <h1>Filter by title</h1>
+      <div class="btn-group">
+      <button 
+          type="button" 
+          ng-repeat="category in categories"
+          ng-model="selected[title]" 
+          btn-checkbox 
+          ng-class="{active: category == selectedCategory}" 
+          ng-click="setSelectedCategory(category)">{{category}}</button>
+      </div>
+          
+      <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="entry in entries | filter:byCategory">
+                <td>{{entry.category}}</td>
+                <td>{{entry.type}}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+      
+
+	  </div>
+  </div>
+</div>
