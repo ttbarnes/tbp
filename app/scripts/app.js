@@ -35,6 +35,10 @@ tbangApp.config(function ($routeProvider) {
 		.when('/testTableThing', {
 			templateUrl:'views/testTable.html',
 			controller: 'testTableCtrl'
+		})
+		.when('/testTableThing2', {
+			templateUrl:'views/testTable2.html',
+			controller: 'testTableCtrl2'
 		});
 	//.otherwise({
 	//	redirectTo: '/'
