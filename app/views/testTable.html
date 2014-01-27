@@ -1,0 +1,43 @@
+<ng-include src="'views/navbar.html'"></ng-include>
+<div id="containerMiddle">
+
+
+  <div class="row">
+    <div class="span4">
+	    <h1>test table</h1>
+      <div ng-controller="testTableCtrl" class="testTableCtrl">
+      
+      
+      <h1>Filter by title</h1>
+      <div class="btn-group">
+      <button 
+          type="button" 
+          ng-repeat="title in titles" 
+          class="btn btn-default" 
+          ng-model="selected[title]" 
+          btn-checkbox 
+          ng-class="{active: title == selectedTitle}" 
+          ng-click="setSelectedTitle(title)">{{title}}</button>
+      </div>
+          
+      <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Text</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="entry in entries | filter:byTitle">
+                <td>{{entry.title}}</td>
+                <td>{{entry.text}}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+      
+
+	  </div>
+  </div>
+</div>
