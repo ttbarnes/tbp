@@ -10,6 +10,7 @@
       
       <h1>Filter by title</h1>
       <div class="btn-group">
+      <button ng-click="setSelectedCategory(categories)" style="background:darkred;color:#F9F9F9;">view all</button>
       <button 
           type="button" 
           ng-repeat="category in categories"
@@ -23,13 +24,16 @@
             <thead>
               <tr>
                 <th>Category</th>
-                <th>Type</th>
+                <!--<th>Type</th>-->
+                <th>Name</th>
+                <th>Desc</th>
               </tr>
             </thead>
             <tbody>
               <tr ng-repeat="entry in entries | filter:byCategory">
                 <td>{{entry.category}}</td>
-                <td>{{entry.type}}</td>
+                <td>{{entry.name}}</td>
+                <td><strong>Description:<br/></strong>{{entry.snippet}}</td>
               </tr>
             </tbody>
           </table>
