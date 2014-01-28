@@ -550,6 +550,27 @@ showcase home page
 		li.col-md-2 {
 			padding:5px;
 		}
+		
+		/*toggle/fade effect*/
+		.showcaseGalleryToggle {
+			opacity:0.85;
+			-webkit-transition:ease-in-out 0.3s;
+			transition: ease-in-out 0.3s;
+			&:hover {
+				opacity:100;
+			}
+			&.ng-enter,
+			&.ng-leave.ng-leave-active {
+				opacity:0;
+			}
+			&.ng-enter-active {
+				opacity: 0.90;
+			}
+			&.ng-leave {
+				display:none;
+				opacity: 0;
+			}
+		}
 	}
 }
 
@@ -683,7 +704,6 @@ responsive
 			vertical-align: top;
 		}
 	}
-	
 	/*contact page*/
 	.contactPage  {
 	  .row .span4 a.contactAddress {
