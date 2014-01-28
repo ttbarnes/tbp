@@ -44,62 +44,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		};
   }]);
 	
-/*
-tbpControllers.controller('testTableCtrl', function($scope, $q) {
-	
-	  $scope.setSelectedTitle = function (value) {
-		  if ($scope.selectedTitle === value) {
-				$scope.selectedTitle = undefined;
-			} else {
-				$scope.selectedTitle = value;
-			}
-    };
-    
-    $q.when({ data: [
-        { title: 'sometitle', text: 1 },
-        { title: 'anothertitle', text: 2 },
-        { title: 'sometitle', text: 3 },
-        { title: 'someothertitle', text: 4 },
-        { title: 'sometitle', text: 5 },
-        { title: 'anothertitle', text: 6 },
-        { title: 'anothertitle', text: 7 },
-        { title: 'yetanothertitle', text: 8 },
-      ]})
-    .then(function(res){
-        $scope.entries = res.data;
-      });
-
-    $scope.titles = ['sometitle','someothertitle','anothertitle'];
-
-    $scope.byTitle = function(entry){
-			return entry.title === $scope.selectedTitle || $scope.selectedTitle === undefined;
-    };
-		
-		$scope.selectedTitle = 'anothertitle';
-		
-	});
-	*/
-	
-
-	
-tbpControllers.controller('testTableCtrl2', ['$scope', '$http', '$q',
-	
-	
-		
-	]);
-
-
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
-/*
-  function($scope, $http) {
-		$scope.pageClass = 'showcaseHomePage';
-		//$scope.myFilter = 2;
-				
-    $http.get('showcase/projects.json').success(function(data) {
-      $scope.projects = data;
-    });
-		$scope.orderPop = '3';
-		*/
 	function($scope, $http) {
 		
 		$scope.pageClass = 'showcaseHomePage';
@@ -108,7 +53,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 			$scope.projects = data;
 		});
 		
-		//custom filter
+		//category filter
 		$scope.setSelectedCategory = function (value) {
 			$scope.selectedCategory = value;
 		};
