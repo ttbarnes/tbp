@@ -22,7 +22,7 @@
   </ul>
   -->
   
-        <li class="col-md-4" ng-repeat="project in projects | limitTo:4 | filter:query | orderBy:orderProp" in-view="lineInView($index, $inview, $inviewpart)"
+        <li class="col-md-4" ng-repeat="project in projects | limitTo:4" in-view="lineInView($index, $inview, $inviewpart)"
             class="thumbnail phone-listing">
           <div class="cont">
           <!--
@@ -33,7 +33,8 @@
 	        	<div class="col-md-3" ng-repeat="child in project.children">{{child.title}}</div>
           </div>
             -->
-            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="{{project.imageUrl}}"></a>
+            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/></a>
+            
             <!--<a class="title" href="#/showcase/{{project.id}}">{{project.name}}</a>-->
             
             

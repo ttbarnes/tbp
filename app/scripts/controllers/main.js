@@ -28,7 +28,6 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 			  ]
       };	
 		*/
-		
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
@@ -49,7 +48,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 		
 		$scope.pageClass = 'showcaseHomePage';
 	
-		$http.get('showcase/phones2table.json').success(function(data) {
+		$http.get('showcase/projects.json').success(function(data) {
 			$scope.projects = data;
 		});
 		
@@ -57,11 +56,19 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 		$scope.setSelectedCategory = function (value) {
 			$scope.selectedCategory = value;
 		};
-		$scope.categories = ['ecommerce','static','jquery'];
+		$scope.categories = [
+		  'Ecommerce',
+			'Static',
+			'jQuery plugins',
+			'Holding pages',
+			'Brand identity',
+			'Designs, mockups'
+		];
+		
 		$scope.byCategory = function(project){
 			return project.category === $scope.selectedCategory;
 		};
-		$scope.selectedCategory = 'static';
+		$scope.selectedCategory = 'Static';
 		
 		
 	}]);

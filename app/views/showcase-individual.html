@@ -4,34 +4,32 @@
   
   
   <div class="row rowHeading">
-    <div class="col-md-6">&nbsp;</div> 
-    <div class="col-md-6">
+    <div class="span4">
 		  <h2>{{project.name}}</h2>
     </div> 
   </div>
   <div class="row">
   
-  
-    <div class="col-md-6 imgWrap">
+    <div class="col-md-6 left">
 		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
-    </div>
-    
-    <div class="col-md-6 imgWrap">
-      <ul>
-        <li>{{project.date}}</li>
+    </div>  
+    <div class="col-md-6 right">
+      <ul class="dateCat">
         <li>{{project.category}}</li>
+        <li>{{project.date}}</li>
       </ul>
-      <hr />
+      <br />
       <ul>
         <li><strong>Tech</strong></li>
         <li>{{project.tech}}</li>
       </ul>   
     </div> 
   </div>
-  
-            
- 
-  <a href="#" class="btn btn-primary">Visit website</a>
+  <div class="row">
+	  <div class="span4">
+  		<a href="#" class="btn btn-primary">Visit website</a>
+    </div>
+  </div>
   
   
   <h3>Output</h3>
