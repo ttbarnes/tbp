@@ -206,10 +206,10 @@ div.tags {
 		&.holding {
 		  background:$colorGreenLight;
 		}
-		&.brandIdentity {
+		&.Brand {
 		  background:$colorYellowLight;
 		}
-		&.designs {
+		&.Designs {
 		  background:$colorGreyX;
 		}
 		
@@ -241,20 +241,24 @@ div.tags {
 		  background:$colorBlueDark2;
 		}
 		*/
-		&.ecommerce {
+		&.Ecommerce {
 		  background:$colorRedLight;
 		}
-		&.static {
+		&.Static {
 		  background:$colorOrangeLight;
 		}
-		&.holding {
+		&.jQuery {
+		  background:#666;
+		}
+		&.Holding {
 		  background:$colorGreenLight;
 		}
-		&.brandIdentity {
+		&.Brand {
 		  background:$colorYellowLight;
 		}
-		&.designs {
-		  background:$colorGreyX;
+		&.Designs {
+			/*background:$colorGreyX;*/
+		  background:#888;
 		}
 		
 	}
@@ -601,13 +605,21 @@ showcase individual page
 				padding:5px;
 			}
 		}
-		div.imgWrap {
-			/*width:100%;*/
-			text-align:center;
+		.left {
 			img {
 				width:100%;
 			  max-width:700px;
-				/*margin:0 auto;*/
+			}
+		}
+		.right {
+		  text-align:left;
+			ul {
+			  list-style-type:none;
+				&.dateCat {
+				  li {
+					  display:inline-block;
+					}
+				}
 			}
 		}
 		

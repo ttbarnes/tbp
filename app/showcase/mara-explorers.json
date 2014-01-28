@@ -1,7 +1,7 @@
 {
 		"id": "mara-explorers", 
 		"name": "Mara Explorers",
-		"category": "static",
+		"category": "Static",
 		"date": "Winter 2013",
 		"tech":[
 			{"html5css3":"HTML5, CSS3"},
