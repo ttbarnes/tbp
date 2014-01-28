@@ -594,10 +594,21 @@ showcase individual page
 		width:90%;
 		margin:0 auto;
 		max-width:1000px;
-
-	  h2 {
+		
+		.rowHeading {	
 		  background:#CCC;
-			padding:5px;
+			h2 {
+				padding:5px;
+			}
+		}
+		div.imgWrap {
+			/*width:100%;*/
+			text-align:center;
+			img {
+				width:100%;
+			  max-width:700px;
+				/*margin:0 auto;*/
+			}
 		}
 		
 	}

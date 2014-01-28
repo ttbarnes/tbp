@@ -19,9 +19,9 @@
     <div class="span4">
       <ul class="showcaseGalleryGrid">
         <li class="item repeat-item showcaseGalleryToggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:byCategory">
-          {{project.name}}
+          <!--{{project.name}}-->
           <a href="#/showcase/{{project.id}}">
-            <img ng-src="{{project.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{project.name}}"/>
+            <img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/>
           </a>
         </li>
       </ul>
