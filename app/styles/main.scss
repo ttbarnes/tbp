@@ -17,6 +17,7 @@ img {
 /********************
 vars, mixins
 *********************/
+$colorBlack:#333;
 $colorBlueLight:#B9D9E9;
 $colorBlueDark:#84A8b9;
 $colorBlueDark2:#7FA5B8;
@@ -52,6 +53,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family:Roboto Slab, Helvetica, Arial;
 }
 
+/*form elements*/
+input, button, select, textarea {
+  color:$colorBlack;
+}
+
 /********************
 buttons
 *********************/
@@ -63,11 +69,13 @@ buttons
 	padding:12px 20px;
 }
 
+
 /********************
 main container/s
 *********************/
 body {
 	background:#F3F3F3;
+	color:$colorBlack;
 	font-family:Roboto Slab, Helvetica, Arial;
 }
 
@@ -183,85 +191,51 @@ footer {
 /********************
 shared
 *********************/
-/*tags*/
-div.tags {
-  div {
-		width: auto;
-		float: none;
-		padding: 5px;
-		display: inline-block;			
-		margin: 3px;
-		font-size: 0.850em;
-		vertical-align: middle;
-		/*showcase categories*/
-		&.all {
-		  background:$colorBlueDark2;
-		}
-		&.ecommerce {
-		  background:$colorRedLight;
-		}
-		&.staticInfo {
-		  background:$colorOrangeLight;
-		}
-		&.holding {
-		  background:$colorGreenLight;
-		}
-		&.Brand {
-		  background:$colorYellowLight;
-		}
-		&.Designs {
-		  background:$colorGreyX;
-		}
-		
-		
-		
-		/*tech*/
-	  &.ecommerce {
-		  background:#888;
-		}
-		&.HTML5, &.CSS3 {
-		  background:#BADA55;
-		}
-		&.jQuery {
-		  background:#A9A9A9;
-		}
-		
-	}
-}
-div.tags {
-  button {
+/*tags shared*/
+div.tags div,
+div.tags button {
+  font-size:13px;
+	padding:7px 15px;
+	color:$colorBlack;
+	border:0 none;
+	margin:3px;
+	vertical-align:middle;
 	
-		padding:7px 15px;
-		border:0 none;
-		margin:3px;
-		vertical-align:middle;
-		
-   /*
-	  &.all {
-		  background:$colorBlueDark2;
-		}
-		*/
-		&.Ecommerce {
-		  background:$colorRedLight;
-		}
-		&.Static {
-		  background:$colorOrangeLight;
-		}
-		&.jQuery {
-		  background:#666;
-		}
-		&.Holding {
-		  background:$colorGreenLight;
-		}
-		&.Brand {
-		  background:$colorYellowLight;
-		}
-		&.Designs {
-			/*background:$colorGreyX;*/
-		  background:#888;
-		}
-		
+	
+	&.jQuery {
+		background:#A9A9A9;
 	}
+	
+	&.HTML5, &.CSS3 {
+	  background:#BFBFBF;
+	}
+	&.Ecommerce {
+		background:$colorBlueDark2;
+	}
+	&.Static {
+		background:$colorRedLight;
+	}
+	&.jQuery {
+		background:$colorOrangeLight;
+	}
+	&.Holding {
+		background:#666;
+	}
+	&.Wordpress,
+	&.Brand {
+		background:$colorGreenLight;
+	}
+	&.mockups {
+		background:$colorYellowLight;
+	}
+	
+}
+
+/*tech tags (intro only)*/
+div.tags div {
+	width:auto;
+	float:none;
+	display:inline-block;
 }
 
 /********************
@@ -359,13 +333,13 @@ intro/home
 div.introPage {
   footer {
 		background:#B9D9E9;
-		background:-moz-linear-gradient(top,  #b9d9e9 20%, #e1f5ff 90%);
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(20%,#b9d9e9), color-stop(90%,#e1f5ff));
-		background:-webkit-linear-gradient(top,  #b9d9e9 20%,#e1f5ff 90%);
-		background:-o-linear-gradient(top,  #b9d9e9 20%,#e1f5ff 90%);
-		background:-ms-linear-gradient(top,  #b9d9e9 20%,#e1f5ff 90%);
-		background:linear-gradient(to bottom,  #b9d9e9 20%,#e1f5ff 90%);
-		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d9e9', endColorstr='#e1f5ff',GradientType=0 );
+		background:-moz-linear-gradient(top,  #e1f5ff 20%, #b9d9e9 90%);
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(20%,#e1f5ff), color-stop(90%,#b9d9e9));
+		background:-webkit-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
+		background:-o-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
+		background:-ms-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
+		background:linear-gradient(to bottom,  #e1f5ff 20%,#b9d9e9 90%);
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5ff', endColorstr='#b9d9e9',GradientType=0 );
 		ul.navbar-nav > li a {
 			color:#8AB7CE;
 			&:hover {
