@@ -20,7 +20,7 @@ tbangApp.config(function ($routeProvider) {
 			templateUrl: 'views/showcase.html',
 			controller: 'showcaseGridCtrl'
 		})
-		.when('/showcase/:phoneId', {
+		.when('/showcase/:projectId', {
 			templateUrl: 'views/showcase-individual.html',
 			controller: 'indShowcasePieceCtrl'
 		})
@@ -31,14 +31,6 @@ tbangApp.config(function ($routeProvider) {
 		.when('/contact', {
 			templateUrl: 'views/contact.html',
 			controller: 'contactCtrl'
-		})
-		.when('/testTableThing', {
-			templateUrl:'views/testTable.html',
-			controller: 'testTableCtrl'
-		})
-		.when('/testTableThing2', {
-			templateUrl:'views/testTable2.html',
-			controller: 'testTableCtrl2'
 		});
 	//.otherwise({
 	//	redirectTo: '/'

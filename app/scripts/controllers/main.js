@@ -70,8 +70,8 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
   function($scope, $routeParams, $http) {
 		$scope.pageClass = 'showcaseIndPage';
 		
-    $http.get('showcase/' + $routeParams.phoneId + '.json').success(function(data) {
-      $scope.phone = data;
+    $http.get('showcase/' + $routeParams.projectId+ '.json').success(function(data) {
+      $scope.project = data;
     });
 		
   }]);

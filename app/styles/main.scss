@@ -587,6 +587,24 @@ showcase home page
 
 
 /********************
+showcase individual page
+*********************/
+.showcaseIndPage {
+  #containerMiddle {
+		width:90%;
+		margin:0 auto;
+		max-width:1000px;
+
+	  h2 {
+		  background:#CCC;
+			padding:5px;
+		}
+		
+	}
+}
+
+
+/********************
 contact page
 *********************/
 .contactPage {

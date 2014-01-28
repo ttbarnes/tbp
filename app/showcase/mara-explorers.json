@@ -1,0 +1,12 @@
+{
+		"id": "mara-explorers", 
+		"name": "Mara Explorers",
+		"category": "static",
+		"date": "Winter 2013",
+		"tech":[
+			{"html5css3":"HTML5, CSS3"},
+			{"jQuery":"jQuery"}
+		],
+		"output":"Wordpress using bla bla",
+		"thoughts":"I particularly enjoyed building X feature and ABC. We utilised etc..... "
+}

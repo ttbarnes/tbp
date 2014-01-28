@@ -1,19 +1,32 @@
 <ng-include src="'views/navbar.html'"></ng-include>
 
-<div id="containerMiddle">  
-  <h1>Showcase individual</h1>
-  <!--<img ng-src="{{phone.images[0]}}" class="phone">-->
+<div id="containerMiddle">
+  <h2>{{project.name}}</h2>
   
-  <h1>{{phone.name}}</h1>
+  <ul>
+    <li>{{project.category}}</li>
+    <li>{{project.date}}</li>
+  </ul>
+  <hr />
+  <ul>
+    <li><strong>Tech</strong></li>
+    <li>{{project.tech}}</li>
+  </ul>
+  <a href="#" class="btn btn-primary">Visit website</a>
   
-  <p>{{phone.description}}</p>
   
+  <h3>Output</h3>
+  <p>{{project.output}}</p>
+  <p>{{project.thoughts}}</p>
+
+  <!--
   <ul class="phone-thumbs">
     <li ng-repeat="img in phone.images">
       <img ng-src="{{img}}">
     </li>
   </ul>
-  
+  -->
+  <!--
   <ul class="specs">
     <li>
       <span>Availability and Networks</span>
@@ -26,44 +39,44 @@
       <span>Battery</span>
       <dl>
         <dt>Type</dt>
-        <dd>{{phone.battery.type}}</dd>
+        <dd>{{project.battery.type}}</dd>
         <dt>Talk Time</dt>
-        <dd>{{phone.battery.talkTime}}</dd>
+        <dd>{{project.battery.talkTime}}</dd>
         <dt>Standby time (max)</dt>
-        <dd>{{phone.battery.standbyTime}}</dd>
+        <dd>{{project.battery.standbyTime}}</dd>
       </dl>
     </li>
     <li>
       <span>Storage and Memory</span>
       <dl>
         <dt>RAM</dt>
-        <dd>{{phone.storage.ram}}</dd>
+        <dd>{{project.storage.ram}}</dd>
         <dt>Internal Storage</dt>
-        <dd>{{phone.storage.flash}}</dd>
+        <dd>{{project.storage.flash}}</dd>
       </dl>
     </li>
     <li>
       <span>Connectivity</span>
       <dl>
         <dt>Network Support</dt>
-        <dd>{{phone.connectivity.cell}}</dd>
+        <dd>{{project.connectivity.cell}}</dd>
         <dt>WiFi</dt>
-        <dd>{{phone.connectivity.wifi}}</dd>
+        <dd>{{project.connectivity.wifi}}</dd>
         <dt>Bluetooth</dt>
-        <dd>{{phone.connectivity.bluetooth}}</dd>
+        <dd>{{project.connectivity.bluetooth}}</dd>
         <dt>Infrared</dt>
-        <dd>{{phone.connectivity.infrared}}</dd>
+        <dd>{{project.connectivity.infrared}}</dd>
         <dt>GPS</dt>
-        <dd>{{phone.connectivity.gps}}</dd>
+        <dd>{{project.connectivity.gps}}</dd>
       </dl>
     </li>
     <li>
       <span>Android</span>
       <dl>
         <dt>OS Version</dt>
-        <dd>{{phone.android.os}}</dd>
+        <dd>{{project.android.os}}</dd>
         <dt>UI</dt>
-        <dd>{{phone.android.ui}}</dd>
+        <dd>{{project.android.ui}}</dd>
       </dl>
     </li>
     <li>
@@ -72,49 +85,50 @@
         <dt>Dimensions</dt>
         <dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
         <dt>Weight</dt>
-        <dd>{{phone.sizeAndWeight.weight}}</dd>
+        <dd>{{project.sizeAndWeight.weight}}</dd>
       </dl>
     </li>
     <li>
       <span>Display</span>
       <dl>
         <dt>Screen size</dt>
-        <dd>{{phone.display.screenSize}}</dd>
+        <dd>{{project.display.screenSize}}</dd>
         <dt>Screen resolution</dt>
-        <dd>{{phone.display.screenResolution}}</dd>
+        <dd>{{project.display.screenResolution}}</dd>
         <dt>Touch screen</dt>
-        <dd>{{phone.display.touchScreen}}</dd>
+        <dd>{{project.display.touchScreen}}</dd>
       </dl>
     </li>
     <li>
       <span>Hardware</span>
       <dl>
         <dt>CPU</dt>
-        <dd>{{phone.hardware.cpu}}</dd>
+        <dd>{{project.hardware.cpu}}</dd>
         <dt>USB</dt>
-        <dd>{{phone.hardware.usb}}</dd>
+        <dd>{{project.hardware.usb}}</dd>
         <dt>Audio / headphone jack</dt>
-        <dd>{{phone.hardware.audioJack}}</dd>
+        <dd>{{project.hardware.audioJack}}</dd>
         <dt>FM Radio</dt>
-        <dd>{{phone.hardware.fmRadio}}</dd>
+        <dd>{{project.hardware.fmRadio}}</dd>
         <dt>Accelerometer</dt>
-        <dd>{{phone.hardware.accelerometer}}</dd>
+        <dd>{{project.hardware.accelerometer}}</dd>
       </dl>
     </li>
     <li>
       <span>Camera</span>
       <dl>
         <dt>Primary</dt>
-        <dd>{{phone.camera.primary}}</dd>
+        <dd>{{project.camera.primary}}</dd>
         <dt>Features</dt>
-        <dd>{{phone.camera.features.join(', ')}}</dd>
+        <dd>{{project.camera.features.join(', ')}}</dd>
       </dl>
     </li>
     <li>
       <span>Additional Features</span>
-      <dd>{{phone.additionalFeatures}}</dd>
+      <dd>{{project.additionalFeatures}}</dd>
     </li>
   </ul>  
 </div>
+-->
 
 <ng-include src="'views/footer.html'"></ng-include>
