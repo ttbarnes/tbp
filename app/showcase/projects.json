@@ -4,21 +4,45 @@
         "name": "Mara Explorers",
 				"category": "Static",
 				"date": "Winter 2013",
-				"tech":[
-					{"html5css3":"HTML5, CSS3"},
-					{"jQuery":"jQuery"}
+				"tech": [
+					{"tag": "HTML5, CSS3"},
+					{"tag": "jQuery"},
+					{"tag": "Wordpress"}
 				],
 				"output":"Wordpress using bla bla",
 				"thoughts":"I particularly enjoyed building X feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "list-icon-manipulator", 
+        "name": "List Icon Manipulator",
+				"category": "jQuery plugins",
+				"date": "2013",
+				"tech": [
+					{"tag": "jQuery plugin"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "active-hover-states", 
+        "name": "Active Hover States",
+				"category": "jQuery plugins",
+				"date": "2013",
+				"tech": [
+					{"tag": "jQuery plugin"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
     },
 		{
         "id": "project-X", 
         "name": "Project X",
 				"category": "Ecommerce",
 				"date": "Summer 2013",
-				"tech":[
-					{"html5css3":"HTML5, CSS3"},
-					{"jQuery":"jQuery"}
+				"tech": [
+					{"title": "HTML5, CSS3"},
+					{"title": "jQuery"},
+					{"title": "Wordpress"}
 				],
 				"output":"Using bla bla",
 				"thoughts":"feature and ABC. We utilised etc..... "
@@ -40,28 +64,6 @@
         "name": "Project Z",
 				"category": "Brand identity",
 				"date": "Spring 2013",
-				"output":"Using bla bla",
-				"thoughts":"feature and ABC. We utilised etc..... "
-    },
-		{
-        "id": "list-icon-manipulator", 
-        "name": "List Icon Manipulator",
-				"category": "jQuery plugins",
-				"date": "2013",
-				"tech":[
-					{"jQuery":"jQuery"}
-				],
-				"output":"Using bla bla",
-				"thoughts":"feature and ABC. We utilised etc..... "
-    },
-		{
-        "id": "active-hover-states", 
-        "name": "Active Hover States",
-				"category": "jQuery plugins",
-				"date": "2013",
-				"tech":[
-					{"jQuery":"jQuery"}
-				],
 				"output":"Using bla bla",
 				"thoughts":"feature and ABC. We utilised etc..... "
     }
