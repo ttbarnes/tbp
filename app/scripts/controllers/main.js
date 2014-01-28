@@ -84,61 +84,21 @@ tbpControllers.controller('testTableCtrl', function($scope, $q) {
 	
 tbpControllers.controller('testTableCtrl2', ['$scope', '$http', '$q',
 	
-	function($scope) {
+	function($scope, $http) {
 		
-		
-	  $scope.setSelectedCategory = function (value) {
+		$http.get('showcase/phones2table.json').success(function(data) {
+        $scope.entries = data;
+      });
+			
+		//custom filter
+		$scope.setSelectedCategory = function (value) {
 			$scope.selectedCategory = value;
     };
-		
-		var data = [
-			{ category: 'ecommerce'},
-			{ category: 'static', snippet: 'bla bla bla'},
-			{ category: 'ecommerce'},
-			{ category: 'jquery'},
-			{ category: 'ecommerce'},
-			{ category: 'static'},
-			{ category: 'static'},
-			{ category: 'vanilla css'}
-		];
-	
-	  $scope.entries = data;
-			
-				
-						
-		/*
-    $q.when({ data: [
-        { category: 'ecommerce'},
-        { category: 'static', snippet: 'bla bla bla'},
-        { category: 'ecommerce'},
-        { category: 'jquery'},
-        { category: 'ecommerce'},
-        { category: 'static'},
-        { category: 'static'},
-        { category: 'vanilla css'},
-				
-      ]})
-    .then(function(res){
-        $scope.entries = res.data;
-      });
-			*/
-			
-		/*
-		$http.get('showcase/phones2table.json').success(function(res) {
-      //$scope.entries = data;
-        $scope.entries = res.data;
-      });
-		*/
-
     $scope.categories = ['ecommerce','static','jquery'];
-
     $scope.byCategory = function(entry){
-			//return entry.category === $scope.selectedCategory || $scope.selectedCategory === undefined;
 			return entry.category === $scope.selectedCategory;
     };
-		
 		$scope.selectedCategory = 'static';
-		
 		
 	}]);
 
