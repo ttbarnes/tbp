@@ -36,8 +36,19 @@ typography
   font-weight: 400;
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
+
+::-moz-selection {
+  background:$colorBlueDark2;
+	color:#FAFAFA;
+	text-shadow:none;
+}
+::selection {
+  background:$colorBlueDark2;
+	color:#FAFAFA;
+	text-shadow:none;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	/*font-family:Century Gothic, Helvetica, Arial, sans-serif;*/
 	font-family:Roboto Slab, Helvetica, Arial;
 }
 
