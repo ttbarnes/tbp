@@ -102,6 +102,7 @@ tbpControllers.controller('testTableCtrl2', ['$scope', '$http', '$q',
 		
 	}]);
 
+
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 
   function($scope, $http) {
