@@ -1,81 +1,30 @@
 <ng-include src="'views/navbar.html'"></ng-include>
-<style type="text/css">
-.repeat-item:hover {
-	opacity:1;
-}
-/*new!*/
-.toggle{
-	opacity:0.85;
-  -webkit-transition:ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-}
-.toggle:hover {
-	opacity:100;
-}
-.toggle.ng-enter,
-.repeat-item.ng-leave.ng-leave-active {
-/*	display:none;*/
-  opacity:0;
-}
-.toggle.ng-enter-active {
-  opacity: 0.90;
-}
- 
-.toggle.ng-leave {
-	display:none;
-  opacity: 0;
-}
-</style>
+
 <div id="containerMiddle">
   <div class="row">  
-	    <div class="span4">
-      <!--
-      <div class="tags" ng-model="orderPop">
-        <div class="all" ng-click="myFilter = null;app.toggle=!app.toggle" value="0">All</div>
-        <div class="ecommerce" ng-click="myFilter = {type: 1};app.toggle=!app.toggle" value="1">Ecommerce</div>
-        <div class="staticInfo" ng-click="myFilter = {type: 2};app.toggle=!app.toggle" value="2">Static, 'informative'</div>
-        <div class="holding" ng-click="myFilter = {type:3};app.toggle=!app.toggle" value="3">Holding, landing pages</div>
-        <div class="brandIdentity" ng-click="myFilter = {type: 4};app.toggle=!app.toggle" value="4">Brand identity</div>
-        <div class="designs">Designs, mockups</div>
-      </div>
-		</div> 
-    -->
-    <div class="btn-group tags">
-      <button 
-        type="button" 
-        ng-repeat="category in categories"
-        ng-model="selected[title]" 
-        btn-checkbox 
-        class="{{category}}"
-        ng-class="{active: category == selectedCategory}"
-        ng-click="setSelectedCategory(category);app.toggle=!app.toggle;">{{category}}</button>
-     </div>
-      
+    <div class="span4">
+      <div class="btn-group tags">
+        <button 
+          type="button" 
+          ng-repeat="category in categories"
+          ng-model="selected[title]" 
+          btn-checkbox 
+          class="{{category}}"
+          ng-class="{active: category == selectedCategory}"
+          ng-click="setSelectedCategory(category);app.showcaseGalleryToggle=!app.showcaseGalleryToggle;">{{category}}</button>
+      </div>      
+    </div>
   </div>  
   <div class="row">
     <div class="span4">
-    <!--
-      <ul ng-controller="showcaseGridCtrl" class="showcaseGalleryGrid">
-        <li class="item repeat-item toggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:myFilter | orderBy:something">
-          <a href="#/showcase/{{project.id}}">
-            <img ng-src="{{project.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{project.name}}"/>
-          </a>
-        </li>
-      </ul>
-      -->
       <ul class="showcaseGalleryGrid">
-        <li class="item repeat-item toggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:byCategory">
+        <li class="item repeat-item showcaseGalleryToggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:byCategory">
           {{project.name}}
           <a href="#/showcase/{{project.id}}">
             <img ng-src="{{project.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{project.name}}"/>
           </a>
         </li>
-        
       </ul>
-      
-      
-      
-      
 	  </div>
   </div>
 </div>
