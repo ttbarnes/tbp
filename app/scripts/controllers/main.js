@@ -84,37 +84,42 @@ tbpControllers.controller('testTableCtrl', function($scope, $q) {
 	
 tbpControllers.controller('testTableCtrl2', ['$scope', '$http', '$q',
 	
-	function($scope, $http) {
+	
 		
-		$http.get('showcase/phones2table.json').success(function(data) {
-        $scope.entries = data;
-      });
-			
-		//custom filter
-		$scope.setSelectedCategory = function (value) {
-			$scope.selectedCategory = value;
-    };
-    $scope.categories = ['ecommerce','static','jquery'];
-    $scope.byCategory = function(entry){
-			return entry.category === $scope.selectedCategory;
-    };
-		$scope.selectedCategory = 'static';
-		
-	}]);
+	]);
 
 
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
-
+/*
   function($scope, $http) {
 		$scope.pageClass = 'showcaseHomePage';
 		//$scope.myFilter = 2;
-						
+				
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
 		$scope.orderPop = '3';
+		*/
+	function($scope, $http) {
 		
-  }]);
+		$scope.pageClass = 'showcaseHomePage';
+	
+		$http.get('showcase/phones2table.json').success(function(data) {
+			$scope.projects = data;
+		});
+		
+		//custom filter
+		$scope.setSelectedCategory = function (value) {
+			$scope.selectedCategory = value;
+		};
+		$scope.categories = ['ecommerce','static','jquery'];
+		$scope.byCategory = function(project){
+			return project.category === $scope.selectedCategory;
+		};
+		$scope.selectedCategory = 'static';
+		
+		
+	}]);
 
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {

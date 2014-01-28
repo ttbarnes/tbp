@@ -29,7 +29,7 @@
 <div id="containerMiddle">
   <div class="row">  
 	    <div class="span4">
-      <!--<div class="tags showcaseGalleryNav" ng-model="orderPop">-->
+      <!--
       <div class="tags" ng-model="orderPop">
         <div class="all" ng-click="myFilter = null;app.toggle=!app.toggle" value="0">All</div>
         <div class="ecommerce" ng-click="myFilter = {type: 1};app.toggle=!app.toggle" value="1">Ecommerce</div>
@@ -38,10 +38,23 @@
         <div class="brandIdentity" ng-click="myFilter = {type: 4};app.toggle=!app.toggle" value="4">Brand identity</div>
         <div class="designs">Designs, mockups</div>
       </div>
-		</div>  
+		</div> 
+    -->
+    <div class="btn-group tags">
+      <button 
+        type="button" 
+        ng-repeat="category in categories"
+        ng-model="selected[title]" 
+        btn-checkbox 
+        class="{{category}}"
+        ng-class="{active: category == selectedCategory}"
+        ng-click="setSelectedCategory(category);app.toggle=!app.toggle;">{{category}}</button>
+     </div>
+      
   </div>  
   <div class="row">
     <div class="span4">
+    <!--
       <ul ng-controller="showcaseGridCtrl" class="showcaseGalleryGrid">
         <li class="item repeat-item toggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:myFilter | orderBy:something">
           <a href="#/showcase/{{project.id}}">
@@ -49,6 +62,20 @@
           </a>
         </li>
       </ul>
+      -->
+      <ul class="showcaseGalleryGrid">
+        <li class="item repeat-item toggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:byCategory">
+          {{project.name}}
+          <a href="#/showcase/{{project.id}}">
+            <img ng-src="{{project.imageUrl || 'images/showcase/noImg.jpg'}}" alt="{{project.name}}"/>
+          </a>
+        </li>
+        
+      </ul>
+      
+      
+      
+      
 	  </div>
   </div>
 </div>
