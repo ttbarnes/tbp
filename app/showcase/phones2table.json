@@ -1,21 +1,17 @@
 [
     {
-        "age": 0, 
-				"type":1,
-        "id": "motorola-xoom-with-wi-fi", 
-        "name": "Motorola XOOM\u2122 with Wi-Fi", 
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
-				"category": "ecommerce",
-				"children": [
-					{"title": "Child Title 1"},
-					{"title": "Child Title 2"}
-				],
+        "id": "mara-explorers", 
+        "name": "Mara Explorers",
+				"category": "static",
+				"date": "Winter 2013",
 				"tech":[
 					{"html5css3":"HTML5, CSS3"},
 					{"jQuery":"jQuery"}
-				]
-				
-    }, 
+				],
+				"output":"Wordpress using bla bla",
+				"thoughts":"I particularly enjoyed building X feature and ABC. We utilised etc..... "
+    },
+		
     {
         "age": 1, 
 				"type":1,
