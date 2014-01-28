@@ -38,7 +38,7 @@ typography
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	/*font-family:Century Gothic, Helvetica, Arial, sans-serif;*/
-	font-family:Roboto Slab, Times New Roman;
+	font-family:Roboto Slab, Helvetica, Arial;
 }
 
 /********************
@@ -57,7 +57,7 @@ main container/s
 *********************/
 body {
 	background:#F3F3F3;
-	font-family:Roboto Slab, Times New Roman;
+	font-family:Roboto Slab, Helvetica, Arial;
 }
 
 /*main wrapper/container - fade in/out*/
@@ -215,6 +215,37 @@ div.tags {
 		  background:#A9A9A9;
 		}
 		*/
+	}
+}
+div.tags {
+  button {
+	
+		padding:7px 15px;
+		border:0 none;
+		margin:3px;
+		vertical-align:middle;
+		
+   /*
+	  &.all {
+		  background:$colorBlueDark2;
+		}
+		*/
+		&.ecommerce {
+		  background:$colorRedLight;
+		}
+		&.static {
+		  background:$colorOrangeLight;
+		}
+		&.holding {
+		  background:$colorGreenLight;
+		}
+		&.brandIdentity {
+		  background:$colorYellowLight;
+		}
+		&.designs {
+		  background:$colorGreyX;
+		}
+		
 	}
 }
 
