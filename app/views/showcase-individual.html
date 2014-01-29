@@ -3,38 +3,44 @@
 <div id="containerMiddle">
   
   
-  <div class="row rowHeading">
-    <div class="span4">
+  <div class="row topHeading">
+    <div class="col-md-6">
 		  <h2>{{project.name}}</h2>
-    </div> 
+    </div>
+    <div class="col-md-6">
+      <div class="tags">
+        <div class="{{project.category}}">{{project.category}}</div>
+      </div>
+      <div class="date">{{project.date}}</div>
+    </div>
+
   </div>
-  <div class="row">
+  <div class="row mainContent">
   
     <div class="col-md-6 left">
 		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
-    </div>  
-    <div class="col-md-6 right">
-      <ul class="dateCat">
-        <li>{{project.category}}</li>
-        <li>{{project.date}}</li>
-      </ul>
-      <br />
-      <ul>
-        <li><strong>Tech</strong></li>
-        <li>{{project.tech}}</li>
-      </ul>   
-    </div> 
-  </div>
-  <div class="row">
-	  <div class="span4">
-  		<a href="#" class="btn btn-primary">Visit website</a>
+       <div class="row">
+        <div class="tags">
+          <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 story">
+      <h3>Output</h3>
+      <p>{{project.output}}</p>
+      <p ng-bind-html="project.thoughts">{{project.thoughts}}</p>
+    </div>
+    <div class="row">
+      <div clsss="col-md-12 bottomAction">
+        <a href="#" class="btn btn-primary">Visit website</a>
+      </div>
     </div>
   </div>
   
+
+
+
   
-  <h3>Output</h3>
-  <p>{{project.output}}</p>
-  <p>{{project.thoughts}}</p>
 
   <!--
   <ul class="phone-thumbs">
