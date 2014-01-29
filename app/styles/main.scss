@@ -74,7 +74,6 @@ buttons
 	padding:12px 20px;
 }
 
-
 /********************
 main container/s
 *********************/
@@ -250,93 +249,6 @@ div.tags div {
 	width:auto;
 	float:none;
 	display:inline-block;
-}
-
-/********************
-intro/home
-*********************/
-/*testAnimation*/
-@-webkit-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:25px; }
-}
-@-moz-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:0; }
-}
-@-o-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:0; }
-}
-@keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-left:25px; }
-}
-
-/*introAnimation2*/
-@-webkit-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
-  100% {opacity: 1;margin-left:0;}
-}
-@-moz-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
-  100% {opacity: 1;margin-left:0;}
-}
-@-o-keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
-  100% {opacity: 1;margin-left:0;}
-}
-@keyframes introAnimation2 {
-  0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
-  100% {opacity: 1;margin-left:0;}
-}
-
-/*introAnimation3*/
-@-webkit-keyframes introAnimation3 {
-  0% {opacity: 0;}
-  30% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-moz-keyframes introAnimation3 {
-  0% {opacity: 0;}
-  30% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-o-keyframes introAnimation3 {
-  0% {opacity: 0;}
-  30% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes introAnimation3 {
-  0% {opacity: 0;}
-  30% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-/*introAnimation4*/
-@-webkit-keyframes introAnimation4 {
-  0% {opacity: 0;}
-  80% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-moz-keyframes introAnimation4 {
-  0% {opacity: 0;}
-  80% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-o-keyframes introAnimation4 {
-  0% {opacity: 0;}
-  80% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@keyframes introAnimation4 {
-  0% {opacity: 0;}
-  80% {opacity: 0;}
-  100% {opacity: 1;}
 }
 
 /*intro*/
@@ -623,15 +535,6 @@ showcase individual page
 			width:auto;
 			padding:0;
 		}
-		/*
-		.right {
-			width:40%;
-		  text-align:left;
-			padding-left:0;
-			padding-right:0;
-		}
-		*/
-		
 	}
 }
 
@@ -679,6 +582,10 @@ contact page
 	  padding-top:150px !important;
 	}
 }
+
+/*animations*/
+@import "animations.scss";
+
 
 /********************
 responsive
