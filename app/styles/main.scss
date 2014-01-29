@@ -538,6 +538,92 @@ showcase individual page
 	}
 }
 
+/********************
+about page
+*********************/
+.aboutPage {
+	#containerMiddle {
+	  
+
+		/*skillset chart*/
+		.skillset {
+			width:100%;
+			clear:both;
+			position:relative;
+			> div {
+				text-align:left;
+			}
+			.left {
+				position:absolute;
+				left:0;
+				top:0;
+				width:100%;
+				height:100%;
+				> div {
+					clear:both;
+					padding:1em 0;
+					border-bottom:solid 1px red;
+				}
+			}
+			.main {
+				float:right;
+				width:80%;
+				> div {
+					text-align:center;
+					&.bar {
+						/*padding:1em 0 8em 0;*/
+						height:148px;
+						position:relative;
+						vertical-align:bottom;
+						.inner {
+							bottom:0;
+							width:85%;
+							margin:0 auto;
+							color:#FFF;
+							background:#333;
+
+							&.expert {
+								padding:1em 0 8em 0;
+								opacity:1;
+							}
+
+							&.intermediate {
+								padding:1em 0 4em 0;
+								opacity:0.5;
+
+							}
+							&.basicLearning {
+								padding:1em 0;
+								opacity:0.2;
+							}
+
+						}
+					}
+				}
+				.bottom {
+					clear:both;
+					width:100%;
+					display:table-row;
+					> div {
+						padding:0;
+					}
+				}
+
+			}
+			.main, 
+			.bottom {
+				> div {
+					width:23%;
+					display:table-cell;
+				}
+			}
+		}
+
+
+
+	}
+}
+
 
 /********************
 contact page
