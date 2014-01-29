@@ -4,9 +4,9 @@ var tbangApp = angular.module('tbpApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-	'ngAnimate',
-	'angular-inview',
-	'tbangControllers'
+  'ngAnimate',
+  'angular-inview',
+  'tbangControllers'
 ]);
   
 	
