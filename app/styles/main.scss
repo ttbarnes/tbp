@@ -260,13 +260,13 @@ div.tags div {
 div.introPage {
   footer {
 		background:#B9D9E9;
-		background:-moz-linear-gradient(top,  #e1f5ff 20%, #b9d9e9 90%);
+		/*background:-moz-linear-gradient(top,  #e1f5ff 20%, #b9d9e9 90%);
 		background:-webkit-gradient(linear, left top, left bottom, color-stop(20%,#e1f5ff), color-stop(90%,#b9d9e9));
 		background:-webkit-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
 		background:-o-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
 		background:-ms-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
 		background:linear-gradient(to bottom,  #e1f5ff 20%,#b9d9e9 90%);
-		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5ff', endColorstr='#b9d9e9',GradientType=0 );
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5ff', endColorstr='#b9d9e9',GradientType=0 );*/
 		ul.navbar-nav > li a {
 			color:#8AB7CE;
 			&:hover {
@@ -528,6 +528,7 @@ showcase individual page
 			width:75.5555555555%;
 		  max-width:700px;
 		  margin-right:30px;
+		  margin-bottom:10px;
 		}
 		.mainContent .tags {
 			clear:none;
@@ -537,6 +538,7 @@ showcase individual page
 				display:block;
 				clear:both;
 				float:right;
+				margin-top:0;
 				margin-right:0;
 				max-width:120px;
 			}
@@ -545,6 +547,7 @@ showcase individual page
 			float:none;
 			clear:both;
 			width:auto;
+			display:inline-block;
 		}
 	}
 }
