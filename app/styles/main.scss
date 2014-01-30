@@ -131,9 +131,12 @@ body {
 }
 
 /*navbar*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:0 none;
+	box-shadow:none;
+}
 .navbar-default {
 	background:$colorBlueLight;
-	border:0 none;
 	
 	/*logo*/
 	h1 {
