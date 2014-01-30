@@ -582,11 +582,10 @@ about page
 				  padding-left:0;
 				  min-width:100px;
 				  div {
-				  	background:#EEE;
-				  	border:solid 1px #CCC;
 					  margin:-11.5px 0 71px 0;
 					  font-size:12px;
 					  padding:5px;
+					  color:#BBB;
 					  &.emptyLabel {
 						  visibility:hidden;
 						}
@@ -595,6 +594,12 @@ about page
 				&.bar {
 				  background:#CCC;
 				  color:#111;
+
+					-webkit-transition:height 2s ease-out;
+					-moz-transition:height 2s ease-out;
+					-o-transition:height 2s ease-out;
+					transition:height 2s ease-out;
+
 				  .skill,
 				  .rating {
 						-ms-word-break:break-all;
@@ -616,6 +621,39 @@ about page
 					  margin-top:5px;
 					  font-size: 16px;
 					}
+
+					&.html {
+						height:95%;
+						-webkit-animation: skillsetBarHtml 1s;
+						animation: skillsetBarHtml 1s;
+					}
+					&.css {
+						height:95%;
+						-webkit-animation: skillsetBarCss 1s;
+						animation: skillsetBarCss 1s;
+					}
+					&.jQuery {
+						height:80%;
+						-webkit-animation: skillsetBarJquery 1s;
+						animation: skillsetBarJquery 1s;
+					}
+					&.javascript {
+						height:60%;
+						-webkit-animation: skillsetBarJavascript 1s;
+						animation: skillsetBarJavascript 1s;
+					}
+					&.angular {
+						height:30%;
+						-webkit-animation: skillsetBarAngular 1s;
+						animation: skillsetBarAngular 1s;
+					}
+					&.mobile {
+						height:80%;
+						-webkit-animation: skillsetBarMobile 1s;
+						animation: skillsetBarMobile 1s;
+					}
+
+
 				}
 			}
 		}
@@ -840,6 +878,13 @@ responsive
 			&.bar {
 		    margin-bottom:2px;
 		    height:auto !important;
+				-webkit-transition:none !important;
+				-moz-transition:none !important;
+				-o-transition:none !important;
+				transition:none !important;
+				-webkit-animation:none !important;
+				animation:none !important;
+
 		    .skill {
 		    	margin:0;
 		    }

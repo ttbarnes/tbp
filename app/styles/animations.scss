@@ -84,3 +84,31 @@ intro/home
   80% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+@keyframes skillsetBarHtml {
+  0% {height:0;opacity:0;}
+  100% {height:95%;opacity:1;}
+}
+@keyframes skillsetBarCss {
+  0% {height:0;opacity:0;}
+  100% {height:95%;opacity:1;}
+}
+@keyframes skillsetBarJquery {
+  0% {height:0;opacity:0;}
+  100% {height:80%;opacity:1;}
+}
+@keyframes skillsetBarJavascript {
+  0% {height:0;opacity:0;}
+  100% {height:60%;opacity:1;}
+}
+@keyframes skillsetBarAngular {
+  0% {height:0;opacity:0;}
+  100% {height:30%;opacity:1;} 
+}
+@keyframes skillsetBarMobile {
+  0% {height:0;opacity:0;}
+  100% {height:80%;opacity:1;}
+}
+
+
+
