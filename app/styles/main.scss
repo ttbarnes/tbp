@@ -213,6 +213,7 @@ div.tags button {
 	border:0 none;
 	margin:3px;
 	vertical-align:middle;
+	text-align:center;
 	
 	
 	&.jQuery {
@@ -521,19 +522,29 @@ showcase individual page
 				color:#999;
 			}
 		}
-		.left {
-			padding-left:0;
-			width:60%;
-			max-width:700px;
-			img {
-				width:100%;
-			  max-width:700px;
+		img {
+			float:left;
+			display:block;
+			width:75.5555555555%;
+		  max-width:700px;
+		  margin-right:30px;
+		}
+		.mainContent .tags {
+			clear:none;
+			float:right;
+			width:20%;
+			> div {
+				display:block;
+				clear:both;
+				float:right;
+				margin-right:0;
+				max-width:120px;
 			}
 		}
 		.story {
 			float:none;
+			clear:both;
 			width:auto;
-			padding:0;
 		}
 	}
 }
@@ -708,7 +719,6 @@ responsive
 			width:50%;
 		}
 	}
-
 }	
 
 @media (min-width: 992px) {
@@ -760,10 +770,8 @@ responsive
 	/*showcase individual page*/
 	.showcaseIndPage {
 		#containerMiddle {
-			.col-md-6 {
-				float:none;
-				width:100%;
-			}
+
+
 			.topHeading {
 				padding-bottom:10px;
 				h2 {
@@ -780,6 +788,26 @@ responsive
 					margin:11px 5px;
 				}
 			}
+
+			.col-md-6,
+			.col-md-12 img {
+				float:none;
+				clear:both;
+				width:100%;
+			}
+			.col-md-12 {
+				div.tags {
+					clear:both;
+					width:100%;
+					> div {
+						display:inline-block;
+						float:none;
+						margin-right:10px;
+						margin-bottom:0;
+					}
+				}
+			}
+			/*
 			div.left,
 			div.right {
 				float:none;
@@ -789,7 +817,7 @@ responsive
 					width:100%;
 					max-width:100%;		
 				}
-			}
+			}*/
 			div.tags div {
 				margin:10px 10px 10px 0;
 			}

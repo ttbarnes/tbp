@@ -16,24 +16,17 @@
 
   </div>
   <div class="row mainContent">
-  
-    <div class="col-md-6 left">
+    <div class="col-md-12">
 		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
-       <div class="row">
-        <div class="tags">
-          <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
-        </div>
+      <div class="tags">
+        <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
       </div>
     </div>
     <div class="col-md-12 story">
       <h3>Output</h3>
       <p>{{project.output}}</p>
-      <p ng-bind-html="project.thoughts">{{project.thoughts}}</p>
-    </div>
-    <div class="row">
-      <div clsss="col-md-12 bottomAction">
-        <a href="#" class="btn btn-primary">Visit website</a>
-      </div>
+      <div ng-bind-html="project.thoughts">{{project.thoughts}}</div>
+      <a href="{{project.liveUrl}}" class="btn btn-primary">Visit website</a>
     </div>
   </div>
   
