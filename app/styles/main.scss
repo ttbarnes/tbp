@@ -544,77 +544,64 @@ about page
 .aboutPage {
 	#containerMiddle {
 	  
-
-		/*skillset chart*/
 		.skillset {
-			width:100%;
-			clear:both;
-			position:relative;
-			> div {
-				text-align:left;
-			}
-			.left {
-				position:absolute;
-				left:0;
-				top:0;
-				width:100%;
-				height:100%;
-				> div {
-					clear:both;
-					padding:1em 0;
-					border-bottom:solid 1px red;
-				}
-			}
-			.main {
-				float:right;
-				width:80%;
-				> div {
-					text-align:center;
-					&.bar {
-						/*padding:1em 0 8em 0;*/
-						height:148px;
-						position:relative;
-						vertical-align:bottom;
-						.inner {
-							bottom:0;
-							width:85%;
-							margin:0 auto;
-							color:#FFF;
-							background:#333;
-
-							&.expert {
-								padding:1em 0 8em 0;
-								opacity:1;
-							}
-
-							&.intermediate {
-								padding:1em 0 4em 0;
-								opacity:0.5;
-
-							}
-							&.basicLearning {
-								padding:1em 0;
-								opacity:0.2;
-							}
-
+		  clear: both;
+		  padding: 0;
+		  /*background: url("../images/bg-skillset.png") right top repeat-x;*/
+		  height: 425px;
+		  text-align:center;
+		  margin:0 15px;
+		  width:auto;
+		  li {
+		    display: inline-block;
+		    height: 425px;
+		    margin: 0 0.5% 0 0;
+		    padding:0 0.5%;
+		    width: 13.333333333%;
+			  position: relative;
+			  text-align: center;
+			  vertical-align: bottom;
+			  
+			  &.axis {
+			  	display:inline-block;
+				  width:10%;
+				  padding-left:0;
+				  min-width:100px;
+				  div {
+				  	background:#EEE;
+				  	border:solid 1px #CCC;
+					  margin:-11.5px 0 71px 0;
+					  font-size:12px;
+					  padding:5px;
+					  &.emptyLabel {
+						  visibility:hidden;
 						}
 					}
 				}
-				.bottom {
-					clear:both;
-					width:100%;
-					display:table-row;
-					> div {
-						padding:0;
+				&.bar {
+				  background:#CCC;
+				  color:#111;
+				  .skill,
+				  .rating {
+						-ms-word-break:break-all;
+						 word-break:break-all;
+						 word-break:break-word;
+						-webkit-hyphens:auto;
+						-moz-hyphens:auto;
+						hyphens:auto;
+				  }
+					.skill {
+					  margin-top:10px;
+					  overflow: hidden;
+					  width: 100%;
+					  font-size:16px;
 					}
-				}
-
-			}
-			.main, 
-			.bottom {
-				> div {
-					width:23%;
-					display:table-cell;
+				  .rating {
+					  width: 100%;
+					  opacity:0.2;
+					  margin-top:5px;
+					  font-size: 16px;
+					}
 				}
 			}
 		}
@@ -809,6 +796,26 @@ responsive
 		}
 	}
 
+	/*about page*/	
+  .aboutPage #containerMiddle {
+		.skillset li {
+	  	display: block;
+		  height: 125px;
+		  width:100%;
+
+		  &.axis {
+		    display:none;
+		  }
+			&.bar {
+		    margin-bottom:2px;
+		    height:auto !important;
+		    .skill {
+		    	margin:0;
+		    }
+			}
+	  }
+	}
+
 	/*contact page*/
 	.contactPage  {
 	  .row .span4 a.contactAddress {
@@ -892,6 +899,11 @@ responsive
 		max-width:100%;
 	}
 }
+
+
+
+
+
 
 
 
