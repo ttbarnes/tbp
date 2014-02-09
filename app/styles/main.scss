@@ -74,6 +74,24 @@ buttons
 	padding:12px 20px;
 }
 
+.btn-primary,
+.btn-lg {
+	background:$colorBlueLight;
+	color:$colorBlueDark2;
+	border:0 none;
+	font-weight:bold;
+	letter-spacing:-1px;
+
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		background:$colorBlueDark2;
+		color:#FFF;
+	}
+
+}
+
 /********************
 main container/s
 *********************/
