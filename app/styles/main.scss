@@ -18,6 +18,7 @@ img {
 vars, mixins
 *********************/
 $colorBlack:#333;
+$colorWhite:#F3F3F3;
 $colorBlueLight:#B9D9E9;
 $colorBlueDark:#84A8b9;
 $colorBlueDark2:#7FA5B8;
@@ -96,7 +97,7 @@ buttons
 main container/s
 *********************/
 body {
-	background:#F3F3F3;
+	background:$colorWhite;
 	color:$colorBlack;
 	font-family:Roboto Slab, Helvetica, Arial;
 }
@@ -185,7 +186,7 @@ body {
 
 /*main/middle container*/
 #containerMiddle {
-	background:#F3F3F3;
+	background:$colorWhite;
 	min-height:100%;
 
 	.row {
@@ -281,7 +282,6 @@ div.tags div {
 
 div.introPage {
   footer {
-		background:#B9D9E9;
 		/*background:-moz-linear-gradient(top,  #e1f5ff 20%, #b9d9e9 90%);
 		background:-webkit-gradient(linear, left top, left bottom, color-stop(20%,#e1f5ff), color-stop(90%,#b9d9e9));
 		background:-webkit-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
@@ -364,23 +364,27 @@ div.introPage {
 .recentReleases {
   text-align:center;
 	margin:0;
-	background:$colorBlueLight;
-	
-	
 	max-height:452px;
 	overflow:hidden;
 	
 	.span4 {
-		padding:0 15px;
 		
 		 h3 {
 			 text-align:left;
-			 color:#93B5C5;
+			 color:#A7C3D0;
 			 font-weight:normal;
-			 margin:40px 15px;
+			 padding:40px 30px;
+			 margin:0;
+			 background:$colorBlueLight;
+			 background:-moz-linear-gradient(top, $colorBlueLight 0%, #F3F3F3 100%);
+			 background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$colorBlueLight), color-stop(100%,#F3F3F3));
+			 background:-webkit-linear-gradient(top,  $colorBlueLight 0%,#F3F3F3 100%);
+			 background:-o-linear-gradient(top, $colorBlueLight 0%,#F3F3F3 100%);
+			 background:-ms-linear-gradient(top, $colorBlueLight 0%,#F3F3F3 100%);
+			 background:linear-gradient(to bottom, $colorBlueLight 0%,#F3F3F3 100%);
+			 filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorBlueLight', endColorstr='#F3F3F3',GradientType=0 );
 		 }
 		 ul.projects {
-		   /*width:1000%;*/
 			 overflow:hidden;
 		 }
 		.col-md-4 {
@@ -433,12 +437,12 @@ div.introPage {
 	}
 }	
 .row-btn-lg {
-  background:$colorBlueLight;
+  /*background:$colorBlueLight;*/
 	text-align:center;
 	.btn {
 		margin-top:1em;
 	  margin-bottom:40px;
-		background:#F3F3F3;
+		background:$colorWhite;
 		color:#8CB9CF;
 		border:0 none;
 		
@@ -752,8 +756,14 @@ responsive
 	}
 	.jumbotron {
 		height:auto;
-		min-height:80%;
+		min-height:86%;
 		margin-bottom:0;
+	}
+}
+
+@media (max-width: 1040px) {
+	.jumbotron {
+		min-height:81%;
 	}
 }
 
@@ -774,10 +784,13 @@ responsive
 	/*intro page*/
 	.jumbotron {
 		height:auto;
-		min-height:50%;
+		min-height:47%;
 		max-height:60%;
 		img {
 			top:-32%;
+		}
+		h1 {
+			margin-top:0;
 		}
 	}
 	.recentReleases  {
