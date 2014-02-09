@@ -7,7 +7,7 @@ $(document).ready(function(e) {
   });
   $('ul.egTop2').listIconManipulator({
     content: {
-      iconContent: '<img src="img/icon-warning.png" alt="Warning"/> ',
+      iconContent: '<img src="demo_assets/listIconManipulator/images/icon-warning.png" alt="Warning"/> ',
       tooltip:false
     }
   });
@@ -87,23 +87,23 @@ $(document).ready(function(e) {
 		var i = $(this);
 		i.find('ul:eq(0)').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-tick.png" alt="Check" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-tick.png" alt="Check" />'
 			}
 		});
 		i.find('ul:eq(1)').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-info.png" alt="Info" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-info.png" alt="Info" />'
 			}
 		});
 		i.find('ul:eq(2)').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-star.png" alt="Featured" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-star.png" alt="Featured" />'
 			}
 		});
 		
 		i.find('ul:eq(3)').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-arrow.png" alt="Check" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-arrow.png" alt="Check" />'
 			}
 		});
   });
@@ -137,7 +137,7 @@ $(document).ready(function(e) {
 		var i = $(this);
 		i.find('ul.featured').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-star.png" alt="Featured" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-star.png" alt="Featured" />'
 			}
 		});
 		i.find('ul.textReplace').listIconManipulator({
@@ -148,7 +148,7 @@ $(document).ready(function(e) {
 		});
 		i.find('ul.cool').listIconManipulator({
 			content: {
-				iconContent: '<img src="img/icon-cool.png" alt="Cool" />'
+				iconContent: '<img src="demo_assets/listIconManipulator/images/icon-cool.png" alt="Cool" />'
 			}
 		});
 		i.find('ul.toolTipMe').listIconManipulator({

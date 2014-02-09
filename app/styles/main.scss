@@ -391,9 +391,6 @@ div.introPage {
 			}
 			.cont {
 				padding:1em;
-				img {
-					width:100%;
-				}
 				a.title {
 					display:inline-block;
 					padding:5px 0;
@@ -458,7 +455,7 @@ div.introPage {
 .rRel-inView .span4 .col-md-4 {
 	opacity:1;
 }
-.rRel-inView .span4 .col-md-4 img{
+.rRel-inView .span4 .col-md-4 .cont img{
   opacity:0.88;
 }
 .rRel-inView .span4 .col-md-4 {
