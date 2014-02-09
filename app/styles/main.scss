@@ -282,13 +282,6 @@ div.tags div {
 
 div.introPage {
   footer {
-		/*background:-moz-linear-gradient(top,  #e1f5ff 20%, #b9d9e9 90%);
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(20%,#e1f5ff), color-stop(90%,#b9d9e9));
-		background:-webkit-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
-		background:-o-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
-		background:-ms-linear-gradient(top,  #e1f5ff 20%,#b9d9e9 90%);
-		background:linear-gradient(to bottom,  #e1f5ff 20%,#b9d9e9 90%);
-		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5ff', endColorstr='#b9d9e9',GradientType=0 );*/
 		ul.navbar-nav > li a {
 			color:#8AB7CE;
 			&:hover {
@@ -393,10 +386,7 @@ div.introPage {
 			max-width:300px;
 			float:left;
 			opacity:0;
-			-webkit-animation: testingAnimation500 0.5s;
-			animation: testingAnimation500 0.5s;
-					
-			&:hover {		
+			&:hover img {
 				opacity:1;
 			}
 			.cont {
@@ -435,45 +425,47 @@ div.introPage {
 	.row:last-child {
 	  clear:both;
 	}
-}	
+}
 .row-btn-lg {
-  /*background:$colorBlueLight;*/
 	text-align:center;
-	.btn {
-		margin-top:1em;
-	  margin-bottom:40px;
-		background:$colorWhite;
-		color:#8CB9CF;
-		border:0 none;
-		
-		&:hover, 
-		&:focus, 
-		&:active, 
-		&.active {
-			background:#FFF;
-			color:#5F93AC;
-		}
+	margin-top:20px;
+	a.viewAll {
+		padding:20px;
+		color:$colorBlueDark2;
 	}
 }
+/*.btn {
+	margin-top:1em;
+  margin-bottom:40px;
+	background:$colorWhite;
+	color:#8CB9CF;
+	border:0 none;
+	
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		background:#FFF;
+		color:#5F93AC;
+	}
+}*/
 
 /*recent releases - inview or not, slide in/out*/
 .rRel-invisible .span4 .col-md-4 {
   opacity:0;
 }
+
 .rRel-inView .span4 .col-md-4 {
+	opacity:1;
+}
+.rRel-inView .span4 .col-md-4 img{
   opacity:0.88;
 }
 .rRel-inView .span4 .col-md-4 {
-  -webkit-animation:0.5s red-to-blue;
-  animation:0.5s red-to-blue;
-}
-@keyframes red-to-blue {
-  from { margin-left:-800px;opacity:0;}
-  to { margin-left:0;opacity:0.40;}
-}
-@-webkit-keyframes red-to-blue {
-  from { margin-left:-800px;opacity:0.40;}
-  to { margin-left:0;opacity:0.40;}
+  -webkit-animation: 0.3s fade-in;
+  -moz-animation: 0.3s fade-in;
+  -o-animation: 0.3s fade-in;
+  animation: 0.3s fade-in;
 }
 
 
@@ -838,6 +830,9 @@ responsive
 		float: none;
 		display: inline-block;
 		vertical-align:top;
+		.cont img {
+			opacity:1;
+		}
 	}
 	
 	/*showcase*/
