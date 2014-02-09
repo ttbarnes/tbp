@@ -1,0 +1,760 @@
+/********************************
+* Active Hover States 1.1.5
+	* Control and highlight parent or next/prev items
+	* http://github.com/ttbarnes/Active-Hover-States
+	*
+	* Author: Tony Barnes
+	* http://tonybarnes.me
+	* No license or copyright - do what you like
+	*
+	* Last updated: 18/10/2013
+  ********************************
+  demo styles
+**********************************/
+
+@bgBlue:#b6d5e6;
+@bgGreen1:#a7ccb5;
+@bgBrown:#cac5a8;
+@bgGrey:#D3D3D3;
+@bgGreen2:#b8c19d;
+
+@clrBlack1:#222;
+
+@clrBlueDark:#366681;
+@clrBlueLight:#96AEBC;
+
+@clrGreenDark:#266741;
+@clrGreenLight:#68a581;
+
+@clrBrownDark:#675826;
+@clrBrownLight:#aca47f;
+
+
+
+/************************************
+main - reset/typography
+*************************************/
+body {
+  text-align:center;
+	color:#919191;
+	background:@clrBlack1;
+}
+
+ul,
+ol {
+  list-style-type:none !important;
+	font-size:1em;
+	ul,
+	ol {
+	  font-size:1em;
+	}
+}
+
+.top-bar-section ul li.download {
+	display:none;
+}
+
+@media only screen {
+	.column, .columns {
+	  padding-top:4em;
+		padding-bottom:4em;
+	}
+}
+
+.top-bar {
+	line-height:45px;
+	height:45px;
+	.name {
+	  height:45px;
+		h1 {
+			line-height:45px;
+			font-size:1.250em;
+			a {
+				width:310px;
+				margin:0 auto;
+				padding:0 30px 0 15px;
+			}
+		}
+	}
+}
+
+/************************************
+shared page/element layout, padding
+*************************************/
+div.row .large-12 .content,
+.contain-to-grid .content,
+#sectionDownload .content large-1 {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+
+#sectionIntro	.topLimExampleWrapper,
+div.innerWrap {
+  clear:both;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	.listIconManipulator {
+	  text-align:center;
+	}
+}
+
+/************************************
+section specific
+*************************************/
+div#sectionIntro {
+	background:#CEA986;
+  color:@clrBlueDark;
+	
+	::-moz-selection {
+		background:@clrBlueDark;
+		color:#EAEAEA;
+		text-shadow:none;
+	}
+	::selection {
+		background:@clrBlueDark;
+		color:#EAEAEA;
+		text-shadow:none;
+	}
+	
+	h2,
+	a {
+	  color:@clrBlueDark;
+	}
+	p.headingSub {
+	  color:@clrBlueLight;
+	}
+	
+	.topLimExampleWrapper {
+		margin:0 auto;
+		.column, 
+		.columns {
+		  padding-top:1em;
+		  padding-bottom:1em;
+			margin:0 auto;
+			float:none;
+			ul li {
+				a {			
+				  color:#917356;
+				}
+				&.activePrev {
+				  opacity:0.20;
+				}
+			}
+		}
+		
+	}
+}
+
+#sectionFeatures {
+	background:@bgGreen1;
+  color:@clrGreenDark;
+	
+	::-moz-selection {
+		background:@clrGreenDark;
+		color:#EEE;
+		text-shadow:none;
+	}
+	::selection {
+		background:@clrGreenDark;
+		color:#EEE;
+		text-shadow:none;
+	}
+	
+	h2 {
+	  color:@clrGreenDark;  
+	  br {
+		  display:block;
+		}
+	}
+	
+	ul li {
+		color:@clrGreenLight;
+		a {			
+			color:@clrGreenLight;
+		}
+	}
+	
+}
+
+#sectionExamples {
+	
+  background:@bgGrey;
+	color:@clrBlack1;
+	
+	::-moz-selection {
+		background:@clrBlack1;
+		color:@bgGrey;
+		text-shadow:none;
+	}
+	::selection {
+		background:@clrBlack1;
+		color:@bgGrey;
+		text-shadow:none;
+	}
+	
+	.large-2 {
+		font-size:1em;
+	}
+	
+	.large-2 {
+	  padding-top:1em;
+	  padding-bottom:1em;
+		.panel {
+			padding:.5em .5em .7em .5em;
+			width:98%;
+			background:#CCC;
+			position:relative;
+			margin:0 auto;
+			
+			h5 {
+			  color:@clrBlack1;
+				text-align:center;
+				font-size:1.1em;
+				padding:0 0.5em;
+				text-decoration:underline; 
+			}
+			
+			ul {
+			  margin:0;
+				padding:0 0.5em 0.5em 0.5em;
+				
+				li {
+					padding:0 0.5em;
+				}
+				ul li {
+					padding:0;
+				}
+			}
+			#activeHoverStatesExample1 {
+			  li {
+				  a {
+					  border-bottom:solid 1px #666;
+					}
+					
+					&.odd a {
+					  background:#686868;
+						color:#444;
+						&.hovered a {
+							border-color:#333;
+						}
+					}
+					&.even {
+					  a {
+					  background:#9A9A9A;
+						color:@clrBlack1;
+					}
+				
+					&.hovered a {
+						border-color:#9A9A9A;
+					}
+					
+					}
+					&.active a {
+						opacity:0.20;
+					}
+				}
+			}
+			
+			#activeHoverStatesExample2 {
+			  li {
+				  a {
+					  border-bottom:solid 1px #E4E4E4;
+					}
+					
+					&.odd a {
+					  background:#EEE;
+						color:#333;
+					}
+					&.even a {
+					  background:#E8E8E8;
+						color:#9A9A9A;
+					}
+				
+					&.hovered a {
+					  background:#FAFAFA;
+						color:#333;
+						border-color:#CCC;
+					}
+					&.active a {	
+					  background:#EEE;
+						color:#333;
+						opacity:0.20;
+					
+					}
+				}
+			}
+			
+			#activeHoverStatesExample3 {
+			  li {
+				  a {
+					  background:@clrBlueDark;
+						color:#CCC;
+						border:0 none;
+					  border-bottom:dashed 2px #2B546A;
+						
+						&.hovered a {
+						  background:#477F9F;
+							color:#C9C9C9;
+						}
+					}
+					
+					
+					&.active a {
+						color:#999;
+					}
+					&.prevAll a {
+						opacity:0.70;
+					}
+				}
+			}
+			
+			#activeHoverStatesExample4 {
+			  li {
+				  a {
+						color:#E8E8E8;
+						border:0 none;
+						padding:2px 0 3px 0;
+					}
+					&.odd {
+						a {
+							background:#813636;
+						}
+						&.active {
+						  a {
+								background:#813636;
+							}
+						}
+					}
+					&.even {
+						a {
+							background:#AC774D;
+						}
+						
+						&.active {
+						  a {
+								background:#AC774D;
+							}
+						}
+						
+					}
+					&.active a {
+						opacity:0.50;
+					}
+					&.prevAll a {
+						opacity:0.50;
+					}
+					&.hovered a {
+					  text-decoration:underline;
+					}
+				}
+			}
+			
+			
+		}
+	}
+}
+
+#sectionDownload {
+  background:@bgBrown;
+  color:@clrBrownDark;
+	
+	::-moz-selection {
+		background:@clrBrownDark;
+		color:#E6E6E6;
+		text-shadow:none;
+	}
+	::selection {
+		background:@clrBrownDark;
+		color:#E6E6E6;
+		text-shadow:none;
+	}
+	
+	.row {
+	  margin-left:0;
+	  margin-right:0;
+	}	
+		
+	.large-1 {
+	  margin:0 auto;
+		text-align:left;
+		max-width:500px;
+	}
+	
+	h2,
+	a {
+		margin-bottom:0.2em;
+	  color:@clrBrownDark;
+	}
+	a.button {
+	  color:#B8B8B8;
+		&:hover,
+		&:hover, 
+		&:focus, 
+		&:hover, 
+		&:focus {
+		  color:#C1C1C1;
+		}
+	}
+	p.small {
+	  display:inline-block;
+	  color:#A49D74;
+		margin-bottom:3em;
+		font-size:0.850em;
+		a {
+		  color:#A49D74;
+			text-decoration:none;
+		}
+	}
+	div.row {
+	  p.small {
+		  padding-left:1em;
+		}
+	}
+	div.githubBtns {
+	  width:150px;
+		margin:0.5em auto 2em auto;
+		text-align:center;
+		position:relative;
+		clear:both;
+	}
+	div.rowShare {
+	  text-align: right !important;
+		padding-top: 10px;
+	}
+}
+
+
+#sectionInstallation,
+#sectionOptions {
+	div.row {
+		margin:0;
+		h5 {
+			color:#CCC;
+			text-align: left;
+		}
+		div.code {
+			background:#CCC;
+			color:#000;
+			text-align:justify;
+			overflow:auto;
+			padding: 0.5em;
+			margin: 0 0 3em 0;
+			
+			p {
+				margin:0;
+				padding:0;
+			}
+		}
+		div.codeJs {
+		  text-align:left;
+		  p {
+			  margin:0 0 0.6em 0;
+				&.last {
+				  margin:0;
+				}
+			}
+		}
+	}
+}
+
+#sectionInstallation {
+  background:@clrBlack1;
+	color:#C5C5C5;
+	
+	::-moz-selection {
+		background:@bgGrey;
+		color:@clrBlack1;
+		text-shadow:none;
+	}
+	::selection {
+		background:#C5C5C5;
+		color:#E8E8E8;
+		text-shadow:none;
+	}
+		
+	h2 {
+	  margin-bottom:0.8em;
+	  color:#C5C5C5;
+	}
+	p.small {
+	  color:#646464;
+	}
+}
+
+#sectionOptions {
+	background:#b8c19d;
+	color:#556033;
+	
+	::-moz-selection {
+		background:#556033;
+		color:#b8c19d;
+		text-shadow:none;
+	}
+	::selection {
+		background:#556033;
+		color:#b8c19d;
+		text-shadow:none;
+	}
+	
+	h2 {
+		color:#556033;
+	  margin-bottom:0.8em;
+	}
+}
+
+#sectionAuthor {
+
+	background:@bgBlue;
+	color:@clrBlueLight;
+	
+	::-moz-selection {
+		background:#556033;
+		color:#b8c19d;
+		text-shadow:none;
+	}
+	::selection {
+		background:@clrBlueDark;
+		color:#EEE;
+		text-shadow:none;
+	}
+	
+	h2 {
+		color:@clrBlueDark;
+	  margin-bottom:0.8em;
+	}
+	
+  .content {
+	  h6 {
+		  margin-bottom:0.5em;
+		}
+		
+	  p {
+		  margin-bottom:0.2em;
+			font-size:0.9em;
+			a {
+			  color:#8BA5B3;
+				font-size:0.9em;
+				&:hover {
+				  color:#366681;
+				}
+			}
+		}
+	}
+}
+
+
+/************************************
+responsive
+*************************************/
+@media only screen and (min-width: 58.75em) {
+	.top-bar {
+		line-height:85px;
+		height:85px;
+		.name {
+		  height:45px;
+		  h1 {
+				line-height:85px;
+				font-size:1.6em;
+				a {
+					padding:0 30px;
+				}
+			}
+		}
+	}
+
+	.top-bar-section ul li.download {
+		display:block;
+	}
+	ul,
+	ol {
+		list-style-type:none;
+		font-size:1.4em;
+		ul,
+		ol {
+			font-size:1em;
+		}
+	}
+
+	.column, 
+	.columns {
+		padding-top:6em;
+		padding-bottom:6em;
+	}
+	
+	div#sectionIntro .topLimExampleWrapper {
+		.column, 
+		.columns {
+			padding-top:2.5em;
+		}
+	}
+	
+	#sectionFeatures {
+	  h2 {
+		  br {
+			  display:none;
+			}
+		}
+	}
+	
+	#sectionExamples {
+		.large-2 .panel {
+		  font-size:0.750em;
+			
+			h5 {
+				font-size:1.6em;
+			}
+		}
+	}
+	#sectionInstallation,
+	#sectionOptions {
+	  .content {
+		  width:60%;
+			
+			h5 {
+			  font-size:1.125em;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 900px) {
+  
+	
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.listIconManipulator {
+	  text-align:center !important;
+	}
+	
+	.column, .columns {
+	  padding-top:3em;
+	  padding-bottom:3em;
+	}
+	div#sectionIntro {
+		.topLimExampleWrapper .columns {
+			padding-top:0;
+			padding-bottom:0;
+		}
+	}
+	#sectionExamples .large-2 .panel h5 {
+	  text-align:center;
+	}
+	div#sectionDownload {
+	  p.small {
+		  margin-bottom:2em;
+		}
+	  .row {
+		  text-align:center;			
+			p.small {
+				display:none;
+			}
+			a.button {
+			  margin-bottom:1em;
+			  min-width:250px;
+			}
+		}
+	}
+	#sectionInstallation .content,
+	#sectionOptions .content {
+	  h5 {
+	    font-size:1em;
+		}
+		.row {
+		  .code {
+			  font-size:0.9em;
+			}
+		}
+	}
+			
+}
+
+@media only screen and (max-width: 500px) {
+	.top-bar-section ul li > a {
+	  font-size:0.750em;
+		padding:8px 0 8px 15px;
+	}
+	.top-bar {
+		.name h1 {
+			font-size:1.2em;
+			a {
+				width:100%;
+				padding:0 15px;
+			}	
+		}
+		.toggle-topbar.menu-icon {
+		  margin-top:-18px;
+		}
+	}
+  h2 {
+	  font-size:1.8em;
+	}
+	#sectionExamples .large-2 .panel ul {
+	  text-align:left !important;
+		font-size:0.9em;
+		ul {
+		  font-size:1em;
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.top-bar  {
+		.name h1 {
+			a {
+				width:100%;
+				max-width:100%;
+			}
+		}
+			
+		.toggle-topbar.menu-icon {
+			margin-top: -21px;
+		}
+	}
+}
+
+/*smartphones - landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+
+	.top-bar-section ul li > a {
+	  font-size:0.550em;
+		padding:6px 0 6px 15px;
+	}
+
+  .row {
+	  font-size:0.9em;
+	}
+	#sectionInstallation .content,
+	#sectionOptions .content {
+		.row {
+			h5 {
+				font-size:0.7em;
+			}
+			.code {
+				font-size:0.7em;
+			}
+		}
+	}
+	#sectionExamples .large-2 .panel {
+	  font-size:0.8em;
+	}
+}
+
+
+/*ie9 below*/
+.lt-ie9 {
+	.top-bar .toggle-topbar.menu-icon {
+		display:none;
+	}
+  .column, .columns {
+		padding-top:3em;
+		padding-bottom:3em;
+	}
+}
