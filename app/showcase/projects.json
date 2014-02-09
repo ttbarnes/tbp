@@ -13,7 +13,7 @@
 				"thoughts":"I particularly enjoyed building X feature and ABC. We utilised etc..... "
     },
 		{
-        "id": "list-icon-manipulator", 
+        "id": "jquery/list-icon-manipulator", 
         "name": "List Icon Manipulator",
 				"category": "jQuery plugins",
 				"date": "2013",
@@ -24,7 +24,7 @@
 				"thoughts":"feature and ABC. We utilised etc..... "
     },
 		{
-        "id": "active-hover-states", 
+        "id": "jquery/active-hover-states", 
         "name": "Active Hover States",
 				"category": "jQuery plugins",
 				"date": "2013",
