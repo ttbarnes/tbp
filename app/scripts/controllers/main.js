@@ -4,6 +4,7 @@ var tbpControllers = angular.module('tbangControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
 
+	
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
 		
@@ -61,7 +62,10 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
     });
 		
   }]);
-	
+
+//tbpControllers.controller('demoLimCtrl', function($scope){
+	//$scope.pageClass = 'demoLimPage';
+//});
 
 tbpControllers.controller('aboutCtrl', function($scope){
 	$scope.pageClass = 'aboutPage';
