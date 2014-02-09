@@ -20,9 +20,11 @@ tbangApp.config(function ($routeProvider) {
 			templateUrl: 'views/showcase.html',
 			controller: 'showcaseGridCtrl'
 		})
+		.when('/showcase/jquery/active-hover-states', {
+			templateUrl: 'views/demos/ahs.html',
+		})
 		.when('/showcase/jquery/list-icon-manipulator', {
 			templateUrl: 'views/demos/lim.html',
-			//controller: 'demoLimCtrl'
 		})
 		.when('/showcase/:projectId', {
 			templateUrl: 'views/showcase-individual.html',
