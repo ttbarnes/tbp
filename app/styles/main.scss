@@ -581,21 +581,29 @@ about page
 *********************/
 .aboutPage {
 	#containerMiddle {
-	  
+		.row .col-md-12 {
+	  	h4 {
+	  		text-align:left;
+	  		margin-bottom:40px;
+	  	}
+	  }
+	  .skillsetWrapper {
+	  	text-align:center;
+	  }
 		.skillset {
 		  clear: both;
 		  padding: 0;
-		  /*background: url("../images/bg-skillset.png") right top repeat-x;*/
 		  height: 425px;
-		  text-align:center;
-		  margin:0 15px;
+		  /*margin:0 15px;*/
+		  margin:0 10%;
 		  width:auto;
+		  text-align:left;
 		  li {
 		    display: inline-block;
 		    height: 425px;
 		    margin: 0 0.5% 0 0;
 		    padding:0 0.5%;
-		    width: 13.333333333%;
+		    width:13%;
 			  position: relative;
 			  text-align: center;
 			  vertical-align: bottom;
@@ -604,7 +612,7 @@ about page
 			  	display:inline-block;
 				  width:10%;
 				  padding-left:0;
-				  min-width:100px;
+				  min-width:110px;
 				  div {
 					  margin:-11.5px 0 71px 0;
 					  font-size:12px;
@@ -909,27 +917,47 @@ responsive
 
 	/*about page*/	
   .aboutPage #containerMiddle {
-		.skillset li {
-	  	display: block;
-		  height: 125px;
-		  width:100%;
+  	.row .col-md-12 {
+  		h4 {
+  			margin-bottom:10px;
+  		}
+  	}
+		.skillset {
+			height:auto;
+			margin:0;
+			li {
+		  	display: block;
+			  height: 125px;
+			  width:100%;
 
-		  &.axis {
-		    display:none;
-		  }
-			&.bar {
-		    margin-bottom:2px;
-		    height:auto !important;
-				-webkit-transition:none !important;
-				-moz-transition:none !important;
-				-o-transition:none !important;
-				transition:none !important;
-				-webkit-animation:none !important;
-				animation:none !important;
-
-		    .skill {
-		    	margin:0;
-		    }
+			  &.axis {
+			    display:none;
+			  }
+				&.bar {
+			    margin-bottom:2px;
+			    height:auto !important;
+					-webkit-transition:none !important;
+					-moz-transition:none !important;
+					-o-transition:none !important;
+					transition:none !important;
+					-webkit-animation:none !important;
+					animation:none !important;
+					padding:10px 0;
+					.skill,
+					.rating {
+						width:auto;
+						display:inline-block;
+						margin-top:0;
+						vertical-align:middle;
+						padding:0 10px;
+					}
+			    .skill {
+			    	margin:0;
+			    }
+			    .rating {
+			    	opacity:0.5;
+			    }
+				}
 			}
 	  }
 	}
