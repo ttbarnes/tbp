@@ -35,14 +35,13 @@
 				"thoughts":"feature and ABC. We utilised etc..... "
     },
 		{
-        "id": "project-X", 
-        "name": "Project X",
+        "id": "the-store", 
+        "name": "The Store",
 				"category": "Ecommerce",
 				"date": "Summer 2013",
 				"tech": [
-					{"title": "HTML5, CSS3"},
-					{"title": "jQuery"},
-					{"title": "Wordpress"}
+					{"tag": "HTML, CSS3"},
+					{"tag": "jQuery"}
 				],
 				"output":"Using bla bla",
 				"thoughts":"feature and ABC. We utilised etc..... "

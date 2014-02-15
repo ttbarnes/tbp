@@ -258,7 +258,8 @@ div.tags button {
 	&.jQuery {
 		background:#A9A9A9;
 	}
-	
+	&.HTML, &.CSS3,
+	&.HTML4, &.CSS3,
 	&.HTML5, &.CSS3 {
 	  background:#BFBFBF;
 	}
