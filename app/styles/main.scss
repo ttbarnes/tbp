@@ -600,22 +600,20 @@ about page
 		}
 		.row {
 		  margin-bottom:30px;
-		  .col-md-12 {
 	  	h4 {
 	  		margin-bottom:15px;
 	  		text-align:left;
 	  	}
 	  	ul {
-	  		margin-left:15px;
+	  		margin-left:0;
 	  	}
-		}
+	  	.col-md-3 {
+	  		padding-left:0;
+	  	}
 	 }
 	  .row .skillsetWrapper {
 	  	text-align:center;
 	  	margin-bottom:0;
-	  	h4 {
-	  		text-decoration:underline;
-	  	}
 	  }
 		.row .col-md-12 .skillset {
 		  clear: both;
@@ -719,7 +717,7 @@ about page
 						animation: skillsetBarJavascript 1s;
 					}
 					&.angular {
-						height:30%;
+						height:40%;
 					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#BEBF7C), color-stop(100%,#CDCE8E));
 					  background:-webkit-linear-gradient(top,  #BEBF7C 0%,#CDCE8E 100%);
 			 			background:linear-gradient(to bottom, #BEBF7C 0%,#CDCE8E 100%);
