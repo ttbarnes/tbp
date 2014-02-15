@@ -897,6 +897,17 @@ responsive
 @media (max-width: 767px) {
 	.navbar-default {
 		margin-bottom:20px;
+		.navbar-collapse {
+			padding-left:15px;
+		}
+		.navbar-nav {
+			margin:10px -15px 0 -15px;
+			li a {
+				padding:7.5px 10px;
+				color:$colorBlueDark2;
+				text-align:right;
+			}
+		}
 	}
 	.jumbotron {
 	  height:50%;
