@@ -244,45 +244,56 @@ footer {
 shared
 *********************/
 /*tags shared*/
-div.tags div,
-div.tags button {
-  font-size:13px;
-	padding:7px 15px;
-	color:$colorBlack;
-	border:0 none;
-	margin:3px;
-	vertical-align:middle;
+div.tags {
 	text-align:center;
-	
-	
-	&.jQuery {
-		background:#A9A9A9;
+
+	div,
+	button {
+	  font-size:13px;
+		padding:7px 15px;
+		color:$colorBlack;
+		border:0 none;
+		margin:3px 3px 0 0;
+		vertical-align:middle;
+		text-align:center;
+		opacity:0.5;
+
+		&.jQuery {
+			background:#A9A9A9;
+		}
+		&.HTML, &.CSS3,
+		&.HTML4, &.CSS3,
+		&.HTML5, &.CSS3 {
+		  background:#BFBFBF;
+		}
+		&.Ecommerce {
+			background:$colorBlueDark2;
+		}
+		&.Static {
+			background:$colorRedLight;
+		}
+		&.jQuery {
+			background:$colorOrangeLight;
+		}
+		&.Holding {
+			background:#666;
+		}
+		&.Wordpress,
+		&.Brand {
+			background:$colorGreenLight;
+		}
+		&.mockups {
+			background:$colorYellowLight;
+		}
+		
 	}
-	&.HTML, &.CSS3,
-	&.HTML4, &.CSS3,
-	&.HTML5, &.CSS3 {
-	  background:#BFBFBF;
+
+	&:hover {
+		div,
+		button {
+			opacity:1;
+		}
 	}
-	&.Ecommerce {
-		background:$colorBlueDark2;
-	}
-	&.Static {
-		background:$colorRedLight;
-	}
-	&.jQuery {
-		background:$colorOrangeLight;
-	}
-	&.Holding {
-		background:#666;
-	}
-	&.Wordpress,
-	&.Brand {
-		background:$colorGreenLight;
-	}
-	&.mockups {
-		background:$colorYellowLight;
-	}
-	
 }
 
 /*tech tags (intro only)*/
@@ -403,8 +414,19 @@ div.introPage {
 			max-width:300px;
 			float:left;
 			opacity:0;
-			&:hover img {
-				opacity:1;
+			img {
+				opacity:0.88;
+			}
+			&:hover {
+				img {
+					opacity:1;
+				}
+				div.tags {
+					div,
+					button {
+						opacity:1;
+					}
+				}
 			}
 			.cont {
 				padding:1em;
@@ -473,7 +495,7 @@ div.introPage {
 	opacity:1;
 }
 .rRel-inView .span4 .col-md-4 .cont img{
-  opacity:0.88;
+  
 }
 .rRel-inView .span4 .col-md-4 {
   -webkit-animation: 0.3s fade-in;
@@ -489,8 +511,9 @@ showcase home page
 .showcaseHomePage {
   .tags {
 		padding:0 15px 15px 15px;
-		div {
+		button {
 			cursor:pointer;
+			opacity:1;
 		}
 	}
 	ul.showcaseGalleryGrid {

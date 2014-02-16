@@ -47,17 +47,121 @@
 				"thoughts":"feature and ABC. We utilised etc..... "
     },
 		{
-        "id": "project-Y", 
-        "name": "Project Y",
-				"category": "Ecommerce",
-				"date": "Summer 2013",
+        "id": "cathy-brown-website", 
+        "name": "Cathy Brown",
+				"category": "Static",
+				"date": "XXXX",
 				"tech":[
-					{"html5css3":"HTML5, CSS3"},
-					{"jQuery":"jQuery"}
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"}
 				],
 				"output":"Using bla bla",
 				"thoughts":"feature and ABC. We utilised etc..... "
     },
+		{
+        "id": "farrell", 
+        "name": "Farrell",
+				"category": "Ecommerce",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "gold-challenge", 
+        "name": "Gold Challenge",
+				"category": "Static",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"Joomla"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "life-financial-solutions", 
+        "name": "Life Financial Solutions",
+				"category": "Static",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"JavaScript, jQuery"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "peter-utton-website", 
+        "name": "Peter Utton",
+				"category": "Static",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "propax-malaysia", 
+        "name": "Propax Malaysia",
+				"category": "Static",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "robbie-williams", 
+        "name": "Robbie Williams",
+				"category": "Ecommerce",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "tolkien", 
+        "name": "Tolkien",
+				"category": "Ecommerce",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+		{
+        "id": "william-curley", 
+        "name": "William Curley",
+				"category": "Ecommerce",
+				"date": "XXXX",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				],
+				"output":"Using bla bla",
+				"thoughts":"feature and ABC. We utilised etc..... "
+    },
+
+
+
+
 		{
         "id": "project-Z", 
         "name": "Project Z",
