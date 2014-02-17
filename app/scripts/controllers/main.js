@@ -63,13 +63,22 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
 		
   }]);
 
-//tbpControllers.controller('demoLimCtrl', function($scope){
-	//$scope.pageClass = 'demoLimPage';
-//});
-
 tbpControllers.controller('aboutCtrl', function($scope){
-	$scope.pageClass = 'aboutPage';
+	/*
+	$scope.$on('$routeChangeSuccess', function() {
+    window.scrollTo(0, 0); //fail safe
+	});
+	*/
 	
+
+  //$scope.alerter = CommonCode;
+	//$scope.alerter.show('hello world! tb');
+	//$scope.tbthing500 = CommonCode;
+	//$scope.tbthing500.show();
+
+	$scope.pageClass = 'aboutPage';
+
+
 	$scope.tonySocial = {
 		github:'http://github.com/ttbarnes',
 		twitter:'http://twitter.com/ttbarnes',
