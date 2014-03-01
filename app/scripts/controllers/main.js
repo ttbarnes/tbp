@@ -7,7 +7,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 	
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
-    $http.get('showcase/projects.json').success(function(data) {
+    $http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
 		
@@ -27,10 +27,10 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 		
 		$scope.pageClass = 'showcaseHomePage';
 	
-		$http.get('showcase/projects.json').success(function(data) {
+		$http.get('showcase/all-projects.json').success(function(data) {
 			$scope.projects = data;
 		});
-		
+
 		//category filter
 		$scope.setSelectedCategory = function (value) {
 			$scope.selectedCategory = value;
