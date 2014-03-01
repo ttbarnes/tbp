@@ -1,8 +1,17 @@
 'use strict';
 
-var tbangApp = angular.module('tbpApp');
+var tbService = angular.module('tbService');
 
-tbangApp.factory('CommonCode', function ($scope, $window) {
+
+
+
+
+
+
+
+
+
+tbService.factory('CommonCode', function ($scope, $window) {
     var root = {};
     root.show = function(msg){
         $window.alert(msg);

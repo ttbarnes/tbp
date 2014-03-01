@@ -7,7 +7,6 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 	
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
-		
     $http.get('showcase/projects.json').success(function(data) {
       $scope.projects = data;
     });
@@ -63,7 +62,7 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
 		
   }]);
 
-tbpControllers.controller('aboutCtrl', function($scope){
+tbpControllers.controller('aboutCtrl', function($scope, CommonCode){
 	/*
 	$scope.$on('$routeChangeSuccess', function() {
     window.scrollTo(0, 0); //fail safe
@@ -71,8 +70,8 @@ tbpControllers.controller('aboutCtrl', function($scope){
 	*/
 	
 
-  //$scope.alerter = CommonCode;
-	//$scope.alerter.show('hello world! tb');
+  $scope.alerter = CommonCode;
+	$scope.alerter.show('hello world! tb');
 	//$scope.tbthing500 = CommonCode;
 	//$scope.tbthing500.show();
 
