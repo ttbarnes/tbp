@@ -7,6 +7,8 @@ var tbangApp = angular.module('tbpApp', [
   'ngAnimate',
   'angular-inview',
   'tbangControllers'
+  //'whereIsThePower'
+  //'tbService'
 ]);
   
 	
@@ -42,3 +44,4 @@ tbangApp.config(function ($routeProvider) {
 	//	redirectTo: '/'
 	//});
 });
+
