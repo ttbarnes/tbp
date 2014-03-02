@@ -27,7 +27,7 @@ $colorRedLight:#B88080;
 $colorOrangeLight:#B38d6F;
 
 $colorGreenDark:#1E613F; /*included*/
-$colorGreenLight:#399868; /*updated*/
+$colorGreenLight:#4D8D6D; /*updated*/
 $colorYellowLight:#B2B36F;
 $colorGreyX:#c5c5c5;
 
@@ -313,25 +313,12 @@ div.tags div {
 	display:inline-block;
 }
 
-/*intro*/
+/*intro, intro page, introPage*/
 .container {
   padding:0;
 }
 
-div.introPage {
-  footer {
-		ul.navbar-nav > li a {
-			color:#8AB7CE;
-			&:hover {
-				color:#5F93AE;
-			}
-		}
-	}
-}
-
-
-
-/*top intro message*/
+/*top/main intro*/
 .jumbotron {
 	position:relative;
 	height:100%;
@@ -408,15 +395,54 @@ div.introPage {
 			}
 		}
 	}
-	/*
-	.buttons {
-		opacity:100;
-		bottom:0;
-		-webkit-animation: introAnimation4 2s;
-		animation: introAnimation4 2s;
-	}
-	*/
 }
+
+div.introPage {
+
+  footer {
+		ul.navbar-nav > li a {
+			color:#8AB7CE;
+			&:hover {
+				color:#5F93AE;
+			}
+		}
+	}
+	/*sub intro - build/design sections*/
+	div.subIntro {
+		h3 {
+			margin:0;
+			padding:15px;
+		}
+		.col-md-12 {
+			padding-top:40px;
+			padding-bottom:70px;
+			p {
+				margin:0;
+			}
+		}
+	}
+	div.coding {
+		background:$colorGreenLight;
+		color:$colorGreenDark;
+		h3 {
+			background:$colorGreenDark;
+			color:$colorWhite;
+		}
+	}
+	div.design {
+		background:#953F3F;
+		color:#692E2E;
+		h3 {
+			background:#692E2E;
+			color:$colorWhite;
+	/*		background:$colorGreenDark;
+			color:$colorWhite;
+			*/
+		}
+	}
+}
+
+
 
 /*recent releases*/
 .recentReleases {
