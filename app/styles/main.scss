@@ -25,7 +25,9 @@ $colorBlueLight:#396A98; /*updated*/
 $colorBlueDark:#274969; /*updated*/
 $colorRedLight:#B88080;
 $colorOrangeLight:#B38d6F;
-$colorGreenLight:#6FB387;
+
+$colorGreenDark:#1E613F; /*included*/
+$colorGreenLight:#399868; /*updated*/
 $colorYellowLight:#B2B36F;
 $colorGreyX:#c5c5c5;
 
@@ -144,7 +146,7 @@ body {
 	padding-right:10px;
 }
 
-/*shared css transitions*/
+/*shared transitions*/
 .navbar-default h1 a.navbar-brand,
 .navbar-default .navbar-nav li a,
 .contactPage .row .span4 a.contactAddress {
@@ -152,6 +154,12 @@ body {
 	-moz-transition:color 0.150s ease-out;
 	-o-transition:color 0.150s ease-out;
 	transition:color 0.150s ease-out;
+}
+.jumbotron .inner .headshot {
+	-webkit-transition:opacity 0.150s ease-out;
+	-moz-transition:opacity 0.150s ease-out;
+	-o-transition:opacity 0.150s ease-out;
+	transition:opacity 0.150s ease-out;
 }
 
 /*navbar*/
@@ -330,7 +338,7 @@ div.introPage {
 	overflow:hidden;
 	border-radius:0 !important;
 	margin-bottom:0;
-	
+
 	img {			
 		position: absolute;
 		top: 0;
@@ -339,6 +347,28 @@ div.introPage {
 		max-width:none;
 		height: auto;
 		z-index: 1;
+	}
+
+	.inner {
+		position:relative;
+		max-width:470px;
+		z-index:1;
+		padding:15px;
+		background:$colorBlueDark;
+		border-right:solid 6px #0F2438;
+		border-bottom:solid 6px #091724;
+
+		.headshot {
+			position:relative;
+			z-index:3;
+			float:left;
+			margin:0 15px 15px 0;
+			max-width:100px;
+			opacity:0.7;
+			&:hover {
+				opacity:1;
+			}
+		}
 	}
 	
   h1,
@@ -355,10 +385,15 @@ div.introPage {
 		-webkit-animation: testAnimation 0.5s;
 		animation: testAnimation 0.5s;
 		color:#FFF;
-		margin-top:25px;
+		font-size:50px;
+		margin:0;
 	}
 	h2 {
 		color:#DBDBDB;
+		margin-top:15px;
+		margin-bottom:13px;
+		font-size:20px;
+
 		> {
 			span {
 				display:inline-block;
@@ -372,15 +407,15 @@ div.introPage {
 				}
 			}
 		}
-		
 	}
-	
+	/*
 	.buttons {
 		opacity:100;
 		bottom:0;
 		-webkit-animation: introAnimation4 2s;
 		animation: introAnimation4 2s;
 	}
+	*/
 }
 
 /*recent releases*/
@@ -791,6 +826,23 @@ about page
 contact page
 *********************/
 .contactPage {
+	background:$colorGreenLight;
+	color:$colorWhite;
+
+	header .navbar-default,
+	footer {
+		background:$colorGreenDark;
+		border-color:#134D30;
+
+		/*logo*/
+		h1 a.navbar-brand {
+			color:$colorWhite;
+			&:hover {
+				color:$colorWhite;
+			}
+		}
+	}
+
 	#containerMiddle {
 	  min-height:initial;
 	}
@@ -805,7 +857,8 @@ contact page
 			
 			a.contactAddress {
 				font-size:50px;
-				color:#D2D2D2;
+				color:$colorWhiteBright2;
+				padding-bottom:4px;
 				-ms-word-break:break-all;
 				 word-break:break-all;
 				 word-break:break-word;
@@ -814,7 +867,8 @@ contact page
 				hyphens:auto;
 				
 				&:hover {
-					color:#B6B6B6;
+					border-bottom:solid 3px #349062;
+					color:#96E6BE;
 				}
 				
 				&:hover, 
