@@ -79,14 +79,14 @@ buttons
 }
 .btn-lg, 
 .btn-group-lg > .btn {
-	padding:12px 20px;
+	padding:30px 20px;
 }
 
 .btn-primary,
 .btn-lg {
 	background:$colorBlueLight;
-	color:$colorBlueDark;
-	border:0 none;
+	color:$colorWhite;
+	border:solid 6px $colorBlueLight;
 	font-weight:bold;
 	letter-spacing:-1px;
 
@@ -95,7 +95,10 @@ buttons
 	&:active, 
 	&.active {
 		background:$colorBlueDark;
-		color:#FFF;
+		border-top-color:$colorBlueDark;
+		border-right-color:$colorBlueLight;
+		border-bottom-color:$colorBlueLight;
+		border-left-color:$colorBlueDark;
 	}
 
 }
@@ -221,9 +224,11 @@ header .navbar-default {
 
 /*footer*/
 footer {
+	background:$colorBlueDark;
 	color:#B8B8B8;
-	padding:150px 0 0 0;
-	border-top:solid 6px #E3E3E3;
+	padding:100px 0 0 0;
+	margin:140px 0 0 0;
+	border-top:solid 6px #1C3750;
 
   .navbar-default {
 		background:none;
@@ -359,8 +364,7 @@ div.tags div {
 	}
 	
   h1,
-	h2,
-	.buttons {
+	h2 {
 	 position:relative;
 	 z-index:2;
 	}
@@ -411,7 +415,7 @@ div.introPage {
 	div.subIntro {
 		h3 {
 			margin:0;
-			padding:15px;
+			padding:30px 15px;
 		}
 		.col-md-12 {
 			padding-top:40px;
@@ -420,26 +424,38 @@ div.introPage {
 				margin:0;
 			}
 		}
-	}
-	div.coding {
-		background:$colorGreenLight;
-		color:$colorGreenDark;
-		h3 {
-			background:$colorGreenDark;
-			color:$colorWhite;
+		&.coding {
+			background:$colorGreenLight;
+			color:$colorGreenDark;
+			h3 {
+				background:$colorGreenDark;
+				color:$colorWhite;
+			}
 		}
-	}
-	div.design {
-		background:#953F3F;
-		color:#692E2E;
-		h3 {
-			background:#692E2E;
-			color:$colorWhite;
-	/*		background:$colorGreenDark;
-			color:$colorWhite;
-			*/
+		&.design {
+			background:#953F3F;
+			color:#692E2E;
+			h3 {
+				background:#692E2E;
+				color:$colorWhite;
+			}
 		}
-	}
+		&.row-btn-lg {
+			text-align:center;
+			.col-md-12 {
+				padding:70px 15px 100px 15px;
+			}
+			a.btn {
+				width:40%;
+				&:first-child {
+					margin-right:30px;
+				}
+				&:last-child {
+					margin-left:30px;
+				}
+			}
+		}
+	}	
 }
 
 
@@ -453,26 +469,17 @@ div.introPage {
 	
 	.span4 {
 		
-		 h3 {
-			 text-align:left;
-			 color:#A7C3D0;
-			 font-weight:normal;
-			 padding:40px 30px;
-			 margin:0;
-			 /*
-			 background:$colorBlueLight;
-			 background:-moz-linear-gradient(top, $colorBlueLight 0%, #F3F3F3 100%);
-			 background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$colorBlueLight), color-stop(100%,#F3F3F3));
-			 background:-webkit-linear-gradient(top,  $colorBlueLight 0%,#F3F3F3 100%);
-			 background:-o-linear-gradient(top, $colorBlueLight 0%,#F3F3F3 100%);
-			 background:-ms-linear-gradient(top, $colorBlueLight 0%,#F3F3F3 100%);
-			 background:linear-gradient(to bottom, $colorBlueLight 0%,#F3F3F3 100%);
-			 filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='$colorBlueLight', endColorstr='#F3F3F3',GradientType=0 );
-			 */
-		 }
-		 ul.projects {
-			 overflow:hidden;
-		 }
+		h3 {
+			text-align:left;
+			color: #909090;
+			background: #E3E3E3;
+			font-weight:normal;
+			padding:30px 15px;
+			margin:0 0 30px 0;
+		}
+		ul.projects {
+			overflow:hidden;
+		}
 		.col-md-4 {
 			text-align:center;
 			width:24.4444444444%;
@@ -494,7 +501,7 @@ div.introPage {
 				}
 			}
 			.cont {
-				padding:1em;
+				padding:0 1em;
 				a.title {
 					display:inline-block;
 					padding:5px 0;
@@ -527,29 +534,6 @@ div.introPage {
 	  clear:both;
 	}
 }
-.row-btn-lg {
-	text-align:center;
-	margin-top:20px;
-	a.viewAll {
-		padding:20px;
-		color:$colorBlueDark;
-	}
-}
-/*.btn {
-	margin-top:1em;
-  margin-bottom:40px;
-	background:$colorWhite;
-	color:#8CB9CF;
-	border:0 none;
-	
-	&:hover, 
-	&:focus, 
-	&:active, 
-	&.active {
-		background:#FFF;
-		color:#5F93AC;
-	}
-}*/
 
 /*recent releases - inview or not, slide in/out*/
 .rRel-invisible .span4 .col-md-4 {
@@ -1230,8 +1214,7 @@ responsive
 			margin:0 -25%;
 		}
 		h1,
-		h2,
-		.buttons {
+		h2 {
 			text-align:center;
 			.btn {
 				width:auto;
