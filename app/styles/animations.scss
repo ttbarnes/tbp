@@ -1,3 +1,18 @@
+/*used on main container*/
+@keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-webkit-keyframes fade-in {
+  0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
 /********************
 intro/home
 *********************/
@@ -66,22 +81,26 @@ intro/home
 /*introAnimation4*/
 @-webkit-keyframes introAnimation4 {
   0% {opacity: 0;}
-  40% {opacity: 0.75;}
+  20% {opacity: 0.8;}
+  70% {opacity: 0.95;}
   100% {opacity: 1;}
 }
 @-moz-keyframes introAnimation4 {
   0% {opacity: 0;}
-  40% {opacity: 0.75;}
+  20% {opacity: 0.8;}
+  70% {opacity: 0.95;}
   100% {opacity: 1;}
 }
 @-o-keyframes introAnimation4 {
   0% {opacity: 0;}
-  40% {opacity: 0.75;}
+  20% {opacity: 0.8;}
+  70% {opacity: 0.95;}
   100% {opacity: 1;}
 }
 @keyframes introAnimation4 {
   0% {opacity: 0;}
-  40% {opacity: 0.75;}
+  20% {opacity: 0.8;}
+  70% {opacity: 0.95;}
   100% {opacity: 1;}
 }
 
