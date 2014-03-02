@@ -339,6 +339,10 @@ div.tags div {
 		max-width:none;
 		height: auto;
 		z-index: 1;
+		&.bg {
+			-webkit-animation: introAnimation4 4s;
+			animation: introAnimation4 4s;
+		}
 	}
 
 	.inner {
