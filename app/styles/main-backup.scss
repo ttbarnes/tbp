@@ -17,12 +17,11 @@ img {
 /********************
 vars, mixins
 *********************/
-$colorBlack:#666;
-$colorWhiteBright1:#F1F1F1;
-$colorWhiteBright2:#FCFCFC;
-$colorWhite:#E7E7E7; /*updated*/
-$colorBlueLight:#396A98; /*updated*/
-$colorBlueDark:#274969; /*updated*/
+$colorBlack:#333;
+$colorWhite:#F3F3F3;
+$colorBlueLight:#B9D9E9;
+$colorBlueDark:#84A8b9;
+$colorBlueDark2:#7FA5B8;
 $colorRedLight:#B88080;
 $colorOrangeLight:#B38d6F;
 $colorGreenLight:#6FB387;
@@ -41,13 +40,13 @@ typography
 }
 
 ::-moz-selection {
-  background:$colorBlueDark;
-	color:$colorWhite;
+  background:$colorBlueDark2;
+	color:#FAFAFA;
 	text-shadow:none;
 }
 ::selection {
-  background:$colorBlueDark;
-	color:$colorWhite;
+  background:$colorBlueDark2;
+	color:#FAFAFA;
 	text-shadow:none;
 }
 
@@ -83,7 +82,7 @@ buttons
 .btn-primary,
 .btn-lg {
 	background:$colorBlueLight;
-	color:$colorBlueDark;
+	color:$colorBlueDark2;
 	border:0 none;
 	font-weight:bold;
 	letter-spacing:-1px;
@@ -92,7 +91,7 @@ buttons
 	&:focus, 
 	&:active, 
 	&.active {
-		background:$colorBlueDark;
+		background:$colorBlueDark2;
 		color:#FFF;
 	}
 
@@ -102,14 +101,14 @@ buttons
 main container/s
 *********************/
 body {
-	background:$colorWhiteBright1;
+	background:$colorWhite;
 	color:$colorBlack;
 	font-family:Roboto Slab, Helvetica, Arial;
 }
 
 /*main wrapper/container - fade in/out*/
 .container {
-  /*position: relative;*/
+  position: relative;
 	width:100%;
 	opacity:1;
 }
@@ -161,17 +160,18 @@ body {
 }
 .navbar-default {
 	margin-bottom:50px;
-	background:$colorWhiteBright2;
-
+	background:$colorBlueLight;
+	
 	/*logo*/
 	h1 {
 	  margin:0;
 		a.navbar-brand {
+			color:$colorBlueDark2;
 			font-size:30px;
 			padding:20px 10px;
-			color:#B7B7B7;
+			
 			&:hover {
-				color:#B7B7B7;
+				color:$colorBlueDark2;
 			}
 		}
 	}
@@ -179,19 +179,19 @@ body {
 	.navbar-nav {
 	  li {
 			a {
+				color:#A8CADB;
 				padding:20px 10px;
 				&:hover {
+					color:$colorBlueDark2;
 				}
 			}	
 		}
 	}
 }
-header .navbar-default {
-	border-bottom:solid 3px #E3E3E3;
-}
 
 /*main/middle container*/
 #containerMiddle {
+	background:$colorWhite;
 	width:100%;
 	max-width:1000px;
 	min-height:100%;
@@ -214,9 +214,7 @@ header .navbar-default {
 /*footer*/
 footer {
 	color:#B8B8B8;
-	padding:150px 0 0 0;
-	border-top:solid 6px #E3E3E3;
-
+	padding:150px 15px 0 15px;
   .navbar-default {
 		background:none;
 	  text-align:center;
@@ -269,7 +267,7 @@ div.tags {
 		  background:#BFBFBF;
 		}
 		&.Ecommerce {
-			background:$colorBlueDark;
+			background:$colorBlueDark2;
 		}
 		&.Static {
 			background:$colorRedLight;
@@ -471,7 +469,7 @@ div.introPage {
 	margin-top:20px;
 	a.viewAll {
 		padding:20px;
-		color:$colorBlueDark;
+		color:$colorBlueDark2;
 	}
 }
 /*.btn {
@@ -513,7 +511,6 @@ div.introPage {
 showcase home page
 *********************/
 .showcaseHomePage {
-
   .tags {
 		padding:0 15px 15px 15px;
 		button {
@@ -622,23 +619,6 @@ demo - jquery plugin page (may use another CSS)
 about page
 *********************/
 .aboutPage {
-	background:$colorBlueLight;
-	color:$colorWhite;
-
-	header .navbar-default,
-	footer {
-		background:$colorBlueDark;
-		border-color:#1C3750;
-
-		/*logo*/
-		h1 a.navbar-brand {
-			color:$colorWhite;
-			&:hover {
-				color:$colorWhite;
-			}
-		}
-	}
-
 	#containerMiddle {
 		.aboutIntro {
 			margin-bottom:20px;
@@ -699,7 +679,7 @@ about page
 				&.bar {
 				  background:#CCC;
 				  color:#111;
-				  height:60%; /*temp during design/colour scheme*/
+
 					-webkit-transition:height 2s ease-out;
 					-moz-transition:height 2s ease-out;
 					-o-transition:height 2s ease-out;
@@ -726,7 +706,7 @@ about page
 					  margin-top:5px;
 					  font-size: 16px;
 					}
-/*
+
 					&.html {
 						height:95%;
 					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#CA8E8E), color-stop(100%,#E9B6B6));
@@ -754,7 +734,7 @@ about page
 					&.javascript {
 						height:60%;
 					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$colorYellowLight), color-stop(100%,#CDCE8E));
-					  background:-webkit-linear-gradient(top,  #000 0%,#CCC 100%);
+					  background:-webkit-linear-gradient(top,  $colorYellowLight 0%,#CDCE8E 100%);
 			 			background:linear-gradient(to bottom, $colorYellowLight 0%,#CDCE8E 100%);
 						-webkit-animation: skillsetBarJavascript 1s;
 						animation: skillsetBarJavascript 1s;
@@ -775,7 +755,7 @@ about page
 						-webkit-animation: skillsetBarMobile 1s;
 						animation: skillsetBarMobile 1s;
 					}
-*/
+
 
 				}
 			}
@@ -949,7 +929,7 @@ responsive
 			margin:10px -15px 0 -15px;
 			li a {
 				padding:7.5px 10px;
-				color:$colorBlueDark;
+				color:$colorBlueDark2;
 				text-align:right;
 			}
 		}
