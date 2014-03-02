@@ -1,18 +1,18 @@
 'use strict';
 
-var tbangApp = angular.module('tbpApp', [
+var tbp = angular.module('tbpApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
   'ngAnimate',
   'angular-inview',
-  'tbangControllers'
+  'tbpControllers'
   //'whereIsThePower'
   //'tbService'
 ]);
   
 	
-tbangApp.config(function ($routeProvider) {
+tbp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
 			templateUrl: 'views/intro.html',

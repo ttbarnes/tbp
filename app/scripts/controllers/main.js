@@ -1,6 +1,6 @@
 'use strict';
 
-var tbpControllers = angular.module('tbangControllers', []);
+var tbpControllers = angular.module('tbpControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
 
