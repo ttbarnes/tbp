@@ -135,6 +135,18 @@ body {
 }
 
 /*shared transitions*/
+.recentReleases .span4 .col-md-4 .cont a:hover .tags {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+}
+.recentReleases .span4 .col-md-4 .cont img {
+	-webkit-transition:opacity 0.5s ease-out;
+	-moz-transition:opacity 0.5s ease-out;
+	-o-transition:opacity 0.5s ease-out;
+	transition:opacity 0.5s ease-out;
+}
 .navbar-default h1 a.navbar-brand,
 .navbar-default .navbar-nav li a,
 .contactPage .row .span4 a.contactAddress {
@@ -296,7 +308,7 @@ div.tags {
 		margin:3px 3px 0 0;
 		vertical-align:middle;
 		text-align:center;
-		opacity:0.5;
+		/*opacity:0.5;*/
 
 		&.jQuery {
 			background:#A9A9A9;
@@ -324,15 +336,7 @@ div.tags {
 		}
 		&.mockups {
 			background:$colorYellowLight;
-		}
-		
-	}
-
-	&:hover {
-		div,
-		button {
-			opacity:1;
-		}
+		}	
 	}
 }
 
@@ -484,7 +488,7 @@ div.introPage {
   text-align:center;
 	margin:0;
 	max-height:452px;
-	overflow:hidden;
+	overflow:visible;
 	
 	.span4 {
 		h3 {
@@ -496,7 +500,7 @@ div.introPage {
 			margin:0 0 30px 0;
 		}
 		ul.projects {
-			overflow:hidden;
+			overflow:visible;
 			text-align:center;
 		}
 		.col-md-4 {
@@ -507,44 +511,25 @@ div.introPage {
 			display:inline-block;
 			vertical-align:top;
 			opacity:0;
+
 			img {
 				opacity:0.88;
 			}
-			&:hover {
-				img {
-					opacity:1;
-				}
-				div.tags {
-					div,
-					button {
-						opacity:1;
-					}
-				}
-			}
 			.cont {
 				padding:0 1em;
-				a.title {
-					display:inline-block;
-					padding:5px 0;
-				}
-				.tags .col-md-3 {
-					&::before {
-						content:'';
-						background:transparent;
-						border: solid 1px #000;
-						width: 10px;
-						height: 10px;
-						display: block;
-						float: left;
-						margin-top:3px;
-						margin-right:5px;
-						-webkit-border-radius:50%;
-						-moz-border-radius:50%;
-						border-radius:50%;
-						opacity:0.20;
+				a {
+					display:block;
+					position:relative;
+					.tags {
+						opacity:0;
+					}
+					&:hover {
+						img,
+						div.tags {
+							opacity:1;
+						}
 					}
 				}
-				
 			}
 		}
 		h4 {
@@ -1087,7 +1072,6 @@ responsive
 	.showcaseIndPage {
 		#containerMiddle {
 
-
 			.topHeading {
 				background:none;
 				h2 {
@@ -1135,17 +1119,6 @@ responsive
 					}
 				}
 			}
-			/*
-			div.left,
-			div.right {
-				float:none;
-				width:100%;
-				padding:0;
-				img {
-					width:100%;
-					max-width:100%;		
-				}
-			}*/
 			div.tags div {
 				margin:10px 10px 10px 0;
 			}
