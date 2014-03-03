@@ -2,11 +2,27 @@
 
 var tbpControllers = angular.module('tbpControllers', []);
 
-tbpControllers.controller('introCtrl', ['$scope', '$http',
+tbpControllers.controller('introCtrl', ['$scope', 'tonyDirective', '$http',
 
 	
-  function($scope,$http) {
+  function($scope,tonyDirective,$http) {
 		$scope.pageClass = 'introPage';
+
+		
+		$scope.photos = tonyDirective.someFunctionStuff();
+
+
+		//$scope.message = { text: 'nothing clicked yet' };
+		//console.log($scope.daysInMonth(12, 2012));
+/*
+		$scope.clickUnfocused = function() {
+			$scope.message.text = 'unfocused button clicked';
+		};
+		$scope.clickFocused = function() {
+			$scope.message.text = 'focus button clicked';
+		};
+*/
+
     $http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
