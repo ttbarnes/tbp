@@ -6,7 +6,8 @@ var tbp = angular.module('tbpApp', [
   'ngRoute',
   'ngAnimate',
   'angular-inview',
-  'tbpControllers'
+  'tbpControllers',
+  'tonyAppModule'
   //'whereIsThePower'
   //'tbService'
 ]);
