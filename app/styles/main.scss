@@ -19,22 +19,7 @@ img {
   max-width:100%;
 }
 
-/********************
-vars, mixins
-*********************/
-$colorBlack:#888;
-$colorWhiteBright1:#F1F1F1;
-$colorWhiteBright2:#FCFCFC;
-$colorWhite:#E7E7E7;
-$colorBlueLight:#396A98;
-$colorBlueDark:#274969;
-$colorRedLight:#B88080;
-$colorOrangeLight:#B38d6F;
-$colorGreenDark:#1E613F;
-$colorGreenLight:#4D8D6D;
-$colorYellowLight:#B2B36F;
-$colorGreyX:#c5c5c5;
-
+@import "vars-mixins.scss";
 
 /********************
 typography
@@ -45,15 +30,14 @@ typography
   font-weight: 400;
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
-
 ::-moz-selection {
-  background:$colorBlueDark;
-	color:$colorWhite;
+  background:#222;
+	color:$colorWhiteBright2;
 	text-shadow:none;
 }
 ::selection {
-  background:$colorBlueDark;
-	color:$colorWhite;
+  background:#222;
+	color:$colorWhiteBright2;
 	text-shadow:none;
 }
 
@@ -343,8 +327,8 @@ div.tags div {
 		height: auto;
 		z-index: 1;
 		&.bg {
-			-webkit-animation: introAnimation4 4s;
-			animation: introAnimation4 4s;
+			-webkit-animation: introBigBg 3s;
+			animation: introBigBg 3s;
 		}
 	}
 
@@ -356,12 +340,17 @@ div.tags div {
 		background:$colorBlueDark;
 		border-right:solid 6px #0F2438;
 		border-bottom:solid 6px #091724;
+		-webkit-animation: jumboInner 2s;
+		animation: jumboInner 2s;
+
 		.headshot {
 			position:relative;
 			z-index:3;
 			float:left;
 			margin:0 15px 15px 0;
 			max-width:100px;
+			-webkit-animation:jumboHeadshot 1.8s;
+			animation:jumboHeadshot 1.8s;
 		}
 	}
 	
@@ -375,8 +364,8 @@ div.tags div {
 	  text-align:left;
 	}
 	h1 {	
-		-webkit-animation: testAnimation 0.5s;
-		animation: testAnimation 0.5s;
+		-webkit-animation: testAnimation 0.3s;
+		animation: testAnimation 0.3s;
 		color:#FFF;
 		font-size:50px;
 		margin:0;
@@ -391,12 +380,14 @@ div.tags div {
 			span {
 				display:inline-block;
 				&.first {
-					-webkit-animation: introAnimation2 0.8s;
-					animation: introAnimation2 0.8s;
+    			color:#091724;
+					-webkit-animation: introAnimation2 1.1s;
+					animation: introAnimation2 1.1s;
 				}
 				&.last {
-					-webkit-animation: introAnimation3 3s;
-					animation: introAnimation3 3s;
+					color:#1B354D;
+					-webkit-animation: introAnimation3 2s;
+					animation: introAnimation3 2s;
 				}
 			}
 		}
@@ -611,6 +602,15 @@ about page
 .aboutPage {
 	background:$colorBlueLight;
 	color:$colorWhite;
+
+	::-moz-selection {
+	  background:$colorBlueDark;
+	}
+	::selection {
+	  background:$colorBlueDark;
+	}
+
+
 
 	header .navbar-default,
 	footer {

@@ -1,3 +1,5 @@
+@import "vars-mixins.scss";
+
 /*used on main container*/
 @keyframes fade-in {
   0% { opacity: 0; }
@@ -18,91 +20,129 @@ intro/home
 *********************/
 /*testAnimation*/
 @-webkit-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:25px; }
+  0%   { opacity: 0;top:-250px;position:absolute;}
+  100% { opacity: 1;top:0;position:relative;}
 }
 @-moz-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:0; }
+  0%   { opacity: 0;top:-250px;position:absolute;}
+  100% { opacity: 1;top:0;position:relative;}
 }
 @-o-keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-top:0; }
+  0%   { opacity: 0;top:-250px;position:absolute;}
+  100% { opacity: 1;top:0;position:relative;}
 }
 @keyframes testAnimation {
-  0%   { opacity: 0;margin-top:-500px;}
-  100% { opacity: 1;margin-left:25px; }
+  0%   { opacity: 0;top:-250px;position:absolute;}
+  100% { opacity: 1;top:0;position:relative;}
 }
 
 /*introAnimation2*/
 @-webkit-keyframes introAnimation2 {
   0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
+  75% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @-moz-keyframes introAnimation2 {
   0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
+  75% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @-o-keyframes introAnimation2 {
   0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
+  75% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 @keyframes introAnimation2 {
   0% {opacity: 0;margin-left:-200px;}
-  80% {opacity: 0;margin-left:-200px;}
+  75% {opacity: 0;margin-left:-200px;}
   100% {opacity: 1;margin-left:0;}
 }
 
 /*introAnimation3*/
 @-webkit-keyframes introAnimation3 {
   0% {opacity: 0;}
-  30% {opacity: 0;}
+  75% {opacity: 0;}
   100% {opacity: 1;}
 }
 @-moz-keyframes introAnimation3 {
   0% {opacity: 0;}
-  30% {opacity: 0;}
+  75% {opacity: 0;}
   100% {opacity: 1;}
 }
 @-o-keyframes introAnimation3 {
   0% {opacity: 0;}
-  30% {opacity: 0;}
+  75% {opacity: 0;}
   100% {opacity: 1;}
 }
 @keyframes introAnimation3 {
   0% {opacity: 0;}
-  30% {opacity: 0;}
+  75% {opacity: 0;}
   100% {opacity: 1;}
 }
 
-/*introAnimation4*/
-@-webkit-keyframes introAnimation4 {
+/*intro - introBigBg*/
+@-webkit-keyframes introBigBg {
   0% {opacity: 0;}
   20% {opacity: 0.8;}
-  70% {opacity: 0.95;}
-  100% {opacity: 1;}
+  80% {opacity: 1;}
 }
-@-moz-keyframes introAnimation4 {
+@-moz-keyframes introBigBg {
   0% {opacity: 0;}
   20% {opacity: 0.8;}
-  70% {opacity: 0.95;}
-  100% {opacity: 1;}
+  80% {opacity: 1;}
 }
-@-o-keyframes introAnimation4 {
+@-o-keyframes introBigBg {
   0% {opacity: 0;}
   20% {opacity: 0.8;}
-  70% {opacity: 0.95;}
-  100% {opacity: 1;}
+  80% {opacity: 1;}
 }
-@keyframes introAnimation4 {
+@keyframes introBigBg {
   0% {opacity: 0;}
   20% {opacity: 0.8;}
-  70% {opacity: 0.95;}
-  100% {opacity: 1;}
+  80% {opacity: 1;}
 }
+
+/*intro - jumboInner*/
+@-webkit-keyframes jumboInner {
+  0% {background:transparent;border-color:transparent;}
+  15% {background:transparent;border-color:transparent;}
+  30% {background:#142E47;border-color:transparent;}
+  95% {background:$colorBlueDark;}
+}
+@-moz-keyframes jumboInner {
+  0% {background:transparent;border-color:transparent;}
+  15% {background:transparent;border-color:transparent;}
+  30% {background:#142E47;border-color:transparent;}
+  95% {background:$colorBlueDark;}
+}
+@-o-keyframes jumboInner {
+  0% {background:transparent;border-color:transparent;}
+  15% {background:transparent;border-color:transparent;}
+  30% {background:#142E47;border-color:transparent;}
+  95% {background:$colorBlueDark;}
+}
+@keyframes jumboInner {
+  0% {background:transparent;border-color:transparent;}
+  15% {background:transparent;border-color:transparent;}
+  30% {background:#142E47;border-color:transparent;}
+  95% {background:$colorBlueDark;}
+}
+
+@-webkit-keyframes jumboHeadshot {
+  0% {opacity: 0;border-radius:0 100%;max-width:25px;transform: rotate(1080deg);}
+  50% {opacity:0.4;border-radius:0 50% 0 100%;max-width:65px;}
+  60% {transform: rotate(0);};
+  75% {opacity: 0.7;border-radius:0;max-width:100px;}
+}
+@keyframes jumboHeadshot {
+  0% {opacity: 0;border-radius:0 100%;max-width:25px;transform: rotate(1080deg);}
+  50% {opacity:0.4;border-radius:0 50% 0 100%;max-width:65px;}
+  60% {transform: rotate(0);};
+  75% {opacity: 0.7;border-radius:0;max-width:100px;}
+}
+
+
+
 
 @keyframes skillsetBarHtml {
   0% {height:0;opacity:0;}
