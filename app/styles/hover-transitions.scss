@@ -34,7 +34,7 @@ hover styles - page specific
 
 /*intro page*/
 .jumbotron .inner .headshot {
-	opacity:0.7;
+	opacity:0.8;
 	&:hover {
 		opacity:1;
 	}
@@ -63,10 +63,10 @@ hover styles - page specific
 	}
 	&.rRel-inView .span4 .col-md-4 {
 		opacity:1;
-	  -webkit-animation: 0.3s fade-in;
-	  -moz-animation: 0.3s fade-in;
-	  -o-animation: 0.3s fade-in;
-	  animation: 0.3s fade-in;
+	  -webkit-animation: 0.3s fadeIn;
+	  -moz-animation: 0.3s fadeIn;
+	  -o-animation: 0.3s fadeIn;
+	  animation: 0.3s fadeIn;
 	}
 }
 
