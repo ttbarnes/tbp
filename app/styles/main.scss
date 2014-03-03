@@ -19,7 +19,7 @@ img {
   max-width:100%;
 }
 
-@import "vars-mixins.scss";
+@import "vars-mixins";
 
 /********************
 typography
@@ -248,7 +248,7 @@ footer {
 		}
 	}
 }
-@import "social_foundicons.scss";
+@import "social_foundicons";
 
 /********************
 shared
@@ -812,7 +812,7 @@ contact page
 }
 
 /*animations*/
-@import "animations.scss";
+@import "animations";
 
 /********************
 responsive
@@ -835,7 +835,7 @@ responsive
 }
 
 @media (min-width: 1000px) {
-	@import "hover-transitions.scss";
+	@import "hover-transitions";
 }
 
 @media (max-width: 1000px) {
