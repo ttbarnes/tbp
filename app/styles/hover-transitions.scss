@@ -1,0 +1,173 @@
+/*****************************************
+tbp - Tony Barnes Portfolio
+Author: Tony Barnes
+More things here
+******************************************/
+
+/********************
+vars, mixins
+*********************/
+$colorBlack:#666;
+$colorWhiteBright1:#F1F1F1;
+$colorWhiteBright2:#FCFCFC;
+$colorWhite:#E7E7E7;
+$colorBlueLight:#396A98;
+$colorBlueDark:#274969;
+$colorRedLight:#B88080;
+$colorOrangeLight:#B38d6F;
+$colorGreenDark:#1E613F;
+$colorGreenLight:#4D8D6D;
+$colorYellowLight:#B2B36F;
+$colorGreyX:#c5c5c5;
+
+
+/********************
+hover styles
+*********************/
+
+/*logo*/
+.navbar-default h1 a.navbar-brand:hover {
+  color:$colorWhite;
+}
+
+/*footer*/
+footer {
+	/*social icons*/
+	ul.socialIcons li a:hover {
+		color:$colorBlueLight;
+	}
+	/*footer nav*/
+	.navbar-default ul.navbar-nav > li a:hover {
+		text-decoration:underline;
+	}
+}
+
+/********************
+hover styles - page specific
+*********************/
+
+/*intro page*/
+.jumbotron .inner .headshot {
+	opacity:0.7;
+	&:hover {
+		opacity:1;
+	}
+}
+.recentReleases {
+	.span4 .col-md-4 {
+		opacity:0;
+		.cont a {
+			img {
+				opacity:0.88;
+			}
+			.tags {
+				opacity:0;
+			}
+			&:hover {
+				img,
+				div.tags {
+					opacity:1;
+				}
+			}
+		}
+	}
+	/*inview or not*/
+	&.rRel-invisible .span4 .col-md-4 {
+	  opacity:0;
+	}
+	&.rRel-inView .span4 .col-md-4 {
+		opacity:1;
+	  -webkit-animation: 0.3s fade-in;
+	  -moz-animation: 0.3s fade-in;
+	  -o-animation: 0.3s fade-in;
+	  animation: 0.3s fade-in;
+	}
+}
+
+/*about page*/
+.aboutPage {
+	header .navbar-default,
+	footer {
+		/*social icons*/
+		ul.socialIcons li a:hover {
+			color:darkred;
+		}
+	}
+}
+
+/*contact page*/
+.contactPage {
+	footer {
+		/*social icons*/
+		ul.socialIcons li a:hover {
+			color:#134D30;
+		}
+	}
+	/*contact text*/
+	#containerMiddle .row .span4 a.contactAddress {
+		&:hover {
+			letter-spacing:1px;
+			text-shadow:0 4px 0 #134D30;
+		}
+		&:hover, 
+		&:focus, 
+		&:active {
+		  text-decoration:none;
+		}
+	}
+
+}
+
+
+/********************
+transitions
+*********************/
+
+/*0.5s - target fade-in*/
+.recentReleases .span4 .col-md-4 .cont a:hover .tags {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+}
+
+/*0.5s - target opacity */
+.recentReleases .span4 .col-md-4 .cont img {
+	-webkit-transition:opacity 0.5s ease-out;
+	-moz-transition:opacity 0.5s ease-out;
+	-o-transition:opacity 0.5s ease-out;
+	transition:opacity 0.5s ease-out;
+}
+
+/*0.150s - target all elements*/
+.contactPage .row .span4 a.contactAddress {
+	-webkit-transition:all 0.150s ease-out;
+	-moz-transition:all 0.150s ease-out;
+	-o-transition:all 0.150s ease-out;
+	transition:all 0.150s ease-out;
+}
+
+/*0.150s - target color*/
+.navbar-default h1 a.navbar-brand,
+.navbar-default .navbar-nav li a {
+	-webkit-transition:color 0.150s ease-out;
+	-moz-transition:color 0.150s ease-out;
+	-o-transition:color 0.150s ease-out;
+	transition:color 0.150s ease-out;
+}
+
+/*0.150s - target opacity*/
+.jumbotron .inner .headshot {
+	-webkit-transition:opacity 0.150s ease-out;
+	-moz-transition:opacity 0.150s ease-out;
+	-o-transition:opacity 0.150s ease-out;
+	transition:opacity 0.150s ease-out;
+}
+
+/*page/element specific*/
+.aboutPage #containerMiddle .row .col-md-12 .skillset li.bar {
+	-webkit-transition:height 2s ease-out;
+	-moz-transition:height 2s ease-out;
+	-o-transition:height 2s ease-out;
+	transition:height 2s ease-out;
+}
