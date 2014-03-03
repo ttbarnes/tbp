@@ -39,10 +39,11 @@
       <ul class="projects">
         <li class="col-md-4" ng-repeat="project in projects | limitTo:4" in-view="lineInView($index, $inview, $inviewpart)" class="thumbnail phone-listing">
           <div class="cont">
-            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/></a>
-            <div class="tags">
-              <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
-            </div>
+            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/>
+              <div class="tags">
+                <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+              </div>
+            </a>
           </div>
         </li>
       </ul>
