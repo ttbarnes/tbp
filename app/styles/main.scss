@@ -269,7 +269,7 @@ footer {
 			a {
 				padding:5px 8px;
 				display:block;
-				color:$colorBlueLight;
+				color:#213F5A;
 				i {
 					font-size:35px;
 				}
@@ -278,7 +278,7 @@ footer {
 					text-indent:-9999px;
 				}
 				&:hover {
-					color:#1C3750;
+					color:$colorBlueLight;
 				}
 			}
 			&:first-child {
