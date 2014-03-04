@@ -614,18 +614,22 @@ about page
 	header .navbar-default,
 	footer {
 		background:$colorBlueDark;
-		border-color:#1C3750;
+		border-color:$colorBlueDark2;
 	}
 
 	#containerMiddle {
-		.aboutIntro {
-			margin-bottom:20px;
-		}
 		.row {
-		  margin-bottom:30px;
+		  margin-bottom:70px;
+
+			&.aboutIntro {
+				margin-bottom:30px;
+			}
+
 	  	h4 {
 	  		margin-bottom:15px;
 	  		text-align:left;
+	  		padding:15px;
+	  		background:$colorBlueDark2;
 	  	}
 	  	ul {
 	  		margin-left:0;
@@ -636,14 +640,12 @@ about page
 	 }
 	  .row .skillsetWrapper {
 	  	text-align:center;
-	  	margin-bottom:0;
 	  }
 		.row .col-md-12 .skillset {
 		  clear: both;
 		  padding: 0;
 		  height:50%;
 		  margin-left:0;
-		  margin-bottom:60px;
 		  width:auto;
 		  text-align:left;
 		  li {
@@ -666,8 +668,8 @@ about page
 				  div {
 					  margin:0;
 					  font-size:12px;
-					  padding:5px;
-					  color:#BBB;
+					  padding:5px 0;
+					  color:#2D5981;
 					  height:21%;
 					  &.emptyLabel {
 						  visibility:hidden;
