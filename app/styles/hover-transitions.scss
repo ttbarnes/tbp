@@ -28,6 +28,16 @@ footer {
 	}
 }
 
+/*tag*/
+div.tags  {
+	div, 
+	button {
+		&:hover {
+			opacity:0.85;
+		}
+	}
+}
+
 /********************
 hover styles - page specific
 *********************/
@@ -153,11 +163,13 @@ transitions
 }
 
 /*0.150s - target all elements*/
+div.tags div, 
+div.tags button,
 .contactPage .row .span4 a.contactAddress {
-	-webkit-transition:all 0.150s ease-out;
-	-moz-transition:all 0.150s ease-out;
-	-o-transition:all 0.150s ease-out;
-	transition:all 0.150s ease-out;
+	-webkit-transition:all 0.1s ease-out;
+	-moz-transition:all 0.1s ease-out;
+	-o-transition:all 0.1s ease-out;
+	transition:all 0.1s ease-out;
 }
 
 /*0.150s - target color*/
