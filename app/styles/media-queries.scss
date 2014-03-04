@@ -43,25 +43,22 @@ responsive
 
 	/*about page*/
 	.aboutPage #containerMiddle .row  {
-		.col-md-3,
-		.col-md-4,
-		.col-md-5 {
-			float:left;
-			position: relative;
-			min-height: 1px;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-		.col-md-3,
-		.col-md-4,.col-md-5 {
-			width:50%;
-		}
-
-		.col-md-3 {
-			padding-left:80px;
-		}
 		.col-md-4 {
-			clear:both;
+			float:left;
+			width:49%;
+			position: relative;
+			min-height:1px;
+			padding-left:0;
+			padding-right:0;
+			padding-bottom:15px;
+			&.tools {
+				float:right;
+			}
+			&:last-child {
+				clear:both;
+				width:100%;
+				padding-bottom:0;
+			}
 		}
 	}
 
@@ -118,12 +115,10 @@ responsive
 
 	/*about page*/
 	.aboutPage #containerMiddle .row  {
-		.col-md-3,
-		.col-md-4,
-		.col-md-5 {
+		.col-md-4 {
+			float:none;
 			clear:both;
 			width:100%;
-			padding-left:15px;
 		}
 	}
 	
@@ -295,7 +290,7 @@ responsive
 	}
 
 	/*about page*/
-	.aboutPage #containerMiddle .row > div {
+	.aboutPage #containerMiddle .skillsetList > div {
 		ul {
 			font-size:13px;
 		}
