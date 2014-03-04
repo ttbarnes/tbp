@@ -449,8 +449,6 @@ div.introPage {
 .recentReleases {
   text-align:center;
 	margin:0;
-	/*max-height:452px;*/
-	overflow:visible;
 	
 	.span4 {
 		background: #E3E3E3;
@@ -614,8 +612,6 @@ about page
 	  background:$colorBlueDark;
 	}
 
-
-
 	header .navbar-default,
 	footer {
 		background:$colorBlueDark;
@@ -685,7 +681,7 @@ about page
 				  background:#CCC;
 				  border-right:solid 3px #175B38;
 				  color:#111;
-				  height:60%; /*temp during design/colour scheme*/
+				  height:60%;
 
 				  .skill,
 				  .rating {
@@ -732,8 +728,6 @@ about page
 						height:40%;
 					  background:#096859;
 					}
-
-
 				}
 			}
 		}
@@ -1089,9 +1083,8 @@ responsive
 			font-size:13px;
 		}
 	}
-  	
 
-	/*showcase*/
+	/*showcase page*/
 	.showcaseGalleryGrid {
 	  li.col-xs-3 {						
 			width:40%;
