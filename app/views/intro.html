@@ -18,7 +18,7 @@
         <p>I am an ambitious front end developer that loves the internet, technology and design. I have worked in a wide range of market sectors such as ecommerce, mortgage comparison, marketing and many more. X years of experience.</p>
       </div>
     </div>
-    <div class="row subIntro design">
+    <div class="row subIntro design" id="subIntroDesign">
       <h3>I also design things</h3>
       <div class="col-md-12">
         <p>Stuff here. Worked in a wide range of market sectors such as ecommerce, mortgage comparison, marketing and many more. X years of experience.</p>
@@ -39,7 +39,7 @@
     <div class="span4">
       <h3>Recently released</h3>
       <ul class="projects">
-        <li class="col-md-4" ng-repeat="project in projects | limitTo:4" in-view="lineInView($index, $inview, $inviewpart)" class="thumbnail phone-listing">
+        <li class="col-md-4" ng-repeat="project in projects | limitTo:4" class="thumbnail phone-listing">
           <div class="cont">
             <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}">
               <div class="tags">
