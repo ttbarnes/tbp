@@ -139,6 +139,24 @@ intro/home
 }
 
 
+/*intro - inview - recent releases
+.recentReleases {
+  &.inview-invisible {
+    .span4 .col-md-4 {
+      opacity:0;
+    }
+  }
+  &.inview-visible {
+    .span4 .col-md-4 {
+      opacity:1;
+      -webkit-animation: 1s fadeIn;
+      -moz-animation: 1s fadeIn;
+      -o-animation: 1s fadeIn;
+      animation: 1s fadeIn; 
+    }
+  }
+}
+*/
 
 
 /********************

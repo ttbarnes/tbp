@@ -26,16 +26,18 @@ tbpControllers.controller('introCtrl', ['$scope', 'tonyDirective', '$http',
     $http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
-		
-		$scope.lineInView = function(index, inview, inviewpart) { //inview  - show recentReleases on scroll
+		/*
+		$scope.lineInView = function(index, inview, inviewpartIntroDesign, inviewpart) { //inview  - show recentReleases on scroll
 			var rRel = angular.element('#recentReleases');
+			
 			if (typeof(inviewpart) !== 'undefined') {
-        rRel.removeClass('rRel-invisible').addClass('rRel-inView');
+        rRel.removeClass('inview-invisible').addClass('inview-visible');
 			}
 			else {
-				rRel.removeClass('rRel-inView').addClass('rRel-invisible');
+				rRel.removeClass('inview-visible').addClass('inview-invisible');
 			}
 		};
+		*/
   }]);
 	
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',

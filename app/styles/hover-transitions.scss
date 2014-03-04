@@ -41,7 +41,6 @@ hover styles - page specific
 }
 .recentReleases {
 	.span4 .col-md-4 {
-		opacity:0;
 		.cont a {
 			img {
 				opacity:0.88;
@@ -56,17 +55,6 @@ hover styles - page specific
 				}
 			}
 		}
-	}
-	/*inview or not*/
-	&.rRel-invisible .span4 .col-md-4 {
-	  opacity:0;
-	}
-	&.rRel-inView .span4 .col-md-4 {
-		opacity:1;
-	  -webkit-animation: 0.3s fadeIn;
-	  -moz-animation: 0.3s fadeIn;
-	  -o-animation: 0.3s fadeIn;
-	  animation: 0.3s fadeIn;
 	}
 }
 
