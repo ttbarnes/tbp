@@ -145,23 +145,6 @@ hover styles - page specific
 /********************
 transitions
 *********************/
-
-/*0.5s - target fade-in
-.recentReleases .span4 .col-md-4 .cont a:hover .tags {
-  -webkit-animation: 0.5s fade-in;
-  -moz-animation: 0.5s fade-in;
-  -o-animation: 0.5s fade-in;
-  animation: 0.5s fade-in;
-}
-/*0.5s - target opacity
-.recentReleases .span4 .col-md-4 .cont img {
-	-webkit-transition:opacity 0.5s ease-out;
-	-moz-transition:opacity 0.5s ease-out;
-	-o-transition:opacity 0.5s ease-out;
-	transition:opacity 0.5s ease-out;
-}
-*/
-
 /*0.150s - target all elements*/
 div.tags div, 
 div.tags button,
