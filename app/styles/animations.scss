@@ -152,6 +152,10 @@ about page, skill set
   0% {height:0;opacity:0;}
   100% {height:95%;opacity:1;}
 }
+@keyframes skillsetBarMobile {
+  0% {height:0;opacity:0;}
+  100% {height:80%;opacity:1;}
+}
 @keyframes skillsetBarJquery {
   0% {height:0;opacity:0;}
   100% {height:80%;opacity:1;}
@@ -162,12 +166,9 @@ about page, skill set
 }
 @keyframes skillsetBarAngular {
   0% {height:0;opacity:0;}
-  100% {height:30%;opacity:1;} 
+  100% {height:40%;opacity:1;} 
 }
-@keyframes skillsetBarMobile {
-  0% {height:0;opacity:0;}
-  100% {height:80%;opacity:1;}
-}
+
 
 
 

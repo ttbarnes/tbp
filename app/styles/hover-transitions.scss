@@ -79,6 +79,45 @@ hover styles - page specific
 			color:darkred;
 		}
 	}
+
+	#containerMiddle .row .col-md-12 .skillset li.bar {
+	  &.html {
+	  	-webkit-animation: 1s skillsetBarHtml;
+		  -moz-animation: 1s skillsetBarHtml;
+		  -o-animation: 1s skillsetBarHtml;
+		  animation: 1s skillsetBarHtml;
+	  }
+	  &.css {
+	  	-webkit-animation: 1s skillsetBarCss;
+		  -moz-animation: 1s skillsetBarCss;
+		  -o-animation: 1s skillsetBarCss;
+		  animation: 1s skillsetBarCss;
+	  }
+	  &.mobile {
+		  -webkit-animation: 1s skillsetBarMobile;
+		  -moz-animation: 1s skillsetBarMobile;
+		  -o-animation: 1s skillsetBarMobile;
+		  animation: 1s skillsetBarMobile;
+	  }
+	  &.jquery {
+	  	-webkit-animation: 1s skillsetBarJquery;
+		  -moz-animation: 1s skillsetBarJquery;
+		  -o-animation: 1s skillsetBarJquery;
+		  animation: 1s skillsetBarJquery;
+	  }
+	  &.javascript {
+	  	-webkit-animation: 1s skillsetBarJavascript;
+		  -moz-animation: 1s skillsetBarJavascript;
+		  -o-animation: 1s skillsetBarJavascript;
+		  animation: 1s skillsetBarJavascript;
+	  }
+	  &.angular {
+	  	-webkit-animation: 1s skillsetBarAngular;
+		  -moz-animation: 1s skillsetBarAngular;
+		  -o-animation: 1s skillsetBarAngular;
+		  animation: 1s skillsetBarAngular;
+	  }
+	}
 }
 
 /*contact page*/

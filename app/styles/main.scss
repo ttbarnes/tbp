@@ -676,6 +676,7 @@ about page
 				}
 				&.bar {
 				  background:#CCC;
+				  border-right:solid 3px #175B38;
 				  color:#111;
 				  height:60%; /*temp during design/colour scheme*/
 
@@ -700,56 +701,31 @@ about page
 					  margin-top:5px;
 					  font-size: 16px;
 					}
-/*
 					&.html {
 						height:95%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#CA8E8E), color-stop(100%,#E9B6B6));
-					  background:-webkit-linear-gradient(top,  #CA8E8E 0%,#E9B6B6 100%);
-			 			background:linear-gradient(to bottom, #CA8E8E 0%,#E9B6B6 100%);
-						-webkit-animation: skillsetBarHtml 1s;
-						animation: skillsetBarHtml 1s;
+						background:#62B595;
 					}
 					&.css {
 						height:95%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$colorBlueLight), color-stop(100%,#CEEAF8));
-					  background:-webkit-linear-gradient(top,  $colorBlueLight 0%,#CEEAF8 100%);
-			 			background:linear-gradient(to bottom, $colorBlueLight 0%,#CEEAF8 100%);
-						-webkit-animation: skillsetBarCss 1s;
-						animation: skillsetBarCss 1s;
-					}
-					&.jQuery {
-						height:80%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6A081), color-stop(100%,#DFBFA5));
-					  background:-webkit-linear-gradient(top,  #C6A081 0%,#DFBFA5 100%);
-			 			background:linear-gradient(to bottom, #C6A081 0%,#DFBFA5 100%);
-						-webkit-animation: skillsetBarJquery 1s;
-						animation: skillsetBarJquery 1s;
-					}
-					&.javascript {
-						height:60%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$colorYellowLight), color-stop(100%,#CDCE8E));
-					  background:-webkit-linear-gradient(top,  #000 0%,#CCC 100%);
-			 			background:linear-gradient(to bottom, $colorYellowLight 0%,#CDCE8E 100%);
-						-webkit-animation: skillsetBarJavascript 1s;
-						animation: skillsetBarJavascript 1s;
-					}
-					&.angular {
-						height:40%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#BEBF7C), color-stop(100%,#CDCE8E));
-					  background:-webkit-linear-gradient(top,  #BEBF7C 0%,#CDCE8E 100%);
-			 			background:linear-gradient(to bottom, #BEBF7C 0%,#CDCE8E 100%);
-						-webkit-animation: skillsetBarAngular 1s;
-						animation: skillsetBarAngular 1s;
+						background:#408972;
 					}
 					&.mobile {
 						height:80%;
-					  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6A081), color-stop(100%,#DFBFA5));
-					  background:-webkit-linear-gradient(top,  #C6A081 0%,#DFBFA5 100%);
-			 			background:linear-gradient(to bottom, #C6A081 0%,#DFBFA5 100%);
-						-webkit-animation: skillsetBarMobile 1s;
-						animation: skillsetBarMobile 1s;
+						background:#297C66;
 					}
-*/
+					&.jQuery {
+						height:80%;
+						background:#26735E;
+					}
+					&.javascript {
+						height:60%;
+					  background:#196E5D;
+					}
+					&.angular {
+						height:40%;
+					  background:#096859;
+					}
+
 
 				}
 			}
