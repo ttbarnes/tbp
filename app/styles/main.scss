@@ -639,10 +639,10 @@ about page
 	  		padding-left:0;
 	  	}
 	 }
-	  .row .skillsetWrapper {
+	  .row .skillsetChartWrapper {
 	  	text-align:center;
 	  }
-		.row .col-md-12 .skillset {
+		.row .col-md-12 .skillsetChart {
 		  clear: both;
 		  padding: 0;
 		  height:50%;
@@ -670,7 +670,7 @@ about page
 					  margin:0;
 					  font-size:12px;
 					  padding:5px 0;
-					  color:#2D5981;
+					  color:$colorBlueLight2;
 					  height:21%;
 					  &.emptyLabel {
 						  visibility:hidden;
@@ -731,6 +731,64 @@ about page
 				}
 			}
 		}
+
+		.skillsetList {
+			.col-md-3 {
+				width:21%;
+				float:right;
+			}
+			ul {
+				li {
+					list-style-type:none;
+					margin-bottom:7px;
+
+					&:first-child {
+						color:$colorBlueDark2;
+						margin-bottom:10px;
+					}
+
+					&[rating]{ 
+						::before {
+							content:'';
+							display:inline-block;
+							margin-right:10px;
+							width:12px;
+							height:12px;
+						}
+					}
+					&[rating="6"]{ 
+						::before {
+							background:#62B595;
+						}
+					}
+					&[rating="5"]{ 
+						::before {
+							background:#408972;
+						}
+					}
+					&[rating="4"] {
+						::before {
+							background:#297C66;
+						}
+					}
+					&[rating="3"] {
+						::before {
+							background:#26735E;
+						}
+					}
+					&[rating="2"] {
+						::before {
+							background:#196E5D;
+						}
+					}
+					&[rating="1"] {
+						::before {
+							background:#096859;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -770,7 +828,6 @@ contact page
 			p {
 				color:#134D30;
 			}
-
 			a.contactAddress {
 				font-size:50px;
 				color:$colorWhiteBright2;
