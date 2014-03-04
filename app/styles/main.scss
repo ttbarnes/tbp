@@ -260,7 +260,7 @@ div.tags {
 	button {
 	  font-size:13px;
 		padding:7px 15px;
-		color:$colorBlack;
+		color:$colorWhiteBright1;
 		border:0 none;
 		margin:3px 3px 0 0;
 		vertical-align:middle;
@@ -273,10 +273,10 @@ div.tags {
 		&.HTML, &.CSS3,
 		&.HTML4, &.CSS3,
 		&.HTML5, &.CSS3 {
-		  background:#BFBFBF;
+		  background:$colorBlueLight;
 		}
 		&.Ecommerce {
-			background:$colorBlueDark;
+			background:$colorBlueLight;
 		}
 		&.Static {
 			background:$colorRedLight;
@@ -293,7 +293,7 @@ div.tags {
 		}
 		&.mockups {
 			background:$colorYellowLight;
-		}	
+		}
 	}
 }
 
