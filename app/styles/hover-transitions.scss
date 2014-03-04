@@ -96,11 +96,10 @@ hover styles - page specific
 
 /*about page*/
 .aboutPage {
-	header .navbar-default,
-	footer {
-		/*social icons*/
-		ul.socialIcons li a:hover {
-			color:darkred;
+	header .navbar-default .navbar-nav li a {
+		color:#152C41;
+		&:hover {
+			color:$colorBlack;
 		}
 	}
 
@@ -146,6 +145,14 @@ hover styles - page specific
 
 /*contact page*/
 .contactPage {
+
+	header .navbar-default .navbar-nav li a {
+		color:#0D3B24;
+		&:hover {
+			color:$colorBlack;
+		}
+	}
+
 	footer {
 		/*social icons*/
 		ul.socialIcons li a:hover {
