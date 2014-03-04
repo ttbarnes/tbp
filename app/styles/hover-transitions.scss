@@ -28,6 +28,31 @@ footer {
 	}
 }
 
+/*buttons*/
+.btn,
+.btn-primary,
+.btn-lg {
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		background:$colorBlueDark;
+		border-top-color:$colorBlueDark;
+		border-right-color:$colorBlueLight;
+		border-bottom-color:$colorBlueLight;
+		border-left-color:$colorBlueDark;
+	}
+}
+.btn-green {
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		background:$colorGreenDark;
+		color:$colorWhite;
+	}
+}
+
 /*tag*/
 div.tags  {
 	div, 
