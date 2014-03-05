@@ -113,3 +113,9 @@ tbpControllers.controller('contactCtrl', function($scope){
 	};
 });
 
+
+tbpControllers.controller('errorCtrl', function($scope){
+	$scope.pageClass = 'errorPage';
+});
+
+
