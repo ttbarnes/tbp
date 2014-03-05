@@ -106,11 +106,17 @@ More things here
 			max-height:370px;
 			background-color:#13283C;
 			background-image:url(../images/intro4-480w.jpg);
-			background-size:auto 100%;
+			background-size:100% 100%;
 		}
 		.innerBox {
 			img.headshot {
 				display:none;
+			}
+			h1 {
+				font-size:35px;
+			}
+			h2 {
+				font-size:15px;
 			}
 		}
 	}
