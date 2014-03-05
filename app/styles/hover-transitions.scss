@@ -69,7 +69,7 @@ hover styles - page specific
 *********************/
 
 /*intro page*/
-.jumbotron .inner .headshot {
+.jumbotron .innerBox .headshot {
 	opacity:0.8;
 	&:hover {
 		opacity:1;
@@ -198,7 +198,7 @@ div.tags button,
 }
 
 /*0.150s - target opacity*/
-.jumbotron .inner .headshot {
+.jumbotron .innerBox .headshot {
 	-webkit-transition:opacity 0.150s ease-out;
 	-moz-transition:opacity 0.150s ease-out;
 	-o-transition:opacity 0.150s ease-out;

@@ -47,24 +47,24 @@ intro/home
 }
 
 /*intro - intro inner*/
-@mixin keyframe-introInnerBg {
+@mixin keyframe-introBigBg {
   0% {background:transparent;border-color:transparent;border-radius:0 0 0 100%;}
   15% {background:transparent;border-color:transparent;}
   30% {background:#142E47;border-color:transparent;border-radius:0 0 0 100%;}
   80% {border-radius:0;}
   95% {background:$colorBlueDark;}
 }
-@-webkit-keyframes introInnerBg {
-  @include keyframe-introInnerBg;
+@-webkit-keyframes introBigBg {
+  @include keyframe-introBigBg;
 }
-@-moz-keyframes introInnerBg {
-  @include keyframe-introInnerBg;
+@-moz-keyframes introBigBg {
+  @include keyframe-introBigBg;
 }
-@-o-keyframes introInnerBg {
-  @include keyframe-introInnerBg;
+@-o-keyframes introBigBg {
+  @include keyframe-introBigBg;
 }
-@keyframes introInnerBg {
-  @include keyframe-introInnerBg;
+@keyframes introBigBg {
+  @include keyframe-introBigBg;
 }
 
 /*intro - headshot*/
