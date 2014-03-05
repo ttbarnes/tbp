@@ -69,11 +69,15 @@ buttons
   font-weight:normal;
 	letter-spacing:-1px;
   color:$colorWhite;
+  background:$colorBlueLight;
+	color:$colorWhite;
+
   &:hover,
 	&:focus, 
 	&:active, 
 	&.active {
   	color:$colorWhite;
+		background:$colorBlueDark;
   }
 }
 .btn-lg, 
@@ -83,15 +87,11 @@ buttons
 
 .btn-primary,
 .btn-lg {
-	background:$colorBlueLight;
-	color:$colorWhite;
 	border:solid 6px $colorBlueLight;
 	&:hover, 
 	&:focus, 
 	&:active, 
 	&.active {
-		color:$colorWhiteBright2;
-		background:$colorBlueDark;
 		border-top-color:$colorBlueDark;
 		border-right-color:$colorBlueLight;
 		border-bottom-color:$colorBlueLight;
@@ -894,6 +894,7 @@ error page
 		.row {
 			h4 {
 				font-size:40px;
+				color:$colorBlack;
 			}
 			p.sub {
 				/*color:#A3A3A3;*/
