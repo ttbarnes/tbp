@@ -5,7 +5,7 @@ More things here
 ******************************************/
 
 @import "intro";
-@import "animations";
+@import "vars-mixins";
 
 /********************
 responsive
@@ -17,6 +17,7 @@ responsive
 }
 
 @media (min-width: 1000px) {
+	@import "animations";
 	@import "hover-transitions";
 }
 
