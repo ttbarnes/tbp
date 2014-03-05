@@ -14,7 +14,7 @@
 		max-height:515px;
 		.bigBg {
 			background-image:url(../images/intro4-1100w.jpg);
-			background-size:auto 100%;
+			background-size:100% 100%;
 		}
 	}
 }	
@@ -26,8 +26,7 @@
 		max-height:430px;
 		.bigBg {
 			background-image:url(../images/intro4-992w.jpg);
-			background-size:auto 100%;
-			background-position:50% 0;
+			background-size:100% 100%;
 		}
 	}
 }
@@ -45,8 +44,7 @@
 		max-height:410px;
 		.bigBg {
 			background-image:url(../images/intro4-767w.jpg);
-			background-size:auto 100%;
-			background-position:50% 0;
+			background-size:100% 100%;
 		}
 	}
 }
@@ -54,11 +52,10 @@
 @media (min-width:480px) and (max-width: 700px) {
   .jumbotron {
 		padding:2em 1em;
-		height:70%;
+		height:64%;
 		.bigBg {
 			background-image:url(../images/intro4-700w.jpg);
-			background-size:auto 100%;
-			background-position:25% 0;
+			background-size:initial;
 		}
 	}
 }
