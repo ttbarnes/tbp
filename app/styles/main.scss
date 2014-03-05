@@ -320,20 +320,20 @@ div.tags div {
 	border-radius:0 !important;
 	margin-bottom:0;
 
-	img.bg {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		min-width:1500px;
+	.bigBg {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
 		max-width:100%;
-		height: auto;
-		z-index: 1;
-		-webkit-animation: introBigBg 3s;
-		animation: introBigBg 3s;
+		min-height:100%;
+		height:auto;
+		z-index:1;
+		background-size:100% auto;
+		background-repeat:no-repeat;
 	}
 
-	.inner {
+	.innerBox {
 		position:relative;
 		max-width:470px;
 		z-index:1;
