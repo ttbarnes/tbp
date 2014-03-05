@@ -31,17 +31,24 @@ responsive
 		font-size:20px;
 	}
 
+	.btn-lg, 
+	.btn-group-lg > .btn {
+		padding:20px;
+	}
+
 	/*large headings/sections*/
-	div.introPage div.subIntro {
-		h3 {
-			padding:25px 15px;
-		}
-		.col-md-12 {
-			padding-top:30px;
-			padding-bottom:60px;
-		}
-		&.row-btn-lg	.col-md-12 {
-			padding:40px 15px 80px 15px;
+	div.introPage {
+		 div.subIntro {
+			h3 {
+				padding:25px 15px;
+			}
+			.col-md-12 {
+				padding-top:30px;
+				padding-bottom:60px;
+			}
+			&.row-btn-lg	.col-md-12 {
+				padding:40px 15px 80px 15px;
+			}
 		}
 	}
 
@@ -56,6 +63,16 @@ responsive
 @media (max-width: 992px) {
 	.container {
 		width:100%;
+	}
+
+	/*intro page*/
+	div.introPage {
+	 div.row-btn-lg	.col-md-12 {
+			a.btn {
+				margin:0 15px !important;
+				width:45%;
+			}
+		}
 	}
 
 	/*about page*/
@@ -125,6 +142,16 @@ responsive
 	}
 
 	/*intro page*/
+	/*intro page*/
+	div.introPage {
+	 div.row-btn-lg	.col-md-12 {
+			a.btn {
+				margin:0 0 15px 0 !important;
+				width:80%;
+			}
+		}
+	}
+
 	.recentReleases {
 		.span4 {
 		  h3 {
@@ -297,7 +324,7 @@ responsive
 	.btn {
 	  width:100%;
 	  margin:0 0 15px 0;
-		padding:14px 20px;
+		padding:15px 20px;
 	}
 
 	/*intro page*/

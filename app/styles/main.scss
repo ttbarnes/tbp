@@ -65,6 +65,10 @@ buttons
 .btn {
   border-radius:0;
   color:$colorWhite;
+  &:hover,
+  &:focus {
+  	color:$colorWhite;
+  }
 }
 .btn-lg, 
 .btn-group-lg > .btn {
