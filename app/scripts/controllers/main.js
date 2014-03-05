@@ -8,7 +8,10 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
 
-		
+		$http.get('showcase/recent-releases.json').success(function(data) {
+      $scope.projects = data;
+    });
+
 		//$scope.photos = tonyDirective.someFunctionStuff();
 
 
@@ -23,9 +26,6 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		};
 */
 
-    $http.get('showcase/recent-releases.json').success(function(data) {
-      $scope.projects = data;
-    });
 		/*
 		$scope.lineInView = function(index, inview, inviewpartIntroDesign, inviewpart) { //inview  - show recentReleases on scroll
 			var rRel = angular.element('#recentReleases');
