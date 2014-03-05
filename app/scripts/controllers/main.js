@@ -2,14 +2,14 @@
 
 var tbpControllers = angular.module('tbpControllers', []);
 
-tbpControllers.controller('introCtrl', ['$scope', 'tonyDirective', '$http',
+tbpControllers.controller('introCtrl', ['$scope', '$http',
 
 	
-  function($scope,tonyDirective,$http) {
+  function($scope,$http) {
 		$scope.pageClass = 'introPage';
 
 		
-		$scope.photos = tonyDirective.someFunctionStuff();
+		//$scope.photos = tonyDirective.someFunctionStuff();
 
 
 		//$scope.message = { text: 'nothing clicked yet' };
