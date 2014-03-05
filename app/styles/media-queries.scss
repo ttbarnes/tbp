@@ -340,15 +340,18 @@ responsive
 			}
 		}
 	}
-		
-	
 	/*about page*/
-	.aboutPage #containerMiddle .skillsetList > div {
-		ul {
-			font-size:13px;
+	.aboutPage #containerMiddle {
+		.skillsetList > div {
+			ul {
+				font-size:13px;
+			}
+		}
+		.randomStuff ul li {
+			width:100%;
+			clear:both;
 		}
 	}
-
 	/*showcase page*/
 	.showcaseGalleryGrid {
 	  li.col-xs-3 {						
@@ -356,14 +359,12 @@ responsive
 			max-width:250px;
 		}
 	}
-	
 	/*contact page*/
 	.contactPage  {
 	  .row .span4 a.contactAddress {
 		  font-size:22px;
 		}
 	}
-	
 }
 
 
