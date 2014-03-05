@@ -21,9 +21,17 @@ describe('Controller: introCtrl', function () {
   //});
 
   it('should have a page class/name', function (){
-    //expect(scope.pageClass.length).toBe(0);
+    expect(scope.pageClass).not.toBeUndefined();
+    //toBeDefined
   });
+  //describe("Recent releases data", function() {
+    /*it('should have X Y and Z', function(){
+      expect(scope.projects.id).toBeDefined();
+    });
+    */
+  //});
 
+  
   
 
 });
