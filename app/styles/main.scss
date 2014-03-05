@@ -875,7 +875,11 @@ contact page
 				-webkit-hyphens:auto;
 				-moz-hyphens:auto;
 				hyphens:auto;
-
+				&:hover, 
+				&:focus, 
+				&:active {
+					text-decoration:none;
+				}
 			}		
 		}
 	}
