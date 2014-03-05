@@ -116,14 +116,37 @@ responsive
 		}
 	}
 
-	.recentReleases .span4 .col-md-4 {	
-		width: 40%;
-		max-width: 250px;
-		float: none;
-		display: inline-block;
-		vertical-align:top;
-		.cont img {
-			opacity:1;
+	/*intro page*/
+	.recentReleases {
+		.span4 {
+		  h3 {
+		    text-align:center;
+		    margin-bottom:0;
+		  }			
+		  ul.projects {
+		  	padding:0 10px;
+		  	.col-md-4 {	
+					width:50%;
+					max-width:250px;
+					float:none;
+					padding:15px;
+				}
+		  }
+		  .col-md-4 {	
+				width:50%;
+				max-width: 250px;
+				float: none;
+				display: inline-block;
+				vertical-align:top;
+				.cont {
+					img {
+						opacity:1;
+					}
+					div.tags {
+						display:none;
+					}
+				}
+			}
 		}
 	}
 
@@ -270,21 +293,13 @@ responsive
 
 	/*intro page*/
 	div.introPage {
+		.recentReleases .span4 ul.projects .col-md-4 {
+			padding:7.5px 5px;
+		}	
 		div.subIntro.row-btn-lg .col-md-12 {
-			padding:30px 15px;
 			a.btn {
 				width:100%;
 				margin:0 0 15px 0 !important;
-			}
-		}
-		.recentReleases .span4 {
-		  h3 {
-		    text-align:center;
-		  }			
-			.col-md-4 {	
-				width:100%;
-				max-width:300px;
-				float:none;
 			}
 		}
 	}
