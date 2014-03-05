@@ -140,8 +140,10 @@ body {
 		a.navbar-brand {
 			font-size:30px;
 			padding:20px 10px;
-			/*color:#B7B7B7;*/
 			color:$colorWhite;
+			&:hover {
+				color:$colorWhite;
+			}
 		}
 	}
 	/*right nav*/
