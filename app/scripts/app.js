@@ -40,9 +40,11 @@ tbp.config(function ($routeProvider) {
 		.when('/contact', {
 			templateUrl: 'views/contact.html',
 			controller: 'contactCtrl'
+		})
+		.otherwise({
+			redirectTo: '/error',
+			templateUrl: 'views/error.html',
+			controller: 'errorCtrl'
 		});
-	//.otherwise({
-	//	redirectTo: '/'
-	//});
 });
 
