@@ -885,4 +885,23 @@ contact page
 	}
 }
 
+/********************
+error page
+*********************/
+.errorPage {
+	#containerMiddle {
+		text-align:center;
+		.row {
+			h4 {
+				font-size:40px;
+			}
+			p.sub {
+				/*color:#A3A3A3;*/
+				color:$colorGrey;
+			}
+
+		}
+	}
+}
+
 @import "media-queries";
