@@ -8,9 +8,7 @@
 					{"tag": "HTML5, CSS3"},
 					{"tag": "jQuery"},
 					{"tag": "Wordpress"}
-				],
-				"output":"Wordpress using bla bla",
-				"thoughts":"I particularly enjoyed building X feature and ABC. We utilised html..... <hr/><h3>Super fantastic feature</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+				]
 		},
 		{
         "id": "jquery/list-icon-manipulator", 
@@ -34,7 +32,28 @@
 				"category": "Ecommerce",
 				"tech": [
 					{"tag": "HTML, CSS3"},
-					{"tag": "jQuery"}
+					{"tag": "jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "collins-learning", 
+        "name": "Collins Learning",
+				"category": "Ecommerce",
+				"tech": [
+					{"tag": "HTML, CSS3"},
+					{"tag": "jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "tolkien", 
+        "name": "Tolkien",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
 				]
     },
 		{
@@ -43,7 +62,18 @@
 				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"}
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "robbie-williams", 
+        "name": "Robbie Williams",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
 				]
     },
 		{
@@ -56,13 +86,64 @@
 					{"tag":"Powa CMS"}
 				]
     },
-		{
-        "id": "gold-challenge", 
-        "name": "Gold Challenge",
-				"category": "Static",
+    {
+        "id": "william-curley", 
+        "name": "William Curley",
+				"category": "Ecommerce",
 				"tech":[
-					{"tag":"HTML, CSS"},
-					{"tag":"Joomla"}
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "hoover", 
+        "name": "Hoover Spares",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "electrolux", 
+        "name": "Electrolux Parts & Accessories",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "zanussi", 
+        "name": "Zanussi Parts & Accessories",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "jbrand", 
+        "name": "J Brand",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
+        "id": "wpfp", 
+        "name": "Who Pays Full Price",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Magento"}
 				]
     },
 		{
@@ -71,11 +152,20 @@
 				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS"},
-					{"tag":"JavaScript, jQuery"}
+					{"tag":"JavaScript, jQuery"},
+					{"tag":"PHP"}
 				]
     },
 		{
-        "id": "peter-utton-website", 
+        "id": "peter-utton-blog",
+        "name": "Peter Utton Tumblr Blog",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"}
+				]
+    },
+		{
+        "id": "peter-utton-website-v2",
         "name": "Peter Utton",
 				"category": "Static",
 				"tech":[
@@ -93,9 +183,19 @@
 				]
     },
 		{
-        "id": "robbie-williams", 
-        "name": "Robbie Williams",
-				"category": "Ecommerce",
+        "id": "powa",
+        "name": "Powa Corporate Websites",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+    {
+        "id": "mPowa",
+        "name": "mPowa Corporate Websites",
+				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS3"},
 					{"tag":"jQuery"},
@@ -103,28 +203,48 @@
 				]
     },
 		{
-        "id": "tolkien", 
-        "name": "Tolkien",
-				"category": "Ecommerce",
+        "id": "celebrity-smiles-website",
+        "name": "Celebrity Smiles",
+				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
+					{"tag":"jQuery"}
 				]
     },
 		{
-        "id": "william-curley", 
-        "name": "William Curley",
-				"category": "Ecommerce",
+        "id": "you-affiliate-network",
+        "name": "You Affiliate Network",
+				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
+					{"tag":"PHP"}
+				]
+    },
+    {
+        "id": "gold-challenge", 
+        "name": "Gold Challenge",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"Joomla"}
+				]
+    },
+    {
+        "id": "peter-utton-website-v1",
+        "name": "Peter Utton Website v1",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"jQuery"}
 				]
     },
 		{
-        "id": "project-Z", 
-        "name": "Project Z",
-				"category": "Brand identity"
+        "id": "barnzy-website",
+        "name": "Barnzy",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"jQuery"}
+				]
     }
 ]
