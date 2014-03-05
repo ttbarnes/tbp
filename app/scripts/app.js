@@ -4,10 +4,10 @@ var tbp = angular.module('tbpApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngAnimate',
-  'angular-inview',
+  //'ngAnimate',
+  //'angular-inview',
   'tbpControllers',
-  'tonyAppModule'
+  //'tonyAppModule'
   //'whereIsThePower'
   //'tbService'
 ]);
