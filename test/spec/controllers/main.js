@@ -16,23 +16,100 @@ describe('Controller: introCtrl', function () {
     });
   }));
 
-  //it('should attach a list of awesomeThings to the scope', function () {
-  //  expect(scope.awesomeThings.length).toBe(3);
-  //});
-
   it('should have a page class/name', function (){
-    //expect(scope.pageClass).toBeDefined();
     expect(scope.pageClass).toBeDefined();
-    //toBeDefined
   });
-  //describe("Recent releases data", function() {
-    /*it('should have X Y and Z', function(){
-      expect(scope.projects.id).toBeDefined();
-    });
-    */
-  //});
-
-  
-  
 
 });
+
+describe('Controller: showcaseGridCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('tbpApp'));
+
+  var showcaseGridCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    showcaseGridCtrl = $controller('showcaseGridCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should have a page class/name', function (){
+    expect(scope.pageClass).toBeDefined();
+  });
+
+  describe('Showcase grid category filter', function() {
+
+    it('should have the selectedCategory variable assigned to the value', function(){
+      expect(scope.setSelectedCategory.value === scope.selectedCategory);
+    });
+
+    it('should have categories defined', function(){
+      expect(scope.categories).toEqual([
+        'Ecommerce',
+        'Static',
+        'jQuery plugins',
+        'Holding pages',
+        'Brand identity',
+        'Designs, mockups'
+      ]);
+    });
+
+    it('should have a selected, default category', function(){
+      expect(scope.selectedCategory).toBe('Ecommerce');
+    });
+
+  });
+  
+});
+
+describe('Controller: indShowcasePieceCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('tbpApp'));
+
+  var indShowcasePieceCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    indShowcasePieceCtrl = $controller('indShowcasePieceCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should have a page class/name', function (){
+    expect(scope.pageClass).toBeDefined();
+  });
+
+});
+
+describe('Controller: aboutCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('tbpApp'));
+
+  var aboutCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    aboutCtrl = $controller('aboutCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should have a page class/name', function (){
+    expect(scope.pageClass).toBeDefined();
+  });
+
+});
+
+
+
