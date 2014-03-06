@@ -21,7 +21,8 @@ describe('Controller: introCtrl', function () {
   //});
 
   it('should have a page class/name', function (){
-    expect(scope.pageClass).not.toBeUndefined();
+    //expect(scope.pageClass).toBeDefined();
+    expect(scope.pageClass).toBeDefined();
     //toBeDefined
   });
   //describe("Recent releases data", function() {
