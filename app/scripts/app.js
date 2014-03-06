@@ -5,11 +5,7 @@ var tbp = angular.module('tbpApp', [
   'ngSanitize',
   'ngRoute',
   'ngAnimate',
-  //'angular-inview',
-  'tbpControllers',
-  //'tonyAppModule'
-  //'whereIsThePower'
-  //'tbService'
+  'tbpControllers'
 ]);
 
 tbp.config(function ($routeProvider) {
