@@ -96,13 +96,6 @@ tbpControllers.controller('aboutCtrl', function($scope){
 
 	$scope.pageClass = 'aboutPage';
 
-
-	$scope.tonySocial = {
-		github:'http://github.com/ttbarnes',
-		twitter:'http://twitter.com/ttbarnes',
-		//stackoverflow:'http://stackoverflow.com',
-		linkedin:'http://uk.linkedin.com/in/ttbarnes'
-	};
 	
 });
 	
