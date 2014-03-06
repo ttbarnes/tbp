@@ -3,41 +3,13 @@
 var tbpControllers = angular.module('tbpControllers', []);
 
 tbpControllers.controller('introCtrl', ['$scope', '$http',
-
-	
   function($scope,$http) {
 		$scope.pageClass = 'introPage';
-
+		
 		$http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
 
-		//$scope.photos = tonyDirective.someFunctionStuff();
-
-
-		//$scope.message = { text: 'nothing clicked yet' };
-		//console.log($scope.daysInMonth(12, 2012));
-/*
-		$scope.clickUnfocused = function() {
-			$scope.message.text = 'unfocused button clicked';
-		};
-		$scope.clickFocused = function() {
-			$scope.message.text = 'focus button clicked';
-		};
-*/
-
-		/*
-		$scope.lineInView = function(index, inview, inviewpartIntroDesign, inviewpart) { //inview  - show recentReleases on scroll
-			var rRel = angular.element('#recentReleases');
-			
-			if (typeof(inviewpart) !== 'undefined') {
-        rRel.removeClass('inview-invisible').addClass('inview-visible');
-			}
-			else {
-				rRel.removeClass('inview-visible').addClass('inview-invisible');
-			}
-		};
-		*/
   }]);
 	
 tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
