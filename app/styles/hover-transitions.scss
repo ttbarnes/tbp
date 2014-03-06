@@ -70,12 +70,14 @@ hover styles - page specific
 
 /*about page*/
 .aboutPage {
+	/*
 	header .navbar-default .navbar-nav li a {
 		color:#152C41;
 		&:hover {
 			color:$colorBlack;
 		}
 	}
+	*/
 
 	#containerMiddle .row .col-md-12 .skillsetChart li.bar {
 	  &.html {
@@ -130,14 +132,14 @@ hover styles - page specific
 	footer {
 		/*social icons*/
 		ul.socialIcons li a:hover {
-			color:#134D30;
+			color:$colorGreenDark2;
 		}
 	}
 	/*contact text*/
 	#containerMiddle .row .span4 a.contactAddress {
 		&:hover {
 			letter-spacing:1px;
-			text-shadow:0 4px 0 #134D30;
+			text-shadow:0 4px 0 $colorGreenDark2;
 		}
 	}
 
