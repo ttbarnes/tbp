@@ -4,15 +4,14 @@ var tbp = angular.module('tbpApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  //'ngAnimate',
+  'ngAnimate',
   //'angular-inview',
   'tbpControllers',
   //'tonyAppModule'
   //'whereIsThePower'
   //'tbService'
 ]);
-  
-	
+
 tbp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
@@ -47,4 +46,3 @@ tbp.config(function ($routeProvider) {
 			controller: 'errorCtrl'
 		});
 });
-
