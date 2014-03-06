@@ -111,5 +111,54 @@ describe('Controller: aboutCtrl', function () {
 
 });
 
+describe('Controller: contactCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('tbpApp'));
+
+  var contactCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    contactCtrl = $controller('contactCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should have a page class/name', function (){
+    expect(scope.pageClass).toBeDefined();
+  });
+
+  it('should have an contact email address defined', function(){
+    expect(scope.tonyDetails.email).toBe('tony@tonybarnes.me');
+  });
+
+});
+
+
+describe('Controller: errorCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('tbpApp'));
+
+  var errorCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    errorCtrl = $controller('errorCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should have a page class/name', function (){
+    expect(scope.pageClass).toBeDefined();
+  });
+
+});
+
 
 
