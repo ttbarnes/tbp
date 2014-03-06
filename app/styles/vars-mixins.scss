@@ -1,33 +1,38 @@
-/*****************************************
+/* ===========================================================
 tbp - Tony Barnes Portfolio
 Author: Tony Barnes
-More things here
-******************************************/
+File: vars, mixins
+/* ===========================================================*/
 
 /********************
 vars, mixins
 *********************/
-$colorBlack:#222;
-$colorGrey:#c5c5c5;
 
+/*black, grey*/
+$colorBlack:#222;
+$colorGrey:#C5C5C5;
+
+/*white, light grey*/
 $colorWhiteBright1:#F1F1F1;
 $colorWhiteBright2:#FCFCFC;
 $colorWhite:#E7E7E7;
 $colorWhite2:#D8D8D8;
 
-
+/*blue*/
 $colorBlueLight:#396A98;
 $colorBlueLight2:#2D5981;
 $colorBlueLight3:#628BB1;
-
 $colorBlueDark:#274969;
 $colorBlueDark2:#1C3750;
 
+/*red, orange*/
 $colorRedLight:#B88080;
 $colorOrangeLight:#B38d6F;
 
+/*green*/
 $colorGreenLight:#539574;
 $colorGreenDark:#1E613F;
 $colorGreenDark2:#134D30;
 
+/*other*/
 $colorYellowLight:#B2B36F;

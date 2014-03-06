@@ -1,8 +1,8 @@
-/*****************************************
+/* ===========================================================
 tbp - Tony Barnes Portfolio
 Author: Tony Barnes
-More things here
-******************************************/
+File: animations, keyframes etc
+/* ===========================================================*/
 
 @import "vars-mixins";
 
@@ -144,7 +144,6 @@ intro/home
   @include introHeadingSubLast;
 }
 
-
 /********************
 about page, skill set
 *********************/
@@ -172,7 +171,3 @@ about page, skill set
   0% {height:0;opacity:0;}
   100% {height:40%;opacity:1;} 
 }
-
-
-
-
