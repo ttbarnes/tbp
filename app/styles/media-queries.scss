@@ -126,10 +126,27 @@ responsive
 		}
 		.navbar-nav {
 			margin:0;
-			li a {
-				padding:7.5px 10px;
-				color:$colorBlueDark;
-				text-align:right;
+		}
+	}
+	header .navbar-default {
+		/*toggle nav*/
+		.navbar-nav {
+			text-align:right;
+			li {
+				display:inline-block;
+				margin-left:12px;
+				a {
+					padding:10px 15px;
+					color:#999;
+					background:#E3E3E3;
+					text-align:center;
+					display:inline-block;
+					&:hover,
+					&:focus {
+						color:#999;
+						background:#E3E3E3;
+					}
+				}
 			}
 		}
 	}
@@ -143,11 +160,10 @@ responsive
 	}
 
 	/*intro page*/
-	/*intro page*/
 	div.introPage {
-	 div.row-btn-lg	.col-md-12 {
+	  div.row-btn-lg	.col-md-12 {
 			a.btn {
-				margin:0 0 15px 0 !important;
+		 		margin:0 0 15px 0 !important;
 				width:80%;
 			}
 		}
@@ -187,15 +203,25 @@ responsive
 	}
 
 	/*about page*/
-	.aboutPage #containerMiddle .row  {
-		.col-md-4 {
-			float:none;
-			clear:both;
-			width:100%;
+	.aboutPage {
+		header {
+			/*toggle nav*/
+			.navbar-default .navbar-nav {
+				li a {
+					background:$colorBlueDark2;
+				}
+			}
+		}
+		#containerMiddle .row  {
+			.col-md-4 {
+				float:none;
+				clear:both;
+				width:100%;
+			}
 		}
 	}
-	
-	/*showcase*/
+
+	/*showcase grid*/
 	.showcaseGalleryGrid {
 		text-align:center;
 	  li.col-xs-3 {						
@@ -314,6 +340,14 @@ responsive
 
 	/*contact page*/
 	.contactPage  {
+		header {
+			/*toggle nav*/
+			.navbar-default .navbar-nav {
+				li a {
+					background:$colorGreenDark2;
+				}
+			}
+		}
 	  .row .span4 a.contactAddress {
 		  font-size:33px;
 		}
