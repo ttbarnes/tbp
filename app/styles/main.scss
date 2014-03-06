@@ -1,8 +1,8 @@
-/*****************************************
+/* ===========================================================
 tbp - Tony Barnes Portfolio
 Author: Tony Barnes
-More things here
-******************************************/
+File: main css - layouts, page specifics
+/* ===========================================================*/
 
 .browsehappy {
 	margin: 0.2em 0;
@@ -117,7 +117,7 @@ buttons
 }
 
 /********************
-main container/s
+main container/s, header/middle/footer
 *********************/
 body {
 	background:$colorWhiteBright1;
@@ -129,6 +129,7 @@ body {
 .container {
 	width:100%;
 	opacity:1;
+	padding:0;
 }
 .container.ng-enter {
 	opacity:0;
@@ -352,10 +353,9 @@ div.tags div {
 	display:inline-block;
 }
 
-/*intro, intro page, introPage*/
-.container {
-  padding:0;
-}
+/********************
+intro page
+*********************/
 
 /*top/main intro*/
 .jumbotron {
@@ -637,6 +637,7 @@ showcase individual page
 		}
 	}
 }
+
 /********************
 demo - jquery plugin page (may use another CSS)
 *********************/
