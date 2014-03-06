@@ -53,22 +53,7 @@ tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$h
   }]);
 
 tbpControllers.controller('aboutCtrl', function($scope){
-	/*
-	$scope.$on('$routeChangeSuccess', function() {
-    window.scrollTo(0, 0); //fail safe
-	});
-	*/
-	
-/*
-  $scope.alerter = CommonCode;
-	$scope.alerter.show('hello world! tb');
-	//$scope.tbthing500 = CommonCode;
-	//$scope.tbthing500.show();
-*/
-
 	$scope.pageClass = 'aboutPage';
-
-	
 });
 	
 tbpControllers.controller('contactCtrl', function($scope){
@@ -82,5 +67,3 @@ tbpControllers.controller('contactCtrl', function($scope){
 tbpControllers.controller('errorCtrl', function($scope){
 	$scope.pageClass = 'errorPage';
 });
-
-
