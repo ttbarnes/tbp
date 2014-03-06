@@ -41,4 +41,14 @@ tbp.config(function ($routeProvider) {
 			templateUrl: 'views/error.html',
 			controller: 'errorCtrl'
 		});
+})
+.run(function($rootScope, autoWindowScrollTop) {
+  $rootScope.$on('$routeChangeSuccess', function () {
+    autoWindowScrollTop($rootScope);
+  });
+})
+.factory('autoWindowScrollTop', function(){
+  return function() {
+    window.scrollTo(0,0); //failsafe
+	};
 });
