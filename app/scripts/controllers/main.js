@@ -40,7 +40,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http',
 		*/
   }]);
 	
-tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
+tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
 	function($scope, $http) {
 		
 		$scope.pageClass = 'showcaseHomePage';
@@ -65,9 +65,9 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', '$q',
 		$scope.byCategory = function(project){
 			return project.category === $scope.selectedCategory;
 		};
-		$scope.selectedCategory = 'Static';
-		
-		
+
+		$scope.selectedCategory = 'Ecommerce';
+				
 	}]);
 
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
