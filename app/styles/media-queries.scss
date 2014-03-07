@@ -15,10 +15,11 @@ responsive
 		width:100%;
 	}
 }
-
-@media (min-width: 1000px) {
+@import "hover-transitions";
 	@import "animations";
-	@import "hover-transitions";
+	
+@media (min-width: 1000px) {
+	
 }
 
 @media (max-width: 1000px) {

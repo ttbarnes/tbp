@@ -5,17 +5,13 @@ File: animations, keyframes etc
 /* ===========================================================*/
 
 @import "base";
-@mixin border-radius ($radius){
-  -webkit-border-radius:$radius;
-  -moz-border-radius:$radius;
-  border-radius:$radius;
-}
 
 /*global fade in*/
 @mixin fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 @-webkit-keyframes fadeIn {
   @include fadeIn;
 }
@@ -151,7 +147,7 @@ intro/home
 
 /********************
 about page, skill set
-*********************/
+*********************/;
 @keyframes skillsetBarHtml {
   0% {height:0;opacity:0;}
   100% {height:95%;opacity:1;}
