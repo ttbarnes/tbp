@@ -4,7 +4,7 @@ Author: Tony Barnes
 File: hover transitions for desktop only
 /* ===========================================================*/
 
-@import "vars-mixins";
+@import "base";
 
 /********************
 hover styles
@@ -67,23 +67,15 @@ hover styles - page specific
 	}
 }
 
+
 /*about page*/
 .aboutPage {
-	/*
-	header .navbar-default .navbar-nav li a {
-		color:#152C41;
-		&:hover {
-			color:$colorBlack;
-		}
-	}
-	*/
-
 	#containerMiddle .row .col-md-12 .skillsetChart li.bar {
 	  &.html {
-	  	-webkit-animation: 1s skillsetBarHtml;
-		  -moz-animation: 1s skillsetBarHtml;
-		  -o-animation: 1s skillsetBarHtml;
-		  animation: 1s skillsetBarHtml;
+	  	-webkit-animation: skillsetBarHtml 1s;
+		  -moz-animation: skillsetBarHtml 1s;
+		  -o-animation: skillsetBarHtml 1s;
+		  animation: skillsetBarHtml 1s;
 	  }
 	  &.css {
 	  	-webkit-animation: 1s skillsetBarCss;
@@ -117,6 +109,7 @@ hover styles - page specific
 	  }
 	}
 }
+
 
 /*contact page*/
 .contactPage {
@@ -176,7 +169,7 @@ div.tags button,
 }
 
 /*page/element specific*/
-.aboutPage #containerMiddle .row .col-md-12 .skillset li.bar {
+.aboutPage #containerMiddle .row .col-md-12 .skillsetChart li.bar {
 	-webkit-transition:height 2s ease-out;
 	-moz-transition:height 2s ease-out;
 	-o-transition:height 2s ease-out;
