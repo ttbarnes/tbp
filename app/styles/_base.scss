@@ -1,0 +1,23 @@
+/* ===========================================================
+tbp - Tony Barnes Portfolio
+Author: Tony Barnes
+File: base css - global
+/* ===========================================================*/
+
+@import "vars-mixins.scss";
+
+/*cross browser mixins*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin animation($animation) {
+  -webkit-animation:$animation;
+  	 -moz-animation:$animation;
+  		 -o-animation:$animation;
+  			  animation:$animation;
+}
