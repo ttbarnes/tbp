@@ -7,7 +7,9 @@ File: intro specifics
 @media (min-width:1100px) {
 	/*intro page*/
 	.jumbotron {
+		min-height:400px; /*fail safe for opera browser*/
 		.bigBg {
+			min-height:400px; /*fail safe for opera browser*/
 			background-image:url(../images/intro4-1500w.jpg);
 		}
 	}
