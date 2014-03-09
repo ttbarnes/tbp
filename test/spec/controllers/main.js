@@ -159,6 +159,3 @@ describe('Controller: errorCtrl', function () {
   });
 
 });
-
-
-
