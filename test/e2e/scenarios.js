@@ -34,6 +34,45 @@ describe('Page-view: Intro', function() {
 /*header brand/links test*/
 
 
+describe('Header', function() {
+	beforeEach(function() {
+    browser().navigateTo('/#/about'); //example, about page
+  });
+
+	describe('Logo brand', function() {
+
+		it('should have correct name', function(){
+			expect(element('h1 a.navbar-brand').html()).toEqual('Tony Barnes');
+		});
+		it('should link back to the home page', function(){
+			element('h1 a.navbar-brand').click();
+			expect(browser().location().url()).toEqual('/');
+		});
+
+	});
+	
+	describe('Navbar links', function() {
+		it('should have 2 items', function(){
+			expect(element('header .navbar-nav li').count()).toEqual(2);
+		});
+		it('should have the correct text', function(){
+			expect(element('header .navbar-nav li:first-child a').html()).toEqual('Showcase');
+			expect(element('header .navbar-nav li:last-child a').html()).toEqual('About');
+		});
+		it('should direct to to the right places', function(){
+			element('header .navbar-nav li:first-child a').click();
+			expect(browser().location().url()).toEqual('/showcase');
+
+			browser().navigateTo('/#/contact');
+			element('header .navbar-nav li:last-child a').click();
+			expect(browser().location().url()).toEqual('/about');
+		});
+	});
+
+});
+
+
+
 /*
 describe('Footer', function() {
 	beforeEach(function() {
