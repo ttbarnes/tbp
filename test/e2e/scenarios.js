@@ -31,6 +31,8 @@ describe('Page-view: Intro', function() {
 
 });
 
+/*header brand/links test*/
+
 
 /*
 describe('Footer', function() {
@@ -102,6 +104,12 @@ describe('Page-view: Error', function() {
 	it('should automatically redirect to /error/ when the window url is not recognised', function () {
     browser().navigateTo('/#/asdfqwertyzxcv1234');
     expect(browser().location().url()).toEqual('/error');
+  });
+
+  it('should display a button that takes a user back to the home page', function(){
+  	var x = '#containerMiddle a.btn';
+  	element(x).click();
+  	expect(browser().location().url()).toEqual('/');
   });
 
 });
