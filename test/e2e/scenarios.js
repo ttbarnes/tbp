@@ -73,7 +73,7 @@ describe('Header', function() {
 
 
 
-/*
+
 describe('Footer', function() {
 	beforeEach(function() {
     browser().navigateTo('/#/');
@@ -87,8 +87,31 @@ describe('Footer', function() {
 
 	});
 
+	describe('Navbar links', function() {
+		it('should have 3 items', function(){
+			expect(element('footer .navbar-nav li').count()).toEqual(3);
+		});
+		it('should have the correct text', function(){
+			expect(element('footer .navbar-nav li:eq(0) a').html()).toEqual('Showcase');
+			expect(element('footer .navbar-nav li:eq(1) a').html()).toEqual('About');
+			expect(element('footer .navbar-nav li:eq(2) a').html()).toEqual('Contact');
+		});
+		it('should direct to to the right places', function(){
+			element('footer .navbar-nav li:eq(0) a').click();
+			expect(browser().location().url()).toEqual('/showcase');
+
+			browser().navigateTo('/#/contact');
+			element('footer .navbar-nav li:eq(1) a').click();
+			expect(browser().location().url()).toEqual('/about');
+
+			element('footer .navbar-nav li:eq(2) a').click();
+			expect(browser().location().url()).toEqual('/contact');
+
+		});
+	});
+
 });
-*/
+
 
 
 describe('Page-view: Showcase home', function(){
