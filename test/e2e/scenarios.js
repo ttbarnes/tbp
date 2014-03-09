@@ -50,6 +50,31 @@ describe('Footer', function() {
 */
 
 
+describe('Page-view: Showcase home', function(){
+	beforeEach(function() {
+    browser().navigateTo('/#/showcase');
+  });
+
+  it('should return new items after clicking the filters', function(){
+		//default state
+  	expect(repeater('ul.showcaseGalleryGrid li').count()).toBeGreaterThan(0);
+
+  	//one example
+  	element('div.tags button.Static').click();
+  	expect(repeater('ul.showcaseGalleryGrid li').count()).toBeGreaterThan(12); //currently 11 ecommerce projects, 13 static
+
+  	//another example with jQuery projects - only 2 exist
+  	element('div.tags button.jQuery').click();
+  	expect(repeater('ul.showcaseGalleryGrid li').count()).toEqual(2);
+  });
+
+  it('should direct user to an individual project page after clicking a project', function(){
+  	element('div.tags button.Static').click();
+  	element('ul.showcaseGalleryGrid li a:first-child').click();
+    expect(browser().location().url()).toContain('/showcase/'); //currently only one child page avaliable
+  });
+
+});
 
 describe('Page-view: About', function(){
 	beforeEach(function() {
