@@ -10,10 +10,6 @@ describe('Page-view: Intro', function() {
 			var x = '#recentReleases ul li';
 			expect(repeater(x).count()).toEqual(4);
 		});
-		//make sure categories/tags contain stuff
-		//maybe try this:
-		//angular.element(someElem).html('');
-
 	});
 
 	describe('Big buttons section', function() {
@@ -28,11 +24,7 @@ describe('Page-view: Intro', function() {
 			expect(browser().location().url()).toEqual('/showcase');
 		});
 	});
-
 });
-
-/*header brand/links test*/
-
 
 describe('Header', function() {
 	beforeEach(function() {
@@ -68,24 +60,14 @@ describe('Header', function() {
 			expect(browser().location().url()).toEqual('/about');
 		});
 	});
-
 });
-
-
-
 
 describe('Footer', function() {
 	beforeEach(function() {
     browser().navigateTo('/#/');
   });
 
-	describe('Social icon links', function() {
-
-		it('should have 3 items', function(){
-
-		});
-
-	});
+  //social icon links - test the journey from link-clicking to the new window/URL
 
 	describe('Navbar links', function() {
 		it('should have 3 items', function(){
@@ -109,10 +91,7 @@ describe('Footer', function() {
 
 		});
 	});
-
 });
-
-
 
 describe('Page-view: Showcase home', function(){
 	beforeEach(function() {
@@ -137,7 +116,6 @@ describe('Page-view: Showcase home', function(){
   	element('ul.showcaseGalleryGrid li a:first-child').click();
     expect(browser().location().url()).toContain('/showcase/'); //currently only one child page avaliable
   });
-
 });
 
 describe('Page-view: About', function(){
@@ -145,8 +123,7 @@ describe('Page-view: About', function(){
     browser().navigateTo('/#/about');
   });
 
-  //test social links
-
+  //test social links (same as social links above)
 });
 
 describe('Page-view: Contact', function(){
@@ -157,7 +134,6 @@ describe('Page-view: Contact', function(){
 	it('should have a correct email address', function() {
 		expect(element('a.contactAddress').html()).toEqual('tony@tonybarnes.me');
 	});
-
 });
 
 
@@ -173,6 +149,4 @@ describe('Page-view: Error', function() {
   	element(x).click();
   	expect(browser().location().url()).toEqual('/');
   });
-
 });
-
