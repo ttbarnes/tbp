@@ -5,31 +5,32 @@ describe('Page: Intro', function() {
     browser().navigateTo('/#/');
   });
 
-	//check page class has rendered as expected texa
+	//check page class has rendered as expected text
 
-	//recent releases function start
-	//
-	//
-	it('should have 4 items', function(){
-		var x = '#recentReleases ul li';
-		expect(repeater(x).count()).toEqual(4);
+	describe('recent releases', function() {
+		it('should have 4 items assigned/limited', function(){
+			var x = '#recentReleases ul li';
+			expect(repeater(x).count()).toEqual(4);
+		});
+		//make sure categories/tags contain stuff
+		//maybe try this:
+		//angular.element(someElem).html('');
+
 	});
 
-	//make sure categories/tags contain stuff
-
-	//
-	//
-	//recent releases function end
-
-  it('should have a button directing to the about page', function(){
-	  element('div.subIntro a.btn:first-child').click(); 
-		expect(browser().location().url()).toEqual('/about');
+	describe('big buttons section', function() {
+		it('should have a button directing to the about page', function(){
+			var x = 'div.subIntro a.btn:first-child';
+		  element(x).click();
+			expect(browser().location().url()).toEqual('/about');
+		});
+		it('should have a button directing to the showcase page', function(){
+			var x = 'div.subIntro a.btn:last-child';
+		  element(x).click();
+			expect(browser().location().url()).toEqual('/showcase');
+		});
 	});
-
-	it('should have a button directing to the showcase page', function(){
-	  element('div.subIntro a.btn:last-child').click(); 
-		expect(browser().location().url()).toEqual('/showcase');
-	});
+  
 	
 
 
@@ -41,16 +42,6 @@ describe('Page: Error', function() {
     browser().navigateTo('/#/asdfqwertyzxcv1234');
     expect(browser().location().url()).toEqual('/error');
   });
-
-	/*
-	it('should do this that and the other', function() { 
-		input('searchBox').enter('jacksparrow'); 
-		element(':button').click(); 
-		expect(repeater('ul li').count()).toEqual(10); 
-		input('filterText').enter('Bees'); 
-		expect(repeater('ul li').count()).toEqual(1);
-	});
-	*/
 
 });
 
