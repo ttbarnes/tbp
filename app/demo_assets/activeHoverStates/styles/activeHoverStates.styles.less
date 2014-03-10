@@ -1,0 +1,57 @@
+/********************************
+* Active Hover States 1.1.5
+	* Control and highlight parent or next/prev items
+	* http://github.com/ttbarnes/Active-Hover-States
+	*
+	* Author: Tony Barnes
+	* http://tonybarnes.me
+	* No license or copyright - do what you like
+	*
+	* Last updated: 20/10/2013
+  ********************************
+  plugin styles
+**********************************/
+
+/*active hover states*/
+#activeHoverStates,
+.activeHoverStates {
+	
+	li,
+	div {
+		
+		a {			
+			display:inline-block;
+			width:100%;
+			text-align:center;
+			text-decoration:none;
+			background:#222;	
+			color:#FFF;
+			padding:2px 0;
+			border-bottom:dashed 2px #333;
+			-webkit-transition: all 0.1s linear;
+			-moz-transition: all 0.1s linear;
+			-o-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+		}
+		
+		/*hover state*/
+		&.hovered {
+			 a {
+				 background:#131313;
+				 color:#FFF;
+			 }
+		}
+		/*active state*/
+		&.active {
+			 a {
+				 background:#333;
+				 color:#444;
+			 }
+		}
+		/*active state - nextAll items*/
+		&.activePrev {
+			opacity:0.5;
+		}	
+	}
+	
+}
