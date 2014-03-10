@@ -15,7 +15,7 @@ responsive
 		width:100%;
 	}
 }
-
+	
 @media (max-width: 1000px) {
 	#containerMiddle {
 		margin:0;
@@ -354,6 +354,13 @@ responsive
 		  font-size:33px;
 		}
 	}
+
+	/*error page*/
+	.errorPage {
+		#containerMiddle .row h4 {
+			font-size:35px;
+		}
+	}
 	
 }
 
@@ -403,9 +410,9 @@ responsive
 	}
 	/*error page*/
 	.errorPage {
-		#containerMiddle {
+		#containerMiddle .row {
 			h4 {
-				font-size:35px;
+				font-size:25px;
 			}
 		}
 	}
