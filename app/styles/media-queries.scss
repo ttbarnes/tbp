@@ -47,12 +47,19 @@ responsive
 			}
 		}
 	}
-
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
 	.recentReleases .span4 .col-md-4 {
 		width:24.4444444444%;
+		a {
+			img {
+				opacity:1;
+			}
+			.tags {
+				display:none;
+			}
+		}
 	}
 }
 
