@@ -52,13 +52,15 @@ hover styles - page specific
 	.span4 .col-md-4 {
 		.cont a {
 			img {
-				opacity:0.88;
+				opacity:1;
 			}
 			.tags {
-				opacity:0.150;
+				opacity:0.9;
 			}
 			&:hover {
-				img,
+				img {
+					opacity:0.88;
+				}
 				div.tags {
 					opacity:1;
 				}
