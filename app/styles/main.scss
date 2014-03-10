@@ -80,6 +80,13 @@ buttons
   color:$colorWhite;
   background:$colorBlueLight;
 	color:$colorWhite;
+	-ms-word-break:break-all;
+	 word-break:break-all;
+	 word-break:break-word;
+	-webkit-hyphens:auto;
+	-moz-hyphens:auto;
+	hyphens:auto;
+
 
   &:hover,
 	&:focus, 
@@ -199,7 +206,7 @@ body {
 		border:0 none;
 		@include border-radius(0);
 		background:none;
-		margin-top:12px;
+		margin-top:15px;
 
 		.icon-bar {
 			@include border-radius(0);
