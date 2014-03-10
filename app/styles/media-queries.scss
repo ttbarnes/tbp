@@ -365,6 +365,9 @@ responsive
 }
 
 @media (max-width: 480px) {
+	.navbar-default h1 a.navbar-brand {
+		font-size:25px;
+	}
 	.btn {
 	  width:100%;
 	  margin:0 0 15px 0;
