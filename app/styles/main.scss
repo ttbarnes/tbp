@@ -82,10 +82,11 @@ buttons
 	color:$colorWhite;
 	-ms-word-break:break-all;
 	 word-break:break-all;
-	 word-break:break-word;
+	 word-wrap:break-word;
 	-webkit-hyphens:auto;
 	-moz-hyphens:auto;
 	hyphens:auto;
+	white-space:pre;
 
 
   &:hover,
@@ -175,6 +176,8 @@ body {
 	/*logo*/
 	h1 {
 	  margin:0;
+	  float:left;
+	  
 		a.navbar-brand {
 			font-size:30px;
 			padding:20px 10px;
@@ -917,13 +920,14 @@ contact page
 				font-size:50px;
 				color:$colorWhiteBright2;
 				padding-bottom:4px;
+				letter-spacing:0;
 				-ms-word-break:break-all;
 				 word-break:break-all;
 				 word-break:break-word;
 				-webkit-hyphens:auto;
 				-moz-hyphens:auto;
 				hyphens:auto;
-				letter-spacing:0;
+				white-space:pre;
 
 				&:hover, 
 				&:focus, 
