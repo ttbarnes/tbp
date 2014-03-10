@@ -6,7 +6,7 @@ File: intro specifics
 
 @media (min-width:1100px) {
 	/*intro page*/
-	.jumbotron {
+	.container .jumbotron {
 		min-height:400px; /*fail safe for opera browser*/
 		.bigBg {
 			min-height:400px; /*fail safe for opera browser*/
@@ -17,7 +17,7 @@ File: intro specifics
 
 @media (min-width:992px) and (max-width: 1100px) {
 	/*intro page*/
-	.jumbotron {
+	.container .jumbotron {
 		height:83%;
 		max-height:515px;
 		.bigBg {
@@ -29,7 +29,7 @@ File: intro specifics
 
 @media (min-width:767px) and (max-width: 992px) {
 	/*intro page*/
-	.jumbotron {
+	.container .jumbotron {
 		height:68%;
 		max-height:430px;
 		.bigBg {
@@ -40,7 +40,7 @@ File: intro specifics
 }
 
 @media (min-width: 768px) {
-	.jumbotron {
+	.container .jumbotron {
 	  padding:1.5em !important;
 	  max-height:580px;
 	  .bigBg {
@@ -51,7 +51,7 @@ File: intro specifics
 
 @media (min-width:700px) and (max-width: 767px) {
 	/*intro page*/
-	.jumbotron {
+	.container .jumbotron {
 		height:66%;
 		max-height:410px;
 		.bigBg {
@@ -62,7 +62,7 @@ File: intro specifics
 }
 
 @media (min-width:480px) and (max-width: 700px) {
-  .jumbotron {
+  .container .jumbotron {
 		padding:2em 1em;
 		height:40%;
 		max-height:400px;
@@ -73,7 +73,7 @@ File: intro specifics
 	}
 }
 @media (max-width: 580px) {
-	.jumbotron {
+	.container .jumbotron {
 		.innerBox {
 			display:inline-block;
 			width:100%;
@@ -98,7 +98,7 @@ File: intro specifics
 	}
 }
 @media (max-width: 480px) {
-	.jumbotron {
+	.container .jumbotron {
 		overflow:hidden;
 		height:37%;
 		max-height:370px;
