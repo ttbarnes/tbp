@@ -11,7 +11,6 @@ File: animations, keyframes etc
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
 @-webkit-keyframes fadeIn {
   @include fadeIn;
 }
@@ -147,28 +146,103 @@ intro/home
 
 /********************
 about page, skill set
-*********************/;
-@keyframes skillsetBarHtml {
+*********************/
+@mixin skillsetBar90perc {
   0% {height:0;opacity:0;}
   100% {height:95%;opacity:1;}
 }
-@keyframes skillsetBarCss {
-  0% {height:0;opacity:0;}
-  100% {height:95%;opacity:1;}
-}
-@keyframes skillsetBarMobile {
+@mixin skillsetBar80perc {
   0% {height:0;opacity:0;}
   100% {height:80%;opacity:1;}
 }
-@keyframes skillsetBarJquery {
-  0% {height:0;opacity:0;}
-  100% {height:80%;opacity:1;}
-}
-@keyframes skillsetBarJavascript {
+@mixin skillsetBar60perc {
   0% {height:0;opacity:0;}
   100% {height:60%;opacity:1;}
 }
-@keyframes skillsetBarAngular {
+@mixin skillsetBar40perc {
   0% {height:0;opacity:0;}
-  100% {height:40%;opacity:1;} 
+  100% {height:40%;opacity:1;}
+}
+
+/*bat html*/
+@-webkit-keyframes skillsetBarHtml {
+  @include skillsetBar90perc;
+}
+@-moz-keyframes skillsetBarHtml {
+  @include skillsetBar90perc;
+}
+@-o-keyframes skillsetBarHtml {
+  @include skillsetBar90perc;
+}
+@keyframes skillsetBarHtml {
+  @include skillsetBar90perc;
+}
+/*bar css*/
+@-webkit-keyframes skillsetBarCss {
+  @include skillsetBar90perc;
+}
+@-moz-keyframes skillsetBarCss {
+  @include skillsetBar90perc;
+}
+@-o-keyframes skillsetBarCss {
+  @include skillsetBar90perc;
+}
+@keyframes skillsetBarCss {
+  @include skillsetBar90perc;
+}
+
+/*bar mobile*/
+@-webkit-keyframes skillsetBarMobile {
+  @include skillsetBar80perc;
+}
+@-moz-keyframes skillsetBarMobile {
+  @include skillsetBar80perc;
+}
+@-o-keyframes skillsetBarMobile {
+  @include skillsetBar80perc;
+}
+@keyframes skillsetBarMobile {
+  @include skillsetBar80perc;
+}
+
+/*bar jquery*/
+@-webkit-keyframes skillsetBarJquery {
+  @include skillsetBar80perc;
+}
+@-moz-keyframes skillsetBarJquery {
+  @include skillsetBar80perc;
+}
+@-o-keyframes skillsetBarJquery {
+  @include skillsetBar80perc;
+}
+@keyframes skillsetBarJquery {
+  @include skillsetBar80perc;
+}
+
+/*bar javascript*/
+@-webkit-keyframes skillsetBarJavascript {
+  @include skillsetBar60perc;
+}
+@-moz-keyframes skillsetBarJavascript {
+  @include skillsetBar60perc;
+}
+@-o-keyframes skillsetBarJavascript {
+  @include skillsetBar60perc;
+}
+@keyframes skillsetBarJavascript {
+  @include skillsetBar60perc;
+}
+
+/*bar angular*/
+@-webkit-keyframes skillsetBarAngular {
+  @include skillsetBar40perc;
+}
+@-moz-keyframes skillsetBarAngular {
+  @include skillsetBar40perc;
+}
+@-o-keyframes skillsetBarAngular {
+  @include skillsetBar40perc;
+}
+@keyframes skillsetBarAngular {
+  @include skillsetBar40perc;
 }

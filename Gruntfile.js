@@ -40,7 +40,8 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        //tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -126,6 +127,7 @@ module.exports = function (grunt) {
     },
 
     // Add vendor prefixed styles
+    /*
     autoprefixer: {
       options: {
         browsers: ['last 1 version']
@@ -134,11 +136,15 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
+          src: '{,*}*.css',
+          //this should be the following (add a '/' after the first star (*))
+          //src: '{,*}*.css',
+
           dest: '.tmp/styles/'
         }]
       }
     },
+    */
 
     // Automatically inject Bower components into the app
     'bower-install': {
@@ -367,7 +373,7 @@ module.exports = function (grunt) {
       'clean:server',
       'bower-install',
       'concurrent:server',
-      'autoprefixer',
+      //'autoprefixer',
       'connect:livereload',
       'watch'
     ]);
@@ -381,7 +387,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
-    'autoprefixer',
+    //'autoprefixer',
     'connect:test',
     'karma'
   ]);
@@ -391,7 +397,7 @@ module.exports = function (grunt) {
     'bower-install',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
+    //'autoprefixer',
     'concat',
     'ngmin',
     'copy:dist',

@@ -22,6 +22,13 @@ img {
 @import "base";
 @import "social_foundicons";
 
+/*more imports at the bottom of this sheet:*/
+/*@import "media-queries";*/
+/*@import "hover-transitions";*/
+/*@import "animations";*/
+
+
+
 
 /********************
 typography
@@ -731,7 +738,8 @@ about page
 				  background:#CCC;
 				  border-right:solid 3px #175B38;
 				  color:$colorBlack;
-				  height:0;
+				  /*height:0;
+					height:auto;*/
 
 				  .skill,
 				  .rating {
@@ -745,7 +753,7 @@ about page
 					.skill {
 					  margin-top:10px;
 					  overflow: hidden;
-					  width: 100%;
+					  width:100%;
 					  font-size:16px;
 					}
 				  .rating {
@@ -910,6 +918,8 @@ contact page
 				-webkit-hyphens:auto;
 				-moz-hyphens:auto;
 				hyphens:auto;
+				letter-spacing:0;
+
 				&:hover, 
 				&:focus, 
 				&:active {
@@ -941,3 +951,5 @@ error page
 }
 
 @import "media-queries";
+@import "animations";
+@import "hover-transitions";
