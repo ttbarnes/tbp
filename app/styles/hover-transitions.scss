@@ -117,9 +117,9 @@ hover styles - page specific
 .contactPage {
 
 	header .navbar-default .navbar-nav li a {
-		color:#0D3B24;
+		color:$colorGreenLight;
 		&:hover {
-			color:$colorBlack;
+			color:$colorGreenLight;
 		}
 	}
 
