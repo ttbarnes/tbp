@@ -67,6 +67,10 @@ responsive
 	.container {
 		width:100%;
 	}
+	.btn-primary,
+	.btn-lg {
+		font-size:19px;
+	}
 
 	/*intro page*/
 	div.introPage {
@@ -380,8 +384,16 @@ responsive
 	.navbar-default h1 a.navbar-brand {
 		font-size:25px;
 	}
+	footer .navbar-default ul.navbar-nav > li {
+		clear:both;
+		display:block;
+		a {
+			padding:20px 15px;
+		}
+	}
 	.btn {
 	  width:100%;
+		font-size:17px;
 	  margin:0 0 15px 0;
 		padding:15px 20px;
 	}
