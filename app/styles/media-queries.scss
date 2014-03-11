@@ -445,7 +445,12 @@ responsive
 	}
 }
 
-
+@media (max-width: 350px) {
+/*contact page*/
+	.contactPage .row .col-md-12 a.contactAddress {
+		font-size:20px;
+	}
+}
 @media (max-width: 300px) {
 	.navbar-default h1 a.navbar-brand {
 		font-size:22px;
