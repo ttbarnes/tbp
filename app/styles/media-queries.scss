@@ -424,6 +424,9 @@ responsive
 
 
 @media (max-width: 300px) {
+	.navbar-default h1 a.navbar-brand {
+		font-size:22px;
+	}
 	.recentReleases .span4 .col-md-4 {	
 		max-width:100%;
 	}
