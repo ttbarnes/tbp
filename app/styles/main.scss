@@ -35,7 +35,7 @@ typography
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 0;
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
 ::-moz-selection {
@@ -104,6 +104,9 @@ buttons
 .btn-primary,
 .btn-lg {
 	border:solid 6px $colorBlueLight;
+	font-size:20px;
+	text-shadow:0 2px 2px #244A6E;
+
 	&:hover, 
 	&:focus, 
 	&:active, 
@@ -269,7 +272,7 @@ footer {
 				a {
 				  padding:20px;
 					color:$colorBlueLight3;
-					font-size:12px;
+					font-size:13px;
 					&:hover {
 						color:$colorBlueLight3;
 					}
@@ -426,12 +429,14 @@ intro page
 		color:#FFF;
 		font-size:50px;
 		margin:0;
+		text-shadow:0 2px 2px #091724;
 	}
 	h2 {
 		color:#DBDBDB;
 		margin-top:15px;
-		margin-bottom:13px;
-		font-size:20px;
+		margin-bottom:10px;
+		font-size:22px;
+		text-shadow:0 2px 2px #274969;
 
 		> {
 			span {
