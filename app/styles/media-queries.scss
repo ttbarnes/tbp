@@ -97,6 +97,14 @@ responsive
 				padding-bottom:0;
 			}
 		}
+		&.skillsetChartWrapper .col-md-12 .skillsetChart {
+			li.bar {
+				.skill,
+				.rating {
+					font-size:14px;
+				}
+			}
+		}
 	}
 
 	/*showcase individual page*/
@@ -299,7 +307,7 @@ responsive
   			margin-bottom:10px;
   		}
   	}
-		.row .col-md-12 .skillsetChart {
+		.row .col-md-12 .col-md-12 .skillsetChart {
 			height:auto;
 			margin:20px 0;
 			li {
@@ -312,6 +320,7 @@ responsive
 			  }
 				&.bar {
 			    margin-bottom:0;
+			    min-height:42px !important;
 			    height:auto !important;
 					-webkit-transition:none !important;
 					-moz-transition:none !important;
@@ -328,11 +337,13 @@ responsive
 						margin-top:0;
 						vertical-align:middle;
 						padding:0 10px;
+						font-size:15px;
 					}
 			    .skill {
 			    	margin:0;
 			    }
 			    .rating {
+			    	margin-bottom:0;
 			    	opacity:0.5;
 			    }
 				}
