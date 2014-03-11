@@ -52,3 +52,41 @@ tbp.config(function ($routeProvider) {
     window.scrollTo(0,0); //failsafe
 	};
 });
+
+
+
+
+tbp.factory('myService', function() {
+	return {
+		foo: function() {
+			//var smoothScroll = true;
+			console.log('I am foo!');
+			//smoothScroll.init();
+			//smoothScroll.animateScroll( null, '#bazinga' );
+			/*smoothScroll.init({
+		    speed: 500, // How fast to complete the scroll in milliseconds
+		    easing: 'easeInOutCubic', // Easing pattern to use
+		    updateURL: false // Boolean. Whether or not to update the URL with the anchor hash on scroll
+		    //callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+		    //callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+			});
+*/
+    }
+	};
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

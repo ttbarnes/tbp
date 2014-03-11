@@ -2,13 +2,17 @@
 
 var tbpControllers = angular.module('tbpControllers', []);
 
-tbpControllers.controller('introCtrl', ['$scope', '$http',
-  function($scope,$http) {
+tbpControllers.controller('introCtrl', ['$scope', '$http', 'myService',
+  function($scope,$http,myService) {
 		$scope.pageClass = 'introPage';
 		
 		$http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
+    $scope.callFoo = function () {
+			//$scope.selectedCategory = value;
+			myService.foo();
+		};
 
   }]);
 	
