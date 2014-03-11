@@ -4,7 +4,7 @@ Author: Tony Barnes
 File: base css - global
 /* ===========================================================*/
 
-@import "vars-mixins.scss";
+@import "vars.scss";
 
 /*cross browser mixins*/
 @mixin border-radius($radius) {
