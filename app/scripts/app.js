@@ -42,41 +42,17 @@ tbp.config(function ($routeProvider) {
 			controller: 'errorCtrl'
 		});
 })
-.run(function($rootScope, autoWindowScrollTop) {
+.run(function($rootScope, windowScrollTop) {
   $rootScope.$on('$routeChangeSuccess', function () {
-    autoWindowScrollTop($rootScope);
+    windowScrollTop($rootScope);
   });
 })
-.factory('autoWindowScrollTop', function(){
-  return function() {
-    window.scrollTo(0,0); //failsafe
+.factory('windowScrollTop', function(){
+	return function() {
+		window.scrollTo(0,0);
+		//would be good to have an optional transiiton fade (for the on click)
 	};
 });
-
-
-
-
-tbp.factory('myService', function() {
-	return {
-		foo: function() {
-			//var smoothScroll = true;
-			console.log('I am foo!');
-			//smoothScroll.init();
-			//smoothScroll.animateScroll( null, '#bazinga' );
-			/*smoothScroll.init({
-		    speed: 500, // How fast to complete the scroll in milliseconds
-		    easing: 'easeInOutCubic', // Easing pattern to use
-		    updateURL: false // Boolean. Whether or not to update the URL with the anchor hash on scroll
-		    //callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-		    //callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-			});
-*/
-    }
-	};
-});
-
-
-
 
 
 

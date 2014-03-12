@@ -2,22 +2,23 @@
 
 var tbpControllers = angular.module('tbpControllers', []);
 
-tbpControllers.controller('introCtrl', ['$scope', '$http', 'myService',
-  function($scope,$http,myService) {
+tbpControllers.controller('introCtrl', ['$scope', '$http', 'windowScrollTop',
+
+  function($scope, $http, windowScrollTop) {
 		$scope.pageClass = 'introPage';
 		
 		$http.get('showcase/recent-releases.json').success(function(data) {
       $scope.projects = data;
     });
-    $scope.callFoo = function () {
-			//$scope.selectedCategory = value;
-			myService.foo();
-		};
+
+    $scope.scrollTop = function () {
+      windowScrollTop();
+    };
 
   }]);
 	
-tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
-	function($scope, $http) {
+tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollTop',
+	function($scope, $http, windowScrollTop) {
 		
 		$scope.pageClass = 'showcaseHomePage';
 	
@@ -43,21 +44,34 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http',
 		};
 
 		$scope.selectedCategory = 'Ecommerce';
-				
+
+		$scope.scrollTop = function () {
+      windowScrollTop();
+    };
+
 	}]);
 
-tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http',
-  function($scope, $routeParams, $http) {
+tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http', 'windowScrollTop',
+  function($scope, $routeParams, $http, windowScrollTop) {
 		$scope.pageClass = 'showcaseIndPage';
 		
     $http.get('showcase/' + $routeParams.projectId+ '.json').success(function(data) {
       $scope.project = data;
     });
+
+    $scope.scrollTop = function () {
+      windowScrollTop();
+    };
 		
   }]);
 
-tbpControllers.controller('aboutCtrl', function($scope){
+tbpControllers.controller('aboutCtrl', function($scope, windowScrollTop){
 	$scope.pageClass = 'aboutPage';
+	
+	$scope.scrollTop = function () {
+    windowScrollTop();
+  };
+
 });
 	
 tbpControllers.controller('contactCtrl', function($scope){
