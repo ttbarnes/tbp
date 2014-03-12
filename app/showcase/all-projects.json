@@ -321,7 +321,25 @@
         "id": "barnzy-logo",
         "name": "Barnzy",
 				"category": "Brand identity"
+    },
+    {
+        "id": "furniture-city",
+        "name": "Furniture City",
+				"category": "Designs, mockups"
+    },
+    {
+        "id": "fitness-instruction",
+        "name": "Fitness Instruction",
+				"category": "Designs, mockups"
+    },
+    {
+        "id": "checkpoint",
+        "name": "Checkpoint",
+				"category": "Designs, mockups"
+    },
+    {
+        "id": "rush",
+        "name": "Rush",
+				"category": "Designs, mockups"
     }
-
-
 ]
