@@ -46,17 +46,7 @@ tbp.config(function ($routeProvider) {
   $rootScope.$on('$routeChangeSuccess', function () {
     windowScrollTop($rootScope);
   });
-})
-.factory('windowScrollTop', function(){
-	return function() {
-		window.scrollTo(0,0);
-		//would be good to have an optional transiiton fade (for the on click)
-	};
 });
-
-
-
-
 
 
 
