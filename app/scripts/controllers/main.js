@@ -44,7 +44,10 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
 		};
 
 		$scope.selectedCategory = 'Ecommerce';
-
+		
+		$scope.doSomething = function(){
+			console.log('hovered!');
+		};
 		$scope.scrollTop = function () {
       windowScrollTop();
     };

@@ -621,18 +621,48 @@ showcase home page
 	ul.showcaseGalleryGrid {
 		padding:0 10px;
 		min-height:165px;
+
+		/*grid item*/
 		li.col-md-2 {
 			padding:0;
 			list-style-type:none;
+			position:relative;
+			overflow:hidden;
+
+			/*panel for hover*/
+			.panelHover {
+				/*display:none;*/
+				position:absolute;
+				width:100%;
+				bottom:0;
+				left:-100%;
+				background:#FFF;
+				min-height:33%;
+
+				-webkit-transition:left ease-in-out 0.2s;
+				transition:left ease-in-out 0.2s;
+				
+
+
+				h4 {			
+					font-size:15px;
+					padding:10px;
+					margin:0;
+				}
+			}
 		}
 		
-		/*toggle/fade effect*/
+		/*toggle/fade effects*/
 		.showcaseGalleryToggle {
 			-webkit-transition:ease-in-out 0.3s;
 			transition: ease-in-out 0.3s;
 			&:hover {
 				img {
 					opacity:0.95;
+				}
+				.panelHover {
+					/*display:block;*/
+					left:0;
 				}
 			}
 			&.ng-enter,
