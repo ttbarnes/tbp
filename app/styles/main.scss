@@ -623,8 +623,10 @@ showcase home page
 		min-height:165px;
 
 		/*grid item*/
-		li.col-md-2 {
-			padding:0;
+		li.col-xs-3 {
+			padding:5px;
+			width:25%;
+			max-width:238px;
 			list-style-type:none;
 			position:relative;
 			overflow:hidden;

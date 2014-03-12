@@ -18,7 +18,7 @@
   <div class="row">
     <div class="span4">
       <ul class="showcaseGalleryGrid">
-        <li class="item repeat-item showcaseGalleryToggle col-xs-3 col-md-2" ng-repeat="project in projects | filter:byCategory" ng-mouseover="doSomething()" ng-class="{number:[condition]}">
+        <li class="item repeat-item showcaseGalleryToggle col-xs-3" ng-repeat="project in projects | filter:byCategory" ng-mouseover="doSomething()" ng-class="{number:[condition]}">
           <a href="#/showcase/{{project.id}}">
             <img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/>
             <div class="panelHover">
