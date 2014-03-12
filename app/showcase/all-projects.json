@@ -258,8 +258,23 @@
 				]
     },
     {
-        "id": "boxed-digital",
+        "id": "boxed-digital-holding",
         "name": "Boxed Digital",
+				"category": "Holding pages"
+    },
+    {
+        "id": "peter-utton-holding",
+        "name": "Peter Utton",
+				"category": "Holding pages"
+    },
+    {
+        "id": "werelse-holding",
+        "name": "Werelse holding page",
+				"category": "Holding pages"
+    },
+    {
+        "id": "barnzy-holding",
+        "name": "Barnzy",
 				"category": "Holding pages"
     },
     {
