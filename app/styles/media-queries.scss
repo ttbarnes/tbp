@@ -165,11 +165,15 @@ responsive
 		}
 	}
 	footer {
+		/*show the first back to top button*/
+		button.scrollTop {
+			display:block;
+		}
 		.navbar-default ul.navbar-nav > li a {
 			padding-bottom:15px;
 		}
 		ul.socialIcons {
-			padding:7px 7px 50px 0;
+			padding:7px 7px 30px 0;
 		}
 	}
 
@@ -384,11 +388,32 @@ responsive
 	.navbar-default h1 a.navbar-brand {
 		font-size:25px;
 	}
-	footer .navbar-default ul.navbar-nav > li {
-		clear:both;
-		display:block;
-		a {
-			padding:20px 15px;
+	footer {
+		.col-md-6 {
+			width:100%;
+			clear:both;
+			float:none;
+			/*hide the first back to top button*/
+			&.right {
+				display:none;
+			}
+		}
+		/*show the last back to top button*/
+		.col-md-12 {
+			&.last {
+				display:block;
+				button.scrollTop {
+					float:none;
+					margin:15px 0 0 0;
+				}
+			}
+		}
+		.navbar-default ul.navbar-nav > li {
+			clear:both;
+			display:block;
+			a {
+				padding:20px 15px;
+			}
 		}
 	}
 	.btn {

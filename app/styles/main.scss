@@ -251,11 +251,79 @@ header .navbar-default {
 
 /*footer*/
 footer {
-	background:$colorBlueDark;
-	color:#B8B8B8;
+	display:inline-block;
+	width:100%;
 	padding:0;
 	margin:140px 0 0 0;
+	background:$colorBlueDark;
+	color:#B8B8B8;
 	border-top:solid 6px #1C3750;
+
+	.col-md-6,
+	.col-md-12 {
+		padding:0;
+	}
+	.col-md-6 {
+		display:inline-block;
+		width:48%;
+		&.left {
+			float:left;
+		}
+		&.right {
+			float:right;
+		}
+	}
+	/*hide the last column (duplicate 'back to top' button for small screens)*/
+	.col-md-12 {
+		clear:both;
+		&.last {
+			display:none;
+		}
+	}
+	/*back to top button*/
+	button.scrollTop {
+		display:none;
+		float:right;
+		background:$colorBlueDark2;
+		color:#456888;
+		padding:15px 18px 18px 18px;
+		border:0 none;
+		margin:0 0 15px 15px;
+		&:hover,
+		&:focus, 
+		&:active, 
+		&.active {
+			background:$colorBlueDark2;
+			color:#456888;
+		}
+	}
+
+	/*foundation social icons*/
+	ul.socialIcons {
+		padding:7px 7px 90px 0;
+		li {
+			display:inline-block;
+			margin:0;
+			a {
+				padding:5px 8px;
+				display:block;
+				color:#213F5A;
+				i {
+					font-size:35px;
+				}
+				span {
+					display:none;
+					text-indent:-9999px;
+				}
+			}
+			&:first-child {
+				a {
+					padding-left:15px;
+					padding-right:4px;
+				}
+			}
+		}
+	}
 
   .navbar-default {
   	clear:both;
@@ -287,37 +355,20 @@ footer {
 			}
 		}
 	}
-	/*foundation social icons*/
-	ul.socialIcons {
-		padding:7px 7px 90px 0;
-		li {
-			display:inline-block;
-			margin:0;
-			a {
-				padding:5px 8px;
-				display:block;
-				color:#213F5A;
-				i {
-					font-size:35px;
-				}
-				span {
-					display:none;
-					text-indent:-9999px;
-				}
-			}
-			&:first-child {
-				a {
-					padding-left:15px;
-					padding-right:4px;
-				}
-			}
-		}
-	}
+
 }
 
 /********************
 shared
 *********************/
+/*footer back to top button - hide on certain pages that don't need it*/
+.contactPage,
+.errorPage {
+	footer button.scrollTop {
+		display:none;
+	}
+}
+
 /*tags shared*/
 div.tags {
 	text-align:center;
