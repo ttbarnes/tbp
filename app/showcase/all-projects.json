@@ -256,5 +256,57 @@
 					{"tag":"HTML, CSS"},
 					{"tag":"jQuery"}
 				]
+    },
+    {
+        "id": "boxed-digital",
+        "name": "Boxed Digital",
+				"category": "Holding pages"
+    },
+    {
+        "id": "bargain-sounds",
+        "name": "Bargain Sounds",
+				"category": "Brand identity"
+    },
+    {
+        "id": "life-financial-solutions-logo",
+        "name": "Life Financial Solutions Logo",
+				"category": "Brand identity"
+    },
+    {
+        "id": "peter-utton-logo",
+        "name": "Peter Utton Logo",
+				"category": "Brand identity"
+    },
+    {
+        "id": "cathy-brown-logo",
+        "name": "Cathy Brown",
+				"category": "Brand identity"
+    },
+    {
+        "id": "double-trouble-logo",
+        "name": "Double Trouble",
+				"category": "Brand identity"
+    },
+    {
+        "id": "browny-logo",
+        "name": "Browny",
+				"category": "Brand identity"
+    },
+    {
+        "id": "james-taff-jt2-logos",
+        "name": "James Taff and JT2 Logos",
+				"category": "Brand identity"
+    },
+    {
+        "id": "celebrity-smiles-logo",
+        "name": "Celebrity Smiles Logo",
+				"category": "Brand identity"
+    },
+    {
+        "id": "barnzy-logo",
+        "name": "Barnzy",
+				"category": "Brand identity"
     }
+
+
 ]
