@@ -117,6 +117,16 @@
 				]
     },
 		{
+        "id": "aeg", 
+        "name": "AEG Parts & Accessories",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+		{
         "id": "zanussi", 
         "name": "Zanussi Parts & Accessories",
 				"category": "Ecommerce",
