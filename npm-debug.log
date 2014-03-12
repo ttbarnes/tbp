@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.22/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 warn package.json tbp@0.0.0 No description
+5 warn package.json tbp@0.0.0 No repository field.
+6 warn package.json tbp@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/tbmacbook/Documents/_projects/tbp',
+8 verbose install   [ 'grunt',
+8 verbose install     'grunt-autoprefixer',
+8 verbose install     'grunt-bower-install',
+8 verbose install     'grunt-concurrent',
+8 verbose install     'grunt-contrib-clean',
+8 verbose install     'grunt-contrib-coffee',
+8 verbose install     'grunt-contrib-compass',
+8 verbose install     'grunt-contrib-concat',
+8 verbose install     'grunt-contrib-connect',
+8 verbose install     'grunt-contrib-copy',
+8 verbose install     'grunt-contrib-cssmin',
+8 verbose install     'grunt-contrib-htmlmin',
+8 verbose install     'grunt-contrib-imagemin',
+8 verbose install     'grunt-contrib-jshint',
+8 verbose install     'grunt-contrib-uglify',
+8 verbose install     'grunt-contrib-watch',
+8 verbose install     'grunt-google-cdn',
+8 verbose install     'grunt-newer',
+8 verbose install     'grunt-ngmin',
+8 verbose install     'grunt-rev',
+8 verbose install     'grunt-svgmin',
+8 verbose install     'grunt-usemin',
+8 verbose install     'jshint-stylish',
+8 verbose install     'load-grunt-tasks',
+8 verbose install     'time-grunt',
+8 verbose install     'karma-ng-scenario',
+8 verbose install     'grunt-karma',
+8 verbose install     'karma-chrome-launcher',
+8 verbose install     'karma-script-launcher',
+8 verbose install     'karma-firefox-launcher',
+8 verbose install     'karma-html2js-preprocessor',
+8 verbose install     'karma-jasmine',
+8 verbose install     'karma-coffee-preprocessor',
+8 verbose install     'requirejs',
+8 verbose install     'karma-requirejs',
+8 verbose install     'karma-phantomjs-launcher',
+8 verbose install     'karma',
+8 verbose install     'karma-ng-html2js-preprocessor' ] ]
+9 info preinstall tbp@0.0.0
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping grunt-bower-install@~0.7.0 /Users/tbmacbook/Documents/_projects/tbp
+12 verbose already installed skipping grunt-concurrent@~0.4.1 /Users/tbmacbook/Documents/_projects/tbp
+13 verbose already installed skipping grunt-contrib-clean@~0.5.0 /Users/tbmacbook/Documents/_projects/tbp
+14 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /Users/tbmacbook/Documents/_projects/tbp
+15 verbose already installed skipping grunt-contrib-compass@~0.6.0 /Users/tbmacbook/Documents/_projects/tbp
+16 verbose already installed skipping grunt-contrib-concat@~0.3.0 /Users/tbmacbook/Documents/_projects/tbp
+17 verbose already installed skipping grunt-contrib-connect@~0.5.0 /Users/tbmacbook/Documents/_projects/tbp
+18 verbose already installed skipping grunt-contrib-copy@~0.4.1 /Users/tbmacbook/Documents/_projects/tbp
+19 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 /Users/tbmacbook/Documents/_projects/tbp
+20 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /Users/tbmacbook/Documents/_projects/tbp
+21 verbose already installed skipping grunt-contrib-jshint@~0.7.1 /Users/tbmacbook/Documents/_projects/tbp
+22 verbose already installed skipping grunt-contrib-imagemin@~0.3.0 /Users/tbmacbook/Documents/_projects/tbp
+23 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /Users/tbmacbook/Documents/_projects/tbp
+24 verbose already installed skipping grunt-contrib-watch@~0.5.2 /Users/tbmacbook/Documents/_projects/tbp
+25 verbose already installed skipping grunt-newer@~0.5.4 /Users/tbmacbook/Documents/_projects/tbp
+26 verbose already installed skipping grunt-google-cdn@~0.2.0 /Users/tbmacbook/Documents/_projects/tbp
+27 verbose already installed skipping grunt-ngmin@~0.0.2 /Users/tbmacbook/Documents/_projects/tbp
+28 verbose already installed skipping grunt-rev@~0.1.0 /Users/tbmacbook/Documents/_projects/tbp
+29 verbose already installed skipping grunt-svgmin@~0.2.0 /Users/tbmacbook/Documents/_projects/tbp
+30 verbose already installed skipping grunt-usemin@~2.0.0 /Users/tbmacbook/Documents/_projects/tbp
+31 verbose already installed skipping jshint-stylish@~0.1.3 /Users/tbmacbook/Documents/_projects/tbp
+32 verbose already installed skipping load-grunt-tasks@~0.2.0 /Users/tbmacbook/Documents/_projects/tbp
+33 verbose already installed skipping time-grunt@~0.2.1 /Users/tbmacbook/Documents/_projects/tbp
+34 verbose already installed skipping karma-ng-scenario@~0.1.0 /Users/tbmacbook/Documents/_projects/tbp
+35 verbose already installed skipping grunt-karma@~0.6.2 /Users/tbmacbook/Documents/_projects/tbp
+36 verbose already installed skipping karma-chrome-launcher@~0.1.2 /Users/tbmacbook/Documents/_projects/tbp
+37 verbose already installed skipping karma-script-launcher@~0.1.0 /Users/tbmacbook/Documents/_projects/tbp
+38 verbose already installed skipping karma-firefox-launcher@~0.1.3 /Users/tbmacbook/Documents/_projects/tbp
+39 verbose already installed skipping karma-html2js-preprocessor@~0.1.0 /Users/tbmacbook/Documents/_projects/tbp
+40 verbose already installed skipping karma-jasmine@~0.1.5 /Users/tbmacbook/Documents/_projects/tbp
+41 verbose already installed skipping karma-coffee-preprocessor@~0.1.2 /Users/tbmacbook/Documents/_projects/tbp
+42 verbose already installed skipping requirejs@~2.1.9 /Users/tbmacbook/Documents/_projects/tbp
+43 verbose already installed skipping karma-requirejs@~0.2.1 /Users/tbmacbook/Documents/_projects/tbp
+44 verbose already installed skipping karma-phantomjs-launcher@~0.1.1 /Users/tbmacbook/Documents/_projects/tbp
+45 verbose already installed skipping karma@* /Users/tbmacbook/Documents/_projects/tbp
+46 verbose already installed skipping karma-ng-html2js-preprocessor@~0.1.0 /Users/tbmacbook/Documents/_projects/tbp
+47 verbose already installed skipping grunt@~0.4.1 /Users/tbmacbook/Documents/_projects/tbp
+48 verbose already installed skipping grunt-autoprefixer@~0.4.0 /Users/tbmacbook/Documents/_projects/tbp
+49 silly resolved []
+50 info build /Users/tbmacbook/Documents/_projects/tbp
+51 verbose linkStuff [ false, false, false, '/Users/tbmacbook/Documents/_projects' ]
+52 info linkStuff tbp@0.0.0
+53 verbose linkBins tbp@0.0.0
+54 verbose linkMans tbp@0.0.0
+55 verbose rebuildBundles tbp@0.0.0
+56 verbose rebuildBundles [ '.bin',
+56 verbose rebuildBundles   'grunt',
+56 verbose rebuildBundles   'grunt-autoprefixer',
+56 verbose rebuildBundles   'grunt-bower-install',
+56 verbose rebuildBundles   'grunt-concurrent',
+56 verbose rebuildBundles   'grunt-contrib-clean',
+56 verbose rebuildBundles   'grunt-contrib-coffee',
+56 verbose rebuildBundles   'grunt-contrib-compass',
+56 verbose rebuildBundles   'grunt-contrib-concat',
+56 verbose rebuildBundles   'grunt-contrib-connect',
+56 verbose rebuildBundles   'grunt-contrib-copy',
+56 verbose rebuildBundles   'grunt-contrib-cssmin',
+56 verbose rebuildBundles   'grunt-contrib-htmlmin',
+56 verbose rebuildBundles   'grunt-contrib-imagemin',
+56 verbose rebuildBundles   'grunt-contrib-jshint',
+56 verbose rebuildBundles   'grunt-contrib-uglify',
+56 verbose rebuildBundles   'grunt-contrib-watch',
+56 verbose rebuildBundles   'grunt-google-cdn',
+56 verbose rebuildBundles   'grunt-karma',
+56 verbose rebuildBundles   'grunt-newer',
+56 verbose rebuildBundles   'grunt-ngmin',
+56 verbose rebuildBundles   'grunt-rev',
+56 verbose rebuildBundles   'grunt-svgmin',
+56 verbose rebuildBundles   'grunt-usemin',
+56 verbose rebuildBundles   'jshint-stylish',
+56 verbose rebuildBundles   'karma',
+56 verbose rebuildBundles   'karma-chrome-launcher',
+56 verbose rebuildBundles   'karma-coffee-preprocessor',
+56 verbose rebuildBundles   'karma-firefox-launcher',
+56 verbose rebuildBundles   'karma-html2js-preprocessor',
+56 verbose rebuildBundles   'karma-jasmine',
+56 verbose rebuildBundles   'karma-ng-html2js-preprocessor',
+56 verbose rebuildBundles   'karma-ng-scenario',
+56 verbose rebuildBundles   'karma-phantomjs-launcher',
+56 verbose rebuildBundles   'karma-requirejs',
+56 verbose rebuildBundles   'karma-script-launcher',
+56 verbose rebuildBundles   'load-grunt-tasks',
+56 verbose rebuildBundles   'requirejs',
+56 verbose rebuildBundles   'time-grunt' ]
+57 info install tbp@0.0.0
+58 info postinstall tbp@0.0.0
+59 info prepublish tbp@0.0.0
+60 error peerinvalid The package karma does not satisfy its siblings' peerDependencies requirements!
+60 error peerinvalid Peer karma-ng-scenario@0.1.0 wants karma@>=0.9
+60 error peerinvalid Peer grunt-karma@0.6.2 wants karma@~0.10.0
+60 error peerinvalid Peer karma-chrome-launcher@0.1.2 wants karma@>=0.9.3
+60 error peerinvalid Peer karma-script-launcher@0.1.0 wants karma@>=0.9
+60 error peerinvalid Peer karma-firefox-launcher@0.1.3 wants karma@>=0.9
+60 error peerinvalid Peer karma-html2js-preprocessor@0.1.0 wants karma@>=0.9
+60 error peerinvalid Peer karma-jasmine@0.1.5 wants karma@>=0.9
+60 error peerinvalid Peer karma-coffee-preprocessor@0.1.3 wants karma@>=0.9
+60 error peerinvalid Peer karma-requirejs@0.2.1 wants karma@>=0.9
+60 error peerinvalid Peer karma-phantomjs-launcher@0.1.2 wants karma@>=0.9
+60 error peerinvalid Peer karma-ng-html2js-preprocessor@0.1.0 wants karma@>=0.9
+61 error System Darwin 13.1.0
+62 error command "/usr/local/Cellar/node/0.10.22/bin/node" "/usr/local/bin/npm" "install"
+63 error cwd /Users/tbmacbook/Documents/_projects/tbp
+64 error node -v v0.10.22
+65 error npm -v 1.3.14
+66 error code EPEERINVALID
+67 verbose exit [ 1, true ]
