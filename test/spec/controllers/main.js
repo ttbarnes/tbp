@@ -20,6 +20,10 @@ describe('Controller: introCtrl', function () {
     expect(scope.pageClass).toBeDefined();
   });
 
+  it('should have a scrollTop function defined', function(){
+    expect(scope.scrollTop).toBeDefined();
+  });
+
 });
 
 describe('Controller: showcaseGridCtrl', function () {
@@ -41,7 +45,7 @@ describe('Controller: showcaseGridCtrl', function () {
   it('should have a page class/name', function (){
     expect(scope.pageClass).toBeDefined();
   });
-
+  
   describe('Showcase grid category filter', function() {
 
     it('should have the selectedCategory variable assigned to the value', function(){
@@ -65,6 +69,11 @@ describe('Controller: showcaseGridCtrl', function () {
 
   });
   
+  it('should have a scrollTop function defined', function(){
+    expect(scope.scrollTop).toBeDefined();
+  });
+
+  
 });
 
 describe('Controller: indShowcasePieceCtrl', function () {
@@ -85,6 +94,10 @@ describe('Controller: indShowcasePieceCtrl', function () {
 
   it('should have a page class/name', function (){
     expect(scope.pageClass).toBeDefined();
+  });
+  
+  it('should have a scrollTop function defined', function(){
+    expect(scope.scrollTop).toBeDefined();
   });
 
 });
@@ -107,6 +120,10 @@ describe('Controller: aboutCtrl', function () {
 
   it('should have a page class/name', function (){
     expect(scope.pageClass).toBeDefined();
+  });
+
+  it('should have a scrollTop function defined', function(){
+    expect(scope.scrollTop).toBeDefined();
   });
 
 });
