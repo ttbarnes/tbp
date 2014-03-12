@@ -231,7 +231,7 @@ header .navbar-default {
 #containerMiddle {
 	width:100%;
 	max-width:1000px;
-	min-height:100%;
+	/*min-height:100%;*/
 	margin:0 auto;
 
 	.row {
@@ -295,6 +295,7 @@ footer {
 		&.active {
 			background:$colorBlueDark2;
 			color:#456888;
+			outline:0 none;
 		}
 	}
 
@@ -970,19 +971,14 @@ contact page
 		color:$colorGreenLight;
 	}
 
-	#containerMiddle {
-	  min-height:initial;
-	}
-
 	.row {
-	  margin-top:15%;
-	  margin-bottom:18%;
 	  .col-md-12	{
 			position:relative;
 			text-align:center;
 			vertical-align:middle;
 			p {
 				color:$colorGreenDark2;
+				margin-top:10px;
 			}
 			a.contactAddress {
 				font-size:50px;
