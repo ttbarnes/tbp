@@ -8,11 +8,13 @@ describe('Service: windowScrollTop', function () {
   // instantiate service
   var windowScrollTop;
   beforeEach(inject(function (_windowScrollTop_) {
-    windowScrollTop = windowScrollTop;
+    windowScrollTop = _windowScrollTop_;
   }));
 
-  it('should do something', function () {
-    expect(!!windowScrollTop).toBe(true);
+  it('should have a window.scrollTo', function () {
+    expect(!!windowScrollTop).toBeDefined();
+    expect(!windowScrollTop.scrollTo).toBe(true);
+
   });
 
 });
