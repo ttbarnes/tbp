@@ -243,6 +243,9 @@ responsive
 	.showcaseHomePage {
 		.tags {
 			text-align:center;
+			button {
+				width:32.22222222%;
+			}
 		}
 		ul.showcaseGalleryGrid {
 			text-align:center;
@@ -388,6 +391,11 @@ responsive
 	}
 	
 }
+@media (max-width: 600px) {
+	.showcaseHomePage .tags button {
+		min-height:56px;
+	}
+}
 
 @media (max-width: 480px) {
 	.navbar-default h1 a.navbar-brand {
@@ -453,12 +461,18 @@ responsive
 		}
 	}
 	/*showcase page*/
-	.showcaseHomePage ul.showcaseGalleryGrid {
-	  li.col-xs-3 {						
-			width:50%;
-			max-width:238px;
+	.showcaseHomePage {
+		.tags button {
+
+		}
+		ul.showcaseGalleryGrid {
+		  li.col-xs-3 {						
+				width:50%;
+				max-width:238px;
+			}
 		}
 	}
+
 	/*contact page*/
 	.contactPage  {
 	  .row .col-md-12 a.contactAddress {
