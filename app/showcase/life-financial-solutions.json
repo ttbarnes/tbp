@@ -1,0 +1,17 @@
+{
+		"id": "life-financial-solutions", 
+		"name": "Life Financial Solutions",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS"},
+			{"tag": "jQuery, JavaScript"},
+			{"tag": "PHP"}
+		],
+		"deliver": [
+			{"item": "Brand Identity, logo design"},
+			{"item": "Showcase/informative website"}
+		],
+		"how":"I worked very closely with the team, particularly during the design. After several sessions, we created a corporate identity that we were all very happy with.",
+		"thoughts":"We turned around the development side of things pretty quickly using purely static HTML, CSS and Javascript. I’m quite pleased with the calculator we built - using XY and Z. <br/>img of calculator thing"
+}
