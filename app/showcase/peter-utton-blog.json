@@ -1,0 +1,13 @@
+{
+		"id": "peter-utton-blog", 
+		"name": "Peter Utton Tumblr Blog",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS"}
+		],
+		"deliver": [
+			{"item": "Bespoke Tumblr theme"}
+		],
+		"how":"Peter wanted his Tumblr blog to match the website's styles and branding. I carefully integrated the main UI and typography to match exactly."
+}

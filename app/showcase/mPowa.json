@@ -1,0 +1,17 @@
+{
+		"id": "mPowa",
+    "name": "mPowa Corporate Websites",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Jquery"},
+			{"tag": "Powa CMS"}
+
+		],
+		"deliver": [
+			{"item": "Showcase/informative website"},
+			{"item": "Localisation"}
+		],
+		"how":"Some info here"
+}

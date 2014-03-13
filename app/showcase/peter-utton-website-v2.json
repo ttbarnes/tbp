@@ -1,0 +1,18 @@
+{
+		"id": "peter-utton-website-v2", 
+		"name": "Peter Utton Website (v2)",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS"},
+			{"tag": "jQuery"},
+			{"tag": "Powa CMS"}
+
+		],
+		"deliver": [
+			{"item": "Branding for the web"},
+			{"item": "New logo"},
+			{"item": "Showcase/informative website"}
+		],
+		"how":"Some info here"
+}
