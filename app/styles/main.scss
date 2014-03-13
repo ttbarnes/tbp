@@ -27,8 +27,6 @@ img {
 /*@import "hover-transitions";*/
 /*@import "animations";*/
 
-
-
 /********************
 typography
 *********************/
@@ -618,6 +616,7 @@ showcase home page
 .showcaseHomePage {
   .tags {
 		padding:0 15px 15px 15px;
+		text-align:center;
 		button {
 			cursor:pointer;
 			opacity:1;
@@ -626,9 +625,13 @@ showcase home page
 	ul.showcaseGalleryGrid {
 		padding:0 10px;
 		min-height:165px;
+		text-align:center;
 
 		/*grid item*/
 		li.col-xs-3 {
+			float:none;
+			display:inline-block;
+			vertical-align:top;
 			padding:5px;
 			width:25%;
 			max-width:238px;
@@ -645,11 +648,10 @@ showcase home page
 				left:-100%;
 				background:#FFF;
 				min-height:33%;
-
 				-webkit-transition:left ease-in-out 0.2s;
+				-moz-transition:left ease-in-out 0.2s;
+				-o-transition:left ease-in-out 0.2s;
 				transition:left ease-in-out 0.2s;
-				
-
 
 				h4 {			
 					font-size:15px;
@@ -662,6 +664,8 @@ showcase home page
 		/*toggle/fade effects*/
 		.showcaseGalleryToggle {
 			-webkit-transition:ease-in-out 0.3s;
+			-moz-transition:ease-in-out 0.3s;
+			-o-transition:ease-in-out 0.3s;
 			transition: ease-in-out 0.3s;
 			&:hover {
 				img {
@@ -683,6 +687,12 @@ showcase home page
 				display:none;
 				opacity: 0;
 			}
+		}
+	}
+	#containerMiddle .row:last-child {
+		.col-md-12 p {
+			margin:60px 0;
+			text-align:center;
 		}
 	}
 }
