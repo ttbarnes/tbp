@@ -376,12 +376,13 @@ shared
 
 /*tags shared*/
 div.tags {
-	text-align:center;
+	text-align:left;
+	width:100%;
 
 	div,
 	button {
 	  font-size:13px;
-		padding:7px 15px;
+		padding:10px 15px;
 		color:$colorWhiteBright1;
 		border:0 none;
 		margin:3px 3px 0 0;

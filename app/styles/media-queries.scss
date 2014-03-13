@@ -240,14 +240,19 @@ responsive
 	}
 
 	/*showcase grid*/
-	.showcaseHomePage ul.showcaseGalleryGrid {
-		text-align:center;
-	  li.col-xs-3 {						
-			width:33.3333333333%;
-			max-width: 250px;
-			float: none;
-			display: inline-block;
-			vertical-align: top;
+	.showcaseHomePage {
+		.tags {
+			text-align:center;
+		}
+		ul.showcaseGalleryGrid {
+			text-align:center;
+		  li.col-xs-3 {						
+				width:33.3333333333%;
+				max-width: 238px;
+				float: none;
+				display: inline-block;
+				vertical-align: top;
+			}
 		}
 	}
 
@@ -450,8 +455,8 @@ responsive
 	/*showcase page*/
 	.showcaseHomePage ul.showcaseGalleryGrid {
 	  li.col-xs-3 {						
-			width:40%;
-			max-width:250px;
+			width:50%;
+			max-width:238px;
 		}
 	}
 	/*contact page*/
