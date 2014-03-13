@@ -1,0 +1,15 @@
+{
+		"id": "propax-malaysia", 
+		"name": "Propax Malaysia",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"}
+
+		],
+		"deliver": [
+			{"item": "Branding for the web"},
+			{"item": "Showcase/informative microsite"}
+		],
+		"how":"Some info here"
+}

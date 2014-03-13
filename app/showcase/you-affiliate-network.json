@@ -1,0 +1,16 @@
+{
+		"id": "you-affiliate-network",
+    "name": "You Affiliate Network",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag":"HTML, CSS3"},
+			{"tag":"PHP"}
+		],
+		"deliver": [
+			{"item": "Brand Identity, logo design"},
+			{"item": "Corporate website"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}

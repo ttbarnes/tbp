@@ -1,0 +1,16 @@
+{
+		"id": "celebrity-smiles", 
+		"name": "Celebrity Smiles",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"}
+		],
+		"deliver": [
+			{"item": "Branding Identity, logo design"},
+			{"item": "Informative website"}
+		],
+		"how":"How?",
+		"thoughts":"thoughts here"
+}
