@@ -405,6 +405,10 @@ responsive
 	.showcaseHomePage .tags button {
 		min-height:56px;
 	}
+	/*about page*/
+	.aboutPage #containerMiddle .skillsetList ul.ratingKey {
+		display:none;
+	}
 }
 
 @media (max-width: 480px) {

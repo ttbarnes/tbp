@@ -922,15 +922,10 @@ about page
 			ul {
 				li {
 					list-style-type:none;
+					margin-right:25px;
 					margin-bottom:7px;
+					display:inline-block;
 
-					&:first-child {
-						margin-bottom:10px;
-						padding:5px 20px;
-						color:$colorWhite;
-						background:$colorBlueLight2;
-						text-shadow:0 2px 2px #0D2032;
-					}
 					&[rating]{ 
 						::before {
 							content:'';
@@ -940,6 +935,7 @@ about page
 							height:12px;
 						}
 					}
+
 					&[rating="expert-advanced"]{ 
 						::before {
 							background:#62B595;
@@ -956,6 +952,26 @@ about page
 						}
 					}
 
+				}
+				&.skills {
+					li {
+						display:block;
+						margin-right:0;
+						&:first-child {
+							margin-bottom:10px;
+							padding:5px 20px;
+							color:$colorWhite;
+							background:$colorBlueLight2;
+							text-shadow:0 2px 2px #0D2032;
+						}
+					}
+				}
+				&.ratingKey {
+					text-align:right;
+					padding-bottom:30px;
+					li:last-child {
+						margin-right:0;
+					}
 				}
 			}
 		}
