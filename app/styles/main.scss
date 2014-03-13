@@ -427,12 +427,13 @@ div.tags {
 		margin:3px 3px 0 0;
 		vertical-align:middle;
 		text-align:center;
-		/*opacity:0.5;*/
 
+		/*
 		&.jQuery {
 			background:#A9A9A9;
 		}
-		&.HTML, &.CSS3,
+		*/
+		&.HTML, &.CSS,
 		&.HTML4, &.CSS3,
 		&.HTML5, &.CSS3 {
 		  background:$colorBlueLight;
@@ -443,16 +444,19 @@ div.tags {
 		&.Static {
 			background:$colorRedLight;
 		}
-		&.jQuery {
+		&.jQuery,
+		&.JavaScript {
 			background:$colorOrangeLight;
 		}
 		&.Holding {
 			background:#666;
 		}
 		&.Wordpress,
+		&.Powa,
 		&.Brand {
 			background:$colorGreenLight;
 		}
+		&.PHP,
 		&.mockups {
 			background:$colorYellowLight;
 		}
@@ -779,7 +783,7 @@ showcase individual page
 				float:right;
 				margin-top:0;
 				margin-right:0;
-				max-width:120px;
+				max-width:160px;
 			}
 		}
 		.story {
