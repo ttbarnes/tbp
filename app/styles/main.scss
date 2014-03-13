@@ -60,6 +60,11 @@ p {
 	font-size:15px;
 }
 
+hr {
+	border-top:solid 3px #356896;
+	margin:0 30px;
+}
+
 /*form elements*/
 input, button, select, textarea {
   color:$colorBlack;
@@ -86,7 +91,6 @@ buttons
 	hyphens:auto;
 	white-space:pre;
 
-
   &:hover,
 	&:focus, 
 	&:active, 
@@ -95,6 +99,22 @@ buttons
 		background:$colorBlueDark;
   }
 }
+
+/*container for 2 large buttons in a row*/
+.row-btn-lg {
+	text-align:center;
+	padding:70px 0;
+	.btn {
+		width:40%;
+		&:first-child {
+			margin-right:30px;
+		}
+		&:last-child {
+			margin-left:30px;
+		}
+	}
+}
+
 .btn-lg, 
 .btn-group-lg > .btn {
 	padding:30px 20px;
@@ -102,25 +122,46 @@ buttons
 
 .btn-primary,
 .btn-lg {
-	border:solid 6px $colorBlueLight;
 	font-size:20px;
-	text-shadow:0 2px 2px #244A6E;
 
-	&:hover, 
-	&:focus, 
-	&:active, 
-	&.active {
-		border-top-color:$colorBlueDark;
-		border-right-color:$colorBlueLight;
-		border-bottom-color:$colorBlueLight;
-		border-left-color:$colorBlueDark;
+	&.btn-blue-light {
+		&:hover, 
+		&:focus, 
+		&:active, 
+		&.active {
+			border-top-color:$colorBlueDark;
+			border-right-color:$colorBlueLight;
+			border-bottom-color:$colorBlueLight;
+			border-left-color:$colorBlueDark;
+		}
 	}
 }
 
 .btn-primary {
 	padding:10px 15px;
 }
+.btn-blue-light {
+	border:solid 6px $colorBlueLight;
+	text-shadow:0 2px 2px #333;
+}
+.btn-blue-dark {
+	color:$colorWhite;
+	background:$colorBlueDark2;
+	border:solid 6px $colorBlueDark2;
+	text-shadow:0 2px 2px #333;
 
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		background:$colorBlueDark;
+		border-top-color:$colorBlueDark;
+		border-right-color:$colorBlueDark2;
+		border-bottom-color:$colorBlueDark2;
+		border-left-color:$colorBlueDark;
+	}
+
+}
 .btn-green {
 	background:$colorGreenLight;
 	color:$colorBlack;
@@ -544,19 +585,9 @@ div.introPage {
 				color:$colorWhite;
 			}
 		}
-		&.row-btn-lg {
-			text-align:center;
+		&.row-btn-lg 	{
 			.col-md-12 {
 				padding:70px 15px 100px 15px;
-			}
-			a.btn {
-				width:40%;
-				&:first-child {
-					margin-right:30px;
-				}
-				&:last-child {
-					margin-left:30px;
-				}
 			}
 		}
 	}	
@@ -802,6 +833,9 @@ about page
 
 			&.aboutIntro {
 				margin-bottom:30px;
+			}
+			&.randomStuff {
+				margin-bottom:0;
 			}
 
 	  	h4 {

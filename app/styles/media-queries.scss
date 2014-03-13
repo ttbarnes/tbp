@@ -72,13 +72,12 @@ responsive
 		font-size:19px;
 	}
 
-	/*intro page*/
-	div.introPage {
-	 div.row-btn-lg	.col-md-12 {
-			a.btn {
-				margin:0 15px !important;
-				width:45%;
-			}
+	/*container for 2 large buttons in a row*/
+	.row-btn-lg {
+		padding:40px 0;
+		.btn {
+			width:45%;
+			margin:0 15px !important;
 		}
 	}
 
@@ -133,6 +132,14 @@ responsive
 }
 
 @media (max-width: 767px) {
+	/*container for 2 large buttons in a row*/
+	.row-btn-lg {
+		.btn {
+			width:80%;
+			margin:0 0 15px 0 !important;
+		}
+	}
+
 	.navbar-default {
 		margin-bottom:40px;
 		.navbar-collapse {
@@ -178,15 +185,6 @@ responsive
 	}
 
 	/*intro page*/
-	div.introPage {
-	  div.row-btn-lg	.col-md-12 {
-			a.btn {
-		 		margin:0 0 15px 0 !important;
-				width:80%;
-			}
-		}
-	}
-
 	.recentReleases {
 		.span4 {
 		  h3 {
@@ -412,6 +410,13 @@ responsive
 }
 
 @media (max-width: 480px) {
+	/*container for 2 large buttons in a row*/
+	.row-btn-lg {
+		.btn {
+			width:100%;
+			margin:0 0 15px 0 !important;
+		}
+	}
 	.navbar-default h1 a.navbar-brand {
 		font-size:25px;
 	}
@@ -454,12 +459,6 @@ responsive
 	div.introPage {
 		.recentReleases .span4 ul.projects .col-md-4 {
 			padding:7.5px 5px;
-		}	
-		div.subIntro.row-btn-lg .col-md-12 {
-			a.btn {
-				width:100%;
-				margin:0 0 15px 0 !important;
-			}
 		}
 	}
 	/*about page*/
