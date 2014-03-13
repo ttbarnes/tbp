@@ -78,7 +78,7 @@ describe('Footer', function() {
 			expect(element('footer .navbar-nav li:eq(1) a').html()).toEqual('About');
 			expect(element('footer .navbar-nav li:eq(2) a').html()).toEqual('Contact');
 		});
-		it('should direct to to the right places', function(){
+		it('should direct to the right places', function(){
 			element('footer .navbar-nav li:eq(0) a').click();
 			expect(browser().location().url()).toEqual('/showcase');
 
@@ -89,6 +89,9 @@ describe('Footer', function() {
 			element('footer .navbar-nav li:eq(2) a').click();
 			expect(browser().location().url()).toEqual('/contact');
 
+		});
+		it('should have 2 back-to-top buttons', function() {
+			expect(element('footer button.scrollTop').count()).toEqual(2);
 		});
 	});
 });
@@ -114,14 +117,39 @@ describe('Page-view: Showcase home', function(){
   it('should direct user to an individual project page after clicking a project', function(){
   	element('div.tags button.Static').click();
   	element('ul.showcaseGalleryGrid li a:first-child').click();
-    expect(browser().location().url()).toContain('/showcase/'); //currently only one child page avaliable
+    expect(browser().location().url()).toContain('/showcase'); //currently only one child page avaliable
   });
+  
+  it('should have some disclaimer text', function(){
+  	var expectedDisclaimer = 'Unfortunately not all of my work is displayed here. These pieces were built on a full time, freelance, contracted or contributing basis.';
+  	expect(element('div.disclaimer p').html()).toEqual(expectedDisclaimer);
+  });
+
+  it('should have a button that directs user to the about page', function(){
+  	element('.row-btn-lg .btn:last-child').click();
+  	expect(browser().location().url()).toContain('/about');
+  });
+
 });
 
 describe('Page-view: About', function(){
 	beforeEach(function() {
     browser().navigateTo('/#/about');
   });
+
+
+	describe('Big buttons section', function() {
+		it('should have a button directing to the contact page', function(){
+			var x = 'div.row-btn-lg a.btn:first-child';
+		  element(x).click();
+			expect(browser().location().url()).toEqual('/contact');
+		});
+		it('should have a button directing to the showcase page', function(){
+			var x = 'div.row-btn-lg a.btn:last-child';
+		  element(x).click();
+			expect(browser().location().url()).toEqual('/showcase');
+		});
+	});
 
   //test social links (same as social links above)
 });
