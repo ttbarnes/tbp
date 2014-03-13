@@ -6,8 +6,14 @@
 		"tech": [
 			{"tag": "HTML5, CSS3"},
 			{"tag": "jQuery"},
-			{"tag": "Wordpress"}
+			{"tag": "Wordpress"},
+			{"tag": "PHP"}
 		],
-		"output":"Wordpress using bla bla",
-		"thoughts":"I particularly enjoyed building X feature and ABC. We utilised html..... <hr/><h3>Super fantastic feature</h3><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>"
+		"deliver": [
+			{"item": "Rebranding for the web"},
+			{"item": "New logo"},
+			{"item": "Showcase/informative website"}
+		],
+		"how":"Adapting from the previous website and branding, we rebranded and designed a new website. Working closely with the Mara Explorers team, we decided to use Wordpress to manage the site.",
+		"thoughts":"<p>I designed and developed a bespoke, responsive template/theme - ensuring that all of the relevant content remains editable via the CMS.</p><p>I really enjoyed building some flexible tabbed content to work smoothly on both desktops and mobiles:</p><br/><p>img here</p><p>We also integrated some lovely, full page background images. This was built with desktop and mobile  optimisation.</p><br/><p>img of error page</p>"
 }

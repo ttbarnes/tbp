@@ -18,9 +18,15 @@
         <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
       </div>
     </div>
+    <div class="col-md-12 deliver">
+      <h2>What did we deliver?</h2>
+      <ul>
+        <li ng-repeat="child in project.deliver">{{child.item}}</li>
+      </ul>
+    </div>
     <div class="col-md-12 story">
-      <h2>Output</h2>
-      <p>{{project.output}}</p>
+      <h2>How did we do it?</h2>
+      <p>{{project.how}}</p>
       <div ng-bind-html="project.thoughts">{{project.thoughts}}</div>
       <a href="{{project.liveUrl}}" class="btn btn-primary">Visit website</a>
     </div>
