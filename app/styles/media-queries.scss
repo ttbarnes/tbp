@@ -236,8 +236,7 @@ responsive
 			}
 		}
 	}
-
-	/*showcase grid*/
+	/*showcase home page*/
 	.showcaseHomePage {
 		.tags {
 			text-align:center;
@@ -254,6 +253,9 @@ responsive
 				display: inline-block;
 				vertical-align: top;
 			}
+		}
+		#containerMiddle .row.disclaimer .col-md-12 p {
+			margin-bottom:30px;
 		}
 	}
 

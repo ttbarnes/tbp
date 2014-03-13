@@ -645,6 +645,9 @@ div.introPage {
 showcase home page
 *********************/
 .showcaseHomePage {
+	hr {
+		border-color:#EEE;
+	}
   .tags {
 		padding:0 15px 15px 15px;
 		text-align:center;
@@ -654,7 +657,7 @@ showcase home page
 		}
 	}
 	ul.showcaseGalleryGrid {
-		padding:0 10px;
+		padding:0 15px;
 		min-height:165px;
 		text-align:center;
 
@@ -720,7 +723,7 @@ showcase home page
 			}
 		}
 	}
-	#containerMiddle .row:last-child {
+	#containerMiddle .row.disclaimer {
 		.col-md-12 p {
 			margin:60px 0;
 			text-align:center;
