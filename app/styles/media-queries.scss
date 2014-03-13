@@ -404,6 +404,8 @@ responsive
 @media (max-width: 600px) {
 	.showcaseHomePage .tags button {
 		min-height:56px;
+		font-size:13px;
+		width:49%;
 	}
 	/*about page*/
 	.aboutPage #containerMiddle .skillsetList ul.ratingKey {
