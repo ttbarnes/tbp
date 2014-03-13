@@ -888,27 +888,27 @@ about page
 					&.css {
 						height:95%;
 						min-height:150px;
-						background:#408972;
+						background:#62B595;
 					}
 					&.mobile {
 						height:80%;
 						min-height:120px;
-						background:#297C66;
+						background:#479276;
 					}
 					&.jquery {
 						height:80%;
 						min-height:120px;
-						background:#26735E;
+						background:#479276;
 					}
 					&.javascript {
 						height:60%;
 						min-height:90px;
-					  background:#196E5D;
+					  background:#32775E;
 					}
 					&.angular {
 						height:40%;
 						min-height:60px;
-					  background:#096859;
+					  background:#27664F;
 					}
 				}
 			}
@@ -940,36 +940,22 @@ about page
 							height:12px;
 						}
 					}
-					&[rating="6"]{ 
+					&[rating="expert-advanced"]{ 
 						::before {
 							background:#62B595;
 						}
 					}
-					&[rating="5"]{ 
+					&[rating="intermediate"]{ 
 						::before {
-							background:#408972;
+							background:#32775E;
 						}
 					}
-					&[rating="4"] {
+					&[rating="basic-learning"]{ 
 						::before {
-							background:#297C66;
+							background:#27664F;
 						}
 					}
-					&[rating="3"] {
-						::before {
-							background:#26735E;
-						}
-					}
-					&[rating="2"] {
-						::before {
-							background:#196E5D;
-						}
-					}
-					&[rating="1"] {
-						::before {
-							background:#096859;
-						}
-					}
+
 				}
 			}
 		}
