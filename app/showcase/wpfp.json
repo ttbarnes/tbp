@@ -1,0 +1,16 @@
+{
+		"id": "wpfp", 
+    "name": "Who Pays Full Price",
+		"category": "Ecommerce",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Magento"}
+		],
+		"deliver": [
+			{"item": "Ecommerce website"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}
