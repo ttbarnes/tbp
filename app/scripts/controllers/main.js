@@ -47,7 +47,11 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
 		
 		$scope.doSomething = function(){
 			console.log('hovered!');
+			//var title = angular.element('ul.showcaseGalleryGrid'.children()[0]);
+			//angular.element('ul.showcaseGalleryGrid').addClass('BOOM');
+			//this.addClass('selecta');
 		};
+
 		$scope.scrollTop = function () {
       windowScrollTop();
     };
