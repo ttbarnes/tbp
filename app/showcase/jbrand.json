@@ -1,0 +1,16 @@
+{
+		"id": "jbrand", 
+    "name": "J Brand",
+		"category": "Ecommerce",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Powa CMS"}
+		],
+		"deliver": [
+			{"item": "Ecommerce website"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}

@@ -33,7 +33,7 @@
 				"tech": [
 					{"tag": "HTML, CSS3"},
 					{"tag": "jQuery"},
-					{"tag":"Powa CMS"}
+					{"tag": "Powa CMS"}
 				]
     },
 		{
@@ -43,7 +43,7 @@
 				"tech": [
 					{"tag": "HTML, CSS3"},
 					{"tag": "jQuery"},
-					{"tag":"Powa CMS"}
+					{"tag": "Powa CMS"}
 				]
     },
 		{
@@ -112,7 +112,7 @@
 				"category": "Ecommerce",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
+					{"tag": "JavaScript, jQuery"},
 					{"tag":"Powa CMS"}
 				]
     },
@@ -122,7 +122,7 @@
 				"category": "Ecommerce",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
+					{"tag": "JavaScript, jQuery"},
 					{"tag":"Powa CMS"}
 				]
     },
@@ -132,7 +132,7 @@
 				"category": "Ecommerce",
 				"tech":[
 					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
+					{"tag": "JavaScript, jQuery"},
 					{"tag":"Powa CMS"}
 				]
     },

@@ -1,0 +1,16 @@
+{
+		"id": "aeg", 
+    "name": "AEG Parts & Accessories",
+		"category": "Ecommerce",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "JavaScript, jQuery"},
+			{"tag": "Powa CMS"}
+		],
+		"deliver": [
+			{"item": "Ecommerce website"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}
