@@ -1,15 +1,4 @@
 [
-    {
-				"id": "mara-explorers", 
-				"name": "Mara Explorers",
-				"category": "Static",
-				"date": "Winter 2013",
-				"tech": [
-					{"tag": "HTML5, CSS3"},
-					{"tag": "jQuery"},
-					{"tag": "Wordpress"}
-				]
-		},
 		{
         "id": "jquery/list-icon-manipulator", 
         "name": "List Icon Manipulator",
@@ -50,16 +39,6 @@
         "id": "tolkien", 
         "name": "Tolkien",
 				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
-    },
-		{
-        "id": "cathy-brown", 
-        "name": "Cathy Brown",
-				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS3"},
 					{"tag":"jQuery"},
@@ -146,6 +125,16 @@
 					{"tag":"Powa CMS"}
 				]
     },
+    {
+        "id": "werelse", 
+        "name": "Werelse",
+				"category": "Ecommerce",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
 		{
         "id": "wpfp", 
         "name": "Who Pays Full Price",
@@ -156,34 +145,17 @@
 					{"tag":"Magento"}
 				]
     },
-		{
-        "id": "life-financial-solutions", 
-        "name": "Life Financial Solutions",
+    {
+				"id": "mara-explorers", 
+				"name": "Mara Explorers",
 				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"},
-					{"tag":"JavaScript, jQuery"},
-					{"tag":"PHP"}
+				"date": "Winter 2013",
+				"tech": [
+					{"tag": "HTML5, CSS3"},
+					{"tag": "jQuery"},
+					{"tag": "Wordpress"}
 				]
-    },
-		{
-        "id": "peter-utton-blog",
-        "name": "Peter Utton Tumblr Blog",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"}
-				]
-    },
-		{
-        "id": "peter-utton-website-v2",
-        "name": "Peter Utton",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
-    },
+		},
 		{
         "id": "propax-malaysia", 
         "name": "Propax Malaysia",
@@ -192,7 +164,7 @@
 					{"tag":"HTML, CSS3"}
 				]
     },
-		{
+    {
         "id": "powa",
         "name": "Powa Corporate Websites",
 				"category": "Static",
@@ -210,6 +182,44 @@
 					{"tag":"HTML, CSS3"},
 					{"tag":"jQuery"},
 					{"tag":"Powa CMS"}
+				]
+    },
+    {
+        "id": "cathy-brown", 
+        "name": "Cathy Brown",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+    {
+        "id": "peter-utton-blog",
+        "name": "Peter Utton Tumblr Blog",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"}
+				]
+    },
+		{
+        "id": "peter-utton-website-v2",
+        "name": "Peter Utton",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS3"},
+					{"tag":"jQuery"},
+					{"tag":"Powa CMS"}
+				]
+    },
+    {
+        "id": "life-financial-solutions", 
+        "name": "Life Financial Solutions",
+				"category": "Static",
+				"tech":[
+					{"tag":"HTML, CSS"},
+					{"tag":"JavaScript, jQuery"},
+					{"tag":"PHP"}
 				]
     },
 		{
