@@ -235,13 +235,13 @@
         "name": "Gold Challenge",
 				"category": "Static",
 				"tech":[
-					{"tag":"HTML, CSS"},
+					{"tag":"HTML, CSS3"},
 					{"tag":"Joomla"}
 				]
     },
     {
         "id": "peter-utton-website-v1",
-        "name": "Peter Utton Website v1",
+        "name": "Peter Utton",
 				"category": "Static",
 				"tech":[
 					{"tag":"HTML, CSS"},
@@ -249,7 +249,7 @@
 				]
     },
 		{
-        "id": "barnzy-website",
+        "id": "barnzy",
         "name": "Barnzy",
 				"category": "Static",
 				"tech":[

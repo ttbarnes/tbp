@@ -1,0 +1,16 @@
+{
+		"id": "gold-challenge",
+    "name": "Gold Challenge",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag":"HTML, CSS3"},
+			{"tag":"Joomla"}
+		],
+		"deliver": [
+			{"item": "HTML, CSS"},
+			{"item": "Templates"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}
