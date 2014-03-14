@@ -1,0 +1,12 @@
+{
+		"id": "barnzy-holding", 
+    "name": "Barnzy",
+		"category": "Holding pages",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS"}
+		],
+		"deliver": [
+			{"item": "Holding page"}
+		]
+}

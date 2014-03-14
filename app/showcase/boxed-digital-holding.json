@@ -1,0 +1,12 @@
+{
+		"id": "boxed-digital-holding", 
+    "name": "Boxed Digital",
+		"category": "Holding pages",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"}
+		],
+		"deliver": [
+			{"item": "Holding page"}
+		]
+}
