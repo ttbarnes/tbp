@@ -1,0 +1,12 @@
+{
+		"id": "cathy-brown-brand", 
+    "name": "Cathy Brown",
+		"category": "Brand identity",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "Photoshop"}
+		],
+		"deliver": [
+			{"item": "Logo design"}
+		]
+}

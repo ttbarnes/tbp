@@ -1,0 +1,12 @@
+{
+		"id": "barnzy-brand", 
+    "name": "Barnzy",
+		"category": "Brand identity",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "Photoshop"}
+		],
+		"deliver": [
+			{"item": "Logo design"}
+		]
+}
