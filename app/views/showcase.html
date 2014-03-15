@@ -17,11 +17,11 @@
   </div>  
   <div class="row">
     <div class="span4">
-      <ul class="showcaseGalleryGrid">
-        <li class="item repeat-item showcaseGalleryToggle col-xs-3" ng-repeat="project in projects | filter:byCategory"
-          ng-class="{red: hover}" 
-          ng-mouseenter="doSomething()"
-          ng-mouseleave="hover = false">
+      <ul class="showcaseGalleryGrid" ng-class="myclass">
+        <li class="item repeat-item showcaseGalleryToggle col-xs-3 myclass2" ng-repeat="project in projects | filter:byCategory"
+          ng-class="myclass"
+          ng-mouseenter="doSomething(); myclass = 'highlight'"
+          ng-mouseleave="doSomethingELSE(); myclass = 'NOhighlight'">
 
           <a href="#/showcase/{{project.id}}">
             <img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/>
