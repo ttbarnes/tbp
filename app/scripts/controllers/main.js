@@ -45,6 +45,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
 
 		$scope.selectedCategory = 'Ecommerce';
 		
+		/*
 		$scope.doSomething = function(){
 			console.log('hovered!');
 			angular.element('ul.showcaseGalleryGrid').addClass('SOMETHING-BOOM');
@@ -52,6 +53,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
 		$scope.doSomethingELSE = function(){
 			angular.element('ul.showcaseGalleryGrid').removeClass('SOMETHING-BOOM');
 		};
+		*/
 
 		$scope.scrollTop = function () {
       windowScrollTop();
