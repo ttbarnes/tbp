@@ -682,19 +682,22 @@ showcase home page
 				/*display:none;*/
 				position:absolute;
 				width:100%;
-				bottom:0;
+				max-width:228px;
+				min-height:25%;
+				bottom:5px;
 				left:-100%;
-				background:#FFF;
-				min-height:33%;
+				background:#f1f1f1;
+				border-top:solid 3px #CCC;
 				-webkit-transition:left ease-in-out 0.2s;
 				-moz-transition:left ease-in-out 0.2s;
 				-o-transition:left ease-in-out 0.2s;
 				transition:left ease-in-out 0.2s;
 
 				h4 {			
-					font-size:15px;
+					font-size:13px;
 					padding:10px;
 					margin:0;
+					color:$colorBlack;
 				}
 			}
 		}
@@ -708,10 +711,10 @@ showcase home page
 			&:hover {
 				img {
 					opacity:0.95;
+					box-shadow:0 4px 4px #CCC;
 				}
 				.panelHover {
-					/*display:block;*/
-					left:0;
+					left:5px;
 				}
 			}
 			&.ng-enter,
