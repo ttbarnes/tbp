@@ -9,6 +9,11 @@
         "name": "Active Hover States",
 				"category": "jQuery plugins"
     },
+    {
+        "id": "jquery/portrolio", 
+        "name": "Portrolio",
+				"category": "jQuery plugins"
+    },
 		{
         "id": "the-store", 
         "name": "The Store",

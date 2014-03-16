@@ -24,6 +24,9 @@ tbp.config(function ($routeProvider) {
 		.when('/showcase/jquery/list-icon-manipulator', {
 			templateUrl: 'views/demos/lim.html',
 		})
+		.when('/showcase/jquery/portrolio', {
+			templateUrl: 'views/demos/portrolio.html',
+		})
 		.when('/showcase/:projectId', {
 			templateUrl: 'views/showcase-individual.html',
 			controller: 'indShowcasePieceCtrl'
