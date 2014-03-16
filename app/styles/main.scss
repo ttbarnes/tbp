@@ -61,6 +61,7 @@ p {
 }
 
 hr {
+	clear:both;
 	border-top:solid 3px #EEE;
 	margin:0 30px;
 }
@@ -618,7 +619,7 @@ div.introPage {
 /*recent releases*/
 .recentReleases {
   text-align:center;
-	margin:0;
+	margin:0 !important;
 	
 	.span4 {
 		background: #E3E3E3;
@@ -664,6 +665,9 @@ div.introPage {
 showcase home page
 *********************/
 .showcaseHomePage {
+	#containerMiddle .row {
+		margin-bottom:0;
+	}
   .tags {
 		padding:0 15px 15px 15px;
 		text-align:center;
@@ -891,6 +895,7 @@ about page
 		  clear: both;
 		  padding: 0;
 		  height:50%;
+		  max-height:420px;
 		  width:100%;
 		  margin-left:0;
 		  text-align:left;
@@ -1131,6 +1136,7 @@ error page
 		.row {
 			h4 {
 				font-size:40px;
+				text-align:center;
 				color:$colorBlack;
 			}
 			p.sub {
