@@ -12,28 +12,38 @@
 
   </div>
   <div class="row mainContent">
-    <div class="col-md-12">
-		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
-      <div class="tags">
-        <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+    <div class="row">
+      <div class="col-md-12">
+  		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
+        <div class="tags">
+          <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+        </div>
       </div>
     </div>
-    <div class="moreInfoSoon" ng-if="project.moreInfoSoon == true">
-      <p>More information coming soon.</p>
-    </div>
-
-    <div class="col-md-12 deliver">
-      <!--<h2>What did we deliver?</h2>-->
-      <h2>{{project.deliverTitle}}</h2>
-      <ul>
-        <li ng-repeat="child in project.deliverItems">{{child.item}}</li>
-      </ul>
-    </div>
-    <div class="col-md-12 story">
-      <h2>{{project.how.title}}</h2>
-      <p>{{project.how.content}}</p>
-      <p>{{project.how.thoughts}}</p>
-      <a href="{{project.liveUrl}}" class="btn btn-primary">Visit website</a>
+    <div class="row">
+      <div class="col-md-12 moreInfoSoon" ng-if="project.moreInfoSoon == true">
+        <p>More information coming soon.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12 deliver">
+          <h4>{{project.deliverTitle}}</h4>
+          <div class="col-md-12">
+            <ul>
+              <li ng-repeat="child in project.deliverItems">{{child.item}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 story">
+          <h4>{{project.how.title}}</h4>
+          <div class="col-md-12">
+            <p>{{project.how.content}}</p>
+            <p>{{project.how.thoughts}}</p>
+            <a href="{{project.liveUrl}}" class="btn btn-primary">Visit website</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

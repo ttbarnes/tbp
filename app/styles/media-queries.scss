@@ -140,6 +140,12 @@ responsive
 		}
 	}
 
+	/*sub page heading bg (eg about/showcase.ind)*/
+	.row .col-md-12 h4 {
+		margin-bottom:10px;
+		font-size:16px;
+	}
+
 	.navbar-default {
 		margin-bottom:40px;
 		.navbar-collapse {
@@ -318,11 +324,6 @@ responsive
 
 	/*about page*/	
   .aboutPage #containerMiddle {
-  	.row .col-md-12 {
-  		h4 {
-  			margin-bottom:10px;
-  		}
-  	}
 		.row .col-md-12 .col-md-12 .skillsetChart {
 			height:auto;
 			margin:20px 0;

@@ -65,6 +65,13 @@ hr {
 	margin:0 30px;
 }
 
+/*sub page heading bg (eg about/showcase.ind)*/
+.row .col-md-12 h4 {
+	margin-bottom:15px;
+	text-align:left;
+	padding:15px;
+}
+
 /*form elements*/
 input, button, select, textarea {
   color:$colorBlack;
@@ -746,11 +753,12 @@ showcase individual page
   #containerMiddle {
 		
 		.topHeading {	
-		  background:#CCC;
+		  background:$colorWhite2;
 		  margin-bottom:10px;
 
 			h2 {
 				padding:5px;
+				color:$colorBlack;
 			}
 			div.date,
 			div.tags {
@@ -767,6 +775,10 @@ showcase individual page
 				font-size:11px;
 				color:#999;
 			}
+		}
+		.row .col-md-12 h4 {
+			background:$colorWhite2;
+			color:$colorBlack;
 		}
 		img {
 			float:left;
@@ -789,12 +801,14 @@ showcase individual page
 				max-width:160px;
 			}
 		}
+		/*
 		.story {
 			float:none;
 			clear:both;
 			width:auto;
 			display:inline-block;
 		}
+		*/
 	}
 }
 
@@ -849,9 +863,6 @@ about page
 			}
 
 	  	h4 {
-	  		margin-bottom:15px;
-	  		text-align:left;
-	  		padding:15px;
 	  		background:$colorBlueDark2;
 	  	}
 	  	.col-md-3 {
