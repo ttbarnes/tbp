@@ -19,15 +19,16 @@
       </div>
     </div>
     <div class="col-md-12 deliver">
-      <h2>What did we deliver?</h2>
+      <!--<h2>What did we deliver?</h2>-->
+      <h2>{{project.deliverTitle}}</h2>
       <ul>
-        <li ng-repeat="child in project.deliver">{{child.item}}</li>
+        <li ng-repeat="child in project.deliverItems">{{child.item}}</li>
       </ul>
     </div>
     <div class="col-md-12 story">
-      <h2>How did we do it?</h2>
-      <p>{{project.how}}</p>
-      <div ng-bind-html="project.thoughts">{{project.thoughts}}</div>
+      <h2>{{project.how.title}}</h2>
+      <p>{{project.how.content}}</p>
+      <p>{{project.how.thoughts}}</p>
       <a href="{{project.liveUrl}}" class="btn btn-primary">Visit website</a>
     </div>
   </div>
