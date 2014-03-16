@@ -2,36 +2,21 @@
     {
         "id": "mara-explorers", 
         "name": "Mara Explorers",
-				"category": "Static",
-				"tech": [
-					{"tag": "HTML5, CSS3"},
-					{"tag": "jQuery"},
-					{"tag": "Wordpress"}
-				]
+				"category": "Static"
     },
 		{
         "id": "jquery/list-icon-manipulator", 
         "name": "List Icon Manipulator",
-				"category": "jQuery plugins",
-				"tech": [
-					{"tag": "jQuery plugin"}
-				]
+				"category": "jQuery plugins"
     },
 		{
         "id": "jquery/active-hover-states", 
         "name": "Active Hover States",
-				"category": "jQuery plugins",
-				"tech": [
-					{"tag": "jQuery plugin"}
-				]
+				"category": "jQuery plugins"
     },
 		{
-        "id": "the-store", 
+        "id": "the-store",
         "name": "The Store",
-				"category": "Ecommerce",
-				"tech": [
-					{"tag": "HTML, CSS3"},
-					{"tag": "jQuery"}
-				]
+				"category": "Ecommerce"
     }
 ]

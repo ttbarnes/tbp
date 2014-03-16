@@ -2,270 +2,143 @@
 		{
         "id": "jquery/list-icon-manipulator", 
         "name": "List Icon Manipulator",
-				"category": "jQuery plugins",
-				"tech": [
-					{"tag": "jQuery plugin"}
-				]
+				"category": "jQuery plugins"
     },
 		{
         "id": "jquery/active-hover-states", 
         "name": "Active Hover States",
-				"category": "jQuery plugins",
-				"tech": [
-					{"tag": "jQuery plugin"}
-				]
+				"category": "jQuery plugins"
     },
 		{
         "id": "the-store", 
         "name": "The Store",
-				"category": "Ecommerce",
-				"tech": [
-					{"tag": "HTML, CSS3"},
-					{"tag": "jQuery"},
-					{"tag": "Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "collins-learning", 
         "name": "Collins Learning",
-				"category": "Ecommerce",
-				"tech": [
-					{"tag": "HTML, CSS3"},
-					{"tag": "jQuery"},
-					{"tag": "Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "tolkien", 
         "name": "Tolkien",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"	
     },
 		{
         "id": "robbie-williams", 
         "name": "Robbie Williams",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "farrell", 
         "name": "Farrell",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
     {
         "id": "william-curley", 
         "name": "William Curley",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "hoover", 
         "name": "Hoover Spares",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "electrolux", 
         "name": "Electrolux Parts & Accessories",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag": "JavaScript, jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "aeg", 
         "name": "AEG Parts & Accessories",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag": "JavaScript, jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "zanussi", 
         "name": "Zanussi Parts & Accessories",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag": "JavaScript, jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "jbrand", 
         "name": "J Brand",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
     {
         "id": "werelse", 
         "name": "Werelse",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Ecommerce"
     },
 		{
         "id": "wpfp", 
         "name": "Who Pays Full Price",
-				"category": "Ecommerce",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Magento"}
-				]
+				"category": "Ecommerce"
     },
     {
 				"id": "mara-explorers", 
 				"name": "Mara Explorers",
 				"category": "Static",
-				"date": "Winter 2013",
-				"tech": [
-					{"tag": "HTML5, CSS3"},
-					{"tag": "jQuery"},
-					{"tag": "Wordpress"}
-				]
+				"date": "Winter 2013"
 		},
 		{
         "id": "propax-malaysia", 
         "name": "Propax Malaysia",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"}
-				]
+				"category": "Static"
     },
     {
         "id": "powa",
         "name": "Powa Corporate Websites",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Static"
     },
     {
         "id": "mPowa",
         "name": "mPowa Corporate Websites",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Static"
     },
     {
         "id": "cathy-brown", 
         "name": "Cathy Brown",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Static"
     },
     {
         "id": "peter-utton-blog",
         "name": "Peter Utton Tumblr Blog",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"}
-				]
+				"category": "Static"
     },
 		{
         "id": "peter-utton-website-v2",
         "name": "Peter Utton",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"},
-					{"tag":"Powa CMS"}
-				]
+				"category": "Static"
     },
     {
         "id": "life-financial-solutions", 
         "name": "Life Financial Solutions",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"},
-					{"tag":"JavaScript, jQuery"},
-					{"tag":"PHP"}
-				]
+				"category": "Static"
     },
 		{
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"jQuery"}
-				]
+				"category": "Static"
     },
 		{
         "id": "you-affiliate-network",
         "name": "You Affiliate Network",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"PHP"}
-				]
+				"category": "Static"
     },
     {
         "id": "gold-challenge", 
         "name": "Gold Challenge",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS3"},
-					{"tag":"Joomla"}
-				]
+				"category": "Static"
     },
     {
         "id": "peter-utton-website-v1",
         "name": "Peter Utton",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"},
-					{"tag":"jQuery"}
-				]
+				"category": "Static"
     },
 		{
         "id": "barnzy",
         "name": "Barnzy",
-				"category": "Static",
-				"tech":[
-					{"tag":"HTML, CSS"},
-					{"tag":"jQuery"}
-				]
+				"category": "Static"
     },
     {
         "id": "boxed-digital-holding",
