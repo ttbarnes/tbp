@@ -159,6 +159,27 @@ buttons
 	border:solid 6px $colorBlueLight;
 	text-shadow:0 2px 2px #333;
 }
+.btn-blue-semi {
+	border:solid 6px $colorBlueDark;
+	text-shadow:0 2px 2px #222;
+	background:$colorBlueDark;
+	border-top-color:$colorBlueDark;
+	border-right-color:$colorBlueDark;
+	border-bottom-color:$colorBlueDark;
+	border-left-color:$colorBlueDark;
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+
+		background:$colorBlueDark2;
+		border-top-color:$colorBlueDark2;
+		border-right-color:$colorBlueDark;
+		border-bottom-color:$colorBlueDark;
+		border-left-color:$colorBlueDark2;
+
+	}
+}
 .btn-blue-dark {
 	color:$colorWhite;
 	background:$colorBlueDark2;
@@ -166,7 +187,7 @@ buttons
 	text-shadow:0 2px 2px #333;
 
 	&:hover, 
-	&:focus, 
+	&:focus,
 	&:active, 
 	&.active {
 		background:$colorBlueDark;
