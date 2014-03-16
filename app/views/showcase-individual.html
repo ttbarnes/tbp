@@ -1,7 +1,7 @@
 <ng-include src="'views/navbar.html'"></ng-include>
 
 <div id="containerMiddle">
-  
+
   <div class="row topHeading">
     <div class="col-md-6">
 		  <h2>{{project.name}}</h2>
@@ -18,6 +18,10 @@
         <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
       </div>
     </div>
+    <div class="moreInfoSoon" ng-if="project.moreInfoSoon == true">
+      <p>More information coming soon.</p>
+    </div>
+
     <div class="col-md-12 deliver">
       <!--<h2>What did we deliver?</h2>-->
       <h2>{{project.deliverTitle}}</h2>
