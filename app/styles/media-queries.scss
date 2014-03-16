@@ -110,11 +110,14 @@ responsive
 		}
 	}
 
-	/*showcase individual page*/
-	.showcaseIndPage {
-		.col-md-6 {
+	.showcaseIndPage #containerMiddle {
+		.row > .row.topHeading .col-md-6 {
 			float:left;
 			width:50%;
+			position:relative;
+			min-height:1px;
+			padding-left:15px;
+			padding-right:15px;
 		}
 	}
 }	
@@ -267,10 +270,29 @@ responsive
 
 	/*showcase individual page*/
 	.showcaseIndPage {
-		#containerMiddle {
+		#containerMiddle .row {
 
-			.topHeading {
+			> .row.topHeading {
 				background:none;
+			  .col-md-12 {
+					padding:0 15px;
+				}
+				.col-md-6 {
+					float:none;
+					width:100%;
+					padding:0;
+
+					h2 {
+						padding:15px;
+						font-size:25px;
+						background:#d8d8d8;
+						margin:0;
+					}
+					&.last {
+						display:none;
+					}
+				}
+
 				h2 {
 					padding:0;
 					margin-bottom:0;
@@ -292,32 +314,10 @@ responsive
 				}
 			}
 			.mainContent {
-				.col-md-12 {
+				> .row > .col-md-12 {
 					padding-left:0;
 					padding-right:0;
 				}
-			}
-
-			.col-md-6,
-			.col-md-12 img {
-				float:none;
-				clear:both;
-				width:100%;
-			}
-			.col-md-12 {
-				div.tags {
-					clear:both;
-					width:100%;
-					> div {
-						display:inline-block;
-						float:none;
-						margin-right:10px;
-						margin-bottom:0;
-					}
-				}
-			}
-			div.tags div {
-				margin:10px 10px 10px 0;
 			}
 		}
 	}
@@ -493,6 +493,21 @@ responsive
 		}
 	}
 
+	/*showcase ind page*/
+	.showcaseIndPage #containerMiddle {
+		.mainContent {
+			> .row.topHeading .col-md-6 h2 {
+				font-size:18px;
+			}
+			.tags {
+				text-align:left;
+				padding-left:15px;
+				margin-bottom:8px;
+			}
+		}
+	}
+
+
 	/*contact page*/
 	.contactPage  {
 	  .row .col-md-12 a.contactAddress {
@@ -510,7 +525,7 @@ responsive
 }
 
 @media (max-width: 350px) {
-/*contact page*/
+	/*contact page*/
 	.contactPage .row .col-md-12 a.contactAddress {
 		font-size:20px;
 	}

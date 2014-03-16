@@ -61,15 +61,23 @@ p {
 }
 
 hr {
-	border-top:solid 3px #356896;
+	border-top:solid 3px #EEE;
 	margin:0 30px;
 }
 
-/*sub page heading bg (eg about/showcase.ind)*/
-.row .col-md-12 h4 {
-	margin-bottom:15px;
-	text-align:left;
-	padding:15px;
+/*sub page heading bg/sections (eg about/showcase.ind)*/
+#containerMiddle {
+	 .row {
+		margin-bottom:70px;
+		.col-md-12 h4 {
+			margin-bottom:15px;
+			text-align:left;
+			padding:15px;
+		}
+		> .row {
+			margin-bottom:0;
+		}
+	}
 }
 
 /*form elements*/
@@ -656,9 +664,6 @@ div.introPage {
 showcase home page
 *********************/
 .showcaseHomePage {
-	hr {
-		border-color:#EEE;
-	}
   .tags {
 		padding:0 15px 15px 15px;
 		text-align:center;
@@ -751,25 +756,32 @@ showcase individual page
 *********************/
 .showcaseIndPage {
   #containerMiddle {
+
+  	.row > .row {
+  		margin-bottom:70px;
+  		&.topHeading,
+  		&.imgWrap,
+  		&.tagsWrap,
+  		&:last-child {
+  			margin-bottom:0;
+  		}
+  	}
 		
-		.topHeading {	
-		  background:$colorWhite2;
+		.row > .row.topHeading {	
 		  margin-bottom:10px;
+
+		  .col-md-6 {
+		  	background:$colorWhite2;
+		  }
 
 			h2 {
 				padding:5px;
 				color:$colorBlack;
 			}
-			div.date,
-			div.tags {
+			div.date {
 				float:right;
 				padding:5px;
 				text-align:right;
-			}
-			div.tags {
-				margin:7px 0;
-			}
-			div.date {
 				margin:19px 0;
 				padding:5px 10px;
 				font-size:11px;
@@ -781,34 +793,31 @@ showcase individual page
 			color:$colorBlack;
 		}
 		img {
-			float:left;
 			display:block;
-			width:75.5555555555%;
+			width:100%;
 		  max-width:700px;
-		  margin-right:28px;
-		  margin-bottom:10px;
+		  margin:10px auto;
 		}
-		.mainContent .tags {
-			clear:none;
-			float:right;
-			width:20%;
-			> div {
-				display:block;
-				clear:both;
-				float:right;
-				margin-top:0;
-				margin-right:0;
-				max-width:160px;
+		.mainContent {
+			.tags {
+				margin-bottom:20px;
+				text-align:center;
 			}
-		}
-		/*
-		.story {
-			float:none;
-			clear:both;
-			width:auto;
-			display:inline-block;
-		}
-		*/
+			.moreInfoSoon {
+				padding-top:20px;
+				text-align:center;
+			}
+			ul {
+				li {
+					margin-left:20px;
+				}
+			}
+			&.story {
+				p:last-child {
+					margin-bottom:0;
+				}
+			}
+		}	
 	}
 }
 
@@ -834,6 +843,10 @@ about page
 	  background:$colorBlueDark;
 	}
 
+	hr {
+		border-top:solid 3px #356896;
+	}
+
 	header .navbar-default,
 	footer {
 		background:$colorBlueDark;
@@ -853,8 +866,6 @@ about page
 	
 	#containerMiddle {
 		.row {
-		  margin-bottom:70px;
-
 			&.aboutIntro {
 				margin-bottom:30px;
 			}
