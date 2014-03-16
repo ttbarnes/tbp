@@ -95,7 +95,7 @@ buttons
   font-weight:normal;
 	letter-spacing:-1px;
   color:$colorWhite;
-  background:$colorBlueLight;
+  background:$colorBlueDark2;
 	color:$colorWhite;
 	font-size:15px;
 	-ms-word-break:break-all;
@@ -111,7 +111,7 @@ buttons
 	&:active, 
 	&.active {
   	color:$colorWhite;
-		background:$colorBlueDark;
+		background:$colorBlueLight;
   }
 }
 
@@ -138,48 +138,27 @@ buttons
 .btn-primary,
 .btn-lg {
 	font-size:20px;
-
-	&.btn-blue-light {
-		&:hover, 
-		&:focus, 
-		&:active, 
-		&.active {
-			border-top-color:$colorBlueDark;
-			border-right-color:$colorBlueLight;
-			border-bottom-color:$colorBlueLight;
-			border-left-color:$colorBlueDark;
-		}
-	}
 }
 
 .btn-primary {
 	padding:10px 15px;
 }
 .btn-blue-light {
-	border:solid 6px $colorBlueLight;
-	text-shadow:0 2px 2px #333;
-}
-.btn-blue-semi {
-	border:solid 6px $colorBlueDark;
-	text-shadow:0 2px 2px #222;
 	background:$colorBlueDark;
-	border-top-color:$colorBlueDark;
-	border-right-color:$colorBlueDark;
-	border-bottom-color:$colorBlueDark;
-	border-left-color:$colorBlueDark;
+	border:solid 6px $colorBlueDark;
+	text-shadow:0 2px 2px #333;
 	&:hover, 
-	&:focus, 
+	&:focus,
 	&:active, 
 	&.active {
-
-		background:$colorBlueDark2;
-		border-top-color:$colorBlueDark2;
+		background:$colorBlueLight;
+		border-top-color:$colorBlueLight;
 		border-right-color:$colorBlueDark;
 		border-bottom-color:$colorBlueDark;
-		border-left-color:$colorBlueDark2;
-
+		border-left-color:$colorBlueLight;
 	}
 }
+
 .btn-blue-dark {
 	color:$colorWhite;
 	background:$colorBlueDark2;
