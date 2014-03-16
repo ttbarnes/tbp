@@ -8,9 +8,5 @@
 			{"tag": "jQuery"},
 			{"tag": "Magento"}
 		],
-		"deliver": [
-			{"item": "Ecommerce website"}
-		],
-		"how":"stuff here",
-		"thoughts":"etc"
+		"moreInfoSoon":true
 }
