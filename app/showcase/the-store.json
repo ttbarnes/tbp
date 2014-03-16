@@ -8,9 +8,14 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
-			{"item": "Ecommerce website"}
+		"deliverTitle": "What did we deliver?",
+		"deliverItems": [
+			{"item": "Ecommerce website"},
+			{"item": "something else"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc"
+		"how": {
+			"title": "How did we do it?",
+			"content": "stuff here",
+			"thoughts": "etc"
+		}
 }
