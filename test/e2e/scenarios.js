@@ -109,9 +109,9 @@ describe('Page-view: Showcase home', function(){
   	element('div.tags button.Static').click();
   	expect(repeater('ul.showcaseGalleryGrid li').count()).toBeGreaterThan(12); //currently 11 ecommerce projects, 13 static
 
-  	//another example with jQuery projects - only 2 exist
+  	//another example with jQuery projects - only 3 exist
   	element('div.tags button.jQuery').click();
-  	expect(repeater('ul.showcaseGalleryGrid li').count()).toEqual(2);
+  	expect(repeater('ul.showcaseGalleryGrid li').count()).toEqual(3);
   });
 
   it('should direct user to an individual project page after clicking a project', function(){
@@ -131,6 +131,19 @@ describe('Page-view: Showcase home', function(){
   });
 
 });
+
+describe('Page-view: Showcase individual', function(){
+	beforeEach(function() {
+    browser().navigateTo('/#/showcase');
+  });
+
+	it('project example - should have button that directs user back to the showcase page ', function(){
+		element('ul.showcaseGalleryGrid li:eq(2) a').click();
+		element('.row-btn-lg .btn:last-child').click();
+		expect(browser().location().url()).toContain('/showcase');
+	});
+
+});	
 
 describe('Page-view: About', function(){
 	beforeEach(function() {

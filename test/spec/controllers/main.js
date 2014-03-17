@@ -95,7 +95,7 @@ describe('Controller: indShowcasePieceCtrl', function () {
   it('should have a page class/name', function (){
     expect(scope.pageClass).toBeDefined();
   });
-  
+
   it('should have a scrollTop function defined', function(){
     expect(scope.scrollTop).toBeDefined();
   });
