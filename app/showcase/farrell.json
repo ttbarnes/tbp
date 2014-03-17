@@ -8,10 +8,14 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Ecommerce website"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "I was responsible for all front end development - working closely with a designer, we delivered a very sleak design with many different features, catering for Farrell's wide range of collections/catalogues.",
+			"thoughts": "It was a pleasure to integrate some fancy jQuery plugins - galleries and carousels for example. We ensured that our solutions are easily editable within the Powa CMS."
+		},
 		"liveUrl": "http://www.farrell.com"
 }

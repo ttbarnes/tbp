@@ -8,10 +8,14 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Ecommerce website"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "I was responsible for all front end development - We produced many wireframes, POCs and bespoke functionality.",
+			"thoughts": "One of my favourite parts of this build was the microsite for <a href='http://www.collins.co.uk/page/monsters/Monster+Practice' target='_blank'>'Monster Practice'</a>. I integrated some smooth scrolling and gallery features into the CMS. <br/>Img here <br/>The ecommerce checkout is also very bespoke, I really enjoyed building the various checkout flows and features. <br/>Img here"		
+		},
 		"liveUrl": "http://www.collins.co.uk"
 }

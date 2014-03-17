@@ -7,9 +7,12 @@
 			{"tag": "HTML, CSS3"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Ecommerce website"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc"
+		"how": {
+			"title": "My involvement",
+			"content": "I oversaw the development of this project, also training a new developer with the Powa CMS, templates and front end processes."
+		},
 }

@@ -2,17 +2,22 @@
 		"id": "electrolux", 
     "name": "Electrolux Parts & Accessories",
 		"category": "Ecommerce",
-		"date": "Winter 2013",
+		"date": "XXXX",
 		"tech": [
 			{"tag": "HTML, CSS3"},
 			{"tag": "JavaScript, jQuery"},
+			{"tag": "AJAX"},
+			{"tag": "XML"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
-			{"item": "Ecommerce website"},
-			{"item": "Localisation"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce websites"},
+			{"item": "Internationalisation, localisation"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "Working closely with several other developers, we created very bespoke front-end templates and frameworks with the Powa CMS. Accessibility, optimisation and loading speed were high on the agenda - We served an international, public facing audience of millions."
+		},
 		"liveUrl": "http://shop.electrolux.co.uk"
 }

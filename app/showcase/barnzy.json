@@ -7,11 +7,5 @@
 			{"tag":"HTML, CSS3"},
 			{"tag":"PHP"}
 		],
-		"deliver": [
-			{"item": "Brand Identity, logo design"},
-			{"item": "Corporate website"}
-		],
-		"how":"stuff here",
-		"thoughts":"etc",
-		"liveUrl": "http://soundcloud.com/barnzy"
+		"moreInfoSoon":true
 }

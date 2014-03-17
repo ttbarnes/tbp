@@ -8,11 +8,14 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
-			{"item": "Ecommerce website"},
-			{"item": "Localisation"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce websites"},
+			{"item": "Internationalisation, localisation"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "I managed the front end development, training and rollout of several different, localised sites. I built the initial templates to be used in many different languages and trained other developers to rollout the localised sites."
+		},
 		"liveUrl": "http://shop.robbiewilliams.com"
 }

@@ -7,12 +7,15 @@
 			{"tag": "HTML, CSS3"},
 			{"tag": "Jquery"},
 			{"tag": "Powa CMS"}
-
 		],
-		"deliver": [
-			{"item": "Showcase/informative website"},
-			{"item": "Localisation"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Corporate websites"},
+			{"item": "Internationalisation, localisation"}
 		],
-		"how":"Some info here",
+		"how": {
+			"title": "My involvement",
+			"content": "I managed the front end development, training and rollout of over 15 different, localised sites. I built the initial templates to be used in over 15 different languages. I then trained and worked closely with many other developers to rollout over 30 sites in 2 months."
+		},
 		"liveUrl": "http://mpowa.com"
 }

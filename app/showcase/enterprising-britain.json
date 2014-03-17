@@ -8,10 +8,13 @@
 			{"tag": "Jquery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
-			{"item": "Corporate website"},
-			{"item": "Localisation"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Corporate website"}
 		],
-		"how":"Some info here",
+		"how": {
+			"title": "My involvement",
+			"content": "I oversaw the front end development for this project, also training a new team member with the Powa CMS, templates and front end processes."
+		},
 		"liveUrl": "http://www.enterprising-britain.com"
 }

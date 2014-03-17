@@ -8,12 +8,16 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Branding for the web"},
 			{"item": "New logo"},
 			{"item": "Showcase/informative website"}
 		],
-		"how":"We redesigned and developed Cathy’s previous site using a bespoke CMS, built by Powa Technologies. I ensured that the new site is clean, accessible and editor-friendly.",
-		"thoughts":"I particularly enjoyed building the gallery sections of the website - this involved integrating a jQuery plugin into the CMS. <br/>Img of gallery page",
+		"how": {
+			"title": "My involvement",
+			"content": "We redesigned and developed Cathy’s previous site using a bespoke CMS, built by Powa Technologies. I ensured that the new site is clean, accessible and editor-friendly.",
+			"thoughts":"I particularly enjoyed building the gallery sections of the website - this involved integrating a jQuery plugin into the CMS. <br/>Img of gallery page"
+		},
 		"liveUrl": "http://www.cathybrown.co.uk"
 }
