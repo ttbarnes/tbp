@@ -1,0 +1,16 @@
+{
+		"id": "powatag",
+    "name": "Powatag Corporate Websites",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Jquery"},
+			{"tag": "Powa CMS"}
+
+		],
+		"deliver": [
+			{"item": "Corporate website"}
+		],
+		"how":"Some info here"
+}
