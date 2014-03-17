@@ -9,11 +9,15 @@
 			{"tag": "Powa CMS"}
 
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Branding for the web"},
 			{"item": "New logo"},
 			{"item": "Showcase/informative website"}
 		],
-		"how":"Some info here",
+		"how": {
+			"title": "My involvement",
+			"content": "I worked very closely with Peter during the design. We turned Peter's hand crafted art into web-safe branding and material."
+		},
 		"liveUrl": "http://peterutton.com"
 }

@@ -6,9 +6,13 @@
 		"tech": [
 			{"tag": "HTML, CSS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Bespoke Tumblr theme"}
 		],
-		"how":"Peter wanted his Tumblr blog to match the website's styles and branding. I carefully integrated the main UI and typography to match exactly.",
+		"how": {
+			"title": "My involvement",
+			"content": "Peter wanted his Tumblr blog to match the website's styles and branding. I carefully integrated the main UI and typography to match exactly."
+		},
 		"liveUrl": "http://peteruttonblog.com/"
 }

@@ -1,17 +1,20 @@
 {
 		"id": "powatag",
-    "name": "Powatag Corporate Websites",
+    "name": "Powa Corporate Website",
 		"category": "Static",
 		"date": "Winter 2013",
 		"tech": [
 			{"tag": "HTML, CSS3"},
 			{"tag": "Jquery"},
 			{"tag": "Powa CMS"}
-
 		],
-		"deliver": [
-			{"item": "Corporate website"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Corporate websites"}
 		],
-		"how":"Some info here",
+		"how": {
+			"title": "My involvement",
+			"content": "I oversaw the front end development for this project."
+		},
 		"liveUrl": "http://powatag.com"
 }

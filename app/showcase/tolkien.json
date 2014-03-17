@@ -8,10 +8,14 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
-			{"item": "Ecommerce website"}
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"},
+			{"item": "Internationalisation, localisation"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "I oversaw the front end development for this project - contributing and pair-programming."
+		},
 		"liveUrl": "http://www.tolkien.co.uk"
 }

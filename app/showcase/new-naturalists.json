@@ -8,10 +8,13 @@
 			{"tag": "jQuery"},
 			{"tag": "Powa CMS"}
 		],
-		"deliver": [
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
 			{"item": "Ecommerce website"}
 		],
-		"how":"stuff here",
-		"thoughts":"etc",
+		"how": {
+			"title": "My involvement",
+			"content": "I oversaw the front end development for this project, pair-programming and also training a new team member with the Powa CMS, templates and front end processes."
+		},
 		"liveUrl": "http://www.newnaturalists.com"
 }
