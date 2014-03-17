@@ -2,21 +2,21 @@
     {
         "id": "mara-explorers", 
         "name": "Mara Explorers",
-				"category": "Static"
+		"category": "Static"
     },
-		{
+	{
         "id": "jquery/list-icon-manipulator", 
         "name": "List Icon Manipulator",
-				"category": "jQuery plugins"
+		"category": "jQuery plugins"
     },
-		{
-        "id": "jquery/active-hover-states", 
-        "name": "Active Hover States",
-				"category": "jQuery plugins"
-    },
-		{
+	{
         "id": "the-store",
         "name": "The Store",
-				"category": "Ecommerce"
+		"category": "Ecommerce"
+    },
+    {
+        "id": "new-naturalists", 
+        "name": "New Naturalists",
+        "category": "Ecommerce"
     }
 ]
