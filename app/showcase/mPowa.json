@@ -13,5 +13,6 @@
 			{"item": "Showcase/informative website"},
 			{"item": "Localisation"}
 		],
-		"how":"Some info here"
+		"how":"Some info here",
+		"liveUrl": "http://mpowa.com"
 }

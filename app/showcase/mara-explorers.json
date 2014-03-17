@@ -15,5 +15,6 @@
 			{"item": "Showcase/informative website"}
 		],
 		"how":"Adapting from the previous website and branding, we rebranded and designed a new website. Working closely with the Mara Explorers team, we decided to use Wordpress to manage the site.",
-		"thoughts":"<p>I designed and developed a bespoke, responsive template/theme - ensuring that all of the relevant content remains editable via the CMS.</p><p>I really enjoyed building some flexible tabbed content to work smoothly on both desktops and mobiles:</p><br/><p>img here</p><p>We also integrated some lovely, full page background images. This was built with desktop and mobile  optimisation.</p><br/><p>img of error page</p>"
+		"thoughts":"<p>I designed and developed a bespoke, responsive template/theme - ensuring that all of the relevant content remains editable via the CMS.</p><p>I really enjoyed building some flexible tabbed content to work smoothly on both desktops and mobiles:</p><br/><p>img here</p><p>We also integrated some lovely, full page background images. This was built with desktop and mobile  optimisation.</p><br/><p>img of error page</p>",
+		"liveUrl": "http://maraexplorers.com"
 }

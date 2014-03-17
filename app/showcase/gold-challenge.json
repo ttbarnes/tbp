@@ -12,5 +12,6 @@
 			{"item": "Templates"}
 		],
 		"how":"stuff here",
-		"thoughts":"etc"
+		"thoughts":"etc",
+		"liveUrl": "http://www.goldchallenge.org"
 }

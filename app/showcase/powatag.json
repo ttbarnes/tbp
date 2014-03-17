@@ -12,5 +12,6 @@
 		"deliver": [
 			{"item": "Corporate website"}
 		],
-		"how":"Some info here"
+		"how":"Some info here",
+		"liveUrl": "http://powatag.com"
 }

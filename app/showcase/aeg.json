@@ -9,8 +9,10 @@
 			{"tag": "Powa CMS"}
 		],
 		"deliver": [
-			{"item": "Ecommerce website"}
+			{"item": "Ecommerce website"},
+			{"item": "Localisation"}
 		],
 		"how":"stuff here",
-		"thoughts":"etc"
+		"thoughts":"etc",
+		"liveUrl": "http://shop.aeg.co.uk"
 }
