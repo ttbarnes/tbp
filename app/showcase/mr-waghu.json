@@ -1,0 +1,15 @@
+{
+		"id": "mr-waghu", 
+    "name": "Mr Waghu",
+		"category": "Ecommerce",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Powa CMS"}
+		],
+		"deliver": [
+			{"item": "Ecommerce website"}
+		],
+		"how":"stuff here",
+		"thoughts":"etc"
+}

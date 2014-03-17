@@ -1,0 +1,17 @@
+{
+		"id": "powa",
+    "name": "Powa Corporate Websites",
+		"category": "Static",
+		"date": "Winter 2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Jquery"},
+			{"tag": "Powa CMS"}
+
+		],
+		"deliver": [
+			{"item": "Corporate website"},
+			{"item": "Localisation"}
+		],
+		"how":"Some info here"
+}
