@@ -107,11 +107,6 @@
         "category": "Static",
         "date": "Winter 2013"
     },
-	{
-        "id": "propax-malaysia", 
-        "name": "Propax Malaysia",
-		"category": "Static"
-    },
     {
         "id": "powa",
         "name": "Powa Corporate Websites",
@@ -121,6 +116,11 @@
         "id": "mPowa",
         "name": "mPowa Corporate Websites",
 		"category": "Static"
+    },
+    {
+        "id": "propax-malaysia", 
+        "name": "Propax Malaysia",
+        "category": "Static"
     },
     {
         "id": "cathy-brown", 
