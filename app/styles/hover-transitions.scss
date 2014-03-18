@@ -48,27 +48,6 @@ hover styles - page specific
 		opacity:1;
 	}
 }
-.recentReleases {
-	.span4 .col-md-4 {
-		.cont a {
-			img {
-				opacity:1;
-			}
-			.tags {
-				opacity:0.9;
-			}
-			&:hover {
-				img {
-					opacity:0.88;
-				}
-				div.tags {
-					opacity:1;
-				}
-			}
-		}
-	}
-}
-
 
 /*about page*/
 .aboutPage {

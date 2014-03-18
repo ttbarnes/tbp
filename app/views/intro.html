@@ -38,12 +38,13 @@
     <div class="span4">
       <h3>Recently released</h3>
       <ul class="projects">
-        <li class="col-md-4" ng-repeat="project in projects | limitTo:4" class="thumbnail phone-listing">
+        <li class="col-md-4" ng-repeat="project in projects | limitTo:4" class="thumbnail phone-listing" active-hover>
           <div class="cont">
-            <a href="#/showcase/{{project.id}}" class="thumb"><img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}">
-              <!--<div class="tags">
-                <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
-              </div>-->
+            <a href="#/showcase/{{project.id}}" class="thumb">
+              <img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}">
+              <div class="miniPanel">
+                <h4>{{project.name}}</h4>
+              </div>
             </a>
           </div>
         </li>
