@@ -1,20 +1,5 @@
 [
 	{
-        "id": "jquery/list-icon-manipulator", 
-        "name": "List Icon Manipulator",
-		"category": "jQuery plugins"
-    },
-	{
-        "id": "jquery/active-hover-states", 
-        "name": "Active Hover States",
-		"category": "jQuery plugins"
-    },
-    {
-        "id": "jquery/portrolio", 
-        "name": "Portrolio",
-		"category": "jQuery plugins"
-    },
-	{
         "id": "the-store", 
         "name": "The Store",
 		"category": "Ecommerce"
@@ -92,20 +77,17 @@
     {
     	"id": "mara-explorers", 
     	"name": "Mara Explorers",
-    	"category": "Static",
-    	"date": "Winter 2013"
+    	"category": "Static"
 	},
     {
         "id": "powatag", 
-        "name": "Powatag",
-        "category": "Static",
-        "date": "Winter 2013"
+        "name": "Powatag Corporate Website",
+        "category": "Static"
     },
     {
         "id": "enterprising-britain", 
         "name": "Enterprising Britain",
-        "category": "Static",
-        "date": "Winter 2013"
+        "category": "Static"
     },
     {
         "id": "powa",
@@ -145,7 +127,7 @@
 		{
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
-				"category": "Static"
+		"category": "Static"
     },
 		{
         "id": "you-affiliate-network",
@@ -168,6 +150,21 @@
 		"category": "Static"
     },
     {
+        "id": "jquery/list-icon-manipulator", 
+        "name": "List Icon Manipulator",
+        "category": "jQuery plugins"
+    },
+    {
+        "id": "jquery/active-hover-states", 
+        "name": "Active Hover States",
+        "category": "jQuery plugins"
+    },
+    {
+        "id": "jquery/portrolio", 
+        "name": "Portrolio",
+        "category": "jQuery plugins"
+    },
+    {
         "id": "boxed-digital-holding",
         "name": "Boxed Digital",
 		"category": "Holding pages"
@@ -179,7 +176,7 @@
     },
     {
         "id": "werelse-holding",
-        "name": "Werelse holding page",
+        "name": "Werelse",
 		"category": "Holding pages"
     },
     {
@@ -188,33 +185,38 @@
 		"category": "Holding pages"
     },
     {
+        "id": "mara-explorers-brand",
+        "name": "Mara Explorers",
+        "category": "Brand identity"
+    },
+    {
         "id": "bargain-sounds-brand",
         "name": "Bargain Sounds",
 	    "category": "Brand identity"
     },
     {
-        "id": "life-financial-solutions-brand",
-        "name": "Life Financial Solutions",
-	    "category": "Brand identity"
-    },
-    {
         "id": "peter-utton-brand",
         "name": "Peter Utton",
-				"category": "Brand identity"
-    },
-    {
-        "id": "cathy-brown-brand",
-        "name": "Cathy Brown",
-		"category": "Brand identity"
-    },
-    {
-        "id": "double-trouble-brand",
-        "name": "Double Trouble",
-		"category": "Brand identity"
+        "category": "Brand identity"
     },
     {
         "id": "browny-brand",
         "name": "Browny",
+        "category": "Brand identity"
+    },
+    {
+        "id": "double-trouble-brand",
+        "name": "Double Trouble",
+        "category": "Brand identity"
+    },
+    {
+        "id": "cathy-brown-brand",
+        "name": "Cathy Brown",
+        "category": "Brand identity"
+    },
+    {
+        "id": "life-financial-solutions-brand",
+        "name": "Life Financial Solutions",
         "category": "Brand identity"
     },
     {
