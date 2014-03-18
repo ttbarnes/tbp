@@ -47,8 +47,13 @@ responsive
 			}
 		}
 	}
-	.showcaseHomePage ul.showcaseGalleryGrid li.showcaseGalleryToggle:hover { 
-		padding:5px;
+	/*gallery list item hover*/
+	ul,
+	.showcaseHomePage ul.showcaseGalleryGrid {
+		li[active-hover],
+		li[active-hover]:hover {
+			padding:5px;
+		}
 	}
 }
 
@@ -84,6 +89,31 @@ responsive
 		}
 	}
 
+	/*gallery list item hover*/
+	ul,
+	.showcaseHomePage ul.showcaseGalleryGrid {
+		li[active-hover] {
+			padding:5px;
+			&.inactive,
+			&.active {
+				opacity:1 !important;
+			}
+			&:hover {
+				-moz-box-shadow:none;
+				-webkit-box-shadow:none;
+				box-shadow:none;
+				padding:5px;
+				opacity:1;
+				.miniPanel {
+					bottom:-100%;
+					display:none;
+					opacity:0;
+				}
+			}
+		}
+	}
+	
+
 	/*about page*/
 	.aboutPage #containerMiddle .row  {
 		.col-md-4 {
@@ -109,25 +139,6 @@ responsive
 				.rating {
 					font-size:14px;
 				}
-			}
-		}
-	}
-
-	.showcaseHomePage ul.showcaseGalleryGrid li.showcaseGalleryToggle {
-		&.inactive,
-		&.active {
-			opacity:1 !important;
-		}
-		&:hover {
-			-moz-box-shadow:none;
-			-webkit-box-shadow:none;
-			box-shadow:none;
-			padding:5px;
-			opacity:1;
-			.panelHover {
-				bottom:-100%;
-				display:none;
-				opacity:0;
 			}
 		}
 	}
@@ -422,17 +433,21 @@ responsive
 	
 }
 @media (max-width: 600px) {
+
+	/*gallery list item hover*/
+	ul,
+	.showcaseHomePage ul.showcaseGalleryGrid {
+		li[active-hover],
+		li[active-hover]:hover {
+			padding:3px;
+		}
+	}
+
 	.showcaseHomePage {
 		.tags button {
 			min-height:56px;
 			font-size:13px;
 			width:49%;
-		}
-		ul.showcaseGalleryGrid li.col-xs-3 {
-			padding:3px;
-			&:hover {
-				padding:3px;
-			}
 		}
 	}
 	/*about page*/
@@ -488,6 +503,20 @@ responsive
 		padding:15px 20px;
 	}
 
+	/*gallery list item hover*/
+	ul,
+	.showcaseHomePage ul.showcaseGalleryGrid {
+		li[active-hover] {
+		&:hover .miniPanel,
+			.miniPanel {
+				display:none !important;
+			}
+			&:hover {
+				padding:2px;
+			}
+		}
+	}
+
 	/*intro page*/
 	div.introPage {
 		.recentReleases .span4 ul.projects .col-md-4 {
@@ -513,13 +542,6 @@ responsive
 				width:50%;
 				padding:2px;
 				max-width:238px;
-				&:hover .panelHover,
-				.panelHover {
-					display:none !important;
-				}
-				&:hover {
-					padding:2px;
-				}
 			}
 		}
 	}

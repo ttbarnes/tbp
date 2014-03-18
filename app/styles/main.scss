@@ -693,30 +693,6 @@ showcase home page
 			list-style-type:none;
 			position:relative;
 			overflow:hidden;
-
-			/*panel for hover*/
-			.panelHover {
-				/*display:none;*/
-				position:absolute;
-				width:100%;
-				max-width:100%;
-				min-height:25%;
-				bottom:-100%;
-				left:0;
-				background:#f1f1f1;
-				border-top:solid 3px #CCC;
-				-webkit-transition:bottom ease-in-out 0.2s;
-				-moz-transition:bottom ease-in-out 0.2s;
-				-o-transition:bottom ease-in-out 0.2s;
-				transition:bottom ease-in-out 0.2s;
-
-				h4 {			
-					font-size:13px;
-					padding:10px;
-					margin:0;
-					color:$colorBlack;
-				}
-			}
 		}
 		
 		/*grid toggle/fade effects*/
@@ -726,26 +702,6 @@ showcase home page
 			-o-transition:ease-in 0.2s;
 			transition: ease-in 0.2s;
 
-			img {
-				-webkit-transition:ease-in-out 0.3s;
-				-moz-transition:ease-in-out 0.3s;
-				-o-transition:ease-in-out 0.3s;
-				transition:ease-in-out 0.3s;
-			}
-			&:hover {
-				z-index:9;
-				padding:0;
-				-moz-box-shadow:0 10px 30px 10px #A4A4A4;
-				-webkit-box-shadow:0 10px 30px 10px #A4A4A4;
-				box-shadow:0 10px 30px 10px #A4A4A4;
-
-				img {
-					opacity:1;
-				}
-				.panelHover {
-					bottom:0;
-				}
-			}
 			&.ng-enter,
 			&.ng-leave.ng-leave-active {
 				opacity:0;
@@ -756,14 +712,6 @@ showcase home page
 			&.ng-leave {
 				display:none;
 				opacity: 0;
-			}
-
-			/*individual project/item active/inactive state*/
-			&.inactive {
-				opacity:0.350;
-			}
-			&.active {
-				opacity:1;
 			}
 		}
 	}
@@ -776,6 +724,61 @@ showcase home page
 	}
 }
 
+/*gallery list item hover - (from the active/inactive directive) and some image opacity*/
+ul,
+.showcaseHomePage ul.showcaseGalleryGrid {
+
+	li[active-hover] {
+		&.inactive {
+			opacity:0.350;
+		}
+		&.active {
+			opacity:1;
+		}
+		img {
+			-webkit-transition:ease-in-out 0.3s;
+			-moz-transition:ease-in-out 0.3s;
+			-o-transition:ease-in-out 0.3s;
+			transition:ease-in-out 0.3s;
+		}
+		.miniPanel {
+			position:absolute;
+			width:100%;
+			max-width:100%;
+			min-height:25%;
+			bottom:-100%;
+			left:0;
+			background:#f1f1f1;
+			border-top:solid 3px #CCC;
+			-webkit-transition:bottom ease-in-out 0.2s;
+			-moz-transition:bottom ease-in-out 0.2s;
+			-o-transition:bottom ease-in-out 0.2s;
+			transition:bottom ease-in-out 0.2s;
+
+			h4 {			
+				font-size:13px;
+				padding:10px;
+				margin:0;
+				color:$colorBlack;
+			}
+		}
+
+		&:hover {
+			z-index:9;
+			padding:0;
+			-moz-box-shadow:0 10px 30px 10px #A4A4A4;
+			-webkit-box-shadow:0 10px 30px 10px #A4A4A4;
+			box-shadow:0 10px 30px 10px #A4A4A4;
+
+			img {
+				opacity:1;
+			}
+			.miniPanel {
+				bottom:0;
+			}
+		}
+	}
+}	
 
 /********************
 showcase individual page
