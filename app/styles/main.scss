@@ -719,7 +719,7 @@ showcase home page
 			}
 		}
 		
-		/*toggle/fade effects*/
+		/*grid toggle/fade effects*/
 		.showcaseGalleryToggle {
 			-webkit-transition:ease-in-out 0.3s;
 			-moz-transition:ease-in-out 0.3s;
@@ -745,8 +745,17 @@ showcase home page
 				display:none;
 				opacity: 0;
 			}
+
+			/*individual project/item active/inactive state*/
+			&.inactive {
+				opacity:0.350;
+			}
+			&.active {
+				opacity:1;
+			}
 		}
 	}
+	
 	#containerMiddle .row.disclaimer {
 		.col-md-12 p {
 			margin:60px 0;
