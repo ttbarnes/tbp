@@ -1,11 +1,11 @@
 {
 		"id": "barnzy",
-    "name": "You Affiliate Network",
+    "name": "Barnzy",
 		"category": "Static",
 		"date": "Winter 2013",
 		"tech": [
 			{"tag":"HTML, CSS3"},
-			{"tag":"PHP"}
+			{"tag":"JavaScript, jQuery"}
 		],
 		"moreInfoSoon":true
 }
