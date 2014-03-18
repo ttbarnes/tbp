@@ -644,12 +644,22 @@ div.introPage {
 			float:none;
 			display:inline-block;
 			vertical-align:top;
+			overflow:hidden;
+			margin-bottom:38px; /*to prevent layout moving on hover*/
+			-webkit-transition:ease-in 0.2s;
+			-moz-transition:ease-in 0.2s;
+			-o-transition:ease-in 0.2s;
+			transition: ease-in 0.2s;
 
 			.cont {
 				a {
 					display:block;
 					position:relative;
 				}
+			}
+			&:hover,
+			&.active {
+				margin-bottom:8px; /*to prevent layout moving on hover*/
 			}
 		}
 		h4 {
@@ -729,6 +739,11 @@ ul,
 .showcaseHomePage ul.showcaseGalleryGrid {
 
 	li[active-hover] {
+		-webkit-transition:ease-in 0.2s;
+		-moz-transition:ease-in 0.2s;
+		-o-transition:ease-in 0.2s;
+		transition: ease-in 0.2s;
+
 		&.inactive {
 			opacity:0.350;
 		}
