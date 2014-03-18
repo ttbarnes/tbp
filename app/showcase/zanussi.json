@@ -2,8 +2,8 @@
 		"id": "zanussi", 
     "name": "Zanussi Parts & Accessories",
 		"category": "Ecommerce",
-		"date": "Winter 2013",
-		"tech": [
+		"date": "2012",
+		"tech": [ 
 			{"tag": "HTML, CSS3"},
 			{"tag": "JavaScript, jQuery"},
 			{"tag": "AJAX"},
