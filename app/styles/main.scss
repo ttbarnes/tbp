@@ -4,12 +4,52 @@ Author: Tony Barnes
 File: main css - layouts, page specifics
 /* ===========================================================*/
 
+@import "base";
+@import "social_foundicons";
+
+/*more imports at the bottom of this sheet:*/
+/*@import "media-queries";*/
+/*@import "hover-transitions";*/
+/*@import "animations";*/
+
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
 	color: #000;
 	padding: 0.2em 0;
 }
+
+div.noscriptWrap {
+	text-align:center;
+	display:block;
+	width:100%;
+	padding:15px;
+	max-width:650px;
+	margin:0 auto;
+	h1 {
+		display:none;
+	}
+	p {
+		margin-bottom:15px;
+
+		&.first {
+			font-size:20px;
+			margin-top:40px;
+			margin-bottom:20px;
+			color:$colorBlack;
+		}
+		&.last {
+			font-size:12px;
+			color:#BCBCBC;
+			margin-bottom:20px;
+		}
+	}
+	hr {
+		margin-top:60px;
+		margin-bottom:10px;
+	}
+}
+
 ul,ol {
 	padding:0;
 	margin:0;
@@ -19,14 +59,6 @@ img {
   max-width:100%;
   text-align:center;
 }
-
-@import "base";
-@import "social_foundicons";
-
-/*more imports at the bottom of this sheet:*/
-/*@import "media-queries";*/
-/*@import "hover-transitions";*/
-/*@import "animations";*/
 
 /********************
 typography
@@ -703,6 +735,9 @@ showcase home page
 			list-style-type:none;
 			position:relative;
 			overflow:hidden;
+			a {
+				text-decoration:none;
+			}
 		}
 		
 		/*grid toggle/fade effects*/
