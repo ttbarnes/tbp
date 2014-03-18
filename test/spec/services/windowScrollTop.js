@@ -14,7 +14,6 @@ describe('Service: windowScrollTop', function () {
   it('should have a window.scrollTo', function () {
     expect(!!windowScrollTop).toBeDefined();
     expect(!windowScrollTop.scrollTo).toBe(true);
-
   });
 
 });
