@@ -12,6 +12,7 @@ File: main css - layouts, page specifics
 /*@import "hover-transitions";*/
 /*@import "animations";*/
 
+/*browser upgrade, noscript layouts*/
 div.browsehappy,
 div.noscriptWrap {
 	text-align:center;
@@ -53,6 +54,7 @@ div.browsehappy {
 	}
 }
 
+/*mini reset*/
 ul,ol {
 	padding:0;
 	margin:0;
