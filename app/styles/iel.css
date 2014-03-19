@@ -1,0 +1,14 @@
+/* ===========================================================
+tbp - Tony Barnes Portfolio
+Author: Tony Barnes
+File: upgrade browser css
+/* ===========================================================*/
+
+div.browsehappy {
+	display:block;
+	width:auto;
+	color:darkred;
+}
+#mainContainer {
+	display:none;
+}
