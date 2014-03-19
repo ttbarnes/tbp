@@ -47,6 +47,26 @@ body {
 	}
 }
 
+.f-topbar-fixed {
+	padding-top:0 !important;
+}
+.contain-to-grid {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99;
+}
+
+.panel {
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border:0 none;
+	background:transparent;
+	ul {
+		margin:0;
+	}
+}
+
 ul,
 ol {
   list-style-type:none !important;
@@ -71,6 +91,8 @@ ol {
 .top-bar {
 	line-height:45px;
 	height:45px;
+	max-width:880px;
+
 	.name {
 	  height:45px;
 		h1 {
@@ -80,6 +102,7 @@ ol {
 				width:310px;
 				margin:0 auto;
 				padding:0 30px 0 15px;
+				text-align:center;
 			}
 		}
 	}
@@ -559,6 +582,7 @@ responsive
 	.top-bar {
 		line-height:85px;
 		height:85px;
+		max-width:1030px !important;
 		.name {
 		  height:45px;
 		  h1 {
@@ -566,6 +590,7 @@ responsive
 				font-size:1.6em;
 				a {
 					padding:0 30px;
+					text-align:left;
 				}
 			}
 		}
@@ -643,6 +668,7 @@ responsive
 	  padding-bottom:3em;
 	}
 	div#sectionIntro {
+		padding-top:5em;
 		.topLimExampleWrapper .columns {
 			padding-top:0;
 			padding-bottom:0;
