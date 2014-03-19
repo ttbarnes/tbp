@@ -20,11 +20,6 @@
   		  <img ng-src="images/showcase/{{project.id}}/01.jpg" alt="{{project.name}}"/>
       </div>
     </div>
-    <div class="row tagsWrap">
-      <div class="tags">
-        <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
-      </div>
-    </div>
     <div class="row">
       <div class="row" ng-if="project.moreInfoSoon == true">
         <div class="col-md-12 moreInfoSoon">
@@ -39,6 +34,13 @@
               <ul>
                 <li ng-repeat="child in project.deliverItems">{{child.item}}</li>
               </ul>
+            </div>
+            <div class="col-md-12">
+              <div class="row tagsWrap">
+                <div class="tags">
+                  <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
