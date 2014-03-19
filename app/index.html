@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
+    <!-- build:css(.tmp,app) styles/iel.css -->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="styles/iel.css">
+    <![endif]-->
+    <!-- endbuild -->
+    
     <link rel="apple-touch-icon" href="favicon-57.png" sizes="144x144" />
     <link rel="apple-touch-icon" href="favicon-72.png" sizes="114x114" />
     <link rel="apple-touch-icon" href="favicon-114.png" sizes="72x72" />
@@ -27,9 +33,19 @@
   </head>
   <body ng-app="tbpApp">
 
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <div class="browsehappy">
+        <h1>Tony Barnes</h1>
+        <p>You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your security and experience.</p>
+        <hr/>
+    </div>
+    <noscript>
+      <div class="noscriptWrap">
+        <p class="first">JavaScript has been disabled in your browser</p>
+        <p>Please enable JavaScript to view this site.</p>
+        <hr/>
+        <p class="last">For more information see <a href="http://enable-javascript.com/" target="_blank">http://enable-javascript.com</a></p>
+      </div>
+    </noscript>
 
     <div id="mainContainer" class="container {{pageClass}}" ng-view="container "></div>
 
@@ -58,14 +74,5 @@
     <script src="scripts/directives/activeHover.js"></script>
     <!-- endbuild -->
 
-    <noscript>
-      <div class="noscriptWrap">
-        <h1>Tony Barnes</h1>
-        <p class="first">JavaScript has been disabled in your browser</p>
-        <p>Please enable JavaScript to view this site.</p>
-        <hr/>
-        <p class="last">For more information see <a href="http://enable-javascript.com/" target="_blank">http://enable-javascript.com</a></p>
-      </div>
-    </noscript>
 </body>
 </html>
