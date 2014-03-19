@@ -851,7 +851,8 @@ showcase individual page
 		.row > .row.topHeading {	
 		  margin-bottom:10px;
 
-		  .col-md-6 {
+		  .col-md-10,
+		  .col-md-2 {
 		  	background:$colorWhite2;
 		  }
 
