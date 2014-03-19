@@ -135,14 +135,20 @@ responsive
 		}
 	}
 
+	/*showcase individual*/
 	.showcaseIndPage #containerMiddle {
-		.row > .row.topHeading .col-md-6 {
-			float:left;
-			width:50%;
-			position:relative;
-			min-height:1px;
-			padding-left:15px;
-			padding-right:15px;
+		.row > .row.topHeading {
+			.col-md-10 {
+				float:left;
+				width:100%;
+				position:relative;
+				min-height:1px;
+				padding-left:15px;
+				padding-right:15px;
+			}
+			.col-md-2 {
+				display:none;
+			}
 		}
 	}
 }	
@@ -296,7 +302,7 @@ responsive
 			  .col-md-12 {
 					padding:0 15px;
 				}
-				.col-md-6 {
+				.col-md-10 {
 					float:none;
 					width:100%;
 					padding:0;
@@ -533,7 +539,7 @@ responsive
 	/*showcase ind page*/
 	.showcaseIndPage #containerMiddle {
 		.mainContent {
-			> .row.topHeading .col-md-6 h2 {
+			> .row.topHeading .col-md-10 h2 {
 				font-size:18px;
 			}
 		}
