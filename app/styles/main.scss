@@ -475,45 +475,43 @@ div.tags {
 	div,
 	button {
 	  font-size:13px;
-		padding:10px 15px;
+		padding:13px 15px;
 		color:$colorWhiteBright1;
 		border:0 none;
 		margin:3px 3px 0 0;
 		vertical-align:middle;
 		text-align:center;
 
-		/*
-		&.jQuery {
-			background:#A9A9A9;
-		}
-		*/
+
+		
+		&.Ecommerce,
 		&.HTML, &.CSS,
 		&.HTML4, &.CSS3,
 		&.HTML5, &.CSS3 {
-		  background:$colorBlueLight;
-		}
-		&.Ecommerce {
-			background:$colorBlueLight;
+			background:$colorRedLight;
 		}
 		&.Static {
-			background:$colorRedLight;
+			background:$colorBlueLight;
 		}
 		&.jQuery,
 		&.JavaScript {
-			background:$colorOrangeLight;
-		}
-		&.Holding {
-			background:#666;
-		}
-		&.Wordpress,
-		&.Powa,
-		&.Brand {
 			background:$colorGreenLight;
 		}
-		&.PHP,
-		&.mockups {
+		&.Holding {
 			background:$colorYellowLight;
 		}
+		&.Brand {
+			background:$colorOrangeLight;
+		}
+		&.mockups,
+		&.Wordpress,
+		&.Powa,
+		&.Magento,
+		&.Joomla,
+		&.PHP {
+			background:#A5A5A5;
+		}
+
 	}
 }
 
@@ -845,7 +843,6 @@ showcase individual page
   		margin-bottom:70px;
   		&.topHeading,
   		&.imgWrap,
-  		&.tagsWrap,
   		&:last-child {
   			margin-bottom:0;
   		}
@@ -887,18 +884,18 @@ showcase individual page
 		}
 		
 		.mainContent {
-			.tags {
-				margin-bottom:20px;
-				text-align:center;
-			}
 			.moreInfoSoon {
 				padding-top:20px;
 				text-align:center;
 			}
 			ul {
+				margin-bottom:30px;
 				li {
 					margin-left:20px;
 				}
+			}
+			.tagsWrap {
+				margin-bottom:0;
 			}
 			&.story {
 				p:last-child {
