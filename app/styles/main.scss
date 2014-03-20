@@ -271,7 +271,7 @@ body {
 }
 .navbar-default {
 	margin-bottom:50px;
-	background:$colorWhiteBright2;
+	background:$colorBlueDark;
 
 	/*logo*/
 	h1 {
@@ -282,6 +282,7 @@ body {
 			font-size:30px;
 			padding:20px 10px;
 			color:$colorGrey;
+			text-shadow:0 2px 2px $colorBlueDark2;
 			&:hover, 
 			&:focus, 
 			&:active, 
@@ -313,6 +314,7 @@ body {
 
 		.icon-bar {
 			@include border-radius(0);
+			background-color:$colorBlueLight3;
 		}
 		&:hover,
 		&:focus {
@@ -321,7 +323,7 @@ body {
 	}
 }
 header .navbar-default {
-	border-bottom:solid 3px #E3E3E3;
+	border-bottom:solid 3px $colorBlueDark2;
 }
 
 /*main/middle container*/
@@ -922,8 +924,8 @@ demo - jquery plugin page (may use another CSS)
 about page
 *********************/
 .aboutPage {
-	background:$colorBlueLight;
 	color:$colorWhite;
+	background:$colorBlueLight;
 
 	::-moz-selection {
 	  background:$colorBlueDark;
@@ -936,6 +938,7 @@ about page
 		border-top:solid 3px #356896;
 	}
 
+/*
 	header .navbar-default,
 	footer {
 		background:$colorBlueDark;
@@ -952,7 +955,7 @@ about page
 			background-color:$colorBlueLight3;	
 		}
 	}
-	
+	*/
 	#containerMiddle {
 		.row {
 			&.aboutIntro {
@@ -1147,9 +1150,10 @@ about page
 contact page
 *********************/
 .contactPage {
+	/*
 	background:$colorGreenLight;
 	color:$colorWhite;
-
+	
 	header .navbar-default,
 	footer {
 		background:$colorGreenDark;
@@ -1175,6 +1179,7 @@ contact page
 	footer .navbar-default ul.navbar-nav > li a {
 		color:$colorGreenLight;
 	}
+	*/
 
 	.row {
 	  .col-md-12	{
