@@ -94,27 +94,13 @@ hover styles - page specific
 
 /*contact page*/
 .contactPage {
-	
-	header .navbar-default .navbar-nav li a {
-		color:$colorGreenLight;
-		&:hover {
-			color:$colorGreenLight;
-		}
-	}
 
-	footer {
-		/*social icons*/
-		ul.socialIcons li a:hover {
-			color:$colorGreenLight;
-		}
-	}
 	/*contact text*/
 	#containerMiddle .row .col-md-12 a.contactAddress {
 		&:hover {
 			text-shadow:0 4px 0 $colorGreenDark2;
 		}
 	}
-
 }
 
 
