@@ -497,10 +497,12 @@ div.tags {
 		&.JavaScript {
 			background:$colorGreenLight;
 		}
-		&.Holding {
+		&.Holding,
+		&.AJAX {
 			background:$colorYellowLight;
 		}
-		&.Brand {
+		&.Brand,
+		&.XML {
 			background:$colorOrangeLight;
 		}
 		&.mockups,
