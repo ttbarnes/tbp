@@ -193,7 +193,8 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+            //'<%= yeoman.dist %>/images/**/**/*.{png,jpg,jpeg,gif,webp,svg}',
+            '<%= yeoman.dist %>/images/*.{png,jpg,jpeg,gif,webp,svg}',
             '<%= yeoman.dist %>/styles/fonts/*'
           ]
         }
@@ -212,6 +213,7 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
+      //html: ['<%= yeoman.dist %>/**/*.html'],
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
@@ -225,7 +227,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
+          src: '**/*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -294,7 +296,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'demo_assets/**/*',
             'icons/*',
-            'images/{,*/}*.{webp}',
+            'images/**/*.{webp}',
             'fonts/*',
             'showcase/*'
           ]
