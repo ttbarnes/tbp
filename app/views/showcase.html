@@ -19,8 +19,7 @@
   <div class="row">
     <div class="span4">
       <ul class="showcaseGalleryGrid" ng-class="myclass">
-        <li class="item repeat-item showcaseGalleryToggle col-xs-3 myclass2" ng-repeat="project in projects | filter:byCategory"
-          ng-class="myclass" active-hover>
+        <li class="item repeat-item showcaseGalleryToggle col-xs-3 myclass2" ng-repeat="project in projects | filter:byCategory" active-hover>
           <a href="#/showcase/{{project.id}}">
             <img ng-src="images/showcase/{{project.id}}/01thumb.jpg" alt="{{project.name}}"/>
             <div class="miniPanel">
