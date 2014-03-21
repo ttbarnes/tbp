@@ -1,4 +1,4 @@
-/*
+
 'use strict';
 
 describe('Directive: scrollTo', function () {
@@ -13,14 +13,11 @@ describe('Directive: scrollTo', function () {
     scope = $rootScope.$new();
   }));
 
-  /*it('should make hidden element visible', inject(function ($compile) {
+  it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<scroll-to></scroll-to>');
     element = $compile(element)(scope);
     expect(element.text()).toBe('this is the scrollTo directive');
   }));
-*/
 
-/*
+
 });
-
-*/

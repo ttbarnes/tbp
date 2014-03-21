@@ -67,8 +67,6 @@ describe('Footer', function() {
     browser().navigateTo('/#/');
   });
 
-  //social icon links - test the journey from link-clicking to the new window/URL
-
 	describe('Navbar links', function() {
 		it('should have 3 items', function(){
 			expect(element('footer .navbar-nav li').count()).toEqual(3);
@@ -163,8 +161,7 @@ describe('Page-view: About', function(){
 			expect(browser().location().url()).toEqual('/showcase');
 		});
 	});
-
-  //test social links (same as social links above)
+	
 });
 
 describe('Page-view: Contact', function(){
