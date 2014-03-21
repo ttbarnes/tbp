@@ -20,7 +20,9 @@ module.exports = function(config) {
       'app/bower_components/angular/angular-mocks.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
-      'test/spec/**/*.js'
+      'test/spec/**/*.js',
+      'app/bower_components/jquery/jquery.min.js',
+      'app/bower_components/jasmine-jquery/index.js'
     ],
 
     // list of files / patterns to exclude
