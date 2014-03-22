@@ -86,11 +86,14 @@ describe('Footer', function() {
 
 			element('footer .navbar-nav li:eq(2) a').click();
 			expect(browser().location().url()).toEqual('/contact');
+		});
 
-		});
-		it('should have 2 back-to-top buttons', function() {
+		it('should have working back-to-top buttons', function() {
 			expect(element('footer button.scrollTop').count()).toEqual(2);
+			element('footer button.scrollTop').click();
+			expect(browser().location().url()).toEqual('/'); //should remain on the same page
 		});
+
 	});
 });
 
