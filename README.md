@@ -2,14 +2,17 @@
 Built with AngularJS
 
 ##Prerequisites
-- Ruby, compass
-- node.js
-- Yeoman (grunt, bower)
+- [Ruby, compass] (http://compass-style.org/install/)
+- [node.js] (http://nodejs.org/)
+- [Yeoman (grunt, bower)] (http://yeoman.io)
 
 ##Installation
 1) Fork a copy of the app to your machine
+
 2) Install the dependancies:
+
 `bower install`
+
 `npm install`
 
 ##Running the app
