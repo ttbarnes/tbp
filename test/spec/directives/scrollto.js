@@ -9,15 +9,15 @@ describe('Directive: scrollTo', function () {
   var element,
     scope;
 
-  beforeEach(inject(function ($rootScope) {
-    scope = $rootScope.$new();
+  beforeEach(inject(function ($compile, $rootScope) {
+    //scope = $rootScope.$new();
+    scope = $rootScope;
+    element = angular.element('<ul><li><a scroll-to="sectionIntro">About</a></li><li><a scroll-to="sectionInstallation">Install</a></li><li><a scroll-to="sectionOptions">Options</a></li></ul>');
+    $compile(element)($rootScope);
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<scroll-to></scroll-to>');
-    element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the scrollTo directive');
+  it('should not reload a page and scroll to the anchor link', inject(function () {
+    //this doesn't seem possible to *fully* unit test. Investigate.
+    //currently, this is only used on the jquery demo pages
   }));
-
-
 });
