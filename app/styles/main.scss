@@ -76,12 +76,12 @@ typography
 }
 ::-moz-selection {
   background:#222;
-	color:$colorWhiteBright2;
+	color:$colorWhiteBright1;
 	text-shadow:none;
 }
 ::selection {
   background:#222;
-	color:$colorWhiteBright2;
+	color:$colorWhiteBright1;
 	text-shadow:none;
 }
 
@@ -246,7 +246,15 @@ body {
 .container {
 	width:100%;
 	opacity:1;
-	padding:0;
+	padding:0; 
+	color:$colorBlueLightBody;
+	background:$colorWhite;
+	background:-moz-linear-gradient(top, #fafafa 15%, $colorBlueLight2 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(15%,#fafafa), color-stop(100%,$colorBlueLight2));
+	background:-webkit-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
+	background:-o-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
+	background:-ms-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
+	background:linear-gradient(to bottom, #fafafa 15%,$colorBlueLight2 100%);
 }
 .container.ng-enter {
 	opacity:0;
@@ -271,7 +279,7 @@ body {
 }
 .navbar-default {
 	margin-bottom:50px;
-	background:$colorBlueDark;
+	background:$colorBlueLight;
 
 	/*logo*/
 	h1 {
@@ -281,13 +289,13 @@ body {
 		a.navbar-brand {
 			font-size:30px;
 			padding:20px 10px;
-			color:$colorGrey;
-			text-shadow:0 2px 2px $colorBlueDark2;
+			color:$colorWhite;
+			text-shadow:0 4px 2px #5F9DBC;
 			&:hover, 
 			&:focus, 
 			&:active, 
 			&.active {
-				color:$colorGrey;
+				color:$colorWhite;
 			}
 		}
 	}
@@ -298,9 +306,9 @@ body {
 	  	float:none;
 			a {
 				padding:20px 15px;
-				color:$colorGrey;
+				color:$colorBlueLightHeader;
 				&:hover {
-					color:$colorGrey;
+					color:$colorBlueLightHeader;
 				}
 			}	
 		}
@@ -323,7 +331,7 @@ body {
 	}
 }
 header .navbar-default {
-	border-bottom:solid 3px $colorBlueDark2;
+	border-bottom:solid 3px #6CA9C8;
 }
 
 /*main/middle container*/
@@ -770,9 +778,10 @@ showcase home page
 	
 	#containerMiddle .row.disclaimer {
 		.col-md-12 p {
-			margin:60px 0;
-			color:#a9a9a9;
 			text-align:center;
+			color:$colorBlueLightBody;
+			padding: 40px 0;
+			margin: 40px 0;
 		}
 	}
 }
@@ -1192,7 +1201,7 @@ contact page
 			}
 			a.contactAddress {
 				font-size:50px;
-				color:$colorWhiteBright2;
+				/*color:$colorWhiteBright1;*/
 				padding-bottom:4px;
 				letter-spacing:0;
 				-ms-word-break:break-all;
