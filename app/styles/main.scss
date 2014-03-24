@@ -76,12 +76,12 @@ typography
 }
 ::-moz-selection {
   background:#222;
-	color:$colorWhiteBright1;
+	color:$colorWhite;
 	text-shadow:none;
 }
 ::selection {
   background:#222;
-	color:$colorWhiteBright1;
+	color:$colorWhite;
 	text-shadow:none;
 }
 
@@ -95,9 +95,15 @@ h1,h2,h3 {
 }
 
 p {
-	font-size:15px;
+	font-size:14px;
 }
-
+a {
+	color:$colorBlueDark;
+	&:hover,
+	&:focus {
+		color:$colorBlueLight3;
+	}
+}
 hr {
 	clear:both;
 	border-top:solid 3px $colorBlueLight2;
@@ -239,7 +245,7 @@ html {
 }
 body {
 	height:100%;
-	background:$colorWhiteBright1;
+	background:$colorWhite;
 	color:#888;
 	font-family:Roboto Slab, Helvetica, Arial;
 }
@@ -345,8 +351,7 @@ header .navbar-default {
 }
 
 /*full width page container width*/
-.introPage,
-.contactPage {
+.introPage {
 	#containerMiddle {
 		margin:0;
 		max-width:100%;
@@ -483,7 +488,7 @@ div.tags {
 	button {
 	  font-size:13px;
 		padding:13px 15px;
-		color:$colorWhiteBright1;
+		color:$colorWhite;
 		border:0 none;
 		margin:3px 3px 0 0;
 		vertical-align:middle;
@@ -1135,9 +1140,11 @@ about page
 					li {
 						display:block;
 						margin-right:0;
+						font-size:13px;
 						&:first-child {
 							margin-bottom:10px;
 							padding:5px 20px;
+							font-size:14px;
 							color:$colorBlueLightBody;
 							background:$colorBlueLight2;
 						}
@@ -1176,50 +1183,34 @@ about page
 contact page
 *********************/
 .contactPage {
-	/*
-	background:$colorGreenLight;
+	background:$colorBlueLight2;
 	color:$colorWhite;
 	
-	header .navbar-default,
-	footer {
-		background:$colorGreenDark;
-		border-color:$colorGreenDark2;
-
-		h1 a.navbar-brand,
-		.navbar-nav li a {
-			color:$colorGreenLight;
-			&:hover,
-			&:focus {
-				color:$colorGreenLight;
-			}
-		}
-		.navbar-toggle .icon-bar {
-			background-color:$colorGreenLight;
-		}
-
-		ul.socialIcons li a {
-			color:#165134;
-		}
+	#containerMiddle {
+		margin:0 15px;
+		width:auto;
 	}
-
-	footer .navbar-default ul.navbar-nav > li a {
-		color:$colorGreenLight;
-	}
-	*/
-
 	.row {
+		max-width:490px;
+
 	  .col-md-12	{
 			position:relative;
-			text-align:center;
+			text-align:left;
 			vertical-align:middle;
+			padding:30px 15px;
+			background:$colorWhite;
+			color:$colorBlueDark;
+			border-right:solid 6px #CCE9F8;
+			box-shadow:0 5px 6px #D9EBF4;
+			-moz-box-shadow:0 5px 6px #D9EBF4;
+			-webkit-box-shadow:0 5px 6px #D9EBF4;
+
 			p {
-				color:$colorGreenDark2;
-				margin-top:10px;
+				color:$colorBlueLightHeader;
 			}
 			a.contactAddress {
-				font-size:50px;
-				/*color:$colorWhiteBright1;*/
-				padding-bottom:4px;
+				font-size:35px;
+				/*color:$colorBlueDark;*/
 				letter-spacing:0;
 				-ms-word-break:break-all;
 				word-break:break-all;
@@ -1227,13 +1218,14 @@ contact page
 				-webkit-hyphens:auto;
 				-moz-hyphens:auto;
 				hyphens:auto;
-				white-space:pre;
-
+				/*white-space:pre;*/
+				
 				&:hover, 
 				&:focus, 
 				&:active {
 					text-decoration:none;
 				}
+				
 			}		
 		}
 	}

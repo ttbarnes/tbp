@@ -400,8 +400,15 @@ responsive
 
 	/*contact page*/
 	.contactPage  {
-	  .row .col-md-12 a.contactAddress {
-		  font-size:33px;
+		#containerMiddle {
+			.row {
+		  	.col-md-12 {
+			  	a.contactAddress {
+					  font-size:30px;
+					}
+				}
+		  }
+
 		}
 	}
 
@@ -539,9 +546,12 @@ responsive
 
 	/*contact page*/
 	.contactPage  {
-	  .row .col-md-12 a.contactAddress {
-		  font-size:22px;
-		}
+	  #containerMiddle .row .col-md-12 {
+	  	border-right:0 none;
+	  	a.contactAddress {
+			  font-size:22px;
+			}
+	  }
 	}
 	/*error page*/
 	.errorPage {
@@ -562,7 +572,7 @@ responsive
 		}
 	}
 	/*contact page*/
-	.contactPage .row .col-md-12 a.contactAddress {
+	.contactPage #containerMiddle .row .col-md-12 a.contactAddress {
 		font-size:20px;
 	}
 }
