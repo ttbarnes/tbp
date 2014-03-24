@@ -100,7 +100,7 @@ p {
 
 hr {
 	clear:both;
-	border-top:solid 3px #EEE;
+	border-top:solid 3px $colorBlueLight2;
 	margin:0 30px;
 }
 
@@ -249,12 +249,7 @@ body {
 	padding:0; 
 	color:$colorBlueLightBody;
 	background:$colorWhite;
-	background:-moz-linear-gradient(top, #fafafa 15%, $colorBlueLight2 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(15%,#fafafa), color-stop(100%,$colorBlueLight2));
-	background:-webkit-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
-	background:-o-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
-	background:-ms-linear-gradient(top, #fafafa 15%,$colorBlueLight2 100%);
-	background:linear-gradient(to bottom, #fafafa 15%,$colorBlueLight2 100%);
+	@include gradientWhiteToBlue;
 }
 .container.ng-enter {
 	opacity:0;
@@ -364,7 +359,7 @@ footer {
 	margin:0;
 	background:$colorBlueDark;
 	color:#B8B8B8;
-	border-top:solid 6px #1C3750;
+	border-top:solid 6px #0C3E59;
 
 	.col-md-6,
 	.col-md-12 {
@@ -415,7 +410,7 @@ footer {
 			a {
 				padding:5px 8px;
 				display:block;
-				color:#213F5A;
+				color:#0C3E59;
 				i {
 					font-size:35px;
 				}
@@ -562,7 +557,8 @@ intro page
 
 	.innerBox {
 		position:relative;
-		max-width:470px;
+		/*max-width:470px;*/
+		width:50%;
 		z-index:1;
 		padding:15px;
 		background:$colorBlueDark;
@@ -574,7 +570,7 @@ intro page
 			position:relative;
 			z-index:3;
 			float:left;
-			margin:0 15px 15px 0;
+			margin:0 15px 80px 0;
 			max-width:100px;
 			@include animation(introHeadshot 1.8s);
 		}
@@ -592,26 +588,33 @@ intro page
 	h1 {	
 		@include animation(introHeadingTop 1.1s);
 		color:#FFF;
-		font-size:50px;
+		font-size:45px;
 		margin:0;
 		text-shadow:0 2px 2px #091724;
+		span {
+			color:#7ED36F;
+		}
 	}
 	h2 {
-		color:#DBDBDB;
+		color:$colorBlueLight;
 		margin-top:15px;
-		margin-bottom:10px;
+		margin-bottom:0;
 		font-size:22px;
 		text-shadow:0 2px 2px #274969;
 
 		> {
 			span {
-				display:inline-block;
-				&.first {
-    			color:#091724;
+				display:inline;
+				&.iAmA {
+    			color:$colorBlueLight;
+    			text-shadow:0 2px 2px #091724;
     			@include animation(introHeadingSubFirst 1.1s);
 				}
-				&.last {
+				&.iAlso {
 					color:#1B354D;
+					/*display:block;*/
+					margin-top:10px;
+					text-shadow:0 2px 2px #35597B;
 					@include animation(introHeadingSubLast 2s);
 				}
 			}
@@ -623,6 +626,7 @@ intro page
 intro page
 *********************/
 div.introPage {
+	background:$colorWhite;
 
 	/*sub intro - build/design sections*/
 	div.subIntro {
@@ -933,8 +937,7 @@ demo - jquery plugin page (may use another CSS)
 about page
 *********************/
 .aboutPage {
-	color:$colorWhite;
-	background:$colorBlueLight;
+	@include gradientBlueToWhite;
 
 	::-moz-selection {
 	  background:$colorBlueDark;
@@ -947,28 +950,32 @@ about page
 		border-top:solid 3px #356896;
 	}
 
-/*
-	header .navbar-default,
-	footer {
-		background:$colorBlueDark;
-		border-color:$colorBlueDark2;
-		h1 a.navbar-brand,
-		.navbar-nav li a {
-			color:$colorBlueLight3;
-			&:hover,
-			&:focus {
-				color:$colorBlueLight3;
-			}
-		}
-		.navbar-toggle .icon-bar {
-			background-color:$colorBlueLight3;	
-		}
-	}
-	*/
 	#containerMiddle {
 		.row {
+			> .col-md-12 {
+				background:$colorWhite;
+				padding-right:0;
+				padding-bottom:15px;
+				padding-left:0;
+				box-shadow:0 5px 6px #D1E8F4;
+				-moz-box-shadow:0 5px 6px #D1E8F4;
+				-webkit-box-shadow:0 5px 6px #D1E8F4;
+
+				h4 {
+					margin-top:0;
+					background:$colorBlueLight;
+					color:$colorWhite;
+					text-shadow:0 4px 2px #5F9DBC;
+				}
+				> .col-md-12 { 
+					padding:0 15px;
+				}
+			}
 			&.aboutIntro {
 				margin-bottom:30px;
+				> .col-md-12 {
+					padding-top:15px;
+				}
 			}
 			&.randomStuff {
 				margin-bottom:0;
@@ -1014,7 +1021,6 @@ about page
 					  margin:0;
 					  font-size:12px;
 					  padding:5px 0;
-					  color:$colorBlueLight2;
 					  height:21%;
 					  &.emptyLabel {
 						  visibility:hidden;
@@ -1022,8 +1028,9 @@ about page
 					}
 				}
 				&.bar {
-				  background:#CCC;
-				  border-right:solid 3px #175B38;
+				  background:#EEE;
+				  min-height:150px;
+				  /*border-right:solid 3px #175B38;*/
 				  color:$colorBlack;
 
 				  .skill,
@@ -1048,6 +1055,7 @@ about page
 					  margin-bottom:10px;
 					  font-size: 16px;
 					}
+					
 					&.html {
 						height:95%;
 						min-height:150px;
@@ -1078,6 +1086,7 @@ about page
 						min-height:60px;
 					  background:#27664F;
 					}
+					
 				}
 			}
 		}
@@ -1128,9 +1137,8 @@ about page
 						&:first-child {
 							margin-bottom:10px;
 							padding:5px 20px;
-							color:$colorWhite;
+							color:$colorBlueLightBody;
 							background:$colorBlueLight2;
-							text-shadow:0 2px 2px #0D2032;
 						}
 					}
 				}
@@ -1144,11 +1152,19 @@ about page
 			}
 		}
 		.randomStuff ul {
-			margin:0 0 60px 0;
 			list-style-type:none;
 			li {
 				display:inline-block;
 				margin-right:5px;
+			}
+		}
+		.row-btn-lg {
+			> .col-md-12 {
+				background:none;
+				padding:0;
+				box-shadow:none;
+				-moz-box-shadow:none;
+				-webkit-box-shadow:none;
 			}
 		}
 	}

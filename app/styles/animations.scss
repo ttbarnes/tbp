@@ -87,7 +87,7 @@ intro/home
   @include keyframe-introHeadshot;
 }
 
-/*intro - heading top*/
+/*intro - heading top
 @mixin introHeadingTop {
   0%   { opacity: 0;top:-250px;position:absolute;}
   80% { opacity: 0.1;}
@@ -105,8 +105,9 @@ intro/home
 @keyframes introHeadingTop {
   @include introHeadingTop;
 }
+*/
 
-/*intro - heading sub, first*/
+/*intro - heading sub, first
 @mixin introHeadingSubFirst {
   0% {opacity: 0;margin-left:-200px;}
   75% {opacity: 0;margin-left:-200px;}
@@ -124,8 +125,9 @@ intro/home
 @keyframes introHeadingSubFirst {
   @include introHeadingSubFirst;
 }
+*/
 
-/*intro - heading sub, last*/
+/*intro - heading sub, last
 @mixin introHeadingSubLast {
   0% {opacity: 0;}
   75% {opacity: 0;}
@@ -143,6 +145,7 @@ intro/home
 @keyframes introHeadingSubLast {
   @include introHeadingSubLast;
 }
+*/
 
 /********************
 about page, skill set
