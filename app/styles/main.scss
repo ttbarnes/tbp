@@ -113,11 +113,13 @@ hr {
 /*sub page heading bg/sections (eg about/showcase.ind)*/
 #containerMiddle {
 	 .row {
-		margin-bottom:70px;
-		.col-md-12 h4 {
-			margin-bottom:15px;
-			text-align:left;
-			padding:15px;
+		> .col-md-12 {
+			padding-bottom:70px;
+			h4 {
+				margin-bottom:15px;
+				text-align:left;
+				padding:15px;
+			}
 		}
 		> .row {
 			margin-bottom:0;
@@ -203,6 +205,17 @@ buttons
 		border-bottom-color:$colorBlueLight;
 		border-left-color:#5091B2;
 		text-shadow:0 3px 2px #275F7B;
+	}
+}
+
+.btn-blue-lightest {
+	background:#C3DEEB;
+	color:$colorBlueLightHeader;
+	&:hover, 
+	&:focus,
+	&:active, 
+	&.active {
+
 	}
 }
 
@@ -351,7 +364,9 @@ header .navbar-default {
 }
 
 /*full width page container width*/
-.introPage {
+.introPage,
+.aboutPage {
+	background:$colorWhite;
 	#containerMiddle {
 		margin:0;
 		max-width:100%;
@@ -944,7 +959,6 @@ demo - jquery plugin page (may use another CSS)
 about page
 *********************/
 .aboutPage {
-	@include gradientBlueToWhite;
 
 	::-moz-selection {
 	  background:$colorBlueDark;
@@ -958,33 +972,46 @@ about page
 	}
 
 	#containerMiddle {
+
 		.row {
 			> .col-md-12 {
-				background:$colorWhite;
 				padding-right:0;
-				padding-bottom:15px;
 				padding-left:0;
+				
+				/*
 				box-shadow:0 5px 6px #D9EBF4;
 				-moz-box-shadow:0 5px 6px #D9EBF4;
-				-webkit-box-shadow:0 5px 6px #D9EBF4;
+				-webkit-box-shadow:0 5px 6px #D9EBF4;*/
 
 				h4 {
 					margin-top:0;
-					background:$colorBlueLight;
-					color:$colorBlueDark;
+					background:#C3DEEB;
+					color:$colorBlueLightHeader;
+					padding-left:0;
+					padding-right:0;
+					span {
+						display:block;
+						margin:0 auto;
+						padding-left:15px;
+						padding-right:15px;
+						max-width:1000px;
+					}
 				}
 				> .col-md-12 { 
-					padding:0 15px;
+					float:none;
+					max-width:1000px;
+					margin:0 auto;
+					padding:0 15px 15px 15px;
 				}
 			}
 			&.aboutIntro {
-				margin-bottom:30px;
+				padding-bottom:30px;
 				> .col-md-12 {
 					padding-top:15px;
 				}
 			}
 			&.randomStuff {
-				margin-bottom:0;
+				padding-bottom:0;
 			}
 
 	  	h4 {
@@ -996,6 +1023,9 @@ about page
 	 }
 	  .row .skillsetChartWrapper {
 	  	text-align:center;
+	  	> .col-md-12 {
+	  		background:#ECF9FF;
+	  	}
 	  }
 		.row .col-md-12 .skillsetChart {
 		  clear: both;
@@ -1061,7 +1091,7 @@ about page
 					  margin-bottom:10px;
 					  font-size: 16px;
 					}
-					
+					/*
 					&.html {
 						height:95%;
 						min-height:150px;
@@ -1092,22 +1122,29 @@ about page
 						min-height:60px;
 					  background:#27664F;
 					}
+					*/
 					
 				}
 			}
 		}
 
 		.skillsetList {
-			.col-md-3 {
-				width:21%;
-				float:right;
-			}
+
+			> .col-md-12 {
+	  		background:#DEF8E5;
+	  		h4 {
+	  			background:#C0EBCE;
+	  			color:#45865A;
+	  		}
+	  	}
+
 			ul {
 				li {
 					list-style-type:none;
 					margin-right:25px;
 					margin-bottom:7px;
 					display:inline-block;
+					font-size:13px;
 
 					&[rating]{ 
 						::before {
@@ -1140,13 +1177,12 @@ about page
 					li {
 						display:block;
 						margin-right:0;
-						font-size:13px;
 						&:first-child {
 							margin-bottom:10px;
 							padding:5px 20px;
 							font-size:14px;
-							color:$colorBlueLightBody;
-							background:$colorBlueLight2;
+							background:#C9F1D4;
+							color:#6BA37B;
 						}
 					}
 				}
@@ -1159,7 +1195,12 @@ about page
 				}
 			}
 		}
-		.randomStuff ul {
+		.randomStuff {
+			> .col-md-12 {
+				background:#ECF9FF;
+			}
+		}
+		ul {
 			list-style-type:none;
 			li {
 				display:inline-block;
