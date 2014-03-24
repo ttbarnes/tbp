@@ -86,19 +86,6 @@ hover styles - page specific
 	}
 }
 
-
-/*contact page*/
-.contactPage {
-
-	/*contact text*/
-	#containerMiddle .row .col-md-12 a.contactAddress {
-		&:hover {
-			text-shadow:0 4px 0 $colorGreenDark2;
-		}
-	}
-}
-
-
 /********************
 transitions
 *********************/
