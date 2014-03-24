@@ -134,7 +134,7 @@ buttons
   font-weight:normal;
 	letter-spacing:-1px;
   color:$colorWhite;
-  background:$colorBlueDark2;
+  background:$colorBlueLight;
 	color:$colorWhite;
 	font-size:15px;
 	-ms-word-break:break-all;
@@ -183,18 +183,20 @@ buttons
 	padding:10px 15px;
 }
 .btn-blue-light {
-	background:$colorBlueDark;
-	border:solid 6px $colorBlueDark;
-	text-shadow:0 2px 2px #333;
+	background:$colorBlueLight;
+	color:$colorBlueDark;
+	border:solid 6px $colorBlueLight;
+	text-shadow:0 3px 2px #5B9DBF;
 	&:hover, 
 	&:focus,
 	&:active, 
 	&.active {
-		background:$colorBlueLight;
-		border-top-color:$colorBlueLight;
-		border-right-color:$colorBlueDark;
-		border-bottom-color:$colorBlueDark;
-		border-left-color:$colorBlueLight;
+		background:#5091B2;
+		border-top-color:#5091B2;
+		border-right-color:$colorBlueLight;
+		border-bottom-color:$colorBlueLight;
+		border-left-color:#5091B2;
+		text-shadow:0 3px 2px #275F7B;
 	}
 }
 
@@ -783,9 +785,9 @@ showcase home page
 	#containerMiddle .row.disclaimer {
 		.col-md-12 p {
 			text-align:center;
-			color:$colorBlueLightBody;
-			padding: 40px 0;
-			margin: 40px 0;
+			color:#B7D2DF;
+			padding:40px 0;
+			margin:100px 0 40px 0;
 		}
 	}
 }
@@ -957,15 +959,14 @@ about page
 				padding-right:0;
 				padding-bottom:15px;
 				padding-left:0;
-				box-shadow:0 5px 6px #D1E8F4;
-				-moz-box-shadow:0 5px 6px #D1E8F4;
-				-webkit-box-shadow:0 5px 6px #D1E8F4;
+				box-shadow:0 5px 6px #D9EBF4;
+				-moz-box-shadow:0 5px 6px #D9EBF4;
+				-webkit-box-shadow:0 5px 6px #D9EBF4;
 
 				h4 {
 					margin-top:0;
 					background:$colorBlueLight;
-					color:$colorWhite;
-					text-shadow:0 4px 2px #5F9DBC;
+					color:$colorBlueDark;
 				}
 				> .col-md-12 { 
 					padding:0 15px;
