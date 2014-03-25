@@ -1,7 +1,7 @@
 /* ===========================================================
 tbp - Tony Barnes Portfolio
 Author: Tony Barnes
-File: hover transitions for desktop only
+File: hover transitions (excluding btns which are in main scss)
 /* ===========================================================*/
 
 @import "base";
@@ -9,7 +9,37 @@ File: hover transitions for desktop only
 /********************
 hover styles
 *********************/
+div.browsehappy p a:hover {
+	text-decoration:none;
+}
 
+/*header*/
+header .navbar-default { 
+
+	/*logo*/
+	h1 a.navbar-brand {
+		&:hover, 
+		&:focus,
+		&:active, 
+		&.active {
+			color:$colorWhite;
+		}
+	}
+	/*right nav*/
+	.navbar-nav li a {
+		&:hover {
+			color:$colorBlueLightHeader;
+		}
+	}
+	/*toggle nav*/
+	.navbar-toggle {
+		&:hover,
+		&:focus {
+			background:none;
+		}	
+	}
+
+}
 /*footer*/
 footer {
 	/*social icons*/
@@ -18,7 +48,18 @@ footer {
 	}
 	/*footer nav*/
 	.navbar-default ul.navbar-nav > li a:hover {
-		text-decoration:underline;
+		color:$colorBlueLight3;
+	}
+	/*back to top button*/
+	button.scrollTop {
+		&:hover,
+		&:focus, 
+		&:active, 
+		&.active {
+			background:$colorBlueDark2;
+			color:#456888;
+			outline:0 none;
+		}
 	}
 }
 
