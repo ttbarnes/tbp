@@ -166,6 +166,25 @@ buttons
 		&:last-child {
 			margin-left:30px;
 		}
+
+		&.btn-blue-lightest {
+			background:#C3DEEB;
+			border:solid 6px #C3DEEB;
+
+			&:hover, 
+			&:focus,
+			&:active, 
+			&.active {
+				background:$colorBlueLight;
+				border-top-color:$colorBlueLight;
+				border-right-color:#C3DEEB;
+				border-bottom-color:#C3DEEB;
+				border-left-color:$colorBlueLight;
+				/*text-shadow:0 3px 2px #275F7B;*/
+			}
+		}
+
+
 	}
 }
 
@@ -186,7 +205,7 @@ buttons
 	background:$colorBlueLight;
 	color:$colorBlueDark;
 	border:solid 6px $colorBlueLight;
-	text-shadow:0 3px 2px #5B9DBF;
+	/*text-shadow:0 3px 2px #5B9DBF;*/
 	&:hover, 
 	&:focus,
 	&:active, 
@@ -196,7 +215,7 @@ buttons
 		border-right-color:$colorBlueLight;
 		border-bottom-color:$colorBlueLight;
 		border-left-color:#5091B2;
-		text-shadow:0 3px 2px #275F7B;
+		/*text-shadow:0 3px 2px #275F7B;*/
 	}
 }
 
@@ -215,7 +234,7 @@ buttons
 	color:$colorWhite;
 	background:$colorBlueDark2;
 	border:solid 6px $colorBlueDark2;
-	text-shadow:0 2px 2px #333;
+	/*text-shadow:0 2px 2px #333;*/
 
 	&:hover, 
 	&:focus,
@@ -486,7 +505,7 @@ div.tags {
 			background:$colorRedLight;
 		}
 		&.Static {
-			background:$colorBlueLight;
+			background:$colorBlueLightHeader;
 		}
 		&.jQuery,
 		&.JavaScript {

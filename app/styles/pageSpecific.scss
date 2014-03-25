@@ -256,12 +256,18 @@ showcase home page
 		}
 	}
 	
-	#containerMiddle .row.disclaimer {
-		.col-md-12 p {
-			text-align:center;
-			color:#B7D2DF;
-			padding:40px 0;
-			margin:100px 0 40px 0;
+	#containerMiddle {
+		.row.disclaimer {
+			.col-md-12 p {
+				text-align:center;
+				color:#B7D2DF;
+				padding:40px 0 0 0;
+				margin:100px 0 0 0;
+			}
+		}
+		.row-btn-lg {
+			margin-top:0;
+			padding-top:0;
 		}
 	}
 }
@@ -545,38 +551,38 @@ about page
 					  margin-bottom:10px;
 					  font-size: 16px;
 					}
-					/*
+					
 					&.html {
 						height:95%;
 						min-height:150px;
-						background:#62B595;
+						background:#6db785;
 					}
 					&.css {
 						height:95%;
 						min-height:150px;
-						background:#62B595;
+						background:#6db785;
 					}
 					&.mobile {
 						height:80%;
 						min-height:120px;
-						background:#479276;
+						background:#88d2a0;
 					}
 					&.jquery {
 						height:80%;
 						min-height:120px;
-						background:#479276;
+						background:#88d2a0;
 					}
 					&.javascript {
 						height:60%;
 						min-height:90px;
-					  background:#32775E;
+					  background:#b9efca;
 					}
 					&.angular {
 						height:40%;
 						min-height:60px;
-					  background:#27664F;
+					  background:#d6efde;
 					}
-					*/
+					
 					
 				}
 			}
@@ -612,17 +618,17 @@ about page
 
 					&[rating="expert-advanced"]{ 
 						::before {
-							background:#62B595;
+							background:#6db785;
 						}
 					}
 					&[rating="intermediate"]{ 
 						::before {
-							background:#32775E;
+							background:#88d2a0;
 						}
 					}
 					&[rating="basic-learning"]{ 
 						::before {
-							background:#27664F;
+							background:#C7EDD3;
 						}
 					}
 
