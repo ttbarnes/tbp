@@ -203,7 +203,7 @@ buttons
 }
 
 .btn-primary {
-	padding:10px 15px;
+	padding:20px 15px;
 }
 .btn-blue-light {
 	background:$colorBlueLight;
@@ -574,6 +574,29 @@ div.tags div {
 	width:auto;
 	float:none;
 	display:inline-block;
+}
+
+/*small box (eg contact/error pages)*/
+#containerMiddle .row.smallBox {
+	max-width:490px;
+	.col-md-12	{
+		position:relative;
+		text-align:left;
+		vertical-align:middle;
+		padding:30px 15px;
+		background:$colorWhite;
+		color:$colorBlueDark;
+		border-right:solid 6px #CCE9F8;
+		box-shadow:0 5px 6px #D9EBF4;
+		-moz-box-shadow:0 5px 6px #D9EBF4;
+		-webkit-box-shadow:0 5px 6px #D9EBF4;
+		h4 {
+			padding:0;
+			margin-top:0;
+			font-size:30px;
+			color:$colorBlueLightHeader;
+		}
+	}
 }
 
 
