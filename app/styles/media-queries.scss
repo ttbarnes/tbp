@@ -184,6 +184,12 @@ responsive
 		font-size:16px;
 	}
 
+	#containerMiddle .row.smallBox .col-md-12 {
+		h4 {
+			font-size:30px;
+		}
+	}
+
 	.navbar-default {
 		margin-bottom:40px;
 		.navbar-collapse {
@@ -430,16 +436,14 @@ responsive
 
 		}
 	}
-
-	/*error page*/
-	.errorPage {
-		#containerMiddle .row h4 {
-			font-size:35px;
-		}
-	}
-	
 }
 @media (max-width: 600px) {
+
+	#containerMiddle .row.smallBox .col-md-12 {
+		h4 {
+			font-size:27px;
+		}
+	}
 
 	/*gallery list item hover*/
 	ul,
@@ -482,6 +486,12 @@ responsive
 	h2 {
 		font-size:18px;
 	}
+	#containerMiddle .row.smallBox .col-md-12 {
+		h4 {
+			font-size:22px;
+		}
+	}
+
 	.navbar-default h1 a.navbar-brand {
 		font-size:25px;
 	}
@@ -519,6 +529,12 @@ responsive
 		font-size:17px;
 	  margin:0 0 15px 0;
 		padding:15px 20px;
+	}
+	/*small box (eg contact/error pages)*/
+	#containerMiddle .row.smallBox { 
+		.col-md-12 {
+			border-right:0 none;
+		}
 	}
 
 	/*gallery list item hover*/
@@ -567,7 +583,6 @@ responsive
 	/*contact page*/
 	.contactPage  {
 	  #containerMiddle .row .col-md-12 {
-	  	border-right:0 none;
 	  	a.contactAddress {
 			  font-size:22px;
 			}
@@ -575,15 +590,24 @@ responsive
 	}
 	/*error page*/
 	.errorPage {
-		#containerMiddle .row {
-			h4 {
-				font-size:25px;
+		#containerMiddle .row .col-md-12 {
+			.btn {
+				margin-bottom:0;
 			}
 		}
 	}
 }
 
 @media (max-width: 350px) {
+	#containerMiddle .row.smallBox .col-md-12 {
+		h4 {
+			font-size:20px;
+		}
+		br {
+			display:none;
+		}
+	}
+
 	/*showcase home page*/
 	.showcaseHomePage {
 		div.tags div.Static, div.tags button {
