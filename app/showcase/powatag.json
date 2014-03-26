@@ -1,6 +1,6 @@
 {
 		"id": "powatag",
-    "name": "Powatag Corporate Website",
+    "name": "Powatag",
 		"category": "Static",
 		"date": "2013",
 		"tech": [
@@ -10,11 +10,11 @@
 		],
 		"deliverTitle": "What we delivered",
 		"deliverItems": [
-			{"item": "Corporate websites"}
+			{"item": "Corporate website"}
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I oversaw the front end development for this project."
+			"thoughts": "<p>I oversaw the front end development for this project.</p>"
 		},
 		"liveUrl": "http://powatag.com"
 }

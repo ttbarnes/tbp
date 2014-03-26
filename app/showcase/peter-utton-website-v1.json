@@ -3,14 +3,5 @@
     "name": "Peter Utton Website (v1)",
 		"category": "Static",
 		"date": "2009",
-		"tech": [
-			{"tag":"HTML, CSS"},
-			{"tag":"jQuery"}
-		],
-		"deliver": [
-			{"item": "Brand Identity, logo design"},
-			{"item": "Showcase/informative website"}
-		],
-		"how":"stuff here",
-		"thoughts":"etc"
+		"moreInfoSoon":true
 }

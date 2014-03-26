@@ -14,8 +14,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I was responsible for all front end development - working closely with a designer, we delivered a very sleak design with many different features, catering for Farrell's wide range of collections/catalogues.",
-			"thoughts": "It was a pleasure to integrate some fancy jQuery plugins - galleries and carousels for example. We ensured that our solutions are easily editable within the Powa CMS."
+			"thoughts": "<p>I was responsible for all front end development. It was a pleasure to integrate some fancy jQuery plugins - lookbooks, galleries and carousels for example. We ensured that our solutions are easily editable within the Powa CMS.</p>"
 		},
 		"liveUrl": "http://www.farrell.com"
 }

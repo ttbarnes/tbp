@@ -15,7 +15,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I oversaw the front end development for this project - contributing and pair-programming."
+			"thoughts": "<p>I oversaw the front end development for this project - contributing and pair-programming.</p>"
 		},
 		"liveUrl": "http://www.tolkien.co.uk"
 }

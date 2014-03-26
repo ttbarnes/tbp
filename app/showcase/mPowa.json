@@ -1,6 +1,6 @@
 {
 		"id": "mPowa",
-    "name": "mPowa Corporate Websites",
+    "name": "mPowa",
 		"category": "Static",
 		"date": "2012-13",
 		"tech": [
@@ -15,7 +15,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I managed the front end development, training and rollout of over 15 different, localised sites. I built the initial templates to be used in over 15 different languages. I then trained and worked closely with many other developers to rollout over 30 sites in 2 months."
+			"thoughts": "<p>I managed the front end development, training and rollout of over 15 different, localised sites. I built the initial templates to be used in over 15 different languages. I then trained and worked closely with many other developers to rollout over 30 sites in 2 months.</p>"
 		},
 		"liveUrl": "http://mpowa.com"
 }
