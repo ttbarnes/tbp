@@ -340,6 +340,24 @@ showcase individual page
   #containerMiddle {
 
   	.row > .row {
+  		&.topHeading {
+  			> .col-md-12 {
+  				padding-bottom:0;
+  			}
+  			h2 {
+
+  				> span span.date {
+  					float:right;
+						font-size: 13px;
+						color: #96BCCF;
+						margin-top: 9px;
+  				}
+  			}
+  		}
+
+  	}
+/*
+  	.row > .row {
   		margin-bottom:70px;
   		&.topHeading,
   		&.imgWrap,
@@ -374,8 +392,8 @@ showcase individual page
 			background:$colorWhite2;
 			color:$colorBlack;
 		}
+		*/
 		.imgWrap .col-md-12 {
-			padding:0;
 			img {
 				display:block;
 				width:100%;
@@ -398,9 +416,19 @@ showcase individual page
 			.tagsWrap {
 				margin-bottom:0;
 			}
-			&.story {
-				p:last-child {
-					margin-bottom:0;
+			.story {
+				padding-bottom:25px;
+				img {
+					display:block;
+					
+					max-width:700px;
+					margin:30px auto 60px auto;
+					&:first-child {
+						/*margin-top:30px;*/
+					}
+					&:last-child {
+						margin-bottom:30px;
+					}
 				}
 			}
 		}	
@@ -419,6 +447,7 @@ demo - jquery plugin page (may use another CSS)
 about page
 *********************/
 .aboutPage {
+	background:$colorWhite;
 
 	::-moz-selection {
 	  background:$colorBlueDark;
@@ -434,36 +463,6 @@ about page
 	#containerMiddle {
 
 		.row {
-			> .col-md-12 {
-				padding-right:0;
-				padding-left:0;
-				
-				/*
-				box-shadow:0 5px 6px #D9EBF4;
-				-moz-box-shadow:0 5px 6px #D9EBF4;
-				-webkit-box-shadow:0 5px 6px #D9EBF4;*/
-
-				h4 {
-					margin-top:0;
-					background:#C3DEEB;
-					color:$colorBlueLightHeader;
-					padding-left:0;
-					padding-right:0;
-					span {
-						display:block;
-						margin:0 auto;
-						padding-left:15px;
-						padding-right:15px;
-						max-width:1000px;
-					}
-				}
-				> .col-md-12 { 
-					float:none;
-					max-width:1000px;
-					margin:0 auto;
-					padding:0 15px 15px 15px;
-				}
-			}
 			&.aboutIntro {
 				padding-bottom:30px;
 				> .col-md-12 {
@@ -473,13 +472,11 @@ about page
 			&.randomStuff {
 				padding-bottom:0;
 			}
-
-	  	h4 {
-	  		background:$colorBlueDark2;
-	  	}
+			/*
 	  	.col-md-3 {
 	  		padding-left:0;
 	  	}
+	  	*/
 	 }
 	  .row .skillsetChartWrapper {
 	  	text-align:center;

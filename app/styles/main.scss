@@ -85,6 +85,9 @@ h1,h2,h3 {
 	margin-top:10px;
 	margin-bottom:10px;
 }
+h2 {
+	font-size:26px;
+}
 
 p {
 	font-size:14px;
@@ -107,6 +110,7 @@ hr {
 	 .row {
 		> .col-md-12 {
 			padding-bottom:70px;
+			h2,
 			h4 {
 				margin-bottom:15px;
 				text-align:left;
@@ -361,13 +365,47 @@ header .navbar-default {
 	}
 }
 
-/*full width page container width*/
+/*full width page container, inner sections*/
 .introPage,
-.aboutPage {
-	background:$colorWhite;
+.aboutPage,
+.showcaseIndPage {
 	#containerMiddle {
 		margin:0;
 		max-width:100%;
+
+		.row {
+			> .col-md-12 {
+				padding-right:0;
+				padding-left:0;
+				
+				/*
+				box-shadow:0 5px 6px #D9EBF4;
+				-moz-box-shadow:0 5px 6px #D9EBF4;
+				-webkit-box-shadow:0 5px 6px #D9EBF4;*/
+
+				h2,
+				h4 {
+					margin-top:0;
+					background:#C3DEEB;
+					color:$colorBlueLightHeader;
+					padding-left:0;
+					padding-right:0;
+					> span {
+						display:block;
+						margin:0 auto;
+						padding-left:15px;
+						padding-right:15px;
+						max-width:1000px;
+					}
+				}
+				> .col-md-12 { 
+					float:none;
+					max-width:1000px;
+					margin:0 auto;
+					padding:0 15px 15px 15px;
+				}
+			}
+		}	
 	}
 }
 
