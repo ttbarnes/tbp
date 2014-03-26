@@ -135,7 +135,7 @@ responsive
 		}
 	}
 
-	/*showcase individual*/
+	/*showcase individual
 	.showcaseIndPage #containerMiddle {
 		.row > .row.topHeading {
 			.col-md-10 {
@@ -151,6 +151,7 @@ responsive
 			}
 		}
 	}
+	*/
 }	
 
 @media (min-width: 992px) {
@@ -174,6 +175,9 @@ responsive
 		}
 	}
 
+	h2 {
+		font-size:22px;
+	}
 	/*sub page heading bg (eg about/showcase.ind)*/
 	.row .col-md-12 h4 {
 		margin-bottom:10px;
@@ -293,6 +297,20 @@ responsive
 
 	/*showcase individual page*/
 	.showcaseIndPage {
+		header .navbar-default {
+			margin-bottom:0;
+		}
+		#containerMiddle .row {
+			> .row.topHeading h2 {
+				margin-bottom:0;
+				> span span.date {
+					display:none;
+				}
+			}
+		}
+	}
+	/*
+	.showcaseIndPage {
 		#containerMiddle .row {
 
 			> .row.topHeading {
@@ -340,6 +358,7 @@ responsive
 			}
 		}
 	}
+*/
 
 	/*about page*/	
   .aboutPage #containerMiddle {
@@ -438,6 +457,14 @@ responsive
 			width:49%;
 		}
 	}
+
+	/*showcase individual page*/
+	.showcaseIndPage #containerMiddle .imgWrap .col-md-12 {
+		img {
+			margin-top:0;
+		}
+	}
+
 	/*about page*/
 	.aboutPage #containerMiddle .skillsetList ul.ratingKey {
 		display:none;
@@ -451,6 +478,9 @@ responsive
 			width:100%;
 			margin:0 0 15px 0 !important;
 		}
+	}
+	h2 {
+		font-size:18px;
 	}
 	.navbar-default h1 a.navbar-brand {
 		font-size:25px;
@@ -533,16 +563,6 @@ responsive
 			}
 		}
 	}
-
-	/*showcase ind page*/
-	.showcaseIndPage #containerMiddle {
-		.mainContent {
-			> .row.topHeading .col-md-10 h2 {
-				font-size:18px;
-			}
-		}
-	}
-
 
 	/*contact page*/
 	.contactPage  {
