@@ -81,7 +81,7 @@
 	},
     {
         "id": "powatag", 
-        "name": "Powatag Corporate Website",
+        "name": "Powatag",
         "category": "Static"
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "id": "powa",
-        "name": "Powa Corporate Websites",
+        "name": "Powa",
 		"category": "Static"
     },
     {
         "id": "mPowa",
-        "name": "mPowa Corporate Websites",
+        "name": "mPowa",
 		"category": "Static"
     },
     {

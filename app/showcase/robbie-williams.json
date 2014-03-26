@@ -15,7 +15,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I managed the front end development, training and rollout of several different, localised sites. I built the initial templates to be used in many different languages and trained other developers to rollout the localised sites."
+			"thoughts": "<p>I managed the front end development, training and rollout of several different, localised sites. I built the initial templates to be used in many different languages and trained other developers to rollout the localised sites.</p>"
 		},
 		"liveUrl": "http://shop.robbiewilliams.com"
 }

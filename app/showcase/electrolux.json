@@ -17,7 +17,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "Working closely with several other developers, we created very bespoke front-end templates and frameworks with the Powa CMS. Accessibility, optimisation and loading speed were high on the agenda - We served an international, public facing audience of millions."
+			"thoughts": "<p>Working closely with several other developers, we created very bespoke front-end templates and frameworks with the Powa CMS. Accessibility, optimisation and loading speed were high on the agenda - We served an international, public facing audience of millions.</p>"
 		},
 		"liveUrl": "http://shop.electrolux.co.uk"
 }

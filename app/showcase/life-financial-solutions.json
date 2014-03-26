@@ -14,9 +14,8 @@
 			{"item": "Corporate website"}
 		],
 		"how": {
-			"title": "What we delivered",
-			"content":"I worked very closely with the team, particularly during the design. After several sessions, we created a corporate identity that we were all very happy with.",
-			"thoughts":"We turned around the development side of things pretty quickly using purely static HTML, CSS and Javascript. I’m quite pleased with the calculator we built - using XY and Z. <br/>img of calculator thing"
+			"title": "My involvement",
+			"thoughts":"<p>I worked very closely with the team particularly during the design - developing the brand. I turned around the site development pretty quickly with static HTML, CSS and Javascript.</p>"
 		},
 		"liveUrl": "http://lifefinancialsolutions.com"
 }

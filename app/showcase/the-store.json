@@ -14,8 +14,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I oversaw the front end development for this project at Powa - pair-programming.",
-			"thoughts": "We built some nice HTML5 and CSS3 features including a live tv stream. I contributed mostly to the checkout processes."
+			"thoughts": "<p>I oversaw the front end development for this project at Powa - pair-programming. We built some nice HTML5 and CSS3 features including a live tv stream. I contributed mostly to the checkout processes.</p>"
 		},
 		"liveUrl": "http://www.thestoretv.com"
 }
