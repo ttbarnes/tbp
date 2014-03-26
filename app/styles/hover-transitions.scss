@@ -28,7 +28,7 @@ header .navbar-default {
 	/*right nav*/
 	.navbar-nav li a {
 		&:hover {
-			color:$colorBlueLightHeader;
+			color:$colorBlueLightBody;
 		}
 	}
 	/*toggle nav*/
@@ -44,11 +44,12 @@ header .navbar-default {
 footer {
 	/*social icons*/
 	ul.socialIcons li a:hover {
-		color:$colorBlueLight;
+		color:$colorBlueLight3;
 	}
 	/*footer nav*/
 	.navbar-default ul.navbar-nav > li a:hover {
 		color:$colorBlueLight3;
+		text-decoration:underline;
 	}
 	/*back to top button*/
 	button.scrollTop {
