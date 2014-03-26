@@ -122,7 +122,7 @@ describe('Page-view: Showcase home', function(){
   });
   
   it('should have some disclaimer text', function(){
-  	var expectedDisclaimer = 'Unfortunately not all of my work is displayed here. These pieces were built on a full time, freelance, contracted or contributing basis.';
+  	var expectedDisclaimer = 'Unfortunately not all of my work is displayed here. These pieces were built on a full time, freelance or contributing basis.';
   	expect(element('div.disclaimer p').html()).toEqual(expectedDisclaimer);
   });
 

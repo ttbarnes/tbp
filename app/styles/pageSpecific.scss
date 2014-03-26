@@ -34,6 +34,7 @@ intro page
 	.innerBox {
 		position:relative;
 		/*max-width:470px;*/
+		min-width:550px;
 		width:50%;
 		z-index:1;
 		padding:15px;
@@ -64,12 +65,13 @@ intro page
 	h1 {	
 		@include animation(introHeadingTop 1.1s);
 		color:#FFF;
-		font-size:45px;
+		font-size:41px;
 		margin:0;
 		text-shadow:0 2px 2px #091724;
-		span {
+		/*span {
 			color:#7ED36F;
 		}
+		*/
 	}
 	h2 {
 		color:$colorBlueLight;
@@ -593,6 +595,10 @@ about page
 	  			background:#C0EBCE;
 	  			color:#45865A;
 	  		}
+	  		> .col-md-12:last-child {
+					display: table;
+					min-height: initial;
+	  		}
 	  	}
 
 			ul {
@@ -730,6 +736,7 @@ error page
 		.row.smallBox {
 			.col-md-12 {
 				max-width:550px;
+				padding-bottom:15px;
 			}
 			p {
 				margin-bottom:30px;
