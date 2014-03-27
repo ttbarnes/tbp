@@ -569,6 +569,10 @@ div.tags {
 		&.PHP {
 			background:#A5A5A5;
 		}
+		&.Fireworks,
+		&.Photoshop {
+			background:$colorBlueLight3;
+		}
 
 	}
 }
