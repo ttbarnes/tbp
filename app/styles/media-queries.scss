@@ -10,6 +10,12 @@ File: media queries, rwd
 /********************
 responsive
 *********************/
+@media (max-width: 1400px) {
+	.navbar-default .inner {
+		max-width:100%;
+	}
+}
+
 @media (max-width: 1200px) {
 	.container {
 		width:100%;
@@ -134,24 +140,6 @@ responsive
 			}
 		}
 	}
-
-	/*showcase individual
-	.showcaseIndPage #containerMiddle {
-		.row > .row.topHeading {
-			.col-md-10 {
-				float:left;
-				width:100%;
-				position:relative;
-				min-height:1px;
-				padding-left:15px;
-				padding-right:15px;
-			}
-			.col-md-2 {
-				display:none;
-			}
-		}
-	}
-	*/
 }	
 
 @media (min-width: 992px) {
@@ -228,6 +216,21 @@ responsive
 			padding:7px 7px 30px 0;
 		}
 	}
+	/*small box (eg contact/error pages)*/
+	.container #containerMiddle .row.smallBox {
+		margin:0 auto;
+		width:80%;
+		max-width:80%;
+		.col-md-12 {
+			text-align:center;
+			border:0 none;
+			margin:0 15px;
+			h4 {
+				text-align:center;
+			}
+		}
+	}
+
 
 	/*intro page*/
 	.recentReleases {
@@ -302,56 +305,6 @@ responsive
 			}
 		}
 	}
-	/*
-	.showcaseIndPage {
-		#containerMiddle .row {
-
-			> .row.topHeading {
-				background:none;
-				margin-bottom:0;
-
-			  .col-md-12 {
-					padding:0 15px;
-				}
-				.col-md-10 {
-					float:none;
-					width:100%;
-					padding:0;
-
-					h2 {
-						padding:15px;
-						font-size:25px;
-						background:#d8d8d8;
-						margin:0;
-					}
-					&.last {
-						display:none;
-					}
-				}
-				h2 {
-					padding:0;
-					margin-bottom:0;
-					font-size:22px;
-				}
-				div.date {
-					float:left;
-					text-align:left;
-					margin:11px 5px;
-					padding:0;
-				}
-			}
-			.mainContent {
-				> .row > .col-md-12 {
-					padding-left:0;
-					padding-right:0;
-				}
-			}
-			.imgWrap img {
-				margin-top:0;
-			}
-		}
-	}
-*/
 
 	/*about page*/	
   .aboutPage #containerMiddle {
@@ -525,11 +478,16 @@ responsive
 		padding:15px 20px;
 	}
 	/*small box (eg contact/error pages)*/
-	#containerMiddle .row.smallBox { 
+	.container #containerMiddle .row.smallBox {
+		width:100%;
+		max-width:100%;
 		.col-md-12 {
-			border-right:0 none;
+			br {
+				display:none;
+			}
 		}
 	}
+
 
 	/*gallery list item hover*/
 	ul,
@@ -596,9 +554,6 @@ responsive
 	#containerMiddle .row.smallBox .col-md-12 {
 		h4 {
 			font-size:20px;
-		}
-		br {
-			display:none;
 		}
 	}
 

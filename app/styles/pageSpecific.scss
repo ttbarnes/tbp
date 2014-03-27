@@ -689,11 +689,11 @@ contact page
 .contactPage {
 	background:$colorBlueLight2;
 	color:$colorWhite;
-	
+	/*
 	#containerMiddle {
 		margin:0 15px;
 		width:auto;
-	}
+	}*/
 	.row {
 
 	  .col-md-12	{
@@ -730,12 +730,14 @@ error page
 .errorPage {
 	background:$colorBlueLight2;
 	#containerMiddle {
+		/*
 		margin:0 15px;
 		width:auto;
+		*/
 
 		.row.smallBox {
+			max-width:550px;
 			.col-md-12 {
-				max-width:550px;
 				padding-bottom:15px;
 			}
 			p {
