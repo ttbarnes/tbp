@@ -26,9 +26,11 @@ header .navbar-default {
 		}
 	}
 	/*right nav*/
-	.navbar-nav li a {
-		&:hover {
-			color:$colorBlueLightBody;
+	.navbar-nav > li > a {
+		&:hover,
+		&:focus {
+			color:$colorWhite;
+			background:#5795B5;
 		}
 	}
 	/*toggle nav*/
