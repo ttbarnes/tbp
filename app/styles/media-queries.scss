@@ -203,20 +203,15 @@ responsive
 		/*toggle nav*/
 		.navbar-nav {
 			text-align:right;
-			li {
+			> li {
 				display:inline-block;
 				margin-left:12px;
-				a {
+				> a {
 					padding:10px 15px;
-					color:$colorWhite2;
-					background:#346E8B;
+					color:$colorWhite;
+					background:#5795B5;
 					text-align:center;
 					display:inline-block;
-					&:hover,
-					&:focus {
-						color:#999;
-						background:#E3E3E3;
-					}
 				}
 			}
 		}
@@ -262,14 +257,6 @@ responsive
 
 	/*about page*/
 	.aboutPage {
-		header {
-			/*toggle nav*/
-			.navbar-default .navbar-nav {
-				li a {
-					background:$colorBlueDark2;
-				}
-			}
-		}
 		#containerMiddle .row  {
 			.col-md-4 {
 				float:none;
@@ -491,10 +478,17 @@ responsive
 			font-size:22px;
 		}
 	}
-
-	.navbar-default h1 a.navbar-brand {
-		font-size:25px;
+	header {
+		.navbar-default {
+			h1 a.navbar-brand {
+				font-size:25px;
+			}
+		}
+		.navbar-nav > li > a {
+			font-size:13px;
+		}
 	}
+
 	footer {
 		.col-md-6 {
 			width:100%;
