@@ -5,7 +5,8 @@ var tbp = angular.module('tbpApp', [
   'ngSanitize',
   'ngRoute',
   'ngAnimate',
-  'tbpControllers'
+  'tbpControllers',
+  'angulartics'
 ]);
 
 tbp.config(function ($routeProvider) {
