@@ -11,7 +11,8 @@ File: media queries, rwd
 responsive
 *********************/
 @media (max-width: 1400px) {
-	.navbar-default .inner {
+	.navbar-default .inner,
+	footer .inner {
 		max-width:100%;
 	}
 }

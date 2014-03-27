@@ -273,8 +273,8 @@ html {
 }
 body {
 	height:100%;
-	background:$colorWhite;
-	color:#888;
+	background:$colorBlueDark;
+	color:$colorWhite;
 	font-family:Roboto Slab, Helvetica, Arial;
 }
 
@@ -418,6 +418,10 @@ footer {
 	background:$colorBlueDark;
 	color:#B8B8B8;
 	border-top:solid 6px #0C3E59;
+	.inner {
+		max-width:1400px;
+		margin:0 auto;
+	}
 
 	.col-md-6,
 	.col-md-12 {
