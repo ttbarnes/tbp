@@ -304,6 +304,16 @@ responsive
 					display:none;
 				}
 			}
+			> .row.imgWrap > .col-md-12 {
+				padding-bottom:30px;
+			}
+			> .row .deliver .col-md-12:last-child {
+				padding-bottom:0;
+			}
+			> .story img {
+				width:auto;
+				max-width:100%;
+			}
 		}
 	}
 

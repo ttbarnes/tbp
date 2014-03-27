@@ -342,12 +342,14 @@ showcase individual page
   #containerMiddle {
 
   	.row > .row {
+  		h4 {
+  			margin-bottom:30px;
+  		}
   		&.topHeading {
   			> .col-md-12 {
   				padding-bottom:0;
   			}
   			h2 {
-
   				> span span.date {
   					float:right;
 						font-size: 13px;
@@ -356,45 +358,16 @@ showcase individual page
   				}
   			}
   		}
-
-  	}
-/*
-  	.row > .row {
-  		margin-bottom:70px;
-  		&.topHeading,
-  		&.imgWrap,
-  		&:last-child {
-  			margin-bottom:0;
+  		&.row-btn-lg {
+  			background:$colorWhite;
+  			.col-md-12 {
+  				padding-bottom:0;
+  			}
+  		}
+  		.col-md-12.deliver {
+  			background:#ECF9FF;
   		}
   	}
-		
-		.row > .row.topHeading {	
-		  margin-bottom:10px;
-
-		  .col-md-10,
-		  .col-md-2 {
-		  	background:$colorWhite2;
-		  }
-
-			h2 {
-				padding:5px;
-				color:$colorBlack;
-			}
-			div.date {
-				float:right;
-				padding:5px;
-				text-align:right;
-				margin:19px 0;
-				padding:5px 10px;
-				font-size:11px;
-				color:#999;
-			}
-		}
-		.row .col-md-12 h4 {
-			background:$colorWhite2;
-			color:$colorBlack;
-		}
-		*/
 		.imgWrap .col-md-12 {
 			img {
 				display:block;
@@ -420,14 +393,13 @@ showcase individual page
 			}
 			.story {
 				padding-bottom:25px;
+				background:$colorWhite;
 				img {
+					clear:both;
 					display:block;
-					
+					width:auto;
 					max-width:700px;
 					margin:30px auto 60px auto;
-					&:first-child {
-						/*margin-top:30px;*/
-					}
 					&:last-child {
 						margin-bottom:30px;
 					}

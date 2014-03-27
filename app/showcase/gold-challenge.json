@@ -15,8 +15,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "I helped the Gold Challenge team to design and deliver many different page and email templates, using HTML and CSS. I also built many different brand pages that were in partnership with the Gold Challenge.",
-			"thoughts": "I was very proud to be part of the team and deliver these templates that would be seen by many people, leading up to the 2012 Olympics. <br/>Some examples: <br/>Img here <br/>Img here <br/>Img here"
+			"thoughts": "<p>I helped the Gold Challenge team to design and deliver many different page and email templates, using HTML and CSS. I also built many different brand pages that were in partnership with the Gold Challenge, leading up to the 2012 Olympics.</p> <p>Some examples:</p> <img src='/images/showcase/gold-challenge/inner01.jpg'/><img src='/images/showcase/gold-challenge/inner02.jpg'/>"
 		},
 		"liveUrl": "http://www.goldchallenge.org"
 }
