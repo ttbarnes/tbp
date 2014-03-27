@@ -17,8 +17,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"content": "We redesigned and developed Cathy’s previous site using a bespoke CMS, built by Powa Technologies. I ensured that the new site is clean, accessible and editor-friendly.",
-			"thoughts":"I particularly enjoyed building the gallery sections of the website - this involved integrating a jQuery plugin into the CMS. <br/>Img of gallery page"
+			"thoughts":"<p>I redesigned and developed Cathy's previous site ensuring that the new site is clean, accessible and editor-friendly.</p><p>I particularly enjoyed building the gallery sections of the website - this involved integrating jQuery plugins with the CMS.</p><img src='/images/showcase/cathy-brown/inner01.jpg'/>"
 		},
 		"liveUrl": "http://www.cathybrown.co.uk"
 }
