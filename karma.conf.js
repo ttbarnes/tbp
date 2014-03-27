@@ -17,12 +17,13 @@ module.exports = function(config) {
       'app/bower_components/angular-resource/angular-resource.js',
       'app/bower_components/angular-sanitize/angular-sanitize.js',
       'app/bower_components/angular-route/angular-route.js',
-      'app/bower_components/angular/angular-mocks.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
       'test/spec/**/*.js',
       'app/bower_components/jquery/jquery.min.js',
-      'app/bower_components/jasmine-jquery/index.js'
+      'app/bower_components/jasmine-jquery/index.js',
+      'app/bower_components/jquery-waypoints/waypoints.js',
+      'app/bower_components/angulartics/src/angulartics.js'
     ],
 
     // list of files / patterns to exclude
@@ -53,6 +54,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: true
   });
 };

@@ -64,17 +64,16 @@ intro page
 	}
 	h1 {	
 		@include animation(introHeadingTop 1.1s);
-		color:#FFF;
+		color:#89C9EA;
 		font-size:41px;
 		margin:0;
 		text-shadow:0 2px 2px #091724;
-		/*span {
-			color:#7ED36F;
+		span {
+			color:#F8F8F8;
 		}
-		*/
+		
 	}
 	h2 {
-		color:$colorBlueLight;
 		margin-top:15px;
 		margin-bottom:0;
 		font-size:22px;
@@ -84,16 +83,19 @@ intro page
 			span {
 				display:inline;
 				&.iAmA {
-    			color:$colorBlueLight;
-    			text-shadow:0 2px 2px #091724;
+    			color:#0A1825;
+    			text-shadow:0 2px 2px #35597B;
     			@include animation(introHeadingSubFirst 1.1s);
 				}
 				&.iAlso {
-					color:#1B354D;
+					color:#4B6F90;
 					/*display:block;*/
 					margin-top:10px;
-					text-shadow:0 2px 2px #35597B;
+					text-shadow:none;
 					@include animation(introHeadingSubLast 2s);
+					span {
+						color:#4B9080;
+					}
 				}
 			}
 		}
