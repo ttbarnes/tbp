@@ -352,11 +352,15 @@ showcase individual page
   				padding-bottom:0;
   			}
   			h2 {
-  				> span span.date {
-  					float:right;
-						font-size: 13px;
-						color: #96BCCF;
-						margin-top: 9px;
+  				> span {
+  					position:relative;
+  					span.date {
+	  					position:absolute;
+	  					right:15px;
+							font-size: 13px;
+							color: #96BCCF;
+							margin-top: 9px;
+	  				}
   				}
   			}
   		}
