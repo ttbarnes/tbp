@@ -109,15 +109,15 @@ div.introPage {
 	background:$colorWhite;
 
 	/*sub intro - build/design sections*/
-	div.subIntro {
+	#containerMiddle div.subIntro {
 		h3 {
 			margin:0;
 			padding:30px 15px;
 		}
 		.col-md-12 {
-			padding-top:40px;
-			padding-bottom:70px;
-			p {
+			padding:40px 15px 70px 15px;
+
+			p:last-child {
 				margin:0;
 			}
 		}
@@ -299,6 +299,7 @@ ul,
 			transition:ease-in-out 0.3s;
 		}
 		.miniPanel {
+			text-align:left;
 			position:absolute;
 			width:100%;
 			max-width:100%;
