@@ -543,8 +543,6 @@ div.tags {
 		margin:3px 3px 0 0;
 		vertical-align:middle;
 		text-align:center;
-
-
 		
 		&.Ecommerce,
 		&.HTML, &.CSS,
@@ -583,12 +581,75 @@ div.tags {
 	}
 }
 
-/*tech tags*/
+/*tech tags
 div.tags div {
 	width:auto;
 	float:none;
 	display:inline-block;
 }
+*/
+
+/*gallery list item hover (from the active/inactive directive)*/
+ul,
+.showcaseHomePage ul.showcaseGalleryGrid {
+
+	li[active-hover] {
+		-webkit-transition:ease-in 0.2s;
+		-moz-transition:ease-in 0.2s;
+		-o-transition:ease-in 0.2s;
+		transition: ease-in 0.2s;
+
+		&.inactive {
+			opacity:0.350;
+		}
+		&.active {
+			opacity:1;
+		}
+		img {
+			-webkit-transition:ease-in-out 0.3s;
+			-moz-transition:ease-in-out 0.3s;
+			-o-transition:ease-in-out 0.3s;
+			transition:ease-in-out 0.3s;
+		}
+		.miniPanel {
+			text-align:left;
+			position:absolute;
+			width:100%;
+			max-width:100%;
+			min-height:25%;
+			bottom:-100%;
+			left:0;
+			background:#f1f1f1;
+			border-top:solid 3px #CCC;
+			-webkit-transition:bottom ease-in-out 0.2s;
+			-moz-transition:bottom ease-in-out 0.2s;
+			-o-transition:bottom ease-in-out 0.2s;
+			transition:bottom ease-in-out 0.2s;
+
+			h4 {			
+				font-size:13px;
+				padding:10px;
+				margin:0;
+				color:$colorBlack;
+			}
+		}
+
+		&:hover {
+			z-index:9;
+			padding:0;
+			-moz-box-shadow:0 10px 30px 10px #A4A4A4;
+			-webkit-box-shadow:0 10px 30px 10px #A4A4A4;
+			box-shadow:0 10px 30px 10px #A4A4A4;
+
+			img {
+				opacity:1;
+			}
+			.miniPanel {
+				bottom:0;
+			}
+		}
+	}
+}	
 
 /*small box (eg contact/error pages)*/
 #containerMiddle .row.smallBox {
