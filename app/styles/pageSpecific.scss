@@ -276,68 +276,6 @@ showcase home page
 	}
 }
 
-/*gallery list item hover - (from the active/inactive directive) and some image opacity*/
-ul,
-.showcaseHomePage ul.showcaseGalleryGrid {
-
-	li[active-hover] {
-		-webkit-transition:ease-in 0.2s;
-		-moz-transition:ease-in 0.2s;
-		-o-transition:ease-in 0.2s;
-		transition: ease-in 0.2s;
-
-		&.inactive {
-			opacity:0.350;
-		}
-		&.active {
-			opacity:1;
-		}
-		img {
-			-webkit-transition:ease-in-out 0.3s;
-			-moz-transition:ease-in-out 0.3s;
-			-o-transition:ease-in-out 0.3s;
-			transition:ease-in-out 0.3s;
-		}
-		.miniPanel {
-			text-align:left;
-			position:absolute;
-			width:100%;
-			max-width:100%;
-			min-height:25%;
-			bottom:-100%;
-			left:0;
-			background:#f1f1f1;
-			border-top:solid 3px #CCC;
-			-webkit-transition:bottom ease-in-out 0.2s;
-			-moz-transition:bottom ease-in-out 0.2s;
-			-o-transition:bottom ease-in-out 0.2s;
-			transition:bottom ease-in-out 0.2s;
-
-			h4 {			
-				font-size:13px;
-				padding:10px;
-				margin:0;
-				color:$colorBlack;
-			}
-		}
-
-		&:hover {
-			z-index:9;
-			padding:0;
-			-moz-box-shadow:0 10px 30px 10px #A4A4A4;
-			-webkit-box-shadow:0 10px 30px 10px #A4A4A4;
-			box-shadow:0 10px 30px 10px #A4A4A4;
-
-			img {
-				opacity:1;
-			}
-			.miniPanel {
-				bottom:0;
-			}
-		}
-	}
-}	
-
 /********************
 showcase individual page
 *********************/
@@ -440,6 +378,9 @@ about page
 	hr {
 		border-top:solid 3px #356896;
 	}
+	p {
+		margin-bottom:20px;
+	}
 
 	#containerMiddle {
 
@@ -448,10 +389,16 @@ about page
 				padding-bottom:30px;
 				> .col-md-12 {
 					padding-top:15px;
+					p:last-child {
+						margin-bottom:0;
+					}
 				}
 			}
 			&.randomStuff {
 				padding-bottom:0;
+				p:last-child {
+					margin-bottom:0;
+				}
 			}
 			/*
 	  	.col-md-3 {
