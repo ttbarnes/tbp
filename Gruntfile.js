@@ -194,7 +194,9 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
             //'<%= yeoman.dist %>/images/**/**/*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= yeoman.dist %>/images/*.{png,jpg,jpeg,gif,webp,svg}',
+            //'<%= yeoman.dist %>/images/*.{png,jpg,jpeg,gif,webp,svg}',
+            //only need one image to be renamed
+            '<%= yeoman.dist %>/images/headshot-small.{jpg,jpeg}',
             '<%= yeoman.dist %>/styles/fonts/*'
           ]
         }

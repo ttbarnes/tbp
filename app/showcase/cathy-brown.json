@@ -17,7 +17,7 @@
 		],
 		"how": {
 			"title": "My involvement",
-			"thoughts":"<p>I redesigned and developed Cathy's previous site ensuring that the new site is clean, accessible and editor-friendly.</p><p>I particularly enjoyed building the gallery sections of the website - this involved integrating jQuery plugins with the CMS.</p><img src='/images/showcase/cathy-brown/inner01.jpg'/>"
+			"thoughts":"<p>I redesigned and developed Cathy's previous site ensuring that the new site is clean, accessible and editor-friendly.</p><p>I particularly enjoyed building the gallery sections of the website - this involved integrating jQuery plugins with the CMS.</p><img src='images/showcase/cathy-brown/inner01.jpg'/>"
 		},
 		"liveUrl": "http://www.cathybrown.co.uk"
 }
