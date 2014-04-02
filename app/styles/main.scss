@@ -577,17 +577,13 @@ div.tags {
 		&.Photoshop {
 			background:$colorBlueLight3;
 		}
-
+	}
+	div {
+		width:auto;
+		float:none;
+		display:inline-block;
 	}
 }
-
-/*tech tags
-div.tags div {
-	width:auto;
-	float:none;
-	display:inline-block;
-}
-*/
 
 /*gallery list item hover (from the active/inactive directive)*/
 ul,
