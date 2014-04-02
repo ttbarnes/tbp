@@ -399,6 +399,13 @@ about page
 				p:last-child {
 					margin-bottom:0;
 				}
+				a {
+					color:$colorBlueLight3;
+					text-decoration:underline;
+					&:hover {
+						text-decoration:none;
+					}
+				}
 			}
 			/*
 	  	.col-md-3 {
@@ -440,6 +447,7 @@ about page
 				  text-align:left;
 				  div {
 					  margin:0;
+					  color:#B5D0DD;
 					  font-size:12px;
 					  padding:5px 0;
 					  height:21%;
@@ -468,6 +476,7 @@ about page
 					  overflow: hidden;
 					  width:100%;
 					  font-size:16px;
+					  color:#14381F;
 					}
 				  .rating {
 					  width: 100%;
@@ -548,6 +557,7 @@ about page
 					&[rating="expert-advanced"]{ 
 						::before {
 							background:#6db785;
+							/*background:#62A478;*/
 						}
 					}
 					&[rating="intermediate"]{ 
