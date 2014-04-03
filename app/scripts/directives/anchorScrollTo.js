@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tbpApp')
-  .directive('scrollTo', function ($location, $anchorScroll) {
+  .directive('anchorScrollTo', function ($location, $anchorScroll) {
     return {
       link: function postLink(scope, element, attrs) {
         element.bind('click', function(event) {
@@ -9,7 +9,7 @@ angular.module('tbpApp')
 		      scope.$on('$locationChangeStart', function(ev) {
 						ev.preventDefault();
 		      });
-		      var location = attrs.scrollTo;
+		      var location = attrs.anchorScrollTo;
 		      $location.hash(location);
 		      $anchorScroll();
 		    });
