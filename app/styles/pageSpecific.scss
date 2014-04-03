@@ -30,7 +30,10 @@ intro page
 		background-size:100% auto;
 		background-repeat:no-repeat;
 	}
-
+	.innerBoxWrap {
+		max-width:1000px;
+		margin:0 auto;
+	}
 	.innerBox {
 		position:relative;
 		/*max-width:470px;*/
@@ -114,8 +117,8 @@ div.introPage {
 			margin:0;
 			padding:30px 15px;
 		}
-		.col-md-12 {
-			padding:40px 15px 70px 15px;
+		.col-md-12 > .col-md-12 {
+			padding:40px 15px 0 15px;
 
 			p:last-child {
 				margin:0;
@@ -135,11 +138,6 @@ div.introPage {
 			h3 {
 				background:#692E2E;
 				color:$colorWhite;
-			}
-		}
-		&.row-btn-lg 	{
-			.col-md-12 {
-				padding:70px 15px 100px 15px;
 			}
 		}
 	}	
