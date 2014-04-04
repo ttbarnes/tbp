@@ -46,7 +46,7 @@ intro/home
   @include keyframe-introBigBg;
 }
 
-/*intro - intro inner*/
+/*intro - intro inner
 @mixin keyframe-introInnerBg {
   0% {background:transparent;border-color:transparent;@include border-radius(0 0 0 50%);}
   15% {background:transparent;border-color:transparent;}
@@ -66,13 +66,32 @@ intro/home
 @keyframes introInnerBg {
   @include keyframe-introInnerBg;
 }
+*/
+
+@mixin keyframe-introInnerBox {
+  0% {left:-50%;background:transparent;border-color:transparent;border-radius:0 100%;max-width:25px;}
+  50% {left:0;border-color:transparent;}
+  100% {background:$colorBlueDark;}
+}
+@-webkit-keyframes introInnerBox {
+  @include keyframe-introInnerBox;
+}
+@-moz-keyframes introInnerBox {
+  @include keyframe-introInnerBox;
+}
+@-o-keyframes introInnerBox {
+  @include keyframe-introInnerBox;
+}
+@keyframes introInnerBox {
+  @include keyframe-introInnerBox;
+}
+
 
 /*intro - headshot*/
 @mixin keyframe-introHeadshot {
-  0% {opacity: 0;border-radius:0 100%;max-width:25px;transform: rotate(1080deg);}
-  50% {opacity:0.4;border-radius:0 50% 0 100%;max-width:65px;}
-  60% {transform: rotate(0);};
-  75% {opacity: 0.8;border-radius:0;max-width:100px;}
+  0% {opacity:0;left:-1000%;border-radius:0 100%;max-width:25px;transform: rotate(1080deg);}
+  50% {opacity:0;border-radius:0 100%;max-width:25px;transform: rotate(1080deg);}
+  100% {opacity:1;left:0;border-radius:0;max-width:90px;transform: rotate(1080deg);}
 }
 @-webkit-keyframes introHeadshot {
   @include keyframe-introHeadshot;
@@ -87,68 +106,69 @@ intro/home
   @include keyframe-introHeadshot;
 }
 
-/*intro - heading top
-@mixin introHeadingTop {
-  0%   { opacity: 0;top:-250px;position:absolute;}
-  80% { opacity: 0.1;}
-  100% { opacity: 1;top:0;position:relative;}
-}
-@-webkit-keyframes introHeadingTop {
-  @include introHeadingTop;
-}
-@-moz-keyframes introHeadingTop {
-  @include introHeadingTop;
-}
-@-o-keyframes introHeadingTop {
-  @include introHeadingTop;
-}
-@keyframes introHeadingTop {
-  @include introHeadingTop;
-}
-*/
 
-/*intro - heading sub, first
-@mixin introHeadingSubFirst {
-  0% {opacity: 0;margin-left:-200px;}
-  75% {opacity: 0;margin-left:-200px;}
-  100% {opacity: 1;margin-left:0;}
+/*intro - heading top*/
+@mixin introHeadingTopFirst {
+  0% {opacity:0;}
+  20% {opacity:0;}
+  100% {opacity:1;}
 }
-@-webkit-keyframes introHeadingSubFirst {
-  @include introHeadingSubFirst;
+@-webkit-keyframes introHeadingTopFirst {
+  @include introHeadingTopFirst;
 }
-@-moz-keyframes introHeadingSubFirst {
-  @include introHeadingSubFirst;
+@-moz-keyframes introHeadingTopFirst {
+  @include introHeadingTopFirst;
 }
-@-o-keyframes introHeadingSubFirst {
-  @include introHeadingSubFirst;
+@-o-keyframes introHeadingTopFirst {
+  @include introHeadingTopFirst;
 }
-@keyframes introHeadingSubFirst {
-  @include introHeadingSubFirst;
+@keyframes introHeadingTopFirst {
+  @include introHeadingTopFirst;
 }
-*/
 
-/*intro - heading sub, last
-@mixin introHeadingSubLast {
+@mixin introHeadingTopLast {
+  0%   { opacity: 0;}
+  80%   { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-webkit-keyframes introHeadingTopLast {
+  @include introHeadingTopLast;
+}
+@-moz-keyframes introHeadingTopLast {
+  @include introHeadingTopLast;
+}
+@-o-keyframes introHeadingTopLast {
+  @include introHeadingTopLast;
+}
+@keyframes introHeadingTopLast {
+  @include introHeadingTopLast;
+}
+
+
+@mixin introHeadingSub {
   0% {opacity: 0;}
-  75% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 0.5;}
   100% {opacity: 1;}
 }
-@-webkit-keyframes introHeadingSubLast {
-  @include introHeadingSubLast;
+@-webkit-keyframes introHeadingSub {
+  @include introHeadingSub;
 }
-@-moz-keyframes introHeadingSubLast {
-  @include introHeadingSubLast;
+
+
+@-moz-keyframes introHeadingSub {
+  @include introHeadingSub;
 }
-@-o-keyframes introHeadingSubLast {
-  @include introHeadingSubLast;
+@-o-keyframes introHeadingSub {
+  @include introHeadingSub;
 }
-@keyframes introHeadingSubLast {
-  @include introHeadingSubLast;
+@keyframes introHeadingSub {
+  @include introHeadingSub;
 }
-*/
+
 
 /********************
-about page, skill set
+about page, skill set bars
 *********************/
 @mixin skillsetBar90perc {
   0% {height:0;opacity:0;}

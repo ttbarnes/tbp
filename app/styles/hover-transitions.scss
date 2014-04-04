@@ -81,10 +81,10 @@ hover styles - page specific
 *********************/
 
 /*intro page*/
-.container .jumbotron .innerBox .headshot {
+.container .jumbotron .innerBox .imgWrap .headshot {
 	opacity:0.8;
 	&:hover {
-		opacity:1;
+		opacity:0.9;
 	}
 }
 
