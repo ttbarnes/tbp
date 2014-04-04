@@ -144,7 +144,7 @@ intro/home
   @include introHeadingTopLast;
 }
 
-
+/*intro - heading sub text/heading*/
 @mixin introHeadingSub {
   0% {opacity: 0;}
   40% {opacity: 0;}
@@ -154,8 +154,6 @@ intro/home
 @-webkit-keyframes introHeadingSub {
   @include introHeadingSub;
 }
-
-
 @-moz-keyframes introHeadingSub {
   @include introHeadingSub;
 }
@@ -164,6 +162,42 @@ intro/home
 }
 @keyframes introHeadingSub {
   @include introHeadingSub;
+}
+
+/*intro - scroll down text*/
+@mixin introScrollDown {
+  0% {bottom:-100%;opacity:0;}
+  50% {bottom:-100%;opacity:0;}
+  100% {bottom:10%;opacity:1;}
+}
+@-webkit-keyframes introScrollDown {
+  @include introScrollDown;
+}
+@-moz-keyframes introScrollDown {
+  @include introScrollDown;
+}
+@-o-keyframes introScrollDown {
+  @include introScrollDown;
+}
+@keyframes introScrollDown {
+  @include introScrollDown;
+}
+
+@mixin introScrollDownIcon {
+  0% {margin-top:100px;}
+  100% {margin-top:1px;}
+}
+@-webkit-keyframes introScrollDownIcon {
+  @include introScrollDownIcon;
+}
+@-moz-keyframes introScrollDownIcon {
+  @include introScrollDownIcon;
+}
+@-o-keyframes introScrollDownIcon {
+  @include introScrollDownIcon;
+}
+@keyframes introScrollDownIcon {
+  @include introScrollDownIcon;
 }
 
 
