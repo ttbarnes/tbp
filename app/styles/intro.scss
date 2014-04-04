@@ -6,7 +6,7 @@ File: intro specifics
 
 @media (min-width:1100px) {
 	.container .jumbotron {
-		min-height:580px; /*fail safe for opera browser*/
+		min-height:575px; /*fail safe for opera browser*/
 		.bigBg {
 			min-height:585px; /*fail safe for opera browser*/
 			background-image:url(../images/intro4-1500w.jpg);
@@ -48,9 +48,9 @@ File: intro specifics
 
 @media (min-width: 768px) {
 	.container .jumbotron {
-	  max-height:580px;
+	  max-height:460px;
 	  .bigBg {
-	  	max-height:580px;
+	  	max-height:500px;
 	  }
 	}
 }
@@ -69,8 +69,9 @@ File: intro specifics
 @media (min-width:480px) and (max-width: 700px) {
   .container .jumbotron {
 		padding:2em 1em;
-		height:40%;
-		max-height:400px;
+		height:auto;
+		min-height:365px;
+		max-height:365px;
 		.bigBg {
 			background-image:url(../images/intro4-700w.jpg);
 			background-size:initial;
@@ -106,12 +107,13 @@ File: intro specifics
 @media (max-width: 480px) {
 	.container .jumbotron {
 		overflow:hidden;
-		height:37%;
-		max-height:370px;
-		padding:0;
+		height:auto;
+		min-height:400px;
+		max-height:400px;
+		padding:0 !important;
 		.bigBg {
 			display:block;
-			max-height:370px;
+			max-height:400px;
 			background-color:#13283C;
 			background-image:url(../images/intro4-480w.jpg);
 			background-size:100% 100%;

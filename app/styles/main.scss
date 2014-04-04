@@ -242,19 +242,19 @@ buttons
 
 .btn-blue-dark {
 	color:$colorWhite;
-	background:$colorBlueDark2;
-	border:solid 6px $colorBlueDark2;
+	background:$colorBlueDark;
+	border:solid 6px $colorBlueDark;
 	/*text-shadow:0 2px 2px #333;*/
 
 	&:hover, 
 	&:focus,
 	&:active, 
 	&.active {
-		background:$colorBlueDark;
-		border-top-color:$colorBlueDark;
-		border-right-color:$colorBlueDark2;
-		border-bottom-color:$colorBlueDark2;
-		border-left-color:$colorBlueDark;
+		background:#5B93B1;
+		border-top-color:#5B93B1;
+		border-right-color:$colorBlueDark;
+		border-bottom-color:$colorBlueDark;
+		border-left-color:#5B93B1;
 	}
 
 }
