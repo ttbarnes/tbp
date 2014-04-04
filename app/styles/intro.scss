@@ -80,6 +80,7 @@ File: intro specifics
 }
 @media (max-width: 580px) {
 	.container .jumbotron {
+		padding-top:0 !important;
 		.innerBox {
 			display:inline-block;
 			width:100%;
@@ -87,19 +88,27 @@ File: intro specifics
 			border-right:0 none;
 			max-width:100%;
 			padding:10px;
-			img.headshot {
+			text-align:center;
+			.imgWrap {
+				display:none;
 				float:left;
-				max-width:90px;
+				width:90px;
 				margin-right:10px;
-				margin-bottom:0;
+				img.headshot {
+					max-width:90px;
+					margin-bottom:0;
+				}
 			}
+
 			h1 {
 				font-size:45px;
+				text-align:center;
 			}
 			h2 {
 				margin-top:10px;
 				margin-bottom:0;
 				font-size:18px;
+				text-align:center;
 			}
 		}
 	}
@@ -119,14 +128,22 @@ File: intro specifics
 			background-size:100% 100%;
 		}
 		.innerBox {
-			img.headshot {
+			br {
+				display:block;
+			}
+			.imgWrap {
 				display:none;
 			}
 			h1 {
 				font-size:35px;
+				span:last-child {
+					display:block;
+					clear:both;
+					margin-top:5px;
+				}
 			}
 			h2 {
-				font-size:15px;
+				font-size:16px;
 			}
 		}
 	}
