@@ -132,21 +132,29 @@ File: intro specifics
 		}
 		.innerBox {
 			br {
-				display:block;
+				display:none;
 			}
 			.imgWrap {
 				display:none;
 			}
 			h1 {
 				font-size:35px;
+				text-align:left;
 				span:last-child {
+					/*
 					display:block;
 					clear:both;
+					*/
 					margin-top:5px;
 				}
 			}
 			h2 {
 				font-size:16px;
+				text-align:left;
+				> span.iAmA span:last-child {
+					color:#0A1825;
+					text-shadow:0 2px 2px #35597B;
+				}
 			}
 		}
 	}
