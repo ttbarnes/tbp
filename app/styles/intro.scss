@@ -9,7 +9,7 @@ File: intro specifics
 		min-height:575px; /*fail safe for opera browser*/
 		.bigBg {
 			min-height:585px; /*fail safe for opera browser*/
-			background-image:url(../images/intro4-1500w.jpg);
+			background-image:url(../images/intro-1500w.jpg);
 		}
 		.innerBoxWrap {
 			max-width:1230px;
@@ -32,7 +32,7 @@ File: intro specifics
 		height:83%;
 		max-height:515px;
 		.bigBg {
-			background-image:url(../images/intro4-1100w.jpg);
+			background-image:url(../images/intro-1100w.jpg);
 			background-size:100% 100%;
 		}
 	}
@@ -43,7 +43,7 @@ File: intro specifics
 		height:68%;
 		max-height:430px;
 		.bigBg {
-			background-image:url(../images/intro4-992w.jpg);
+			background-image:url(../images/intro-992w.jpg);
 			background-size:100% 100%;
 		}
 	}
@@ -63,7 +63,7 @@ File: intro specifics
 		height:66%;
 		max-height:410px;
 		.bigBg {
-			background-image:url(../images/intro4-767w.jpg);
+			background-image:url(../images/intro-767w.jpg);
 			background-size:100% 100%;
 		}
 	}
@@ -76,7 +76,7 @@ File: intro specifics
 		min-height:365px;
 		max-height:365px;
 		.bigBg {
-			background-image:url(../images/intro4-700w.jpg);
+			background-image:url(../images/intro-700w.jpg);
 			background-size:initial;
 		}
 	}
@@ -120,14 +120,14 @@ File: intro specifics
 	.container .jumbotron {
 		overflow:hidden;
 		height:auto;
-		min-height:400px;
-		max-height:400px;
+		min-height:360px;
+		max-height:380px;
 		padding:0 !important;
 		.bigBg {
 			display:block;
-			max-height:400px;
+			max-height:360px;
 			background-color:#13283C;
-			background-image:url(../images/intro4-480w.jpg);
+			background-image:url(../images/intro-480w.jpg);
 			background-size:100% 100%;
 		}
 		.innerBox {
