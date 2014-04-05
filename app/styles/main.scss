@@ -72,12 +72,12 @@ typography
   src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
 ::-moz-selection {
-  background:#222;
+  background:$colorBlueDark;
 	color:$colorWhite;
 	text-shadow:none;
 }
 ::selection {
-  background:#222;
+  background:$colorBlueDark;
 	color:$colorWhite;
 	text-shadow:none;
 }
