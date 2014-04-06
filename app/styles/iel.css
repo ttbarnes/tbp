@@ -7,7 +7,6 @@ File: upgrade browser css
 div.browsehappy {
 	display:block !important;
 	width:auto;
-	color:darkred;
 }
 #mainContainer {
 	display:none;
