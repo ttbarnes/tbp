@@ -30,11 +30,14 @@ intro page
 		z-index:1;
 		background-size:100% auto;
 		background-repeat:no-repeat;
+		text-align:center;
 
 		p.scrollDown {
 			position: absolute;
+			left:0;
+			right:0;
 			bottom: 10%;
-			margin: 0;
+			margin: 0 auto;
 			display: inline-block;
 			color: #FFF;
 			text-shadow:0 2px 2px $colorBlack;
@@ -82,7 +85,7 @@ intro page
 				position:relative;
 				top:0;
 				left:0;
-				width:100%;
+				width:100px;
 				max-width:100px;
 				@include animation(introHeadshot 0.4s);
 			}
