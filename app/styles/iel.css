@@ -5,7 +5,7 @@ File: upgrade browser css
 /* ===========================================================*/
 
 div.browsehappy {
-	display:block;
+	display:block !important;
 	width:auto;
 	color:darkred;
 }
