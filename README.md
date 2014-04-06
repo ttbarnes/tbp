@@ -7,7 +7,7 @@ Built with AngularJS
 - [Yeoman (grunt, bower)] (http://yeoman.io)
 
 ##Installation
-1) Fork a copy of the app to your machine
+1) Fork a copy to your machine
 
 2) Install the dependancies:
 
