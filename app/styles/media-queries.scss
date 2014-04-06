@@ -166,7 +166,7 @@ responsive
 	h2 {
 		font-size:22px;
 	}
-	/*sub page heading bg (eg about/showcase.ind)*/
+	/*sub page heading bg (eg about, showcase.ind)*/
 	.row .col-md-12 h4 {
 		margin-bottom:10px;
 		font-size:16px;
@@ -515,6 +515,10 @@ responsive
 
 	/*intro page*/
 	div.introPage {
+		#containerMiddle div.subIntro h3 {
+			font-size:18px;
+		}
+
 		.recentReleases .span4 ul.projects .col-md-4 {
 			padding:7.5px 5px;
 		}

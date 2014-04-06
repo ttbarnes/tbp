@@ -4,12 +4,49 @@ Author: Tony Barnes
 File: intro specifics
 /* ===========================================================*/
 
-@media (min-width:1100px) {
+/*use different images and dimensions depending on the media query*/
+
+@media (min-width:1500px) {
 	.container .jumbotron {
-		min-height:575px; /*fail safe for opera browser*/
+		min-height:790px;
+		max-height:790px;
 		.bigBg {
-			min-height:585px; /*fail safe for opera browser*/
 			background-image:url(../images/intro-1500w.jpg);
+		}
+	}
+}
+
+@media (min-width:1200px) and (max-width:1500px){
+	.container .jumbotron {
+		min-height:627px;
+		max-height:627px;
+		.bigBg {
+			background-image:url(../images/intro-1200w.jpg);
+		}
+	}
+}
+
+@media (max-width:1200px) {
+	.container .jumbotron {
+		min-height:575px;
+		max-height:575px;
+		.bigBg {
+			background-image:url(../images/intro-1200w.jpg);
+			background-size:100% auto;
+		}
+	}
+}
+
+@media (max-width:1100px) {
+	.container .jumbotron {
+		padding:30px 0 !important;
+		.bigBg {
+			background-image:url(../images/intro-1100w.jpg);
+			min-height:575px;
+			max-height:575px;
+			p.scrollDown {
+				display:none;
+			}
 		}
 		.innerBoxWrap {
 			max-width:1230px;
@@ -18,50 +55,33 @@ File: intro specifics
 	}
 }
 
-@media (max-width:1100px) {
-	.container .jumbotron {
-		padding:30px 0 !important;
-		.bigBg p.scrollDown {
-			display:none;
-		}
-	}
-}
-
 @media (min-width:992px) and (max-width: 1100px) {
 	.container .jumbotron {
-		height:83%;
-		max-height:515px;
+		max-height:475px;
+		min-height:435px;
 		.bigBg {
 			background-image:url(../images/intro-1100w.jpg);
-			background-size:100% 100%;
+			background-size:100% auto;
 		}
 	}
 }	
 
 @media (min-width:767px) and (max-width: 992px) {
 	.container .jumbotron {
-		height:68%;
-		max-height:430px;
+		min-height:490px;
+		max-height:490px;	
 		.bigBg {
+			min-height:550px;
 			background-image:url(../images/intro-992w.jpg);
-			background-size:100% 100%;
+			background-size:auto 100%;
+			background-position:30% 0;
 		}
 	}
 }
 
-@media (min-width: 768px) {
-	.container .jumbotron {
-	  max-height:460px;
-	  .bigBg {
-	  	max-height:500px;
-	  }
-	}
-}
 
 @media (min-width:700px) and (max-width: 767px) {
 	.container .jumbotron {
-		height:66%;
-		max-height:410px;
 		.bigBg {
 			background-image:url(../images/intro-767w.jpg);
 			background-size:100% 100%;
@@ -77,7 +97,7 @@ File: intro specifics
 		max-height:365px;
 		.bigBg {
 			background-image:url(../images/intro-700w.jpg);
-			background-size:initial;
+			background-size:100% 70%;
 		}
 	}
 }
@@ -120,12 +140,13 @@ File: intro specifics
 	.container .jumbotron {
 		overflow:hidden;
 		height:auto;
-		min-height:360px;
-		max-height:380px;
+		min-height:335px;
+		max-height:335px;
 		padding:0 !important;
 		.bigBg {
 			display:block;
-			max-height:360px;
+			max-height:342px;
+			min-height:342px;
 			background-color:#13283C;
 			background-image:url(../images/intro-480w.jpg);
 			background-size:100% 100%;
@@ -141,10 +162,6 @@ File: intro specifics
 				font-size:35px;
 				text-align:left;
 				span:last-child {
-					/*
-					display:block;
-					clear:both;
-					*/
 					margin-top:5px;
 				}
 			}
@@ -156,6 +173,37 @@ File: intro specifics
 					text-shadow:0 2px 2px #35597B;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.container .jumbotron {
+		min-height:200px;
+		max-height:200px;
+
+		.bigBg {
+			background-position:50% 80%;
+			background-size:auto;
+			min-height:220px;
+			max-height:220px;
+		}
+		.innerBox {
+			h1 {
+				font-size:30px;
+			}
+			h2 {
+				display:none;
+			}
+		}
+	}
+}
+@media (max-width: 300px) {
+	.container .jumbotron .innerBox {
+		h1 {
+			font-size:28px;
+		}
+		h2 {
 		}
 	}
 }
