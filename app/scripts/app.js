@@ -6,7 +6,8 @@ var tbp = angular.module('tbpApp', [
   'ngRoute',
   'ngAnimate',
   'tbpControllers',
-  'angulartics'
+  'angulartics',
+  'angulartics.google.analytics'
 ]);
 
 tbp.config(function ($routeProvider) {
