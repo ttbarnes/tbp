@@ -9,5 +9,11 @@
 			{"tag": "JavaScript, jQuery"},
 			{"tag": "Play, Scala"}
 		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Converted paper based processes into a streamlined online application"},
+			{"item": "UX and mobile first approaches"},
+			{"item": "GDS guidlines and approvals"}
+		],
 		"liveUrl": "#"
 }
