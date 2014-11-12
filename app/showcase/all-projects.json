@@ -1,23 +1,29 @@
 [
-    {
-        "id": "dvla-sell-a-vehicle-to-the-trade", 
-        "name": "DVLA: Sell a Vehicle to the trade",
-        "category": "Web apps"
-    },
+
     {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
         "category": "Web apps"
     },
     {
-        "id": "the-store", 
+        "id": "dvla-sell-a-vehicle-to-the-motor-trade",
+        "name": "DVLA: Sell a Vehicle to the motor trade",
+        "category": "Web apps"
+    },
+    {
+        "id": "dvla-buy-a-vehicle-from-the-motor-trade",
+        "name": "DVLA: Buy a Vehicle from the motor trade",
+        "category": "Web apps"
+    },
+    {
+        "id": "the-store",
         "name": "The Store",
         "category": "Ecommerce"
     },
     {
-        "id": "new-naturalists", 
+        "id": "new-naturalists",
         "name": "New Naturalists",
-        "category": "Ecommerce" 
+        "category": "Ecommerce"
     },
     {
         "id": "collins-learning",
@@ -25,14 +31,14 @@
         "category": "Ecommerce"
     },
     {
-        "id": "tolkien", 
+        "id": "tolkien",
         "name": "Tolkien",
-        "category": "Ecommerce" 
+        "category": "Ecommerce"
     },
     {
         "id": "mr-waghu",
         "name": "Mr Waghu",
-        "category": "Ecommerce" 
+        "category": "Ecommerce"
     },
     {
         "id": "robbie-williams",
@@ -40,62 +46,62 @@
         "category": "Ecommerce"
     },
     {
-        "id": "farrell", 
+        "id": "farrell",
         "name": "Farrell",
         "category": "Ecommerce"
     },
     {
-        "id": "william-curley", 
+        "id": "william-curley",
         "name": "William Curley",
         "category": "Ecommerce"
     },
     {
-        "id": "hoover", 
+        "id": "hoover",
         "name": "Hoover Spares",
         "category": "Ecommerce"
     },
     {
-        "id": "electrolux", 
+        "id": "electrolux",
         "name": "Electrolux Parts & Accessories",
         "category": "Ecommerce"
     },
     {
-        "id": "aeg", 
+        "id": "aeg",
         "name": "AEG Parts & Accessories",
         "category": "Ecommerce"
     },
     {
-        "id": "zanussi", 
+        "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
         "category": "Ecommerce"
     },
     {
-        "id": "jbrand", 
+        "id": "jbrand",
         "name": "J Brand",
         "category": "Ecommerce"
     },
     {
-        "id": "werelse", 
+        "id": "werelse",
         "name": "Werelse",
         "category": "Ecommerce"
     },
     {
-        "id": "wpfp", 
+        "id": "wpfp",
         "name": "Who Pays Full Price",
         "category": "Ecommerce"
     },
     {
-        "id": "mara-explorers", 
+        "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Static"
     },
     {
-        "id": "powatag", 
+        "id": "powatag",
         "name": "Powatag",
         "category": "Static"
     },
     {
-        "id": "enterprising-britain", 
+        "id": "enterprising-britain",
         "name": "Enterprising Britain",
         "category": "Static"
     },
@@ -110,12 +116,12 @@
         "category": "Static"
     },
     {
-        "id": "propax-malaysia", 
+        "id": "propax-malaysia",
         "name": "Propax Malaysia",
         "category": "Static"
     },
     {
-        "id": "cathy-brown", 
+        "id": "cathy-brown",
         "name": "Cathy Brown",
         "category": "Static"
     },
@@ -130,7 +136,7 @@
         "category": "Static"
     },
     {
-        "id": "life-financial-solutions", 
+        "id": "life-financial-solutions",
         "name": "Life Financial Solutions",
         "category": "Static"
     },
@@ -145,7 +151,7 @@
         "category": "Static"
     },
     {
-        "id": "gold-challenge", 
+        "id": "gold-challenge",
         "name": "Gold Challenge",
         "category": "Static"
     },
@@ -160,17 +166,17 @@
         "category": "Static"
     },
     {
-        "id": "jquery/list-icon-manipulator", 
+        "id": "jquery/list-icon-manipulator",
         "name": "List Icon Manipulator",
         "category": "jQuery plugins"
     },
     {
-        "id": "jquery/active-hover-states", 
+        "id": "jquery/active-hover-states",
         "name": "Active Hover States",
         "category": "jQuery plugins"
     },
     {
-        "id": "jquery/portrolio", 
+        "id": "jquery/portrolio",
         "name": "Portrolio",
         "category": "jQuery plugins"
     },

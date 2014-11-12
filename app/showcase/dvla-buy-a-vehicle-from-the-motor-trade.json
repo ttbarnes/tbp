@@ -1,6 +1,6 @@
 {
-		"id": "dvla-sell-a-vehicle-to-the-trade", 
-		"name": "DVLA: Sell a Vehicle to the trade",
+		"id": "dvla-buy-a-vehicle-from-the-motor-trade",
+		"name": "DVLA: Buy a Vehicle from the motor trade",
 		"category": "Web apps",
 		"date": "2014",
 		"tech": [
