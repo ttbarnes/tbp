@@ -1,22 +1,22 @@
 [
     {
-        "id": "mara-explorers", 
-        "name": "Mara Explorers",
-		"category": "Static"
-    },
-	{
-        "id": "jquery/list-icon-manipulator", 
-        "name": "List Icon Manipulator",
-		"category": "jQuery plugins"
-    },
-	{
-        "id": "the-store",
-        "name": "The Store",
-		"category": "Ecommerce"
+        "id": "dvla-personalised-registrations",
+        "name": "DVLA: Personalised Registrations",
+        "category": "Web apps"
     },
     {
-        "id": "new-naturalists", 
-        "name": "New Naturalists",
-        "category": "Ecommerce"
+        "id": "dvla-sell-a-vehicle-to-the-motor-trade",
+        "name": "DVLA: Sell a Vehicle to the motor trade",
+        "category": "Web apps"
+    },
+    {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "category": "Static"
+    },
+    {
+        "id": "jquery/list-icon-manipulator",
+        "name": "List Icon Manipulator",
+        "category": "jQuery plugins"
     }
 ]
