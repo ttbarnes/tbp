@@ -7,7 +7,7 @@
     <div class="row topHeading">
       <div class="col-md-12">
         <h2><span>{{project.name}}<span class="date">{{project.date}}</span></span></h2>
-      </div>  
+      </div>
     </div>
 
     <div class="row imgWrap">
@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" ng-if="project.how.thoughts">
           <div class="col-md-12 story">
             <h4><span>{{project.how.title}}</span></h4>
             <div class="col-md-12">
@@ -63,5 +63,5 @@
     </div>
   </div>
 </div>
-  
+
 <ng-include src="'views/footer.html'"></ng-include>
