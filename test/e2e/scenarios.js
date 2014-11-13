@@ -5,9 +5,9 @@ describe('Page-view: Intro', function() {
     browser().navigateTo('/#/');
   });
 
-	describe('Recent releases', function() {
+	describe('Latest projects', function() {
 		it('should have 4 items assigned/limited', function(){
-			var x = '#recentReleases ul li';
+			var x = '#latestProjects ul li';
 			expect(repeater(x).count()).toEqual(4);
 		});
 	});
@@ -42,7 +42,7 @@ describe('Header', function() {
 		});
 
 	});
-	
+
 	describe('Navbar links', function() {
 		it('should have 2 items', function(){
 			expect(element('header .navbar-nav li').count()).toEqual(2);
@@ -120,7 +120,7 @@ describe('Page-view: Showcase home', function(){
   	element('ul.showcaseGalleryGrid li a:first-child').click();
     expect(browser().location().url()).toContain('/showcase'); //currently only one child page avaliable
   });
-  
+
   it('should have some disclaimer text', function(){
   	var expectedDisclaimer = 'Unfortunately not all of my work is displayed here. These pieces were built on a full time, freelance or contributing basis.';
   	expect(element('div.disclaimer p').html()).toEqual(expectedDisclaimer);
@@ -144,7 +144,7 @@ describe('Page-view: Showcase individual', function(){
 		expect(browser().location().url()).toContain('/showcase');
 	});
 
-});	
+});
 
 describe('Page-view: About', function(){
 	beforeEach(function() {
@@ -164,7 +164,7 @@ describe('Page-view: About', function(){
 			expect(browser().location().url()).toEqual('/showcase');
 		});
 	});
-	
+
 });
 
 describe('Page-view: Contact', function(){
