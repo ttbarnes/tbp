@@ -55,10 +55,13 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
 tbpControllers.controller('indShowcasePieceCtrl', ['$scope', '$routeParams', '$http', 'windowScrollTop',
   function($scope, $routeParams, $http, windowScrollTop) {
     $scope.pageClass = 'showcaseIndPage';
+    $scope.projectId = $routeParams.projectId;
 
-    $http.get('showcase/' + $routeParams.projectId+ '.json').success(function(data) {
+    $http.get('showcase/' + $scope.projectId + '.json').success(function(data) {
       $scope.project = data;
     });
+
+    $scope.imageUrl = 'images/showcase/' + $scope.projectId + '/01.jpg';
 
     $scope.scrollTop = function () {
       windowScrollTop();
