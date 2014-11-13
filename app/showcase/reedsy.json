@@ -1,0 +1,16 @@
+{
+    "id": "reedsy",
+    "name": "Reedsy",
+    "category": "Web apps",
+    "date": "2014",
+    "tech": [
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Sass"},
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript, jQuery"},
+      {"tag": "Rails"},
+      {"tag": "Photoshop"}
+    ],
+    "moreInfoSoon":true,
+    "liveUrl": "http://reedsy.com"
+}
