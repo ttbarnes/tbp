@@ -1,5 +1,10 @@
 [
     {
+        "id": "reedsy",
+        "name": "Reedsy",
+        "category": "Web apps"
+    },
+    {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
         "category": "Web apps"
@@ -13,10 +18,5 @@
         "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Static"
-    },
-    {
-        "id": "jquery/list-icon-manipulator",
-        "name": "List Icon Manipulator",
-        "category": "jQuery plugins"
     }
 ]

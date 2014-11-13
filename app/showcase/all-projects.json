@@ -1,5 +1,11 @@
 [
 
+
+    {
+        "id": "reedsy",
+        "name": "Reedsy",
+        "category": "Web apps"
+    },
     {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
