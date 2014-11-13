@@ -22,7 +22,7 @@ responsive
 		width:100%;
 	}
 }
-	
+
 @media (max-width: 1000px) {
 	#containerMiddle {
 		margin:0;
@@ -34,7 +34,7 @@ responsive
 		font-size:20px;
 	}
 
-	.btn-lg, 
+	.btn-lg,
 	.btn-group-lg > .btn {
 		padding:20px;
 	}
@@ -64,7 +64,7 @@ responsive
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-	.recentReleases .span4 .col-md-4 {
+	.latestProjects .span4 .col-md-4 {
 		width:24.4444444444%;
 	}
 }
@@ -110,7 +110,7 @@ responsive
 			}
 		}
 	}
-	
+
 
 	/*about page*/
 	.aboutPage #containerMiddle .row  {
@@ -140,7 +140,7 @@ responsive
 			}
 		}
 	}
-}	
+}
 
 @media (min-width: 992px) {
 	.container {
@@ -233,22 +233,22 @@ responsive
 
 
 	/*intro page*/
-	.recentReleases {
+	.latestProjects {
 		.span4 {
 		  h3 {
 		    text-align:center;
 		    margin-bottom:0;
-		  }			
+		  }
 		  ul.projects {
 		  	padding:0 10px;
-		  	.col-md-4 {	
+		  	.col-md-4 {
 					width:50%;
 					max-width:250px;
 					float:none;
 					padding:15px;
 				}
 		  }
-		  .col-md-4 {	
+		  .col-md-4 {
 				width:50%;
 				max-width: 250px;
 				float: none;
@@ -278,7 +278,7 @@ responsive
 		}
 		ul.showcaseGalleryGrid {
 			text-align:center;
-		  li.col-xs-3 {						
+		  li.col-xs-3 {
 				width:33.3333333333%;
 				max-width: 238px;
 				float: none;
@@ -316,7 +316,7 @@ responsive
 		}
 	}
 
-	/*about page*/	
+	/*about page*/
   .aboutPage #containerMiddle {
 		.row .col-md-12 .col-md-12 .skillsetChart {
 			height:auto;
@@ -519,7 +519,7 @@ responsive
 			font-size:18px;
 		}
 
-		.recentReleases .span4 ul.projects .col-md-4 {
+		.latestProjects .span4 ul.projects .col-md-4 {
 			padding:7.5px 5px;
 		}
 	}
@@ -538,7 +538,7 @@ responsive
 	/*showcase page*/
 	.showcaseHomePage {
 		ul.showcaseGalleryGrid {
-		  li.col-xs-3 {						
+		  li.col-xs-3 {
 				width:50%;
 				padding:2px;
 				max-width:238px;
@@ -587,7 +587,7 @@ responsive
 	.navbar-default h1 a.navbar-brand {
 		font-size:22px;
 	}
-	.recentReleases .span4 .col-md-4 {	
+	.latestProjects .span4 .col-md-4 {
 		max-width:100%;
 	}
 	/*showcase home page*/

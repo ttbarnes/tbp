@@ -7,7 +7,7 @@ tbpControllers.controller('introCtrl', ['$scope', '$http', 'windowScrollTop',
   function($scope, $http, windowScrollTop) {
     $scope.pageClass = 'introPage';
 
-    $http.get('showcase/recent-releases.json').success(function(data) {
+    $http.get('showcase/latest-projects.json').success(function(data) {
       $scope.projects = data;
     });
 
