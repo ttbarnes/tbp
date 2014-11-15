@@ -422,6 +422,16 @@ about page
   #containerMiddle {
 
     .row {
+      &.aboutIntro,
+      &.randomStuff {
+        a {
+          color:$colorBlueLight3;
+          text-decoration:underline;
+          &:hover {
+            text-decoration:none;
+          }
+        }
+      }
       &.aboutIntro {
         padding-bottom:30px;
         > .col-md-12 {
@@ -436,19 +446,7 @@ about page
         p:last-child {
           margin-bottom:0;
         }
-        a {
-          color:$colorBlueLight3;
-          text-decoration:underline;
-          &:hover {
-            text-decoration:none;
-          }
-        }
       }
-      /*
-      .col-md-3 {
-        padding-left:0;
-      }
-      */
    }
     .row .skillsetChartWrapper {
       text-align:center;
