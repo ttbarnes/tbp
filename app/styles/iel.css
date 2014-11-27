@@ -5,9 +5,9 @@ File: upgrade browser css
 /* ===========================================================*/
 
 div.browsehappy {
-	display:block !important;
-	width:auto;
+  display:block !important;
+  width:auto;
 }
 #mainContainer {
-	display:none;
+  display:none;
 }
