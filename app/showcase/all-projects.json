@@ -1,9 +1,12 @@
 [
-
-
     {
         "id": "reedsy",
         "name": "Reedsy",
+        "category": "Web apps"
+    },
+    {
+        "id": "tailster",
+        "name": "Tailster",
         "category": "Web apps"
     },
     {
