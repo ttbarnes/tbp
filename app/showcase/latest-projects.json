@@ -5,6 +5,11 @@
         "category": "Web apps"
     },
     {
+        "id": "tailster",
+        "name": "Tailster",
+        "category": "Web apps"
+    },
+    {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
         "category": "Web apps"
