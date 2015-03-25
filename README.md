@@ -2,9 +2,10 @@
 Built with AngularJS
 
 ##Prerequisites
-- [Ruby, compass] (http://compass-style.org/install/)
+- [ruby, compass] (http://compass-style.org/install/)
 - [node.js] (http://nodejs.org/)
-- [Yeoman (grunt, bower)] (http://yeoman.io)
+- [grunt] (http://gruntjs.com/)
+- [bower] (http://bower.io/)
 
 ##Installation
 1) Fork a copy to your machine
