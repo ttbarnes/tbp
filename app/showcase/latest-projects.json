@@ -1,5 +1,9 @@
 [
-    
+    {
+        "id": "angular-poc-demos",
+        "name": "Angular proof of concept demos",
+        "category": "Web apps"
+    },
     {
         "id": "fifthweek",
         "name": "Fifthweek",
@@ -13,11 +17,6 @@
     {
         "id": "tailster",
         "name": "Tailster",
-        "category": "Web apps"
-    },
-    {
-        "id": "dvla-personalised-registrations",
-        "name": "DVLA: Personalised Registrations",
         "category": "Web apps"
     }
 ]
