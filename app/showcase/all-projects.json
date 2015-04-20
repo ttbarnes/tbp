@@ -110,6 +110,11 @@
         "category": "Ecommerce"
     },
     {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "category": "Static"
+    },
+    {
         "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Static"
