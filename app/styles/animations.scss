@@ -250,16 +250,16 @@ about page, skill set bars
 
 /*bar mobile*/
 @-webkit-keyframes skillsetBarMobile {
-  @include skillsetBar80perc;
+  @include skillsetBar90perc;
 }
 @-moz-keyframes skillsetBarMobile {
-  @include skillsetBar80perc;
+  @include skillsetBar90perc;
 }
 @-o-keyframes skillsetBarMobile {
-  @include skillsetBar80perc;
+  @include skillsetBar90perc;
 }
 @keyframes skillsetBarMobile {
-  @include skillsetBar80perc;
+  @include skillsetBar90perc;
 }
 
 /*bar jquery*/
@@ -292,14 +292,14 @@ about page, skill set bars
 
 /*bar angular*/
 @-webkit-keyframes skillsetBarAngular {
-  @include skillsetBar40perc;
+  @include skillsetBar60perc;
 }
 @-moz-keyframes skillsetBarAngular {
-  @include skillsetBar40perc;
+  @include skillsetBar60perc;
 }
 @-o-keyframes skillsetBarAngular {
-  @include skillsetBar40perc;
+  @include skillsetBar60perc;
 }
 @keyframes skillsetBarAngular {
-  @include skillsetBar40perc;
+  @include skillsetBar60perc;
 }
