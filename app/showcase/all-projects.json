@@ -1,5 +1,10 @@
 [
     {
+        "id": "fifthweek",
+        "name": "Fifthweek",
+        "category": "Web apps"
+    },
+    {
         "id": "reedsy",
         "name": "Reedsy",
         "category": "Web apps"
