@@ -1,5 +1,10 @@
 [
     {
+        "id": "angular-pocs",
+        "name": "Angular proof of concept demos",
+        "category": "Web apps"
+    },
+    {
         "id": "fifthweek",
         "name": "Fifthweek",
         "category": "Web apps"

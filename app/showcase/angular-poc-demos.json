@@ -1,0 +1,13 @@
+{
+    "id": "angular-poc-demos",
+    "name": "Angular proof of concept demos",
+    "category": "Web apps",
+    "date": "2015 - present",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Sass"}
+    ],
+    "moreInfoSoon":true
+}
