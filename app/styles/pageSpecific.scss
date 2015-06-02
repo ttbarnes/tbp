@@ -468,7 +468,7 @@ about page
         height: auto;
         margin: 0 0.5% 0 0;
         padding:0 0.5%;
-        width:13%;
+        width:9.5%;
         position: relative;
         text-align: center;
         vertical-align: bottom;
@@ -495,7 +495,6 @@ about page
         &.bar {
           background:#EEE;
           min-height:150px;
-          /*border-right:solid 3px #175B38;*/
           color:$colorBlack;
 
           .skill,
@@ -513,13 +512,22 @@ about page
             width:100%;
             font-size:16px;
             color:#14381F;
+            @media (min-width:768px) {
+              font-size:12px;
+            }
+            @media (min-width:850px) {
+              font-size:13px;
+            }
+            @media (min-width:900px) {
+              font-size:14px;
+            }
           }
           .rating {
             width: 100%;
             opacity:0.2;
             margin-top:5px;
             margin-bottom:10px;
-            font-size: 16px;
+            font-size:14px;
           }
 
           &.html,
@@ -536,17 +544,23 @@ about page
           }
           &.javascript,
           &.angular {
-            height:60%;
+            height:70%;
             min-height:90px;
             background:#b9efca;
           }
-          /*
-          &.something-40percent {
-            height:40%;
+          &.node-express,
+          &.mean {
+            height:50%;
             min-height:60px;
             background:#d6efde;
           }
-          */
+
+          br {
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+            }
+          }
         }
       }
     }
