@@ -127,6 +127,18 @@ hover styles - page specific
       -o-animation: 1s skillsetBarAngular;
       animation: 1s skillsetBarAngular;
     }
+    &.node-express {
+      -webkit-animation: 1s skillsetBarNodeExpress;
+      -moz-animation: 1s skillsetBarNodeExpress;
+      -o-animation: 1s skillsetBarNodeExpress;
+      animation: 1s skillsetBarNodeExpress;
+    }
+    &.mean {
+      -webkit-animation: 1s skillsetBarMean;
+      -moz-animation: 1s skillsetBarMean;
+      -o-animation: 1s skillsetBarMean;
+      animation: 1s skillsetBarMean;
+    }
   }
 }
 

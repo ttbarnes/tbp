@@ -131,14 +131,6 @@ responsive
         padding-bottom:0;
       }
     }
-    &.skillsetChartWrapper .col-md-12 .skillsetChart {
-      li.bar {
-        .skill,
-        .rating {
-          font-size:14px;
-        }
-      }
-    }
   }
 }
 
@@ -357,7 +349,6 @@ responsive
             margin-top:0;
             vertical-align:middle;
             padding:0 10px;
-            font-size:15px;
           }
           .skill {
             margin:0;
