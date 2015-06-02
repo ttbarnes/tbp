@@ -9,5 +9,6 @@
       {"tag": "HTML5, CSS3"},
       {"tag": "Sass"}
     ],
+    "liveUrl": "https://angular-poc-demos.firebaseapp.com",
     "moreInfoSoon":true
 }
