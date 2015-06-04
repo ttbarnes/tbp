@@ -331,11 +331,10 @@ showcase individual page
           > span {
             position:relative;
             span.date {
-              position:absolute;
-              right:15px;
-              font-size: 13px;
-              color: #96BCCF;
-              margin-top: 9px;
+              font-size:13px;
+              color:#96BCCF;
+              opacity:0.7;
+              margin-left:5px;
             }
           }
         }
@@ -388,6 +387,21 @@ showcase individual page
         }
       }
     }
+
+    .row > .col-md-12 > {
+      h2,
+      h4 {
+        background:none;
+        > span {
+          max-width:735px;
+        }
+      }
+      .col-md-12 {
+        max-width:735px;
+      }
+    }
+
+
   }
 }
 
