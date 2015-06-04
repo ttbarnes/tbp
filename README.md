@@ -1,6 +1,8 @@
 # Tony Barnes Portfolio
 Built with AngularJS
 
+Please note: This portfolio was built quite some time ago as my first angular app. The code could be 10,000 better, but it's visually nice and has good performance. I will be rebuilding when possible.
+
 ##Prerequisites
 - [ruby, compass] (http://compass-style.org/install/)
 - [node.js] (http://nodejs.org/)
