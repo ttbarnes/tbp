@@ -317,6 +317,7 @@ showcase home page
 showcase individual page
 *********************/
 .showcaseIndPage {
+  background:$colorWhite;
   #containerMiddle {
 
     .row > .row {
@@ -330,6 +331,8 @@ showcase individual page
         h2 {
           > span {
             position:relative;
+            background:none;
+            padding:0 15px;
             span.date {
               font-size:13px;
               color:#96BCCF;
@@ -344,9 +347,6 @@ showcase individual page
         .col-md-12 {
           padding-bottom:0;
         }
-      }
-      .col-md-12.deliver {
-        background:#ECF9FF;
       }
     }
     .imgWrap .col-md-12 {
@@ -388,16 +388,19 @@ showcase individual page
       }
     }
 
-    .row > .col-md-12 > {
-      h2,
-      h4 {
+    .row > .col-md-12 {
+      float:none;
+      max-width:735px;
+      margin:0 auto;
+      > h2,
+      > h4 {
         background:none;
         > span {
-          max-width:735px;
+          display:inline-block;
+          max-width:100%;
+          background:#C3DEEB;
+          padding:10px;
         }
-      }
-      .col-md-12 {
-        max-width:735px;
       }
     }
 
