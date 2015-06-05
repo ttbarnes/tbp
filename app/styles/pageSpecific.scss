@@ -369,8 +369,29 @@ showcase individual page
           margin-left:20px;
         }
       }
+      .deliver {
+        display:inline-block;
+        vertical-align:top;
+        @media (min-width:600px) {
+          display:block;
+        }
+      }
+      .tech-title {
+        @media (min-width:600px) {
+          float:left;
+          margin:{
+            top:15px;
+            right:15px;
+          }
+        }
+      }
       .tagsWrap {
-        margin-bottom:0;
+        @media (min-width:600px) {
+          float:left;
+          margin-bottom:0;
+          clear:none;
+          width:auto;
+        }
       }
       .story {
         padding-bottom:25px;
