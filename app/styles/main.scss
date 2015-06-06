@@ -587,6 +587,12 @@ div.tags {
     &.Scala {
       background:$colorBlueLight3;
     }
+    &.Grunt {
+      background:#E48632;
+    }
+    &.Gulp {
+      background:#CF4646;
+    }
   }
   div {
     width:auto;
