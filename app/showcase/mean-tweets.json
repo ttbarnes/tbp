@@ -1,15 +1,17 @@
 {
-    "id": "angular-poc-demos",
-    "name": "Angular proof of concept demos",
+    "id": "mean-tweets",
+    "name": "Mean tweets",
     "category": "Web apps",
     "date": "2015",
     "tech": [
+      {"tag": "MongoDB, Mongoose"},
+      {"tag": "Express, Node.js"},
       {"tag": "AngularJS"},
       {"tag": "JavaScript"},
       {"tag": "HTML5, CSS3"},
       {"tag": "Grunt"},
       {"tag": "Sass"}
     ],
-    "liveUrl": "https://angular-poc-demos.firebaseapp.com",
+    "liveUrl": "http://mean-tweets.herokuapp.com",
     "moreInfoSoon":true
 }
