@@ -1,5 +1,10 @@
 [
     {
+        "id": "mean-tweets",
+        "name": "Mean tweets",
+        "category": "Web apps"
+    },
+    {
         "id": "angular-poc-demos",
         "name": "Angular proof of concept demos",
         "category": "Web apps"
