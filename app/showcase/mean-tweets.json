@@ -12,6 +12,6 @@
       {"tag": "Grunt"},
       {"tag": "Sass"}
     ],
-    "liveUrl": "http://mean-tweets.herokuapp.com",
+    "liveUrl": "https://mean-tweets.herokuapp.com",
     "moreInfoSoon":true
 }
