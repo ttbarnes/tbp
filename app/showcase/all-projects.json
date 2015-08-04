@@ -40,13 +40,8 @@
         "category": "Web apps"
     },
     {
-        "id": "the-store",
-        "name": "The Store",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "new-naturalists",
-        "name": "New Naturalists",
+        "id": "robbie-williams",
+        "name": "Robbie Williams",
         "category": "Ecommerce"
     },
     {
@@ -57,31 +52,6 @@
     {
         "id": "tolkien",
         "name": "Tolkien",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "mr-waghu",
-        "name": "Mr Waghu",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "robbie-williams",
-        "name": "Robbie Williams",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "farrell",
-        "name": "Farrell",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "william-curley",
-        "name": "William Curley",
-        "category": "Ecommerce"
-    },
-    {
-        "id": "hoover",
-        "name": "Hoover Spares",
         "category": "Ecommerce"
     },
     {
@@ -97,6 +67,36 @@
     {
         "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "hoover",
+        "name": "Hoover Spares",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "the-store",
+        "name": "The Store",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "william-curley",
+        "name": "William Curley",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "farrell",
+        "name": "Farrell",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "new-naturalists",
+        "name": "New Naturalists",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
         "category": "Ecommerce"
     },
     {
@@ -150,21 +150,6 @@
         "category": "Static"
     },
     {
-        "id": "cathy-brown",
-        "name": "Cathy Brown",
-        "category": "Static"
-    },
-    {
-        "id": "peter-utton-blog",
-        "name": "Peter Utton Tumblr Blog",
-        "category": "Static"
-    },
-        {
-        "id": "peter-utton-website-v2",
-        "name": "Peter Utton",
-        "category": "Static"
-    },
-    {
         "id": "life-financial-solutions",
         "name": "Life Financial Solutions",
         "category": "Static"
@@ -174,24 +159,9 @@
         "name": "Celebrity Smiles",
         "category": "Static"
     },
-        {
-        "id": "you-affiliate-network",
-        "name": "You Affiliate Network",
-        "category": "Static"
-    },
     {
         "id": "gold-challenge",
         "name": "Gold Challenge",
-        "category": "Static"
-    },
-    {
-        "id": "peter-utton-website-v1",
-        "name": "Peter Utton",
-        "category": "Static"
-    },
-        {
-        "id": "barnzy",
-        "name": "Barnzy",
         "category": "Static"
     },
     {
@@ -208,95 +178,5 @@
         "id": "jquery/portrolio",
         "name": "Portrolio",
         "category": "jQuery plugins"
-    },
-    {
-        "id": "boxed-digital-holding",
-        "name": "Boxed Digital",
-        "category": "Holding pages"
-    },
-    {
-        "id": "peter-utton-holding",
-        "name": "Peter Utton",
-        "category": "Holding pages"
-    },
-    {
-        "id": "werelse-holding",
-        "name": "Werelse",
-        "category": "Holding pages"
-    },
-    {
-        "id": "barnzy-holding",
-        "name": "Barnzy",
-        "category": "Holding pages"
-    },
-    {
-        "id": "mara-explorers-brand",
-        "name": "Mara Explorers",
-        "category": "Brand identity"
-    },
-    {
-        "id": "bargain-sounds-brand",
-        "name": "Bargain Sounds",
-        "category": "Brand identity"
-    },
-    {
-        "id": "peter-utton-brand",
-        "name": "Peter Utton",
-        "category": "Brand identity"
-    },
-    {
-        "id": "browny-brand",
-        "name": "Browny",
-        "category": "Brand identity"
-    },
-    {
-        "id": "double-trouble-brand",
-        "name": "Double Trouble",
-        "category": "Brand identity"
-    },
-    {
-        "id": "cathy-brown-brand",
-        "name": "Cathy Brown",
-        "category": "Brand identity"
-    },
-    {
-        "id": "life-financial-solutions-brand",
-        "name": "Life Financial Solutions",
-        "category": "Brand identity"
-    },
-    {
-        "id": "james-taff-jt2-brand",
-        "name": "James Taff and JT2",
-        "category": "Brand identity"
-    },
-    {
-        "id": "celebrity-smiles-brand",
-        "name": "Celebrity Smiles",
-        "category": "Brand identity"
-    },
-    {
-        "id": "barnzy-brand",
-        "name": "Barnzy",
-        "category": "Brand identity"
-    },
-    {
-        "id": "furniture-city",
-        "name": "Furniture City",
-        "category": "Designs, mockups"
-    },
-    {
-        "id": "fitness-instruction",
-        "name": "Fitness Instruction",
-        "category": "Designs, mockups"
-    },
-    {
-        "id": "checkpoint",
-        "name": "Checkpoint",
-        "category": "Designs, mockups"
-    },
-    {
-        "id": "rush",
-        "name": "Rush",
-        "category": "Designs, mockups"
     }
 ]
