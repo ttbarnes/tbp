@@ -220,6 +220,10 @@ about page, skill set bars
   0% {height:0;opacity:0;}
   100% {height:50%;opacity:1;}
 }
+@mixin skillsetBar60perc {
+  0% {height:0;opacity:0;}
+  100% {height:60%;opacity:1;}
+}
 
 /*bar html*/
 @-webkit-keyframes skillsetBarHtml {
@@ -319,14 +323,14 @@ about page, skill set bars
 }
 
 @-webkit-keyframes skillsetBarMean {
-  @include skillsetBar50perc;
+  @include skillsetBar60perc;
 }
 @-moz-keyframes skillsetBarMean {
-  @include skillsetBar50perc;
+  @include skillsetBar60perc;
 }
 @-o-keyframes skillsetBarMean {
-  @include skillsetBar50perc;
+  @include skillsetBar60perc;
 }
 @keyframes skillsetBarMean {
-  @include skillsetBar50perc;
+  @include skillsetBar60perc;
 }

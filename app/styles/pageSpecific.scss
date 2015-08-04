@@ -615,10 +615,14 @@ about page
             min-height:90px;
             background:#b9efca;
           }
-          &.node-express,
           &.mean {
-            height:50%;
+            height:60%;
             min-height:60px;
+            background:#d6efde;
+          }
+          &.node-express {
+            height:50%;
+            min-height:50px;
             background:#d6efde;
           }
 
