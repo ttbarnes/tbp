@@ -2,15 +2,20 @@
     "id": "tailster",
     "name": "Tailster",
     "category": "Web apps",
-    "date": "2015",
+    "date": "2014-15",
     "tech": [
       {"tag": "HTML5, CSS3"},
-      {"tag": "Sass"},
+      {"tag": "Less"},
       {"tag": "AngularJS"},
       {"tag": "JavaScript"},
       {"tag": "Gulp"},
       {"tag": "Photoshop"}
     ],
-    "moreInfoSoon":true,
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      {"item": "Many new features, integrating with APIs"},
+      {"item": "Integrated a new, cleaner design"},
+      {"item": "Refactoring, cleaning codebase"}
+    ],
     "liveUrl": "http://tailster.com"
 }
