@@ -10,6 +10,10 @@
       {"tag": "Grunt"},
       {"tag": "Sass"}
     ],
-    "liveUrl": "https://angular-poc-demos.firebaseapp.com",
-    "moreInfoSoon":true
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      {"item": "Created whilst learning and seeking examples of some angular features"},
+      {"item": "Various examples of forms, ng-repeat, services, directives, scope watch, testing"}
+    ],
+    "liveUrl": "https://angular-poc-demos.firebaseapp.com"
 }
