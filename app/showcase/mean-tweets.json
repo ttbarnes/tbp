@@ -12,6 +12,12 @@
       {"tag": "Grunt"},
       {"tag": "Sass"}
     ],
-    "liveUrl": "https://mean-tweets.herokuapp.com",
-    "moreInfoSoon":true
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      {"item": "Created from the ground up in order to learn more about Node, Express and MongoDB"},
+      {"item": "Built a fairly in-depth node API that interacts with a DB"},
+      {"item": "Clean and modular angular app on the front end"},
+      {"item": "Built a timeline feature that queries the API depending on who a user follows and the followee's tweets/retweets"}
+    ],
+    "liveUrl": "https://mean-tweets.herokuapp.com"
 }
