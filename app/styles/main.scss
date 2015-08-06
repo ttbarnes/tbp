@@ -556,15 +556,18 @@ div.tags {
     &.HTML5, &.CSS3 {
       background:$colorRedLight;
     }
-    &.Sass {
+    &.Sass,
+    &.Less {
       background:$colorPinkLight;
     }
     &.Static {
       background:$colorBlueLightHeader;
     }
-    &.jQuery,
+    &.jQuery {
+      background:#0667AB;
+    }
     &.JavaScript {
-      background:$colorGreenLight;
+      background:#CFBD44;
     }
     &.Holding,
     &.AJAX {
@@ -579,13 +582,29 @@ div.tags {
     &.Powa,
     &.Magento,
     &.Joomla,
-    &.PHP {
-      background:#A5A5A5;
+    &.PHP,
+    &.Express,
+    &.Node {
+      color: #454545;
+      background: #C6C6C6;
+    }
+    &.AngularJS {
+      background:#E23337;
+    }
+    &.MongoDB,
+    &.Mongoose {
+      background:#6ba442;
+    }
+    &.Rails {
+      background:#981a21;
     }
     &.Fireworks,
     &.Photoshop,
-    &.Scala {
+    &.Sketch {
       background:$colorBlueLight3;
+    }
+    &.Scala {
+      background:#52B2A3;
     }
     &.Grunt {
       background:#E48632;
