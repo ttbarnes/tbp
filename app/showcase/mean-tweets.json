@@ -5,7 +5,7 @@
     "date": "2015",
     "tech": [
       {"tag": "MongoDB, Mongoose"},
-      {"tag": "Express, Node.js"},
+      {"tag": "Express, Node js"},
       {"tag": "AngularJS"},
       {"tag": "JavaScript"},
       {"tag": "HTML5, CSS3"},
