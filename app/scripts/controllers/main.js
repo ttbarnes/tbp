@@ -34,10 +34,7 @@ tbpControllers.controller('showcaseGridCtrl', ['$scope', '$http', 'windowScrollT
       'Web apps',
       'Ecommerce',
       'Static',
-      'jQuery plugins',
-      'Holding pages',
-      'Brand identity',
-      'Designs, mockups'
+      'jQuery plugins'
     ];
 
     $scope.byCategory = function(project){
