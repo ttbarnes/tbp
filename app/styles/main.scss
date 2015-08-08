@@ -195,7 +195,6 @@ buttons
         border-right-color:#C3DEEB;
         border-bottom-color:#C3DEEB;
         border-left-color:$colorBlueLight;
-        /*text-shadow:0 3px 2px #275F7B;*/
       }
     }
 
@@ -477,7 +476,7 @@ footer {
       a {
         padding:5px 8px;
         display:block;
-        color:#0C3E59;
+        color:#0D3952;
         i {
           font-size:35px;
         }
@@ -544,10 +543,10 @@ div.tags {
   div,
   button {
     font-size:13px;
-    padding:13px 15px;
-    color:$colorWhite;
+    padding:6px 8px;
+    color:#F5F5F5;
     border:0 none;
-    margin:3px 3px 0 0;
+    margin:3px;
     vertical-align:middle;
     text-align:center;
 
@@ -557,15 +556,18 @@ div.tags {
     &.HTML5, &.CSS3 {
       background:$colorRedLight;
     }
-    &.Sass {
+    &.Sass,
+    &.Less {
       background:$colorPinkLight;
     }
     &.Static {
       background:$colorBlueLightHeader;
     }
-    &.jQuery,
+    &.jQuery {
+      background:#0667AB;
+    }
     &.JavaScript {
-      background:$colorGreenLight;
+      background:#CFBD44;
     }
     &.Holding,
     &.AJAX {
@@ -580,13 +582,35 @@ div.tags {
     &.Powa,
     &.Magento,
     &.Joomla,
-    &.PHP {
-      background:#A5A5A5;
+    &.PHP,
+    &.Express,
+    &.Node {
+      color: #454545;
+      background: #C6C6C6;
+    }
+    &.AngularJS {
+      background:#E23337;
+    }
+    &.MongoDB,
+    &.Mongoose {
+      background:#6ba442;
+    }
+    &.Rails {
+      background:#981a21;
     }
     &.Fireworks,
     &.Photoshop,
-    &.Scala {
+    &.Sketch {
       background:$colorBlueLight3;
+    }
+    &.Scala {
+      background:#52B2A3;
+    }
+    &.Grunt {
+      background:#E48632;
+    }
+    &.Gulp {
+      background:#CF4646;
     }
   }
   div {
@@ -660,7 +684,7 @@ ul,
 
 /*small box (eg contact/error pages)*/
 #containerMiddle .row.smallBox {
-  max-width:490px;
+  max-width:400px;
   margin:0 15px;
   .col-md-12  {
     position:relative;

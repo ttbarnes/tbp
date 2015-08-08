@@ -2,14 +2,21 @@
     "id": "tailster",
     "name": "Tailster",
     "category": "Web apps",
-    "date": "2015",
+    "date": "2014-15",
     "tech": [
       {"tag": "HTML5, CSS3"},
-      {"tag": "Sass"},
+      {"tag": "Less"},
       {"tag": "AngularJS"},
       {"tag": "JavaScript"},
+      {"tag": "Gulp"},
       {"tag": "Photoshop"}
     ],
-    "moreInfoSoon":true,
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      {"item": "Delivered many new features, integrating with APIs"},
+      {"item": "Integrated a new, cleaner design"},
+      {"item": "Refactoring, cleaning the codebase"},
+      {"item": "Contributed to the cordova iOS app"}
+    ],
     "liveUrl": "http://tailster.com"
 }

@@ -5,10 +5,16 @@
     "date": "2014-2015",
     "tech": [
       {"tag": "AngularJS"},
-      {"tag": "JavaScript, jQuery"},
+      {"tag": "JavaScript"},
       {"tag": "HTML5, CSS3"},
+      {"tag": "Grunt"},
       {"tag": "Sass"}
     ],
-    "moreInfoSoon":true,
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      {"item": "Contributed to the first version of the product"},
+      {"item": "Built some core features involving business logic, angular routing and more"},
+      {"item": "Owned the UI - integrated designs, branding"}
+    ],
     "liveUrl": "http://fifthweek.com"
 }

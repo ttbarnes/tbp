@@ -212,13 +212,17 @@ about page, skill set bars
   0% {height:0;opacity:0;}
   100% {height:80%;opacity:1;}
 }
+@mixin skillsetBar70perc {
+  0% {height:0;opacity:0;}
+  100% {height:70%;opacity:1;}
+}
+@mixin skillsetBar50perc {
+  0% {height:0;opacity:0;}
+  100% {height:50%;opacity:1;}
+}
 @mixin skillsetBar60perc {
   0% {height:0;opacity:0;}
   100% {height:60%;opacity:1;}
-}
-@mixin skillsetBar40perc {
-  0% {height:0;opacity:0;}
-  100% {height:40%;opacity:1;}
 }
 
 /*bar html*/
@@ -278,28 +282,55 @@ about page, skill set bars
 
 /*bar javascript*/
 @-webkit-keyframes skillsetBarJavascript {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @-moz-keyframes skillsetBarJavascript {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @-o-keyframes skillsetBarJavascript {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @keyframes skillsetBarJavascript {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 
 /*bar angular*/
 @-webkit-keyframes skillsetBarAngular {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @-moz-keyframes skillsetBarAngular {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @-o-keyframes skillsetBarAngular {
-  @include skillsetBar60perc;
+  @include skillsetBar70perc;
 }
 @keyframes skillsetBarAngular {
+  @include skillsetBar70perc;
+}
+
+//bar node express
+@-webkit-keyframes skillsetBarNodeExpress {
+  @include skillsetBar50perc;
+}
+@-moz-keyframes skillsetBarNodeExpress {
+  @include skillsetBar50perc;
+}
+@-o-keyframes skillsetBarNodeExpress {
+  @include skillsetBar50perc;
+}
+@keyframes skillsetBarNodeExpress {
+  @include skillsetBar50perc;
+}
+
+@-webkit-keyframes skillsetBarMean {
+  @include skillsetBar60perc;
+}
+@-moz-keyframes skillsetBarMean {
+  @include skillsetBar60perc;
+}
+@-o-keyframes skillsetBarMean {
+  @include skillsetBar60perc;
+}
+@keyframes skillsetBarMean {
   @include skillsetBar60perc;
 }

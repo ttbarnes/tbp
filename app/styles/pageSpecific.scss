@@ -328,33 +328,39 @@ showcase individual page
           padding-bottom:0;
         }
         h2 {
+          padding: {
+            right:15px;
+            left:15px;
+          }
+          @media (min-width:768px) {
+            padding:{
+              right:0;
+              left:0;
+            }
+          }
           > span {
             position:relative;
+            background:none;
+            padding:0;
             span.date {
-              position:absolute;
-              right:15px;
-              font-size: 13px;
-              color: #96BCCF;
-              margin-top: 9px;
+              font-size:13px;
+              color:#96BCCF;
+              opacity:0.7;
+              margin-left:10px;
             }
           }
         }
       }
       &.row-btn-lg {
-        background:$colorWhite;
         .col-md-12 {
           padding-bottom:0;
         }
-      }
-      .col-md-12.deliver {
-        background:#ECF9FF;
       }
     }
     .imgWrap .col-md-12 {
       img {
         display:block;
         width:100%;
-        max-width:700px;
         margin:10px auto;
       }
     }
@@ -365,29 +371,91 @@ showcase individual page
         text-align:center;
       }
       ul {
-        margin-bottom:30px;
         li {
           margin-left:20px;
         }
       }
+      .story,
+      .deliver {
+        display:inline-block;
+        vertical-align:top;
+        width:100%;
+        @media (min-width:600px) {
+          display:block;
+        }
+        h4 {
+          margin-bottom:0;
+          padding:0;
+        }
+        .col-md-12 {
+          padding:{
+            top:25px;
+            bottom:25px;
+          }
+          background:$colorWhite;
+        }
+      }
+
+      .deliver .col-md-12:last-child {
+        display:inline-block;
+        vertical-align:top;
+        width:100%;
+        padding-bottom:15px;
+      }
+      .tech-title {
+        margin-bottom:3px;
+        @media (min-width:600px) {
+          float:left;
+          margin:{
+            top:8px;
+            right:15px;
+            bottom:10px;
+          }
+        }
+      }
       .tagsWrap {
-        margin-bottom:0;
+        @media (min-width:600px) {
+          float:left;
+          margin-bottom:0;
+          clear:none;
+          width:auto;
+        }
       }
       .story {
-        padding-bottom:25px;
-        background:$colorWhite;
+        padding-bottom:0;
         img {
           clear:both;
           display:block;
-          width:auto;
-          max-width:700px;
           margin:30px auto 60px auto;
           &:last-child {
-            margin-bottom:30px;
+            margin-bottom:0;
           }
         }
       }
     }
+
+    .row > .col-md-12 {
+      float:none;
+      max-width:735px;
+      margin:0 auto;
+      > h2,
+      > h4 {
+        background:none;
+        > span {
+          max-width:100%;
+          background:#C3DEEB;
+          padding:10px;
+          @media (min-width:600px) {
+            display:inline-block;
+          }
+        }
+      }
+      > h4 > span {
+        padding:10px 15px;
+      }
+    }
+
+
   }
 }
 
@@ -457,7 +525,6 @@ about page
     .row .col-md-12 .skillsetChart {
       clear: both;
       padding: 0;
-      /*height:50%;*/
       height:260px;
       max-height:420px;
       width:100%;
@@ -468,7 +535,7 @@ about page
         height: auto;
         margin: 0 0.5% 0 0;
         padding:0 0.5%;
-        width:13%;
+        width:9.5%;
         position: relative;
         text-align: center;
         vertical-align: bottom;
@@ -495,7 +562,6 @@ about page
         &.bar {
           background:#EEE;
           min-height:150px;
-          /*border-right:solid 3px #175B38;*/
           color:$colorBlack;
 
           .skill,
@@ -513,13 +579,22 @@ about page
             width:100%;
             font-size:16px;
             color:#14381F;
+            @media (min-width:768px) {
+              font-size:12px;
+            }
+            @media (min-width:850px) {
+              font-size:13px;
+            }
+            @media (min-width:900px) {
+              font-size:14px;
+            }
           }
           .rating {
             width: 100%;
             opacity:0.2;
             margin-top:5px;
             margin-bottom:10px;
-            font-size: 16px;
+            font-size:14px;
           }
 
           &.html,
@@ -536,17 +611,27 @@ about page
           }
           &.javascript,
           &.angular {
-            height:60%;
+            height:70%;
             min-height:90px;
             background:#b9efca;
           }
-          /*
-          &.something-40percent {
-            height:40%;
+          &.mean {
+            height:60%;
             min-height:60px;
             background:#d6efde;
           }
-          */
+          &.node-express {
+            height:50%;
+            min-height:50px;
+            background:#d6efde;
+          }
+
+          br {
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+            }
+          }
         }
       }
     }

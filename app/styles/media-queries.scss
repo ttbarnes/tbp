@@ -131,14 +131,6 @@ responsive
         padding-bottom:0;
       }
     }
-    &.skillsetChartWrapper .col-md-12 .skillsetChart {
-      li.bar {
-        .skill,
-        .rating {
-          font-size:14px;
-        }
-      }
-    }
   }
 }
 
@@ -306,9 +298,6 @@ responsive
       > .row.imgWrap > .col-md-12 {
         padding-bottom:30px;
       }
-      > .row .deliver .col-md-12:last-child {
-        padding-bottom:0;
-      }
       > .story img {
         width:auto;
         max-width:100%;
@@ -357,7 +346,6 @@ responsive
             margin-top:0;
             vertical-align:middle;
             padding:0 10px;
-            font-size:15px;
           }
           .skill {
             margin:0;
