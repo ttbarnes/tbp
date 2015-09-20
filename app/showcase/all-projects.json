@@ -5,6 +5,11 @@
         "category": "Web apps"
     },
     {
+        "id": "angular-ticker",
+        "name": "Angular ticker",
+        "category": "Web apps"
+    },
+    {
         "id": "angular-poc-demos",
         "name": "Angular proof of concept demos",
         "category": "Web apps"
