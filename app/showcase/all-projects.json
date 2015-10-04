@@ -1,5 +1,10 @@
 [
     {
+        "id": "saranac",
+        "name": "Saranac",
+        "category": "Web apps"
+    },
+    {
         "id": "mean-tweets",
         "name": "Mean tweets",
         "category": "Web apps"
