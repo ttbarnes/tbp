@@ -5,7 +5,6 @@
     "date": "2015",
     "tech": [
       {"tag": "Express, Node js"},
-      {"tag": "NeDB"},
       {"tag": "AngularJS"},
       {"tag": "Highcharts"},
       {"tag": "JavaScript"},
@@ -13,5 +12,15 @@
       {"tag": "Grunt"},
       {"tag": "Less"}
     ],
-    "deliverTitle": "My involvement"
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      {"item": "Large greenfield, wealth management app"},
+      {"item": "Rich, complex data visualization"},
+      {"item": "Mock API and datastore"},
+      {"item": "Heavy use of custom directives/components"}
+    ],
+    "how": {
+      "title": "My involvement",
+      "thoughts":"<p>I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):</p><img src='images/showcase/saranac/inner01.jpg'/><p>We also built many visually small, but logically complex components, like these bar graphs:</p><img src='images/showcase/saranac/inner02.jpg'/><p>Similarly with these risk indicators:</p><img src='images/showcase/saranac/inner03.jpg'/>"
+    }
 }
