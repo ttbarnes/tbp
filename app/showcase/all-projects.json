@@ -1,5 +1,10 @@
 [
     {
+        "id": "network-locum",
+        "name": "Network Locum",
+        "category": "Web apps"
+    },
+    {
         "id": "saranac",
         "name": "Saranac",
         "category": "Web apps"
