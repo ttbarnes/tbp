@@ -566,8 +566,12 @@ div.tags {
     &.jQuery {
       background:#0667AB;
     }
-    &.JavaScript {
+    &.JavaScript,
+    &.ES6 {
       background:#CFBD44;
+    }
+    &.Redux {
+      background:#FF7C00;
     }
     &.Holding,
     &.AJAX {
@@ -612,6 +616,9 @@ div.tags {
     }
     &.Gulp {
       background:#CF4646;
+    }
+    &.Webpack {
+      background:#6B93D7;
     }
     &.Highcharts {
       background:#8E95F3;
