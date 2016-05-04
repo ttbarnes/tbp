@@ -78,6 +78,8 @@ tbpControllers.controller('aboutCtrl', function($scope, windowScrollTop){
 tbpControllers.controller('contactCtrl', function($scope){
   $scope.pageClass = 'contactPage';
   $scope.tonyDetails = {
+    available: true,
+    //availableCopy: 'September 2016',
     email:'tony@tonybarnes.me'
   };
 });
