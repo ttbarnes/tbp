@@ -1,5 +1,10 @@
 [
     {
+        "id": "boots-betalabs",
+        "name": "Boots BetaLabs",
+        "category": "Web apps"
+    },
+    {
         "id": "network-locum",
         "name": "Network Locum",
         "category": "Web apps"
