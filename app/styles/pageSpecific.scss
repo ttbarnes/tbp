@@ -427,6 +427,16 @@ showcase individual page
           clear:both;
           display:block;
           margin:30px auto 60px auto;
+          &.max-width-384,
+          &.max-width-447 {
+            margin:0 auto;
+          }
+          &.max-width-384 {
+            max-width:384px;
+          }
+          &.max-width-447 {
+            max-width:447px;
+          }
           &:last-child {
             margin-bottom:0;
           }

@@ -34,7 +34,7 @@
               <p class="tech-title">Utilising:</p>
               <div class="row tagsWrap">
                 <div class="tags">
-                  <div class="col-md-3 {{child.tag}}" ng-repeat="child in project.tech">{{child.tag}}</div>
+                  <div class="col-md-3 {{child.tag}}" ng-class="{d3: child.tag === 'd3.js'}" ng-repeat="child in project.tech">{{child.tag}}</div>
                 </div>
               </div>
             </div>
