@@ -1,10 +1,5 @@
 [
     {
-        "id": "boots-betalabs",
-        "name": "Boots BetaLabs",
-        "category": "Web apps"
-    },
-    {
         "id": "network-locum",
         "name": "Network Locum",
         "category": "Web apps"
@@ -17,6 +12,11 @@
     {
         "id": "mean-tweets",
         "name": "Mean tweets",
+        "category": "Web apps"
+    },
+    {
+        "id": "angular-ticker",
+        "name": "Angular ticker",
         "category": "Web apps"
     }
 ]
