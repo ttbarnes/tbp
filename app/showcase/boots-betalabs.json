@@ -1,0 +1,29 @@
+{
+    "id": "boots-betalabs",
+    "name": "Boots BetaLabs",
+    "category": "Web apps",
+    "date": "2016",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "ES6"},
+      {"tag": "d3.js"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Webpack"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      {"item": "6 different apps for various stores and consumers"},
+      {"item": "Modular, component based architecture with shared, reusable codebases"},
+      {"item": "Ecommerce checkout for a bespoke touch screen app"},
+      {"item": "Dynamic, custom 'time entry type tracker' utilising d3.js"},
+      {"item": "Various email and mobile validation components"},
+      {"item": "Improved test coverage and tech debt"},
+      {"item": "CoreMetrics analytics integration"}
+    ],
+    "how": {
+      "title": "My involvement",
+      "thoughts":"<p>I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts: </p><img src='images/showcase/boots-betalabs/inner01.jpg' class='max-width-384' /><p>I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle: </p><img src='images/showcase/boots-betalabs/inner02.jpg'/><p>Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers: </p><img src='images/showcase/boots-betalabs/inner03.jpg' class='max-width-447'/>"
+    }
+}
