@@ -625,14 +625,12 @@ about page
               min-height:120px;
               background:#88d2a0;
           }
-          // &.javascript,
-          // &.angular {
-          //   height:70%;
-          //   min-height:90px;
-          //   background:#b9efca;
-          // }
           &.mean,
-          &.node-express,
+          &.node-express {
+            height:70%;
+            min-height:90px;
+            background:#b9efca;
+          }
           &.d3-highcharts {
             height:60%;
             min-height:60px;
