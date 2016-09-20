@@ -1,5 +1,10 @@
 [
     {
+        "id": "full-fact",
+        "name": "Full Fact",
+        "category": "Static"
+    },
+    {
         "id": "boots-betalabs",
         "name": "Boots",
         "category": "Web apps"

@@ -9,7 +9,8 @@
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
-      {"item": "TBC"}
+      {"item": "New design and branding implementation"},
+      {"item": "Component based front end architecture"}
     ],
-    "moreInfoSoon":true
+    "liveUrl": "http://fullfact.org"
 }
