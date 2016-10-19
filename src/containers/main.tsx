@@ -18,9 +18,12 @@ export class Main extends React.Component<any, any> {
 
   public render() {
 
-    return (
-      <Header title={temp.title} items={temp.navLinks}></Header>
-    );
+    return ((
+      <section>
+        <Header title={temp.title} items={temp.navLinks}></Header>
+        <main>{this.props.children}</main>
+      </section>
+    ));
   }
 };
 

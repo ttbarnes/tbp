@@ -12,6 +12,7 @@ import thunk from 'redux-thunk';
 import * as createLogger from 'redux-logger';
 
 import Main from './containers/main';
+import Dev from './containers/dev';
 
 import rootReducer from './reducers';
 import './common.css';
@@ -32,7 +33,9 @@ const history = syncHistoryWithStore(browserHistory, store, {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={Main}/>
+      <Route path="/" component={Main}>
+        <Route path="dev" component={Dev} />
+      </Route>
     </Router>
   </Provider>,
   document.getElementById('content')
