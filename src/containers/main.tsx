@@ -2,11 +2,15 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import * as Radium from 'radium';
 
-const style = {
-  title: {
-    ':hover': {
-      color: 'blue'
-    }
+import Header from '../components/header';
+
+const temp = {
+  title: 'Title',
+  navLinks: {
+    something: true,
+    aThing: true,
+    somethingElse: true,
+    contact: true
   }
 };
 
@@ -15,12 +19,10 @@ export class Main extends React.Component<any, any> {
   public render() {
 
     return (
-      <div>
-        <h1 style={style.title}>Working</h1>
-      </div>
+      <Header title={temp.title} items={temp.navLinks}></Header>
     );
   }
-}
+};
 
 export default
 connect(null, null)(Radium(Main));
