@@ -3,6 +3,7 @@ import { combineReducers } from 'redux';
 // import { routerReducer } from 'react-router-redux';
 import {
    SET_DEV_PROJECTS_FILTER,
+   SET_DEV_PROJECT_SELECTED,
    DevProjectsFilter
 } from '../actions';
 const { SHOW_ALL } = DevProjectsFilter;
@@ -79,9 +80,19 @@ function devProjects(state = mockDevProjects, action) {
   }
 };
 
+function devProjectSelected(state = null, action) {
+  switch (action.type) {
+    case SET_DEV_PROJECT_SELECTED:
+      return action.id;
+    default:
+      return state;
+  }
+}
+
 const tbpReducers = combineReducers({
   devProjectsFilter,
-  devProjects
+  devProjects,
+  devProjectSelected
 });
 
 export default tbpReducers;

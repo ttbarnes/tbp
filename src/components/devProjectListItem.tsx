@@ -1,8 +1,12 @@
-const DevProjectListItem = ({ onClick, title }) => (
-  <li
-    onClick={onClick}
-  >
-    {title}
+import { Link } from 'react-router';
+
+const DevProjectListItem = ({ onClick, title, id }) => (
+  <li>
+    <Link onClick={onClick}
+          to={`/dev/project/${id}`}
+    >
+      {title}
+    </Link>
   </li>
 );
 

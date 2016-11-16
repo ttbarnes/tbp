@@ -1,6 +1,8 @@
 export const ADD_TODO = 'ADD_TODO';
 export const TOGGLE_TODO = 'TOGGLE_TODO';
 export const SET_DEV_PROJECTS_FILTER = 'SET_DEV_PROJECTS_FILTER';
+export const SET_DEV_PROJECT_SELECTED = 'SET_DEV_PROJECT_SELECTED';
+export const GET_DEV_PROJECT_SELECTED = 'GET_DEV_PROJECT_SELECTED';
 
 export const DevProjectsFilter = {
   SHOW_ALL: 'SHOW_ALL',
@@ -31,5 +33,16 @@ export const setDevProjectsFilter = (filter) => {
   return {
     type: SET_DEV_PROJECTS_FILTER,
     filter
+  };
+};
+
+export const getDevProject = (devProjects, id) => {
+  return devProjects.find(p => p.id === id);
+};
+
+export const setDevProjectSelected = (id) => {
+  return {
+    type: SET_DEV_PROJECT_SELECTED,
+    id
   };
 };

@@ -1,5 +1,8 @@
 import { connect } from 'react-redux';
-import { getFilteredDevProjects } from '../actions';
+import {
+  getFilteredDevProjects,
+  setDevProjectSelected
+} from '../actions';
 import DevProjectsList from '../components/devProjectsList';
 
 const mapStateToProps = (state) => {
@@ -10,9 +13,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onTodoClick: (id) => {
-      // dispatch(toggleTodo(id))
-      console.log('onTodoClick.');
+    onProjectClick: (id) => {
+      dispatch(setDevProjectSelected(id));
     }
   };
 };

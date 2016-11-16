@@ -13,6 +13,7 @@ import { Provider } from 'react-redux';
 
 import Main from './containers/main';
 import Dev from './containers/dev';
+import DevProjectSingleContainer from './containers/devProjectSingle';
 
 import tbpReducers from './reducers';
 
@@ -43,6 +44,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={Main}>
         <Route path="dev" component={Dev} />
+        <Route path="dev/project/:id" component={DevProjectSingleContainer} />
       </Route>
     </Router>
   </Provider>,
