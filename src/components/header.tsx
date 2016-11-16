@@ -14,7 +14,7 @@ interface HeaderViewProps {
 const renderNavItem = (item, key) => {
   return (
     <li key={key}>
-      <NavLink to="/" key={key} style={styles.navItem}>{item}</NavLink>
+      <NavLink to={`${item.route}`} key={key} style={styles.navItem}>{item.title}</NavLink>
     </li>
   );
 };
@@ -29,7 +29,7 @@ export const Header: React.StatelessComponent<HeaderViewProps> = ({
       <nav style={styles.nav}>
         {
           Object.keys(items).map((i, k) => {
-            return renderNavItem(i, k);
+            return renderNavItem(items[i], k);
           })
         }
       </nav>

@@ -6,10 +6,22 @@ import Header from '../components/header';
 const temp = {
   title: 'Title',
   navLinks: {
-    something: true,
-    aThing: true,
-    somethingElse: true,
-    contact: true
+    dev: {
+      title: 'Dev',
+      route: '/dev'
+    },
+    music: {
+      title: 'Music',
+      route: '/music'
+    },
+    fpv: {
+      title: 'fpv',
+      route: '/fpv'
+    },
+    timelapse: {
+      title: 'Timelapse',
+      route: '/timelapse'
+    }
   }
 };
 
