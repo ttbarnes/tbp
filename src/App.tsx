@@ -16,6 +16,8 @@ import Dev from './containers/dev';
 import Music from './containers/music';
 import DevProjectSingleContainer from './containers/devProjectSingle';
 
+import Error from './components/error';
+
 import tbpReducers from './reducers';
 
 import './common.css';
@@ -49,6 +51,8 @@ ReactDOM.render(
         <Route path="dev/project/:id" component={DevProjectSingleContainer} />
 
         <Route path="music" component={Music} />
+
+        <Route path="*" component={Error} />
 
       </Route>
     </Router>
