@@ -3,7 +3,9 @@ const tempPadding = '1rem';
 export default {
   header: {
     display: 'flex',
-    flexDireciton: 'row'
+    flexDireciton: 'row',
+    marginBottom: '1rem',
+    borderBottom: 'solid 2px #CCC'
   },
   title: {
     padding: tempPadding

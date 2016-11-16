@@ -1,4 +1,5 @@
 import DevProjectFilterLink from '../../containers/devProjectFilterLink';
+import styles from './projectFilters.styles';
 
 const ProjectFilters = () => (
   <p>
@@ -6,23 +7,23 @@ const ProjectFilters = () => (
 
     <br/>
 
-    <DevProjectFilterLink filter="SHOW_ALL">
+    <DevProjectFilterLink filter="SHOW_ALL" styles={styles}>
       All
     </DevProjectFilterLink>
 
-    <DevProjectFilterLink filter="SHOW_CATEGORY_REACT">
+    <DevProjectFilterLink filter="SHOW_CATEGORY_REACT" styles={styles}>
       React
     </DevProjectFilterLink>
 
-    <DevProjectFilterLink filter="SHOW_CATEGORY_ANGULAR">
+    <DevProjectFilterLink filter="SHOW_CATEGORY_ANGULAR" styles={styles}>
       Angular
     </DevProjectFilterLink>
 
-    <DevProjectFilterLink filter="SHOW_CATEGORY_STATIC">
+    <DevProjectFilterLink filter="SHOW_CATEGORY_STATIC" styles={styles}>
       Static
     </DevProjectFilterLink>
 
-    <DevProjectFilterLink filter="SHOW_CATEGORY_OTHER">
+    <DevProjectFilterLink filter="SHOW_CATEGORY_OTHER" styles={styles}>
       Other
     </DevProjectFilterLink>
 

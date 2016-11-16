@@ -31,10 +31,9 @@ export class Main extends React.Component<any, any> {
 
     return ((
       <section>
+
         <Header title={temp.title} items={temp.navLinks}></Header>
-        <hr/>
         <main>{this.props.children}</main>
-        <hr/>
 
       </section>
     ));

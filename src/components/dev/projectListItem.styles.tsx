@@ -1,5 +1,12 @@
 const styles = {
-  border: 'solid 2px orange'
+  col: {
+    padding: '0.5rem'
+  },
+  link: {
+    background: '#EEE',
+    padding: '1rem',
+    minHeight: '80px'
+  }
 };
 
 export default styles;

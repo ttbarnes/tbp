@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router';
-import * as Radium from 'radium';
 
 const errorStyles = {
   padding: '1.5rem'
