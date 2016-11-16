@@ -12,20 +12,20 @@ export const DevProjectsFilter = {
   SHOW_CATEGORY_OTHER: 'SHOW_CATEGORY_OTHER'
 };
 
-export const getFilteredDevProjects = (todos, filter) => {
+export const getFilteredDevProjects = (devProjects, filter) => {
   switch (filter) {
     case 'SHOW_ALL':
-      return todos;
+      return devProjects;
     case 'SHOW_CATEGORY_REACT':
-      return todos.filter(t => t.category === 'React');
+      return devProjects.filter(t => t.category === 'React');
     case 'SHOW_CATEGORY_ANGULAR':
-      return todos.filter(t => t.category === 'Angular');
+      return devProjects.filter(t => t.category === 'Angular');
     case 'SHOW_CATEGORY_STATIC':
-      return todos.filter(t => t.category === 'Static');
+      return devProjects.filter(t => t.category === 'Static');
     case 'SHOW_CATEGORY_OTHER':
-      return todos.filter(t => t.category === 'Other');
+      return devProjects.filter(t => t.category === 'Other');
     default:
-      return todos;
+      return devProjects;
   }
 };
 
