@@ -1,4 +1,4 @@
-import DevProjectListItem from './devProjectListItem';
+import DevProjectListItem from './projectListItem';
 
 const DevProjectsList = ({ devProjects, onProjectClick }) => (
   <ul>

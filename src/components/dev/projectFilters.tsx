@@ -1,4 +1,4 @@
-import DevProjectFilterLink from '../containers/devProjectFilterLink';
+import DevProjectFilterLink from '../../containers/devProjectFilterLink';
 
 const ProjectFilters = () => (
   <p>
