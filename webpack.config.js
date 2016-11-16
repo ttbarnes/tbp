@@ -21,7 +21,10 @@ var plugins = [
     'process.env': {
       NODE_ENV: "'" + env + "'"
     }
-  })
+  }),
+  new webpack.ProvidePlugin({
+    'React': 'react'
+  }),
 ];
 
 var devtool = '';

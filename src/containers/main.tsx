@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import * as Radium from 'radium';
-
 import Header from '../components/header';
 
 const temp = {
@@ -21,7 +20,10 @@ export class Main extends React.Component<any, any> {
     return ((
       <section>
         <Header title={temp.title} items={temp.navLinks}></Header>
+        <hr/>
         <main>{this.props.children}</main>
+        <hr/>
+
       </section>
     ));
   }
