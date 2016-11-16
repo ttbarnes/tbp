@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as Radium from 'radium';
 
 import DevProjects from './devProjects';
-import ProjectFilters from '../components/projectFilters';
+import ProjectFilters from '../components/dev/projectFilters';
 
 export class Main extends React.Component<any, any> {
 

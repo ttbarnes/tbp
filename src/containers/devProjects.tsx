@@ -3,7 +3,7 @@ import {
   getFilteredDevProjects,
   setDevProjectSelected
 } from '../actions';
-import DevProjectsList from '../components/devProjectsList';
+import DevProjectsList from '../components/dev/projectsList';
 
 const mapStateToProps = (state) => {
   return {

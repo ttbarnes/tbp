@@ -20,7 +20,7 @@ import Error from './components/error';
 
 import tbpReducers from './reducers';
 
-import './common.css';
+import './styles/common.css';
 
 // declare var process: any;
 // const env = process.env.NODE_ENV;

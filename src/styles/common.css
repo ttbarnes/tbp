@@ -110,3 +110,5 @@ footer {
   right: 0;
   background-color: #fafafc;
 }
+
+@import 'cols.css';
