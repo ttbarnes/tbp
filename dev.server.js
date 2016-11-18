@@ -6,7 +6,6 @@ var host = '0.0.0.0';
 var port = '3001';
 
 new WebpackDevServer(webpack(config), {
-  hot: true,
   debug: true,
   watch: true,
   stats: { colors: true },

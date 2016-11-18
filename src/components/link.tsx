@@ -27,7 +27,6 @@ const Link = ({ active, children, onClick, styles }) => {
   }
 
   if (active) {
-    console.log('yo: ', stylesLink);
     return <span style={stylesLink.active}>{children}</span>;
   }
 
