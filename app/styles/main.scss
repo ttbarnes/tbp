@@ -557,7 +557,8 @@ div.tags {
       background:$colorRedLight;
     }
     &.Sass,
-    &.Less {
+    &.Less,
+    &.Stylus {
       background:$colorPinkLight;
     }
     &.Static {
