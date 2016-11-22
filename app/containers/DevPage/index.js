@@ -39,6 +39,8 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
 
         <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />
 
+        <br/>
+
         <Projects onClick={this.props.onClickProjectListItem} data={this.props.projects} activeFilter={this.props.activeFilter} />
 
       </article>

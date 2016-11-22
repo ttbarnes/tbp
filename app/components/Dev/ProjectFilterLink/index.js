@@ -7,15 +7,17 @@
  */
 
 import React, { PropTypes, Children } from 'react';
+import * as Radium from 'radium';
+import styles from './styles';
 
 function ProjectFilterLink(props) {
   return (
     props.currentFilter === props.type ? (
-      <div onClick={() => props.onClick(props.type)}>
-        {props.type} <small>(active)</small>
+      <div onClick={() => props.onClick(props.type)} style={styles.filterLinkActive}>
+        {props.type}
       </div>
     ) : (
-      <div onClick={() => props.onClick(props.type)}>
+      <div onClick={() => props.onClick(props.type)} style={styles.filterLink}>
         {props.type}
       </div>
     )
@@ -30,4 +32,4 @@ ProjectFilterLink.propTypes = {
   currentFilter: PropTypes.string,
 };
 
-export default ProjectFilterLink;
+export default (Radium(ProjectFilterLink));

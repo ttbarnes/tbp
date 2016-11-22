@@ -8,7 +8,7 @@
 
 import React, { PropTypes, Children } from 'react';
 import Wrapper from './Wrapper';
-import ProjectFilterLink from 'components/dev/ProjectFilterLink'
+import ProjectFilterLink from 'components/dev/ProjectFilterLink';
 
 function ProjectFilters(props) {
 
