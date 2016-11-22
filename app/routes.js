@@ -74,6 +74,14 @@ export default function createRoutes(store) {
 
       },
     }, {
+      path: '/music',
+      name: 'music',
+      getComponent(nextState, cb) {
+        System.import('containers/MusicPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
