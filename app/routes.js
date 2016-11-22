@@ -82,6 +82,14 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: '/fpv',
+      name: 'fpv',
+      getComponent(nextState, cb) {
+        System.import('containers/FpvPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
