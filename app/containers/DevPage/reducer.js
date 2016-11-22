@@ -17,7 +17,7 @@ import {
   CHANGE_USERNAME,
   SHOW_ALL,
   SET_DEV_PROJECTS_FILTER_CATEGORY,
-  SET_DEV_PROJECT_SELECTED,
+  SET_DEV_PROJECT_SELECTION,
 } from './constants';
 
 const initialState = fromJS({
@@ -59,25 +59,19 @@ const initialState = fromJS({
       category: 'Other'
     }
   ],
-  filterCategory: 'All'
+  filterCategory: 'All',
+  // selectedProject: null
+  selectedProject: 3
 });
-
-/*  
-function devProjectSelected(state = null, action) {
-  switch (action.type) {
-    case SET_DEV_PROJECT_SELECTED:
-      return action.id;
-    default:
-      return state;
-  }
-}
-*/
 
 function devReducers(state = initialState, action) {
   switch (action.type) {
     case SET_DEV_PROJECTS_FILTER_CATEGORY: 
       return state
         .set('filterCategory', action.category)
+    case SET_DEV_PROJECT_SELECTION:
+      return state
+        .set('selectedProject ', action.id)
     default:
       return state;
   }
