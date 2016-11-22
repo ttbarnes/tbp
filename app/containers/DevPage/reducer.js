@@ -60,8 +60,7 @@ const initialState = fromJS({
     }
   ],
   filterCategory: 'All',
-  // selectedProject: null
-  selectedProject: 3
+  selectedProject: null
 });
 
 function devReducers(state = initialState, action) {
@@ -71,7 +70,7 @@ function devReducers(state = initialState, action) {
         .set('filterCategory', action.category)
     case SET_DEV_PROJECT_SELECTION:
       return state
-        .set('selectedProject ', action.id)
+        .set('selectedProject', action.id)
     default:
       return state;
   }

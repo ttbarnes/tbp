@@ -7,12 +7,15 @@
  */
 
 import React from 'react';
+import { Link } from 'react-router';
 import styled from 'styled-components';
 
 const ListItem = (props) => {
   return (
     <li>
-      {props.title} <small>( {props.category} )</small>
+      <Link to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)}>
+        {props.title}
+      </Link>
     </li>
   )
 };
@@ -20,6 +23,8 @@ const ListItem = (props) => {
 ListItem.propTypes = {
   title: React.PropTypes.string,
   category: React.PropTypes.string,
+  id: React.PropTypes.number,
+  onClick: React.PropTypes.func,
 }
 
 export default ListItem;

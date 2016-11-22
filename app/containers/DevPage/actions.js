@@ -18,6 +18,7 @@
 import {
   CHANGE_USERNAME,
   SET_DEV_PROJECTS_FILTER_CATEGORY,
+  SET_DEV_PROJECT_SELECTION,
 } from './constants';
 
 export function setDevProjectsFilter(category) {
@@ -25,5 +26,12 @@ export function setDevProjectsFilter(category) {
     type: SET_DEV_PROJECTS_FILTER_CATEGORY,
     category
   };
+}
+
+export function setDevSelectedProject(id) {
+  return {
+    type: SET_DEV_PROJECT_SELECTION,
+    id
+  }
 }
 

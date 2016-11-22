@@ -12,7 +12,10 @@ import { createStructuredSelector } from 'reselect';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
 
-import { setDevProjectsFilter } from  './actions';
+import { 
+  setDevProjectsFilter,
+  setDevSelectedProject
+} from  './actions';
 import { 
   selectProjects,
   selectActiveProjectFilter
@@ -36,7 +39,7 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
 
         <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />
 
-        <Projects data={this.props.projects} activeFilter={this.props.activeFilter} />
+        <Projects onClick={this.props.onClickProjectListItem} data={this.props.projects} activeFilter={this.props.activeFilter} />
 
       </article>
     );
@@ -57,6 +60,9 @@ export function mapDispatchToProps(dispatch) {
     },
     onClickProjectFilter: (evt) => {
       dispatch(setDevProjectsFilter(evt))
+    },
+    onClickProjectListItem: (id) => {
+      dispatch(setDevSelectedProject(id))
     }
   };
 }

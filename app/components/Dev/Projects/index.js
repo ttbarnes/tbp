@@ -27,7 +27,10 @@ function Projects(props) {
         {data.map(project => (
           <ListItem title={project.get('title')} 
                     category={project.get('category')} 
-                    key={project.get('title')} />
+                    key={project.get('id')}
+                    id={project.get('id')} 
+                    onClick={props.onClick} 
+          />
         ))}
       </ul>
     </Wrapper>
@@ -37,6 +40,7 @@ function Projects(props) {
 Projects.propTypes = {
   projects: PropTypes.array,
   activeFilter: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 export default Projects;
