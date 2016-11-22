@@ -67,6 +67,26 @@ export default function createRoutes(store) {
 
       },
     }, {
+      path: '/dev/project/:id',
+      name: 'devProject',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          System.import('containers/DevPage/reducer'),
+          System.import('containers/DevProjectPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, component]) => {
+          injectReducer('dev', reducer.default);
+
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
