@@ -6,6 +6,7 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
+import MusicPlayer from 'components/MusicPlayer';
 
 export class MusicPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -22,6 +23,8 @@ export class MusicPage extends React.PureComponent { // eslint-disable-line reac
         />
 
         <p>MusicPage</p>
+
+        <MusicPlayer/>
 
       </article>
     );
