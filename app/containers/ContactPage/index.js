@@ -7,6 +7,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import ContactForm from 'components/ContactForm';
+
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
@@ -22,10 +24,11 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
         />
 
         <p>ContactPage</p>
+        <ContactForm />
 
       </article>
     );
   }
-}
+};
 
-export default ContactPage;
+export default (ContactPage);
