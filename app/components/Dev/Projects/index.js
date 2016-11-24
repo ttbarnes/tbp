@@ -34,7 +34,7 @@ export class Projects extends React.PureComponent {
     const data = filterProjectsByCategory(this.props.data, this.props.activeFilter);
 
     return (
-      <Wrapper className="fade-appear">
+      <Wrapper>
         <ul>
           
             {data.map(project => (
