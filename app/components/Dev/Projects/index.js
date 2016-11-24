@@ -7,6 +7,7 @@
  */
 
 import React, { PropTypes, Children } from 'react';
+import ReactDOM from 'react-dom';
 import Wrapper from './Wrapper';
 import ListItem from './ListItem';
 
@@ -17,24 +18,37 @@ function filterProjectsByCategory(projects, filterCategory) {
   return projects.filter(p => p.toJS().category === filterCategory);
 }
 
-function Projects(props) {
+export class Projects extends React.PureComponent {
 
-  const data = filterProjectsByCategory(props.data, props.activeFilter);
+  componentDidMount() {
+    var elm = ReactDOM.findDOMNode(this);
+    elm.style.opacity = 0;
+    window.requestAnimationFrame(() => {
+      elm.style.transition = 'opacity 500ms';
+      elm.style.opacity = 1;
+    });
+  }
 
-  return (
-    <Wrapper>
-      <ul>
-        {data.map(project => (
-          <ListItem title={project.get('title')} 
-                    category={project.get('category')} 
-                    key={project.get('id')}
-                    id={project.get('id')} 
-                    onClick={props.onClick} 
-          />
-        ))}
-      </ul>
-    </Wrapper>
-  );
+  render() {
+    
+    const data = filterProjectsByCategory(this.props.data, this.props.activeFilter);
+
+    return (
+      <Wrapper className="fade-appear">
+        <ul>
+          
+            {data.map(project => (
+              <ListItem title={project.get('title')} 
+                        category={project.get('category')} 
+                        key={project.get('id')}
+                        id={project.get('id')} 
+                        onClick={this.props.onClick} 
+              />
+            ))}
+        </ul>
+      </Wrapper>
+    );
+  }
 };
 
 Projects.propTypes = {
