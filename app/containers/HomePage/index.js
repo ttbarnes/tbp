@@ -13,7 +13,6 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <article>
         <Helmet
-          title="Home Page"
           meta={[
             { name: 'description', content: 'A React.js Boilerplate application homepage' },
           ]}
