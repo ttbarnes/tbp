@@ -2,6 +2,8 @@
   "name": "tbp",
   "version": "0.0.1",
   "dependencies": {
+    "angulartics": "^1.2.1",
+    "angulartics-google-analytics": "^0.2.1",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "grunt": "~0.4.1",
@@ -19,7 +21,7 @@
     "grunt-contrib-imagemin": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.5.2",
-    "grunt-google-cdn": "^0.2.2",
+    "grunt-google-cdn": "^0.4.3",
     "grunt-newer": "~0.5.4",
     "grunt-ngmin": "~0.0.2",
     "grunt-rev": "~0.1.0",
