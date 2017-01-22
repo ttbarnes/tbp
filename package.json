@@ -2,8 +2,6 @@
   "name": "tbp",
   "version": "0.0.1",
   "dependencies": {
-    "angulartics": "^1.2.1",
-    "angulartics-google-analytics": "^0.2.1",
     "bower": "*",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
