@@ -4,7 +4,7 @@ var router = express.Router();
 var app = express();
 var methodOverride = require('method-override');
 var morgan = require('morgan');
-var port = 2000;
+var port = process.env.PORT || 2000;
 
 app.use(function (req, res, next){
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
