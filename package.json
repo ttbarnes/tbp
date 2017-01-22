@@ -1,8 +1,7 @@
 {
   "name": "tbp",
   "version": "0.0.1",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.13.4",
     "body-parser": "^1.15.0",
     "method-override": "^2.3.5",
