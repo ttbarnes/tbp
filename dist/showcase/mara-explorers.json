@@ -1,0 +1,24 @@
+{
+		"id": "mara-explorers", 
+		"name": "Mara Explorers",
+		"category": "Static",
+		"date": "2013-14",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Wordpress"},
+			{"tag": "PHP"},
+			{"tag": "Photoshop"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Rebranding for the web"},
+			{"item": "New logo"},
+			{"item": "Showcase/informative website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts":"<p>Adapting from the previous website and branding, we rebranded and built a new website. I designed and developed a bespoke, responsive template/theme - ensuring that all of the relevant content remains editable via the CMS.</p><p>I really enjoyed building the gallery and some flexible tabbed content to work smoothly on both desktops and mobiles:</p><img src='images/showcase/mara-explorers/inner01.jpg'/> <p>We also integrated some lovely, full page background images:</p><img src='images/showcase/mara-explorers/inner02.jpg'/>"
+		},
+		"liveUrl": "http://maraexplorers.com"
+}

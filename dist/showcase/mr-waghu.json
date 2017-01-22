@@ -1,0 +1,19 @@
+{
+		"id": "mr-waghu", 
+    "name": "Mr Waghu",
+		"category": "Ecommerce",
+		"date": "2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Fireworks"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the development of this project, also training a new developer with the Powa CMS, templates and front end processes.</p>"
+		}
+}

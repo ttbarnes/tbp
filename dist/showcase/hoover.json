@@ -1,0 +1,21 @@
+{
+		"id": "hoover", 
+    "name": "Hoover Spares",
+		"category": "Ecommerce",
+		"date": "2012",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Photoshop"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the front end development for this project, also training a new team member with the Powa CMS, templates and front end processes.</p>"
+		},
+		"liveUrl": "http://www.hooverspares.co.uk"
+}

@@ -1,0 +1,21 @@
+{
+		"id": "enterprising-britain",
+    "name": "Enterprising Britain",
+		"category": "Static",
+		"date": "2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Fireworks"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Corporate website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the front end development for this project, also training a new team member with the Powa CMS, templates and front end processes.</p>"
+		},
+		"liveUrl": "http://www.enterprising-britain.com"
+}

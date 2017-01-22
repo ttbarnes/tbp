@@ -1,0 +1,21 @@
+{
+		"id": "the-store",
+    "name": "The Store",
+		"category": "Ecommerce",
+		"date": "2013",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Fireworks"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the front end development for this project at Powa - pair-programming. We built some nice HTML5 and CSS3 features including a live tv stream. I contributed mostly to the checkout processes.</p>"
+		},
+		"liveUrl": "http://www.thestoretv.com"
+}

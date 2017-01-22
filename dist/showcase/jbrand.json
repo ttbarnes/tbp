@@ -1,0 +1,18 @@
+{
+		"id": "jbrand", 
+    "name": "J Brand",
+		"category": "Ecommerce",
+		"date": "2011",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Photoshop"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"}
+		],
+		"moreInfoSoon":true,
+		"liveUrl": "http://www.jbrandbydonnaida.com"
+}

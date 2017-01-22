@@ -1,0 +1,21 @@
+{
+		"id": "new-naturalists", 
+    "name": "New Naturalists",
+		"category": "Ecommerce",
+		"date": "2013",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Fireworks"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Ecommerce website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the front end development for this project, pair-programming and also training a new team member with the Powa CMS, templates and front end processes.</p>"
+		},
+		"liveUrl": "http://www.newnaturalists.com"
+}

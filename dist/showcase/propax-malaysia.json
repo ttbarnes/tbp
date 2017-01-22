@@ -1,0 +1,20 @@
+{
+		"id": "propax-malaysia", 
+		"name": "Propax Malaysia",
+		"category": "Static",
+		"date": "2012",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "Photoshop"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Branding for the web"},
+			{"item": "Showcase/informative microsite"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I jointly designed and developed this microsite, bringing an existing brand and brochure design to the web.</p>"
+		},
+		"liveUrl": "http://propaxmalaysia.com"
+}

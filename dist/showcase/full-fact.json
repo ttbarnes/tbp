@@ -1,0 +1,16 @@
+{
+    "id": "full-fact",
+    "name": "Full Fact",
+    "category": "Static",
+    "date": "2016",
+    "tech": [
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      {"item": "New design and branding implementation"},
+      {"item": "Component based front end architecture"}
+    ],
+    "liveUrl": "http://fullfact.org"
+}

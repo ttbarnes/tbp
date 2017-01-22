@@ -1,0 +1,21 @@
+{
+		"id": "powatag",
+    "name": "Powatag",
+		"category": "Static",
+		"date": "2013",
+		"tech": [
+			{"tag": "HTML, CSS3"},
+			{"tag": "jQuery"},
+			{"tag": "Fireworks"},
+			{"tag": "Powa CMS"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Corporate website"}
+		],
+		"how": {
+			"title": "My involvement",
+			"thoughts": "<p>I oversaw the front end development for this project.</p>"
+		},
+		"liveUrl": "http://powatag.com"
+}

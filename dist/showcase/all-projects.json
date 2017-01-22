@@ -1,0 +1,207 @@
+[
+    {
+        "id": "full-fact",
+        "name": "Full Fact",
+        "category": "Static"
+    },
+    {
+        "id": "boots-betalabs",
+        "name": "Boots",
+        "category": "Web apps"
+    },
+    {
+        "id": "network-locum",
+        "name": "Network Locum",
+        "category": "Web apps"
+    },
+    {
+        "id": "saranac",
+        "name": "Saranac",
+        "category": "Web apps"
+    },
+    {
+        "id": "mean-tweets",
+        "name": "Mean tweets",
+        "category": "Web apps"
+    },
+    {
+        "id": "angular-ticker",
+        "name": "Angular ticker",
+        "category": "Web apps"
+    },
+    {
+        "id": "angular-poc-demos",
+        "name": "Angular proof of concept demos",
+        "category": "Web apps"
+    },
+    {
+        "id": "fifthweek",
+        "name": "Fifthweek",
+        "category": "Web apps"
+    },
+    {
+        "id": "reedsy",
+        "name": "Reedsy",
+        "category": "Web apps"
+    },
+    {
+        "id": "tailster",
+        "name": "Tailster",
+        "category": "Web apps"
+    },
+    {
+        "id": "dvla-personalised-registrations",
+        "name": "DVLA: Personalised Registrations",
+        "category": "Web apps"
+    },
+    {
+        "id": "dvla-sell-a-vehicle-into-the-motor-trade",
+        "name": "DVLA: Sell a vehicle into the motor trade",
+        "category": "Web apps"
+    },
+    {
+        "id": "dvla-buy-a-vehicle-from-the-motor-trade",
+        "name": "DVLA: Buy a vehicle from the motor trade",
+        "category": "Web apps"
+    },
+    {
+        "id": "robbie-williams",
+        "name": "Robbie Williams",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "collins-learning",
+        "name": "Collins Learning",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "tolkien",
+        "name": "Tolkien",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "electrolux",
+        "name": "Electrolux Parts & Accessories",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "aeg",
+        "name": "AEG Parts & Accessories",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "zanussi",
+        "name": "Zanussi Parts & Accessories",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "hoover",
+        "name": "Hoover Spares",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "the-store",
+        "name": "The Store",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "william-curley",
+        "name": "William Curley",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "farrell",
+        "name": "Farrell",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "new-naturalists",
+        "name": "New Naturalists",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "jbrand",
+        "name": "J Brand",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "werelse",
+        "name": "Werelse",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "wpfp",
+        "name": "Who Pays Full Price",
+        "category": "Ecommerce"
+    },
+    {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "category": "Static"
+    },
+    {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "category": "Static"
+    },
+    {
+        "id": "powatag",
+        "name": "Powatag",
+        "category": "Static"
+    },
+    {
+        "id": "enterprising-britain",
+        "name": "Enterprising Britain",
+        "category": "Static"
+    },
+    {
+        "id": "powa",
+        "name": "Powa",
+        "category": "Static"
+    },
+    {
+        "id": "mPowa",
+        "name": "mPowa",
+        "category": "Static"
+    },
+    {
+        "id": "propax-malaysia",
+        "name": "Propax Malaysia",
+        "category": "Static"
+    },
+    {
+        "id": "life-financial-solutions",
+        "name": "Life Financial Solutions",
+        "category": "Static"
+    },
+        {
+        "id": "celebrity-smiles",
+        "name": "Celebrity Smiles",
+        "category": "Static"
+    },
+    {
+        "id": "gold-challenge",
+        "name": "Gold Challenge",
+        "category": "Static"
+    },
+    {
+        "id": "jquery/list-icon-manipulator",
+        "name": "List Icon Manipulator",
+        "category": "jQuery plugins"
+    },
+    {
+        "id": "jquery/active-hover-states",
+        "name": "Active Hover States",
+        "category": "jQuery plugins"
+    },
+    {
+        "id": "jquery/portrolio",
+        "name": "Portrolio",
+        "category": "jQuery plugins"
+    }
+]

@@ -1,0 +1,19 @@
+{
+		"id": "dvla-sell-a-vehicle-into-the-motor-trade",
+		"name": "DVLA: Sell a vehicle into the motor trade",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "Sass"},
+			{"tag": "JavaScript, jQuery"},
+			{"tag": "Play, Scala"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			{"item": "Converted paper based processes into a streamlined online application"},
+			{"item": "UX and mobile first approaches"},
+			{"item": "GDS guidlines and approvals"}
+		],
+		"liveUrl": "#"
+}
