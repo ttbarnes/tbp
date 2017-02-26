@@ -113,7 +113,7 @@
         "as-needed"
       ],
       "comma-dangle": [
-        2,
+        0,
         "always-multiline"
       ],
       "import/imports-first": 0,
