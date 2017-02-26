@@ -32,7 +32,7 @@ function App(props) {
         ]}
       />
 
-      <Header />
+      <Header location={props.location} />
       {React.Children.toArray(props.children)}
 
     </AppWrapper>
@@ -41,6 +41,7 @@ function App(props) {
 
 App.propTypes = {
   children: React.PropTypes.node,
+  location: React.PropTypes.object
 };
 
 export default App;
