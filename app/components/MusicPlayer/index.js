@@ -1,20 +1,53 @@
-import React from 'react';
-import { PlayButton, Progress, Icons } from 'react-soundplayer/components';
+import React, { PropTypes } from 'react';
+import { PlayButton, Timer } from 'react-soundplayer/components';
 import { SoundPlayerContainer } from 'react-soundplayer/addons';
 
-const { SoundCloudLogoSVG } = Icons;
+const clientId = 'lzDYm6cMXxTW4NmEeNmnQLKnCaVDgRNo';
 
-const clientId = 'TBC';
-const streamUrl = 'https://api.soundcloud.com/tracks/200494743/stream';
+const TrackInfo = (props) => {
+  const { track, currentTime } = props;
+
+  if (!track) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      {/* <img src="https://i1.sndcdn.com/artworks-000175440311-15b1dk-t250x250.jpg"/> */}
+      <img src={track.artwork_url} alt={track.title} />
+      <h2>{track.title}</h2>
+      <p><small>{track.created_at}</small></p>
+      {/* <div style={ {background: '#000' }}>
+        <img src={track.waveform_url}/>
+      </div> */}
+      <Timer duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
+    </div>
+  );
+};
+
+TrackInfo.propTypes = {
+  track: PropTypes.object,
+  currentTime: PropTypes.number,
+};
+
+const MusicPlayer = (props) => {
+  const { url } = props;
+  return (
+    <div>
+      <SoundPlayerContainer
+        clientId={clientId}
+        resolveUrl={url}
+      >
+        <PlayButton />
+        <TrackInfo />
+      </SoundPlayerContainer>
+    </div>
+  );
+};
 
 
-function MusicPlayer() {
-  return (    
-    <p>music player here</p>
-    // <SoundPlayerContainer streamUrl={streamUrl} clientId={clientId}>
-        // {/* your custom player components */}
-    // </SoundPlayerContainer>
-  )
-}
+MusicPlayer.propTypes = {
+  url: PropTypes.string,
+};
 
 export default MusicPlayer;

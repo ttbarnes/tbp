@@ -12,50 +12,43 @@ const tempMusicData = [
   {
     id: 1,
     title: 'test title',
-    url : 'http://soundcloud.com/ttonyb/asdf',
-    genre: 'House'
+    url: 'https://soundcloud.com/ttonyb/ttox-play-him-like-a-machine',
+    genre: 'bingo',
   },
   {
     id: 2,
     title: 'dummy title',
-    url : 'http://soundcloud.com/ttonyb/qwerty',
-    genre: 'House'
+    url: 'https://soundcloud.com/ttonyb/tonyb-interlude-by-the-river',
+    genre: 'bongo',
   },
   {
     id: 3,
     title: 'dummy title',
-    url : 'http://soundcloud.com/ttonyb/qwerty',
-    genre: 'Downtempo'
-  }
+    url: 'https://soundcloud.com/ttonyb/tonyb-closing-bridge-unmastered',
+    genre: 'fongo',
+  },
 ];
 
 export class MusicPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
-
     return (
       <article>
 
         <Helmet
           title="Music"
           meta={[
-            { name: 'description', content: 'Dev things' },
+            { name: 'description', content: 'TonyB, ttox, etc....' },
           ]}
         />
 
-        <p>MusicPage</p>
-
         {
-          tempMusicData.map((t) => {
-            return (
-              <li key={t.id}>
-                {t.title}
-                <MusicPlayer />
-              </li>
-            )
-          })
+          tempMusicData.map((t) =>
+            <li key={t.id}>
+              <MusicPlayer url={t.url} />
+            </li>
+          )
         }
-
 
       </article>
     );
