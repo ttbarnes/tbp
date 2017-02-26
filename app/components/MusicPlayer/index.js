@@ -14,12 +14,11 @@ const TrackInfo = (props) => {
   return (
     <div>
       {/* <img src="https://i1.sndcdn.com/artworks-000175440311-15b1dk-t250x250.jpg"/> */}
-      <img src={track.artwork_url} alt={track.title} />
+      <img src={track.artwork_url || track.user.avatar_url} alt={track.title} />
       <h2>{track.title}</h2>
+      <p>{track.description}</p>
+      <p>{track.genre}</p>
       <p><small>{track.created_at}</small></p>
-      {/* <div style={ {background: '#000' }}>
-        <img src={track.waveform_url}/>
-      </div> */}
       <Timer duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
     </div>
   );
