@@ -1,10 +1,13 @@
 import React, { PropTypes } from 'react';
-import { PlayButton, Timer } from 'react-soundplayer/components';
-
+import { Timer, Progress } from 'react-soundplayer/components';
+import moment from 'moment';
+import H2 from 'components/H2';
 import {
   Root,
   ColLeft,
-  ColRight
+  ColRight,
+  ButtonPlay,
+  GenreTag
 } from './styledTrack';
 
 const Track = (props) => {
@@ -20,15 +23,22 @@ const Track = (props) => {
       <ColLeft>
         <img src={track.artwork_url || track.user.avatar_url} alt={track.title} />
         <br />
-        <PlayButton {...props} />
+        <ButtonPlay {...props} />
       </ColLeft>
 
       <ColRight>
-        <h2>{track.title}</h2>
-        <p>{track.description}</p>
-        <p>{track.genre}</p>
-        <p><small>{track.created_at}</small></p>
-        <Timer duration={track ? track.duration / 1000 : 0} currentTime={currentTime} {...props} />
+        <H2 className="no-margin">{track.title} <GenreTag>{track.genre}</GenreTag></H2>
+        <p className="no-margin"><small>{moment(track.created_at).format('Do MMM YYYY')}</small></p>
+        {track.description && (
+          <p className="no-margin">{track.description}</p>
+        )}
+        <Timer duration={track.duration / 1000} currentTime={currentTime} {...props} />
+
+        <Progress
+          value={(currentTime / track.duration) * 100 || 0}
+          {...props}
+        />
+
       </ColRight>
 
     </Root>

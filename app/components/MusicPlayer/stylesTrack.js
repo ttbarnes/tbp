@@ -11,6 +11,17 @@ export const styles = {
   `,
   colRight: css`
     
+  `,
+  playButton: css`
+    width: 73px
+    background: #CCC
+    border-radius: 50%
+  `,
+  genreTag: css`
+    display: inline-block
+    background: #BADA55
+    font-size: 0.6em
+    padding: 0.3em
   `
 };
 
