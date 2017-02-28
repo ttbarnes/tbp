@@ -15,8 +15,12 @@
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
-      {"item": "something"},
-      {"item": "something else"}
+      "something",
+      "something else"
+    ],
+    "urls": [
+      "http://github.com",
+      "http://google.com"
     ]
   },
   {
@@ -35,10 +39,10 @@
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
-      {"item": "Large greenfield, wealth management app"},
-      {"item": "Rich, complex data visualization"},
-      {"item": "Mock API and datastore"},
-      {"item": "Heavy use of custom directives/components"}
+      "Large greenfield, wealth management app",
+      "Rich, complex data visualization",
+      "Mock API and datastore",
+      "Heavy use of custom directives/components"
     ],
     "how": {
       "title": "My involvement",

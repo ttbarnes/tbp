@@ -1,26 +1,20 @@
-/*
- * DevPage
- *
- * Everything development related
- */
-
 import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { 
-  selectProject,
-  selectSelectedProject 
+import {
+  selectProject
 } from './selectors';
 
 export class DevProjectPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
+    if (!this.props.project) {
+      return null;
+    }
 
-    let project;
-
-    this.props.project ? project = this.props.project.toJS() : null;
+    const project = this.props.project.toJS();
 
     return (
       <article>
@@ -35,13 +29,41 @@ export class DevProjectPage extends React.PureComponent { // eslint-disable-line
         {project ? (
           <section>
             <p>{project.title}</p>
+            <p>{project.date}</p>
             <p>Category: {project.category}</p>
             <p>ID: {project.id}</p>
+
+            <ul>
+              {project.tech.map((item) =>
+                <li key={item.tag} className={`tech-tag ${item.tag}`}>{item.tag}</li>
+              )}
+            </ul>
+
+            <ul>
+              {project.deliverItems.map((item) =>
+                <li key={item}>{item}</li>
+              )}
+            </ul>
+
+            <ul>
+              {project.urls.map((item) =>
+                <li key={item}>
+                  <a href={item}>
+                    {item.includes('github') ? (
+                      'Check out the code'
+                    ) : (
+                      'View the live site'
+                    )}
+                  </a>
+                </li>
+              )}
+            </ul>
+
           </section>
 
-        ): (
+        ) : (
           <section>
-            <p>oh no, apparently this project doesn't exist :(</p>
+            <p>oh no, apparently this project does not exist :(</p>
           </section>
         )}
 
@@ -51,10 +73,10 @@ export class DevProjectPage extends React.PureComponent { // eslint-disable-line
 }
 
 DevProjectPage.propTypes = {
-  project: React.PropTypes.any,
+  project: React.PropTypes.any
 };
 
-const mapStateToProps = (state, {params}) => createStructuredSelector({
+const mapStateToProps = (state, { params }) => createStructuredSelector({
   project: selectProject(params.id),
 });
 
