@@ -8,24 +8,20 @@
 
 import React from 'react';
 import { Link } from 'react-router';
-import styled from 'styled-components';
 import styles from './styles';
 
-const ListItem = (props) => {
-  return (
-    <li style={styles.listItem}>
-      <Link to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)} style={styles.link}>
-        {props.title}
-      </Link>
-    </li>
-  )
-};
+const ListItem = (props) =>
+  <li style={styles.listItem}>
+    <Link to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)} style={styles.link}>
+      {props.name}
+    </Link>
+  </li>
+;
 
 ListItem.propTypes = {
-  title: React.PropTypes.string,
-  category: React.PropTypes.string,
+  name: React.PropTypes.string,
   id: React.PropTypes.number,
-  onClick: React.PropTypes.func,
-}
+  onClick: React.PropTypes.func
+};
 
 export default ListItem;

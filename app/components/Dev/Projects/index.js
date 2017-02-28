@@ -6,22 +6,27 @@
  * otherwise it'll render a link with an onclick
  */
 
-import React, { PropTypes, Children } from 'react';
+import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import Wrapper from './Wrapper';
 import ListItem from './ListItem';
 
 function filterProjectsByCategory(projects, filterCategory) {
-  if (filterCategory === 'All') {
-    return projects;
+  if (projects) {
+    if (filterCategory === 'All') {
+      return projects;
+    }
+    return projects.filter((p) => p.toJS().category === filterCategory);
   }
-  return projects.filter(p => p.toJS().category === filterCategory);
+  return null;
 }
 
 export class Projects extends React.PureComponent {
 
   componentDidMount() {
-    var elm = ReactDOM.findDOMNode(this);
+    /* eslint-disable react/no-find-dom-node */
+    const elm = ReactDOM.findDOMNode(this);
+    /* eslint-enable react/no-find-dom-node */
     elm.style.opacity = 0;
     window.requestAnimationFrame(() => {
       elm.style.transition = 'opacity 500ms';
@@ -30,31 +35,30 @@ export class Projects extends React.PureComponent {
   }
 
   render() {
-    
     const data = filterProjectsByCategory(this.props.data, this.props.activeFilter);
 
     return (
       <Wrapper>
         <ul>
-          
-            {data.map(project => (
-              <ListItem title={project.get('title')} 
-                        category={project.get('category')} 
-                        key={project.get('id')}
-                        id={project.get('id')} 
-                        onClick={this.props.onClick} 
-              />
-            ))}
+          {data && data.map((project) => (
+            <ListItem
+              name={project.get('name')}
+              category={project.get('category')}
+              key={project.get('id')}
+              id={project.get('id')}
+              onClick={this.props.onClick}
+            />
+          ))}
         </ul>
       </Wrapper>
     );
   }
-};
+}
 
 Projects.propTypes = {
-  projects: PropTypes.array,
+  data: PropTypes.array,
   activeFilter: PropTypes.string,
   onClick: PropTypes.func
-}
+};
 
 export default Projects;
