@@ -28,4 +28,31 @@ injectGlobal`
     line-height: 1.5em;
   }
 
+  ul,
+  ol,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  button { 
+    width: 100%; 
+    padding: 1em 
+    background:#CCC;
+    color: #000; 
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .no-margin {
+    margin:0;
+  }
+
+  .no-list-style {
+    list-style-type: none;
+  }
+  
 `;

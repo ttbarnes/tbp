@@ -9,5 +9,6 @@ const styles = {
     display: 'block',
     textDecoration: 'none'
   }
-}
+};
+
 export default styles;
