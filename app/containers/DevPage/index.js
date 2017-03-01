@@ -12,10 +12,10 @@ import { createStructuredSelector } from 'reselect';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
 
-import { 
+import {
   setDevProjectsFilter,
   setDevSelectedProject
-} from  './actions';
+} from './actions';
 import { 
   selectProjects,
   selectActiveProjectFilter
@@ -48,7 +48,7 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
 }
 
 DevPage.propTypes = {
-  projects: React.PropTypes.any,
+  projects: React.PropTypes.array,
   onClick: React.PropTypes.func,
 };
 

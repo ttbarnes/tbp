@@ -1,19 +1,15 @@
 [
   {
-    "id": 1,
-    "name": "Dummy Project",
-    "category": "Angular",
-    "date": "2015",
+    "id": "trainline",
+    "name": "Trainline",
+    "category": "Web apps",
+    "date": "2017",
     "tech": [
-      {"tag": "Express, Node js"},
-      {"tag": "AngularJS"},
-      {"tag": "Highcharts"},
+      {"tag": "React"},
       {"tag": "JavaScript"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Grunt"},
-      {"tag": "Less"}
+      {"tag": "TypeScript"},
+      {"tag": "etc"}
     ],
-    "deliverTitle": "What we delivered",
     "deliverItems": [
       "something",
       "something else"
@@ -24,7 +20,63 @@
     ]
   },
   {
-    "id": 2,
+    "id": "boots-betalabs",
+    "name": "Boots BetaLabs",
+    "category": "Web apps",
+    "date": "2016",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "ES6"},
+      {"tag": "d3.js"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Webpack"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      "6 different apps for various stores and consumers",
+      "Modular, component based architecture with shared, reusable codebases",
+      "Ecommerce checkout for a bespoke touch screen app",
+      "Dynamic, custom 'time entry type tracker' utilising d3.js",
+      "Various email and mobile validation components",
+      "Improved test coverage and tech debt",
+      "CoreMetrics analytics integration"
+    ],
+    "how": {
+      "title": "My involvement",
+      "thoughts":"<p>I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts: </p><img src='images/showcase/boots-betalabs/inner01.jpg' class='max-width-384' /><p>I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle: </p><img src='images/showcase/boots-betalabs/inner02.jpg'/><p>Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers: </p><img src='images/showcase/boots-betalabs/inner03.jpg' class='max-width-447'/>"
+    }
+  },
+  {
+    "id": "network-locum",
+    "name": "Network Locum",
+    "category": "Web apps",
+    "date": "2015-16",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "ES6"},
+      {"tag": "Redux"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Webpack"},
+      {"tag": "Less"}
+    ],
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      "Built many new features and components within a large existing codebase",
+      "Modular, component based app/architecture",
+      "Heavy use of custom directives/components",
+      "Greatly improved the test coverage"
+    ],
+    "how": {
+      "title": "My involvement",
+      "thoughts":"<p>I really enjoyed building the 'My Circles' feature which enabled users to manage groups of 'favourites'. Many actions and filters could be applied here, so we managed these potentially cumbersome states with Redux.</p><img src='images/showcase/network-locum/inner01.jpg'/><p>Within 'My Circles', we also built an invitation component that could be easily re-used:</p><img src='images/showcase/network-locum/inner02.jpg'/><p>I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups.</p><img src='images/showcase/network-locum/inner03.jpg'/>"
+    }
+  },
+  
+  {
+    "id": "saranac",
     "name": "Saranac",
     "category": "Web apps",
     "date": "2015",
@@ -48,5 +100,193 @@
       "title": "My involvement",
       "thoughts":"<p>I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):</p><img src='images/showcase/saranac/inner01.jpg'/><p>We also built many visually small, but logically complex components, like these bar graphs:</p><img src='images/showcase/saranac/inner02.jpg'/><p>Similarly with these risk indicators:</p><img src='images/showcase/saranac/inner03.jpg'/>"
     }
+  },
+  {
+    "id": "mean-tweets",
+    "name": "Mean tweets",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+      {"tag": "MongoDB, Mongoose"},
+      {"tag": "Express, Node js"},
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Grunt"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      "Created from the ground up in order to learn more about Node, Express and MongoDB",
+      "Built a fairly in-depth node API that interacts with a DB",
+      "Clean and modular angular app on the front end",
+      "Built a timeline feature that queries the API depending on who a user follows and the followee's tweets/retweets"
+    ],
+    "liveUrl": "https://mean-tweets.herokuapp.com"
+  },
+  {
+    "id": "angular-ticker",
+    "name": "Angular ticker",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "Grunt"},
+      {"tag": "Sass"},
+      {"tag": "CSS3"}
+    ],
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      "Built an open source simple ticker directive for easy re-use in any project",
+      "Automatically scrolls through a list of items, fading in/out",
+      "Configurable timing"
+    ],
+    "liveUrl": "http://ttbarnes.github.io/angular-ticker"
+  },
+  {
+    "id": "angular-poc-demos",
+    "name": "Angular proof of concept demos",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Grunt"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      "Created whilst learning and seeking examples of some angular features",
+      "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
+    ],
+    "liveUrl": "https://angular-poc-demos.firebaseapp.com"
+  },
+  {
+    "id": "fifthweek",
+    "name": "Fifthweek",
+    "category": "Web apps",
+    "date": "2014-2015",
+    "tech": [
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Grunt"},
+      {"tag": "Sass"}
+    ],
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      "Contributed to the first version of the product",
+      "Built some core features involving business logic, angular routing and more",
+      "Owned the UI - integrated designs, branding"
+    ],
+    "liveUrl": "http://fifthweek.com"
+  },
+  {
+    "id": "reedsy",
+    "name": "Reedsy",
+    "category": "Web apps",
+    "date": "2014-15",
+    "tech": [
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Sass"},
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript, jQuery"},
+      {"tag": "Rails"},
+      {"tag": "Photoshop, Sketch"}
+    ],
+    "deliverTitle": "What we delivered",
+    "deliverItems": [
+      "Contributed to the first version of the product, building new features, integrating designs, branding",
+      "Built and maintained a custom, scalable UI framework to be used on any device, anywhere",
+      "Various 3rd party and social media integrations",
+      "Built multiple landing pages during launch"
+    ],
+    "how": {
+      "title": "My involvement",
+      "thoughts":"<p>I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team.</p>"
+    },
+
+    "liveUrl": "http://reedsy.com"
+  },
+  {
+    "id": "tailster",
+    "name": "Tailster",
+    "category": "Web apps",
+    "date": "2014-15",
+    "tech": [
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Less"},
+      {"tag": "AngularJS"},
+      {"tag": "JavaScript"},
+      {"tag": "Gulp"},
+      {"tag": "Photoshop"}
+    ],
+    "deliverTitle": "My involvement",
+    "deliverItems": [
+      "Delivered many new features, integrating with APIs",
+      "Integrated a new, cleaner design",
+      "Refactoring, cleaning the codebase",
+      "Contributed to the cordova iOS app"
+    ],
+    "liveUrl": "http://tailster.com"
+  },
+  {
+		"id": "dvla-personalised-registrations",
+		"name": "DVLA: Personalised Registrations",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "Sass"},
+			{"tag": "JavaScript, jQuery"},
+			{"tag": "Play, Scala"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		],
+		"liveUrl": "#"
+  },
+  {
+		"id": "dvla-sell-a-vehicle-into-the-motor-trade",
+		"name": "DVLA: Sell a vehicle into the motor trade",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "Sass"},
+			{"tag": "JavaScript, jQuery"},
+			{"tag": "Play, Scala"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		],
+		"liveUrl": "#"
+  },
+  {
+		"id": "dvla-buy-a-vehicle-from-the-motor-trade",
+		"name": "DVLA: Buy a vehicle from the motor trade",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			{"tag": "HTML5, CSS3"},
+			{"tag": "Sass"},
+			{"tag": "JavaScript, jQuery"},
+			{"tag": "Play, Scala"}
+		],
+		"deliverTitle": "What we delivered",
+		"deliverItems": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		],
+		"liveUrl": "#"
   }
 ]

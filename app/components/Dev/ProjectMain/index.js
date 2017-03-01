@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {
   RootFlex,
-  FlexCol,
+  // FlexCol,
   ListFlex,
   ListFlexItem
 } from './styled';
@@ -30,31 +30,25 @@ function DevProjectMain(props) {
           }
           <img src="http://tonybarnes.me/images/showcase/saranac/01.jpg" alt="test" />
 
-          <RootFlex>
-            <FlexCol>
-              <h4>Tech</h4>
-              <ul>
-                {project.tech.map((item) =>
-                  <li key={item.tag} className={`tech-tag ${item.tag}`}>{item.tag}</li>
-                )}
-              </ul>
-            </FlexCol>
-            <FlexCol>
-              <h4>Highlights</h4>
-              <ul>
-                {project.deliverItems.map((item) =>
-                  <li key={item}>{item}</li>
-                )}
-              </ul>
-            </FlexCol>
-          </RootFlex>
+          <h4>Tech</h4>
+          <ul>
+            {project.tech.map((item) =>
+              <li key={item.tag} className={`tech-tag ${item.tag}`}>{item.tag}</li>
+            )}
+          </ul>
+          <h4>Highlights</h4>
+          <ul>
+            {project.deliverItems.map((item) =>
+              <li key={item}>{item}</li>
+            )}
+          </ul>
 
           <ListFlex className="no-list-style">
             {project.urls && project.urls.map((item) =>
               <ListFlexItem key={item}>
                 <button>
                   {item.includes('github') ? (
-                    'Check out the code'
+                    'github repo'
                   ) : (
                     'View the live site'
                   )}
