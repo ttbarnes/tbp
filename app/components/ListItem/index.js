@@ -1,20 +1,17 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import Item from './Item';
-import Wrapper from './Wrapper';
 
 function ListItem(props) {
   return (
-    <Wrapper>
-      <Item>
-        {props.item}
-      </Item>
-    </Wrapper>
+    <Item>
+      {props.children}
+    </Item>
   );
 }
 
 ListItem.propTypes = {
-  item: React.PropTypes.any,
+  children: PropTypes.node
 };
 
 export default ListItem;

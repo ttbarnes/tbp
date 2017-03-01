@@ -54,5 +54,9 @@ injectGlobal`
   .no-list-style {
     list-style-type: none;
   }
+
+  iframe {
+    max-width: 100%;
+  }
   
 `;
