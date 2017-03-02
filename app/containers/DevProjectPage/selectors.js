@@ -13,7 +13,7 @@ const selectDevProjects = () => createSelector(
 
 const selectProject = (projectId) => createSelector(
   selectDevProjects(),
-  (devProjectsState) => devProjectsState.find(p => p.toJS().id == projectId)
+  (devProjectsState) => devProjectsState.find((p) => p.toJS().id === projectId)
 );
 
 export {

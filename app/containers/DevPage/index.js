@@ -16,7 +16,7 @@ import {
   setDevProjectsFilter,
   setDevSelectedProject
 } from './actions';
-import { 
+import {
   selectProjects,
   selectActiveProjectFilter
 } from './selectors';
@@ -24,7 +24,6 @@ import {
 export class DevPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
-
     return (
       <article>
 
@@ -39,31 +38,29 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
 
         <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />
 
-        <br/>
+        <br />
+
         <Projects onClick={this.props.onClickProjectListItem} data={this.props.projects} activeFilter={this.props.activeFilter} />
-        
+
       </article>
     );
   }
 }
 
 DevPage.propTypes = {
+  activeFilter: React.PropTypes.string,
   projects: React.PropTypes.array,
-  onClick: React.PropTypes.func,
+  onClickProjectFilter: React.PropTypes.func,
+  onClickProjectListItem: React.PropTypes.func
 };
 
 export function mapDispatchToProps(dispatch) {
   return {
-    onChangeUsername: (evt) => dispatch(changeUsername(evt.target.value)),
-    onSubmitForm: (evt) => {
-      if (evt !== undefined && evt.preventDefault) evt.preventDefault();
-      dispatch(loadRepos());
-    },
     onClickProjectFilter: (evt) => {
-      dispatch(setDevProjectsFilter(evt))
+      dispatch(setDevProjectsFilter(evt));
     },
     onClickProjectListItem: (id) => {
-      dispatch(setDevSelectedProject(id))
+      dispatch(setDevSelectedProject(id));
     }
   };
 }

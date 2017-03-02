@@ -14,7 +14,7 @@ const loadModule = (cb) => (componentModule) => {
 
 export default function createRoutes(store) {
   // create reusable async injectors using getAsyncInjectors factory
-  const { injectReducer, injectSagas } = getAsyncInjectors(store);
+  const { injectReducer } = getAsyncInjectors(store);
 
   return [
     {
@@ -51,7 +51,6 @@ export default function createRoutes(store) {
         });
 
         importModules.catch(errorLoading);
-
       },
     }, {
       path: '/dev/project/:id',
@@ -71,7 +70,6 @@ export default function createRoutes(store) {
         });
 
         importModules.catch(errorLoading);
-
       },
     }, {
       path: '/music',
@@ -102,7 +100,7 @@ export default function createRoutes(store) {
       name: 'contact',
       getComponent(nextState, cb) {
         System.import('containers/ContactPage')
-          .then(loadModule(cb)) 
+          .then(loadModule(cb))
           .catch(errorLoading);
       },
     }, {

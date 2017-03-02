@@ -4,7 +4,7 @@
  *
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 const tempStyle = {
@@ -17,19 +17,19 @@ const tempStyle = {
 
 export const ContactForm = React.createClass({
 
-  renderInput({ label, type, input: { value, onChange } }) {
+  renderInput({ label, type, input: { onChange } }) {
     return (
       type === 'textarea' ? (
-      <div>
-      <label>{label}</label>
-      <textarea style={tempStyle}></textarea>
-      </div>
-    ): (
+        <div>
+          <label>{label}</label>
+          <textarea style={tempStyle}></textarea>
+        </div>
+    ) : (
       <div>
         <label>{label}</label>
-        <input label={ label }
-               onChange = { onChange }
-               type={ type } 
+        <input label={label}
+               onChange={onChange}
+               type={type} 
                style={tempStyle} />
       </div>
     )
@@ -71,6 +71,3 @@ export default reduxForm({
   form: 'signup',
   // validate
 })(ContactForm);
-
-
-

@@ -12,7 +12,6 @@ import ContactForm from 'components/ContactForm';
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
-
     return (
       <article>
 
@@ -29,6 +28,6 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
       </article>
     );
   }
-};
+}
 
 export default (ContactPage);

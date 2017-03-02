@@ -6,14 +6,12 @@
  * otherwise it'll render a link with an onclick
  */
 
-import React, { PropTypes, Children } from 'react';
+import React, { PropTypes } from 'react';
 import Wrapper from './Wrapper';
-import ProjectFilterLink from 'components/dev/ProjectFilterLink';
+import ProjectFilterLink from '../ProjectFilterLink';
 
 function ProjectFilters(props) {
-
   return (
-
     <Wrapper>
 
       <p>filter by:</p>
@@ -30,7 +28,7 @@ function ProjectFilters(props) {
 
     </Wrapper>
   );
-};
+}
 
 ProjectFilters.propTypes = {
   onClick: PropTypes.func,

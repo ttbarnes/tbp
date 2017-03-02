@@ -6,25 +6,22 @@
  * otherwise it'll render a link with an onclick
  */
 
-import React, { PropTypes, Children } from 'react';
-import * as Radium from 'radium';
+import React, { PropTypes } from 'react';
 import styles from './styles';
 
 function ProjectFilterLink(props) {
   return (
     props.currentFilter === props.type ? (
-      <div onClick={() => props.onClick(props.type)} style={styles.filterLinkActive}>
+      <button onClick={() => props.onClick(props.type)} style={styles.filterLinkActive}>
         {props.type}
-      </div>
+      </button>
     ) : (
-      <div onClick={() => props.onClick(props.type)} style={styles.filterLink}>
+      <button onClick={() => props.onClick(props.type)} style={styles.filterLink}>
         {props.type}
-      </div>
+      </button>
     )
-
-
   );
-};
+}
 
 ProjectFilterLink.propTypes = {
   onClick: PropTypes.func,
@@ -32,4 +29,4 @@ ProjectFilterLink.propTypes = {
   currentFilter: PropTypes.string,
 };
 
-export default (Radium(ProjectFilterLink));
+export default ProjectFilterLink;

@@ -11,13 +11,12 @@ const selectProjects = () => createSelector(
   (devState) => devState.get('projects')
 );
 
-const selectActiveProjectFilter = () =>  createSelector(
+const selectActiveProjectFilter = () => createSelector(
   selectDev(),
   (devState) => devState.get('filterCategory')
-)
+);
 
 export {
   selectProjects,
-  selectDevProjects,
   selectActiveProjectFilter
 };

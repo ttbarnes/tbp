@@ -11,5 +11,5 @@ const styles = {
     padding: '0.5rem',
     marginRight: '0.5rem'
   }
-}
+};
 export default styles;
