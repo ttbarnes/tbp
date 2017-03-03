@@ -1,21 +1,15 @@
-/**
- *
- * Button.react.js
- *
- * A common button, if you pass it a prop "route" it'll render a link to a react-router route
- * otherwise it'll render a link with an onclick
- */
-
 import React from 'react';
-import { Link } from 'react-router';
-import styles from './styles';
+import {
+  StyledListItem,
+  StyledListItemLink
+} from './styled';
 
 const ListItem = (props) =>
-  <li style={styles.listItem}>
-    <Link to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)} style={styles.link}>
+  <StyledListItem>
+    <StyledListItemLink to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)}>
       {props.name}
-    </Link>
-  </li>
+    </StyledListItemLink>
+  </StyledListItem>
 ;
 
 ListItem.propTypes = {

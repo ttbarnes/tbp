@@ -45,7 +45,7 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
 
 DevPage.propTypes = {
   activeFilter: React.PropTypes.string,
-  projects: React.PropTypes.array,
+  projects: React.PropTypes.object,
   onClickProjectFilter: React.PropTypes.func,
   onClickProjectListItem: React.PropTypes.func
 };
