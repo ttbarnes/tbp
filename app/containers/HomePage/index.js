@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import H1 from '../../components/H1';
 import {
-  Root,
+  HomeBoxRoot,
   HomeBox,
   StyledLink
 } from './styled';
@@ -10,27 +11,33 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
 
   render() {
     return (
-      <Root>
+      <article>
         <Helmet
           meta={[
             { name: 'description', content: 'A React.js Boilerplate application homepage' },
           ]}
         />
 
-        <HomeBox>
-          <StyledLink to="/dev">dev</StyledLink>
-        </HomeBox>
-        <HomeBox>
-          <StyledLink to="/music">music</StyledLink>
-        </HomeBox>
-        <HomeBox>
-          <StyledLink to="/fpv">fpv</StyledLink>
-        </HomeBox>
-        <HomeBox>
-          <StyledLink to="/timelapse">timelapse</StyledLink>
-        </HomeBox>
+        <H1>Tony Barnes</H1>
 
-      </Root>
+        <br />
+
+        <HomeBoxRoot>
+          <HomeBox>
+            <StyledLink to="/dev">dev</StyledLink>
+          </HomeBox>
+          <HomeBox>
+            <StyledLink to="/music">music</StyledLink>
+          </HomeBox>
+          <HomeBox>
+            <StyledLink to="/fpv">fpv</StyledLink>
+          </HomeBox>
+          <HomeBox>
+            <StyledLink to="/timelapse">timelapse</StyledLink>
+          </HomeBox>
+        </HomeBoxRoot>
+
+      </article>
     );
   }
 }

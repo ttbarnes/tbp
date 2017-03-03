@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 export const styles = {
-  root: css`
+  homeBoxRoot: css`
     display: flex
   `,
   homeBox: css`

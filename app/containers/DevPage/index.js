@@ -28,6 +28,10 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
           ]}
         />
 
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <br />
+
         <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />
 
         <br />
