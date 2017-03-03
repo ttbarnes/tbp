@@ -26,7 +26,7 @@ function DevProjectMain(props) {
 
           {
             // temp solution for image
-            // currentyl, strangely unable to load dynamic image url
+            // currently, strangely unable to load dynamic image url
           }
           <img src="http://tonybarnes.me/images/showcase/saranac/01.jpg" alt="test" />
 

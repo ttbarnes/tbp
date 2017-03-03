@@ -1,35 +1,18 @@
-/**
- *
- * Button.react.js
- *
- * A common button, if you pass it a prop "route" it'll render a link to a react-router route
- * otherwise it'll render a link with an onclick
- */
-
 import React, { PropTypes } from 'react';
-import Wrapper from './Wrapper';
-import ProjectFilterLink from '../ProjectFilterLink';
+import Filter from './Filter';
+import { List } from './styled';
 
-function ProjectFilters(props) {
-  return (
-    <Wrapper>
-
-      <p>filter by:</p>
-
-      <ProjectFilterLink onClick={props.onClick} type="Web apps" currentFilter={props.activeFilter}></ProjectFilterLink>
-
-      <ProjectFilterLink onClick={props.onClick} type="Static" currentFilter={props.activeFilter}></ProjectFilterLink>
-
-      <ProjectFilterLink onClick={props.onClick} type="Other" currentFilter={props.activeFilter}></ProjectFilterLink>
-
-    </Wrapper>
-  );
-}
+const ProjectFilters = (props) =>
+  <List>
+    <Filter onClick={props.onClick} type="Web apps" currentFilter={props.activeFilter} />
+    <Filter onClick={props.onClick} type="Static" currentFilter={props.activeFilter} />
+    <Filter onClick={props.onClick} type="Other" currentFilter={props.activeFilter} />
+  </List>
+;
 
 ProjectFilters.propTypes = {
   onClick: PropTypes.func,
-  activeFilter: PropTypes.string,
+  activeFilter: PropTypes.string
 };
-
 
 export default ProjectFilters;
