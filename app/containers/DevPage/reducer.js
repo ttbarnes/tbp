@@ -21,8 +21,7 @@ import {
 
 const initialState = fromJS({
   projects: devProjects,
-  // filterCategory: 'All',
-  filterCategory: 'Angular',
+  filterCategory: 'Web apps',
   selectedProject: null
 });
 

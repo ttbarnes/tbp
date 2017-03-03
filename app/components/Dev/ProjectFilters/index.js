@@ -16,11 +16,7 @@ function ProjectFilters(props) {
 
       <p>filter by:</p>
 
-      <ProjectFilterLink onClick={props.onClick} type="All" currentFilter={props.activeFilter}></ProjectFilterLink>
-
-      <ProjectFilterLink onClick={props.onClick} type="React" currentFilter={props.activeFilter}></ProjectFilterLink>
-
-      <ProjectFilterLink onClick={props.onClick} type="Angular" currentFilter={props.activeFilter}></ProjectFilterLink>
+      <ProjectFilterLink onClick={props.onClick} type="Web apps" currentFilter={props.activeFilter}></ProjectFilterLink>
 
       <ProjectFilterLink onClick={props.onClick} type="Static" currentFilter={props.activeFilter}></ProjectFilterLink>
 
