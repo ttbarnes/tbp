@@ -9,7 +9,6 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 import { reducer as formReducer } from 'redux-form';
 
 import globalReducer from 'containers/App/reducer';
-import languageProviderReducer from 'containers/LanguageProvider/reducer';
 import devReducers from 'containers/DevPage/reducer';
 
 /*
@@ -47,7 +46,6 @@ export default function createReducer(asyncReducers) {
   return combineReducers({
     route: routeReducer,
     global: globalReducer,
-    language: languageProviderReducer,
     dev: devReducers,
     form: formReducer,
     ...asyncReducers,

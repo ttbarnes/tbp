@@ -1,8 +1,5 @@
 import React, { PropTypes } from 'react';
-import { FormattedMessage } from 'react-intl';
-
 import NavBar from './NavBar';
-import messages from './messages';
 import { Root, StyledHeaderLink } from './styled';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -17,9 +14,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
     return (
       <Root>
         <NavBar>
-          <StyledHeaderLink to="/">
-            <FormattedMessage {...messages.home} />
-          </StyledHeaderLink>
+          <StyledHeaderLink to="/">Home</StyledHeaderLink>
           <StyledHeaderLink to="/dev">dev</StyledHeaderLink>
           <StyledHeaderLink to="/music">music</StyledHeaderLink>
           <StyledHeaderLink to="/fpv">fpv</StyledHeaderLink>
