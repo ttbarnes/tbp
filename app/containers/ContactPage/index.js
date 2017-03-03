@@ -1,24 +1,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-
-import A from 'components/A';
+import { Root, Link } from './styled';
 
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-      <article>
+      <Root>
 
         <Helmet
           title="Contact"
           meta={[
-            { name: 'description', content: 'Dev things' },
+            { name: 'description', content: 'Contact Tony' },
           ]}
         />
 
-        <A href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</A>
+        <Link href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</Link>
 
-      </article>
+      </Root>
     );
   }
 }
