@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
-import NavBar from './NavBar';
-import { Root, StyledHeaderLink } from './styled';
+import {
+  Root,
+  Nav,
+  NavLink
+} from './styled';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -13,14 +16,14 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
 
     return (
       <Root>
-        <NavBar>
-          <StyledHeaderLink to="/">Home</StyledHeaderLink>
-          <StyledHeaderLink to="/dev">dev</StyledHeaderLink>
-          <StyledHeaderLink to="/music">music</StyledHeaderLink>
-          <StyledHeaderLink to="/fpv">fpv</StyledHeaderLink>
-          <StyledHeaderLink to="/timelapse">timelapse</StyledHeaderLink>
-          <StyledHeaderLink to="/contact">contact</StyledHeaderLink>
-        </NavBar>
+        <Nav>
+          <NavLink to="/">Tony Barnes</NavLink>
+          <NavLink to="/dev">dev</NavLink>
+          <NavLink to="/music">music</NavLink>
+          <NavLink to="/fpv">fpv</NavLink>
+          <NavLink to="/timelapse">timelapse</NavLink>
+          <NavLink to="/contact">contact</NavLink>
+        </Nav>
       </Root>
     );
   }
