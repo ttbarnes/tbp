@@ -1,7 +1,3 @@
-/**
- * Homepage selectors
- */
-
 import { createSelector } from 'reselect';
 
 const selectDev = () => (state) => state.get('dev');

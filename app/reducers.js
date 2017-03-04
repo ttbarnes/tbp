@@ -10,6 +10,8 @@ import { reducer as formReducer } from 'redux-form';
 
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
+import fpvReducers from 'containers/FpvPage/reducer';
+
 
 /*
  * routeReducer
@@ -47,6 +49,7 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     global: globalReducer,
     dev: devReducers,
+    fpv: fpvReducers,
     form: formReducer,
     ...asyncReducers,
   });
