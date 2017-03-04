@@ -5,7 +5,6 @@ import { createStructuredSelector } from 'reselect';
 
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
-
 import {
   setDevProjectsFilter,
   setDevSelectedProject
@@ -14,6 +13,8 @@ import {
   selectProjects,
   selectActiveProjectFilter
 } from './selectors';
+
+import CV from '../../assets/Tony-Barnes-CV-2017.pdf';
 
 export class DevPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -28,7 +29,7 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
           ]}
         />
 
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href={CV} target="_blank">CV</a></p>
 
         <br />
 
