@@ -19,6 +19,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         />
 
         <H1>Tony Barnes</H1>
+        <p>JavaScript developer, musician, cyclist, FPV pilot, tea drinker.</p>
 
         <br />
 
