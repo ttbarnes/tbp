@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 import MusicPlayer from 'components/MusicPlayer';
-import musicData from '../../data/music.json';
+import { selectMusicTracks } from './selectors';
 
 export class MusicPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
+    let { tracks } = this.props;
+    if (tracks) {
+      tracks = tracks.toJS();
+    }
     return (
       <article>
 
@@ -16,17 +22,29 @@ export class MusicPage extends React.PureComponent { // eslint-disable-line reac
           ]}
         />
 
-        {
-          musicData.map((track) =>
-            <li key={track.url}>
-              <MusicPlayer url={track.url} />
-            </li>
-          )
-        }
+        {!tracks ? (
+          <p>Unable to load tracks at the moment.</p>
+        ) : (
+          <ul className="no-list-style">
+            {tracks.map((track) => (
+              <li key={track.url}>
+                <MusicPlayer url={track.url} />
+              </li>
+            ))}
+          </ul>
+        )}
 
       </article>
     );
   }
 }
 
-export default MusicPage;
+MusicPage.propTypes = {
+  tracks: PropTypes.object
+};
+
+const mapStateToProps = createStructuredSelector({
+  tracks: selectMusicTracks()
+});
+
+export default connect(mapStateToProps, {})(MusicPage);

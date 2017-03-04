@@ -10,6 +10,7 @@ import { reducer as formReducer } from 'redux-form';
 
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
+import musicReducers from 'containers/MusicPage/reducer';
 import fpvReducers from 'containers/FpvPage/reducer';
 import timelapseReducers from 'containers/TimelapsePage/reducer';
 
@@ -50,6 +51,7 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     global: globalReducer,
     dev: devReducers,
+    music: musicReducers,
     fpv: fpvReducers,
     timelapse: timelapseReducers,
     form: formReducer,
