@@ -1,35 +1,54 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 import ListItem from '../../components/ListItem';
 import VideoPlayer from '../../components/VideoPlayer';
-import timelapseData from '../../data/timelapse.json';
+import { selectTimelapseVideos } from './selectors';
 
 export class TimelapsePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
+    let { videos } = this.props;
+    if (videos) {
+      videos = videos.toJS();
+    }
+
     return (
       <article>
 
         <Helmet
           title="Timelapse"
           meta={[
-            { name: 'description', content: 'Dev things' },
+            { name: 'description', content: 'Timelapse videos' },
           ]}
         />
 
-        <ul className="no-list-style">
-          {
-            timelapseData.map((t) => (
-              <ListItem key={t.videoId}>
-                <VideoPlayer video={t} />
-              </ListItem>
-            ))
-          }
-        </ul>
+        {!videos ? (
+          <p>Unable to load timelapse videos at the moment.</p>
+        ) : (
+          <ul className="no-list-style">
+            {
+              videos.map((video) => (
+                <ListItem key={video.videoId}>
+                  <VideoPlayer video={video} />
+                </ListItem>
+              ))
+            }
+          </ul>
+        )}
 
       </article>
     );
   }
 }
 
-export default TimelapsePage;
+TimelapsePage.propTypes = {
+  videos: PropTypes.object
+};
+
+const mapStateToProps = createStructuredSelector({
+  videos: selectTimelapseVideos()
+});
+
+export default connect(mapStateToProps, {})(TimelapsePage);

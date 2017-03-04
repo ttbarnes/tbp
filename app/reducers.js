@@ -11,6 +11,7 @@ import { reducer as formReducer } from 'redux-form';
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
 import fpvReducers from 'containers/FpvPage/reducer';
+import timelapseReducers from 'containers/TimelapsePage/reducer';
 
 
 /*
@@ -50,6 +51,7 @@ export default function createReducer(asyncReducers) {
     global: globalReducer,
     dev: devReducers,
     fpv: fpvReducers,
+    timelapse: timelapseReducers,
     form: formReducer,
     ...asyncReducers,
   });
