@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import {
   Root,
   Nav,
+  NavLinkRoot,
   NavLink
 } from './styled';
 
@@ -17,12 +18,12 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
     return (
       <Root>
         <Nav>
-          <NavLink to="/">Tony Barnes</NavLink>
-          <NavLink to="/dev">dev</NavLink>
-          <NavLink to="/music">music</NavLink>
-          <NavLink to="/fpv">fpv</NavLink>
-          <NavLink to="/timelapse">timelapse</NavLink>
-          <NavLink to="/contact">contact</NavLink>
+          <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
+          <NavLink to="/dev" activeClassName="active">dev</NavLink>
+          <NavLink to="/music" activeClassName="active">music</NavLink>
+          <NavLink to="/fpv" activeClassName="active">fpv</NavLink>
+          <NavLink to="/timelapse" activeClassName="active">timelapse</NavLink>
+          <NavLink to="/contact" activeClassName="active">contact</NavLink>
         </Nav>
       </Root>
     );

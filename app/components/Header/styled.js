@@ -1,6 +1,20 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
 
+const NavLinkShared = `
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-touch-callout: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  font-size: 16px; 
+  color: #000;
+  transition: all 0.2s ease;
+  margin-bottom: 0.5em;
+`;
+
 export const Root = styled.header`
   @media (min-width: 900px) {
     position: fixed;
@@ -9,29 +23,32 @@ export const Root = styled.header`
     width: 160px;
     height: 100%;
     padding: 1em;
+    background: #EAEAEA;
   }
 `;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+`;
+
+export const NavLinkRoot = styled(Link)`
+  ${NavLinkShared}
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 export const NavLink = styled(Link)`
-  display: inline-flex;
-  padding: 0.25em 2em 0.25em 0;
-  text-decoration: none;
-  border-radius: 4px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-touch-callout: none;
-  user-select: none;
-  cursor: pointer;
-  outline: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px; 
-  color: #000;
-  
-  &:active {
-    background: #41ADDD;
-    color: #000;
+  ${NavLinkShared}
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    background: #747474;
+    color: #FFF;
   }
 `;
-
