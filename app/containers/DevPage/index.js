@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-
+import H1 from 'components/H1';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
 import {
@@ -25,9 +25,11 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
         <Helmet
           title="Dev"
           meta={[
-            { name: 'description', content: 'Dev things' },
+            { name: 'description', content: 'Dev projects and about' },
           ]}
         />
+
+        <H1>Dev</H1>
 
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href={CV} target="_blank">CV</a></p>
         <p>Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique and Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique.</p>

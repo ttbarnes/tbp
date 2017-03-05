@@ -18,8 +18,8 @@ function App(props) {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - tbp"
-        defaultTitle="tbp"
+        titleTemplate="%s - Tony Barnes"
+        defaultTitle="Tony Barnes"
         meta={[
           { name: 'description', content: 'A React.js Boilerplate application' },
         ]}

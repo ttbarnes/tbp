@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import H2 from 'components/H2';
 import {
   // RootFlex,
   // FlexCol,
@@ -21,7 +22,7 @@ function DevProjectMain(props) {
 
       {project ? (
         <section>
-          <h2>{project.name}</h2>
+          <H2>{project.name}</H2>
           <p><small>{project.category}, {project.date}</small></p>
 
           {

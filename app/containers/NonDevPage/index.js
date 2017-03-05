@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import H1 from 'components/H1';
 import ListItem from '../../components/ListItem';
 import MusicPlayer from 'components/MusicPlayer';
 import VideoPlayer from '../../components/VideoPlayer';
@@ -35,6 +36,8 @@ export class NonDevPage extends React.PureComponent { // eslint-disable-line rea
 
     return (
       <article>
+
+        <H1>Non-dev</H1>
 
         <Helmet
           title="Non-dev"
