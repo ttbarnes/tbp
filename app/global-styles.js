@@ -17,7 +17,7 @@ injectGlobal`
   }
 
   #app {
-    background-color: #fafafa;
+    background-color: #f3f3f3;
     min-height: 100%;
     min-width: 100%;
   }
@@ -56,6 +56,10 @@ injectGlobal`
   }
 
   iframe {
+    max-width: 100%;
+  }
+
+  img {
     max-width: 100%;
   }
   

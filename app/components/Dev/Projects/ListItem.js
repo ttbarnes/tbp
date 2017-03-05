@@ -4,10 +4,13 @@ import {
   StyledListItemLink
 } from './styled';
 
+const getProjectImage = (itemId) =>
+  require(`../../../assets/img/dev/${itemId}/01thumb.jpg`); // eslint-disable-line global-require
+
 const ListItem = (props) =>
   <StyledListItem>
     <StyledListItemLink to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)}>
-      {props.name}
+      <img src={getProjectImage(props.id)} alt={props.name} />
     </StyledListItemLink>
   </StyledListItem>
 ;

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
-import { buttonHover } from '../../styledShared';
 
 export const ListRoot = styled.ul`
   clear: both;
@@ -14,18 +13,20 @@ export const StyledListItem = styled.li`
   display: flex;
   alignItems: center;
   justifyContent: center;
-  background: #CCC;
-  border: solid 3px #EEE;
   minWidth: 200px;
   maxWidth: 200px;
   minHeight: 110px;
   textAlign: center;
-  ${buttonHover}
+  opacity: .8;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: 1; 
+  }
 `;
 
 export const StyledListItemLink = styled(Link)`
+  padding: 0.5em;
   display: block;
   color: #000;
-  padding: 1em;
   textDecoration: none;
 `;
