@@ -52,3 +52,10 @@ export const NavLink = styled(Link)`
     color: #FFF;
   }
 `;
+
+export const NavChildRoot = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 1em;
+`;

@@ -72,6 +72,15 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/non-dev',
+      name: 'nonDev',
+      getComponent(nextState, cb) {
+        System.import('containers/NonDevPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
       path: '/music',
       name: 'music',
       getComponent(nextState, cb) {
