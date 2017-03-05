@@ -9,7 +9,6 @@ import {
 } from './selectors';
 
 export class FpvPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     let { videos } = this.props;
     if (videos) {
