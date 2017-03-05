@@ -75,12 +75,22 @@ export default function createRoutes(store) {
       path: '/non-dev',
       name: 'nonDev',
       getComponent(nextState, cb) {
-        System.import('containers/NonDevPage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
+        const importModules = Promise.all([
+          System.import('containers/NonDevPage/reducer'),
+          System.import('containers/NonDevPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, component]) => {
+          injectReducer('nonDev', reducer.default);
+
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
       },
-    },
-    {
+    }, {
       path: '/music',
       name: 'music',
       getComponent(nextState, cb) {
