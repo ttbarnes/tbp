@@ -18,7 +18,7 @@ export class NonDevPage extends React.PureComponent { // eslint-disable-line rea
       );
     } else if (a.type === 'music') {
       return (
-        <ListItem key={a.videoId}>
+        <ListItem key={a.url}>
           <MusicPlayer url={a.url} />
         </ListItem>
       );

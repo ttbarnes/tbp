@@ -91,30 +91,6 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: '/music',
-      name: 'music',
-      getComponent(nextState, cb) {
-        System.import('containers/MusicPage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
-      path: '/fpv',
-      name: 'fpv',
-      getComponent(nextState, cb) {
-        System.import('containers/FpvPage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
-      path: '/timelapse',
-      name: 'timelapse',
-      getComponent(nextState, cb) {
-        System.import('containers/TimelapsePage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
       path: '/contact',
       name: 'contact',
       getComponent(nextState, cb) {

@@ -9,9 +9,7 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
-import musicReducers from 'containers/MusicPage/reducer';
-import fpvReducers from 'containers/FpvPage/reducer';
-import timelapseReducers from 'containers/TimelapsePage/reducer';
+import nonDevReducers from 'containers/NonDevPage/reducer';
 
 
 /*
@@ -50,9 +48,7 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     global: globalReducer,
     dev: devReducers,
-    music: musicReducers,
-    fpv: fpvReducers,
-    timelapse: timelapseReducers,
+    nonDev: nonDevReducers,
     ...asyncReducers,
   });
 }
