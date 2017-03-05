@@ -45,6 +45,14 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/about',
+      name: 'about',
+      getComponent(nextState, cb) {
+        System.import('containers/AboutPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '/dev/project/:id',
       name: 'devProject',
       getComponent(nextState, cb) {

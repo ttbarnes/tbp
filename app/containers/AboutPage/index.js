@@ -1,0 +1,16 @@
+import React from 'react';
+
+export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  render() {
+    return (
+      <article>
+        <h1>About</h1>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</p>
+        <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+      </article>
+    );
+  }
+}
+
+export default (AboutPage);
