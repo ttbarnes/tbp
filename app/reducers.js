@@ -6,7 +6,6 @@
 import { fromJS } from 'immutable';
 import { combineReducers } from 'redux-immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { reducer as formReducer } from 'redux-form';
 
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
@@ -54,7 +53,6 @@ export default function createReducer(asyncReducers) {
     music: musicReducers,
     fpv: fpvReducers,
     timelapse: timelapseReducers,
-    form: formReducer,
     ...asyncReducers,
   });
 }
