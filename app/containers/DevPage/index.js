@@ -30,7 +30,11 @@ export class DevPage extends React.PureComponent { // eslint-disable-line react/
         />
 
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href={CV} target="_blank">CV</a></p>
+        <p>Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique and Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique.</p>
 
+        <p>Netus et malesuada fames ac turpis egestas. Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique and Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas, morbi tristique.</p>
+
+        <p>Some projects I have been involved with</p>
         <br />
 
         <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />

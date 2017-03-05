@@ -1,11 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router';
 import H1 from '../../components/H1';
-import {
-  HomeBoxRoot,
-  HomeBox,
-  StyledLink
-} from './styled';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -23,25 +19,13 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
 
         <br />
 
-        <HomeBoxRoot>
-          <HomeBox>
-            <StyledLink to="/dev">dev</StyledLink>
-          </HomeBox>
-          <HomeBox>
-            <StyledLink to="/music">music</StyledLink>
-          </HomeBox>
-          <HomeBox>
-            <StyledLink to="/fpv">fpv</StyledLink>
-          </HomeBox>
-          <HomeBox>
-            <StyledLink to="/timelapse">timelapse</StyledLink>
-          </HomeBox>
-        </HomeBoxRoot>
+        <p>Read <Link to="dev">about me</Link>, <br />check out <Link to="dev">my projects</Link>, <br />or see <Link to="non-dev">what else I get up to.</Link></p>
+
+        <br />
 
       </article>
     );
   }
 }
 
-// Wrap the component to inject dispatch and state into it
 export default HomePage;
