@@ -62,5 +62,19 @@ injectGlobal`
   img {
     max-width: 100%;
   }
+
+
+   /* styles for 3rd party react components 
+      this is the quickest and simplest solution */
+  .progress-bar-inner {
+    background: #000;
+    height: 100%;
+    transition: all .2s ease;
+  }
+
+  .sb-soundplayer-play-icon {
+    width: 50px;
+    height: 50px;
+  }
   
 `;

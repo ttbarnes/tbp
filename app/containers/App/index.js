@@ -6,7 +6,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 const AppWrapper = styled.div`
-  max-width: calc(600px + 16px * 2);
+  max-width: calc(700px + 16px * 2);
   margin: 0 auto;
   display: flex;
   min-height: 100%;
