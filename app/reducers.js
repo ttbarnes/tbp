@@ -9,7 +9,7 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
 import devReducers from 'containers/DevPage/reducer';
-import nonDevReducers from 'containers/NonDevPage/reducer';
+import hobbiesReducers from 'containers/HobbiesPage/reducer';
 
 
 /*
@@ -48,7 +48,7 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     global: globalReducer,
     dev: devReducers,
-    nonDev: nonDevReducers,
+    hobbies: hobbiesReducers,
     ...asyncReducers,
   });
 }

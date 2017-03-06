@@ -10,7 +10,7 @@ import {
   ListItem
 } from './styled';
 
-export class NonDevPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class HobbiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +56,7 @@ export class NonDevPage extends React.PureComponent { // eslint-disable-line rea
   }
 }
 
-NonDevPage.propTypes = {
+HobbiesPage.propTypes = {
   activities: PropTypes.object
 };
 
@@ -64,4 +64,4 @@ const mapStateToProps = createStructuredSelector({
   activities: selectActivities()
 });
 
-export default connect(mapStateToProps, {})(NonDevPage);
+export default connect(mapStateToProps, {})(HobbiesPage);

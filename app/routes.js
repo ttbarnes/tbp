@@ -72,18 +72,18 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: '/non-dev',
-      name: 'nonDev',
+      path: '/hobbies',
+      name: 'hobbies',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
-          System.import('containers/NonDevPage/reducer'),
-          System.import('containers/NonDevPage'),
+          System.import('containers/HobbiesPage/reducer'),
+          System.import('containers/HobbiesPage'),
         ]);
 
         const renderRoute = loadModule(cb);
 
         importModules.then(([reducer, component]) => {
-          injectReducer('nonDev', reducer.default);
+          injectReducer('hobbies', reducer.default);
 
           renderRoute(component);
         });
