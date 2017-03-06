@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
@@ -41,6 +42,13 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     const { activities } = this.state;
     return (
       <article>
+
+        <Helmet
+          title="Hobbies"
+          meta={[
+            { name: 'description', content: 'Tony Barnes hobbies - music, FPV, timelapse' },
+          ]}
+        />
 
         <h1>Hobbies</h1>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import CV from '../../assets/Tony-Barnes-CV-2017.pdf';
 
@@ -6,6 +7,14 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
   render() {
     return (
       <article>
+
+        <Helmet
+          title="About"
+          meta={[
+            { name: 'description', content: 'About Tony Barnes' },
+          ]}
+        />
+
         <h1>About</h1>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         <p>Fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</p>

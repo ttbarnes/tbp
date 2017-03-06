@@ -9,6 +9,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <article>
         <Helmet
+          title="Front end developer, techy, musician"
           meta={[
             { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
           ]}
@@ -19,7 +20,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
 
         <br />
 
-        <p>Read <Link to="dev">about me</Link>, <br />check out <Link to="dev">my projects</Link>, <br />or see <Link to="non-dev">what else I get up to.</Link></p>
+        <p>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></p>
 
         <br />
 
