@@ -1,25 +1,36 @@
 import React, { PropTypes } from 'react';
-import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import H1 from 'components/H1';
-import ListItem from '../../components/ListItem';
+import LazyLoad from 'react-lazyload';
+
 import MusicPlayer from 'components/MusicPlayer';
-import VideoPlayer from '../../components/VideoPlayer';
+import VideoPlayer from 'components/VideoPlayer';
 import { selectActivities } from './selectors';
+import {
+  ListItem
+} from './styled';
 
 export class NonDevPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.state = {
+      activities: this.props.activities.toJS(),
+    };
+  }
+
   renderActivity(a) {
     if (a.type === 'fpv' ||
         a.type === 'timelapse') {
       return (
         <ListItem key={a.videoId}>
+          <p>type {a.type}</p>
           <VideoPlayer video={a} />
         </ListItem>
       );
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
+          <p>type {a.type}</p>
           <MusicPlayer url={a.url} />
         </ListItem>
       );
@@ -28,30 +39,17 @@ export class NonDevPage extends React.PureComponent { // eslint-disable-line rea
   }
 
   render() {
-    let { activities } = this.props;
-
-    if (activities) {
-      activities = activities.toJS();
-    }
-
+    const { activities } = this.state;
     return (
       <article>
-
-        <H1>Non-dev</H1>
-
-        <Helmet
-          title="Non-dev"
-          meta={[
-            { name: 'description', content: 'Non-dev' },
-          ]}
-        />
-
-        {!activities ? (
-          <p>Unable to load activities.</p>
+        {activities ? (
+          activities.map((activity, index) => (
+            <LazyLoad once={activity.once} height={200} key={index}>
+              {this.renderActivity(activity)}
+            </LazyLoad>
+          ))
         ) : (
-          <ul>
-            {activities.map((activity) => this.renderActivity(activity))}
-          </ul>
+          <p>Unable to load activities :(</p>
         )}
       </article>
     );

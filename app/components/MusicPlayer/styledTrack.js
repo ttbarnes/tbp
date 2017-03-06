@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import styles from './stylesTrack';
 import { PlayButton } from 'react-soundplayer/components';
 
-export const Root = styled.article`${styles.root}`;
+export const Root = styled.div`${styles.root}`;
 
 export const ColLeft = styled.div`${styles.colLeft}`;
 
