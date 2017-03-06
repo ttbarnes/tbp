@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
+import Tag from 'components/Tag';
 import MusicPlayer from 'components/MusicPlayer';
 import VideoPlayer from 'components/VideoPlayer';
 import { selectActivities } from './selectors';
@@ -23,14 +24,14 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
         a.type === 'timelapse') {
       return (
         <ListItem key={a.videoId}>
-          <p>type {a.type}</p>
+          <Tag type={a.type} />
           <VideoPlayer video={a} />
         </ListItem>
       );
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
-          <p>type {a.type}</p>
+          <Tag type={a.type} />
           <MusicPlayer url={a.url} />
         </ListItem>
       );
