@@ -16,20 +16,20 @@
  */
 
 import {
-  SET_DEV_PROJECTS_FILTER_CATEGORY,
-  SET_DEV_PROJECT_SELECTION,
+  SET_PROJECTS_FILTER_CATEGORY,
+  SET_PROJECT_SELECTION,
 } from './constants';
 
-export function setDevProjectsFilter(category) {
+export function setProjectsFilter(category) {
   return {
-    type: SET_DEV_PROJECTS_FILTER_CATEGORY,
+    type: SET_PROJECTS_FILTER_CATEGORY,
     category
   };
 }
 
-export function setDevSelectedProject(id) {
+export function setSelectedProject(id) {
   return {
-    type: SET_DEV_PROJECT_SELECTION,
+    type: SET_PROJECT_SELECTION,
     id
   };
 }

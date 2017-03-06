@@ -26,18 +26,18 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: '/dev',
-      name: 'dev',
+      path: '/projects',
+      name: 'projects',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
-          System.import('containers/DevPage/reducer'),
-          System.import('containers/DevPage'),
+          System.import('containers/ProjectsPage/reducer'),
+          System.import('containers/ProjectsPage'),
         ]);
 
         const renderRoute = loadModule(cb);
 
         importModules.then(([reducer, component]) => {
-          injectReducer('dev', reducer.default);
+          injectReducer('projects', reducer.default);
 
           renderRoute(component);
         });
@@ -57,7 +57,7 @@ export default function createRoutes(store) {
       name: 'devProject',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
-          System.import('containers/DevPage/reducer'),
+          System.import('containers/ProjectsPage/reducer'),
           System.import('containers/DevProjectPage'),
         ]);
 

@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import activities from '../../data/nonDev.json';
+import activities from '../../data/hobbies.json';
 
 const initialState = fromJS({
   activities

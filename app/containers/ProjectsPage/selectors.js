@@ -7,11 +7,12 @@ const selectProjectsData = () => createSelector(
   (projectsState) => projectsState.get('data')
 );
 
-const selectProject = (projectId) => createSelector(
-  selectProjectsData(),
-  (projectsDataState) => projectsDataState.find((p) => p.toJS().id === projectId)
+const selectActiveProjectFilter = () => createSelector(
+  selectProjects(),
+  (projectsState) => projectsState.get('filterCategory')
 );
 
 export {
-  selectProject
+  selectProjectsData,
+  selectActiveProjectFilter
 };

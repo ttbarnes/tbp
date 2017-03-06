@@ -20,7 +20,8 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         <Nav>
           <NavLinkRoot to="/" activeClassName="active"><b>Tony Barnes</b></NavLinkRoot>
           <br />
-          <NavLink to="/dev" activeClassName="active">dev</NavLink>
+          <NavLink to="/about" activeClassName="active">about</NavLink>
+          <NavLink to="/projects" activeClassName="active">projects</NavLink>
           <NavLink to="/hobbies" activeClassName="active">hobbies</NavLink>
           <NavLink to="/contact" activeClassName="active">contact</NavLink>
         </Nav>

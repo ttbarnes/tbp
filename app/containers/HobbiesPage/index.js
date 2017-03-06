@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
-
 import MusicPlayer from 'components/MusicPlayer';
 import VideoPlayer from 'components/VideoPlayer';
 import { selectActivities } from './selectors';
@@ -42,6 +41,9 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     const { activities } = this.state;
     return (
       <article>
+
+        <h1>Hobbies</h1>
+
         {activities ? (
           activities.map((activity, index) => (
             <LazyLoad once={activity.once} height={200} key={index}>

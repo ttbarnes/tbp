@@ -1,23 +1,23 @@
 import { fromJS } from 'immutable';
-import devProjects from '../../data/dev.json';
+import projects from '../../data/projects.json';
 
 import {
-  SET_DEV_PROJECTS_FILTER_CATEGORY,
-  SET_DEV_PROJECT_SELECTION,
+  SET_PROJECTS_FILTER_CATEGORY,
+  SET_PROJECT_SELECTION,
 } from './constants';
 
 const initialState = fromJS({
-  projects: devProjects,
+  data: projects,
   filterCategory: 'Web apps',
   selectedProject: null
 });
 
-function devReducers(state = initialState, action) {
+function projectsReducers(state = initialState, action) {
   switch (action.type) {
-    case SET_DEV_PROJECTS_FILTER_CATEGORY:
+    case SET_PROJECTS_FILTER_CATEGORY:
       return state
         .set('filterCategory', action.category);
-    case SET_DEV_PROJECT_SELECTION:
+    case SET_PROJECT_SELECTION:
       return state
         .set('selectedProject', action.id);
     default:
@@ -25,4 +25,4 @@ function devReducers(state = initialState, action) {
   }
 }
 
-export default devReducers;
+export default projectsReducers;

@@ -8,7 +8,7 @@ import { combineReducers } from 'redux-immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
-import devReducers from 'containers/DevPage/reducer';
+import projectsReducers from 'containers/ProjectsPage/reducer';
 import hobbiesReducers from 'containers/HobbiesPage/reducer';
 
 
@@ -47,7 +47,7 @@ export default function createReducer(asyncReducers) {
   return combineReducers({
     route: routeReducer,
     global: globalReducer,
-    dev: devReducers,
+    projects: projectsReducers,
     hobbies: hobbiesReducers,
     ...asyncReducers,
   });
