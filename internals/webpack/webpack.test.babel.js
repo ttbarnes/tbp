@@ -31,7 +31,7 @@ module.exports = {
         loader: 'babel',
         exclude: [/node_modules/],
       },
-      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$/i,
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.pdf$/i,
         loader: 'null-loader',
       },
     ],

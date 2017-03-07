@@ -1,19 +1,19 @@
-/**
- * Testing the NotFoundPage
- */
-
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import NotFound from '../index';
+import {
+  ErrorMessage
+} from '../styled';
 
 describe('<NotFound />', () => {
   it('should render the Page Not Found text', () => {
-    const renderedComponent = shallow(
+    const wrapper = shallow(
       <NotFound />
     );
-    expect(renderedComponent.contains(
-      <p>Oh no :(</p>
+
+    expect(wrapper.contains(
+      <ErrorMessage>oh no :(</ErrorMessage>
     )).toEqual(true);
   });
 });

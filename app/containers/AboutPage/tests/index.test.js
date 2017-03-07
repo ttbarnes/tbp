@@ -1,11 +1,25 @@
-// import { About } from '../index';
-
+/*
 import expect from 'expect';
-// import { shallow } from 'enzyme';
-// import React from 'react';
+import { shallow } from 'enzyme';
+import React from 'react';
+import Helmet from 'react-helmet';
+import { About } from '../index';
+
 
 describe('<About />', () => {
-  it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(false);
+  const wrapper = shallow(
+    <About />
+  );
+  it('should have helmet component', () => {
+    const actual = wrapper.containsMatchingElement(
+      <Helmet
+        title="About"
+        meta={[
+          { name: 'description', content: 'About Tony Barnes' },
+        ]}
+      />
+    );
+    expect(actual).toEqual(true);
   });
 });
+*/
