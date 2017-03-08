@@ -25,7 +25,7 @@ const MusicPlayer = (props) => {
 
 
 MusicPlayer.propTypes = {
-  url: PropTypes.string,
+  url: PropTypes.string.isRequired
 };
 
 export default MusicPlayer;
