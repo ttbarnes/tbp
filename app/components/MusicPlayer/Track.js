@@ -22,6 +22,8 @@ const Track = (props) => {
     duration,
   } = props;
 
+  console.log('comopnent PROPS we got \n', props);
+
   if (!track) {
     return <div>Loading...</div>;
   }
@@ -71,10 +73,10 @@ const Track = (props) => {
 };
 
 Track.propTypes = {
-  track: PropTypes.object,
-  currentTime: PropTypes.number,
-  duration: PropTypes.string,
-  soundCloudAudio: PropTypes.object
+  track: PropTypes.object.isRequired,
+  currentTime: PropTypes.number.isRequired,
+  duration: PropTypes.string.isRequired,
+  soundCloudAudio: PropTypes.object.isRequired
 };
 
 export default Track;
