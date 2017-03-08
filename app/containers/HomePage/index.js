@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
-import H1 from '../../components/H1';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -15,7 +14,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           ]}
         />
 
-        <H1>Tony Barnes</H1>
+        <h1>Tony Barnes</h1>
         <p>JavaScript developer, musician, cyclist, FPV pilot, tea drinker.</p>
 
         <br />

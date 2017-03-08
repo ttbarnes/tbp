@@ -22,7 +22,6 @@ const Track = (props) => {
     duration,
   } = props;
 
-  console.log('comopnent PROPS we got \n', props);
 
   if (!track) {
     return <div>Loading...</div>;

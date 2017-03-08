@@ -7,7 +7,7 @@ export const Root = styled.article`
   justify-content: center;
 `;
 
-export const Link = styled.a`
+export const StyledLink = styled.a`
   font-size: 1.6rem;
   color: #CCC;
   text-decoration: none;

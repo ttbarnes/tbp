@@ -12,7 +12,7 @@ describe('<NotFound />', () => {
       <NotFound />
     );
 
-    expect(wrapper.contains(
+    expect(wrapper.containsMatchingElement(
       <ErrorMessage>oh no :(</ErrorMessage>
     )).toEqual(true);
   });

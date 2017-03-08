@@ -1,6 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Root, Link } from './styled';
+import {
+  Root,
+  StyledLink
+} from './styled';
 
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -15,7 +18,7 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
           ]}
         />
 
-        <Link href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</Link>
+        <StyledLink href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</StyledLink>
 
       </Root>
     );
