@@ -1,12 +1,15 @@
 import React, { PropTypes } from 'react';
+import Menu from 'react-burger-menu';
+const BurgerMenu = Menu.slide;
+
 import {
-  Root,
-  Nav,
+  ListRoot,
   NavLinkRoot,
   NavLink
 } from './styled';
 
-class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class Nav extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
   render() {
     const { location } = this.props;
     const isHomePage = location.pathname === '/';
@@ -16,23 +19,22 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
     }
 
     return (
-      <Root>
-        <Nav>
-          <NavLinkRoot to="/" activeClassName="active"><b>Tony Barnes</b></NavLinkRoot>
-          <br />
+      <BurgerMenu 
+        width={170}>
+        <ListRoot>
+          <NavLinkRoot href="/" activeClassName="active"><b>Tony Barnes</b></NavLinkRoot>
           <NavLink to="/about" activeClassName="active">about</NavLink>
           <NavLink to="/projects" activeClassName="active">projects</NavLink>
           <NavLink to="/hobbies" activeClassName="active">hobbies</NavLink>
           <NavLink to="/contact" activeClassName="active">contact</NavLink>
-        </Nav>
-      </Root>
+        </ListRoot>
+      </BurgerMenu>
     );
   }
 }
 
-Header.propTypes = {
+Nav.propTypes = {
   location: PropTypes.object
 };
 
-
-export default Header;
+export default Nav;

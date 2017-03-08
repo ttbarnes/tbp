@@ -15,19 +15,7 @@ const NavLinkShared = `
   margin-bottom: 0.5em;
 `;
 
-export const Root = styled.header`
-  @media (min-width: 900px) {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 160px;
-    height: 100%;
-    padding: 1em;
-    background: #EAEAEA;
-  }
-`;
-
-export const Nav = styled.nav`
+export const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
   align-items: baseline;
