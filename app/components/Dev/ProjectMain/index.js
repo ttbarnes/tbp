@@ -2,14 +2,16 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
 import {
-  // RootFlex,
-  // FlexCol,
   ListFlex,
   ListFlexItem
 } from './styled';
 
 function DevProjectMain(props) {
   const project = props.project.toJS();
+
+  const getProjectImage = (itemId) =>
+    require(`../../../assets/img/dev/${itemId}/01.jpg`); // eslint-disable-line global-require
+
   return (
     <article>
 
@@ -25,11 +27,7 @@ function DevProjectMain(props) {
           <H2>{project.name}</H2>
           <p><small>{project.category}, {project.date}</small></p>
 
-          {
-            // temp solution for image
-            // currently, strangely unable to load dynamic image url
-          }
-          <img src="http://tonybarnes.me/images/showcase/saranac/01.jpg" alt="test" />
+          <img src={getProjectImage(project.id)} alt={project.name} />
 
           <h4>Tech</h4>
           <ul>
