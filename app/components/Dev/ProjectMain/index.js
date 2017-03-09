@@ -7,7 +7,7 @@ import {
 } from './styled';
 
 function DevProjectMain(props) {
-  const project = props.project.toJS();
+  const project = props.project && props.project.toJS();
 
   const getProjectImage = (itemId) =>
     require(`../../../assets/img/dev/${itemId}/01.jpg`); // eslint-disable-line global-require
@@ -69,7 +69,7 @@ function DevProjectMain(props) {
 }
 
 DevProjectMain.propTypes = {
-  project: React.PropTypes.object.isRequired
+  project: React.PropTypes.object
 };
 
 export default DevProjectMain;
