@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import ReactDOM from 'react-dom';
 import ListItem from './ListItem';
 import { ListRoot } from './styled';
 
@@ -13,16 +12,7 @@ const filterProjectsByCategory = (projects, filterCategory) => {
   return null;
 };
 
-export class Projects extends React.PureComponent {
-
-  componentDidMount() {
-    const elm = ReactDOM.findDOMNode(this); // eslint-disable-line react/no-find-dom-node
-    elm.style.opacity = 0;
-    window.requestAnimationFrame(() => {
-      elm.style.transition = 'opacity 500ms';
-      elm.style.opacity = 1;
-    });
-  }
+export class Projects extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     const {
