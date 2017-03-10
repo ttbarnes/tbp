@@ -7,7 +7,7 @@ import {
   FlexCol
 } from './styled';
 
-const youTubeOpts = {
+export const youTubeOpts = {
   playerVars: {
     showinfo: 0
   }
