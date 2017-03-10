@@ -12,6 +12,11 @@ function DevProjectMain(props) {
   const getProjectImage = (itemId) =>
     require(`../../../assets/img/dev/${itemId}/01.jpg`); // eslint-disable-line global-require
 
+  if (project.mini === true) {
+    // todo: redirect to error page or show error
+    return null;
+  }
+
   return (
     <article>
 

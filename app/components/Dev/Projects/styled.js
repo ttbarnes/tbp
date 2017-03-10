@@ -8,6 +8,13 @@ export const ListRoot = styled.ul`
   listStyleType: none;
 `;
 
+export const StyledListItemInner = `
+  padding: 0.5em;
+  display: block;
+  color: #000;
+  textDecoration: none;
+`;
+
 export const StyledListItem = styled.li`
   flexGrow: 1;
   display: flex;
@@ -24,9 +31,10 @@ export const StyledListItem = styled.li`
   }
 `;
 
+export const StyledListItemNoLink = styled.div`
+  {StyledListItemInner}
+`;
+
 export const StyledListItemLink = styled(Link)`
-  padding: 0.5em;
-  display: block;
-  color: #000;
-  textDecoration: none;
+  {StyledListItemInner}
 `;

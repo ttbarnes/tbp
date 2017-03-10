@@ -25,15 +25,16 @@ export class Projects extends React.PureComponent { // eslint-disable-line react
 
     return (
       <ListRoot>
-        {filteredData && filteredData.map((project) => (
+        {filteredData && filteredData.toJS().map((project) =>
           <ListItem
-            name={project.get('name')}
-            category={project.get('category')}
-            key={project.get('id')}
-            id={project.get('id')}
+            name={project.name}
+            category={project.category}
+            key={project.id}
+            id={project.id}
+            mini={project.mini}
             onClick={onClick}
           />
-        ))}
+        )}
       </ListRoot>
     );
   }

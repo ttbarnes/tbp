@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import {
   StyledListItem,
+  StyledListItemNoLink,
   StyledListItemLink
 } from './styled';
 
@@ -9,16 +10,26 @@ const getProjectImage = (itemId) =>
 
 const ListItem = (props) =>
   <StyledListItem>
-    <StyledListItemLink to={`dev/project/${props.id}`} onClick={() => props.onClick(props.id)}>
-      <img src={getProjectImage(props.id)} alt={props.name} />
-    </StyledListItemLink>
+    {props.mini === true ? (
+      <StyledListItemNoLink>
+        <img src={getProjectImage(props.id)} alt={props.name} />
+      </StyledListItemNoLink>
+    ) : (
+      <StyledListItemLink
+        onClick={() => props.onClick(props.id)}
+        to={`dev/project/${props.id}`}
+      >
+        <img src={getProjectImage(props.id)} alt={props.name} />
+      </StyledListItemLink>
+    )}
   </StyledListItem>
 ;
 
 ListItem.propTypes = {
-  name: React.PropTypes.string,
-  id: React.PropTypes.string,
-  onClick: React.PropTypes.func
+  name: PropTypes.string,
+  id: PropTypes.string,
+  onClick: PropTypes.func,
+  mini: PropTypes.bool
 };
 
 export default ListItem;
