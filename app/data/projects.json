@@ -20,6 +20,53 @@
     ]
   },
   {
+    "id": "plantstove",
+    "name": "Plantstove",
+    "category": "Web apps",
+    "date": "2016 - present",
+    "tech": [
+      {"tag": "MongoDB, Mongoose"},
+      {"tag": "Express, Node js"},
+      {"tag": "Angular"},
+      {"tag": "Redux"},
+      {"tag": "JavaScript, ES6"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Stylus"},
+      {"tag": "Webpack"}
+    ],
+    "deliverItems": [
+      "something",
+      "something else"
+    ],
+    "urls": [
+      "http://plantstove.com"
+    ]
+  },
+  {
+    "id": "fiona-ross",
+    "name": "Fiona Ross",
+    "category": "Web apps",
+    "date": "2016 - present",
+    "tech": [
+      {"tag": "Angular"},
+      {"tag": "JavaScript, ES6"},
+      {"tag": "Express, Node js"},
+      {"tag": "HTML5, CSS3"},
+      {"tag": "Stylus"},
+      {"tag": "Webpack"}
+    ],
+    "deliverItems": [
+     "Redesign for mobiles/tablets/any device size",
+     "Modular, component based architecture",
+     "Customised music player",
+     "Various smart features/components such as collaborators and gallery"
+    ],
+    "urls": [
+      "http://github.com/ttbarnes/fr-app",
+      "http://fionaross.co.uk"
+    ]
+  },
+  {
     "id": "boots-betalabs",
     "name": "Boots BetaLabs",
     "category": "Web apps",
