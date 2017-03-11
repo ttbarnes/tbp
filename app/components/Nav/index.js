@@ -1,9 +1,8 @@
 import React, { PropTypes } from 'react';
 import Menu from 'react-burger-menu';
 const BurgerMenu = Menu.slide;
-
 import {
-  StyledNav,
+  Root,
   ListRoot,
   NavLinkRoot,
   NavLink
@@ -43,7 +42,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
     }
 
     return (
-      <StyledNav>
+      <Root>
         <BurgerMenu
           isOpen={isLargeScreen}
           width={120}
@@ -51,14 +50,14 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           customCrossIcon={<span></span>}
         >
           <ListRoot>
-            <NavLinkRoot href="/" activeClassName="active"><b>Tony Barnes</b></NavLinkRoot>
-            <NavLink to="/about" activeClassName="active">about</NavLink>
-            <NavLink to="/projects" activeClassName="active">projects</NavLink>
-            <NavLink to="/hobbies" activeClassName="active">hobbies</NavLink>
-            <NavLink to="/contact" activeClassName="active">contact</NavLink>
+            <NavLinkRoot href="/" activeClassName="active">Tony Barnes</NavLinkRoot>
+            <NavLink to="/about" activeClassName="active">About</NavLink>
+            <NavLink to="/projects" activeClassName="active">Projects</NavLink>
+            <NavLink to="/hobbies" activeClassName="active">Hobbies</NavLink>
+            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
           </ListRoot>
         </BurgerMenu>
-      </StyledNav>
+      </Root>
     );
   }
 }

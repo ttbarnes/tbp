@@ -94,10 +94,6 @@ injectGlobal`
     background: #d1dde6;
     padding: 0;
     font-size: 1.15em;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 3px;
-    @media(min-width:990px) {
-      box-shadow: none;
-    }
   }
 
   .bm-overlay {
