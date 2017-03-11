@@ -90,10 +90,14 @@
       "Improved test coverage and tech debt",
       "CoreMetrics analytics integration"
     ],
-    "how": {
-      "title": "My involvement",
-      "thoughts":"<p>I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts: </p><img src='images/showcase/boots-betalabs/inner01.jpg' class='max-width-384' /><p>I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle: </p><img src='images/showcase/boots-betalabs/inner02.jpg'/><p>Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers: </p><img src='images/showcase/boots-betalabs/inner03.jpg' class='max-width-447'/>"
-    }
+    "thoughts":[
+      { "copy": "I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts:" },
+      { "img": "inner01" },
+      { "copy": "I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle:"},
+      { "img": "inner02" },
+      { "copy": "Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers:"},
+      { "img": "inner03" }
+    ]
   },
   {
     "id": "network-locum",
@@ -116,10 +120,14 @@
       "Heavy use of custom directives/components",
       "Greatly improved the test coverage"
     ],
-    "how": {
-      "title": "My involvement",
-      "thoughts":"<p>I really enjoyed building the 'My Circles' feature which enabled users to manage groups of 'favourites'. Many actions and filters could be applied here, so we managed these potentially cumbersome states with Redux.</p><img src='images/showcase/network-locum/inner01.jpg'/><p>Within 'My Circles', we also built an invitation component that could be easily re-used:</p><img src='images/showcase/network-locum/inner02.jpg'/><p>I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups.</p><img src='images/showcase/network-locum/inner03.jpg'/>"
-    }
+    "thoughts": [
+      {"copy": "I really enjoyed building the 'My Circles' feature which enabled users to manage groups of 'favourites'. Many actions and filters could be applied here, so we managed these states with Redux."},
+      {"img": "inner01"},
+      {"copy": "We also built an invitation component that could be easily re-used:"},
+      {"img": "inner02"},
+      {"copy": "I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups."},
+      {"img": "inner03"}
+    ]
   },
   
   {
@@ -143,10 +151,14 @@
       "Mock API and datastore",
       "Heavy use of custom directives/components"
     ],
-    "how": {
-      "title": "My involvement",
-      "thoughts":"<p>I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):</p><img src='images/showcase/saranac/inner01.jpg'/><p>We also built many visually small, but logically complex components, like these bar graphs:</p><img src='images/showcase/saranac/inner02.jpg'/><p>Similarly with these risk indicators:</p><img src='images/showcase/saranac/inner03.jpg'/>"
-    }
+    "thoughts": [
+      { "copy": "I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):" },
+      { "img": "inner01" },
+      { "copy": "We also built many visually small, but logically complex components, like these bar graphs:" },
+      { "img": "inner02" },
+      { "copy": "Similarly with these risk indicators:" },
+      { "img": "inner03" }
+    ]
   },
   {
     "id": "mean-tweets",
@@ -250,11 +262,9 @@
       "Various 3rd party and social media integrations",
       "Built multiple landing pages during launch"
     ],
-    "how": {
-      "title": "My involvement",
-      "thoughts":"<p>I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team.</p>"
-    },
-
+    "thoughts": [
+      { "copy": "I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team." }
+    ],
     "liveUrl": "http://reedsy.com"
   },
   {

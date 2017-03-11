@@ -2,15 +2,16 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
 import {
+  getProjectImage,
+  ThoughtsItem
+} from './details';
+import {
   ListFlex,
   ListFlexItem
 } from './styled';
 
 function DevProjectMain(props) {
   const project = props.project && props.project.toJS();
-
-  const getProjectImage = (itemId) =>
-    require(`../../../assets/img/dev/${itemId}/01.jpg`); // eslint-disable-line global-require
 
   if (project.mini === true) {
     // todo: redirect to error page or show error
@@ -40,12 +41,22 @@ function DevProjectMain(props) {
               <li key={item.tag} className={`tech-tag ${item.tag}`}>{item.tag}</li>
             )}
           </ul>
+
           <h4>Highlights</h4>
           <ul>
             {project.deliverItems.map((item) =>
               <li key={item}>{item}</li>
             )}
           </ul>
+
+          {project.thoughts && project.thoughts.map((item, index) =>
+            <ThoughtsItem
+              item={item}
+              projectId={project.id}
+              projectName={project.name}
+              key={index}
+            />
+          )}
 
           <ListFlex className="no-list-style">
             {project.urls && project.urls.map((item) =>
@@ -62,7 +73,6 @@ function DevProjectMain(props) {
           </ListFlex>
 
         </section>
-
       ) : (
         <section>
           <p>oh no, apparently this project does not exist :(</p>
