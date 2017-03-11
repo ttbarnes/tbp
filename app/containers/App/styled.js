@@ -9,11 +9,12 @@ import {
   NAV_MAX_WIDTH,
   FOOTER_HEIGHT
 } from '../../components/styledShared';
+import { MAX_HEIGHT_PAGES } from '../../constants';
 
-export const AppWrapper = styled.div``;
+const isMaxHeightPage = (name) => MAX_HEIGHT_PAGES.includes(`${name.substring(1)}`);
 
 const minHeight = (props) => `
-  ${props.location.pathname !== '/' && `
+  ${isMaxHeightPage(props.location.pathname) === true && `
     min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px + 5px);
   `}
 `;

@@ -3,13 +3,12 @@ import Helmet from 'react-helmet';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 import {
-  AppWrapper,
   MainContent
 } from './styled';
 
 function App(props) {
   return (
-    <AppWrapper>
+    <div>
       <Helmet
         titleTemplate="%s - Tony Barnes"
         defaultTitle="Tony Barnes"
@@ -26,7 +25,7 @@ function App(props) {
 
       <Footer location={props.location} />
 
-    </AppWrapper>
+    </div>
   );
 }
 

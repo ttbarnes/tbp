@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router';
 import {
-  Root,
   ErrorMessage
 } from './styled';
 
 export default function NotFound() {
   return (
-    <Root>
-      <ErrorMessage>oh no :(</ErrorMessage>
-    </Root>
+    <div>
+      <ErrorMessage>Oh no, something has gone wrong :(</ErrorMessage>
+      <Link to="/">Start again</Link>
+    </div>
   );
 }
