@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Menu from 'react-burger-menu';
 const BurgerMenu = Menu.slide;
-import Nav from '../index';
-import { NavLink } from '../styled';
+import Nav from './index';
+import { NavLink } from './styled';
 
 const mockLocation = { pathname: '/about' };
 

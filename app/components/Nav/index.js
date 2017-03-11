@@ -13,14 +13,14 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isLargeScreen: false
     };
   }
 
   componentDidMount() {
     window.addEventListener('resize', () => {
       this.setState({
-        isOpen: this.isLargeScreen()
+        isLargeScreen: this.isLargeScreen()
       });
     });
   }
@@ -34,7 +34,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 
   render() {
     const { location } = this.props;
-    const { isOpen } = this.state;
+    const { isLargeScreen } = this.state;
     const isHomePage = location.pathname === '/';
 
     if (isHomePage) {
@@ -43,8 +43,10 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 
     return (
       <BurgerMenu
-        isOpen={isOpen}
+        isOpen={isLargeScreen}
         width={120}
+        noOverlay={isLargeScreen}
+        customCrossIcon={<span></span>}
       >
         <ListRoot>
           <NavLinkRoot href="/" activeClassName="active"><b>Tony Barnes</b></NavLinkRoot>
