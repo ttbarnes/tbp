@@ -48,12 +48,12 @@ describe('<Nav />', () => {
   });
 
   describe('<ListRoot />', () => {
-    it('should render a name', () => {
+    it('should render a name with link', () => {
       const wrapper = shallow(
         <Nav location={mockLocation} />
       );
       const actual = wrapper.containsMatchingElement(
-        <NavLinkRoot href="/" activeClassName="active">Tony Barnes</NavLinkRoot>
+        <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
       );
       expect(actual).toEqual(true);
     });
@@ -63,10 +63,10 @@ describe('<Nav />', () => {
         <Nav location={mockLocation} />
       );
       const actual = wrapper.containsAllMatchingElements([
-        <NavLink to="/about" activeClassName="active">about</NavLink>,
-        <NavLink to="/projects" activeClassName="active">projects</NavLink>,
-        <NavLink to="/hobbies" activeClassName="active">hobbies</NavLink>,
-        <NavLink to="/contact" activeClassName="active">contact</NavLink>
+        <NavLink to="/about" activeClassName="active">About</NavLink>,
+        <NavLink to="/projects" activeClassName="active">Projects</NavLink>,
+        <NavLink to="/hobbies" activeClassName="active">Hobbies</NavLink>,
+        <NavLink to="/contact" activeClassName="active">Contact</NavLink>
       ]);
       expect(actual).toEqual(true);
     });

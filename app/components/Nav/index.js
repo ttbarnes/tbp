@@ -18,18 +18,22 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   }
 
   componentDidMount() {
+    this.setIsLargeScreen();
     window.addEventListener('resize', () => {
-      this.setState({
-        isLargeScreen: this.isLargeScreen()
-      });
+      this.setIsLargeScreen();
     });
   }
 
-  isLargeScreen() {
-    if (window.innerWidth >= 990) {
-      return true;
+  setIsLargeScreen() {
+    if (window.matchMedia('(min-width: 990px)').matches) {
+      this.setState({
+        isLargeScreen: true
+      });
+    } else if (this.state.isLargeScreen) {
+      this.setState({
+        isLargeScreen: false
+      });
     }
-    return false;
   }
 
   render() {
@@ -50,7 +54,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           customCrossIcon={<span></span>}
         >
           <ListRoot>
-            <NavLinkRoot href="/" activeClassName="active">Tony Barnes</NavLinkRoot>
+            <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
             <NavLink to="/about" activeClassName="active">About</NavLink>
             <NavLink to="/projects" activeClassName="active">Projects</NavLink>
             <NavLink to="/hobbies" activeClassName="active">Hobbies</NavLink>
@@ -63,7 +67,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 }
 
 Nav.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object.isRequired
 };
 
 export default Nav;
