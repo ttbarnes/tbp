@@ -15,6 +15,10 @@ const NavLinkShared = `
   margin-bottom: 0.5em;
 `;
 
+export const StyledNav = styled.nav`
+  background: #d1dde6;
+`;
+
 export const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
