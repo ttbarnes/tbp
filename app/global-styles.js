@@ -82,8 +82,8 @@ injectGlobal`
     position: fixed;
     width: 30px;
     height: 22px;
-    left: 15px;
-    top: 35px;
+    left: 1em;
+    top: 1em;
   }
 
   .bm-burger-bars {

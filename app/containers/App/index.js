@@ -22,8 +22,9 @@ function App(props) {
 
       <MainContent>
         {React.Children.toArray(props.children)}
-        <Footer location={props.location} />
       </MainContent>
+
+      <Footer location={props.location} />
 
     </AppWrapper>
   );

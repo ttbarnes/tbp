@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
+import { media } from '../styledShared';
 
 const NavLinkShared = `
   padding: 0.25em 0.5em;
@@ -17,7 +18,19 @@ const NavLinkShared = `
 
 export const Root = styled.div`
   background: #d1dde6;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  ${media.lg`
+    position: relative;
+    height: auto;
+    background: none;
+  `}
 `;
+
 export const ListRoot = styled.div`
   display: flex;
   flex-direction: column;

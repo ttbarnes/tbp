@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
+import H1 from '../../components/H1';
 import HomePage from './index';
 
 describe('<HomePage />', () => {
@@ -24,7 +25,7 @@ describe('<HomePage />', () => {
 
   it('should have correct copy', () => {
     const actual = wrapper.containsAllMatchingElements([
-      <h1>Tony Barnes</h1>,
+      <H1>Tony Barnes</H1>,
       <p>JavaScript developer, musician, cyclist, FPV pilot, tea drinker.</p>
     ]);
     expect(actual).toEqual(true);

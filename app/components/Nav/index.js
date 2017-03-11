@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import Menu from 'react-burger-menu';
 const BurgerMenu = Menu.slide;
+import { NAV_MAX_WIDTH } from '../styledShared';
 import {
   Root,
   ListRoot,
@@ -49,7 +50,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
       <Root>
         <BurgerMenu
           isOpen={isLargeScreen}
-          width={120}
+          width={NAV_MAX_WIDTH}
           noOverlay={isLargeScreen}
           customCrossIcon={<span></span>}
         >

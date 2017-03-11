@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
+import {
+  media,
+  CONTAINER_SPACING_HORIZONTAL,
+  CONTAINER_OFFSET_LEFT
+} from '../../components/styledShared';
 
 export const Root = styled.footer`
-  background: #333;
-  color: #FFF;
-  padding: 1em 0;
+  padding: 0 ${CONTAINER_SPACING_HORIZONTAL};
+  ${media.lg`
+    padding-left:${CONTAINER_OFFSET_LEFT};
+  `}
 `;
 
 export const ListRoot = styled.ul`
@@ -20,5 +26,5 @@ export const ListItem = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
-  color: #FFF;
+  color: #CCC;
 `;

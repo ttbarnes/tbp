@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import H1 from '../../components/H1';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
 import {
@@ -26,7 +27,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
           ]}
         />
 
-        <h1>Projects</h1>
+        <H1>Projects</H1>
 
         <p>Some of the projects i{'\''}ve been a part of{':'}</p>
 
