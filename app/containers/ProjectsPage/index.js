@@ -28,7 +28,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
         <h1>Projects</h1>
 
-        <p>Senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique, malesuada fames ac turpis egestas.</p>
+        <p>Some of the projects i{'\''}ve been a part of{':'}</p>
 
         <br />
 

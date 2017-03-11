@@ -289,26 +289,173 @@
 		],
 		"liveUrl": "#"
   },
-  {
-    "id": "enterprising-britain",
-    "name": "Enterprising Britain",
-    "category": "Static",
-    "date": "2013",
-    "tech": [
-      {"tag": "HTML, CSS3"},
-      {"tag": "jQuery"},
-      {"tag": "Fireworks"},
-      {"tag": "Powa CMS"}
-    ],
-    "deliverTitle": "What we delivered",
-    "deliverItems": [
-      "Corporate website"
-    ],
-    "how": {
-      "title": "My involvement",
-      "thoughts": "<p>I oversaw the front end development for this project, also training a new team member with the Powa CMS, templates and front end processes.</p>"
+    {
+        "id": "robbie-williams",
+        "name": "Robbie Williams",
+        "category": "Other",
+        "mini": true
     },
-    "liveUrl": "http://www.enterprising-britain.com",
-    "mini": true
-  }
+    {
+        "id": "collins-learning",
+        "name": "Collins Learning",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "tolkien",
+        "name": "Tolkien",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "electrolux",
+        "name": "Electrolux Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "aeg",
+        "name": "AEG Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "zanussi",
+        "name": "Zanussi Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "hoover",
+        "name": "Hoover Spares",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "the-store",
+        "name": "The Store",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "william-curley",
+        "name": "William Curley",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "farrell",
+        "name": "Farrell",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "new-naturalists",
+        "name": "New Naturalists",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jbrand",
+        "name": "J Brand",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "werelse",
+        "name": "Werelse",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "wpfp",
+        "name": "Who Pays Full Price",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "powatag",
+        "name": "Powatag",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "enterprising-britain",
+        "name": "Enterprising Britain",
+        "category": "Other",
+        "mini": true,
+        "mini": true
+    },
+    {
+        "id": "powa",
+        "name": "Powa",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mpowa",
+        "name": "mpowa",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/list-icon-manipulator",
+        "name": "List Icon Manipulator",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/active-hover-states",
+        "name": "Active Hover States",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/portrolio",
+        "name": "Portrolio",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "propax-malaysia",
+        "name": "Propax Malaysia",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "life-financial-solutions",
+        "name": "Life Financial Solutions",
+        "category": "Other",
+        "mini": true
+    },
+        {
+        "id": "celebrity-smiles",
+        "name": "Celebrity Smiles",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "gold-challenge",
+        "name": "Gold Challenge",
+        "category": "Other",
+        "mini": true
+    }
 ]
