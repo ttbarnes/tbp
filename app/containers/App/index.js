@@ -20,7 +20,7 @@ function App(props) {
 
       <Nav location={props.location} />
 
-      <MainContent>
+      <MainContent location={props.location}>
         {React.Children.toArray(props.children)}
       </MainContent>
 

@@ -12,13 +12,19 @@ import {
 
 export const AppWrapper = styled.div``;
 
+const minHeight = (props) => `
+  ${props.location.pathname !== '/' && `
+    min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px + 5px);
+  `}
+`;
+
 export const MainContent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   max-width: calc(${CONTAINER_MAX_WIDTH_LG}px - ${NAV_MAX_WIDTH * 2}px);
-  min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px + 5px);
   padding: ${CONTAINER_SPACING_VERTICAL} ${CONTAINER_SPACING_HORIZONTAL} 0;
+  ${minHeight};
   ${media.lg`
     padding-left:${CONTAINER_OFFSET_LEFT};
   `}
