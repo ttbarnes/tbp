@@ -36,6 +36,11 @@ injectGlobal`
     padding: 0;
   }
 
+  ul,
+  ol {
+    list-style-type: none;
+  }
+
   button { 
     width: 100%; 
     padding: 1em 
@@ -50,10 +55,6 @@ injectGlobal`
 
   .no-margin {
     margin:0;
-  }
-
-  .no-list-style {
-    list-style-type: none;
   }
 
   iframe {

@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
+const listStyleType = (props) => `
+  ${props.showListStyle && 'list-style-type: disc;'};
+`;
+
 export const UL = styled.ul`
-  list-style-type: none;
+  ${listStyleType}
 `;
 
 export const LI = styled.li`

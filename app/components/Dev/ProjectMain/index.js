@@ -1,14 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
+import H4 from 'components/H4';
 import Tag from 'components/Tag';
+import List from 'components/List';
+import Img from 'components/Img';
 import {
   getProjectImage,
   ThoughtsItem
 } from './details';
 import {
   ListFlex,
-  ListFlexItem
+  FlexItem
 } from './styled';
 
 function DevProjectMain(props) {
@@ -34,23 +37,19 @@ function DevProjectMain(props) {
           <H2>{project.name}</H2>
           <p><small>{project.date}</small></p>
 
-          <img src={getProjectImage(project.id)} alt={project.name} />
+          <Img src={getProjectImage(project.id)} alt={project.name} />
 
-          <h4>Tech</h4>
-          <ul>
-            {project.tech.map((item) =>
-              <li key={item}>
-                <Tag type={item} />
-              </li>
+          <H4>Tech</H4>
+          <ListFlex>
+            {project.tech.map((item, index) =>
+              <Tag type={item} key={index} />
             )}
-          </ul>
+          </ListFlex>
 
-          <h4>Highlights</h4>
-          <ul>
-            {project.deliverItems.map((item) =>
-              <li key={item}>{item}</li>
-            )}
-          </ul>
+          <H4>Highlights</H4>
+          <List showListStyle>
+            {project.deliverItems}
+          </List>
 
           {project.thoughts && project.thoughts.map((item, index) =>
             <ThoughtsItem
@@ -61,9 +60,9 @@ function DevProjectMain(props) {
             />
           )}
 
-          <ListFlex className="no-list-style">
+          <section>
             {project.urls && project.urls.map((item) =>
-              <ListFlexItem key={item}>
+              <FlexItem>
                 <button>
                   {item.includes('github') ? (
                     'github repo'
@@ -71,9 +70,9 @@ function DevProjectMain(props) {
                     'View the live site'
                   )}
                 </button>
-              </ListFlexItem>
+              </FlexItem>
             )}
-          </ListFlex>
+          </section>
 
         </section>
       ) : (

@@ -11,7 +11,7 @@ function List(props) {
   ));
 
   return (
-    <UL>
+    <UL {...props}>
       {items}
     </UL>
   );
@@ -20,6 +20,7 @@ function List(props) {
 export default List;
 
 List.propTypes = {
-  children: PropTypes.array.isRequired
+  children: PropTypes.array.isRequired,
+  showListStyle: PropTypes.bool // eslint-disable-line react/no-unused-prop-types
 };
 

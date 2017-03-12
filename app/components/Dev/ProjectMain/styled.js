@@ -1,18 +1,15 @@
 import styled from 'styled-components';
+import Img from 'components/Img';
 
-const rootFlex = {
-  display: 'flex',
-  justifyContent: 'space-between'
-};
-
-export const RootFlex = styled.section`${rootFlex}`;
-
-export const FlexCol = styled.div`
-  width: 50%;
+export const ListFlex = styled.ul`
+  display: 'flex'
 `;
 
-export const ListFlex = styled.ul`${rootFlex}`;
-
-export const ListFlexItem = styled.li`
+export const FlexItem = styled.div`
   padding: 0 1em;
+`;
+
+export const StyledImg = styled(Img)`
+  display: block;
+  margin: 4em auto;
 `;

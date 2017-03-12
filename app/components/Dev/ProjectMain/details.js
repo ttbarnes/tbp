@@ -1,4 +1,7 @@
 import React, { PropTypes } from 'react';
+import {
+  StyledImg
+} from './styled';
 
 export function CreateMarkup(data) {
   return {
@@ -13,7 +16,7 @@ export const ThoughtsItem = (props) => {
   if (props.item.copy) {
     return <p>{props.item.copy}</p>;
   } else if (props.item.img) {
-    return (<img src={getProjectImage(props.projectId, props.item.img)} alt={props.projectName} />);
+    return (<StyledImg src={getProjectImage(props.projectId, props.item.img)} alt={props.projectName} />);
   }
   return null;
 };
