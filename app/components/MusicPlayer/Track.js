@@ -72,10 +72,10 @@ const Track = (props) => {
 };
 
 Track.propTypes = {
-  track: PropTypes.object.isRequired,
-  currentTime: PropTypes.number.isRequired,
-  duration: PropTypes.string.isRequired,
-  soundCloudAudio: PropTypes.object.isRequired
+  track: PropTypes.object,
+  currentTime: PropTypes.number,
+  duration: PropTypes.number,
+  soundCloudAudio: PropTypes.object
 };
 
 export default Track;
