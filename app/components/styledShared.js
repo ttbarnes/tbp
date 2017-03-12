@@ -31,8 +31,16 @@ export const buttonHover = `
 
 export const colors = {
   blue1: '#5DA6B5',
+  blue2: '#4B86A4',
+  blue3: '#628BB1',
+  blue4: '#007ACC', // tag: typescript
+  blue5: '#0dd8ff', // tag: react
+  green1: '#9BC067',
+  orange1: '#B38D6F',
+  pink1: '#D381A9', // tags: styling
   purple1: '#9B4367',
   red1: '#A15748',
+  red2: '#B88080', // tag: html, css
   yellow1: '#C2BB69',
-  green1: '#9BC067'
+  yellow2: '#B2B36F'
 };

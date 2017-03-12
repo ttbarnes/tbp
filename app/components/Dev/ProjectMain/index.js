@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
+import Tag from 'components/Tag';
 import {
   getProjectImage,
   ThoughtsItem
@@ -31,14 +32,16 @@ function DevProjectMain(props) {
       {project ? (
         <section>
           <H2>{project.name}</H2>
-          <p><small>{project.category}, {project.date}</small></p>
+          <p><small>{project.date}</small></p>
 
           <img src={getProjectImage(project.id)} alt={project.name} />
 
           <h4>Tech</h4>
           <ul>
             {project.tech.map((item) =>
-              <li key={item.tag} className={`tech-tag ${item.tag}`}>{item.tag}</li>
+              <li key={item}>
+                <Tag type={item} />
+              </li>
             )}
           </ul>
 

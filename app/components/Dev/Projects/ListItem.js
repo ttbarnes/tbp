@@ -10,14 +10,11 @@ const getProjectImage = (itemId) =>
   require(`../../../assets/img/dev/${itemId}/01thumb.jpg`); // eslint-disable-line global-require
 
 const renderMainTag = (tags) => {
-  const isFullStack = tags.includes('Express, Node js');
+  const isFullStack = tags.includes('Express' || 'Node js');
 
   if (tags.includes('React') && !isFullStack) {
     return 'React';
-  } else if (
-    (tags.includes('Angular') && !isFullStack) ||
-    (tags.includes('AngularJS') && !isFullStack)
-  ) {
+  } else if (tags.includes('Angular' || 'AngularJS') && !isFullStack) {
     return 'Angular';
   } else if (tags.includes('Express, Node js')) {
     return 'Full stack JS';
