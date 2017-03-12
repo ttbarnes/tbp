@@ -1,66 +1,60 @@
 [
   {
+    "title": "Emax Nighthawk 280 freestyle clips Summer 2016 pt 2",
+    "description": "Clips from this summer in Essex and somewhere near Bedwyn, Wiltshire.",
+    "videoId": "ae8WRbt0cGc",
+    "type": "fpv",
+    "date": "Dec 31, 2016"
+  },
+  {
     "url": "https://soundcloud.com/ttonyb/ttox-play-him-like-a-machine",
     "type": "music"
+  },
+  {
+    "title": "Canal boat time lapse (2 hours) - Aldermaston to Devizes Summer 2016",
+    "videoId": "fKgHG4c1iA8",
+    "description": "Time lapse from a 2 week family canal boat holiday in Berkshire and Wiltshire: (Aldermaston - Devizes - Aldermaston). The hire boat is called 'Shorelark'. Recorded with a GoPro.",
+    "type": "timelapse",
+    "date": "Sep 22, 2016"
+  },
+  {
+    "title": "Emax Nighthawk 280 freestyle clips Summer 2016",
+    "description": "Some clips from this summer in Essex and Bedwyn, Wiltshire. Bit out of practice after ~1 month without flying. Very windy flying around trees :-)",
+    "videoId": "9L31hAMEneU",
+    "type": "fpv",
+    "date": "Sep 6, 2016"
+  },
+  {
+    "title": "Night lapse stars test",
+    "videoId": "HVvcGT2bWEo",
+    "description": "Testing out the night lapse setting on my GoPro.",
+    "type": "timelapse",
+    "date": "Sep 6, 2016"
   },
   {
     "url": "https://soundcloud.com/ttonyb/tonyb-interlude-by-the-river",
     "type": "music"
   },
   {
-    "url": "https://soundcloud.com/ttonyb/tonyb-closing-bridge-unmastered",
-    "type": "music"
+    "title": "Cycling in Essex",
+    "videoId": "VHusMdGaOoU",
+    "description": "Testing out my GoPro. 40 mile cycle",
+    "type": "timelapse",
+    "date": "Aug 15, 2016"
   },
   {
     "url": "https://soundcloud.com/ttonyb/tonyb-third-star",
     "type": "music"
   },
   {
-    "url": "https://soundcloud.com/ttonyb/tb1-dont-wanna-admit?in=ttonyb/sets/drum-bass",
-    "type": "music"
-  },
-  {
-    "url": "https://soundcloud.com/ttonyb/tb1-what-do-you-want-something-different?in=ttonyb/sets/drum-bass",
-    "type": "music"
-  },
-  {
-    "url": "https://soundcloud.com/ttonyb/tb1-sun-down?in=ttonyb/sets/drum-bass",
-    "type": "music"
-  },
-  {
-    "title": "Emax Nighthawk 280 freestyle clips Summer 2016 pt 2",
-    "description": "Clips from this summer in Essex and somewhere near Bedwyn, Wiltshire.",
-    "videoId": "ae8WRbt0cGc",
-    "type": "fpv"
-  },
-  {
-    "title": "Emax Nighthawk 280 freestyle clips Summer 2016",
-    "description": "Some clips from this summer in Essex and Bedwyn, Wiltshire. Bit out of practice after ~1 month without flying. Very windy flying around trees :-)",
-    "videoId": "9L31hAMEneU",
-    "type": "fpv"
-  },
-  {
     "title": "Nighthawk 280 goal post & trees - Summer 2016",
     "description": "new spot, love it!",
     "videoId": "DCPafFwJGVQ",
-    "type": "fpv" 
+    "type": "fpv",
+    "date": "Jul 3, 2016"
   },
   {
-    "title": "Cycling in Essex",
-    "videoId": "VHusMdGaOoU",
-    "description": "Testing out my GoPro. 40 mile cycle",
-    "type": "timelapse"
-  },
-  {
-    "title": "Night lapse stars test",
-    "videoId": "HVvcGT2bWEo",
-    "description": "Testing out the night lapse setting on my GoPro.",
-    "type": "timelapse"
-  },
-  {
-    "title": "Canal boat time lapse (2 hours) - Aldermaston to Devizes Summer 2016",
-    "videoId": "fKgHG4c1iA8",
-    "description": "Time lapse from a 2 week family canal boat holiday in Berkshire and Wiltshire: (Aldermaston - Devizes - Aldermaston). The hire boat is called 'Shorelark'. Recorded with a GoPro.",
-    "type": "timelapse"
+    "url": "https://soundcloud.com/ttonyb/tb1-dont-wanna-admit?in=ttonyb/sets/drum-bass",
+    "type": "music"
   }
 ]
