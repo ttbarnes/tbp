@@ -5,10 +5,10 @@
     "category": "Web apps",
     "date": "2017",
     "tech": [
-      {"tag": "React"},
-      {"tag": "JavaScript"},
-      {"tag": "TypeScript"},
-      {"tag": "etc"}
+       "React",
+       "JavaScript",
+       "TypeScript",
+       "etc"
     ],
     "deliverItems": [
       "something",
@@ -25,14 +25,14 @@
     "category": "Web apps",
     "date": "2016 - present",
     "tech": [
-      {"tag": "MongoDB, Mongoose"},
-      {"tag": "Express, Node js"},
-      {"tag": "Angular"},
-      {"tag": "Redux"},
-      {"tag": "JavaScript, ES6"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Stylus"},
-      {"tag": "Webpack"}
+       "MongoDB, Mongoose",
+       "Express, Node js",
+       "Angular",
+       "Redux",
+       "JavaScript, ES6",
+       "HTML5, CSS3",
+       "Stylus",
+       "Webpack"
     ],
     "deliverItems": [
       "something",
@@ -48,12 +48,12 @@
     "category": "Web apps",
     "date": "2016 - present",
     "tech": [
-      {"tag": "Angular"},
-      {"tag": "JavaScript, ES6"},
-      {"tag": "Express, Node js"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Stylus"},
-      {"tag": "Webpack"}
+       "Angular",
+       "JavaScript, ES6",
+       "Express, Node js",
+       "HTML5, CSS3",
+       "Stylus",
+       "Webpack"
     ],
     "deliverItems": [
      "Redesign for mobiles/tablets/any device size",
@@ -72,13 +72,13 @@
     "category": "Web apps",
     "date": "2016",
     "tech": [
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "ES6"},
-      {"tag": "d3.js"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Webpack"},
-      {"tag": "Sass"}
+       "AngularJS",
+       "JavaScript",
+       "ES6",
+       "d3.js",
+       "HTML5, CSS3",
+       "Webpack",
+       "Sass"
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
@@ -105,13 +105,13 @@
     "category": "Web apps",
     "date": "2015-16",
     "tech": [
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "ES6"},
-      {"tag": "Redux"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Webpack"},
-      {"tag": "Less"}
+       "AngularJS",
+       "JavaScript",
+       "ES6",
+       "Redux",
+       "HTML5, CSS3",
+       "Webpack",
+       "Less"
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
@@ -129,20 +129,19 @@
       {"img": "inner03"}
     ]
   },
-  
   {
     "id": "saranac",
     "name": "Saranac",
     "category": "Web apps",
     "date": "2015",
     "tech": [
-      {"tag": "Express, Node js"},
-      {"tag": "AngularJS"},
-      {"tag": "Highcharts"},
-      {"tag": "JavaScript"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Grunt"},
-      {"tag": "Less"}
+       "Express, Node js",
+       "AngularJS",
+       "Highcharts",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Less"
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
@@ -166,13 +165,13 @@
     "category": "Web apps",
     "date": "2015",
     "tech": [
-      {"tag": "MongoDB, Mongoose"},
-      {"tag": "Express, Node js"},
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Grunt"},
-      {"tag": "Sass"}
+       "MongoDB, Mongoose",
+       "Express, Node js",
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
     ],
     "deliverTitle": "My involvement",
     "deliverItems": [
@@ -189,11 +188,11 @@
     "category": "Web apps",
     "date": "2015",
     "tech": [
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "Grunt"},
-      {"tag": "Sass"},
-      {"tag": "CSS3"}
+       "AngularJS",
+       "JavaScript",
+       "Grunt",
+       "Sass",
+       "CSS3"
     ],
     "deliverTitle": "My involvement",
     "deliverItems": [
@@ -209,11 +208,11 @@
     "category": "Web apps",
     "date": "2015",
     "tech": [
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Grunt"},
-      {"tag": "Sass"}
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
     ],
     "deliverTitle": "My involvement",
     "deliverItems": [
@@ -228,11 +227,11 @@
     "category": "Web apps",
     "date": "2014-2015",
     "tech": [
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Grunt"},
-      {"tag": "Sass"}
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
     ],
     "deliverTitle": "My involvement",
     "deliverItems": [
@@ -248,12 +247,12 @@
     "category": "Web apps",
     "date": "2014-15",
     "tech": [
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Sass"},
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript, jQuery"},
-      {"tag": "Rails"},
-      {"tag": "Photoshop, Sketch"}
+       "HTML5, CSS3",
+       "Sass",
+       "AngularJS",
+       "JavaScript, jQuery",
+       "Rails",
+       "Photoshop, Sketch"
     ],
     "deliverTitle": "What we delivered",
     "deliverItems": [
@@ -273,12 +272,12 @@
     "category": "Web apps",
     "date": "2014-15",
     "tech": [
-      {"tag": "HTML5, CSS3"},
-      {"tag": "Less"},
-      {"tag": "AngularJS"},
-      {"tag": "JavaScript"},
-      {"tag": "Gulp"},
-      {"tag": "Photoshop"}
+       "HTML5, CSS3",
+       "Less",
+       "AngularJS",
+       "JavaScript",
+       "Gulp",
+       "Photoshop"
     ],
     "deliverTitle": "My involvement",
     "deliverItems": [
@@ -295,10 +294,10 @@
 		"category": "Web apps",
 		"date": "2014",
 		"tech": [
-			{"tag": "HTML5, CSS3"},
-			{"tag": "Sass"},
-			{"tag": "JavaScript, jQuery"},
-			{"tag": "Play, Scala"}
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
 		],
 		"deliverTitle": "What we delivered",
 		"deliverItems": [
@@ -314,10 +313,10 @@
 		"category": "Web apps",
 		"date": "2014",
 		"tech": [
-			{"tag": "HTML5, CSS3"},
-			{"tag": "Sass"},
-			{"tag": "JavaScript, jQuery"},
-			{"tag": "Play, Scala"}
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
 		],
 		"deliverTitle": "What we delivered",
 		"deliverItems": [
@@ -333,10 +332,10 @@
 		"category": "Web apps",
 		"date": "2014",
 		"tech": [
-			{"tag": "HTML5, CSS3"},
-			{"tag": "Sass"},
-			{"tag": "JavaScript, jQuery"},
-			{"tag": "Play, Scala"}
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
 		],
 		"deliverTitle": "What we delivered",
 		"deliverItems": [

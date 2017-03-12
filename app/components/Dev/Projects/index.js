@@ -28,10 +28,10 @@ export class Projects extends React.PureComponent { // eslint-disable-line react
         {filteredData && filteredData.toJS().map((project) =>
           <ListItem
             name={project.name}
-            category={project.category}
             key={project.id}
             id={project.id}
             mini={project.mini}
+            tags={project.tech}
             onClick={onClick}
           />
         )}
@@ -41,9 +41,9 @@ export class Projects extends React.PureComponent { // eslint-disable-line react
 }
 
 Projects.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object.isRequired,
   activeFilter: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func.isRequired
 };
 
 export default Projects;

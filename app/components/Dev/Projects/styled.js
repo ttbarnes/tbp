@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
+import Tag from 'components/Tag';
 
 export const ListRoot = styled.ul`
   clear: both;
   display: flex;
   flexFlow: row wrap;
   listStyleType: none;
+  margin: 0 -0.7em; /* counter ListItem padding */
 `;
 
 export const StyledListItemInner = `
@@ -20,6 +22,8 @@ export const StyledListItem = styled.li`
   display: flex;
   alignItems: center;
   justifyContent: center;
+  position: relative;
+  padding: 0.7em;
   minWidth: 200px;
   maxWidth: 200px;
   minHeight: 110px;
@@ -27,7 +31,7 @@ export const StyledListItem = styled.li`
   opacity: .8;
   transition: all 0.2s ease;
   &:hover {
-    opacity: 1; 
+    opacity: 1;
   }
 `;
 
@@ -37,4 +41,12 @@ export const StyledListItemNoLink = styled.div`
 
 export const StyledListItemLink = styled(Link)`
   {StyledListItemInner}
+`;
+
+export const StyledTag = styled(Tag)`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(207, 163, 72, 0.75);
+  color: #000;
 `;
