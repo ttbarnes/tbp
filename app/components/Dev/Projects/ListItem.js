@@ -3,6 +3,7 @@ import {
   StyledListItem,
   StyledListItemNoLink,
   StyledListItemLink,
+  StyledImg,
   StyledTag
 } from './styled';
 
@@ -10,13 +11,17 @@ const getProjectImage = (itemId) =>
   require(`../../../assets/img/dev/${itemId}/01thumb.jpg`); // eslint-disable-line global-require
 
 const renderMainTag = (tags) => {
-  const isFullStack = tags.includes('Express' || 'Node js');
+  let isFullStack = false;
 
-  if (tags.includes('React') && !isFullStack) {
+  if (tags.includes('Express, Node js')) {
+    isFullStack = true;
+  }
+
+  if ((tags.includes('React') && !isFullStack)) {
     return 'React';
-  } else if (tags.includes('Angular' || 'AngularJS') && !isFullStack) {
+  } else if (((tags.includes('Angular') || tags.includes('AngularJS')) && !isFullStack)) {
     return 'Angular';
-  } else if (tags.includes('Express, Node js')) {
+  } else if (isFullStack) {
     return 'Full stack JS';
   }
   return null;
@@ -30,20 +35,20 @@ const ListItem = (props) => {
     tags
   } = props;
 
-  const mainTag = renderMainTag(tags);
+  const mainTag = tags ? renderMainTag(tags) : null;
 
   return (
     <StyledListItem>
       {mini === true ? (
         <StyledListItemNoLink>
-          <img src={getProjectImage(id)} alt={name} />
+          <StyledImg src={getProjectImage(id)} alt={name} />
         </StyledListItemNoLink>
       ) : (
         <StyledListItemLink
           onClick={() => props.onClick(id)}
           to={`dev/project/${id}`}
         >
-          <img src={getProjectImage(id)} alt={name} />
+          <StyledImg src={getProjectImage(id)} alt={name} />
           {mainTag && <StyledTag type={mainTag} />}
         </StyledListItemLink>
       )}

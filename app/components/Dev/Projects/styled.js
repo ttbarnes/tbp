@@ -28,11 +28,11 @@ export const StyledListItem = styled.li`
   maxWidth: 200px;
   minHeight: 110px;
   textAlign: center;
+`;
+
+export const StyledImg = styled.img`
   opacity: .8;
   transition: all 0.2s ease;
-  &:hover {
-    opacity: 1;
-  }
 `;
 
 export const StyledListItemNoLink = styled.div`
@@ -41,12 +41,14 @@ export const StyledListItemNoLink = styled.div`
 
 export const StyledListItemLink = styled(Link)`
   {StyledListItemInner}
+  &:hover img {
+    opacity: 1;
+    transform: scale(1.12);
+  }
 `;
 
 export const StyledTag = styled(Tag)`
   position: absolute;
   bottom: 0;
   right: 0;
-  background: rgba(207, 163, 72, 0.75);
-  color: #000;
 `;

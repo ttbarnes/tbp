@@ -25,6 +25,10 @@ const backgroundTheme = (props) => {
       'background: #CFBD44'
     };
 
+    ${type === 'Full stack JS' &&
+      `background: ${colors.red2}`
+    };
+
     ${type === 'React' &&
       `background: ${colors.blue5}`
     };

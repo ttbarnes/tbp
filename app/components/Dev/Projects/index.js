@@ -24,7 +24,7 @@ export class Projects extends React.PureComponent { // eslint-disable-line react
     const filteredData = filterProjectsByCategory(data, activeFilter);
 
     return (
-      <ListRoot>
+      <ListRoot className="something">
         {filteredData && filteredData.toJS().map((project) =>
           <ListItem
             name={project.name}
