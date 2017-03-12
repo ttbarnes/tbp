@@ -1,4 +1,4 @@
-import Img from '../index';
+import Img from './index';
 
 import expect from 'expect';
 import { shallow } from 'enzyme';

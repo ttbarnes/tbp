@@ -56,21 +56,10 @@ export default function createRoutes(store) {
       path: '/dev/project/:id',
       name: 'devProject',
       getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          System.import('containers/ProjectsPage/reducer'),
-          System.import('containers/DevProjectPage'),
-        ]);
-
-        const renderRoute = loadModule(cb);
-
-        importModules.then(([reducer, component]) => {
-          injectReducer('dev', reducer.default);
-
-          renderRoute(component);
-        });
-
-        importModules.catch(errorLoading);
-      },
+        System.import('containers/DevProjectPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      }
     }, {
       path: '/hobbies',
       name: 'hobbies',

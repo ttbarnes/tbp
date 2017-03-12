@@ -2,10 +2,8 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import { Link } from 'react-router';
-import NotFound from '../index';
-import {
-  ErrorMessage
-} from '../styled';
+import NotFound from './index';
+import { ErrorMessage } from './styled';
 
 describe('<NotFound />', () => {
   it('should render the Page Not Found copy', () => {

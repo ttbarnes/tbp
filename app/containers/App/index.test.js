@@ -1,4 +1,4 @@
-import App from '../index';
+import App from './index';
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';

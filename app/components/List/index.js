@@ -1,34 +1,25 @@
-import React from 'react';
-
-import Ul from './Ul';
-import Wrapper from './Wrapper';
+import React, { PropTypes } from 'react';
+import { UL, LI } from './styled';
 
 function List(props) {
-  const ComponentToRender = props.component;
-  let content = (<div></div>);
-
-  // If we have items, render them
-  if (props.items) {
-    content = props.items.map((item, index) => (
-      <ComponentToRender key={`item-${index}`} item={item} />
-    ));
-  } else {
-    // Otherwise render a single component
-    content = (<ComponentToRender />);
+  if (!props.children) {
+    return null;
   }
 
+  const items = props.children.map((item, index) => (
+    <LI key={`item-${index}`}>{item}</LI>
+  ));
+
   return (
-    <Wrapper>
-      <Ul>
-        {content}
-      </Ul>
-    </Wrapper>
+    <UL>
+      {items}
+    </UL>
   );
 }
 
+export default List;
+
 List.propTypes = {
-  component: React.PropTypes.func.isRequired,
-  items: React.PropTypes.array,
+  children: PropTypes.array.isRequired
 };
 
-export default List;
