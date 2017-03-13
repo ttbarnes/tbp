@@ -15,9 +15,11 @@ import {
 } from './styled';
 
 function DevProjectMain(props) {
-  const project = props.project && props.project.toJS();
+  const {
+    project
+  } = props;
 
-  if (project.mini === true) {
+  if (project && project.mini === true) {
     // todo: redirect to error page or show error
     return null;
   }
@@ -28,7 +30,7 @@ function DevProjectMain(props) {
       <Helmet
         title={(project && project.name) ? project.name : 'Project'}
         meta={[
-          { name: 'description', content: 'Dev things' },
+          { name: 'description', content: 'Dev things' }
         ]}
       />
 

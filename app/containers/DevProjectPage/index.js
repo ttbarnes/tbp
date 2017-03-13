@@ -7,7 +7,7 @@ import {
 import DevProjectMain from '../../components/Dev/ProjectMain';
 
 const mapStateToProps = (state, { params }) => createStructuredSelector({
-  project: selectProject(params.id),
+  project: selectProject(params.id).toJS(),
 });
 
 export default connect(mapStateToProps)(DevProjectMain);
