@@ -48,7 +48,7 @@ function DevProjectMain(props) {
 
           <H4>Highlights</H4>
           <List showListStyle>
-            {project.deliverItems}
+            {project.highlights}
           </List>
 
           {project.thoughts && project.thoughts.map((item, index) =>

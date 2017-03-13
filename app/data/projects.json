@@ -9,7 +9,7 @@
        "JavaScript",
        "TypeScript"
     ],
-    "deliverItems": [
+    "highlights": [
       "something",
       "something else"
     ],
@@ -33,7 +33,7 @@
        "Stylus",
        "Webpack"
     ],
-    "deliverItems": [
+    "highlights": [
       "something",
       "something else"
     ],
@@ -54,7 +54,7 @@
        "Stylus",
        "Webpack"
     ],
-    "deliverItems": [
+    "highlights": [
      "Redesign for mobiles/tablets/any device size",
      "Modular, component based architecture",
      "Customised music player",
@@ -79,8 +79,7 @@
        "Webpack",
        "Sass"
     ],
-    "deliverTitle": "What we delivered",
-    "deliverItems": [
+    "highlights": [
       "6 different apps for various stores and consumers",
       "Modular, component based architecture with shared, reusable codebases",
       "Ecommerce checkout for a bespoke touch screen app",
@@ -112,8 +111,8 @@
        "Webpack",
        "Less"
     ],
-    "deliverTitle": "What we delivered",
-    "deliverItems": [
+    
+    "highlights": [
       "Built many new features and components within a large existing codebase",
       "Modular, component based app/architecture",
       "Heavy use of custom directives/components",
@@ -142,8 +141,7 @@
        "Grunt",
        "Less"
     ],
-    "deliverTitle": "What we delivered",
-    "deliverItems": [
+    "highlights": [
       "Large greenfield, wealth management app",
       "Rich, complex data visualization",
       "Mock API and datastore",
@@ -172,8 +170,7 @@
        "Grunt",
        "Sass"
     ],
-    "deliverTitle": "My involvement",
-    "deliverItems": [
+    "highlights": [
       "Created from the ground up in order to learn more about Node, Express and MongoDB",
       "Built a fairly in-depth node API that interacts with a DB",
       "Clean and modular angular app on the front end",
@@ -193,8 +190,7 @@
        "Sass",
        "CSS3"
     ],
-    "deliverTitle": "My involvement",
-    "deliverItems": [
+    "highlights": [
       "Built an open source simple ticker directive for easy re-use in any project",
       "Automatically scrolls through a list of items, fading in/out",
       "Configurable timing"
@@ -213,8 +209,7 @@
        "Grunt",
        "Sass"
     ],
-    "deliverTitle": "My involvement",
-    "deliverItems": [
+    "highlights": [
       "Created whilst learning and seeking examples of some angular features",
       "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
     ],
@@ -232,8 +227,7 @@
        "Grunt",
        "Sass"
     ],
-    "deliverTitle": "My involvement",
-    "deliverItems": [
+    "highlights": [
       "Contributed to the first version of the product",
       "Built some core features involving business logic, angular routing and more",
       "Owned the UI - integrated designs, branding"
@@ -253,8 +247,8 @@
        "Rails",
        "Photoshop, Sketch"
     ],
-    "deliverTitle": "What we delivered",
-    "deliverItems": [
+    
+    "highlights": [
       "Contributed to the first version of the product, building new features, integrating designs, branding",
       "Built and maintained a custom, scalable UI framework to be used on any device, anywhere",
       "Various 3rd party and social media integrations",
@@ -278,8 +272,7 @@
        "Gulp",
        "Photoshop"
     ],
-    "deliverTitle": "My involvement",
-    "deliverItems": [
+    "highlights": [
       "Delivered many new features, integrating with APIs",
       "Integrated a new, cleaner design",
       "Refactoring, cleaning the codebase",
@@ -298,8 +291,7 @@
 			 "JavaScript, jQuery",
 			 "Play, Scala"
 		],
-		"deliverTitle": "What we delivered",
-		"deliverItems": [
+		"highlights": [
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
@@ -317,8 +309,8 @@
 			 "JavaScript, jQuery",
 			 "Play, Scala"
 		],
-		"deliverTitle": "What we delivered",
-		"deliverItems": [
+		
+		"highlights": [
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
@@ -336,8 +328,7 @@
 			 "JavaScript, jQuery",
 			 "Play, Scala"
 		],
-		"deliverTitle": "What we delivered",
-		"deliverItems": [
+		"highlights": [
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
