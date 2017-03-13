@@ -3,15 +3,11 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import moment from 'moment';
 import H2 from 'components/H2';
+import A from 'components/A';
 import Track from './Track';
-// import { SoundPlayerContainer } from 'react-soundplayer/addons';
 import {
-  // RootFlex,
   InlineElm,
-  // ColArtwork,
-  // ColDetails,
   SubHeading,
-  // ImgWrap,
   StyledImg,
   Date,
   StyledButtonPlay,
@@ -40,7 +36,8 @@ const mockPropsWithCurrentTime = {
     title: 'Track title',
     genre: 'House',
     createdAt: new Date(),
-    description: 'all the things!'
+    description: 'all the things!',
+    permalink_url: 'http://soundcloud.com/testpermalink'
   },
   currentTime: 0.2,
   duration: '123',
@@ -134,6 +131,15 @@ describe('<Track />', () => {
       );
       const actual = wrapper.containsMatchingElement(
         <p className="no-margin">{mockProps.track.description}</p>
+      );
+      expect(actual).toBeTruthy();
+    });
+    it('should render a link to soundcloud', () => {
+      const wrapper = shallow(
+        <Track {...mockProps} />
+      );
+      const actual = wrapper.containsMatchingElement(
+        <A href={mockProps.permalink_url}>Listen on SoundCloud</A>
       );
       expect(actual).toBeTruthy();
     });
