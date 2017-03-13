@@ -23,9 +23,8 @@ const Track = (props) => {
     duration,
   } = props;
 
-
   if (!track) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   return (
