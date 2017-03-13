@@ -5,10 +5,7 @@ import YouTube from 'react-youtube';
 import H2 from '../../components/H2';
 import A from '../../components/A';
 import VideoPlayer, { youTubeOpts } from './index';
-import {
-  VideoFooter,
-  FlexCol
- } from './styled';
+import { VideoFooter } from './styled';
 
 const mockProps = {
   title: 'My title',
@@ -48,9 +45,7 @@ describe('<VideoPlayer />', () => {
     );
     const actual = wrapper.containsMatchingElement(
       <VideoFooter>
-        <FlexCol>
-          <A href={`https://www.youtube.com/watch?v=${mockProps.videoId}`} target="_blank">watch on youtube</A>
-        </FlexCol>
+        <A href={`https://www.youtube.com/watch?v=${mockProps.videoId}`} target="_blank">Watch on YouTube</A>
       </VideoFooter>
     );
     expect(actual).toBeTruthy();

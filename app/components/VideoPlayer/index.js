@@ -2,10 +2,7 @@ import React, { PropTypes } from 'react';
 import YouTube from 'react-youtube';
 import H2 from '../../components/H2';
 import A from '../../components/A';
-import {
-  VideoFooter,
-  FlexCol
-} from './styled';
+import { VideoFooter } from './styled';
 
 export const youTubeOpts = {
   playerVars: {
@@ -25,9 +22,7 @@ const VideoPlayer = (props) => {
       <p>{video.description}</p>
       <YouTube videoId={video.videoId} opts={youTubeOpts} />
       <VideoFooter>
-        <FlexCol>
-          <A href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank">watch on youtube</A>
-        </FlexCol>
+        <A href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank">Watch on YouTube</A>
       </VideoFooter>
     </article>
   );
