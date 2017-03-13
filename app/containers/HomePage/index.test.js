@@ -5,6 +5,8 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import H1 from '../../components/H1';
 import HomePage from './index';
+import { StyledImg } from './styled';
+import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
   const wrapper = shallow(
@@ -19,6 +21,13 @@ describe('<HomePage />', () => {
           { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
         ]}
       />
+    );
+    expect(actual).toEqual(true);
+  });
+
+  it('should render an image', () => {
+    const actual = wrapper.containsMatchingElement(
+      <StyledImg src={TbImage} alt="Tony Barnes" />
     );
     expect(actual).toEqual(true);
   });

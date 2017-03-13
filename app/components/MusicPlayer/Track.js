@@ -20,7 +20,7 @@ const Track = (props) => {
   const {
     track,
     currentTime,
-    duration,
+    duration
   } = props;
 
   if (!track) {
