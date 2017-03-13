@@ -1,9 +1,7 @@
-import React from 'react';
+import styled from 'styled-components';
 
-function H4(props) {
-  return (
-    <h4 {...props} />
-  );
-}
+const H4 = styled.h4`
+  font-size: 1.4em;
+`;
 
 export default H4;

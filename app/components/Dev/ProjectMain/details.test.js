@@ -2,6 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import { ThoughtsItem } from './details';
+import { StyledImg } from './styled';
 
 const mockItems = [
   { copy: 'hello world' },
@@ -36,7 +37,7 @@ describe('<ProjectMain /> details', () => {
           projectName={mock.project.name}
         />
       );
-      const img = wrapper.find('img');
+      const img = wrapper.find(StyledImg);
       expect(img.length).toEqual(1);
       // todo: how to test require() (tests return empty src obj)
     });
