@@ -65,7 +65,6 @@ describe('<Nav />', () => {
       const actual = wrapper.containsAllMatchingElements([
         <NavLink to="/about" activeClassName="active">About</NavLink>,
         <NavLink to="/projects" activeClassName="active">Projects</NavLink>,
-        <NavLink to="/hobbies" activeClassName="active">Hobbies</NavLink>,
         <NavLink to="/contact" activeClassName="active">Contact</NavLink>
       ]);
       expect(actual).toEqual(true);
