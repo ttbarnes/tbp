@@ -3,15 +3,26 @@
     "id": "trainline",
     "name": "Trainline",
     "category": "Web apps",
-    "date": "2017",
+    "date": "2016-17",
     "tech": [
        "React",
+       "Redux", 
+       "TypeScript",
        "JavaScript",
-       "TypeScript"
+       "ES6", 
+       "Webpack",
+       "Aphrodite"
     ],
     "highlights": [
-      "something",
-      "something else"
+      "Re-platformed the main desktop app",
+      "Built many smart, dumb and reusable React components complete with TypeScript and accessibility",
+      "Owned the main 'Journey Summary sidebar' component that works alongside search results & checkout flow",
+      "Built a ‘sticky component’ that changes position depending on other elements positioning and/or props",
+      "Refactored various selectors and unit tests",
+      "Built a login form with email validation",
+      "Built seat reservations & delivery options components",
+      "Google calendar API integration",
+      "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price"
     ],
     "urls": [
       "http://github.com",
