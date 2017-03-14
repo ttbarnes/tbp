@@ -20,7 +20,7 @@ function List(props) {
 export default List;
 
 List.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.array,
   showListStyle: PropTypes.bool // eslint-disable-line react/no-unused-prop-types
 };
 

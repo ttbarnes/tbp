@@ -48,10 +48,22 @@ export default function createRoutes(store) {
       path: '/about',
       name: 'about',
       getComponent(nextState, cb) {
-        System.import('containers/AboutPage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
+        const importModules = Promise.all([
+          System.import('containers/AboutPage/reducer'),
+          System.import('containers/AboutPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, component]) => {
+          injectReducer('about', reducer.default);
+
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
       },
+
     }, {
       path: '/dev/project/:id',
       name: 'devProject',
