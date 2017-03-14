@@ -13,7 +13,7 @@ function App(props) {
         titleTemplate="%s - Tony Barnes"
         defaultTitle="Tony Barnes"
         meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' },
+          { name: 'description', content: 'A React.js Boilerplate application' }
         ]}
       />
 

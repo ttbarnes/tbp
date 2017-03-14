@@ -14,11 +14,13 @@ import { FadeIn } from './styled';
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
-    const {
+    let {
       tech
     } = this.props;
 
-    tech.toJS();
+    if (tech) {
+      tech = tech.toJS();
+    }
 
     return (
       <article>
@@ -37,7 +39,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <p>Download <Link to={CV} target="_blank">CV</Link>( ? )</p>
 
         <List>
-          {tech.map((item) =>
+          {tech && tech.map((item) =>
             <FadeIn key={item}>
               <Tag type={item} />
             </FadeIn>
@@ -49,7 +51,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 }
 
 AboutPage.propTypes = {
-  tech: PropTypes.object.isRequired
+  tech: PropTypes.object
 };
 
 const mapStateToProps = createStructuredSelector({

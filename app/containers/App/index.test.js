@@ -1,26 +1,38 @@
-import App from './index';
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
+import Helmet from 'react-helmet';
 import Nav from 'components/Nav';
+import Footer from 'components/Footer';
+import App from './index';
 
 describe('<App />', () => {
-  it('should render the nav', () => {
-    const wrapper = shallow(
-      <App />
+  const wrapper = shallow(
+    <App />
+  );
+
+  it('should have helmet component', () => {
+    const actual = wrapper.containsMatchingElement(
+      <Helmet
+        titleTemplate="%s - Tony Barnes"
+        defaultTitle="Tony Barnes"
+        meta={[
+          { name: 'description', content: 'A React.js Boilerplate application' }
+        ]}
+      />
     );
+    expect(actual).toEqual(true);
+  });
+
+  it('should render a nav', () => {
     expect(wrapper.containsMatchingElement(
       <Nav />
     )).toBeTruthy();
   });
 
-  it('should render its children', () => {
-    const children = (<h1>Test</h1>);
-    const renderedComponent = shallow(
-      <App>
-        {children}
-      </App>
-    );
-    expect(renderedComponent.contains(children)).toEqual(true);
+  it('should render a footer', () => {
+    expect(wrapper.containsMatchingElement(
+      <Footer />
+    )).toBeTruthy();
   });
 });

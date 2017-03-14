@@ -19,4 +19,6 @@ describe('<About />', () => {
     );
     expect(actual).toEqual(true);
   });
+
+  // it should render tech tags
 });
