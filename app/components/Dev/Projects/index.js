@@ -1,49 +1,43 @@
 import React, { PropTypes } from 'react';
-import ListItem from './ListItem';
-import { ListRoot } from './styled';
+import Helmet from 'react-helmet';
+import H1 from 'components/H1';
+import ProjectFilters from 'components/Dev/ProjectFilters';
+import ProjectsList from 'components/Dev/ProjectsList';
 
-const filterProjectsByCategory = (projects, filterCategory) => {
-  if (projects) {
-    if (filterCategory === 'All') {
-      return projects;
-    }
-    return projects.filter((p) => p.toJS().category === filterCategory);
-  }
-  return null;
-};
+function Projects(props) {
+  return (
+    <article>
 
-export class Projects extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+      <Helmet
+        title="Projects"
+        meta={[
+          { name: 'description', content: 'Dev projects' },
+        ]}
+      />
 
-  render() {
-    const {
-      data,
-      activeFilter,
-      onClick
-    } = this.props;
+      <H1>Projects</H1>
 
-    const filteredData = filterProjectsByCategory(data, activeFilter);
+      <p>Some of the projects i{'\''}ve been a part of{':'}</p>
 
-    return (
-      <ListRoot className="something">
-        {filteredData && filteredData.toJS().map((project) =>
-          <ListItem
-            name={project.name}
-            key={project.id}
-            id={project.id}
-            mini={project.mini}
-            tags={project.tech}
-            onClick={onClick}
-          />
-        )}
-      </ListRoot>
-    );
-  }
+      <br />
+
+      <ProjectFilters onClick={props.onClickProjectFilter} activeFilter={props.activeFilter} />
+
+      <br />
+
+      <ProjectsList onClick={props.onClickProjectListItem} data={props.projects} activeFilter={props.activeFilter} />
+
+    </article>
+
+  );
 }
 
 Projects.propTypes = {
-  data: PropTypes.object.isRequired,
   activeFilter: PropTypes.string,
-  onClick: PropTypes.func.isRequired
+  projects: PropTypes.array,
+  onClickProjectFilter: PropTypes.func,
+  onClickProjectListItem: PropTypes.func
 };
+
 
 export default Projects;

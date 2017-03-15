@@ -4,10 +4,10 @@ import {
   selectProject
 } from './selectors';
 
-import DevProjectMain from '../../components/Dev/ProjectMain';
+import DevProjectMain from 'components/Dev/ProjectMain';
 
 const mapStateToProps = (state, { params }) => createStructuredSelector({
-  project: selectProject(params.id).toJS(),
+  data: selectProject(params.id)
 });
 
-export default connect(mapStateToProps)(DevProjectMain);
+export default connect(mapStateToProps, {})(DevProjectMain);

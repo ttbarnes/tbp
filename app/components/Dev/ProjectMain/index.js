@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
@@ -16,11 +16,17 @@ import {
 
 function DevProjectMain(props) {
   const {
-    project
+    data
   } = props;
 
+  // todo: redirect to error page or show error
+  if (!data) {
+    return null;
+  }
+
+  const project = data;
+
   if (project && project.mini === true) {
-    // todo: redirect to error page or show error
     return null;
   }
 
@@ -34,61 +40,55 @@ function DevProjectMain(props) {
         ]}
       />
 
-      {project ? (
-        <section>
-          <H2>{project.name}</H2>
-          <p><small>{project.date}</small></p>
+      <section>
+        <H2>{project.name}</H2>
+        <p><small>{project.date}</small></p>
 
-          <Img src={getProjectImage(project.id)} alt={project.name} />
+        <Img src={getProjectImage(project.id)} alt={project.name} />
 
-          <H4>Tech</H4>
-          <ListFlex>
-            {project.tech.map((item, index) =>
-              <Tag type={item} key={index} />
-            )}
-          </ListFlex>
-
-          <H4>Highlights</H4>
-          <List showListStyle>
-            {project.highlights}
-          </List>
-
-          {project.thoughts && project.thoughts.map((item, index) =>
-            <ThoughtsItem
-              item={item}
-              projectId={project.id}
-              projectName={project.name}
-              key={index}
-            />
+        <H4>Tech</H4>
+        <ListFlex>
+          {project.tech.map((item, index) =>
+            <Tag type={item} key={index} />
           )}
+        </ListFlex>
 
-          <section>
-            {project.urls && project.urls.map((item) =>
-              <FlexItem>
-                <button>
-                  {item.includes('github') ? (
-                    'github repo'
-                  ) : (
-                    'View the live site'
-                  )}
-                </button>
-              </FlexItem>
-            )}
-          </section>
+        <H4>Highlights</H4>
+        <List showListStyle>
+          {project.highlights}
+        </List>
 
-        </section>
-      ) : (
+        {project.thoughts && project.thoughts.map((item, index) =>
+          <ThoughtsItem
+            item={item}
+            projectId={project.id}
+            projectName={project.name}
+            key={index}
+          />
+        )}
+
         <section>
-          <p>oh no, apparently this project does not exist :(</p>
+          {project.urls && project.urls.map((item) =>
+            <FlexItem key={item}>
+              <button>
+                {item.includes('github') ? (
+                  'github repo'
+                ) : (
+                  'View the live site'
+                )}
+              </button>
+            </FlexItem>
+          )}
         </section>
-      )}
+
+      </section>
 
     </article>
   );
 }
 
 DevProjectMain.propTypes = {
-  project: React.PropTypes.object
+  data: PropTypes.object
 };
 
 export default DevProjectMain;

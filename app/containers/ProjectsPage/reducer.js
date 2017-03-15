@@ -1,4 +1,3 @@
-import { fromJS } from 'immutable';
 import projects from '../../data/projects.json';
 
 import {
@@ -6,20 +5,23 @@ import {
   SET_PROJECT_SELECTION,
 } from './constants';
 
-const initialState = fromJS({
+const initialState = {
   data: projects,
   filterCategory: 'Web apps',
   selectedProject: null
-});
+};
 
 function projectsReducers(state = initialState, action) {
   switch (action.type) {
     case SET_PROJECTS_FILTER_CATEGORY:
-      return state
-        .set('filterCategory', action.category);
+      return Object.assign({}, state, {
+        filterCategory: action.category
+      });
+
     case SET_PROJECT_SELECTION:
-      return state
-        .set('selectedProject', action.id);
+      return Object.assign({}, state, {
+        selectedProject: action.id
+      });
     default:
       return state;
   }

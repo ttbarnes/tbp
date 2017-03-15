@@ -4,12 +4,12 @@ const selectProjects = () => (state) => state.get('projects');
 
 const selectProjectsData = () => createSelector(
   selectProjects(),
-  (projectsState) => projectsState.get('data')
+  (projectsState) => projectsState.data
 );
 
 const selectActiveProjectFilter = () => createSelector(
   selectProjects(),
-  (projectsState) => projectsState.get('filterCategory')
+  (projectsState) => projectsState.filterCategory
 );
 
 export {

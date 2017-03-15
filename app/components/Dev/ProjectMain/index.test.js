@@ -41,8 +41,10 @@ const mockProject = {
 
 describe('<ProjectMain />', () => {
   const wrapper = shallow(
-    <DevProjectMain project={mockProject} />
+    <DevProjectMain data={mockProject} />
   );
+
+  wrapper.toJS = () => true;
 
   // TODO: properly test Helmet props
   it('should have a helmet component', () => {
@@ -119,15 +121,5 @@ describe('<ProjectMain />', () => {
     );
     expect(actual1).toBeTruthy();
     expect(actual2).toBeTruthy();
-  });
-
-  it('should render a message if no project', () => {
-    const errorWrapper = shallow(
-      <DevProjectMain />
-    );
-    const actual = errorWrapper.containsMatchingElement(
-      <p>oh no, apparently this project does not exist :(</p>
-    );
-    expect(actual).toBeTruthy();
   });
 });

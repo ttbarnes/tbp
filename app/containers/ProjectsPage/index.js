@@ -1,9 +1,6 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import H1 from '../../components/H1';
-import ProjectFilters from 'components/Dev/ProjectFilters';
 import Projects from 'components/Dev/Projects';
 import {
   setProjectsFilter,
@@ -15,40 +12,22 @@ import {
 } from './selectors';
 
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
-      <article>
-
-        <Helmet
-          title="Projects"
-          meta={[
-            { name: 'description', content: 'Dev projects' },
-          ]}
-        />
-
-        <H1>Projects</H1>
-
-        <p>Some of the projects i{'\''}ve been a part of{':'}</p>
-
-        <br />
-
-        <ProjectFilters onClick={this.props.onClickProjectFilter} activeFilter={this.props.activeFilter} />
-
-        <br />
-
-        <Projects onClick={this.props.onClickProjectListItem} data={this.props.projects} activeFilter={this.props.activeFilter} />
-
-      </article>
+      <Projects
+        projects={this.props.projects}
+        onClickProjectFilter={this.props.onClickProjectFilter}
+        onClickProjectListItem={this.props.onClickProjectListItem}
+        activeFilter={this.props.activeFilter}
+      />
     );
   }
 }
-
 ProjectsPage.propTypes = {
-  activeFilter: React.PropTypes.string,
-  projects: React.PropTypes.object,
-  onClickProjectFilter: React.PropTypes.func,
-  onClickProjectListItem: React.PropTypes.func
+  activeFilter: PropTypes.string,
+  projects: PropTypes.array,
+  onClickProjectFilter: PropTypes.func,
+  onClickProjectListItem: PropTypes.func
 };
 
 export function mapDispatchToProps(dispatch) {
@@ -67,5 +46,5 @@ const mapStateToProps = createStructuredSelector({
   activeFilter: selectActiveProjectFilter(),
 });
 
-// Wrap the component to inject dispatch and state into it
+
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectsPage);
