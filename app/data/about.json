@@ -1,12 +1,56 @@
 [
   {
     "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Redux",
-      "Angular"   
+      {
+        "group": "lately",
+        "tags": [
+          "React",
+          "Redux",
+          "TypeScript",
+          "Angular",
+          "MEAN stack",
+          "MongoDB, Mongoose",
+          "Node.js, Express"
+        ]
+      },
+      {
+        "group": "testing",
+        "tags": [
+          "Enzyme", 
+          "Jasmine", 
+          "Mocha", 
+          "Shouldjs", 
+          "Chai", 
+          "Karma"
+        ]
+      },
+      {
+        "group": "styling",
+        "tags": [
+          "styled-components",
+          "Aphrodite",
+          "stylus",
+          "Sass"
+        ]
+      },
+      {
+        "group": "other",
+        "tags": [
+          "Webpack", 
+          "Gulp",
+          "d3.js",
+          "HighCharts"
+        ]
+      }
     ]
   }
 ]
+
+
+
+
+
+
+
+
+

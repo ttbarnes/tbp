@@ -1,9 +1,6 @@
-import { fromJS } from 'immutable';
 import about from '../../data/about.json';
 
-const initialState = fromJS(
-  about[0]
-);
+const initialState = about[0];
 
 function aboutReducers(state = initialState, action) {
   switch (action.type) {

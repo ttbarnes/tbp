@@ -4,7 +4,7 @@ const selectAbout = () => (state) => state.get('about');
 
 const selectAboutTech = () => createSelector(
   selectAbout(),
-  (aboutState) => aboutState.get('tech')
+  (aboutState) => aboutState.tech
 );
 
 export {

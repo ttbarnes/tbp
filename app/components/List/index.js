@@ -2,19 +2,32 @@ import React, { PropTypes } from 'react';
 import { UL, LI } from './styled';
 
 function List(props) {
-  if (!props.children) {
+  const {
+    children
+  } = props;
+  if (!children) {
     return null;
   }
+  let items;
 
-  const items = props.children.map((item, index) => (
-    <LI key={`item-${index}`}>{item}</LI>
-  ));
-
-  return (
-    <UL {...props}>
-      {items}
-    </UL>
-  );
+  if (children.length > 0) {
+    items = children.map((item, index) => (
+      <LI key={`item-${index}`}>{item}</LI>
+    ));
+    return (
+      <UL {...props}>
+        {items}
+      </UL>
+    );
+  } else if (children.length === 0) {
+    items = children[0];
+    return (
+      <UL {...props}>
+        {items}
+      </UL>
+    );
+  }
+  return null;
 }
 
 export default List;
