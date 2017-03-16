@@ -95,6 +95,7 @@ const StyledTag = styled.div`
   padding: 0.5em 1em;
   margin: 0 0.5em 0.5em 0;
   color: #FFF;
+  background: #AAA; /* default */
   ${backgroundTheme};
 `;
 
