@@ -18,7 +18,7 @@ describe('<Projects />', () => {
     <Projects
       activeFilter={mock.activeFilter}
       projects={mock.projects}
-      onClickProjectFilter={mock.handleClickFilter}
+      onClickProjectFilter={mock.clickFunc}
       onClickProjectListItem={mock.clickFunc}
     />
   );
@@ -37,7 +37,7 @@ describe('<Projects />', () => {
   it('should render <ProjectFilters /> with props', () => {
     const actual = wrapper.containsMatchingElement(
       <ProjectFilters
-        handleClick={mock.handleClickFilter}
+        handleClick={mock.clickFunc}
         activeFilter={mock.activeFilter}
       />
     );

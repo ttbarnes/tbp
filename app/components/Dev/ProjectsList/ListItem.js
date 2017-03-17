@@ -27,41 +27,44 @@ const renderMainTag = (tags) => {
   return null;
 };
 
-const ListItem = (props) => {
-  const {
-    mini,
-    id,
-    name,
-    tags
-  } = props;
+export class ListItem extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  render() {
+    const {
+      mini,
+      id,
+      name,
+      tags,
+      handleClick
+    } = this.props;
 
-  const mainTag = tags ? renderMainTag(tags) : null;
+    const mainTag = tags ? renderMainTag(tags) : null;
 
-  return (
-    <StyledListItem>
-      {mini === true ? (
-        <StyledListItemNoLink>
-          <StyledImg src={getProjectImage(id)} alt={name} />
-        </StyledListItemNoLink>
-      ) : (
-        <StyledListItemLink
-          onClick={() => props.onClick(id)}
-          to={`dev/project/${id}`}
-        >
-          <StyledImg src={getProjectImage(id)} alt={name} />
-          {mainTag && <StyledTag type={mainTag} />}
-        </StyledListItemLink>
-      )}
-    </StyledListItem>
-  );
-};
+    return (
+      <StyledListItem>
+        {mini === true ? (
+          <StyledListItemNoLink>
+            <StyledImg src={getProjectImage(id)} alt={name} />
+          </StyledListItemNoLink>
+        ) : (
+          <StyledListItemLink
+            onClick={() => handleClick(id)}
+            to={`dev/project/${id}`}
+          >
+            <StyledImg src={getProjectImage(id)} alt={name} />
+            {mainTag && <StyledTag type={mainTag} />}
+          </StyledListItemLink>
+        )}
+      </StyledListItem>
+    );
+  }
+}
 
 ListItem.propTypes = {
-  name: PropTypes.string,
-  id: PropTypes.string,
-  onClick: PropTypes.func,
-  mini: PropTypes.bool,
-  tags: PropTypes.array
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  mini: PropTypes.bool.isRequired,
+  tags: PropTypes.array.isRequired
 };
 
 export default ListItem;

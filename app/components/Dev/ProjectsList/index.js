@@ -27,12 +27,9 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
       <ListRoot>
         {filteredData && filteredData.map((project) =>
           <ListItem
-            name={project.name}
             key={project.id}
-            id={project.id}
-            mini={project.mini}
-            tags={project.tech}
-            onClick={handleClick}
+            handleClick={handleClick}
+            {...project}
           />
         )}
       </ListRoot>
