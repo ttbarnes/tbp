@@ -2,15 +2,26 @@ import React, { PropTypes } from 'react';
 import Filter from './Filter';
 import { FlexList } from './styled';
 
-const ProjectFilters = (props) =>
-  <FlexList>
-    <Filter onClick={props.onClick} type="Web apps" currentFilter={props.activeFilter} />
-    <Filter onClick={props.onClick} type="Other" currentFilter={props.activeFilter} />
-  </FlexList>
-;
+export class ProjectFilters extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  render() {
+    const {
+      handleClick,
+      activeFilter
+    } = this.props;
+
+    return (
+      <div>
+        <FlexList>
+          <Filter onClick={handleClick} type="Web apps" currentFilter={activeFilter} />
+          <Filter onClick={handleClick} type="Other" currentFilter={activeFilter} />
+        </FlexList>
+      </div>
+    );
+  }
+}
 
 ProjectFilters.propTypes = {
-  onClick: PropTypes.func,
+  handleClick: PropTypes.func,
   activeFilter: PropTypes.string
 };
 

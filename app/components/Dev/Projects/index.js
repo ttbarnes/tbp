@@ -21,11 +21,11 @@ function Projects(props) {
 
       <br />
 
-      <ProjectFilters onClick={props.onClickProjectFilter} activeFilter={props.activeFilter} />
+      <ProjectFilters handleClick={props.onClickProjectFilter} activeFilter={props.activeFilter} />
 
       <br />
 
-      <ProjectsList onClick={props.onClickProjectListItem} data={props.projects} activeFilter={props.activeFilter} />
+      <ProjectsList handleClick={props.onClickProjectListItem} data={props.projects} activeFilter={props.activeFilter} />
 
     </article>
 

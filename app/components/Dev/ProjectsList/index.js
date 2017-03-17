@@ -18,7 +18,7 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
     const {
       data,
       activeFilter,
-      onClick
+      handleClick
     } = this.props;
 
     const filteredData = filterProjectsByCategory(data, activeFilter);
@@ -32,7 +32,7 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
             id={project.id}
             mini={project.mini}
             tags={project.tech}
-            onClick={onClick}
+            onClick={handleClick}
           />
         )}
       </ListRoot>
@@ -43,7 +43,7 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
 ProjectsList.propTypes = {
   data: PropTypes.array.isRequired,
   activeFilter: PropTypes.string,
-  onClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired
 };
 
 export default ProjectsList;
