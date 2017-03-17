@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { buttonHover } from '../../styledShared';
+import List from 'components/List';
 
-export const List = styled.ul`
+export const FlexList = styled(List)`
   display: flex;
 `;
 

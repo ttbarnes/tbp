@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import Filter from './Filter';
-import { List } from './styled';
+import { FlexList } from './styled';
 
 const ProjectFilters = (props) =>
-  <List>
+  <FlexList>
     <Filter onClick={props.onClick} type="Web apps" currentFilter={props.activeFilter} />
     <Filter onClick={props.onClick} type="Other" currentFilter={props.activeFilter} />
-  </List>
+  </FlexList>
 ;
 
 ProjectFilters.propTypes = {
