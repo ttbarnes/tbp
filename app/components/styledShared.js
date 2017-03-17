@@ -9,6 +9,21 @@ export const NAV_MAX_WIDTH = 120;
 export const FOOTER_HEIGHT = 60;
 
 export const media = {
+  xs: (...args) => css`
+    @media (min-width: 500px) {
+      ${css(...args)}
+    }
+  `,
+  sm: (...args) => css`
+    @media (min-width: 600px) {
+      ${css(...args)}
+    }
+  `,
+  md: (...args) => css`
+    @media (min-width: 768px) {
+      ${css(...args)}
+    }
+  `,
   lg: (...args) => css`
     @media (min-width: 990px) {
       ${css(...args)}
