@@ -25,6 +25,7 @@ describe('ProjectsList <ListItem />', () => {
     const actual = wrapper.containsMatchingElement(
       <StyledListItemLink to={`dev/project/${mock.projectLatest.id}`}>
         <StyledImg alt={mock.projectLatest.name} />
+        <StyledTag type="React" />
       </StyledListItemLink>
     );
     expect(actual).toBeTruthy();

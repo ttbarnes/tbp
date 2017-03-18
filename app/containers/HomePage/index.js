@@ -24,8 +24,8 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             <StyledImg src={TbImage} alt="Tony Barnes" />
           </div>
           <div>
-            <H1>Tony Barnes</H1>
-            <p>JavaScript developer, musician, cyclist, FPV pilot, tea drinker.</p>
+            <H1>Hello! I{'\''}m Tony.</H1>
+            <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
             <br />
             <p>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></p>
           </div>

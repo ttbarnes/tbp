@@ -34,8 +34,8 @@ describe('<HomePage />', () => {
 
   it('should have correct copy', () => {
     const actual = wrapper.containsAllMatchingElements([
-      <H1>Tony Barnes</H1>,
-      <p>JavaScript developer, musician, cyclist, FPV pilot, tea drinker.</p>
+      <H1>Hello! I{'\''}m Tony.</H1>,
+      <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
     ]);
     expect(actual).toEqual(true);
   });

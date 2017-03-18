@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import H1 from '../../components/H1';
+import H2 from '../../components/H2';
+import H3 from '../../components/H3';
 import List from '../../components/List';
 // import CV from '../../assets/Tony-Barnes-CV-2017.pdf';
 import { connect } from 'react-redux';
@@ -52,15 +54,24 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <H1>About</H1>
         <StyledSection>
-          <p>todo: add X years experience</p>
-          <p>I am a passionate front end {'/'} javascript {'/'} angular {'/'} full stack JS developer with many ambitions.</p>
-          <p>Striving for clean and scalable solutions, I thrive on the latest technologies. I am constantly improving my skill set. I{'\''}m currently building a new startup idea utilising the MEAN stack. Also creating a mini CMS with React. Previously built a {'\''}mini twitter{'\''}.</p>
-          <p>I really enjoy collaborating. I{'\''}ve built or contributed to 17 angular apps in 2 years – 3 including full stack JS.</p>
-          <p>I{'\''}ve worked closely with many developers in various environments, of course with agile/scrum {':)'}</p>
+          <H2>I am a very passionate front end/javascript developer.</H2>
+          <p>With X years of experience, I strive for clean and scalable solutions. Thriving on the latest technologies, I am constantly improving my skill set.</p>
+
+          <p>I{'\''}ve built or contributed to 17 angular apps in 2 years – 3 including full stack JS.</p>
+
+          <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. Simple user experience is vital.</p>
+
+          <p>I{'\''}ve worked closely with many developers in various environments, of course with agile/scrum {':)'}. I really enjoy collaborating and {'\''}pairing{'\''}.</p>
         </StyledSection>
 
         <StyledSection>
-          <p>I have a lot of experience with many market sectors such as:</p>
+          <H3>What am I doing now?</H3>
+          <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>.</p>
+          <p>On the side, i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link> utilising the MEAN stack. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link> with React {'&'} node. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>I{'\''}ve worked in a few sectors:</H3>
           <List showListStyle>
             <p>Ecommerce</p>
             <p>Health</p>
@@ -74,14 +85,14 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <p>Some tech i{'\''}ve been using lately:</p>
+          <H3>Some tech i{'\''}ve been using lately:</H3>
           <StyledList>
             {renderTechGroup(tech, 'lately')}
           </StyledList>
         </StyledSection>
 
         <StyledSection>
-          <p>I usually write tests with:</p>
+          <H3>I usually write tests with:</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'testing')}
@@ -89,7 +100,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <p>..and I style with all the similar things:</p>
+          <H3>..and I style with all the similar things:</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'styling')}
@@ -97,7 +108,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <p>Some other things I know:</p>
+          <H3>Some other things I know:</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'other')}
@@ -105,8 +116,10 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <p>Previously I used jQuery, Grunt and SVN...</p>
+          <p>Back in the day I used jQuery, Grunt and SVN...</p>
         </StyledSection>
+
+        <p>Apparently i{'\''}m a very quick typist. I have a strange liking for keyboard shortcuts. Very creative. I find unit tests quite satisfying. </p>
 
       </article>
     );
