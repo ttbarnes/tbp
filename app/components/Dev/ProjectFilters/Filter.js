@@ -1,15 +1,19 @@
 import React, { PropTypes } from 'react';
 import { Button } from './styled';
 
-const Filter = (props) =>
-  <Button onClick={() => props.onClick(props.type)}>
-    {props.type}
-  </Button>
-;
+export default class Filter extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  render() {
+    const {
+      type,
+      handleClick
+    } = this.props;
+    return (
+      <Button onClick={() => handleClick(type)}>{type}</Button>
+    );
+  }
+}
 
 Filter.propTypes = {
-  onClick: PropTypes.func,
+  handleClick: PropTypes.func,
   type: PropTypes.string
 };
-
-export default Filter;

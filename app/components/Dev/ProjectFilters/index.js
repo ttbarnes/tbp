@@ -12,8 +12,8 @@ export class ProjectFilters extends React.PureComponent { // eslint-disable-line
     return (
       <div>
         <FlexList>
-          <Filter onClick={handleClick} type="Web apps" currentFilter={activeFilter} />
-          <Filter onClick={handleClick} type="Other" currentFilter={activeFilter} />
+          <Filter handleClick={handleClick} type="Web apps" currentFilter={activeFilter} />
+          <Filter handleClick={handleClick} type="Other" currentFilter={activeFilter} />
         </FlexList>
       </div>
     );
