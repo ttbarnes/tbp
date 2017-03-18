@@ -66,7 +66,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
               <IconYouTube />
             </StyledLink>
           </ListItem>
-          <ListItem aria-label="Hobbies">
+          <ListItem>
             <StyledLink to="hobbies">Hobbies</StyledLink>
           </ListItem>
         </ListRoot>
