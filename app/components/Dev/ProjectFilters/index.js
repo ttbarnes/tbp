@@ -40,8 +40,8 @@ export class ProjectFilters extends React.PureComponent { // eslint-disable-line
 }
 
 ProjectFilters.propTypes = {
-  handleClick: PropTypes.func,
-  activeFilter: PropTypes.string
+  handleClick: PropTypes.func.isRequired,
+  activeFilter: PropTypes.string.isRequired
 };
 
 export default ProjectFilters;

@@ -2,7 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Filter from './Filter';
-import { Button } from './styled';
+import { Button, ButtonInner } from './styled';
 
 const mock = {
   type: 'React',
@@ -12,13 +12,16 @@ const mock = {
 describe('<Filter />', () => {
   const wrapper = shallow(
     <Filter
-      // handleClick={mock.handleClick}
       type={mock.type}
+      isLast
+      isActive
     />
   );
   it('should render a filter with correct props', () => {
     const actual = wrapper.containsMatchingElement(
-      <Button>{mock.type}</Button>
+      <Button>
+        <ButtonInner>{mock.type}</ButtonInner>
+      </Button>
     );
     expect(actual).toBeTruthy();
   });

@@ -5,25 +5,39 @@ import ProjectFilters from './index';
 import Filter from './Filter';
 
 const mock = {
-  activeFilter: 'test filter'
+  activeFilter: 'Other',
+  clickFunc: () => true
 };
 
 describe('<ProjectFilters />', () => {
-  it('should render 2 filters with correct props', () => {
+  it('should render 2 <Filter /> with correct active & last props', () => {
     const wrapper = shallow(
       <ProjectFilters
         onClick={() => true}
         activeFilter={mock.activeFilter}
+        handleClick={mock.clickFunc}
       />
     );
-    const actual = wrapper.containsAllMatchingElements([
-      <Filter type="Web apps" currentFilter={mock.activeFilter} />,
-      <Filter type="Other" currentFilter={mock.activeFilter} />
-    ]);
-    expect(actual).toBeTruthy();
+    const filterInactive = wrapper.containsMatchingElement(
+      <Filter
+        handleClick={mock.clickFunc}
+        type="Web apps"
+        currentFilter={mock.activeFilter}
+        isActive={false}
+      />
+    );
+    expect(filterInactive).toBeTruthy();
+    const filterActive = wrapper.containsMatchingElement(
+      <Filter
+        handleClick={mock.clickFunc}
+        type="Other"
+        currentFilter={mock.activeFilter}
+        isActive
+        isLast
+      />
+    );
+    expect(filterActive).toBeTruthy();
   });
-
   // it('should call onClick passed through props', () => {
-
   // });
 });
