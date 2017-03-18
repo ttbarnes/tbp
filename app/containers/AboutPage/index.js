@@ -61,17 +61,55 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. Simple user experience is vital.</p>
 
-          <p>I{'\''}ve worked closely with many developers in various environments, of course with agile/scrum {':)'}. I really enjoy collaborating and {'\''}pairing{'\''}.</p>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>What am I doing now?</H3>
           <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>.</p>
-          <p>On the side, i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link> utilising the MEAN stack. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link> with React {'&'} node. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
+
+          <p>On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
         </StyledSection>
 
         <StyledSection>
-          <H3>I{'\''}ve worked in a few sectors:</H3>
+          <H3>Recently I{'\''}ve been using...</H3>
+          <StyledList>
+            {renderTechGroup(tech, 'lately')}
+          </StyledList>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>..and building api{'\''}s with...</H3>
+          <StyledList>
+            {renderTechGroup(tech, 'api')}
+          </StyledList>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>I usually test with</H3>
+
+          <StyledList>
+            {renderTechGroup(tech, 'testing')}
+          </StyledList>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>..and style with all the similar things</H3>
+
+          <StyledList>
+            {renderTechGroup(tech, 'styling')}
+          </StyledList>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>i{'\''}ve come across these as well.</H3>
+
+          <StyledList>
+            {renderTechGroup(tech, 'other')}
+          </StyledList>
+        </StyledSection>
+
+        <StyledSection>
+          <p>Back in the day I used jQuery, Grunt and SVN... Also worked in Rails, .NET and Scala environments.</p>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>I{'\''}ve worked in a few sectors</H3>
           <List showListStyle>
             <p>Ecommerce</p>
             <p>Health</p>
@@ -82,41 +120,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
             <p>many more</p>
           </List>
           {/* <p>Download <Link to={CV} target="_blank">CV</Link>( ? )</p> */}
-        </StyledSection>
-
-        <StyledSection>
-          <H3>Some tech i{'\''}ve been using lately:</H3>
-          <StyledList>
-            {renderTechGroup(tech, 'lately')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I usually write tests with:</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'testing')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>..and I style with all the similar things:</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'styling')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>Some other things I know:</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'other')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <p>Back in the day I used jQuery, Grunt and SVN... Also worked in Rails, .NET and Scala environments.</p>
         </StyledSection>
 
         <p>Apparently i{'\''}m a very quick typist. I have a strange liking for keyboard shortcuts. Very creative. I find unit tests quite satisfying. </p>

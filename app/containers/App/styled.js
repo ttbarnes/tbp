@@ -19,15 +19,22 @@ const minHeight = (props) => `
   `}
 `;
 
+const containerPaddingOffset = (props) => {
+  if (props.location.pathname !== '/') {
+    return `padding-left:${CONTAINER_OFFSET_LEFT};`;
+  }
+  return null;
+};
+
 export const MainContent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   max-width: calc(${CONTAINER_MAX_WIDTH_LG}px - ${NAV_MAX_WIDTH * 2}px);
-  padding: ${CONTAINER_SPACING_VERTICAL} ${CONTAINER_SPACING_HORIZONTAL} 0;
+  padding: ${CONTAINER_SPACING_VERTICAL} ${CONTAINER_SPACING_HORIZONTAL} ${CONTAINER_SPACING_HORIZONTAL};
   ${minHeight};
   ${media.lg`
-    padding-left:${CONTAINER_OFFSET_LEFT};
+    ${containerPaddingOffset}
   `}
   ${media.xlg`
     max-width: calc(${CONTAINER_MAX_WIDTH_XLG}px - ${NAV_MAX_WIDTH * 2}px);

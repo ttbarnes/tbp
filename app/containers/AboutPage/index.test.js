@@ -25,30 +25,7 @@ describe('<About />', () => {
   });
 
   describe('renderTechGroup', () => {
-    it('should render <Tag /> \'s with correct title', () => {
-      const actual = wrapper.containsAllMatchingElements([
-        <StyledTag type={mockTech[0].tags[0]} />,
-        <StyledTag type={mockTech[0].tags[1]} />,
-        <StyledTag type={mockTech[0].tags[2]} />,
-        <StyledTag type={mockTech[0].tags[3]} />,
-        <StyledTag type={mockTech[0].tags[4]} />,
-        <StyledTag type={mockTech[0].tags[5]} />,
-        <StyledTag type={mockTech[0].tags[6]} />
-      ]);
-      expect(actual).toBeTruthy();
-    });
-    it('should render \'testing\' <Tag /> \'s with correct title', () => {
-      const actual = wrapper.containsAllMatchingElements([
-        <StyledTag type={mockTech[0].tags[0]} />,
-        <StyledTag type={mockTech[0].tags[1]} />,
-        <StyledTag type={mockTech[0].tags[2]} />,
-        <StyledTag type={mockTech[0].tags[3]} />,
-        <StyledTag type={mockTech[0].tags[4]} />,
-        <StyledTag type={mockTech[0].tags[5]} />
-      ]);
-      expect(actual).toBeTruthy();
-    });
-    it('should render \'styling\' <Tag /> \'s with correct title', () => {
+    it('should render \'latest\' <Tag /> \'s with correct title', () => {
       const actual = wrapper.containsAllMatchingElements([
         <StyledTag type={mockTech[0].tags[0]} />,
         <StyledTag type={mockTech[0].tags[1]} />,
@@ -57,12 +34,37 @@ describe('<About />', () => {
       ]);
       expect(actual).toBeTruthy();
     });
-    it('should render \'other\' <Tag /> \'s with correct title', () => {
+    it('should render \'api\' <Tag /> \'s', () => {
       const actual = wrapper.containsAllMatchingElements([
-        <StyledTag type={mockTech[0].tags[0]} />,
-        <StyledTag type={mockTech[0].tags[1]} />,
-        <StyledTag type={mockTech[0].tags[2]} />,
-        <StyledTag type={mockTech[0].tags[3]} />
+        <StyledTag type={mockTech[1].tags[0]} />,
+        <StyledTag type={mockTech[1].tags[1]} />
+      ]);
+      expect(actual).toBeTruthy();
+    });
+    it('should render \'testing\' <Tag /> \'s', () => {
+      const actual = wrapper.containsAllMatchingElements([
+        <StyledTag type={mockTech[2].tags[0]} />,
+        <StyledTag type={mockTech[2].tags[1]} />,
+        <StyledTag type={mockTech[2].tags[2]} />,
+        <StyledTag type={mockTech[2].tags[3]} />
+      ]);
+      expect(actual).toBeTruthy();
+    });
+    it('should render \'styling\' <Tag /> \'s', () => {
+      const actual = wrapper.containsAllMatchingElements([
+        <StyledTag type={mockTech[3].tags[0]} />,
+        <StyledTag type={mockTech[3].tags[1]} />,
+        <StyledTag type={mockTech[3].tags[2]} />,
+        <StyledTag type={mockTech[3].tags[3]} />
+      ]);
+      expect(actual).toBeTruthy();
+    });
+    it('should render \'other\' <Tag /> \'s', () => {
+      const actual = wrapper.containsAllMatchingElements([
+        <StyledTag type={mockTech[4].tags[0]} />,
+        <StyledTag type={mockTech[4].tags[1]} />,
+        <StyledTag type={mockTech[4].tags[2]} />,
+        <StyledTag type={mockTech[4].tags[3]} />
       ]);
       expect(actual).toBeTruthy();
     });

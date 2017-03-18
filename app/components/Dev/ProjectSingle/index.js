@@ -10,6 +10,8 @@ import {
   ThoughtsItem
 } from './details';
 import {
+  Row,
+  RowSpacer,
   ListFlex,
   FlexItem
 } from './styled';
@@ -47,41 +49,54 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
 
           <Img src={getProjectImage(project.id)} alt={project.name} />
 
-          <H4>Tech</H4>
-          <ListFlex>
-            {project.tech.map((item, index) =>
-              <Tag type={item} key={index} />
-            )}
-          </ListFlex>
 
-          <H4>Highlights</H4>
-          <List showListStyle>
-            {project.highlights}
-          </List>
+          <RowSpacer />
 
-          {project.thoughts && project.thoughts.map((item, index) =>
-            <ThoughtsItem
-              item={item}
-              projectId={project.id}
-              projectName={project.name}
-              key={index}
-            />
+          <Row>
+            <H4>Tech</H4>
+            <ListFlex>
+              {project.tech.map((item, index) =>
+                <Tag type={item} key={index} />
+              )}
+            </ListFlex>
+          </Row>
+
+          <Row>
+            <H4>Highlights</H4>
+            <List showListStyle>
+              {project.highlights}
+            </List>
+            <RowSpacer />
+          </Row>
+
+          {project.thoughts && (
+            <Row>
+              {project.thoughts.map((item, index) =>
+                <ThoughtsItem
+                  item={item}
+                  projectId={project.id}
+                  projectName={project.name}
+                  key={index}
+                />
+              )}
+            </Row>
           )}
 
-          <section>
-            {project.urls && project.urls.map((item) =>
-              <FlexItem key={item}>
-                <button>
-                  {item.includes('github') ? (
-                    'github repo'
-                  ) : (
-                    'View the live site'
-                  )}
-                </button>
-              </FlexItem>
-            )}
-          </section>
-
+          {project.urls && (
+            <Row>
+              {project.urls.map((item) =>
+                <FlexItem key={item}>
+                  <button>
+                    {item.includes('github') ? (
+                      'github repo'
+                    ) : (
+                      'View the live site'
+                    )}
+                  </button>
+                </FlexItem>
+              )}
+            </Row>
+          )}
         </section>
 
       </article>

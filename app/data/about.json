@@ -7,8 +7,12 @@
           "React",
           "Redux",
           "TypeScript",
-          "Angular",
-          "MEAN stack",
+          "Angular"
+        ]
+      },
+      {
+        "group": "api",
+        "tags": [
           "MongoDB, Mongoose",
           "Node.js, Express"
         ]
