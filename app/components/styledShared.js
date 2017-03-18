@@ -36,14 +36,6 @@ export const media = {
   `
 };
 
-export const buttonHover = `
-  transition: all 0.2s ease;
-  &:hover {
-    background: #888;
-    color: #FFF;
-  }
-`;
-
 export const colors = {
   blue1: '#5DA6B5',
   blue2: '#4B86A4',

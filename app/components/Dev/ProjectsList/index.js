@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import ListItem from './ListItem';
-import { ListRoot } from './styled';
+import { Root, ListRoot } from './styled';
 
 const filterProjectsByCategory = (projects, filterCategory) => {
   if (projects) {
@@ -24,15 +24,17 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
     const filteredData = filterProjectsByCategory(data, activeFilter);
 
     return (
-      <ListRoot>
-        {filteredData && filteredData.map((project) =>
-          <ListItem
-            key={project.id}
-            handleClick={handleClick}
-            {...project}
-          />
-        )}
-      </ListRoot>
+      <Root>
+        <ListRoot>
+          {filteredData && filteredData.map((project) =>
+            <ListItem
+              key={project.id}
+              handleClick={handleClick}
+              {...project}
+            />
+          )}
+        </ListRoot>
+      </Root>
     );
   }
 }

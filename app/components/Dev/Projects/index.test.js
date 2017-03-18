@@ -5,6 +5,7 @@ import Projects from './index';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import H1 from 'components/H1';
+import H2 from 'components/H2';
 import projectsData from '../../../data/projects.json';
 
 const mock = {
@@ -22,16 +23,11 @@ describe('<Projects />', () => {
       onClickProjectListItem={mock.clickFunc}
     />
   );
-  it('should render a heading', () => {
-    const actual = wrapper.containsMatchingElement(
-      <H1>Projects</H1>
-    );
-    expect(actual).toBeTruthy();
-  });
-  it('should render a sub heading', () => {
-    const actual = wrapper.containsMatchingElement(
-      <p>Some of the projects i{'\''}ve been a part of{':'}</p>
-    );
+  it('should render 2 headings', () => {
+    const actual = wrapper.containsAllMatchingElements([
+      <H1>Projects</H1>,
+      <H2>Some of the projects i{'\''}ve been a part of</H2>
+    ]);
     expect(actual).toBeTruthy();
   });
   it('should render <ProjectFilters /> with props', () => {
