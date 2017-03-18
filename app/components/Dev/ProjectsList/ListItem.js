@@ -33,11 +33,11 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
       mini,
       id,
       name,
-      tags,
+      tech,
       handleClick
     } = this.props;
 
-    const mainTag = tags ? renderMainTag(tags) : null;
+    const mainTag = tech ? renderMainTag(tech) : null;
 
     return (
       <StyledListItem>
@@ -63,8 +63,8 @@ ListItem.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
-  mini: PropTypes.bool.isRequired,
-  tags: PropTypes.array.isRequired
+  mini: PropTypes.bool,
+  tech: PropTypes.array
 };
 
 export default ListItem;
