@@ -48,14 +48,56 @@ export const colors = {
   blue1: '#5DA6B5',
   blue2: '#4B86A4',
   blue3: '#628BB1',
-  blue4: '#007ACC', // tag: typescript
-  blue5: '#0dd8ff', // tag: react
+  blue4: '#007ACC',
+  blue5: '#0dd8ff',
+  blue6: '#6B93D7',
+  brown1: '#9e8868',
+  brown2: '#8d6748',
+  brown3: '#e9ce99',
   green1: '#9BC067',
+  green2: '#026e00',
+  green3: '#7fc857',
+  green4: '#369b8b',
   orange1: '#B38D6F',
-  pink1: '#D381A9', // tags: styling
+  orange2: '#ff6347',
+  orange3: '#F89741',
+  pink1: '#D381A9',
+  pink2: '#db7093',
   purple1: '#9B4367',
+  purple2: '#794bb5',
+  purple3: '#8A4182',
+  purple4: '#47475c',
   red1: '#A15748',
-  red2: '#B88080', // tag: html, css
+  red2: '#B88080',
+  red3: '#E23337',
+  red4: '#CF4646',
   yellow1: '#C2BB69',
-  yellow2: '#B2B36F'
+  yellow2: '#B2B36F',
+  yellow3: '#CFBD44'
+};
+
+export const tagColors = {
+  javascript: colors.yellow3,
+  angular: colors.red3,
+  react: colors.blue5,
+  redux: colors.purple2,
+  typescript: colors.blue4,
+  fullStack: colors.brown1,
+  node: colors.green2,
+  mongodb: colors.green3,
+  sass: colors.pink1,
+  htmlCss: colors.red2,
+  jasmine: colors.purple3,
+  mocha: colors.brown2,
+  chai: colors.brown3,
+  karma: colors.green4,
+  enzyme: colors.yellow3,
+  shouldJs: colors.yellow3,
+  styledComponents: colors.pink2,
+  aphrodite: colors.yellow3,
+  stylus: colors.orange2,
+  d3: colors.orange3,
+  highcharts: colors.purple4,
+  gulp: colors.red4,
+  webpack: colors.blue6
 };

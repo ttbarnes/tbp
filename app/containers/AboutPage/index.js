@@ -116,7 +116,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <p>Back in the day I used jQuery, Grunt and SVN...</p>
+          <p>Back in the day I used jQuery, Grunt and SVN... Also worked in Rails, .NET and Scala environments.</p>
         </StyledSection>
 
         <p>Apparently i{'\''}m a very quick typist. I have a strange liking for keyboard shortcuts. Very creative. I find unit tests quite satisfying. </p>

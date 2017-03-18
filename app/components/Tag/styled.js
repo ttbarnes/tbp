@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../styledShared';
+import { colors, tagColors } from '../styledShared';
 
 const backgroundTheme = (props) => {
   const type = props.type;
@@ -11,80 +11,104 @@ const backgroundTheme = (props) => {
 
     ${(type.includes('HTML') ||
       type.includes('CSS')) &&
-      `background: ${colors.red2}`
+      `background: ${tagColors.htmlCss}`
     };
 
-    ${(type === 'Sass' ||
-      type === 'Less' ||
-      type === 'Stylus') &&
-      `background: ${colors.pink1}`
+    ${type === 'Sass' &&
+      `background: ${tagColors.sass}`
     };
 
     ${(type.includes('JavaScript') ||
-      type.includes('ES6')) &&
-      'background: #CFBD44'
-    };
+      type.includes('ES6')) && `
+        background: ${tagColors.javascript};
+        color: #000;
+    `};
 
-    ${type === 'Full stack JS' &&
-      `background: ${colors.red2}`
+    ${(type.includes('Full stack JS') ||
+      type.includes('MEAN stack')) &&
+      `background: ${tagColors.fullStack}`
     };
 
     ${type === 'React' &&
-      `background: ${colors.blue5}`
+      `background: ${tagColors.react}`
     };
 
     ${type.includes('TypeScript') &&
-      `background: ${colors.blue4}`
+      `background: ${tagColors.typescript}`
     };
 
     ${type === 'Redux' &&
-      'background: #FF7C00'
+      `background: ${tagColors.redux}`
     };
 
     ${type.includes('Angular') &&
-      'background: #E23337'
+      `background: ${tagColors.angular}`
     };
 
     ${(type.includes('Express') ||
       type.includes('Node')) &&
-      'background: #C6C6C6'
+      `background: ${tagColors.node}`
     };
     
     ${(type.includes('MongoDB') ||
       type.includes('Mongoose')) &&
-      'background: #6ba442'
+      `background: ${tagColors.mongodb}`
     };
 
-    ${type === 'Grunt' &&
-      'background: #E48632'
+    ${type === 'Enzyme' && `
+      background: ${tagColors.enzyme};
+      color: #000;
+    `};
+
+    ${type === 'Shouldjs' && `
+      background: ${tagColors.shouldJs};
+      color: #000;
+    `};
+
+    ${type === 'Jasmine' &&
+      `background: ${tagColors.jasmine}`
+    };
+
+    ${type === 'Mocha' &&
+      `background: ${tagColors.mocha}`
+    };
+
+    ${type === 'Chai' && `
+      background: ${tagColors.chai};
+      color: ${colors.brown2}
+    `};
+
+    ${type === 'Karma' &&
+      `background: ${tagColors.karma}`
+    };
+
+    ${type === 'styled-components' &&
+      `background: ${tagColors.styledComponents}`
+    };
+
+    ${type === 'Aphrodite' && `
+      background: ${tagColors.aphrodite};
+      color: #000;
+   `};
+
+    ${type === 'Stylus' &&
+      `background: ${tagColors.stylus}`
     };
 
     ${type === 'Gulp' &&
-      'background:#CF4646'
+      `background:${tagColors.gulp}`
     };
 
     ${type === 'Webpack' &&
-      'background:#6B93D7'
+      `background:${tagColors.webpack}`
     };
 
     ${type === 'Highcharts' &&
-      'background:#8E95F3'
+      `background: ${tagColors.highcharts}`
     };
 
     ${type.includes('d3') &&
-      'background:#F89741'
-    };
-
-    ${type === 'Rails' &&
-      'background: #981a21'
-    };
-
-    ${type === 'Scala' &&
-      'background: #52B2A3'
-    };
-
-    ${type === 'jQuery' &&
-      'background: #0667AB'
+      `background: ${tagColors.d3}`
     };
 
   `;

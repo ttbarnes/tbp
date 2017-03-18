@@ -29,7 +29,7 @@
         "tags": [
           "styled-components",
           "Aphrodite",
-          "stylus",
+          "Stylus",
           "Sass"
         ]
       },
@@ -39,18 +39,9 @@
           "Webpack", 
           "Gulp",
           "d3.js",
-          "HighCharts"
+          "Highcharts"
         ]
       }
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
