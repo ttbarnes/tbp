@@ -2,7 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
-import DevProjectMain from './index';
+import ProjectSingle from './index';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
 import List from 'components/List';
@@ -39,9 +39,9 @@ const mockProject = {
   ]
 };
 
-describe('<ProjectMain />', () => {
+describe('<ProjectSingle />', () => {
   const wrapper = shallow(
-    <DevProjectMain data={mockProject} />
+    <ProjectSingle data={mockProject} />
   );
 
   wrapper.toJS = () => true;

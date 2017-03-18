@@ -3,9 +3,8 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
-import H1 from '../../components/H1';
 import HomePage from './index';
-import { StyledImg } from './styled';
+import { StyledH1, StyledImg } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
@@ -34,7 +33,7 @@ describe('<HomePage />', () => {
 
   it('should have correct copy', () => {
     const actual = wrapper.containsAllMatchingElements([
-      <H1>Hello! I{'\''}m Tony.</H1>,
+      <StyledH1>Hello! I{'\''}m Tony.</StyledH1>,
       <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
     ]);
     expect(actual).toEqual(true);
