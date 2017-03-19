@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { media } from 'components/styledShared';
+import { Link } from 'react-router';
+import { media, colors } from 'components/styledShared';
 import Img from 'components/Img';
 
 export const Root = styled.article`
@@ -38,4 +39,16 @@ export const ListFlex = styled.ul`
 export const StyledImg = styled(Img)`
   display: block;
   margin: 4em auto;
+`;
+
+export const StyledLink = styled(Link)`
+  background: ${colors.blueMain};
+  color: #000;
+  padding: 0.8em 0.5em;
+  text-decoration:none;
+  transition: all 0.2s ease;
+  &:hover {
+    text-decoration:underline;
+    background:${colors.blueMainHover}
+  }
 `;

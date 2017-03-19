@@ -10,7 +10,7 @@ import List from 'components/List';
 import Tag from 'components/Tag';
 import Img from 'components/Img';
 import { ThoughtsItem } from './details';
-import { SmallDate } from './styled';
+import { SmallDate, StyledLink } from './styled';
 
 const mockProject = {
   id: 'mean-tweets',
@@ -124,5 +124,12 @@ describe('<ProjectSingle />', () => {
     );
     expect(actual1).toBeTruthy();
     expect(actual2).toBeTruthy();
+  });
+
+  it('should render a link to all projects', () => {
+    const actual = wrapper.containsMatchingElement(
+      <StyledLink>All projects</StyledLink>
+    );
+    expect(actual).toBeTruthy();
   });
 });

@@ -23,6 +23,9 @@ function App(props) {
         {React.Children.toArray(props.children)}
       </MainContent>
 
+      <br />
+      <br />
+
       <Footer location={props.location} />
 
     </div>

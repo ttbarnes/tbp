@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
-import { media } from '../styledShared';
+import { media, colors } from '../styledShared';
 
 const NavLinkShared = `
   padding: 0.25em 0.5em;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-touch-callout: none;
   user-select: none;
   cursor: pointer;
@@ -17,7 +17,7 @@ const NavLinkShared = `
 `;
 
 export const Root = styled.div`
-  background: #d1dde6;
+  background: ${colors.blueMain};
   position: fixed;
   width: 100%;
   height: 55px;
@@ -39,6 +39,7 @@ export const ListRoot = styled.div`
 
 export const NavLinkRoot = styled(Link)`
   ${NavLinkShared}
+  padding: 0.5em;
   &:active,
   &:focus,
   &:hover {
@@ -52,7 +53,7 @@ export const NavLink = styled(Link)`
   &:active,
   &:focus,
   &:hover {
-    background: #747474;
+    background: ${colors.blue4};
     color: #FFF;
   }
 `;

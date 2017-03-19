@@ -107,7 +107,7 @@ injectGlobal`
   }
 
   .bm-menu {
-    background: #d1dde6;
+    background: ${colors.blueMain};
     padding: 0;
     font-size: 1.15em;
   }

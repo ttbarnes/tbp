@@ -5,7 +5,7 @@ export const CONTAINER_MAX_WIDTH_XLG = 1200;
 export const CONTAINER_SPACING_VERTICAL = '4em';
 export const CONTAINER_SPACING_HORIZONTAL = '1em';
 export const CONTAINER_OFFSET_LEFT = '8.4em'; // 80px for nav
-export const NAV_MAX_WIDTH = 120;
+export const NAV_MAX_WIDTH = 130;
 export const FOOTER_HEIGHT = 60;
 
 export const media = {
@@ -37,6 +37,8 @@ export const media = {
 };
 
 export const colors = {
+  blueMain: '#d1dde6',
+  blueMainHover: '#aecee6',
   blue1: '#5DA6B5',
   blue2: '#4B86A4',
   blue3: '#628BB1',

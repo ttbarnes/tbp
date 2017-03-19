@@ -16,10 +16,12 @@ import {
   Row,
   SmallDate,
   RowSpacer,
-  ListFlex
+  ListFlex,
+  StyledLink
 } from './styled';
 
 export class ProjectSingle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+
   render() {
     const {
       data
@@ -53,8 +55,6 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
           </HeadingWrap>
 
           <Img src={getProjectImage(project.id)} alt={project.name} />
-
-          <RowSpacer />
 
           <Row>
             <H4>Tech</H4>
@@ -104,6 +104,8 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
               </List>
             </Row>
           )}
+
+          <StyledLink to="/projects">All projects</StyledLink>
 
         </section>
 
