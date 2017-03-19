@@ -103,7 +103,7 @@ describe('<Footer />', () => {
     it('hobbies', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem>
-          <StyledLink to="hobbies">Hobbies</StyledLink>
+          <StyledLink to="/hobbies">Hobbies</StyledLink>
         </ListItem>
       );
       expect(actual).toBeTruthy();

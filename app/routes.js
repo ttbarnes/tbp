@@ -65,7 +65,7 @@ export default function createRoutes(store) {
       },
 
     }, {
-      path: '/dev/project/:id',
+      path: '/projects/:id',
       name: 'devProject',
       getComponent(nextState, cb) {
         System.import('containers/DevProjectPage')

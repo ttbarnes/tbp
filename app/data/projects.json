@@ -26,7 +26,7 @@
     ],
     "urls": [
       "http://github.com",
-      "http://google.com"
+      "http://trainline.com"
     ]
   },
   {
@@ -122,7 +122,6 @@
        "Webpack",
        "Less"
     ],
-    
     "highlights": [
       "Built many new features and components within a large existing codebase",
       "Modular, component based app/architecture",
@@ -136,6 +135,9 @@
       {"img": "inner02"},
       {"copy": "I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups."},
       {"img": "inner03"}
+    ],
+    "urls": [
+      "http://networklocum.com"
     ]
   },
   {
@@ -187,7 +189,9 @@
       "Clean and modular angular app on the front end",
       "Built a timeline feature that queries the API depending on who a user follows and the followee's tweets/retweets"
     ],
-    "liveUrl": "https://mean-tweets.herokuapp.com"
+    "urls": [
+      "https://mean-tweets.herokuapp.com"
+    ]
   },
   {
     "id": "angular-ticker",
@@ -206,7 +210,10 @@
       "Automatically scrolls through a list of items, fading in/out",
       "Configurable timing"
     ],
-    "liveUrl": "http://ttbarnes.github.io/angular-ticker"
+    "urls": [
+      "http://github.com/ttbarnes/angular-ticker",
+      "http://ttbarnes.github.io/angular-ticker"
+    ]
   },
   {
     "id": "angular-poc-demos",
@@ -224,7 +231,9 @@
       "Created whilst learning and seeking examples of some angular features",
       "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
     ],
-    "liveUrl": "https://angular-poc-demos.firebaseapp.com"
+    "urls": [
+      "https://angular-poc-demos.firebaseapp.com"
+    ]
   },
   {
     "id": "fifthweek",
@@ -243,7 +252,9 @@
       "Built some core features involving business logic, angular routing and more",
       "Owned the UI - integrated designs, branding"
     ],
-    "liveUrl": "http://fifthweek.com"
+    "urls": [
+      "http://fifthweek.com"
+    ]
   },
   {
     "id": "reedsy",
@@ -268,7 +279,9 @@
     "thoughts": [
       { "copy": "I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team." }
     ],
-    "liveUrl": "http://reedsy.com"
+    "urls": [
+      "http://reedsy.com"
+    ]
   },
   {
     "id": "tailster",
@@ -289,7 +302,9 @@
       "Refactoring, cleaning the codebase",
       "Contributed to the cordova iOS app"
     ],
-    "liveUrl": "http://tailster.com"
+    "urls": [
+      "http://tailster.com"
+    ]
   },
   {
 		"id": "dvla-personalised-registrations",
@@ -306,8 +321,7 @@
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
-		],
-		"liveUrl": "#"
+		]
   },
   {
 		"id": "dvla-sell-a-vehicle-into-the-motor-trade",
@@ -320,13 +334,11 @@
 			 "JavaScript, jQuery",
 			 "Play, Scala"
 		],
-		
 		"highlights": [
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
-		],
-		"liveUrl": "#"
+		]
   },
   {
 		"id": "dvla-buy-a-vehicle-from-the-motor-trade",
@@ -343,8 +355,7 @@
 			"Converted paper based processes into a streamlined online application",
 			"UX and mobile first approaches",
 			"GDS guidlines and approvals"
-		],
-		"liveUrl": "#"
+		]
   },
     {
         "id": "robbie-williams",

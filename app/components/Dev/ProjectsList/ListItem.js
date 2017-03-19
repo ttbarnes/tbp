@@ -48,7 +48,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
         ) : (
           <StyledListItemLink
             onClick={() => handleClick(id)}
-            to={`dev/project/${id}`}
+            to={`projects/${id}`}
           >
             <StyledImg src={getProjectImage(id)} alt={name} />
             {mainTag && <StyledTag type={mainTag} />}

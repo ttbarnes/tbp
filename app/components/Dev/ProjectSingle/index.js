@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 import Helmet from 'react-helmet';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
@@ -10,10 +11,12 @@ import {
   ThoughtsItem
 } from './details';
 import {
+  Root,
+  HeadingWrap,
   Row,
+  SmallDate,
   RowSpacer,
-  ListFlex,
-  FlexItem
+  ListFlex
 } from './styled';
 
 export class ProjectSingle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -34,7 +37,7 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
     }
 
     return (
-      <article>
+      <Root>
 
         <Helmet
           title={(project && project.name) ? project.name : 'Project'}
@@ -44,11 +47,12 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
         />
 
         <section>
-          <H2>{project.name}</H2>
-          <p><small>{project.date}</small></p>
+          <HeadingWrap>
+            <H2>{project.name}</H2>
+            <SmallDate>{project.date}</SmallDate>
+          </HeadingWrap>
 
           <Img src={getProjectImage(project.id)} alt={project.name} />
-
 
           <RowSpacer />
 
@@ -61,13 +65,15 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
             </ListFlex>
           </Row>
 
-          <Row>
-            <H4>Highlights</H4>
-            <List showListStyle>
-              {project.highlights}
-            </List>
-            <RowSpacer />
-          </Row>
+          {project.highlights && (
+            <Row>
+              <H4>Highlights</H4>
+              <List showListStyle>
+                {project.highlights}
+              </List>
+              <RowSpacer />
+            </Row>
+          )}
 
           {project.thoughts && (
             <Row>
@@ -84,22 +90,24 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
 
           {project.urls && (
             <Row>
-              {project.urls.map((item) =>
-                <FlexItem key={item}>
-                  <button>
-                    {item.includes('github') ? (
-                      'github repo'
+              <H4>Links</H4>
+              <List showListStyle>
+                {project.urls.map((item) =>
+                  <Link to={item} target="_blank" key={item}>
+                    {item.includes('github.com') ? (
+                      'GitHub repo'
                     ) : (
-                      'View the live site'
+                      'Live site'
                     )}
-                  </button>
-                </FlexItem>
-              )}
+                  </Link>
+                )}
+              </List>
             </Row>
           )}
+
         </section>
 
-      </article>
+      </Root>
     );
   }
 }

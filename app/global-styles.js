@@ -1,4 +1,5 @@
 import { injectGlobal } from 'styled-components';
+import { colors } from 'components/styledShared';
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -24,6 +25,10 @@ injectGlobal`
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;    
   }
 
+  h4 {
+    margin: 1em 0;
+  }
+
   p,
   label {
     line-height: 1.5em;
@@ -47,6 +52,16 @@ injectGlobal`
     background:#CCC;
     color: #000; 
     cursor: pointer;
+  }
+
+  a {
+    color: ${colors.blue4}
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
   }
 
   p {

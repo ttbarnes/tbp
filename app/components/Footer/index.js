@@ -67,7 +67,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
             </StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink to="hobbies">Hobbies</StyledLink>
+            <StyledLink to="/hobbies">Hobbies</StyledLink>
           </ListItem>
         </ListRoot>
       </Root>

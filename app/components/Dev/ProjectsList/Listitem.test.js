@@ -23,7 +23,7 @@ describe('ProjectsList <ListItem />', () => {
       <ListItem {...mock.projectLatest} handleClick={mock.clickFunc} id={mock.projectLatest.id} />
     );
     const actual = wrapper.containsMatchingElement(
-      <StyledListItemLink to={`dev/project/${mock.projectLatest.id}`}>
+      <StyledListItemLink to={`projects/${mock.projectLatest.id}`}>
         <StyledImg alt={mock.projectLatest.name} />
         <StyledTag type="React" />
       </StyledListItemLink>

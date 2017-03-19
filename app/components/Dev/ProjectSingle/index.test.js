@@ -2,6 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router';
 import ProjectSingle from './index';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
@@ -9,6 +10,7 @@ import List from 'components/List';
 import Tag from 'components/Tag';
 import Img from 'components/Img';
 import { ThoughtsItem } from './details';
+import { SmallDate } from './styled';
 
 const mockProject = {
   id: 'mean-tweets',
@@ -52,14 +54,16 @@ describe('<ProjectSingle />', () => {
     expect(actual.length).toEqual(1);
   });
 
-  it('should render heading and date', () => {
+  it('should render project heading', () => {
     const heading = wrapper.containsMatchingElement(
       <H2>{mockProject.name}</H2>
     );
     expect(heading).toBeTruthy();
+  });
 
+  it('should render a date', () => {
     const date = wrapper.containsMatchingElement(
-      <p><small>{mockProject.date}</small></p>
+      <SmallDate>{mockProject.date}</SmallDate>
     );
     expect(date).toBeTruthy();
   });
@@ -84,17 +88,16 @@ describe('<ProjectSingle />', () => {
     });
   });
 
-  describe('highlights', () => {
-    it('should render a heading', () => {
-      const heading = wrapper.containsMatchingElement(
-        <H4>Highlights</H4>
-      );
-      expect(heading).toBeTruthy();
-    });
+  it('should render 2 lists', () => {
+    // 2 Lists for highlights and links
+    expect(wrapper.find(List).length).toEqual(2);
+  });
 
-    it('should render a list', () => {
-      expect(wrapper.find(List).length).toEqual(1);
-    });
+  it('should render a highlights heading', () => {
+    const heading = wrapper.containsMatchingElement(
+      <H4>Highlights</H4>
+    );
+    expect(heading).toBeTruthy();
   });
 
   it('should render <ThoughtsItem />\'s with the correct props', () => {
@@ -114,10 +117,10 @@ describe('<ProjectSingle />', () => {
 
   it('should render github and live buttons', () => {
     const actual1 = wrapper.containsMatchingElement(
-      <button>github repo</button>
+      <Link>GitHub repo</Link>
     );
     const actual2 = wrapper.containsMatchingElement(
-      <button>View the live site</button>
+      <Link>Live site</Link>
     );
     expect(actual1).toBeTruthy();
     expect(actual2).toBeTruthy();
