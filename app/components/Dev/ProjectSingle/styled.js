@@ -23,13 +23,10 @@ export const SmallDate = styled.small`
 `;
 
 export const Row = styled.div`
-  margin-bottom: 5em;
-`;
-
-export const RowSpacer = styled.div`
-  margin: 2.5em 0;
-  height: 1px;
-  widht: 100%;
+  margin-bottom: 3em;
+  ${media.sm`
+    margin-bottom: 5em;
+  `}
 `;
 
 export const ListFlex = styled.ul`
@@ -38,10 +35,16 @@ export const ListFlex = styled.ul`
 
 export const StyledImg = styled(Img)`
   display: block;
-  margin: 4em auto;
+  margin: 3em auto;
+  ${media.sm`
+    margin: 4em auto;
+  `}
 `;
 
 export const StyledLink = styled(Link)`
+  width: 100%;
+  display: block;
+  text-align:center;
   background: ${colors.blueMain};
   color: #000;
   padding: 0.8em 0.5em;
@@ -51,4 +54,8 @@ export const StyledLink = styled(Link)`
     text-decoration:underline;
     background:${colors.blueMainHover}
   }
+  ${media.sm`
+    display: inline-block;
+    width: auto;
+  `}
 `;

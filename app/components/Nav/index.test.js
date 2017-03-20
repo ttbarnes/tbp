@@ -9,6 +9,7 @@ import {
   NavLinkRoot,
   NavLink
 } from './styled';
+import { NAV_MAX_WIDTH } from '../styledShared';
 
 const mockLocation = { pathname: '/about' };
 const mockLocationHome = { pathname: '/' };
@@ -38,7 +39,7 @@ describe('<Nav />', () => {
       const menu = wrapper.find(BurgerMenu);
       const prop = {
         isOpen: menu.findWhere((m) => m.prop('isOpen') === false),
-        width: menu.findWhere((m) => m.prop('width') === 120),
+        width: menu.findWhere((m) => m.prop('width') === NAV_MAX_WIDTH),
         noOverlay: menu.findWhere((m) => m.prop('noOverlay') === false)
       };
       expect(prop.isOpen.length).toEqual(1);

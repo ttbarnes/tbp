@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
 import ContactPage from './index';
-import { StyledLink } from './styled';
 
 describe('<ContactPage />', () => {
   const wrapper = shallow(
@@ -24,7 +23,7 @@ describe('<ContactPage />', () => {
 
   it('should have correct email link', () => {
     const actual = wrapper.containsMatchingElement(
-      <StyledLink href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</StyledLink>
+      <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a>
     );
     expect(actual).toEqual(true);
   });

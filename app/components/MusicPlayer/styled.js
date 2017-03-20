@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { PlayButton, Timer, Progress } from 'react-soundplayer/components';
 import A from 'components/A';
+import { colors } from '../styledShared';
 
 export const RootFlex = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ export const StyledImg = styled.img`
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.4;
+  opacity: .4;
   border-radius: 50%;
 `;
 
@@ -58,10 +59,14 @@ export const StyledButtonPlay = styled(PlayButton)`
   height: 100px;
   padding: 0;
   outline: 0 none;
+  transition: all .2 ease;
+  &:hover {
+    opacity:.8;
+  }
 `;
 
 export const StyledProgress = styled(Progress)`
-  background: #CCC;
+  background: ${colors.blueMain};
   height: 20px;
   cursor: pointer;
 `;

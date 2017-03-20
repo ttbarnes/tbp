@@ -85,7 +85,7 @@ injectGlobal`
    /* styles for 3rd party react components 
       this is the quickest and simplest solution */
   .progress-bar-inner {
-    background: #000;
+    background: rgba(75, 134, 167, 0.39);
     height: 100%;
     transition: all .2s ease;
   }

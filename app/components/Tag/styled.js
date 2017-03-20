@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, tagColors } from '../styledShared';
+import { colors, tagColors, media } from '../styledShared';
 
 const backgroundTheme = (props) => {
   const type = props.type;
@@ -121,6 +121,10 @@ const StyledTag = styled.div`
   color: #FFF;
   background: #AAA; /* default */
   ${backgroundTheme};
+  font-size: 0.9em;
+  ${media.sm`
+    font-size: 1em;
+  `}
 `;
 
 export default StyledTag;

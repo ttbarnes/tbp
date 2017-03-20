@@ -58,12 +58,14 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           noOverlay={isLargeScreen}
           customCrossIcon={<span></span>}
         >
-          <ListRoot>
-            <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
-            <NavLink to="/about" activeClassName="active">About</NavLink>
-            <NavLink to="/projects" activeClassName="active" className={isProjectSinglePage && 'active'}>Projects</NavLink>
-            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
-          </ListRoot>
+          <div>
+            <ListRoot>
+              <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
+              <NavLink to="/about" activeClassName="active">About</NavLink>
+              <NavLink to="/projects" activeClassName="active" className={isProjectSinglePage && 'active'}>Projects</NavLink>
+              <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+            </ListRoot>
+          </div>
         </BurgerMenu>
       </Root>
     );

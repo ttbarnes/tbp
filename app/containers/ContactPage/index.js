@@ -1,16 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import H1 from '../../components/H1';
-import {
-  Root,
-  StyledLink
-} from './styled';
+import H2 from '../../components/H2';
 
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-      <Root>
+      <article>
 
         <Helmet
           title="Contact"
@@ -20,10 +17,10 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
         />
 
         <H1>Contact</H1>
-        <p>I{'\''}d love to talk, i{'\''}m very friendly!</p>
-        <StyledLink href="mailto:tony@tonybarnes.me">tony[at]tonybarnes.me</StyledLink>
+        <H2>I{'\''}d love to talk, i{'\''}m very friendly!</H2>
+        <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a>
 
-      </Root>
+      </article>
     );
   }
 }

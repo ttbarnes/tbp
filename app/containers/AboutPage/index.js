@@ -54,10 +54,8 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <H1>About</H1>
         <StyledSection>
-          <H2>I am a very passionate front end/javascript developer.</H2>
+          <H2>A passionate front end/javascript developer</H2>
           <p>With X years of experience, I strive for clean and scalable solutions. Thriving on the latest technologies, I am constantly improving my skill set.</p>
-
-          <p>I{'\''}ve built or contributed to 17 angular apps in 2 years – 3 including full stack JS.</p>
 
           <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. Simple user experience is vital.</p>
 
@@ -97,15 +95,11 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <H3>i{'\''}ve come across these as well.</H3>
+          <H3>i{'\''}ve come across these as well</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'other')}
           </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <p>Back in the day I used jQuery, Grunt and SVN... Also worked in Rails, .NET and Scala environments.</p>
         </StyledSection>
 
         <StyledSection>
@@ -122,7 +116,10 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           {/* <p>Download <Link to={CV} target="_blank">CV</Link>( ? )</p> */}
         </StyledSection>
 
-        <p>Apparently i{'\''}m a very quick typist. I have a strange liking for keyboard shortcuts. Very creative. I find unit tests quite satisfying. </p>
+        <StyledSection>
+          <H3>I like keyboard shortcuts</H3>
+          <p>..and pretty quick at typing. Very creative. I find unit tests quite satisfying.</p>
+        </StyledSection>
 
       </article>
     );

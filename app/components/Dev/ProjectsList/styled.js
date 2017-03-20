@@ -18,7 +18,6 @@ export const ListRoot = styled.ul`
   listStyleType: none;
   justifyContent: flex-start;
   margin: 0 -0.7em; /* counter ListItem padding */
-  
 `;
 
 export const StyledListItem = styled.li`
@@ -29,15 +28,15 @@ export const StyledListItem = styled.li`
     flex: 1 0 180px;
   `}
   ${media.md`
-    flex: 1 0 200px;
+    flex: 1 0 199px;
     max-width: 100%;
   `}
   ${media.lg`
     flex: 1 0 150px;
   `}
   ${media.xlg`
-    flex: 1 0 200px;
-    max-width: 200px;
+    flex: 1 0 199px;
+    max-width: 199px;
   `}
 `;
 

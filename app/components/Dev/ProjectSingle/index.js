@@ -15,7 +15,6 @@ import {
   HeadingWrap,
   Row,
   SmallDate,
-  RowSpacer,
   ListFlex,
   StyledLink
 } from './styled';
@@ -71,7 +70,6 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
               <List showListStyle>
                 {project.highlights}
               </List>
-              <RowSpacer />
             </Row>
           )}
 
