@@ -39,7 +39,6 @@ export const media = {
 export const colors = {
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
-  blue1: '#5DA6B5',
   blue2: '#4B86A4',
   blue3: '#628BB1',
   blue4: '#007ACC',
@@ -48,7 +47,6 @@ export const colors = {
   brown1: '#9e8868',
   brown2: '#8d6748',
   brown3: '#e9ce99',
-  green1: '#9BC067',
   green2: '#026e00',
   green3: '#7fc857',
   green4: '#369b8b',
@@ -65,7 +63,6 @@ export const colors = {
   red2: '#B88080',
   red3: '#E23337',
   red4: '#CF4646',
-  yellow1: '#C2BB69',
   yellow2: '#B2B36F',
   yellow3: '#CFBD44'
 };

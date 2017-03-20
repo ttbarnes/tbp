@@ -9,7 +9,8 @@ import MusicPlayer from 'components/MusicPlayer';
 import VideoPlayer from 'components/VideoPlayer';
 import { selectActivities } from './selectors';
 import {
-  ListItem
+  ListItem,
+  StyledMusicTag
 } from './styled';
 
 export class HobbiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -32,7 +33,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
-          <Tag type={a.type} />
+          <StyledMusicTag type={a.type} />
           <MusicPlayer url={a.url} />
         </ListItem>
       );

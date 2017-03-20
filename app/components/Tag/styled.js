@@ -5,9 +5,9 @@ const backgroundTheme = (props) => {
   const type = props.type;
 
   return `
-    ${type === 'music' && `background: ${colors.blue1}`};
-    ${type === 'fpv' && `background: ${colors.green1}`};
-    ${type === 'timelapse' && `background: ${colors.yellow1}`};
+    ${type === 'music' && `background: ${colors.blue2}`};
+    ${type === 'fpv' && `background: ${colors.green4}`};
+    ${type === 'timelapse' && `background: ${colors.yellow2}`};
 
     ${(type.includes('HTML') ||
       type.includes('CSS')) &&

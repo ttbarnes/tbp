@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { PlayButton, Timer, Progress } from 'react-soundplayer/components';
+import A from 'components/A';
 
 export const RootFlex = styled.div`
   display: flex;
@@ -63,4 +64,8 @@ export const StyledProgress = styled(Progress)`
   background: #CCC;
   height: 20px;
   cursor: pointer;
+`;
+
+export const StyledA = styled(A)`
+  margin-top 1em;
 `;

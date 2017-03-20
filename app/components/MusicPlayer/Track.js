@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import moment from 'moment';
 import H2 from 'components/H2';
-import A from 'components/A';
 import {
   RootFlex,
   InlineElm,
@@ -13,7 +12,8 @@ import {
   Date,
   StyledButtonPlay,
   StyledTimer,
-  StyledProgress
+  StyledProgress,
+  StyledA
 } from './styled';
 
 const Track = (props) => {
@@ -65,7 +65,7 @@ const Track = (props) => {
           <p className="no-margin">{track.description}</p>
         )}
 
-        <A href={track.permalink_url} target="_blank">Listen on SoundCloud</A>
+        <StyledA href={track.permalink_url} target="_blank">Listen on SoundCloud</StyledA>
 
       </ColDetails>
 

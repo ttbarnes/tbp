@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import Tag from 'components/Tag';
 
 export const ListItem = styled.li`
-  padding: 2em 0;
-  margin: 2em 0;
-  border-bottom: solid 3px #E9E9E9;
+  padding: 2.5em 0 5em 0;
   list-style-type: none;
+`;
+
+export const StyledMusicTag = styled(Tag)`
+  margin-bottom: 1.3em;
 `;
