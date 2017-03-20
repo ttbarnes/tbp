@@ -1,9 +1,9 @@
-<div>WIP - Tony Barnes portfolio site</div>
+<div>Tony Barnes portfolio site</div>
 
-<br />
+<a href="http://tonybarnes.me">Live site</a>
 
-<div>Built from <a href="https://github.com/react-boilerplate/react-boilerplate">react boilerplate</a>
+Built with React, Redux, ES6, styled-components and more.
 
-<br />
+<div>Started from <a href="https://github.com/react-boilerplate/react-boilerplate">react boilerplate</a>
 
 `npm start` for all the things
