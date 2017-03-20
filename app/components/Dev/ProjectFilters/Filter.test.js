@@ -13,6 +13,7 @@ describe('<Filter />', () => {
   const wrapper = shallow(
     <Filter
       type={mock.type}
+      handleClick={mock.handleClick}
       isLast
       isActive
     />

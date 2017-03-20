@@ -25,7 +25,7 @@ const mockProps = {
     description: 'all the things!'
   },
   currentTime: 0,
-  duration: '123',
+  duration: 123,
   soundCloudAudio: {}
 };
 
@@ -40,7 +40,7 @@ const mockPropsWithCurrentTime = {
     permalink_url: 'http://soundcloud.com/testpermalink'
   },
   currentTime: 0.2,
-  duration: '123',
+  duration: 123,
   soundCloudAudio: {}
 };
 
