@@ -1,4 +1,4 @@
-export const MAX_HEIGHT_PAGES = [
+export const LONG_PAGES_LIST = [
   'about',
   'projects',
   'hobbies'

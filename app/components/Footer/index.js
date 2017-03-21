@@ -21,7 +21,8 @@ import {
   Root,
   ListRoot,
   ListItem,
-  StyledLink
+  StyledLink,
+  ListItemNoIcon
 } from './styled';
 
 class Footer extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -66,9 +67,9 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
               <IconYouTube />
             </StyledLink>
           </ListItem>
-          <ListItem>
+          <ListItemNoIcon>
             <StyledLink to="/hobbies">Hobbies</StyledLink>
-          </ListItem>
+          </ListItemNoIcon>
         </ListRoot>
       </Root>
     );

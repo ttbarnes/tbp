@@ -21,7 +21,8 @@ import {
 import {
   Root,
   ListItem,
-  StyledLink
+  StyledLink,
+  ListItemNoIcon
 } from './styled';
 
 const mockLocation = { pathname: '/about' };
@@ -102,9 +103,9 @@ describe('<Footer />', () => {
     });
     it('hobbies', () => {
       const actual = wrapper.containsMatchingElement(
-        <ListItem>
+        <ListItemNoIcon>
           <StyledLink to="/hobbies">Hobbies</StyledLink>
-        </ListItem>
+        </ListItemNoIcon>
       );
       expect(actual).toBeTruthy();
     });

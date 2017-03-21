@@ -9,12 +9,13 @@ import {
   NAV_MAX_WIDTH,
   FOOTER_HEIGHT
 } from '../../components/styledShared';
-import { MAX_HEIGHT_PAGES } from '../../constants';
+import { LONG_PAGES_LIST } from '../../constants';
 
-const isMaxHeightPage = (name) => MAX_HEIGHT_PAGES.includes(`${name.substring(1)}`);
+const pageIsLong = (name) => LONG_PAGES_LIST.includes(`${name.substring(1)}`);
 
 const minHeight = (props) => `
-  ${isMaxHeightPage(props.location.pathname) === true && `
+  min-height: calc(75vh);
+  ${pageIsLong(props.location.pathname) === true && `
     min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px + 5px);
   `}
 `;
