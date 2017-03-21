@@ -22,7 +22,7 @@ injectGlobal`
   }
 
   h1,h2,h3,h4,h5 {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   h4 {

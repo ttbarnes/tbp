@@ -14,6 +14,7 @@ const NavLinkShared = `
   color: #000;
   transition: all 0.2s ease;
   margin-bottom: 0.5em;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 `;
 
 export const Root = styled.div`
@@ -28,6 +29,7 @@ export const Root = styled.div`
     position: relative;
     height: auto;
     background: none;
+    font-weight:bold;
   `}
 `;
 
