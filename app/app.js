@@ -22,10 +22,14 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import FontFaceObserver from 'fontfaceobserver';
 import { useScroll } from 'react-router-scroll';
 import configureStore from './store';
+import { GA_TRACKING } from './constants';
 
 // Import CSS reset and Global Styles
 import 'sanitize.css/sanitize.css';
 import './global-styles';
+
+import ReactGA from 'react-ga';
+ReactGA.initialize(GA_TRACKING);
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -61,6 +65,12 @@ const rootRoute = {
   childRoutes: createRoutes(store),
 };
 
+
+const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+};
+
 const render = () => {
   ReactDOM.render(
     <Provider store={store}>
@@ -72,6 +82,7 @@ const render = () => {
           // behaviour
           applyRouterMiddleware(useScroll())
         }
+        onUpdate={logPageView}
       />
     </Provider>,
     document.getElementById('app')
