@@ -6,6 +6,7 @@ import H4 from 'components/H4';
 import Tag from 'components/Tag';
 import List from 'components/List';
 import Img from 'components/Img';
+import PageLink from 'components/PageLink';
 import {
   getProjectImage,
   ThoughtsItem
@@ -15,8 +16,7 @@ import {
   HeadingWrap,
   Row,
   SmallDate,
-  ListFlex,
-  StyledLink
+  ListFlex
 } from './styled';
 
 export class ProjectSingle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -103,7 +103,7 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
             </Row>
           )}
 
-          <StyledLink to="/projects">All projects</StyledLink>
+          <PageLink to="/projects">All projects</PageLink>
 
         </section>
 

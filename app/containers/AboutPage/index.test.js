@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { AboutPage } from './index';
 import aboutData from '../../data/about.json';
 import { StyledTag } from './styled';
+import PageLink from 'components/PageLink';
 
 const mockTech = aboutData[0].tech;
 
@@ -68,5 +69,11 @@ describe('<About />', () => {
       ]);
       expect(actual).toBeTruthy();
     });
+  });
+  it('should render a PageLink', () => {
+    const actual = wrapper.containsMatchingElement(
+      <PageLink to="/projects">View projects</PageLink>
+    );
+    expect(actual).toBeTruthy();
   });
 });

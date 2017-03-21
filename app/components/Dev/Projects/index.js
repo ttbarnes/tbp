@@ -4,6 +4,7 @@ import H1 from 'components/H1';
 import H2 from 'components/H2';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
+import PageLink from 'components/PageLink';
 
 function Projects(props) {
   return (
@@ -24,8 +25,12 @@ function Projects(props) {
 
       <ProjectsList handleClick={props.onClickProjectListItem} data={props.projects} activeFilter={props.activeFilter} />
 
-    </article>
+      <br />
+      <br />
+      <PageLink to="/about">About</PageLink>
+      <PageLink to="/contact">Contact</PageLink>
 
+    </article>
   );
 }
 

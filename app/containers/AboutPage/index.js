@@ -5,6 +5,7 @@ import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
 import List from '../../components/List';
+import PageLink from '../../components/PageLink';
 // import CV from '../../assets/Tony-Barnes-CV-2017.pdf';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -125,6 +126,8 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           <H3>I like keyboard shortcuts</H3>
           <p>..and pretty quick at typing. Very creative - i{'\''}m a pianist and create music. I find unit tests quite satisfying.</p>
         </StyledSection>
+
+        <PageLink to="/projects">View projects</PageLink>
 
       </article>
     );

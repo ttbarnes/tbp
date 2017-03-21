@@ -6,6 +6,7 @@ import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
+import PageLink from 'components/PageLink';
 import projectsData from '../../../data/projects.json';
 
 const mock = {
@@ -46,6 +47,18 @@ describe('<Projects />', () => {
         data={mock.projects}
         activeFilter={mock.activeFilter}
       />
+    );
+    expect(actual).toBeTruthy();
+  });
+  it('should render a PageLink to about page', () => {
+    const actual = wrapper.containsMatchingElement(
+      <PageLink to="/about">About</PageLink>
+    );
+    expect(actual).toBeTruthy();
+  });
+  it('should render a PageLink to contact page', () => {
+    const actual = wrapper.containsMatchingElement(
+      <PageLink to="/contact">Contact</PageLink>
     );
     expect(actual).toBeTruthy();
   });

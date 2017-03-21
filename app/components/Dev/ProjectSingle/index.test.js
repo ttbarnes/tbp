@@ -9,8 +9,9 @@ import H4 from 'components/H4';
 import List from 'components/List';
 import Tag from 'components/Tag';
 import Img from 'components/Img';
+import PageLink from 'components/PageLink';
 import { ThoughtsItem } from './details';
-import { SmallDate, StyledLink } from './styled';
+import { SmallDate } from './styled';
 
 const mockProject = {
   id: 'mean-tweets',
@@ -128,7 +129,7 @@ describe('<ProjectSingle />', () => {
 
   it('should render a link to all projects', () => {
     const actual = wrapper.containsMatchingElement(
-      <StyledLink>All projects</StyledLink>
+      <PageLink to="/projects">All projects</PageLink>
     );
     expect(actual).toBeTruthy();
   });
