@@ -55,13 +55,13 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <H1>About</H1>
         <StyledSection>
           <H2>A passionate front end/javascript developer</H2>
-          <p>With X years of experience, I strive for clean and scalable solutions. Thriving on the latest technologies, I am constantly improving my skill set.</p>
+          <p>With X years of experience, I strive for clean and scalable solutions.</p>
 
-          <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. Simple user experience is vital.</p>
+          <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>
 
-          <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>.</p>
+          <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
-          <p>On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
+          <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>. On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
         </StyledSection>
 
         <StyledSection>
@@ -95,7 +95,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <H3>i{'\''}ve come across these as well</H3>
+          <H3>i{'\''}ve used these as well</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'other')}
@@ -117,8 +117,13 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
+          <H3>Large and small</H3>
+          <p>You name it, i{'\''}ve worked with large ecommerce giants, new startups, {'\''}cool{'\''} agencies.</p>
+        </StyledSection>
+
+        <StyledSection>
           <H3>I like keyboard shortcuts</H3>
-          <p>..and pretty quick at typing. Very creative. I find unit tests quite satisfying.</p>
+          <p>..and pretty quick at typing. Very creative - i{'\''}m a pianist and create music. I find unit tests quite satisfying.</p>
         </StyledSection>
 
       </article>

@@ -29,7 +29,6 @@ export const Root = styled.div`
     position: relative;
     height: auto;
     background: none;
-    font-weight:bold;
   `}
 `;
 
@@ -42,6 +41,7 @@ export const ListRoot = styled.div`
 export const NavLinkRoot = styled(Link)`
   ${NavLinkShared}
   padding: 0.5em;
+  font-weight:bold;
   &:active,
   &:focus,
   &:hover {

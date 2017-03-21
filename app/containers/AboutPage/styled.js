@@ -18,7 +18,7 @@ export const FadeIn = styled.div`
 `;
 
 export const StyledSection = styled.section`
-  margin-bottom: 5em;
+  margin-bottom: 7em;
 `;
 
 export const StyledList = styled(List)`
