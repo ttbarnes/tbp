@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
+import LazyLoad from 'react-lazyload';
+import { connect } from 'react-redux';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
 import List from '../../components/List';
 import PageLink from '../../components/PageLink';
-import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import {
   selectAboutTech
@@ -16,6 +17,8 @@ import {
   StyledList,
   StyledTag
 } from './styled';
+
+import { FadeIn } from 'components/styledShared';
 
 export const techGroup = (arr, group) =>
   arr.filter((t) => {
@@ -35,6 +38,34 @@ export const renderTechGroup = (arr, groupType) => {
   return null;
 };
 
+export const renderAboutSection = (arr, heading, techGroupType) => {
+  return (
+    <StyledSection>
+      <FadeIn>
+        <H3>{heading}</H3>
+        <StyledList>
+          {renderTechGroup(arr, techGroupType)}
+        </StyledList>
+      </FadeIn>
+    </StyledSection>
+  );
+}
+
+const aboutItems = [
+  {
+    title: 'testing'
+  },
+  {
+    title: 'another test'
+  },
+  {
+    title: 'hello world'
+  },
+  {
+    title: 'all the things'
+  }
+];
+
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
@@ -52,6 +83,52 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         />
 
         <H1 hide>About</H1>
+
+        <StyledSection>
+          <H2 h1Size>A passionate front end/javascript developer</H2>
+          <p>With X years of experience, I strive for clean and scalable solutions.</p>
+
+          <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>
+
+          <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
+
+          <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>. On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
+        </StyledSection>
+        {/*
+        {aboutItems && aboutItems.map((item, index) => (
+          <LazyLoad once={item.once} height={400} key={index}>
+            <div style={{minHeight:400}}>
+              <FadeIn>
+                <p>{item.title}</p>
+              </FadeIn>
+            </div>
+          </LazyLoad>
+        ))}
+        */}
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <LazyLoad height={400} once={true}>
+          {renderAboutSection(
+            tech,
+            `Recently I've been using...`,
+            'lately'
+          )}
+        </LazyLoad>
+
+        <LazyLoad height={400}>
+          {renderAboutSection(
+            tech,
+            `Another test....`,
+            'lately'
+          )}
+        </LazyLoad>
+
+        {/*
         <StyledSection>
           <H2 h1Size>A passionate front end/javascript developer</H2>
           <p>With X years of experience, I strive for clean and scalable solutions.</p>
@@ -136,6 +213,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <PageLink to="/projects">View projects</PageLink>
 
         <PageLink to="/contact">Contact</PageLink>
+        */}
 
       </article>
     );
