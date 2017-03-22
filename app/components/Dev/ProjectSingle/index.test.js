@@ -4,6 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import ProjectSingle from './index';
+import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
 import List from 'components/List';
@@ -55,11 +56,15 @@ describe('<ProjectSingle />', () => {
     expect(actual.length).toEqual(1);
   });
 
-  it('should render project heading', () => {
-    const heading = wrapper.containsMatchingElement(
+  it('should render 2 project headings (for seo/accessibility and design)', () => {
+    const h1 = wrapper.containsMatchingElement(
+      <H1 hide>{mockProject.name}</H1>
+    );
+    expect(h1).toBeTruthy();
+    const h2 = wrapper.containsMatchingElement(
       <H2>{mockProject.name}</H2>
     );
-    expect(heading).toBeTruthy();
+    expect(h2).toBeTruthy();
   });
 
   it('should render a date', () => {

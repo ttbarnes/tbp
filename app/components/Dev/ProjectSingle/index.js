@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import Helmet from 'react-helmet';
+import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
 import Tag from 'components/Tag';
@@ -48,6 +49,7 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
         />
 
         <section>
+          <H1 hide>{project.name}</H1>
           <HeadingWrap>
             <H2>{project.name}</H2>
             <SmallDate>{project.date}</SmallDate>
