@@ -17,9 +17,9 @@ function Projects(props) {
         ]}
       />
 
-      <H1>Projects</H1>
+      <H1 hide>Projects</H1>
 
-      <H2>Some of the projects i{'\''}ve been a part of</H2>
+      <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
 
       <ProjectFilters handleClick={props.onClickProjectFilter} activeFilter={props.activeFilter} />
 

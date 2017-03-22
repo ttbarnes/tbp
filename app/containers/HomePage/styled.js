@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import Img from 'components/Img';
 import H1 from 'components/H1';
-import { media } from 'components/styledShared';
+import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
 
 export const Root = styled.article`
   max-width: 550px;
   width: 100%;
   margin: 0 auto;
+  padding-top: ${CONTAINER_SPACING_VERTICAL};
 `;
 
 export const FlexRoot = styled.article`
@@ -25,7 +26,7 @@ export const Flex = styled.div`
   `}
 `;
 
-export const StyledH1 = styled(H1)`
+export const StyledH2 = styled(H1)`
   margin: 0;
 `;
 

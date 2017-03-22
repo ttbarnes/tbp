@@ -32,7 +32,7 @@ export const MainContent = styled.div`
   display: flex;
   flex-direction: column;
   max-width: calc(${CONTAINER_MAX_WIDTH_LG}px - ${NAV_MAX_WIDTH * 2}px);
-  padding: ${CONTAINER_SPACING_VERTICAL} ${CONTAINER_SPACING_HORIZONTAL} ${CONTAINER_SPACING_HORIZONTAL};
+  padding: 0 ${CONTAINER_SPACING_HORIZONTAL} ${CONTAINER_SPACING_HORIZONTAL};
   ${minHeight};
   ${media.lg`
     ${containerPaddingOffset}

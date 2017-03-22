@@ -53,7 +53,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
           ]}
         />
 
-        <H1>Hobbies</H1>
+        <H1 hide>Hobbies</H1>
 
         {activities ? (
           activities.map((activity, index) => (

@@ -16,8 +16,8 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
           ]}
         />
 
-        <H1>Contact</H1>
-        <H2>I{'\''}d love to talk, i{'\''}m very friendly!</H2>
+        <H1 hide>Contact</H1>
+        <H2 h1Size>I{'\''}d love to talk, i{'\''}m very friendly!</H2>
         <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a>
 
       </article>

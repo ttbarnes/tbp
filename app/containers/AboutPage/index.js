@@ -53,9 +53,9 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           ]}
         />
 
-        <H1>About</H1>
+        <H1 hide>About</H1>
         <StyledSection>
-          <H2>A passionate front end/javascript developer</H2>
+          <H2 h1Size>A passionate front end/javascript developer</H2>
           <p>With X years of experience, I strive for clean and scalable solutions.</p>
 
           <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>

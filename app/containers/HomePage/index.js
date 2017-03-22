@@ -1,11 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
+import H1 from 'components/H1';
 import {
   Root,
   FlexRoot,
   Flex,
-  StyledH1,
+  StyledH2,
   StyledImg,
   Intro
 } from './styled';
@@ -22,12 +23,13 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
           ]}
         />
+        <H1 hide>Tony Barnes</H1>
         <FlexRoot>
           <Flex>
             <StyledImg src={TbImage} alt="Tony Barnes" />
           </Flex>
           <div>
-            <StyledH1>Hello! I{'\''}m Tony.</StyledH1>
+            <StyledH2>Hello! I{'\''}m Tony.</StyledH2>
             <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
           </div>
         </FlexRoot>
