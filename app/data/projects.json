@@ -68,6 +68,7 @@
     "highlights": [
      "Redesign for mobiles/tablets/any device size",
      "Modular, component based architecture",
+     "News feed from node API",
      "Customised music player",
      "Various smart features/components such as collaborators and gallery"
     ],
