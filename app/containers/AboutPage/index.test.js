@@ -70,9 +70,15 @@ describe('<About />', () => {
       expect(actual).toBeTruthy();
     });
   });
-  it('should render a PageLink', () => {
+  it('should render a PageLink to projects', () => {
     const actual = wrapper.containsMatchingElement(
       <PageLink to="/projects">View projects</PageLink>
+    );
+    expect(actual).toBeTruthy();
+  });
+  it('should render a PageLink to contact', () => {
+    const actual = wrapper.containsMatchingElement(
+      <PageLink to="/contact">Contact</PageLink>
     );
     expect(actual).toBeTruthy();
   });

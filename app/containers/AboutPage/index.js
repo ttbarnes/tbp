@@ -96,7 +96,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <H3>i{'\''}ve used these as well</H3>
+          <H3>I{'\''}ve used these as well</H3>
 
           <StyledList>
             {renderTechGroup(tech, 'other')}
@@ -118,8 +118,17 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <StyledSection>
-          <H3>Large and small</H3>
-          <p>You name it, i{'\''}ve worked with large ecommerce giants, new startups, {'\''}cool{'\''} agencies.</p>
+          <H3>..with large and small teams</H3>
+          <p>Ecommerce giants, new startups, {'\''}cool{'\''} agencies, you name it.</p>
+        </StyledSection>
+
+        <StyledSection>
+          <H3>I{'\''}ve used these before</H3>
+          <List showListStyle>
+            <p>Photoshop, Fireworks, Sketch</p>
+            <p>Atlassian tools, Github</p>
+            <p>Heroku, Firebase</p>
+          </List>
         </StyledSection>
 
         <StyledSection>
@@ -128,6 +137,8 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </StyledSection>
 
         <PageLink to="/projects">View projects</PageLink>
+
+        <PageLink to="/contact">Contact</PageLink>
 
       </article>
     );
