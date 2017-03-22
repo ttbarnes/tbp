@@ -11,6 +11,7 @@ const PageLink = styled(Link)`
   padding: 0.8em 0.5em;
   text-decoration:none;
   transition: all 0.2s ease;
+  margin-bottom: 1em;
   &:hover {
     text-decoration:underline;
     background: ${colors.blue4};
@@ -19,6 +20,8 @@ const PageLink = styled(Link)`
   ${media.sm`
     display: inline-block;
     width: auto;
+    margin-right: 1em;
+    margin-bottom: 0;
   `}
 `;
 
