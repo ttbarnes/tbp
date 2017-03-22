@@ -6,7 +6,6 @@ import H2 from '../../components/H2';
 import H3 from '../../components/H3';
 import List from '../../components/List';
 import PageLink from '../../components/PageLink';
-// import CV from '../../assets/Tony-Barnes-CV-2017.pdf';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import {
@@ -114,7 +113,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
             <p>Mortgage comparison</p>
             <p>many more</p>
           </List>
-          {/* <p>Download <Link to={CV} target="_blank">CV</Link>( ? )</p> */}
         </StyledSection>
 
         <StyledSection>
