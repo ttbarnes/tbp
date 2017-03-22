@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 export const CONTAINER_MAX_WIDTH_LG = 1100;
 export const CONTAINER_MAX_WIDTH_XLG = 1200;
@@ -92,3 +92,18 @@ export const tagColors = {
   gulp: colors.red4,
   webpack: colors.blue6
 };
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+export const FadeIn = styled.div`
+  display: inline-block;
+  animation: ${fadeIn} 1s linear;
+`;

@@ -1,21 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import List from 'components/List';
 import Tag from 'components/Tag';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-export const FadeIn = styled.div`
-  display: inline-block;
-  animation: ${fadeIn} 1s linear;
-`;
 
 export const StyledSection = styled.section`
   margin-bottom: 7em;

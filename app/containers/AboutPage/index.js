@@ -11,7 +11,6 @@ import { createStructuredSelector } from 'reselect';
 import {
   selectAboutTech
 } from './selectors';
-// import { FadeIn } from './styled';
 import {
   StyledSection,
   StyledList,
