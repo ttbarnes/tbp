@@ -2,7 +2,8 @@
   {
     "tech": [
       {
-        "group": "lately",
+        "heading": "Recently I've been using...",
+        "category": "lately",
         "tags": [
           "React",
           "Redux",
@@ -11,14 +12,16 @@
         ]
       },
       {
-        "group": "api",
+        "heading": "..and building api's with...",
+        "category": "api",
         "tags": [
           "MongoDB, Mongoose",
           "Node.js, Express"
         ]
       },
       {
-        "group": "testing",
+        "heading": "I usually test with",
+        "category": "testing",
         "tags": [
           "Enzyme", 
           "Jasmine", 
@@ -29,7 +32,8 @@
         ]
       },
       {
-        "group": "styling",
+        "heading": "..and style with all the similar things",
+        "category": "styling",
         "tags": [
           "styled-components",
           "Aphrodite",
@@ -38,12 +42,40 @@
         ]
       },
       {
-        "group": "other",
+        "heading": "I've used these as well",
+        "category": "other",
         "tags": [
           "Webpack", 
           "Gulp",
           "d3.js",
           "Highcharts"
+        ]
+      },
+      {
+        "heading": "I've worked in a few sectors",
+        "category": "industries",
+        "tags": [
+          "Ecommerce",
+          "Health",
+          "Travel",
+          "Fin-tech",
+          "Book Publishing",
+          "Mortgage comparison",
+          "many more"
+        ]
+      },
+      {
+        "heading": "..with large and small teams`",
+        "category": "teams",
+        "copy": "Ecommerce giants, new startups, 'cool' agencies, you name it."
+      },
+      {
+        "heading": "I've used these before",
+        "category": "tools",
+        "tags": [
+          "Photoshop, Fireworks, Sketch",
+          "Atlassian tools, Github",
+          "Heroku, Firebase"
         ]
       }
     ]

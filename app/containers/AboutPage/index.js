@@ -13,58 +13,60 @@ import {
   selectAboutTech
 } from './selectors';
 import {
-  StyledSection,
+  Intro,
+  Row,
   StyledList,
   StyledTag
 } from './styled';
 
 import { FadeIn } from 'components/styledShared';
 
-export const techGroup = (arr, group) =>
-  arr.filter((t) => {
-    if (t.group === group) {
-      return t.tags;
-    }
-    return null;
-  });
+const groupsWithStyledTag = [
+  'lately',
+  'api',
+  'testing',
+  'styling',
+  'other'
+];
 
-export const renderTechGroup = (arr, groupType) => {
-  const group = this.techGroup(arr, groupType);
-  if (group.length) {
-    return group[0].tags.map((i) =>
-      <StyledTag type={i} key={i} />
+
+export const renderGroup = (group) => {
+  const category = group.category;
+  const groupTags = group.tags;
+  if (groupsWithStyledTag.includes(category)) {
+    return (
+      <StyledList>
+        {groupTags.map((i) => 
+          <StyledTag type={i} key={i} />
+        )}
+      </StyledList>
+    );
+  } else if (!groupTags) {
+    return (
+      <p>{group.copy}</p>
+    )
+  } else {
+    return (
+      <List>
+        {groupTags.map((i) => 
+          <p key={i}>{i}</p>
+        )}
+      </List>
     );
   }
-  return null;
+  return <p>{group.copy}</p>;
 };
 
-export const renderAboutSection = (arr, heading, techGroupType) => {
+export const renderAboutSection = (group) => {
   return (
-    <StyledSection>
+    <Row>
       <FadeIn>
-        <H3>{heading}</H3>
-        <StyledList>
-          {renderTechGroup(arr, techGroupType)}
-        </StyledList>
+        <H3>{group.heading}</H3>
+        {renderGroup(group)}
       </FadeIn>
-    </StyledSection>
+    </Row>
   );
 }
-
-const aboutItems = [
-  {
-    title: 'testing'
-  },
-  {
-    title: 'another test'
-  },
-  {
-    title: 'hello world'
-  },
-  {
-    title: 'all the things'
-  }
-];
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -84,7 +86,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <H1 hide>About</H1>
 
-        <StyledSection>
+        <Intro>
           <H2 h1Size>A passionate front end/javascript developer</H2>
           <p>With X years of experience, I strive for clean and scalable solutions.</p>
 
@@ -93,127 +95,19 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
           <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>. On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
-        </StyledSection>
-        {/*
-        {aboutItems && aboutItems.map((item, index) => (
-          <LazyLoad once={item.once} height={400} key={index}>
-            <div style={{minHeight:400}}>
-              <FadeIn>
-                <p>{item.title}</p>
-              </FadeIn>
-            </div>
-          </LazyLoad>
-        ))}
-        */}
+        </Intro>
 
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        <LazyLoad height={400} once={true}>
-          {renderAboutSection(
-            tech,
-            `Recently I've been using...`,
-            'lately'
-          )}
-        </LazyLoad>
-
-        <LazyLoad height={400}>
-          {renderAboutSection(
-            tech,
-            `Another test....`,
-            'lately'
-          )}
-        </LazyLoad>
-
-        {/*
-        <StyledSection>
-          <H2 h1Size>A passionate front end/javascript developer</H2>
-          <p>With X years of experience, I strive for clean and scalable solutions.</p>
-
-          <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>
-
-          <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
-
-          <p>I{'\''}m currently helping to change the world of travel at <Link to="http://trainline.com" target="_blank">Trainline</Link>. On the side i{'\''}m building a <Link to="http://plantstove.com" target="_blank">new startup idea</Link>. Also creating a <Link to="https://github.com/therapy-records" target="_blank">mini CMS</Link>. Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>Recently I{'\''}ve been using...</H3>
-          <StyledList>
-            {renderTechGroup(tech, 'lately')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>..and building api{'\''}s with...</H3>
-          <StyledList>
-            {renderTechGroup(tech, 'api')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I usually test with</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'testing')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>..and style with all the similar things</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'styling')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I{'\''}ve used these as well</H3>
-
-          <StyledList>
-            {renderTechGroup(tech, 'other')}
-          </StyledList>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I{'\''}ve worked in a few sectors</H3>
-          <List showListStyle>
-            <p>Ecommerce</p>
-            <p>Health</p>
-            <p>Travel</p>
-            <p>Fin-tech</p>
-            <p>Book Publishing</p>
-            <p>Mortgage comparison</p>
-            <p>many more</p>
-          </List>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>..with large and small teams</H3>
-          <p>Ecommerce giants, new startups, {'\''}cool{'\''} agencies, you name it.</p>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I{'\''}ve used these before</H3>
-          <List showListStyle>
-            <p>Photoshop, Fireworks, Sketch</p>
-            <p>Atlassian tools, Github</p>
-            <p>Heroku, Firebase</p>
-          </List>
-        </StyledSection>
-
-        <StyledSection>
-          <H3>I like keyboard shortcuts</H3>
-          <p>..and pretty quick at typing. Very creative - i{'\''}m a pianist and create music. I find unit tests quite satisfying.</p>
-        </StyledSection>
-
-        <PageLink to="/projects">View projects</PageLink>
-
-        <PageLink to="/contact">Contact</PageLink>
-        */}
+        <ul>
+        {tech.map((item, i) => 
+          <li key={item.title}>
+            <LazyLoad height={400} once={true}>
+              {renderAboutSection(
+                item
+              )}
+            </LazyLoad>
+          </li>
+        )}
+        </ul>
 
       </article>
     );

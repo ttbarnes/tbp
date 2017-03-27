@@ -104,6 +104,5 @@ const fadeIn = keyframes`
 `;
 
 export const FadeIn = styled.div`
-  display: inline-block;
   animation: ${fadeIn} 1s linear;
 `;
