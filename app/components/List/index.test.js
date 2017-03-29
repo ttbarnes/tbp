@@ -21,7 +21,6 @@ describe('<List />', () => {
     const wrapper = shallow(
       <List>{items}</List>
     );
-    // why containsAllMatchingElements not working here?
     const actual = wrapper.containsAllMatchingElements([
       <LI>hello</LI>,
       <LI>world</LI>,

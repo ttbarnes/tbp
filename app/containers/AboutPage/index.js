@@ -7,7 +7,6 @@ import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
 import List from '../../components/List';
-import PageLink from '../../components/PageLink';
 import { createStructuredSelector } from 'reselect';
 import {
   selectAboutTech
@@ -29,44 +28,43 @@ const groupsWithStyledTag = [
   'other'
 ];
 
-
 export const renderGroup = (group) => {
   const category = group.category;
   const groupTags = group.tags;
   if (groupsWithStyledTag.includes(category)) {
     return (
       <StyledList>
-        {groupTags.map((i) => 
+        {groupTags.map((i) =>
           <StyledTag type={i} key={i} />
         )}
       </StyledList>
     );
-  } else if (!groupTags) {
-    return (
-      <p>{group.copy}</p>
-    )
-  } else {
+  } else if (groupTags && !groupsWithStyledTag.includes(category)) {
     return (
       <List>
-        {groupTags.map((i) => 
+        {groupTags.map((i) =>
           <p key={i}>{i}</p>
         )}
       </List>
+    );
+  } else if (category === 'outro') {
+    return (
+      <div>
+        <p>Check out some <Link to="/projects">projects i{'\''}ve worked on</Link></p>
+        <Link to="/contact">Get in touch</Link>
+      </div>
     );
   }
   return <p>{group.copy}</p>;
 };
 
-export const renderAboutSection = (group) => {
-  return (
-    <Row>
-      <FadeIn>
-        <H3>{group.heading}</H3>
-        {renderGroup(group)}
-      </FadeIn>
-    </Row>
-  );
-}
+export const renderAboutSection = (group) =>
+  <Row>
+    <FadeIn>
+      <H3>{group.heading}</H3>
+      {renderGroup(group)}
+    </FadeIn>
+  </Row>;
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -98,15 +96,15 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </Intro>
 
         <ul>
-        {tech.map((item, i) => 
-          <li key={item.title}>
-            <LazyLoad height={400} once={true}>
-              {renderAboutSection(
-                item
-              )}
-            </LazyLoad>
-          </li>
-        )}
+          {tech.map((item) =>
+            <li key={item.title}>
+              <LazyLoad height={400} once>
+                {renderAboutSection(
+                  item
+                )}
+              </LazyLoad>
+            </li>
+          )}
         </ul>
 
       </article>

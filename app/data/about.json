@@ -65,7 +65,7 @@
         ]
       },
       {
-        "heading": "..with large and small teams`",
+        "heading": "..with large and small teams",
         "category": "teams",
         "copy": "Ecommerce giants, new startups, 'cool' agencies, you name it."
       },
@@ -77,6 +77,10 @@
           "Atlassian tools, Github",
           "Heroku, Firebase"
         ]
+      },
+      {
+        "heading": "I love collaborating",
+        "category": "outro"
       }
     ]
   }
