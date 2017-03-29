@@ -97,7 +97,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <ul>
           {tech.map((item) =>
-            <li key={item.title}>
+            <li key={item.heading}>
               <LazyLoad height={400} once>
                 {renderAboutSection(
                   item
