@@ -19,7 +19,7 @@ import {
   StyledList
 } from './styled';
 
-const mockTech = aboutData[0].tech;
+const mockTech = aboutData;
 const mockTechLength = mockTech.length;
 
 describe('<About />', () => {

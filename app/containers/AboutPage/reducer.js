@@ -1,6 +1,6 @@
 import about from '../../data/about.json';
 
-const initialState = about[0];
+const initialState = about;
 
 function aboutReducers(state = initialState, action) {
   switch (action.type) {
