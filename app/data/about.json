@@ -40,7 +40,7 @@
     ]
   },
   {
-    "heading": "I've used these as well",
+    "heading": "I've also used these",
     "category": "other",
     "tags": [
       "Webpack", 
@@ -68,16 +68,7 @@
     "copy": "Ecommerce giants, new startups, 'cool' agencies, you name it."
   },
   {
-    "heading": "I've used these before",
-    "category": "tools",
-    "tags": [
-      "Photoshop, Fireworks, Sketch",
-      "Atlassian tools, Github",
-      "Heroku, Firebase"
-    ]
-  },
-  {
-    "heading": "I love collaborating",
+    "heading": "I love collaborating - maybe we could build something together?",
     "category": "outro"
   }
 ]

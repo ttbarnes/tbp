@@ -41,7 +41,7 @@ export const renderGroup = (group) => {
     );
   } else if (groupTags && !groupsWithStyledTag.includes(category)) {
     return (
-      <List>
+      <List showListStyle>
         {groupTags.map((i) =>
           <p key={i}>{i}</p>
         )}
@@ -50,8 +50,8 @@ export const renderGroup = (group) => {
   } else if (category === 'outro') {
     return (
       <div>
+        <p><Link to="/contact">Get in touch</Link></p>
         <p>Check out some <Link to="/projects">projects i{'\''}ve worked on</Link></p>
-        <Link to="/contact">Get in touch</Link>
       </div>
     );
   }
@@ -86,7 +86,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <Intro>
           <H2 h1Size>A passionate front end/javascript developer</H2>
-          <p>With X years of experience, I strive for clean and scalable solutions.</p>
+          <p>With 7 years of experience, I strive for clean and scalable solutions.</p>
 
           <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>
 
