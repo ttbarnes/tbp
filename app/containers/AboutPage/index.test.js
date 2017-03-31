@@ -86,8 +86,8 @@ describe('<About />', () => {
       );
       const actual = groupWrapper.containsMatchingElement(
         <div>
+          <p><Link to="/contact">Get in touch</Link></p>
           <p>Check out some <Link to="/projects">projects i{'\''}ve worked on</Link></p>
-          <Link to="/contact">Get in touch</Link>
         </div>
       );
       expect(actual).toBeTruthy();
