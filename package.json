@@ -214,9 +214,7 @@
     "sanitize.css": "4.1.0",
     "styled-components": "1.0.3",
     "warning": "3.0.0",
-    "whatwg-fetch": "1.0.0"
-  },
-  "devDependencies": {
+    "whatwg-fetch": "1.0.0",
     "babel-cli": "6.18.0",
     "babel-core": "6.18.0",
     "babel-eslint": "7.1.0",
