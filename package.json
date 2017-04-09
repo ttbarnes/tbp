@@ -7,7 +7,8 @@
     "url": "git://github.com/mxstbr/react-boilerplate.git"
   },
   "engines": {
-    "npm": ">=3"
+    "npm": ">=3",
+    "node": "5.1.0"
   },
   "author": "Max Stoiber",
   "license": "MIT",
@@ -25,7 +26,7 @@
     "start": "cross-env NODE_ENV=development node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
     "start:production": "npm run build && npm run start:prod",
-    "start:prod": "cross-env NODE_ENV=production node server",
+    "start:prod": "cross-env NODE_ENV=production npm run build && node server",
     "pagespeed": "node ./internals/scripts/pagespeed.js",
     "presetup": "npm i chalk shelljs",
     "setup": "node ./internals/scripts/setup.js",
