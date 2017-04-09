@@ -43,6 +43,14 @@ const mockProject = {
   ]
 };
 
+function expectedThoughtsProps(id) {
+  return {
+    item: mockProject.thoughts[id + 1],
+    projectId: mockProject.id,
+    projectName: mockProject.name
+  };
+}
+
 describe('<ProjectSingle />', () => {
   const wrapper = shallow(
     <ProjectSingle data={mockProject} />
@@ -107,19 +115,27 @@ describe('<ProjectSingle />', () => {
   });
 
   it('should render <ThoughtsItem />\'s with the correct props', () => {
-    function expectedProps(id) {
-      return {
-        item: mockProject.thoughts[id + 1],
-        projectId: mockProject.id,
-        projectName: mockProject.name
-      };
-    }
     const actual = wrapper.containsAllMatchingElements([
-      <ThoughtsItem {...expectedProps(1)} />,
-      <ThoughtsItem {...expectedProps(2)} />
+      <ThoughtsItem {...expectedThoughtsProps(1)} />,
+      <ThoughtsItem {...expectedThoughtsProps(2)} />
     ]);
     expect(actual).toBeTruthy();
   });
+
+  it('should not render <ThoughtsItems /> when moreInfoSoon', () => {
+    const mockProjectMoreInfoSoon = mockProject;
+    mockProjectMoreInfoSoon.moreInfoSoon = ['More info coming soon.'];
+    const wrapperMoreInfoSoon = shallow(
+      <ProjectSingle data={mockProjectMoreInfoSoon} />
+    );
+    const items = wrapperMoreInfoSoon.containsAllMatchingElements([
+      <ThoughtsItem {...expectedThoughtsProps(1)} />,
+      <ThoughtsItem {...expectedThoughtsProps(2)} />
+    ]);
+    expect(items).toBeFalsy();
+  });
+
+  // todo: should not render highlights when moreInfoSoon
 
   it('should render github and live buttons', () => {
     const actual1 = wrapper.containsMatchingElement(

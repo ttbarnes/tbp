@@ -3,7 +3,7 @@
     "id": "trainline",
     "name": "Trainline",
     "category": "Web apps",
-    "date": "2016-17",
+    "date": "2016 - present",
     "tech": [
        "React",
        "Redux", 
@@ -23,6 +23,9 @@
       "Built seat reservations & delivery options components",
       "Google calendar API integration",
       "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
     ],
     "urls": [
       "http://github.com",

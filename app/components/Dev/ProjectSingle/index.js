@@ -66,43 +66,54 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
             </ListFlex>
           </Row>
 
-          {project.highlights && (
+          {project.moreInfoSoon ? (
             <Row>
               <H4>Highlights</H4>
               <List showListStyle>
-                {project.highlights}
+                {project.moreInfoSoon}
               </List>
             </Row>
-          )}
-
-          {project.thoughts && (
-            <Row>
-              {project.thoughts.map((item, index) =>
-                <ThoughtsItem
-                  item={item}
-                  projectId={project.id}
-                  projectName={project.name}
-                  key={index}
-                />
+          ) : (
+            <div>
+              {project.highlights && (
+                <Row>
+                  <H4>Highlights</H4>
+                  <List showListStyle>
+                    {project.highlights}
+                  </List>
+                </Row>
               )}
-            </Row>
-          )}
 
-          {project.urls && (
-            <Row>
-              <H4>Links</H4>
-              <List showListStyle>
-                {project.urls.map((item) =>
-                  <Link to={item} target="_blank" key={item}>
-                    {item.includes('github.com') ? (
-                      'GitHub repo'
-                    ) : (
-                      'Live site'
+              {project.thoughts && (
+                <Row>
+                  {project.thoughts.map((item, index) =>
+                    <ThoughtsItem
+                      item={item}
+                      projectId={project.id}
+                      projectName={project.name}
+                      key={index}
+                    />
+                  )}
+                </Row>
+              )}
+
+              {project.urls && (
+                <Row>
+                  <H4>Links</H4>
+                  <List showListStyle>
+                    {project.urls.map((item) =>
+                      <Link to={item} target="_blank" key={item}>
+                        {item.includes('github.com') ? (
+                          'GitHub repo'
+                        ) : (
+                          'Live site'
+                        )}
+                      </Link>
                     )}
-                  </Link>
-                )}
-              </List>
-            </Row>
+                  </List>
+                </Row>
+              )}
+            </div>
           )}
 
           <PageLink to="/projects">All projects</PageLink>
