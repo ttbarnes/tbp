@@ -35,7 +35,7 @@ export const Root = styled.div`
 export const ListRoot = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
 `;
 
 export const NavLinkRoot = styled(Link)`

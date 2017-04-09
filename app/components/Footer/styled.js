@@ -9,6 +9,10 @@ import {
 
 export const Root = styled.footer`
   padding: 0 ${CONTAINER_SPACING_HORIZONTAL};
+  /* duplicate flex parent prevents issue in IE. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   ${media.lg`
     padding-left:${CONTAINER_OFFSET_LEFT};
   `}

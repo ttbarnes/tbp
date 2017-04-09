@@ -1,17 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "tbp",
   "version": "3.3.3",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "Tony Barnes portfolio",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mxstbr/react-boilerplate.git"
+    "url": "git://github.com/ttbarnes/tbp.git"
   },
   "engines": {
     "npm": ">=3",
     "node": "5.1.0"
   },
-  "author": "Max Stoiber",
-  "license": "MIT",
+  "author": "Tony Barnes",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
