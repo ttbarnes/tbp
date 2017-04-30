@@ -70,4 +70,8 @@ module.exports = require('./webpack.base.babel')({
       AppCache: false,
     }),
   ],
+  babelQuery: {
+    plugins: ['transform-runtime'],
+    presets: ['es2015', 'react']
+  },
 });
