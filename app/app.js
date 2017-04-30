@@ -10,7 +10,7 @@ import 'babel-polyfill';
 
 /* eslint-disable import/no-unresolved, import/extensions */
 // Load the favicon
-import 'file?name=[name].[ext]!./favicon.ico';
+// import 'file-loader?name=[name].[ext]!./favicon.ico';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 // Import all the third party stuff
@@ -21,14 +21,14 @@ import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import FontFaceObserver from 'fontfaceobserver';
 import { useScroll } from 'react-router-scroll';
+import ReactGA from 'react-ga';
+import 'sanitize.css/sanitize.css';
+import App from 'containers/App';
+import { selectLocationState } from 'containers/App/selectors';
 import configureStore from './store';
 import { GA_TRACKING } from './constants';
-
-// Import CSS reset and Global Styles
-import 'sanitize.css/sanitize.css';
 import './global-styles';
-
-import ReactGA from 'react-ga';
+import createRoutes from './routes';
 ReactGA.initialize(GA_TRACKING);
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
@@ -52,14 +52,12 @@ const store = configureStore(initialState, browserHistory);
 // Sync history and store, as the react-router-redux reducer
 // is under the non-default key ("routing"), selectLocationState
 // must be provided for resolving how to retrieve the "route" in the state
-import { selectLocationState } from 'containers/App/selectors';
+
 const history = syncHistoryWithStore(browserHistory, store, {
   selectLocationState: selectLocationState(),
 });
 
 // Set up the router, wrapping all Routes in the App component
-import App from 'containers/App';
-import createRoutes from './routes';
 const rootRoute = {
   component: App,
   childRoutes: createRoutes(store),

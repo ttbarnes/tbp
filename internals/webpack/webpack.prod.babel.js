@@ -2,7 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const OfflinePlugin = require('offline-plugin/runtime').install();
+const OfflinePlugin = require('offline-plugin');
 
 module.exports = require('./webpack.base.babel')({
   // In production, we skip all hot-reloading stuff
@@ -23,9 +23,6 @@ module.exports = require('./webpack.base.babel')({
       minChunks: 2,
       async: true,
     }),
-
-    // Merge all duplicate modules
-    // new webpack.optimize.DedupePlugin(),
 
     // Minify and optimize the index.html
     new HtmlWebpackPlugin({
@@ -70,4 +67,8 @@ module.exports = require('./webpack.base.babel')({
       AppCache: false,
     }),
   ],
+
+  performance: {
+    assetFilter: (assetFilename) => !(/(\.map$)|(^(main\.|favicon\.))/.test(assetFilename)),
+  },
 });
