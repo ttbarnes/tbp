@@ -66,13 +66,6 @@ module.exports = require('./webpack.base.babel')({
 
       AppCache: false,
     }),
-  ],
+  ]
 
-  externals: {
-    'react-dom': true
-  },
-
-  performance: {
-    assetFilter: (assetFilename) => !(/(\.map$)|(^(main\.|favicon\.))/.test(assetFilename)),
-  },
 });
