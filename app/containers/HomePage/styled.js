@@ -30,10 +30,13 @@ export const StyledH2 = styled(H1)`
   margin: 0;
 `;
 
-export const StyledImg = styled(Img)`
-  max-width: 150px;
-  border-radius: 50%;
+export const ImgWrap = styled.div`
   padding-right: 1em;
+`;
+
+export const StyledImg = styled(Img)`
+  max-width: 130px;
+  border-radius: 50%;
   margin-bottom: 0.5em;
 `;
 
