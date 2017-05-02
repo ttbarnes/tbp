@@ -1,0 +1,74 @@
+[
+  {
+    "heading": "Recently I've been using...",
+    "category": "lately",
+    "tags": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Angular"
+    ]
+  },
+  {
+    "heading": "..and building api's with...",
+    "category": "api",
+    "tags": [
+      "MongoDB, Mongoose",
+      "Node.js, Express"
+    ]
+  },
+  {
+    "heading": "I usually test with",
+    "category": "testing",
+    "tags": [
+      "Enzyme", 
+      "Jasmine", 
+      "Mocha", 
+      "Shouldjs", 
+      "Chai", 
+      "Karma"
+    ]
+  },
+  {
+    "heading": "..and style with all the similar things",
+    "category": "styling",
+    "tags": [
+      "styled-components",
+      "Aphrodite",
+      "Stylus",
+      "Sass"
+    ]
+  },
+  {
+    "heading": "I've also used these",
+    "category": "other",
+    "tags": [
+      "Webpack", 
+      "Gulp",
+      "d3.js",
+      "Highcharts"
+    ]
+  },
+  {
+    "heading": "I've worked in a few sectors",
+    "category": "industries",
+    "tags": [
+      "Ecommerce",
+      "Health",
+      "Travel",
+      "Fin-tech",
+      "Book Publishing",
+      "Mortgage comparison",
+      "many more"
+    ]
+  },
+  {
+    "heading": "..with large and small teams",
+    "category": "teams",
+    "copy": "Ecommerce giants, new startups, 'cool' agencies, you name it."
+  },
+  {
+    "heading": "I love collaborating - maybe we could build something together?",
+    "category": "outro"
+  }
+]

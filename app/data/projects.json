@@ -1,0 +1,532 @@
+[
+  {
+    "id": "trainline",
+    "name": "Trainline",
+    "category": "Web apps",
+    "date": "2016 - present",
+    "tech": [
+       "React",
+       "Redux", 
+       "TypeScript",
+       "JavaScript",
+       "ES6", 
+       "Webpack",
+       "Aphrodite"
+    ],
+    "highlights": [
+      "Re-platformed the main desktop app",
+      "Built many smart, dumb and reusable React components complete with TypeScript and accessibility",
+      "Owned the main 'Journey Summary sidebar' component that works alongside search results & checkout flow",
+      "Built a ‘sticky component’ that changes position depending on other elements positioning and/or props",
+      "Refactored various selectors and unit tests",
+      "Built a login form with email validation",
+      "Built seat reservations & delivery options components",
+      "Google calendar API integration",
+      "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
+    ],
+    "urls": [
+      "http://github.com",
+      "http://trainline.com"
+    ]
+  },
+  {
+    "id": "plantstove",
+    "name": "Plantstove",
+    "category": "Web apps",
+    "date": "2016 - present",
+    "tech": [
+       "MongoDB, Mongoose",
+       "Express, Node js",
+       "Angular",
+       "Redux",
+       "JavaScript, ES6",
+       "HTML5, CSS3",
+       "Stylus",
+       "Webpack"
+    ],
+    "highlights": [
+      "More info coming soon."
+    ],
+    "urls": [
+      "http://plantstove.com"
+    ]
+  },
+  {
+    "id": "fiona-ross",
+    "name": "Fiona Ross",
+    "category": "Web apps",
+    "date": "2016 - present",
+    "tech": [
+       "Angular",
+       "JavaScript, ES6",
+       "Express, Node js",
+       "HTML5, CSS3",
+       "Stylus",
+       "Webpack"
+    ],
+    "highlights": [
+     "Redesign for mobiles/tablets/any device size",
+     "Modular, component based architecture",
+     "News feed from node API",
+     "Customised music player",
+     "Various smart features/components such as collaborators and gallery"
+    ],
+    "urls": [
+      "http://github.com/ttbarnes/fr-app",
+      "http://fionaross.co.uk"
+    ]
+  },
+  {
+    "id": "boots-betalabs",
+    "name": "Boots BetaLabs",
+    "category": "Web apps",
+    "date": "2016",
+    "tech": [
+       "AngularJS",
+       "JavaScript",
+       "ES6",
+       "d3.js",
+       "HTML5, CSS3",
+       "Webpack",
+       "Sass"
+    ],
+    "highlights": [
+      "6 different apps for various stores and consumers",
+      "Modular, component based architecture with shared, reusable codebases",
+      "Ecommerce checkout for a bespoke touch screen app",
+      "Dynamic, custom 'time entry type tracker' utilising d3.js",
+      "Various email and mobile validation components",
+      "Improved test coverage and tech debt",
+      "CoreMetrics analytics integration"
+    ],
+    "thoughts":[
+      { "copy": "I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts:" },
+      { "img": "inner01" },
+      { "copy": "I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle:"},
+      { "img": "inner02" },
+      { "copy": "Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers:"},
+      { "img": "inner03" }
+    ]
+  },
+  {
+    "id": "network-locum",
+    "name": "Network Locum",
+    "category": "Web apps",
+    "date": "2015-16",
+    "tech": [
+       "AngularJS",
+       "JavaScript",
+       "ES6",
+       "Redux",
+       "HTML5, CSS3",
+       "Webpack",
+       "Less"
+    ],
+    "highlights": [
+      "Built many new features and components within a large existing codebase",
+      "Modular, component based app/architecture",
+      "Heavy use of custom directives/components",
+      "Greatly improved the test coverage"
+    ],
+    "thoughts": [
+      {"copy": "I really enjoyed building the 'My Circles' feature which enabled users to manage groups of 'favourites'. Many actions and filters could be applied here, so we managed these states with Redux."},
+      {"img": "inner01"},
+      {"copy": "We also built an invitation component that could be easily re-used:"},
+      {"img": "inner02"},
+      {"copy": "I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups."},
+      {"img": "inner03"}
+    ],
+    "urls": [
+      "http://networklocum.com"
+    ]
+  },
+  {
+    "id": "saranac",
+    "name": "Saranac",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+       "Express, Node js",
+       "AngularJS",
+       "Highcharts",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Less"
+    ],
+    "highlights": [
+      "Large greenfield, wealth management app",
+      "Rich, complex data visualization",
+      "Mock API and datastore",
+      "Heavy use of custom directives/components"
+    ],
+    "thoughts": [
+      { "copy": "I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):" },
+      { "img": "inner01" },
+      { "copy": "We also built many visually small, but logically complex components, like these bar graphs:" },
+      { "img": "inner02" },
+      { "copy": "Similarly with these risk indicators:" },
+      { "img": "inner03" }
+    ]
+  },
+  {
+    "id": "mean-tweets",
+    "name": "Mean tweets",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+       "MongoDB, Mongoose",
+       "Express, Node js",
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
+    ],
+    "highlights": [
+      "Created from the ground up in order to learn more about Node, Express and MongoDB",
+      "Built a fairly in-depth node API that interacts with a DB",
+      "Clean and modular angular app on the front end",
+      "Built a timeline feature that queries the API depending on who a user follows and the followee's tweets/retweets"
+    ],
+    "urls": [
+      "https://mean-tweets.herokuapp.com"
+    ]
+  },
+  {
+    "id": "angular-ticker",
+    "name": "Angular ticker",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+       "AngularJS",
+       "JavaScript",
+       "Grunt",
+       "Sass",
+       "CSS3"
+    ],
+    "highlights": [
+      "Built an open source simple ticker directive for easy re-use in any project",
+      "Automatically scrolls through a list of items, fading in/out",
+      "Configurable timing"
+    ],
+    "urls": [
+      "http://github.com/ttbarnes/angular-ticker",
+      "http://ttbarnes.github.io/angular-ticker"
+    ]
+  },
+  {
+    "id": "angular-poc-demos",
+    "name": "Angular proof of concept demos",
+    "category": "Web apps",
+    "date": "2015",
+    "tech": [
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
+    ],
+    "highlights": [
+      "Created whilst learning and seeking examples of some angular features",
+      "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
+    ],
+    "urls": [
+      "https://angular-poc-demos.firebaseapp.com"
+    ]
+  },
+  {
+    "id": "fifthweek",
+    "name": "Fifthweek",
+    "category": "Web apps",
+    "date": "2014-2015",
+    "tech": [
+       "AngularJS",
+       "JavaScript",
+       "HTML5, CSS3",
+       "Grunt",
+       "Sass"
+    ],
+    "highlights": [
+      "Contributed to the first version of the product",
+      "Built some core features involving business logic, angular routing and more",
+      "Owned the UI - integrated designs, branding"
+    ],
+    "urls": [
+      "http://fifthweek.com"
+    ]
+  },
+  {
+    "id": "reedsy",
+    "name": "Reedsy",
+    "category": "Web apps",
+    "date": "2014-15",
+    "tech": [
+       "HTML5, CSS3",
+       "Sass",
+       "AngularJS",
+       "JavaScript, jQuery",
+       "Rails",
+       "Photoshop, Sketch"
+    ],
+    
+    "highlights": [
+      "Contributed to the first version of the product, building new features, integrating designs, branding",
+      "Built and maintained a custom, scalable UI framework to be used on any device, anywhere",
+      "Various 3rd party and social media integrations",
+      "Built multiple landing pages during launch"
+    ],
+    "thoughts": [
+      { "copy": "I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team." }
+    ],
+    "urls": [
+      "http://reedsy.com"
+    ]
+  },
+  {
+    "id": "tailster",
+    "name": "Tailster",
+    "category": "Web apps",
+    "date": "2014-15",
+    "tech": [
+       "HTML5, CSS3",
+       "Less",
+       "AngularJS",
+       "JavaScript",
+       "Gulp",
+       "Photoshop"
+    ],
+    "highlights": [
+      "Delivered many new features, integrating with APIs",
+      "Integrated a new, cleaner design",
+      "Refactoring, cleaning the codebase",
+      "Contributed to the cordova iOS app"
+    ],
+    "urls": [
+      "http://tailster.com"
+    ]
+  },
+  {
+		"id": "dvla-personalised-registrations",
+		"name": "DVLA: Personalised Registrations",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
+		],
+		"highlights": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		]
+  },
+  {
+		"id": "dvla-sell-a-vehicle-into-the-motor-trade",
+		"name": "DVLA: Sell a vehicle into the motor trade",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
+		],
+		"highlights": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		]
+  },
+  {
+		"id": "dvla-buy-a-vehicle-from-the-motor-trade",
+		"name": "DVLA: Buy a vehicle from the motor trade",
+		"category": "Web apps",
+		"date": "2014",
+		"tech": [
+			 "HTML5, CSS3",
+			 "Sass",
+			 "JavaScript, jQuery",
+			 "Play, Scala"
+		],
+		"highlights": [
+			"Converted paper based processes into a streamlined online application",
+			"UX and mobile first approaches",
+			"GDS guidlines and approvals"
+		]
+  },
+    {
+        "id": "robbie-williams",
+        "name": "Robbie Williams",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "collins-learning",
+        "name": "Collins Learning",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "tolkien",
+        "name": "Tolkien",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "electrolux",
+        "name": "Electrolux Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "aeg",
+        "name": "AEG Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "zanussi",
+        "name": "Zanussi Parts & Accessories",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "hoover",
+        "name": "Hoover Spares",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "the-store",
+        "name": "The Store",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "william-curley",
+        "name": "William Curley",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "farrell",
+        "name": "Farrell",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "new-naturalists",
+        "name": "New Naturalists",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jbrand",
+        "name": "J Brand",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "werelse",
+        "name": "Werelse",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "wpfp",
+        "name": "Who Pays Full Price",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "powatag",
+        "name": "Powatag",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "enterprising-britain",
+        "name": "Enterprising Britain",
+        "category": "Other",
+        "mini": true,
+        "mini": true
+    },
+    {
+        "id": "powa",
+        "name": "Powa",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "mpowa",
+        "name": "mpowa",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/list-icon-manipulator",
+        "name": "List Icon Manipulator",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/active-hover-states",
+        "name": "Active Hover States",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "jquery/portrolio",
+        "name": "Portrolio",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "propax-malaysia",
+        "name": "Propax Malaysia",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "life-financial-solutions",
+        "name": "Life Financial Solutions",
+        "category": "Other",
+        "mini": true
+    },
+        {
+        "id": "celebrity-smiles",
+        "name": "Celebrity Smiles",
+        "category": "Other",
+        "mini": true
+    },
+    {
+        "id": "gold-challenge",
+        "name": "Gold Challenge",
+        "category": "Other",
+        "mini": true
+    }
+]
