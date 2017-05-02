@@ -1,7 +1,6 @@
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
-import moment from 'moment';
 import H2 from 'components/H2';
 import Track from './Track';
 import {
@@ -87,7 +86,6 @@ describe('<Track />', () => {
         const actual = wrapper.containsMatchingElement(
           <SubHeading>
             <InlineElm>#{mockProps.track.genre}</InlineElm>
-            <Date>{moment(mockProps.track.created_at).format('Do MMM YYYY')}</Date>
           </SubHeading>
         );
         expect(actual).toBeTruthy();
@@ -99,7 +97,6 @@ describe('<Track />', () => {
         const actual = wrapper.containsMatchingElement(
           <SubHeading>
             <InlineElm>#{mockPropsWithCurrentTime.track.genre}</InlineElm>
-            <Date>{moment(mockPropsWithCurrentTime.track.created_at).format('Do MMM YYYY')}</Date>
             <StyledTimer
               duration={mockPropsWithCurrentTime.duration / 1000}
               currentTime={mockPropsWithCurrentTime.currentTime}

@@ -44,7 +44,7 @@ module.exports = (options) => ({
     }, {
       test: /\.(mp4|webm)$/,
       loader: 'url-loader?limit=10000',
-    }],
+    }]
   },
   plugins: options.plugins.concat([
     new webpack.ProvidePlugin({
@@ -60,7 +60,7 @@ module.exports = (options) => ({
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
-    new webpack.NamedModulesPlugin(),
+    new webpack.NamedModulesPlugin()
   ]),
   resolve: {
     modules: ['app', 'node_modules'],

@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import moment from 'moment';
 import H2 from 'components/H2';
 import {
   RootFlex,
@@ -9,7 +8,6 @@ import {
   SubHeading,
   ImgWrap,
   StyledImg,
-  Date,
   StyledButtonPlay,
   StyledTimer,
   StyledProgress,
@@ -43,7 +41,6 @@ const Track = (props) => {
         <H2>{track.title}</H2>
         <SubHeading>
           <InlineElm>#{track.genre}</InlineElm>
-          <Date>{moment(track.created_at).format('Do MMM YYYY')}</Date>
           {currentTime > 0.1 &&
             <StyledTimer duration={duration / 1000} currentTime={currentTime} {...props} />
           }

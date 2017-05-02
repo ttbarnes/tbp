@@ -39,10 +39,6 @@ export const SubHeading = styled.div`
   display: flex;
 `;
 
-export const Date = styled(InlineElm)`
-  color: #B9B9B9;
-`;
-
 export const StyledTimer = styled(Timer)`
   flex-grow: 1;
   text-align: right;
