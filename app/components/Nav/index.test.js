@@ -1,8 +1,7 @@
+import Menu from 'react-burger-menu';
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
-import Menu from 'react-burger-menu';
-const BurgerMenu = Menu.slide;
 import Nav from './index';
 import {
   Root,
@@ -10,6 +9,7 @@ import {
   NavLink
 } from './styled';
 import { NAV_MAX_WIDTH } from '../styledShared';
+const BurgerMenu = Menu.slide;
 
 const mockLocation = { pathname: '/about' };
 const mockLocationHome = { pathname: '/' };

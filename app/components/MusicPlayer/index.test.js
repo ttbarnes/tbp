@@ -1,9 +1,9 @@
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
+import { SoundPlayerContainer } from 'react-soundplayer/addons';
 import MusicPlayer from './index';
 import Track from './Track';
-import { SoundPlayerContainer } from 'react-soundplayer/addons';
 
 const mockUrl = 'http://soundcloud.com/ttonyb/something';
 

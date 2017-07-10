@@ -2,9 +2,9 @@
  * Test the request function
  */
 
-import request from '../request';
 import sinon from 'sinon';
 import expect from 'expect';
+import request from '../request';
 
 describe('request', () => {
   // Before each test, stub the fetch function

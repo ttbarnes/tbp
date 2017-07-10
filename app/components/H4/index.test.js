@@ -1,8 +1,7 @@
-import H4 from './index';
-
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
+import H4 from './index';
 
 describe('<H4 />', () => {
   it('should render a prop', () => {

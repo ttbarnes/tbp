@@ -3,11 +3,12 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import LazyLoad from 'react-lazyload';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { FadeIn } from 'components/styledShared';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
 import List from '../../components/List';
-import { createStructuredSelector } from 'reselect';
 import {
   selectAboutTech
 } from './selectors';
@@ -17,8 +18,6 @@ import {
   StyledList,
   StyledTag
 } from './styled';
-
-import { FadeIn } from 'components/styledShared';
 
 const groupsWithStyledTag = [
   'lately',

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
-import H1 from '../../components/H1';
+import H1 from 'components/H1';
 import Tag from 'components/Tag';
 import MusicPlayer from 'components/MusicPlayer';
 import VideoPlayer from 'components/VideoPlayer';

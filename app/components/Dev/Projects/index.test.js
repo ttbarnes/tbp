@@ -1,13 +1,14 @@
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
-import Projects from './index';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import PageLink from 'components/PageLink';
+import Projects from './index';
 import projectsData from '../../../data/projects.json';
+
 
 const mock = {
   activeFilter: 'Something',

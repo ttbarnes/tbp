@@ -1,6 +1,5 @@
-import React, { PropTypes } from 'react';
 import Menu from 'react-burger-menu';
-const BurgerMenu = Menu.slide;
+import React, { PropTypes } from 'react';
 import { NAV_MAX_WIDTH } from '../styledShared';
 import {
   Root,
@@ -8,6 +7,7 @@ import {
   NavLinkRoot,
   NavLink
 } from './styled';
+const BurgerMenu = Menu.slide;
 
 class Nav extends React.Component { // eslint-disable-line react/prefer-stateless-function
 

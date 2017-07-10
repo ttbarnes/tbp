@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
-import ProjectSingle from './index';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
@@ -11,6 +10,7 @@ import List from 'components/List';
 import Tag from 'components/Tag';
 import Img from 'components/Img';
 import PageLink from 'components/PageLink';
+import ProjectSingle from './index';
 import { ThoughtsItem } from './details';
 import { SmallDate } from './styled';
 

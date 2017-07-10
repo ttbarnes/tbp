@@ -1,8 +1,7 @@
-import A from './index';
-
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
+import A from './index';
 
 const href = 'http://google.com/';
 const children = (<h1>Test</h1>);
