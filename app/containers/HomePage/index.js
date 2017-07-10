@@ -3,12 +3,15 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import H1 from 'components/H1';
 import {
+  StyledP,
   Root,
   FlexRoot,
+  FlexRootIntro,
   Flex,
   StyledH2,
   StyledImg,
-  Intro
+  Intro,
+  IntroP
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
@@ -24,20 +27,20 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           ]}
         />
         <H1 hide>Tony Barnes</H1>
-        <FlexRoot>
+        <FlexRootIntro>
           <Flex>
             <StyledImg src={TbImage} alt="Tony Barnes" />
           </Flex>
           <div>
             <StyledH2>Hello! I{'\''}m Tony.</StyledH2>
-            <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
+            <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP>
           </div>
-        </FlexRoot>
+        </FlexRootIntro>
 
         <FlexRoot>
           <Flex></Flex>
           <Intro>
-            <p>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></p>
+            <IntroP>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></IntroP>
           </Intro>
         </FlexRoot>
       </Root>

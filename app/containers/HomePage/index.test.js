@@ -4,7 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import HomePage from './index';
-import { StyledH2, StyledImg } from './styled';
+import { StyledH2, StyledP, StyledImg } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
@@ -34,7 +34,7 @@ describe('<HomePage />', () => {
   it('should have correct copy', () => {
     const actual = wrapper.containsAllMatchingElements([
       <StyledH2>Hello! I{'\''}m Tony.</StyledH2>,
-      <p>Developer, musician, cyclist, FPV pilot, tea drinker.</p>
+      <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP>
     ]);
     expect(actual).toEqual(true);
   });

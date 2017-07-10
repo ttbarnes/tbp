@@ -7,7 +7,24 @@ export const Root = styled.article`
   max-width: 550px;
   width: 100%;
   margin: 0 auto;
-  padding-top: ${CONTAINER_SPACING_VERTICAL};
+  ${media.md`
+    padding-top: ${CONTAINER_SPACING_VERTICAL};
+  `}
+`;
+
+export const StyledP = styled.p`
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  ${media.xxxs`
+    max-width: 63%;
+  `}
+  ${media.xxs`
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  `}
 `;
 
 export const FlexRoot = styled.article`
@@ -16,6 +33,17 @@ export const FlexRoot = styled.article`
   ${media.sm`
     display: flex;
     text-align: left;
+  `}
+`;
+
+export const FlexRootIntro = styled.article`
+text-align: center;
+  align-items: center;
+  margin-top: -2em;
+  ${media.sm`
+    display: flex;
+    text-align: left;
+    margin-top: 0;
   `}
 `;
 
@@ -42,4 +70,11 @@ export const StyledImg = styled(Img)`
 
 export const Intro = styled.div`
   padding-top: 0.5em;
+`;
+
+export const IntroP = styled.p`
+  line-height: 2.2em;
+  ${media.md`
+    line-height: 1.5em;
+  `}
 `;
