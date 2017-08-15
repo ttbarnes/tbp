@@ -1,15 +1,32 @@
 [
   {
+    "id": "john-lewis",
+    "name": "John Lewis",
+    "category": "Web apps",
+    "date": "2017 - present",
+    "tech": [
+       "React",
+       "Redux",
+       "JavaScript",
+       "ES6",
+       "Webpack",
+       "Sass"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
+    ]
+  },
+  {
     "id": "trainline",
     "name": "Trainline",
     "category": "Web apps",
-    "date": "2016 - present",
+    "date": "2016-17",
     "tech": [
        "React",
-       "Redux", 
+       "Redux",
        "TypeScript",
        "JavaScript",
-       "ES6", 
+       "ES6",
        "Webpack",
        "Aphrodite"
     ],
@@ -272,7 +289,7 @@
        "Rails",
        "Photoshop, Sketch"
     ],
-    
+
     "highlights": [
       "Contributed to the first version of the product, building new features, integrating designs, branding",
       "Built and maintained a custom, scalable UI framework to be used on any device, anywhere",
