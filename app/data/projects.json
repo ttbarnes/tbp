@@ -17,6 +17,24 @@
     ]
   },
   {
+    "id": "fr-cms",
+    "name": "FR CMS",
+    "category": "Web apps",
+    "date": "2017 - present",
+    "tech": [
+       "React",
+       "Redux",
+       "MongoDB, Mongoose",
+       "Express, Node js",
+       "JavaScript, ES6",
+       "Webpack",
+       "Sass"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
+    ]
+  },
+  {
     "id": "trainline",
     "name": "Trainline",
     "category": "Web apps",
