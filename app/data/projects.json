@@ -50,20 +50,23 @@
     ],
     "highlights": [
       "Re-platformed the main desktop app",
-      "Built many smart, dumb and reusable React components complete with TypeScript and accessibility",
-      "Owned the main 'Journey Summary sidebar' component that works alongside search results & checkout flow",
-      "Built a ‘sticky component’ that changes position depending on other elements positioning and/or props",
+      "Many smart, dumb and reusable React components complete with TypeScript and accessibility",
+      "Built various checkout features/components including Travel Options, Delivery options and the Journey Summary",
+      "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price",
       "Refactored various selectors and unit tests",
-      "Built a login form with email validation",
-      "Built seat reservations & delivery options components",
-      "Google calendar API integration",
-      "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price"
+      "Google calendar API integration"
     ],
-    "moreInfoSoon": [
-      "More info coming soon."
+    "thoughts":[
+      { "copy": "I really enjoyed owning the main 'Journey Summary sidebar' component that changes depending on various conditions in the search results & checkout flow. We also built a reusable ‘sticky component’ that changes position depending on other elements positioning and/or props:" },
+      { "img": "inner01" },
+      { "img": "inner02" },
+      { "img": "inner03" },
+      { "copy": "I was also pleased with the login form we built:"},
+      { "img": "inner04" },
+      { "copy": "New and improved mobile web app flow:"},
+      { "img": "inner05" }
     ],
     "urls": [
-      "http://github.com",
       "http://trainline.com"
     ]
   },
