@@ -71,6 +71,13 @@
     ]
   },
   {
+    "id": "full-fact",
+    "name": "Full Fact",
+    "category": "Other",
+    "date": "2016 - 2017",
+    "mini": true
+  },
+  {
     "id": "plantstove",
     "name": "Plantstove",
     "category": "Web apps",
