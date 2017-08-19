@@ -1,15 +1,15 @@
 import { createSelector } from 'reselect';
 
-const selectGlobal = () => (state) => state.get('global');
+const selectGlobal = () => (state) => state.global;
 
 const selectLoading = () => createSelector(
   selectGlobal(),
-  (globalState) => globalState.get('loading')
+  (globalState) => globalState.loading
 );
 
 const selectError = () => createSelector(
   selectGlobal(),
-  (globalState) => globalState.get('error')
+  (globalState) => globalState.error
 );
 
 const selectLocationState = () => {
@@ -17,11 +17,11 @@ const selectLocationState = () => {
   let prevRoutingStateJS;
 
   return (state) => {
-    const routingState = state.get('route'); // or state.route
+    const routingState = state.route;
 
-    if (!routingState.equals(prevRoutingState)) {
+    if (routingState !== prevRoutingState) {
       prevRoutingState = routingState;
-      prevRoutingStateJS = routingState.toJS();
+      prevRoutingStateJS = routingState;
     }
 
     return prevRoutingStateJS;

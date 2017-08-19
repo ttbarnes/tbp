@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-const selectAbout = () => (state) => state.get('about');
+const selectAbout = () => (state) => state.about;
 
 const selectAboutTech = () => createSelector(
   selectAbout(),

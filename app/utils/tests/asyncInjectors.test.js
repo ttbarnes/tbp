@@ -5,7 +5,6 @@
 import expect from 'expect';
 import { memoryHistory } from 'react-router';
 import { put } from 'redux-saga/effects';
-import { fromJS } from 'immutable';
 import configureStore from '../../store';
 
 import {
@@ -16,7 +15,7 @@ import {
 
 // Fixtures
 
-const initialState = fromJS({ reduced: 'soon' });
+const initialState = { reduced: 'soon' };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -48,11 +47,12 @@ describe('asyncInjectors', () => {
 
       injectReducer('test', reducer);
       injectSagas(sagas);
+      const state = store.getState();
 
-      const actual = store.getState().get('test');
+      const actual = state.test;
       const expected = initialState.merge({ reduced: 'yup' });
 
-      expect(actual.toJS()).toEqual(expected.toJS());
+      expect(actual).toEqual(expected);
     });
 
     it('should throw if passed invalid store shape', () => {
@@ -80,11 +80,11 @@ describe('asyncInjectors', () => {
         const injectReducer = injectAsyncReducer(store);
 
         injectReducer('test', reducer);
-
-        const actual = store.getState().get('test');
+        const state = store.getState();
+        const actual = state.test;
         const expected = initialState;
 
-        expect(actual.toJS()).toEqual(expected.toJS());
+        expect(actual).toEqual(expected);
       });
 
       it('should throw if passed invalid name', () => {
@@ -133,11 +133,12 @@ describe('asyncInjectors', () => {
         const injectSagas = injectAsyncSagas(store);
 
         injectSagas(sagas);
+        const state = store.getState();
 
-        const actual = store.getState().get('test');
+        const actual = state.test;
         const expected = initialState.merge({ reduced: 'yup' });
 
-        expect(actual.toJS()).toEqual(expected.toJS());
+        expect(actual).toEqual(expected);
       });
 
       it('should throw if passed invalid saga', () => {

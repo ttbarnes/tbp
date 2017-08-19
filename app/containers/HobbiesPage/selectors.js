@@ -1,10 +1,10 @@
 import { createSelector } from 'reselect';
 
-const selectHobbies = () => (state) => state.get('hobbies');
+const selectHobbies = () => (state) => state.hobbies;
 
 const selectActivities = () => createSelector(
   selectHobbies(),
-  (hobbiesState) => hobbiesState.get('activities')
+  (hobbiesState) => hobbiesState.activities
 );
 
 export {

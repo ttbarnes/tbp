@@ -56,8 +56,6 @@ describe('<ProjectSingle />', () => {
     <ProjectSingle data={mockProject} />
   );
 
-  wrapper.toJS = () => true;
-
   // TODO: properly test Helmet props
   it('should have a helmet component', () => {
     const actual = wrapper.find(Helmet);

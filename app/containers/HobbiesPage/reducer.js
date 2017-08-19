@@ -1,9 +1,8 @@
-import { fromJS } from 'immutable';
 import activities from '../../data/hobbies.json';
 
-const initialState = fromJS({
+const initialState = {
   activities
-});
+};
 
 function nonDevReducers(state = initialState, action) {
   switch (action.type) {

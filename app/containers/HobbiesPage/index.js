@@ -17,7 +17,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
   constructor(props) {
     super(props);
     this.state = {
-      activities: this.props.activities.toJS(),
+      activities: this.props.activities
     };
   }
 
@@ -70,7 +70,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
 }
 
 HobbiesPage.propTypes = {
-  activities: PropTypes.object
+  activities: PropTypes.array
 };
 
 const mapStateToProps = createStructuredSelector({

@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-const selectProjects = () => (state) => state.get('projects');
+const selectProjects = () => (state) => state.projects;
 
 const selectProjectsData = () => createSelector(
   selectProjects(),
