@@ -16,7 +16,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import FontFaceObserver from 'fontfaceobserver';
 import { useScroll } from 'react-router-scroll';
 import ReactGA from 'react-ga';
 import 'sanitize.css/sanitize.css';
@@ -27,17 +26,6 @@ import { GA_TRACKING } from './constants';
 import './global-styles';
 import createRoutes from './routes';
 ReactGA.initialize(GA_TRACKING);
-
-// Observe loading of Open Sans (to remove open sans, remove the <link> tag in
-// the index.html file and this observer)
-const openSansObserver = new FontFaceObserver('Open Sans', {});
-
-// When Open Sans is loaded, add a font-family using Open Sans to the body
-openSansObserver.load().then(() => {
-  document.body.classList.add('fontLoaded');
-}, () => {
-  document.body.classList.remove('fontLoaded');
-});
 
 // Create redux store with history
 // this uses the singleton browserHistory provided by react-router
