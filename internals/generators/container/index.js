@@ -34,11 +34,6 @@ module.exports = {
     name: 'wantActionsAndReducer',
     default: true,
     message: 'Do you want an actions/constants/selectors/reducer tupel for this container?',
-  }, {
-    type: 'confirm',
-    name: 'wantSagas',
-    default: true,
-    message: 'Do you want sagas for asynchronous flows? (e.g. fetching data)',
   }],
   actions: (data) => {
     // Generate index.js and index.test.js
@@ -104,22 +99,6 @@ module.exports = {
         type: 'add',
         path: '../../app/containers/{{properCase name}}/tests/reducer.test.js',
         templateFile: './container/reducer.test.js.hbs',
-        abortOnFail: true,
-      });
-    }
-
-    // Sagas
-    if (data.wantSagas) {
-      actions.push({
-        type: 'add',
-        path: '../../app/containers/{{properCase name}}/sagas.js',
-        templateFile: './container/sagas.js.hbs',
-        abortOnFail: true,
-      });
-      actions.push({
-        type: 'add',
-        path: '../../app/containers/{{properCase name}}/tests/sagas.test.js',
-        templateFile: './container/sagas.test.js.hbs',
         abortOnFail: true,
       });
     }

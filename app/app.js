@@ -5,9 +5,6 @@
  * code.
  */
 
-// Needed for redux-saga es6 generator support
-import 'babel-polyfill';
-
 /* eslint-disable import/no-unresolved, import/extensions */
 // Load the favicon
 // import 'file-loader?name=[name].[ext]!./favicon.ico';

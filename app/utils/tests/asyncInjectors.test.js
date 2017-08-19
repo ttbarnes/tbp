@@ -4,12 +4,10 @@
 
 import expect from 'expect';
 import { memoryHistory } from 'react-router';
-import { put } from 'redux-saga/effects';
 import configureStore from '../../store';
 
 import {
   injectAsyncReducer,
-  injectAsyncSagas,
   getAsyncInjectors,
 } from '../asyncInjectors';
 
@@ -26,14 +24,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-function* testSaga() {
-  yield put({ type: 'TEST', payload: 'yup' });
-}
-
-const sagas = [
-  testSaga,
-];
-
 describe('asyncInjectors', () => {
   let store;
 
@@ -43,10 +33,9 @@ describe('asyncInjectors', () => {
     });
 
     it('given a store, should return all async injectors', () => {
-      const { injectReducer, injectSagas } = getAsyncInjectors(store);
+      const { injectReducer } = getAsyncInjectors(store);
 
       injectReducer('test', reducer);
-      injectSagas(sagas);
       const state = store.getState();
 
       const actual = state.test;
@@ -120,40 +109,6 @@ describe('asyncInjectors', () => {
 
         try {
           injectReducer('coolio', 12345);
-        } catch (err) {
-          result = err.name === 'Invariant Violation';
-        }
-
-        expect(result).toEqual(true);
-      });
-    });
-
-    describe('injectAsyncSagas', () => {
-      it('given a store, it should provide a function to inject a saga', () => {
-        const injectSagas = injectAsyncSagas(store);
-
-        injectSagas(sagas);
-        const state = store.getState();
-
-        const actual = state.test;
-        const expected = initialState.merge({ reduced: 'yup' });
-
-        expect(actual).toEqual(expected);
-      });
-
-      it('should throw if passed invalid saga', () => {
-        let result = false;
-
-        const injectSagas = injectAsyncSagas(store);
-
-        try {
-          injectSagas({ testSaga });
-        } catch (err) {
-          result = err.name === 'Invariant Violation';
-        }
-
-        try {
-          injectSagas(testSaga);
         } catch (err) {
           result = err.name === 'Invariant Violation';
         }
