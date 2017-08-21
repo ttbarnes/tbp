@@ -53,7 +53,7 @@
       "Many smart, dumb and reusable React components complete with TypeScript and accessibility",
       "Built various checkout features/components including Travel Options, Delivery options and the Journey Summary",
       "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price",
-      "Refactored various selectors and unit tests",
+      "Refactored various selectors, unit tests and components",
       "Google calendar API integration"
     ],
     "thoughts":[
@@ -63,7 +63,7 @@
       { "img": "inner03" },
       { "copy": "I was also pleased with the login form we built:"},
       { "img": "inner04" },
-      { "copy": "New and improved mobile web app flow:"},
+      { "copy": "...and the new and improved mobile web app flow:"},
       { "img": "inner05" }
     ],
     "urls": [
