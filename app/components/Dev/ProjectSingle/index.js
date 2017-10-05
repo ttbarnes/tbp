@@ -102,7 +102,7 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
                   <H4>Links</H4>
                   <List showListStyle>
                     {project.urls.map((item) =>
-                      <Link to={item} target="_blank" key={item}>
+                      <Link to={item} target="_blank" rel="noopener" key={item}>
                         {item.includes('github.com') ? (
                           'GitHub repo'
                         ) : (

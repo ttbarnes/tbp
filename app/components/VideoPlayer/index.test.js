@@ -45,7 +45,7 @@ describe('<VideoPlayer />', () => {
     );
     const actual = wrapper.containsMatchingElement(
       <VideoFooter>
-        <A href={`https://www.youtube.com/watch?v=${mockProps.videoId}`} target="_blank">Watch on YouTube</A>
+        <A href={`https://www.youtube.com/watch?v=${mockProps.videoId}`} target="_blank" rel="noopener">Watch on YouTube</A>
       </VideoFooter>
     );
     expect(actual).toBeTruthy();

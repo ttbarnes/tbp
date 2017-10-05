@@ -62,7 +62,7 @@ const Track = (props) => {
           <p className="no-margin">{track.description}</p>
         )}
 
-        <StyledA href={track.permalink_url} target="_blank">Listen on SoundCloud</StyledA>
+        <StyledA href={track.permalink_url} target="_blank" rel="noopener">Listen on SoundCloud</StyledA>
 
       </ColDetails>
 

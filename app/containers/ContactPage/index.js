@@ -19,8 +19,8 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
 
         <H1 hide>Contact</H1>
         <H2 h1Size>I{'\''}d love to talk, i{'\''}m very friendly!</H2>
-        <p><Link to="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</Link></p>
-        <p><Link to="http://twitter.com/ttbarnes" target="_blank">{'@'}ttbarnes</Link></p>
+        <p><a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
+        <p><Link to="http://twitter.com/ttbarnes" target="_blank" rel="noopener">{'@'}ttbarnes</Link></p>
 
       </article>
     );

@@ -22,7 +22,7 @@ const VideoPlayer = (props) => {
       <p>{video.description}</p>
       <YouTube videoId={video.videoId} opts={youTubeOpts} />
       <VideoFooter>
-        <A href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank">Watch on YouTube</A>
+        <A href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank" rel="noopener">Watch on YouTube</A>
       </VideoFooter>
     </article>
   );

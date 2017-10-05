@@ -38,32 +38,32 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
       <Root>
         <ListRoot>
           <ListItem aria-label="Twitter">
-            <StyledLink to={SOCIAL_TWITTER} target="_blank">
+            <StyledLink to={SOCIAL_TWITTER} target="_blank" rel="noopener">
               <IconTwitter />
             </StyledLink>
           </ListItem>
           <ListItem aria-label="Github">
-            <StyledLink to={SOCIAL_GITHUB} target="_blank">
+            <StyledLink to={SOCIAL_GITHUB} target="_blank" rel="noopener">
               <IconGithub />
             </StyledLink>
           </ListItem>
           <ListItem aria-label="StackOverflow">
-            <StyledLink to={SOCIAL_STACKOVERFLOW} target="_blank">
+            <StyledLink to={SOCIAL_STACKOVERFLOW} target="_blank" rel="noopener">
               <IconStackOverflow />
             </StyledLink>
           </ListItem>
           <ListItem aria-label="LinkedIn">
-            <StyledLink to={SOCIAL_LINKEDIN} target="_blank">
+            <StyledLink to={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
               <IconLinkedIn />
             </StyledLink>
           </ListItem>
           <ListItem aria-label="SoundCloud">
-            <StyledLink to={SOCIAL_SOUNDCLOUD} target="_blank">
+            <StyledLink to={SOCIAL_SOUNDCLOUD} target="_blank" rel="noopener">
               <IconSoundCloud />
             </StyledLink>
           </ListItem>
           <ListItem aria-label="YouTube">
-            <StyledLink to={SOCIAL_YOUTUBE} target="_blank">
+            <StyledLink to={SOCIAL_YOUTUBE} target="_blank" rel="noopener">
               <IconYouTube />
             </StyledLink>
           </ListItem>

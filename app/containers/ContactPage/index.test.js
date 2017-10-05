@@ -24,7 +24,7 @@ describe('<ContactPage />', () => {
 
   it('should have correct email link', () => {
     const actual = wrapper.containsMatchingElement(
-      <Link to="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</Link>
+      <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a>
     );
     expect(actual).toEqual(true);
   });

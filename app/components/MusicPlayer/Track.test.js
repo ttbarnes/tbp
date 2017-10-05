@@ -136,7 +136,7 @@ describe('<Track />', () => {
         <Track {...mockProps} />
       );
       const actual = wrapper.containsMatchingElement(
-        <StyledA href={mockProps.permalink_url} target="_blank">Listen on SoundCloud</StyledA>
+        <StyledA href={mockProps.permalink_url} target="_blank" rel="noopener">Listen on SoundCloud</StyledA>
       );
       expect(actual).toBeTruthy();
     });
