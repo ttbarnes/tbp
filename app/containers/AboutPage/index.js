@@ -91,11 +91,11 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
-          <p>I{'\''}m currently building awesome interfaces with <a to="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </a>.
-           Recently helped change the world of travel at <a to="http://trainline.com" target="_blank" rel="noopener">Trainline</a>.
-           On the side I{'\''}m building a <a to="http://plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
-           Also creating a <a to="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a>.
-           Previously built a <a to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</a>.</p>
+          <p>I{'\''}m currently building awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </a>.
+           Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a>.
+           On the side I{'\''}m building a <a href="http://plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
+           Also creating a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a>.
+           Previously built a <a href="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</a>.</p>
         </Intro>
 
         <ul>

@@ -44,7 +44,7 @@ describe('<Footer />', () => {
     it('twitter', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="Twitter">
-          <StyledLink to={SOCIAL_TWITTER} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_TWITTER} target="_blank" rel="noopener">
             <IconTwitter />
           </StyledLink>
         </ListItem>
@@ -54,7 +54,7 @@ describe('<Footer />', () => {
     it('github', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="Github">
-          <StyledLink to={SOCIAL_GITHUB} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_GITHUB} target="_blank" rel="noopener">
             <IconGithub />
           </StyledLink>
         </ListItem>
@@ -64,7 +64,7 @@ describe('<Footer />', () => {
     it('stackoverflow', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="StackOverflow">
-          <StyledLink to={SOCIAL_STACKOVERFLOW} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_STACKOVERFLOW} target="_blank" rel="noopener">
             <IconStackOverflow />
           </StyledLink>
         </ListItem>
@@ -74,7 +74,7 @@ describe('<Footer />', () => {
     it('linkedin', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="LinkedIn">
-          <StyledLink to={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
             <IconLinkedIn />
           </StyledLink>
         </ListItem>
@@ -84,7 +84,7 @@ describe('<Footer />', () => {
     it('soundcloud', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="SoundCloud">
-          <StyledLink to={SOCIAL_SOUNDCLOUD} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_SOUNDCLOUD} target="_blank" rel="noopener">
             <IconSoundCloud />
           </StyledLink>
         </ListItem>
@@ -94,7 +94,7 @@ describe('<Footer />', () => {
     it('youtube', () => {
       const actual = wrapper.containsMatchingElement(
         <ListItem aria-label="YouTube">
-          <StyledLink to={SOCIAL_YOUTUBE} target="_blank" rel="noopener">
+          <StyledLink href={SOCIAL_YOUTUBE} target="_blank" rel="noopener">
             <IconYouTube />
           </StyledLink>
         </ListItem>
