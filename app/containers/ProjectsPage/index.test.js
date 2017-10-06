@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import ProjectsPage from './index';
 import projectsData from '../../data/projects.json';
 
-import configureStore from '../../store';
+import configureStore from '../../configureStore';
 const initialState = {};
 const store = configureStore(initialState);
 

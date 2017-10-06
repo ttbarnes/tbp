@@ -3,7 +3,7 @@
  */
 
 import expect from 'expect';
-import configureStore from 'store';
+import configureStore from 'configureStore';
 import { memoryHistory } from 'react-router';
 
 import {

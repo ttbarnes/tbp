@@ -4,7 +4,7 @@
 
 import expect from 'expect';
 import { memoryHistory } from 'react-router';
-import configureStore from '../../store';
+import configureStore from '../../configureStore';
 
 import {
   injectAsyncReducer,
