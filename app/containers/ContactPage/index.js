@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 
@@ -20,11 +19,11 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
         <H1 hide>Contact</H1>
         <H2 h1Size>I{'\''}d love to talk, i{'\''}m very friendly!</H2>
         <p><a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
-        <p><Link to="http://twitter.com/ttbarnes" target="_blank" rel="noopener">{'@'}ttbarnes</Link></p>
+        <p><a href="http://twitter.com/ttbarnes" target="_blank" rel="noopener">{'@'}ttbarnes</a></p>
 
       </article>
     );
   }
 }
 
-export default (ContactPage);
+export default ContactPage;

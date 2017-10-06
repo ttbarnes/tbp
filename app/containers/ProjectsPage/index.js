@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Projects from 'components/Dev/Projects';
@@ -47,4 +48,8 @@ const mapStateToProps = createStructuredSelector({
 });
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProjectsPage);
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+
+export default compose(
+  withConnect
+)(ProjectsPage);

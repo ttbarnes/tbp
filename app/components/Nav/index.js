@@ -5,7 +5,7 @@ import {
   Root,
   ListRoot,
   NavLinkRoot,
-  NavLink
+  NavNavLink
 } from './styled';
 const BurgerMenu = Menu.slide;
 
@@ -40,11 +40,12 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   render() {
     const { location } = this.props;
     const { isLargeScreen } = this.state;
-    const isHomePage = location.pathname === '/';
+
+    const isHomePage = location && location.pathname === '/';
 
     // temp solution for active nav of child page.
     // routing is done quite differently from boilerplate.
-    const isProjectSinglePage = location.pathname.includes('projects/');
+    const isProjectSinglePage = location && location.pathname.includes('projects/');
 
     if (isHomePage) {
       return null;
@@ -61,9 +62,9 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           <div>
             <ListRoot>
               <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
-              <NavLink to="/about" activeClassName="active">About</NavLink>
-              <NavLink to="/projects" activeClassName="active" className={isProjectSinglePage && 'active'}>Projects</NavLink>
-              <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+              <NavNavLink to="/about" activeClassName="active">About</NavNavLink>
+              <NavNavLink to="/projects" activeClassName="active" className={isProjectSinglePage && 'active'}>Projects</NavNavLink>
+              <NavNavLink to="/contact" activeClassName="active">Contact</NavNavLink>
             </ListRoot>
           </div>
         </BurgerMenu>
@@ -73,7 +74,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 }
 
 Nav.propTypes = {
-  location: PropTypes.object.isRequired
+  location: PropTypes.object
 };
 
 export default Nav;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import { media, colors } from '../styledShared';
 
 const NavLinkShared = `
@@ -38,7 +38,7 @@ export const ListRoot = styled.div`
   align-items: flex-start;
 `;
 
-export const NavLinkRoot = styled(Link)`
+export const NavLinkRoot = styled(NavLink)`
   ${NavLinkShared}
   padding: 0.5em;
   font-weight:bold;
@@ -49,7 +49,7 @@ export const NavLinkRoot = styled(Link)`
   }
 `;
 
-export const NavLink = styled(Link)`
+export const NavNavLink = styled(NavLink)`
   ${NavLinkShared}
   &.active,
   &:active,

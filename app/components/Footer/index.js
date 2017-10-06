@@ -28,7 +28,7 @@ import {
 class Footer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { location } = this.props;
-    const isHomePage = location.pathname === '/';
+    const isHomePage = location && location.pathname === '/';
 
     if (isHomePage) {
       return null;

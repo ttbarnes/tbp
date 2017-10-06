@@ -1,3 +1,4 @@
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import ProjectSingle from 'components/Dev/ProjectSingle';
@@ -5,8 +6,12 @@ import {
   selectProject
 } from './selectors';
 
-const mapStateToProps = (state, { params }) => createStructuredSelector({
-  data: selectProject(params.id)
+const mapStateToProps = (state, ownProps) => createStructuredSelector({
+  data: selectProject(ownProps.match.params.id)
 });
 
-export default connect(mapStateToProps, {})(ProjectSingle);
+const withConnect = connect(mapStateToProps, {});
+
+export default compose(
+  withConnect
+)(ProjectSingle);

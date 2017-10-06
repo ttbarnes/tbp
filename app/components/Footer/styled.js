@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router';
 import {
   media,
   colors,
@@ -34,7 +33,7 @@ export const ListItem = styled.li`
   ${ListItemShared}
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
   display: block;
   opacity: .3;
   padding: 1em 0.3em;

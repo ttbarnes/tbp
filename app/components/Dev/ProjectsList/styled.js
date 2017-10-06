@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import Tag from 'components/Tag';
 import { media } from '../../styledShared';
 
 export const Root = styled.div`
   clear: both;
   display: flex;
-  justifyContent: center;
+  justify-content: center;
   ${media.xlg`
     padding: 0 0.4em
   `}
@@ -14,9 +14,9 @@ export const Root = styled.div`
 
 export const ListRoot = styled.ul`
   display: flex;
-  flexFlow: row wrap;
-  listStyleType: none;
-  justifyContent: flex-start;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: flex-start;
   margin: 0 -0.7em; /* counter ListItem padding */
 `;
 

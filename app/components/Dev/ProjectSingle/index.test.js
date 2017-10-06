@@ -2,7 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H4 from 'components/H4';

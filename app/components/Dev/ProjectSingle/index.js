@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
@@ -21,7 +21,6 @@ import {
 } from './styled';
 
 export class ProjectSingle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     const {
       data
@@ -40,7 +39,6 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
 
     return (
       <Root>
-
         <Helmet
           title={(project && project.name) ? project.name : 'Project'}
           meta={[
@@ -49,7 +47,9 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
         />
 
         <section>
+
           <H1 hide>{project.name}</H1>
+
           <HeadingWrap>
             <H2>{project.name}</H2>
             <SmallDate>{project.date}</SmallDate>

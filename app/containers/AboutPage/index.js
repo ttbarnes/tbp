@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
 import LazyLoad from 'react-lazyload';
+import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { FadeIn } from 'components/styledShared';
@@ -49,8 +49,8 @@ export const renderGroup = (group) => {
   } else if (category === 'outro') {
     return (
       <div>
-        <p><Link to="/contact">Get in touch</Link></p>
-        <p>Check out some <Link to="/projects">projects i{'\''}ve worked on</Link></p>
+        <p><a href="/contact">Get in touch</a></p>
+        <p>Check out some <a href="/projects">projects i{'\''}ve worked on</a></p>
       </div>
     );
   }
@@ -91,11 +91,11 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
-          <p>I{'\''}m currently building awesome interfaces with <Link to="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </Link>.
-           Recently helped change the world of travel at <Link to="http://trainline.com" target="_blank" rel="noopener">Trainline</Link>.
-           On the side I{'\''}m building a <Link to="http://plantstove.com" target="_blank" rel="noopener">new startup idea</Link>.
-           Also creating a <Link to="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</Link>.
-           Previously built a <Link to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</Link>.</p>
+          <p>I{'\''}m currently building awesome interfaces with <a to="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </a>.
+           Recently helped change the world of travel at <a to="http://trainline.com" target="_blank" rel="noopener">Trainline</a>.
+           On the side I{'\''}m building a <a to="http://plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
+           Also creating a <a to="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a>.
+           Previously built a <a to="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</a>.</p>
         </Intro>
 
         <ul>
@@ -123,5 +123,8 @@ const mapStateToProps = createStructuredSelector({
   tech: selectAboutTech()
 });
 
-export default connect(mapStateToProps)(AboutPage);
+const withConnect = connect(mapStateToProps, {});
 
+export default compose(
+  withConnect
+)(AboutPage);

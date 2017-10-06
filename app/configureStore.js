@@ -33,18 +33,13 @@ export default function configureStore(initialState = {}, history) {
   );
 
   // Extensions
-  store.asyncReducers = {}; // Async reducer registry
+  store.injectedReducers = {};
 
   // Make reducers hot reloadable, see http://mxs.is/googmo
   /* istanbul ignore next */
   if (module.hot) {
     module.hot.accept('./reducers', () => {
-      System.import('./reducers').then((reducerModule) => {
-        const createReducers = reducerModule.default;
-        const nextReducers = createReducers(store.asyncReducers);
-
-        store.replaceReducer(nextReducers);
-      });
+      store.replaceReducer(createReducer(store.injectedReducers));
     });
   }
 

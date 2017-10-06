@@ -2,7 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { FadeIn } from 'components/styledShared';
 import H3 from '../../components/H3';
 import List from '../../components/List';

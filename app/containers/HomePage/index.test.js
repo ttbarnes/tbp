@@ -2,7 +2,7 @@ import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import HomePage from './index';
 import { StyledH2, StyledP, StyledImg } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
