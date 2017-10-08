@@ -5,7 +5,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { useScroll } from 'react-router-scroll';
-import { FadeIn } from 'components/styledShared';
+import { FadeInLong } from 'components/styledShared';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
@@ -60,10 +60,10 @@ export const renderGroup = (group) => {
 
 export const renderAboutSection = (group) =>
   <Row>
-    <FadeIn>
+    <FadeInLong>
       <H3>{group.heading}</H3>
       {renderGroup(group)}
-    </FadeIn>
+    </FadeInLong>
   </Row>;
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -99,7 +99,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>I{'\''}m currently building awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </a>.
            Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a>.
-           On the side I{'\''}m building a <a href="http://plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
+           On the side I{'\''}m building a <a href="http://www.plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
            Also creating a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a>.
            Previously built a <a href="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</a>.</p>
         </Intro>

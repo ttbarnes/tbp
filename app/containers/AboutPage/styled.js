@@ -3,11 +3,11 @@ import List from 'components/List';
 import Tag from 'components/Tag';
 
 export const Intro = styled.div`
-  margin-bottom: 7em;
+  margin-bottom: 10em;
 `;
 
 export const Row = styled.div`
-  margin-bottom: 15em;
+  margin-bottom: 20em;
 `;
 
 export const StyledList = styled(List)`
@@ -18,10 +18,10 @@ export const StyledList = styled(List)`
 
 const popUp = keyframes`
   from {
-    margin-top: 2em;
+    margin-top: 8em;
   }
   to {
-    margin-top: 0;
+    margin-top: -3em;
   }
 `;
 

@@ -23,20 +23,22 @@ export const ListRoot = styled.ul`
 export const StyledListItem = styled.li`
   flex: 1 0 150px;
   padding: 0.3em;
-  max-width: 50%;
+  max-width: 25%;
   ${media.sm`
     flex: 1 0 180px;
   `}
   ${media.md`
-    flex: 1 0 199px;
-    max-width: 100%;
+    flex: 1 0 25%;
+    max-width: 25%;
   `}
   ${media.lg`
     flex: 1 0 150px;
+    max-width: 150px;
+    max-width: 178px;
   `}
   ${media.xlg`
-    flex: 1 0 199px;
-    max-width: 199px;
+    flex: 1 0 25%;
+    max-width: 25%;
   `}
 `;
 

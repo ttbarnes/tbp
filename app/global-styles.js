@@ -49,13 +49,13 @@ injectGlobal`
   button { 
     width: 100%; 
     padding: 1em 
-    background:#CCC;
+    background: #CCC;
     color: #000; 
     cursor: pointer;
   }
 
   a {
-    color: ${colors.blue4}
+    color: ${colors.blue4};
     text-decoration: underline;
   }
 

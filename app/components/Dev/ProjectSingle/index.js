@@ -18,7 +18,6 @@ import {
   HeadingWrap,
   Row,
   SmallDate,
-  ListFlex
 } from './styled';
 
 export class ProjectSingle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -65,11 +64,11 @@ export class ProjectSingle extends React.PureComponent { // eslint-disable-line 
 
           <Row>
             <H4>Tech</H4>
-            <ListFlex>
+            <ul>
               {project.tech.map((item, index) =>
                 <Tag type={item} key={index} />
               )}
-            </ListFlex>
+            </ul>
           </Row>
 
           {project.moreInfoSoon ? (

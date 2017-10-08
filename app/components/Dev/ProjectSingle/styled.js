@@ -28,10 +28,6 @@ export const Row = styled.div`
   `}
 `;
 
-export const ListFlex = styled.ul`
-  display: 'flex'
-`;
-
 export const StyledImg = styled(Img)`
   display: block;
   margin: 3em auto;
