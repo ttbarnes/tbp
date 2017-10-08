@@ -1,7 +1,6 @@
 import React from 'react';
 // import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { useScroll } from 'react-router-scroll';
 import { Switch, Route } from 'react-router-dom';
 
 import Nav from 'components/Nav';
@@ -41,33 +40,27 @@ function App(props) {
           <Route
             path="/about"
             component={AboutPage}
-            render={() => useScroll()}
           />
           <Route
             exact
             path="/projects"
             component={ProjectsPage}
-            render={() => useScroll()}
           />
           <Route
             path="/projects/:id"
             component={DevProjectPage}
-            render={() => useScroll()}
           />
           <Route
             path="/hobbies"
             component={HobbiesPage}
-            render={() => useScroll()}
           />
           <Route
             path="/contact"
             component={ContactPage}
-            render={() => useScroll()}
           />
           <Route
             path=""
             component={NotFoundPage}
-            render={() => useScroll()}
           />
 
         </Switch>
