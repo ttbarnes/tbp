@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import {
   IconGithub,
   IconLinkedIn,
@@ -80,4 +81,12 @@ Footer.propTypes = {
   location: PropTypes.object
 };
 
-export default Footer;
+const mapStateToProps = (state) => ({
+  location: state.route.location,
+});
+
+const ConnectedFooter = connect(
+  mapStateToProps
+)(Footer);
+
+export default ConnectedFooter;

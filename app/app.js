@@ -44,7 +44,7 @@ const render = () => {
         onUpdate={logPageView}
       >
         {/* <App location={history.location} /> */}
-        <App />
+        <App location={history.location} />
       </ConnectedRouter>
     </Provider>,
     DOM_ELM

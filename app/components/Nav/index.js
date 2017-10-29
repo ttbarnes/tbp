@@ -1,5 +1,6 @@
-import Menu from 'react-burger-menu';
 import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import Menu from 'react-burger-menu';
 import { NAV_MAX_WIDTH } from '../styledShared';
 import {
   Root,
@@ -77,4 +78,13 @@ Nav.propTypes = {
   location: PropTypes.object
 };
 
-export default Nav;
+const mapStateToProps = (state) => ({
+  location: state.route.location,
+});
+
+const ConnectedNav = connect(
+  mapStateToProps
+)(Nav);
+
+
+export default ConnectedNav;

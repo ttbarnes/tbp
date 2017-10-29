@@ -1,5 +1,5 @@
 import React from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 
@@ -16,6 +16,19 @@ import NotFoundPage from 'containers/NotFoundPage/loadable';
 import { MainContent } from './styled';
 
 
+// NOTE: location is not done as best as possible due to an
+// issue in latest version of react-router/react-router-redux
+// this is a workound whilst awaiting updates
+// for now, just have to wrap each component that needs `location` prop with react-redux connect
+// see https://github.com/ReactTraining/react-router/issues/5072
+const mapStateToProps = (state) => ({
+  location: state.route.location,
+});
+
+const ConnectedSwitch = connect(
+  mapStateToProps
+)(Switch);
+
 function App(props) {
   return (
     <div>
@@ -30,7 +43,7 @@ function App(props) {
       <Nav location={props.location} />
 
       <MainContent location={props.location}>
-        <Switch>
+        <ConnectedSwitch>
 
           <Route
             exact
@@ -63,7 +76,7 @@ function App(props) {
             component={NotFoundPage}
           />
 
-        </Switch>
+        </ConnectedSwitch>
 
       </MainContent>
 
@@ -81,17 +94,7 @@ App.propTypes = {
 };
 
 App.defaultProps = {
-  location: { pathname: '/temp' } // NOTE: temp. see below
+  location: { pathname: '/' } // NOTE: temp. see below
 };
-
-// NOTE: BROKEN
-// awaiting updates.
-// see https://github.com/ReactTraining/react-router/issues/5072
-
-// const mapStateToProps = (state) => ({
-//   location: state.route.location,
-// });
-
-// export default connect(mapStateToProps)(App);
 
 export default App;
