@@ -97,8 +97,8 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
-          <p>I{'\''}m currently building awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis </a>.
-           Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a>.
+          <p>I{'\''}m currently consuming Siren, hypermedia based APIs to build FinTech UI{'\''}s at <a href="https://www.ihs.com" target="_blank" rel="noopener">IHS Markit.</a>{' '}
+           Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>.
            On the side I{'\''}m building a <a href="http://www.plantstove.com" target="_blank" rel="noopener">new startup idea</a>.
            Also creating a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a>.
            Previously built a <a href="https://github.com/ttbarnes/mean-tweets" target="_blank">mean tweets app</a>.</p>
