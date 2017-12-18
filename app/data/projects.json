@@ -1,4 +1,19 @@
-[
+[{
+    "id": "ihs-markit",
+    "name": "IHS Markit",
+    "category": "Web apps",
+    "date": "2017 - present",
+    "tech": [
+       "React",
+       "Redux",
+       "JavaScript",
+       "ES6",
+       "Sass"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
+    ]
+  },
   {
     "id": "john-lewis",
     "name": "John Lewis",
