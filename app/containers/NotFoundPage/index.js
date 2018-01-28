@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useScroll } from 'react-router-scroll';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 
 export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
-  componentWillMount() {
-    useScroll();
-  }
 
   render() {
     return (

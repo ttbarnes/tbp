@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
-import { useScroll } from 'react-router-scroll';
 import H1 from 'components/H1';
 import Tag from 'components/Tag';
 import MusicPlayer from 'components/MusicPlayer';
@@ -20,10 +19,6 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     this.state = {
       activities: this.props.activities
     };
-  }
-
-  componentWillMount() {
-    useScroll();
   }
 
   renderActivity(a) {

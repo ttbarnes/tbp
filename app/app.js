@@ -17,9 +17,9 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import ReactGA from 'react-ga';
-
 import 'sanitize.css/sanitize.css';
 import App from 'containers/App';
+import ScrollToTop from 'components/ScrollToTop';
 import configureStore from './configureStore';
 import { GA_TRACKING } from './constants';
 import './global-styles';
@@ -43,8 +43,11 @@ const render = () => {
         history={history}
         onUpdate={logPageView}
       >
-        {/* <App location={history.location} /> */}
-        <App location={history.location} />
+
+        <ScrollToTop>
+          <App location={history.location} />
+        </ScrollToTop>
+
       </ConnectedRouter>
     </Provider>,
     DOM_ELM

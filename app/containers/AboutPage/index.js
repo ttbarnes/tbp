@@ -4,7 +4,6 @@ import LazyLoad from 'react-lazyload';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { useScroll } from 'react-router-scroll';
 import { FadeInLong } from 'components/styledShared';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
@@ -67,11 +66,6 @@ export const renderAboutSection = (group) =>
   </Row>;
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
-  componentWillMount() {
-    useScroll();
-  }
-
   render() {
     const {
       tech

@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { useScroll } from 'react-router-scroll';
 import Projects from 'components/Dev/Projects';
 import {
   setProjectsFilter,
@@ -14,10 +13,6 @@ import {
 } from './selectors';
 
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
-  componentWillMount() {
-    useScroll();
-  }
 
   render() {
     return (
