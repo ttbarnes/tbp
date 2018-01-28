@@ -50,7 +50,7 @@ export const renderGroup = (group) => {
     return (
       <div>
         <p><a href="/contact">Get in touch</a></p>
-        <p>Check out some <a href="/projects">projects i{'\''}ve worked on</a></p>
+        <p>Check out <a href="/projects">some of the projects i{'\''}ve worked on</a></p>
       </div>
     );
   }
@@ -85,7 +85,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <Intro>
           <H2 h1Size>A passionate front end/javascript developer</H2>
-          <p>With 7 years of experience, I strive for clean and scalable solutions.</p>
+          <p>With many years of experience, I strive for clean and scalable solutions.</p>
 
           <p>I really enjoy integrating large complex data into a pleasurable, easy-to-use UI. I generally like to help others and make things easier.</p>
 

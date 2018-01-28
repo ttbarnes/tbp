@@ -47,6 +47,7 @@ export const media = {
 };
 
 export const colors = {
+  black1: '#222',
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
   blue2: '#4B86A4',
@@ -54,6 +55,7 @@ export const colors = {
   blue4: '#007ACC',
   blue5: '#0dd8ff',
   blue6: '#6B93D7',
+  blue7: '#4264fb',
   brown1: '#9e8868',
   brown2: '#8d6748',
   brown3: '#e9ce99',
@@ -63,18 +65,22 @@ export const colors = {
   orange1: '#B38D6F',
   orange2: '#ff6347',
   orange3: '#F89741',
+  orange4: '#f47d31',
   pink1: '#D381A9',
   pink2: '#db7093',
+  pink3: '#EC0C8E',
   purple1: '#9B4367',
   purple2: '#794bb5',
   purple3: '#8A4182',
   purple4: '#47475c',
+  purple5: '#8669a9',
   red1: '#A15748',
   red2: '#B88080',
   red3: '#E23337',
   red4: '#CF4646',
   yellow2: '#B2B36F',
-  yellow3: '#CFBD44'
+  yellow3: '#CFBD44',
+  yellow4: '#E8BD36',
 };
 
 export const tagColors = {
@@ -83,6 +89,7 @@ export const tagColors = {
   react: colors.blue5,
   redux: colors.purple2,
   typescript: colors.blue4,
+  flow: colors.yellow4,
   fullStack: colors.brown1,
   node: colors.green2,
   mongodb: colors.green3,
@@ -100,7 +107,12 @@ export const tagColors = {
   d3: colors.orange3,
   highcharts: colors.purple4,
   gulp: colors.red4,
-  webpack: colors.blue6
+  webpack: colors.blue6,
+  heroku: colors.purple5,
+  observables: colors.pink3,
+  websockets: colors.orange4,
+  mapbox: colors.blue7,
+  reactNative: colors.black1
 };
 
 const fadeIn = keyframes`

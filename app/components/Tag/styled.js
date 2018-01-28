@@ -37,8 +37,21 @@ const backgroundTheme = (props) => {
       `background: ${tagColors.typescript}`
     };
 
+    ${type.includes('Flow') && `
+      background: ${tagColors.flow};
+      color: #000; 
+    `};
+
     ${type === 'Redux' &&
       `background: ${tagColors.redux}`
+    };
+
+    ${type === 'Mapbox' &&
+      `background: ${tagColors.mapbox}`
+    };
+
+    ${type === 'React Native' &&
+      `background: ${tagColors.reactNative}`
     };
 
     ${type.includes('Angular') &&
@@ -109,6 +122,18 @@ const backgroundTheme = (props) => {
 
     ${type.includes('d3') &&
       `background: ${tagColors.d3}`
+    };
+
+    ${type === 'Heroku' &&
+      `background: ${tagColors.heroku}`
+    };
+
+    ${type === 'Observables' &&
+      `background: ${tagColors.observables}`
+    };
+
+    ${type === 'WebSockets' &&
+      `background: ${tagColors.websockets}`
     };
 
   `;

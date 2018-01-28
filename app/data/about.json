@@ -1,20 +1,38 @@
 [
   {
-    "heading": "Recently I've been using...",
+    "heading": "Recently I've mostly been using...",
     "category": "lately",
     "tags": [
       "React",
       "Redux",
       "TypeScript",
-      "Angular"
+      "Flow"
     ]
   },
   {
-    "heading": "..and building api's with...",
+    "heading": "..and taken an interest in...",
     "category": "api",
     "tags": [
-      "MongoDB, Mongoose",
-      "Node.js, Express"
+      "React Native",
+      "Mapbox"
+    ]
+  },
+  {
+    "heading": "I've been building api's with...",
+    "category": "api",
+    "tags": [
+      "Node.js, Express",
+      "MongoDB, Mongoose"
+    ]
+  },
+  {
+    "heading": "..and styling with all the similar things",
+    "category": "styling",
+    "tags": [
+      "styled-components",
+      "Aphrodite",
+      "Stylus",
+      "Sass"
     ]
   },
   {
@@ -30,27 +48,22 @@
     ]
   },
   {
-    "heading": "..and style with all the similar things",
-    "category": "styling",
-    "tags": [
-      "styled-components",
-      "Aphrodite",
-      "Stylus",
-      "Sass"
-    ]
-  },
-  {
     "heading": "I've also used these",
     "category": "other",
     "tags": [
+      "Observables",
+      "WebSockets",
+      "Angular",
       "Webpack", 
       "Gulp",
       "d3.js",
-      "Highcharts"
+      "Highcharts",
+      "Heroku",
+      "Many more..."
     ]
   },
   {
-    "heading": "I've worked in a few sectors",
+    "heading": "I've worked in a wide range of industries/sectors",
     "category": "industries",
     "tags": [
       "Ecommerce",
@@ -65,7 +78,7 @@
   {
     "heading": "..with large and small teams",
     "category": "teams",
-    "copy": "Ecommerce giants, new startups, 'cool' agencies, you name it."
+    "copy": "Ecommerce giants, new startups, agencies, you name it."
   },
   {
     "heading": "I love collaborating - maybe we could build something together?",
