@@ -12,7 +12,7 @@
        "Docker"
     ],
     "highlights": [
-      "Created several apps/UIs for internal teams using 'large data'",
+      "Created several Fin Tech apps/UIs to help people shift through 'large data'",
       "Helped shape the API to allow for dynamic UI rendering",
       "Built many re-usable React components based on Siren hypermedia based APIs",
       "Made a nice table component that will render appropriately according to multiple possible schemas - allowing for nested children/grandchildren with different structures",
