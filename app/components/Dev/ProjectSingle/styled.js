@@ -28,10 +28,17 @@ export const Row = styled.div`
   `}
 `;
 
+const StyledImgConditions = (props) => `
+  ${props.isSmall && `
+    max-width: 500px;
+  `};
+`;
+
 export const StyledImg = styled(Img)`
   display: block;
   margin: 3em auto;
   ${media.sm`
     margin: 4em auto;
   `}
+  ${StyledImgConditions}
 `;

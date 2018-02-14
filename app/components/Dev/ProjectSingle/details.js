@@ -16,7 +16,13 @@ export const ThoughtsItem = (props) => {
   if (props.item.copy) {
     return <p>{props.item.copy}</p>;
   } else if (props.item.img) {
-    return (<StyledImg src={getProjectImage(props.projectId, props.item.img)} alt={props.projectName} />);
+    return (
+      <StyledImg
+        src={getProjectImage(props.projectId, props.item.img)}
+        alt={props.projectName}
+        isSmall={props.item.isSmall}
+      />
+    );
   }
   return null;
 };

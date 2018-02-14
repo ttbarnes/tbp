@@ -56,6 +56,7 @@ export const colors = {
   blue5: '#0dd8ff',
   blue6: '#6B93D7',
   blue7: '#4264fb',
+  blue8: '#029ded',
   brown1: '#9e8868',
   brown2: '#8d6748',
   brown3: '#e9ce99',
@@ -112,7 +113,8 @@ export const tagColors = {
   observables: colors.pink3,
   websockets: colors.orange4,
   mapbox: colors.blue7,
-  reactNative: colors.black1
+  reactNative: colors.black1,
+  docker: colors.blue8
 };
 
 const fadeIn = keyframes`

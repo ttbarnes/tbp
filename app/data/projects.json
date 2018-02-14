@@ -2,23 +2,29 @@
     "id": "ihs-markit",
     "name": "IHS Markit",
     "category": "Web apps",
-    "date": "2017 - present",
+    "date": "2017 - 2018",
     "tech": [
        "React",
        "Redux",
        "JavaScript",
        "ES6",
-       "Sass"
+       "Sass",
+       "Docker"
     ],
-    "moreInfoSoon": [
-      "More info coming soon."
+    "highlights": [
+      "Created several apps/UIs for internal teams using 'large data'",
+      "Helped shape the API to allow for dynamic UI rendering",
+      "Built many re-usable React components based on Siren hypermedia based APIs",
+      "Made a nice table component that will render appropriately according to multiple possible schemas - allowing for nested children/grandchildren with different structures",
+      "Built a pleasing 'autosuggest tag' component",
+      "Contributed to the team's React/Redux knowledge"
     ]
   },
   {
     "id": "john-lewis",
     "name": "John Lewis",
     "category": "Web apps",
-    "date": "2017 - present",
+    "date": "2017",
     "tech": [
        "React",
        "Redux",
@@ -27,8 +33,24 @@
        "Webpack",
        "Sass"
     ],
-    "moreInfoSoon": [
-      "More info coming soon."
+    "highlights": [
+      "Re-platformed the John Lewis checkout with a heavy focus on accessibility",
+      "Many smart, dumb and reusable React components",
+      "Accessible tooltip component that renders a modal or tooltip depending on device type",
+      "Built promo code functionality, catering for multiple voucher types/errors",
+      "Built a postcode & delivery lookup",
+      "Contributed to login functionality",
+      "Helped to teach/train the team with React, Redux and JavaScript"
+    ],
+    "thoughts": [
+      { "copy": "I had lots of fun working with the backend to build v1 login functionality:" },
+      { "img": "inner01" },
+      { "copy": "Quite pleased with the postcode lookup we made - validating the postcode format before searching for an address:" },
+      { "img": "inner02", "isSmall": true },
+      { "copy": "Accessible tooltip for delivery/collection notices:" },
+      { "img": "inner03", "isSmall": true },
+      { "copy": "Promo code integration" },
+      { "img": "inner04", "isSmall": true }
     ]
   },
   {
