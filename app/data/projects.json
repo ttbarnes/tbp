@@ -1,4 +1,20 @@
-[{
+[
+  {
+    "id": "world-remit",
+    "name": "World Remit",
+    "category": "Web apps",
+    "date": "2018 - present",
+    "tech": [
+      "React",
+      "Redux",
+      "Express, Node js",
+      "JavaScript, ES6"
+    ],
+    "moreInfoSoon": [
+      "More info coming soon."
+    ]
+  },
+  {
     "id": "ihs-markit",
     "name": "IHS Markit",
     "category": "Web apps",
