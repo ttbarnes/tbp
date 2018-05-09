@@ -91,10 +91,10 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Thriving on the latest technologies, I am constantly improving my skill set.</p>
 
-          <p>I'm currently making money transfers easier with  <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a>.{' '}Previously built FinTech UI{'\''}s with Siren, hypermedia based APIs at <a href="https://www.ihs.com" target="_blank" rel="noopener">IHS Markit.</a>{' '}</p>
-          <p>Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>.</p>
+          <p>I{'\''}m currently making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a>.{' '}Previously built FinTech UI{'\''}s with Siren, hypermedia based APIs at <a href="https://www.ihs.com" target="_blank" rel="noopener">IHS Markit.</a>{' '}</p>
+          <p>Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve also helped to deliver many multilingual/multi-country projects.</p>
 
-          <p>On the side i{'\''}m building an app that combines various APIs from music platforms and also some tools/UIs that will assist crypto currency traders.
+          <p>On the side i{'\''}m building an app that combines various APIs from music platforms, as well as some tools/UIs that will assist crypto currency traders.
            Previously built a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a> and worked on a <a href="http://www.plantstove.com" target="_blank" rel="noopener">startup idea</a>.</p>
         </Intro>
 
