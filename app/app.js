@@ -24,6 +24,7 @@ import configureStore from './configureStore';
 import { GA_TRACKING } from './constants';
 import './global-styles';
 ReactGA.initialize(GA_TRACKING);
+ReactGA.set({ anonymizeIp: true });
 
 const initialState = {};
 const history = createHistory();
