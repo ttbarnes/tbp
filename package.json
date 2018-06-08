@@ -189,7 +189,6 @@
     "react": "^15.6.1",
     "react-burger-menu": "^1.10.14",
     "react-dom": "^15.6.1",
-    "react-ga": "^2.2.0",
     "react-helmet": "3.2.2",
     "react-lazyload": "^2.2.4",
     "react-loadable": "4.0.3",
