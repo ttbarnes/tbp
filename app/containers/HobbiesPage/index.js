@@ -5,13 +5,10 @@ import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
 import Tag from 'components/Tag';
-import MusicPlayer from 'components/MusicPlayer';
-import VideoPlayer from 'components/VideoPlayer';
+import H2 from '../../components/H2';
+import A from '../../components/A';
 import { selectActivities } from './selectors';
-import {
-  ListItem,
-  StyledMusicTag
-} from './styled';
+import { ListItem } from './styled';
 
 export class HobbiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -27,14 +24,18 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
       return (
         <ListItem key={a.videoId}>
           <Tag type={a.type} />
-          <VideoPlayer video={a} />
+          <H2>{a.title}</H2>
+          <p>{a.description}</p>
+          <A href={`https://www.youtube.com/watch?v=${a.videoId}`} target="_blank" rel="noopener">{`https://www.youtube.com/watch?v=${a.videoId}`}</A>
         </ListItem>
       );
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
-          <StyledMusicTag type={a.type} />
-          <MusicPlayer url={a.url} />
+          <Tag type={a.type} />
+          <H2>{a.title}</H2>
+          <p>{a.description}</p>
+          <A href={a.url} target="_blank" rel="noopener">{a.url}</A>
         </ListItem>
       );
     }
