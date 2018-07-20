@@ -16,7 +16,7 @@ const pageIsLong = (name) => LONG_PAGES_LIST.includes(`${name.substring(1)}`);
 const minHeight = (props) => `
   min-height: calc(75vh);
   ${pageIsLong(props.location.pathname) === true && `
-    min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px + 5px);
+    min-height: calc(100vh - ${CONTAINER_SPACING_VERTICAL} + ${FOOTER_HEIGHT}px);
   `}
 `;
 

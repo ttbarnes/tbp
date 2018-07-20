@@ -7,7 +7,7 @@ import {
 } from '../../components/styledShared';
 
 export const Root = styled.footer`
-  padding: 0 ${CONTAINER_SPACING_HORIZONTAL};
+  padding: 3em ${CONTAINER_SPACING_HORIZONTAL} 0 ${CONTAINER_SPACING_HORIZONTAL};
   /* duplicate flex parent prevents issue in IE. */
   display: flex;
   flex-direction: column;

@@ -80,9 +80,6 @@ function App(props) {
 
       </MainContent>
 
-      <br />
-      <br />
-
       <Footer location={props.location} />
 
     </div>
