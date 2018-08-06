@@ -1,13 +1,17 @@
 import styled, { keyframes } from 'styled-components';
 import List from 'components/List';
 import Tag from 'components/Tag';
+import { media } from '../../components/styledShared';
 
 export const Intro = styled.div`
   margin-bottom: 10em;
 `;
 
 export const Row = styled.div`
-  margin-bottom: 20em;
+  margin-bottom: 15em;
+  ${media.sm`
+    margin-bottom: 20em;
+  `}
 `;
 
 export const StyledList = styled(List)`
