@@ -1,11 +1,11 @@
 [
   {
-    "heading": "Recently I've mostly been using...",
+    "heading": "Recently I've been using...",
     "category": "lately",
     "tags": [
       "React",
       "Redux",
-      "TypeScript",
+      "Node.js",
       "Flow"
     ]
   },
@@ -51,6 +51,7 @@
     "heading": "I've also used these",
     "category": "other",
     "tags": [
+      "TypeScript",
       "Observables",
       "WebSockets",
       "Angular",
