@@ -36,7 +36,7 @@
     ]
   },
   {
-    "heading": "I usually test with",
+    "heading": "I usually test with...",
     "category": "testing",
     "tags": [
       "Enzyme", 
@@ -48,14 +48,20 @@
     ]
   },
   {
-    "heading": "I've also used these",
+    "heading": "I've also used these...",
     "category": "other",
     "tags": [
       "TypeScript",
       "Observables",
       "WebSockets",
+      "Webpack"
+    ]
+  },
+  {
+    "heading": "..and these..",
+    "category": "other",
+    "tags": [
       "Angular",
-      "Webpack", 
       "Gulp",
       "d3.js",
       "Highcharts",
@@ -79,7 +85,7 @@
   {
     "heading": "..with large and small teams",
     "category": "teams",
-    "copy": "Ecommerce giants, new startups, agencies, you name it."
+    "copy": "Ecommerce giants, startups, agencies, you name it."
   },
   {
     "heading": "I love collaborating - maybe we could build something together?",
