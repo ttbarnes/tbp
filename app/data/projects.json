@@ -15,6 +15,35 @@
     ]
   },
   {
+    "id": "crypto-reports-combiner",
+    "name": "Crypto Reports Combiner",
+    "category": "Web apps",
+    "date": "2018",
+    "tech": [
+      "React",
+      "Redux",
+      "Express, Node js",
+      "JavaScript, ES6",
+      "Flow",
+      "Crypto Currency APIs"
+    ],
+    "highlights": [
+      "From trading crypto currencies, I realised that I couldn't easily view all of my trades in one place",
+      "As a proof of concept, I built an API and UI that combined and mapped trade history data from multiple exchanges",
+      "Added the ability to add notes and tags to each trade",
+      "Allowed users to download all history as a single CSV/PDF"
+    ],
+    "thoughts": [
+      { "copy": "The first step was to allow users to integrate their exchange accounts by submitting API keys, which would be encrypted and stored securely." },
+      { "img": "inner01", "isSmall": true },
+      { "copy": "With access to a user's exchange's, we could fetch historical trade data and map the fields into a table that could be sorted, filtered and downloaded:" },
+      { "img": "inner02" },
+      { "copy": "With all of this data now available in one place, we added the ability to add notes to any trades:" },
+      { "img": "inner03" },
+      { "copy": "There were many ideas and visions for where this could go. However there was a lot of competition with more time and resources... So for now, it remains a fun proof of concept project that I learnt a lot from. :)" }
+    ]
+  },
+  {
     "id": "ihs-markit",
     "name": "IHS Markit",
     "category": "Web apps",
