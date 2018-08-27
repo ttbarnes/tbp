@@ -48,6 +48,7 @@ export const media = {
 
 export const colors = {
   black1: '#222',
+  grey1: '#6F6F6F',
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
   blue2: '#4B86A4',
@@ -114,7 +115,8 @@ export const tagColors = {
   websockets: colors.orange4,
   mapbox: colors.blue7,
   reactNative: colors.black1,
-  docker: colors.blue8
+  docker: colors.blue8,
+  cryptoCurrencyApis: colors.grey1
 };
 
 const fadeIn = keyframes`

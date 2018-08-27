@@ -135,9 +135,14 @@ const backgroundTheme = (props) => {
     ${type === 'WebSockets' &&
       `background: ${tagColors.websockets}`
     };
+
     ${type === 'Docker' &&
       `background: ${tagColors.docker}`
-    }
+    };
+
+    ${type === 'Crypto Currency APIs' &&
+      `background: ${tagColors.cryptoCurrencyApis}`
+    };
   `;
 };
 
