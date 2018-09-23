@@ -9,9 +9,6 @@
       "Redux",
       "Express, Node js",
       "JavaScript, ES6"
-    ],
-    "moreInfoSoon": [
-      "More info coming soon."
     ]
   },
   {
@@ -55,14 +52,6 @@
        "ES6",
        "Sass",
        "Docker"
-    ],
-    "highlights": [
-      "Created several Fin Tech apps/UIs to help people shift through 'large data'",
-      "Helped shape the API to allow for dynamic UI rendering",
-      "Built many re-usable React components based on Siren hypermedia based APIs",
-      "Made a nice table component that will render appropriately according to multiple possible schemas - allowing for nested children/grandchildren with different structures",
-      "Built a pleasing 'autosuggest tag' component",
-      "Contributed to the team's React/Redux knowledge"
     ]
   },
   {
@@ -77,25 +66,6 @@
        "ES6",
        "Webpack",
        "Sass"
-    ],
-    "highlights": [
-      "Re-platformed the John Lewis checkout with a heavy focus on accessibility",
-      "Many smart, dumb and reusable React components",
-      "Accessible tooltip component that renders a modal or tooltip depending on device type",
-      "Built promo code functionality, catering for multiple voucher types/errors",
-      "Built a postcode & delivery lookup",
-      "Contributed to login functionality",
-      "Helped to teach/train the team with React, Redux and JavaScript"
-    ],
-    "thoughts": [
-      { "copy": "I had lots of fun working with the backend to build v1 login functionality:" },
-      { "img": "inner01" },
-      { "copy": "Quite pleased with the postcode lookup we made - validating the postcode format before searching for an address:" },
-      { "img": "inner02", "isSmall": true },
-      { "copy": "Accessible tooltip for delivery/collection notices:" },
-      { "img": "inner03", "isSmall": true },
-      { "copy": "Promo code integration" },
-      { "img": "inner04", "isSmall": true }
     ]
   },
   {
@@ -130,24 +100,6 @@
        "Webpack",
        "Aphrodite"
     ],
-    "highlights": [
-      "Re-platformed the main desktop app",
-      "Many smart, dumb and reusable React components complete with TypeScript and accessibility",
-      "Built various checkout features/components including Travel Options, Delivery options and the Journey Summary",
-      "Built a ‘pricebot’ feature in the mobile web app that searches and returns the cheapest available price",
-      "Refactored various selectors, unit tests and components",
-      "Google calendar API integration"
-    ],
-    "thoughts":[
-      { "copy": "I really enjoyed owning the main 'Journey Summary sidebar' component that changes depending on various conditions in the search results & checkout flow. We also built a reusable ‘sticky component’ that changes position depending on other elements positioning and/or props:" },
-      { "img": "inner01" },
-      { "img": "inner02" },
-      { "img": "inner03" },
-      { "copy": "I'm also pleased with the login form we built:"},
-      { "img": "inner04" },
-      { "copy": "...and the new and improved mobile web app flow:"},
-      { "img": "inner05" }
-    ],
     "urls": [
       "http://trainline.com"
     ]
@@ -173,9 +125,6 @@
        "HTML5, CSS3",
        "Stylus",
        "Webpack"
-    ],
-    "highlights": [
-      "More info coming soon."
     ],
     "urls": [
       "http://www.plantstove.com"
@@ -219,23 +168,6 @@
        "HTML5, CSS3",
        "Webpack",
        "Sass"
-    ],
-    "highlights": [
-      "6 different apps for various stores and consumers",
-      "Modular, component based architecture with shared, reusable codebases",
-      "Ecommerce checkout for a bespoke touch screen app",
-      "Dynamic, custom 'time entry type tracker' utilising d3.js",
-      "Various email and mobile validation components",
-      "Improved test coverage and tech debt",
-      "CoreMetrics analytics integration"
-    ],
-    "thoughts":[
-      { "copy": "I'm very proud of the 'dynamic time entry type tracker' I built - a custom d3.js chart component that renders months of data into easy-to-use charts. With several other steps involved for this component, including data entry, this API heavy feature results in the following chart complete with touch sliding to next/previous charts:" },
-      { "img": "inner01" },
-      { "copy": "I also contributed to an ecommerce checkout that involved many smart and dumb components such as this basket and custom email validation step, complete with a show/hide email toggle:"},
-      { "img": "inner02" },
-      { "copy": "Because we had smart, reusable components, we could easily build similar custom validation steps and toggles for mobile numbers:"},
-      { "img": "inner03" }
     ]
   },
   {
@@ -251,20 +183,6 @@
        "HTML5, CSS3",
        "Webpack",
        "Less"
-    ],
-    "highlights": [
-      "Built many new features and components within a large existing codebase",
-      "Modular, component based app/architecture",
-      "Heavy use of custom directives/components",
-      "Greatly improved the test coverage"
-    ],
-    "thoughts": [
-      {"copy": "I really enjoyed building the 'My Circles' feature which enabled users to manage groups of 'favourites'. Many actions and filters could be applied here, so we managed these states with Redux."},
-      {"img": "inner01"},
-      {"copy": "We also built an invitation component that could be easily re-used:"},
-      {"img": "inner02"},
-      {"copy": "I also had the pleasure of adding an additional step to the job creation processs. With some nice JavaScript calculcations and a complex UI form, the new step allows you to define a timeframe in which a job could be allocated to a particular group prior to other groups."},
-      {"img": "inner03"}
     ],
     "urls": [
       "http://networklocum.com"
@@ -283,20 +201,6 @@
        "HTML5, CSS3",
        "Grunt",
        "Less"
-    ],
-    "highlights": [
-      "Large greenfield, wealth management app",
-      "Rich, complex data visualization",
-      "Mock API and datastore",
-      "Heavy use of custom directives/components"
-    ],
-    "thoughts": [
-      { "copy": "I really enjoyed using the Highcharts API and particulary building custom legends (including dropdowns):" },
-      { "img": "inner01" },
-      { "copy": "We also built many visually small, but logically complex components, like these bar graphs:" },
-      { "img": "inner02" },
-      { "copy": "Similarly with these risk indicators:" },
-      { "img": "inner03" }
     ]
   },
   {
@@ -312,12 +216,6 @@
        "HTML5, CSS3",
        "Grunt",
        "Sass"
-    ],
-    "highlights": [
-      "Created from the ground up in order to learn more about Node, Express and MongoDB",
-      "Built a fairly in-depth node API that interacts with a DB",
-      "Clean and modular angular app on the front end",
-      "Built a timeline feature that queries the API depending on who a user follows and the followee's tweets/retweets"
     ],
     "urls": [
       "https://mean-tweets.herokuapp.com"
@@ -377,11 +275,6 @@
        "Grunt",
        "Sass"
     ],
-    "highlights": [
-      "Contributed to the first version of the product",
-      "Built some core features involving business logic, angular routing and more",
-      "Owned the UI - integrated designs, branding"
-    ],
     "urls": [
       "http://fifthweek.com"
     ]
@@ -398,16 +291,6 @@
        "JavaScript, jQuery",
        "Rails",
        "Photoshop, Sketch"
-    ],
-
-    "highlights": [
-      "Contributed to the first version of the product, building new features, integrating designs, branding",
-      "Built and maintained a custom, scalable UI framework to be used on any device, anywhere",
-      "Various 3rd party and social media integrations",
-      "Built multiple landing pages during launch"
-    ],
-    "thoughts": [
-      { "copy": "I owned the UI/front-end of the platform (a marketplace for Indie Authors), as part of a 2-man, remote dev team." }
     ],
     "urls": [
       "http://reedsy.com"
@@ -426,12 +309,6 @@
        "Gulp",
        "Photoshop"
     ],
-    "highlights": [
-      "Delivered many new features, integrating with APIs",
-      "Integrated a new, cleaner design",
-      "Refactoring, cleaning the codebase",
-      "Contributed to the cordova iOS app"
-    ],
     "urls": [
       "http://tailster.com"
     ]
@@ -446,11 +323,6 @@
 			 "Sass",
 			 "JavaScript, jQuery",
 			 "Play, Scala"
-		],
-		"highlights": [
-			"Converted paper based processes into a streamlined online application",
-			"UX and mobile first approaches",
-			"GDS guidlines and approvals"
 		]
   },
   {
@@ -463,11 +335,6 @@
 			 "Sass",
 			 "JavaScript, jQuery",
 			 "Play, Scala"
-		],
-		"highlights": [
-			"Converted paper based processes into a streamlined online application",
-			"UX and mobile first approaches",
-			"GDS guidlines and approvals"
 		]
   },
   {
@@ -480,11 +347,6 @@
 			 "Sass",
 			 "JavaScript, jQuery",
 			 "Play, Scala"
-		],
-		"highlights": [
-			"Converted paper based processes into a streamlined online application",
-			"UX and mobile first approaches",
-			"GDS guidlines and approvals"
 		]
   },
     {
