@@ -80,6 +80,7 @@ export const colors = {
   red2: '#B88080',
   red3: '#E23337',
   red4: '#CF4646',
+  red5: '#CC342D',
   yellow2: '#B2B36F',
   yellow3: '#CFBD44',
   yellow4: '#E8BD36',
@@ -116,7 +117,8 @@ export const tagColors = {
   mapbox: colors.blue7,
   reactNative: colors.black1,
   docker: colors.blue8,
-  cryptoCurrencyApis: colors.grey1
+  ruby: colors.red5,
+  misc: colors.grey1
 };
 
 const fadeIn = keyframes`

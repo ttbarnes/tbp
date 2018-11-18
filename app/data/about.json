@@ -6,7 +6,8 @@
       "React",
       "Redux",
       "Node.js",
-      "Flow"
+      "Flow",
+      "SSR"
     ]
   },
   {
@@ -66,6 +67,7 @@
       "d3.js",
       "Highcharts",
       "Heroku",
+      "TeamCity",
       "Many more..."
     ]
   },

@@ -140,9 +140,15 @@ const backgroundTheme = (props) => {
       `background: ${tagColors.docker}`
     };
 
-    ${type === 'Crypto Currency APIs' &&
-      `background: ${tagColors.cryptoCurrencyApis}`
+    ${type === 'Ruby' &&
+      `background: ${tagColors.ruby}`
     };
+
+    ${(type === 'Crypto Currency APIs' ||
+      type === 'SSR') &&
+      `background: ${tagColors.misc}`
+    };
+
   `;
 };
 
