@@ -7,8 +7,8 @@ const filterProjects = (projects, filterIndustry, filterTech) => {
 
   if (shouldFilter) {
     return projects.filter((p) =>
-      p.industry === filterIndustry ||
-      p.tech && p.tech.includes(filterTech)
+      (p.industry === filterIndustry) ||
+      (p.tech && p.tech.includes(filterTech))
     );
   }
   return projects;
@@ -32,7 +32,7 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
         <ListRoot>
           {!showingAll &&
             <div>
-            <p>Showing {filteredData.length} of {data.length} projects - reset filters</p>
+              <p>Showing {filteredData.length} of {data.length} projects - reset filters</p>
             </div>
           }
           {filteredData && filteredData.map((project) =>

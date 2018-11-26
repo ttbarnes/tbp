@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import Filter from './Filter';
-import { FlexList, Spacer } from './styled';
+import { FlexList } from './styled';
 
 const FILTERS = {
   INDUSTRY: ['Fin Tech', 'Ecommerce'],
