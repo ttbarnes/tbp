@@ -25,7 +25,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
         <h3>{name}</h3>
         <p>{date}</p>
         <p>Industry: {industry}</p>
-        {isFullStack(tech) && <Tag type="Full stack JS" />}
+        {tech && isFullStack(tech) && <Tag type="Full stack JS" />}
 
         <ul>
           {tech && tech.map((item, index) =>

@@ -155,7 +155,7 @@ const backgroundTheme = (props) => {
 const StyledTag = styled.div`
   display: inline-flex;
   padding: 0.5em 1em;
-  margin: 0 0.5em 0.5em 0;
+  margin: 0.5em 0.5em 0 0;
   color: #FFF;
   background: #AAA; /* default */
   ${backgroundTheme};

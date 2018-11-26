@@ -15,5 +15,8 @@ export const ListRoot = styled.ul`
 `;
 
 export const StyledListItem = styled.li`
-  padding: 0.3em;
+  padding: 0 1em 1em;
+  border-left: solid 1em #F5F5F5;
+  padding-bottom: 0;
+  margin-bottom: 7em;
 `;
