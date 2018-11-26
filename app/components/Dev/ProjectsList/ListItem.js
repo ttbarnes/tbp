@@ -16,6 +16,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
     const {
       name,
       date,
+      industry,
       tech
     } = this.props;
 
@@ -23,6 +24,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
       <StyledListItem>
         <h3>{name}</h3>
         <p>{date}</p>
+        <p>Industry: {industry}</p>
         {isFullStack(tech) && <Tag type="Full stack JS" />}
 
         <ul>
@@ -38,6 +40,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 ListItem.propTypes = {
   name: PropTypes.string.isRequired,
   date: PropTypes.string,
+  industry: PropTypes.string.isRequired,
   tech: PropTypes.array
 };
 

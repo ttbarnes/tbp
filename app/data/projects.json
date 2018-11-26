@@ -4,6 +4,7 @@
     "name": "World Remit",
     "category": "Web apps",
     "date": "2018 - present",
+    "industry": "Fin Tech",
     "tech": [
       "React",
       "Redux",
@@ -19,6 +20,7 @@
     "name": "Crypto Reports Combiner",
     "category": "Web apps",
     "date": "2018",
+    "industry": "Fin Tech",
     "tech": [
       "React",
       "Redux",
@@ -48,6 +50,7 @@
     "name": "IHS Markit",
     "category": "Web apps",
     "date": "2017 - 2018",
+    "industry": "Fin Tech",
     "tech": [
        "React",
        "Redux",
@@ -62,6 +65,7 @@
     "name": "John Lewis",
     "category": "Web apps",
     "date": "2017",
+    "industry": "Ecommerce",
     "tech": [
        "React",
        "Redux",
@@ -76,6 +80,7 @@
     "name": "FR CMS",
     "category": "Web apps",
     "date": "2017 - present",
+    "industry": "Entertainment",
     "tech": [
        "React",
        "Redux",
@@ -94,6 +99,7 @@
     "name": "Trainline",
     "category": "Web apps",
     "date": "2016-17",
+    "industry": "Travel",
     "tech": [
        "React",
        "Redux",
@@ -112,6 +118,7 @@
     "name": "Full Fact",
     "category": "Other",
     "date": "2016 - 2017",
+    "industry": "Media",
     "mini": true
   },
   {
@@ -119,6 +126,7 @@
     "name": "Plantstove",
     "category": "Web apps",
     "date": "2016 - present",
+    "industry": "Food",
     "tech": [
        "MongoDB, Mongoose",
        "Express, Node js",
@@ -138,6 +146,7 @@
     "name": "Fiona Ross",
     "category": "Web apps",
     "date": "2016 - present",
+    "industry": "Entertainment",
     "tech": [
        "Angular",
        "JavaScript, ES6",
@@ -163,6 +172,7 @@
     "name": "Boots BetaLabs",
     "category": "Web apps",
     "date": "2016",
+    "industry": "Health",
     "tech": [
        "AngularJS",
        "JavaScript",
@@ -178,6 +188,7 @@
     "name": "Network Locum",
     "category": "Web apps",
     "date": "2015-16",
+    "industry": "Health",
     "tech": [
        "AngularJS",
        "JavaScript",
@@ -196,6 +207,7 @@
     "name": "Saranac",
     "category": "Web apps",
     "date": "2015",
+    "industry": "Fin Tech",
     "tech": [
        "Express, Node js",
        "AngularJS",
@@ -211,6 +223,7 @@
     "name": "Mean tweets",
     "category": "Web apps",
     "date": "2015",
+    "industry": "Dev Tech",
     "tech": [
        "MongoDB, Mongoose",
        "Express, Node js",
@@ -229,6 +242,7 @@
     "name": "Angular ticker",
     "category": "Web apps",
     "date": "2015",
+    "industry": "Dev Tech",
     "tech": [
        "AngularJS",
        "JavaScript",
@@ -251,6 +265,7 @@
     "name": "Angular proof of concept demos",
     "category": "Web apps",
     "date": "2015",
+    "industry": "Dev Tech",
     "tech": [
        "AngularJS",
        "JavaScript",
@@ -271,6 +286,7 @@
     "name": "Fifthweek",
     "category": "Web apps",
     "date": "2014-2015",
+    "industry": "Media",
     "tech": [
        "AngularJS",
        "JavaScript",
@@ -287,6 +303,7 @@
     "name": "Reedsy",
     "category": "Web apps",
     "date": "2014-15",
+    "industry": "Publishing",
     "tech": [
        "HTML5, CSS3",
        "Sass",
@@ -304,6 +321,7 @@
     "name": "Tailster",
     "category": "Web apps",
     "date": "2014-15",
+    "industry": "Pet Care",
     "tech": [
        "HTML5, CSS3",
        "Less",
@@ -320,7 +338,8 @@
 		"id": "dvla-personalised-registrations",
 		"name": "DVLA: Personalised Registrations",
 		"category": "Web apps",
-		"date": "2014",
+    "date": "2014",
+    "industry": "Digital Transformation",
 		"tech": [
 			 "HTML5, CSS3",
 			 "Sass",
@@ -332,7 +351,8 @@
 		"id": "dvla-sell-a-vehicle-into-the-motor-trade",
 		"name": "DVLA: Sell a vehicle into the motor trade",
 		"category": "Web apps",
-		"date": "2014",
+    "date": "2014",
+    "industry": "Digital Transformation",
 		"tech": [
 			 "HTML5, CSS3",
 			 "Sass",
@@ -344,7 +364,8 @@
 		"id": "dvla-buy-a-vehicle-from-the-motor-trade",
 		"name": "DVLA: Buy a vehicle from the motor trade",
 		"category": "Web apps",
-		"date": "2014",
+    "date": "2014",
+    "industry": "Digital Transformation",
 		"tech": [
 			 "HTML5, CSS3",
 			 "Sass",
@@ -356,169 +377,196 @@
         "id": "robbie-williams",
         "name": "Robbie Williams",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "collins-learning",
         "name": "Collins Learning",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "tolkien",
         "name": "Tolkien",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "electrolux",
         "name": "Electrolux Parts & Accessories",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "aeg",
         "name": "AEG Parts & Accessories",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "hoover",
         "name": "Hoover Spares",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "the-store",
         "name": "The Store",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "william-curley",
         "name": "William Curley",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "farrell",
         "name": "Farrell",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "new-naturalists",
         "name": "New Naturalists",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "mr-waghu",
         "name": "Mr Waghu",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "jbrand",
         "name": "J Brand",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "werelse",
         "name": "Werelse",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "wpfp",
         "name": "Who Pays Full Price",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "cathy-brown-v2",
         "name": "Cathy Brown",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Coaching"
     },
     {
         "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Travel"
     },
     {
         "id": "powatag",
         "name": "Powatag",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Fin Tech"
     },
     {
         "id": "enterprising-britain",
         "name": "Enterprising Britain",
         "category": "Other",
         "mini": true,
-        "mini": true
+        "industry": "Digital Transformation"
     },
     {
         "id": "powa",
         "name": "Powa",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Ecommerce"
     },
     {
         "id": "mpowa",
         "name": "mpowa",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Fin Tech"
     },
     {
         "id": "jquery/list-icon-manipulator",
         "name": "List Icon Manipulator",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Tech"
     },
     {
         "id": "jquery/active-hover-states",
         "name": "Active Hover States",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Tech"
     },
     {
         "id": "jquery/portrolio",
         "name": "Portrolio",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Tech"
     },
     {
         "id": "propax-malaysia",
         "name": "Propax Malaysia",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Shipping"
     },
     {
         "id": "life-financial-solutions",
         "name": "Life Financial Solutions",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Finance"
     },
         {
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Health"
     },
     {
         "id": "gold-challenge",
         "name": "Gold Challenge",
         "category": "Other",
-        "mini": true
+        "mini": true,
+        "industry": "Sports"
     }
 ]
