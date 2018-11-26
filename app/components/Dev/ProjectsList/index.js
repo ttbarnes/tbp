@@ -2,14 +2,16 @@ import React, { PropTypes } from 'react';
 import ListItem from './ListItem';
 import { Root, ListRoot } from './styled';
 
-const filterProjectsByCategory = (projects, filterCategory) => {
-  if (projects) {
-    if (filterCategory === 'All') {
-      return projects;
-    }
-    return projects.filter((p) => p.category === filterCategory);
+const filterProjects = (projects, filterIndustry, filterTech) => {
+  const shouldFilter = projects && (filterIndustry || filterTech);
+
+  if (shouldFilter) {
+    return projects.filter((p) =>
+      p.industry === filterIndustry ||
+      p.tech && p.tech.includes(filterTech)
+    );
   }
-  return null;
+  return projects;
 };
 
 export class ProjectsList extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -17,19 +19,25 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
   render() {
     const {
       data,
-      activeFilter,
-      handleClick
+      filterByIndustry,
+      filterByTech
     } = this.props;
 
-    const filteredData = filterProjectsByCategory(data, activeFilter);
+    const filteredData = filterProjects(data, filterByIndustry, filterByTech);
+
+    const showingAll = filteredData.length === data.length;
 
     return (
       <Root>
         <ListRoot>
+          {!showingAll &&
+            <div>
+            <p>Showing {filteredData.length} of {data.length} projects - reset filters</p>
+            </div>
+          }
           {filteredData && filteredData.map((project) =>
             <ListItem
               key={project.id}
-              handleClick={handleClick}
               {...project}
             />
           )}
@@ -41,8 +49,13 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
 
 ProjectsList.propTypes = {
   data: PropTypes.array.isRequired,
-  activeFilter: PropTypes.string,
-  handleClick: PropTypes.func.isRequired
+  filterByIndustry: PropTypes.string,
+  filterByTech: PropTypes.string
+};
+
+ProjectsList.defaultProps = {
+  filterByIndustry: '',
+  filterByTech: ''
 };
 
 export default ProjectsList;

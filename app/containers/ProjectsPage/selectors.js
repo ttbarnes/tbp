@@ -7,12 +7,18 @@ const selectProjectsData = () => createSelector(
   (projectsState) => projectsState.data
 );
 
-const selectActiveProjectFilter = () => createSelector(
+const selectProjectsFilterByIndustry = () => createSelector(
   selectProjects(),
-  (projectsState) => projectsState.filterCategory
+  (projectsState) => projectsState.filterByIndustry
+);
+
+const selectProjectsFilterByTech = () => createSelector(
+  selectProjects(),
+  (projectsState) => projectsState.filterByTech
 );
 
 export {
   selectProjectsData,
-  selectActiveProjectFilter
+  selectProjectsFilterByIndustry,
+  selectProjectsFilterByTech
 };

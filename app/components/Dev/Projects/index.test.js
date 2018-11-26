@@ -22,7 +22,6 @@ describe('<Projects />', () => {
       activeFilter={mock.activeFilter}
       projects={mock.projects}
       onClickProjectFilter={mock.clickFunc}
-      onClickProjectListItem={mock.clickFunc}
     />
   );
   it('should render 2 headings', () => {

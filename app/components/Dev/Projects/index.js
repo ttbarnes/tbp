@@ -21,9 +21,16 @@ function Projects(props) {
 
       <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
 
-      <ProjectFilters handleClick={props.onClickProjectFilter} activeFilter={props.activeFilter} />
+      <ProjectFilters
+        onClickFilterByIndustry={props.onClickFilterByIndustry}
+        onClickFilterByTech={props.onClickFilterByTech}
+      />
 
-      <ProjectsList handleClick={props.onClickProjectListItem} data={props.projects} activeFilter={props.activeFilter} />
+      <ProjectsList
+        data={props.projects}
+        filterByIndustry={props.filterByIndustry}
+        filterByTech={props.filterByTech}
+      />
 
       <br />
       <br />
@@ -35,11 +42,11 @@ function Projects(props) {
 }
 
 Projects.propTypes = {
-  activeFilter: PropTypes.string,
+  filterByIndustry: PropTypes.string,
+  filterByTech: PropTypes.string,
   projects: PropTypes.array,
-  onClickProjectFilter: PropTypes.func,
-  onClickProjectListItem: PropTypes.func
+  onClickFilterByIndustry: PropTypes.func.isRequired,
+  onClickFilterByTech: PropTypes.func.isRequired
 };
-
 
 export default Projects;

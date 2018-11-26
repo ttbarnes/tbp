@@ -21,7 +21,6 @@ describe('<ProjectsPage />', () => {
       <ProjectsPage
         projects={mock.projects}
         onClickProjectFilter={mock.clickFunc}
-        onClickProjectListItem={mock.clickFunc}
         activeFilter={mock.activeFilter}
       />
     </Provider>
@@ -32,7 +31,6 @@ describe('<ProjectsPage />', () => {
     expect(projectsPageProps).toEqual({
       projects: mock.projects,
       onClickProjectFilter: mock.clickFunc,
-      onClickProjectListItem: mock.clickFunc,
       activeFilter: mock.activeFilter
     });
   });

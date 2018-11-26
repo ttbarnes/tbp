@@ -1,29 +1,26 @@
 import React, { PropTypes } from 'react';
-import { Button, ButtonInner } from './styled';
 
-export default class Filter extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class Filter extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  handleOnChange = (ev) => {
+    this.props.onChange(ev.target.value);
+  }
+
   render() {
-    const {
-      type,
-      handleClick,
-      isActive,
-      isLast
-    } = this.props;
+    const { items } = this.props;
+
     return (
-      <Button
-        isLast={isLast}
-        isActive={isActive}
-        onClick={() => handleClick(type)}
-      >
-        <ButtonInner>{type}</ButtonInner>
-      </Button>
+      <div>
+        <select onChange={this.handleOnChange}>
+          {items.map((i) =>
+            <option key={i} value={i}>{i}</option>
+          )}
+        </select>
+      </div>
     );
   }
 }
 
 Filter.propTypes = {
-  handleClick: PropTypes.func.isRequired,
-  type: PropTypes.string.isRequired,
-  isLast: PropTypes.bool,
-  isActive: PropTypes.bool
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onChange: PropTypes.func.isRequired
 };

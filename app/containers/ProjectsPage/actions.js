@@ -16,20 +16,20 @@
  */
 
 import {
-  SET_PROJECTS_FILTER_CATEGORY,
-  SET_PROJECT_SELECTION,
+  SET_PROJECTS_FILTER_BY_INDUSTRY,
+  SET_PROJECTS_FILTER_BY_TECH
 } from './constants';
 
-export function setProjectsFilter(category) {
+export function setProjectsFilterByIndustry(industry) {
   return {
-    type: SET_PROJECTS_FILTER_CATEGORY,
-    category
+    type: SET_PROJECTS_FILTER_BY_INDUSTRY,
+    payload: industry
   };
 }
 
-export function setSelectedProject(id) {
+export function setProjectsFilterByTech(tech) {
   return {
-    type: SET_PROJECT_SELECTION,
-    id
+    type: SET_PROJECTS_FILTER_BY_TECH,
+    payload: tech
   };
 }

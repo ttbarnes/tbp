@@ -1,26 +1,26 @@
 import projects from '../../data/projects.json';
 
 import {
-  SET_PROJECTS_FILTER_CATEGORY,
-  SET_PROJECT_SELECTION,
+  SET_PROJECTS_FILTER_BY_INDUSTRY,
+  SET_PROJECTS_FILTER_BY_TECH
 } from './constants';
 
 const initialState = {
   data: projects,
-  filterCategory: 'Web apps',
-  selectedProject: null
+  filterByIndustry: '',
+  filterByTech: ''
 };
 
 function projectsReducers(state = initialState, action) {
   switch (action.type) {
-    case SET_PROJECTS_FILTER_CATEGORY:
+    case SET_PROJECTS_FILTER_BY_INDUSTRY:
       return Object.assign({}, state, {
-        filterCategory: action.category
+        filterByIndustry: action.payload
       });
 
-    case SET_PROJECT_SELECTION:
+    case SET_PROJECTS_FILTER_BY_TECH:
       return Object.assign({}, state, {
-        selectedProject: action.id
+        filterByTech: action.payload
       });
     default:
       return state;

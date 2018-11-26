@@ -2,35 +2,47 @@ import React, { PropTypes } from 'react';
 import Filter from './Filter';
 import { FlexList, Spacer } from './styled';
 
+const FILTERS = {
+  INDUSTRY: ['Fin Tech', 'Ecommerce'],
+  TECH: ['React', 'Angular'],
+};
+
 export class ProjectFilters extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   handleIsActive(filter) {
-    const currentFilter = this.props.activeFilter;
-    if (currentFilter === filter) {
+    const {
+      filterByIndustry,
+      filterByTech
+    } = this.props;
+
+    if (filter === 'industry' && filterByIndustry) {
+      return true;
+    }
+    if (filter === 'tech' && filterByTech) {
       return true;
     }
     return false;
   }
+
   render() {
     const {
-      handleClick,
-      activeFilter
+      onClickFilterByIndustry,
+      onClickFilterByTech
     } = this.props;
 
     return (
       <div>
         <FlexList>
           <Filter
-            handleClick={handleClick}
-            type="Web apps"
-            currentFilter={activeFilter}
-            isActive={this.handleIsActive('Web apps')}
+            onChange={onClickFilterByIndustry}
+            type="Industry"
+            items={FILTERS.INDUSTRY}
+            isActive={this.handleIsActive('industry')}
           />
-          <Spacer>{' | '}</Spacer>
           <Filter
-            handleClick={handleClick}
-            type="Other"
-            currentFilter={activeFilter}
-            isActive={this.handleIsActive('Other')}
+            onChange={onClickFilterByTech}
+            type="Tech"
+            items={FILTERS.TECH}
+            isActive={this.handleIsActive('tech')}
             isLast
           />
         </FlexList>
@@ -40,8 +52,16 @@ export class ProjectFilters extends React.PureComponent { // eslint-disable-line
 }
 
 ProjectFilters.propTypes = {
-  handleClick: PropTypes.func.isRequired,
-  activeFilter: PropTypes.string.isRequired
+  onClickFilterByIndustry: PropTypes.func.isRequired,
+  onClickFilterByTech: PropTypes.func.isRequired,
+  filterByIndustry: PropTypes.string,
+  filterByTech: PropTypes.string
+};
+
+
+ProjectFilters.defaultProps = {
+  filterByIndustry: '',
+  filterByTech: ''
 };
 
 export default ProjectFilters;

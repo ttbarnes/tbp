@@ -4,48 +4,60 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Projects from 'components/Dev/Projects';
 import {
-  setProjectsFilter,
-  setSelectedProject
+  setProjectsFilterByIndustry,
+  setProjectsFilterByTech
 } from './actions';
 import {
   selectProjectsData,
-  selectActiveProjectFilter
+  selectProjectsFilterByIndustry,
+  selectProjectsFilterByTech
 } from './selectors';
 
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
+    const {
+      projects,
+      onClickFilterByIndustry,
+      onClickFilterByTech,
+      filterByIndustry,
+      filterByTech
+    } = this.props;
+
     return (
       <Projects
-        projects={this.props.projects}
-        onClickProjectFilter={this.props.onClickProjectFilter}
-        onClickProjectListItem={this.props.onClickProjectListItem}
-        activeFilter={this.props.activeFilter}
+        projects={projects}
+        onClickFilterByIndustry={onClickFilterByIndustry}
+        onClickFilterByTech={onClickFilterByTech}
+        filterByIndustry={filterByIndustry}
+        filterByTech={filterByTech}
       />
     );
   }
 }
+
 ProjectsPage.propTypes = {
-  activeFilter: PropTypes.string,
   projects: PropTypes.array,
-  onClickProjectFilter: PropTypes.func,
-  onClickProjectListItem: PropTypes.func
+  onClickFilterByIndustry: PropTypes.func,
+  onClickFilterByTech: PropTypes.func,
+  filterByIndustry: PropTypes.string,
+  filterByTech: PropTypes.string
 };
 
 export function mapDispatchToProps(dispatch) {
   return {
-    onClickProjectFilter: (evt) => {
-      dispatch(setProjectsFilter(evt));
+    onClickFilterByIndustry: (industry) => {
+      dispatch(setProjectsFilterByIndustry(industry));
     },
-    onClickProjectListItem: (id) => {
-      dispatch(setSelectedProject(id));
+    onClickFilterByTech: (tech) => {
+      dispatch(setProjectsFilterByTech(tech));
     }
   };
 }
 
 const mapStateToProps = createStructuredSelector({
   projects: selectProjectsData(),
-  activeFilter: selectActiveProjectFilter(),
+  filterByIndustry: selectProjectsFilterByIndustry(),
+  filterByTech: selectProjectsFilterByTech()
 });
 
 
