@@ -44,10 +44,6 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 
     const isHomePage = location && location.pathname === '/';
 
-    // temp solution for active nav of child page.
-    // routing is done quite differently from boilerplate.
-    const isProjectSinglePage = location && location.pathname.includes('projects/');
-
     if (isHomePage) {
       return null;
     }
@@ -64,7 +60,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
             <ListRoot>
               <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
               <NavNavLink to="/about" activeClassName="active">About</NavNavLink>
-              <NavNavLink to="/projects" activeClassName="active" className={isProjectSinglePage && 'active'}>Projects</NavNavLink>
+              <NavNavLink to="/projects" activeClassName="active">Projects</NavNavLink>
               <NavNavLink to="/contact" activeClassName="active">Contact</NavNavLink>
             </ListRoot>
           </div>
