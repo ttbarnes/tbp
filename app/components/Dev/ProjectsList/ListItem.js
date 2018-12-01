@@ -1,4 +1,6 @@
 import React, { PropTypes } from 'react';
+import LazyLoad from 'react-lazyload';
+import { FadeIn } from 'components/styledShared';
 import Tag from 'components/Tag';
 import Link from 'components/Link';
 import H3 from 'components/H3';
@@ -21,46 +23,47 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
     } = this.props;
 
     return (
-      <StyledListItem>
-        <Border />
+      <LazyLoad height={650}>
+        <FadeIn>
+          <StyledListItem>
+            <Border />
 
-        <ListItemContent>
-          <H3>{name}</H3>
-          <p>{date}</p>
-          <h4>Industry</h4>
-          <p>{industry}</p>
+            <ListItemContent>
+              <H3>{name}</H3>
+              <p>{date}</p>
+              <h4>Industry</h4>
+              <p>{industry}</p>
 
-          <h4>Tech</h4>
+              <h4>Tech</h4>
 
 
-          <TagList>
-            {tech && tech.map((item, index) => (
-              <TagListItem key={index}>
-                <Tag
-                  type={item}
-                />
-                {index !== tech.length - 1 && ','}
-              </TagListItem>
-            ))}
-          </TagList>
+              <TagList>
+                {tech && tech.map((item, index) => (
+                  <TagListItem key={index}>
+                    <Tag type={item} />
+                  </TagListItem>
+                ))}
+              </TagList>
 
-          {urls && urls.map((item) =>
+              {urls && urls.map((item) =>
 
-            <Link
-              to={item}
-              target="_blank"
-              rel="noopener"
-              key={item}
-            >
-              {item.includes('github.com') ? (
-                'GitHub repo'
-              ) : (
-                'Live site'
+                <Link
+                  to={item}
+                  target="_blank"
+                  rel="noopener"
+                  key={item}
+                >
+                  {item.includes('github.com') ? (
+                    'GitHub repo'
+                  ) : (
+                    'Live site'
+                  )}
+                </Link>
               )}
-            </Link>
-          )}
-        </ListItemContent>
-      </StyledListItem>
+            </ListItemContent>
+          </StyledListItem>
+        </FadeIn>
+      </LazyLoad>
     );
   }
 }

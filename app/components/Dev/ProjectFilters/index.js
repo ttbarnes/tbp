@@ -30,23 +30,21 @@ export class ProjectFilters extends React.PureComponent { // eslint-disable-line
     } = this.props;
 
     return (
-      <div>
-        <FlexList>
-          <Filter
-            onChange={onClickFilterByIndustry}
-            type="Industry"
-            items={FILTERS.INDUSTRY}
-            isActive={this.handleIsActive('industry')}
-          />
-          <Filter
-            onChange={onClickFilterByTech}
-            type="Tech"
-            items={FILTERS.TECH}
-            isActive={this.handleIsActive('tech')}
-            isLast
-          />
-        </FlexList>
-      </div>
+      <FlexList>
+        <Filter
+          onChange={onClickFilterByIndustry}
+          type="Industry"
+          items={FILTERS.INDUSTRY}
+          isActive={this.handleIsActive('industry')}
+        />
+        <Filter
+          onChange={onClickFilterByTech}
+          type="Tech"
+          items={FILTERS.TECH}
+          isActive={this.handleIsActive('tech')}
+          isLast
+        />
+      </FlexList>
     );
   }
 }

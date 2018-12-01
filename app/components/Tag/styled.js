@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-// import { colors, tagColors, media } from '../styledShared';
-import { media } from '../styledShared';
+import { colors, tagColors, media } from '../styledShared';
+// import { media } from '../styledShared';
 
-/*
 const backgroundTheme = (props) => {
   const type = props.type;
 
@@ -153,9 +152,7 @@ const backgroundTheme = (props) => {
 
   `;
 };
-*/
 
-/*
 const StyledTag = styled.div`
   display: inline-flex;
   padding: 0.5em 1em;
@@ -168,8 +165,8 @@ const StyledTag = styled.div`
     font-size: 1em;
   `}
 `;
-*/
 
+/*
 const StyledTag = styled.div`
   color: #000;
   font-size: 0.9em;
@@ -177,5 +174,6 @@ const StyledTag = styled.div`
     font-size: 1em;
   `}
 `;
+*/
 
 export default StyledTag;

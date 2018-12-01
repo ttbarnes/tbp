@@ -123,22 +123,23 @@ export const tagColors = {
 
 const fadeIn = keyframes`
   from {
-    opacity: 0;
+    opacity: .4;
     margin-top: 0;
   }
 
   to {
     opacity: 1;
-    margin-top: -4em;
+    margin-top: -10em;
   }
 `;
 
 export const FadeIn = styled.div`
-  animation: ${fadeIn} 0.8s linear;
+  animation: ${fadeIn} 0.4s linear;
+  margin-top: -10em;
 `;
 
 export const FadeInLong = styled.div`
   animation: ${fadeIn} 0.8s linear;
-  margin-top: -4em;
+  margin-top: -10em;
 `;
 

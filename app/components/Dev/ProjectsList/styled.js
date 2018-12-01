@@ -19,21 +19,23 @@ export const StyledListItem = styled.li`
   flex-direction: row;
   align-items: flex-start;
   border-left: solid .5em #F5F5F5;
-  padding: 0 0 16em 0;
+  padding: 0;
 `;
 
 export const Border = styled.div`
   height: 100%;
-  width: 10em;
+  width: 20%;
   margin-top: 1em;
   border-top: solid .5em #F5F5F5;
 `;
 
 export const ListItemContent = styled.div`
   display: flex;
+  width: 80%;
   flex-direction: column;
   background: #F5F5F5;
   padding: 1em;
+  margin-bottom: 40em;
 `;
 
 export const TagList = styled.ul`

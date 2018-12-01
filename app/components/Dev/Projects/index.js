@@ -4,6 +4,7 @@ import H1 from 'components/H1';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import PageLink from 'components/PageLink';
+import { ProjectsHeader } from './styled';
 
 function Projects(props) {
   return (
@@ -18,10 +19,15 @@ function Projects(props) {
 
       <H1 hide>Projects</H1>
 
-      <ProjectFilters
-        onClickFilterByIndustry={props.onClickFilterByIndustry}
-        onClickFilterByTech={props.onClickFilterByTech}
-      />
+      <ProjectsHeader>
+        <p>2018</p>
+
+        <ProjectFilters
+          onClickFilterByIndustry={props.onClickFilterByIndustry}
+          onClickFilterByTech={props.onClickFilterByTech}
+        />
+
+      </ProjectsHeader>
 
       <ProjectsList
         data={props.projects}
