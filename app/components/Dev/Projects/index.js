@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import H1 from 'components/H1';
-import H2 from 'components/H2';
 import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import PageLink from 'components/PageLink';
@@ -18,8 +17,6 @@ function Projects(props) {
       />
 
       <H1 hide>Projects</H1>
-
-      <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
 
       <ProjectFilters
         onClickFilterByIndustry={props.onClickFilterByIndustry}

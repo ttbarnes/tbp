@@ -9,8 +9,10 @@ export const FlexList = styled(List)`
     justify-content: flex-end;
     align-items: center;
     font-size: 0.8em;
+    margin-bottom: 1.5em;
   `}
   ${media.lg`
     padding: 0 1.2em;
+    margin-bottom: 3em;
   `}
 `;

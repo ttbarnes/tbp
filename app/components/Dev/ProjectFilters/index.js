@@ -4,7 +4,7 @@ import { FlexList } from './styled';
 
 const FILTERS = {
   INDUSTRY: ['Fin Tech', 'Ecommerce'],
-  TECH: ['React', 'Angular'],
+  TECH: ['React', 'Angular']
 };
 
 export class ProjectFilters extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function

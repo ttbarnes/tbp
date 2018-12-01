@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import { colors, tagColors, media } from '../styledShared';
+// import { colors, tagColors, media } from '../styledShared';
+import { media } from '../styledShared';
 
+/*
 const backgroundTheme = (props) => {
   const type = props.type;
 
@@ -39,7 +41,7 @@ const backgroundTheme = (props) => {
 
     ${type.includes('Flow') && `
       background: ${tagColors.flow};
-      color: #000; 
+      color: #000;
     `};
 
     ${type === 'Redux' &&
@@ -62,7 +64,7 @@ const backgroundTheme = (props) => {
       type.includes('Node')) &&
       `background: ${tagColors.node}`
     };
-    
+
     ${(type.includes('MongoDB') ||
       type.includes('Mongoose')) &&
       `background: ${tagColors.mongodb}`
@@ -151,14 +153,25 @@ const backgroundTheme = (props) => {
 
   `;
 };
+*/
 
+/*
 const StyledTag = styled.div`
   display: inline-flex;
   padding: 0.5em 1em;
   margin: 0.5em 0.5em 0 0;
   color: #FFF;
-  background: #AAA; /* default */
+  background: #AAA;
   ${backgroundTheme};
+  font-size: 0.9em;
+  ${media.sm`
+    font-size: 1em;
+  `}
+`;
+*/
+
+const StyledTag = styled.div`
+  color: #000;
   font-size: 0.9em;
   ${media.sm`
     font-size: 1em;
