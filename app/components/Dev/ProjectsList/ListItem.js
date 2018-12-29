@@ -2,11 +2,14 @@ import React, { PropTypes } from 'react';
 import LazyLoad from 'react-lazyload';
 import { FadeIn } from 'components/styledShared';
 import Tag from 'components/Tag';
-import Link from 'components/Link';
 import H3 from 'components/H3';
 import {
+  Root,
+  HeadingYear,
   StyledListItem,
   Border,
+  YearProjects,
+  ListItemContainer,
   ListItemContent,
   TagList,
   TagListItem
@@ -15,67 +18,53 @@ import {
 export class ListItem extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
-      name,
-      date,
-      industry,
-      tech,
-      urls
+      year,
+      projects
     } = this.props;
 
     return (
-      <LazyLoad height={650}>
-        <FadeIn>
-          <StyledListItem>
-            <Border />
+      <Root>
+        <HeadingYear>{year}</HeadingYear>
+        <StyledListItem>
+          <Border />
+          <YearProjects>
+            {projects && projects.map((project) =>
+              <ListItemContainer key={project.name}>
+                <ListItemContent>
+                  <H3>{project.name}</H3>
 
-            <ListItemContent>
-              <H3>{name}</H3>
-              <p>{date}</p>
-              <h4>Industry</h4>
-              <p>{industry}</p>
+                  {project.url &&
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener"
+                      key={project.url}
+                    >
+                      view
+                    </a>
+                  }
 
-              <h4>Tech</h4>
+                  <TagList>
+                    {project.tech && project.tech.map((item, index) => (
+                      <TagListItem key={index}>
+                        <Tag type={item} />
+                      </TagListItem>
+                    ))}
+                  </TagList>
 
-
-              <TagList>
-                {tech && tech.map((item, index) => (
-                  <TagListItem key={index}>
-                    <Tag type={item} />
-                  </TagListItem>
-                ))}
-              </TagList>
-
-              {urls && urls.map((item) =>
-
-                <Link
-                  to={item}
-                  target="_blank"
-                  rel="noopener"
-                  key={item}
-                >
-                  {item.includes('github.com') ? (
-                    'GitHub repo'
-                  ) : (
-                    'Live site'
-                  )}
-                </Link>
-              )}
-            </ListItemContent>
-          </StyledListItem>
-        </FadeIn>
-      </LazyLoad>
+                </ListItemContent>
+              </ListItemContainer>
+            )}
+          </YearProjects>
+        </StyledListItem>
+      </Root>
     );
   }
 }
 
 ListItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  date: PropTypes.string,
-  industry: PropTypes.string.isRequired,
-  tech: PropTypes.array,
-  urls: PropTypes.arrayOf(
-    PropTypes.string
-  )
+  year: PropTypes.string.isRequired,
+  projects: PropTypes.arrayOf(PropTypes.object)
 };
 
 ListItem.defaultProps = {
