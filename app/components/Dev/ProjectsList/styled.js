@@ -7,10 +7,14 @@ export const Root = styled.div`
 
 export const ListRoot = styled.ul`
   margin: 0 -8em;
+  margin-top: 25em;
 `;
 
 export const HeadingYear = styled.p`
   font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  background: #FFF;
 `;
 
 export const StyledListItem = styled.li`
@@ -18,7 +22,7 @@ export const StyledListItem = styled.li`
   flex-direction: row;
   align-items: flex-start;
   border-left: solid .5em #F5F5F5;
-  padding: 0;
+  padding-bottom: 30em;
 `;
 
 export const Border = styled.div`

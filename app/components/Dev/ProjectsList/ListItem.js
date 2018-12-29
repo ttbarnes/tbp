@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import LazyLoad from 'react-lazyload';
-import { FadeIn } from 'components/styledShared';
+import { FadeInLong } from 'components/styledShared';
 import Tag from 'components/Tag';
 import H3 from 'components/H3';
 import {
@@ -24,39 +24,44 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 
     return (
       <Root>
-        <HeadingYear>{year}</HeadingYear>
-        <StyledListItem>
-          <Border />
-          <YearProjects>
-            {projects && projects.map((project) =>
-              <ListItemContainer key={project.name}>
-                <ListItemContent>
-                  <H3>{project.name}</H3>
+        <LazyLoad height={650}>
+          <FadeInLong>
+            <HeadingYear>{year}</HeadingYear>
 
-                  {project.url &&
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener"
-                      key={project.url}
-                    >
-                      view
+            <StyledListItem>
+              <Border />
+              <YearProjects>
+                {projects && projects.map((project) =>
+                  <ListItemContainer key={project.name}>
+                    <ListItemContent>
+                      <H3>{project.name}</H3>
+
+                      {project.url &&
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener"
+                          key={project.url}
+                        >
+                          view
                     </a>
-                  }
+                      }
 
-                  <TagList>
-                    {project.tech && project.tech.map((item, index) => (
-                      <TagListItem key={index}>
-                        <Tag type={item} />
-                      </TagListItem>
-                    ))}
-                  </TagList>
+                      <TagList>
+                        {project.tech && project.tech.map((item, index) => (
+                          <TagListItem key={index}>
+                            <Tag type={item} />
+                          </TagListItem>
+                        ))}
+                      </TagList>
 
-                </ListItemContent>
-              </ListItemContainer>
-            )}
-          </YearProjects>
-        </StyledListItem>
+                    </ListItemContent>
+                  </ListItemContainer>
+                )}
+              </YearProjects>
+            </StyledListItem>
+          </FadeInLong>
+        </LazyLoad>
       </Root>
     );
   }

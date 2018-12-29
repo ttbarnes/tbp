@@ -4,7 +4,7 @@ import LazyLoad from 'react-lazyload';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { FadeInLong } from 'components/styledShared';
+import { FadeIn } from 'components/styledShared';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
@@ -59,10 +59,10 @@ export const renderGroup = (group) => {
 
 export const renderAboutSection = (group) =>
   <Row>
-    <FadeInLong>
+    <FadeIn>
       <H3>{group.heading}</H3>
       {renderGroup(group)}
-    </FadeInLong>
+    </FadeIn>
   </Row>;
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function

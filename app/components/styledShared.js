@@ -133,13 +133,27 @@ const fadeIn = keyframes`
   }
 `;
 
+
+const fadeInLong = keyframes`
+  from {
+    opacity: .4;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: -25em;
+  }
+`;
+
 export const FadeIn = styled.div`
   animation: ${fadeIn} 0.4s linear;
   margin-top: -10em;
 `;
 
 export const FadeInLong = styled.div`
-  animation: ${fadeIn} 0.8s linear;
-  margin-top: -10em;
+  animation: ${fadeInLong} 0.8s linear;
+  margin-top: -25em;
+  position: relative;
 `;
 
