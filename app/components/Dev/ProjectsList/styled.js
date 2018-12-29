@@ -1,20 +1,23 @@
 import styled from 'styled-components';
-// import { media } from '../../styledShared';
+import { media } from '../../styledShared';
 
 export const Root = styled.div`
   position: relative;
 `;
 
 export const ListRoot = styled.ul`
-  margin: 0 -8em;
-  margin-top: 25em;
+  ${media.lg`
+    margin: 25em -8em 0 -8em;
+  `}
 `;
 
 export const HeadingYear = styled.p`
   font-size: 1.5em;
-  position: fixed;
-  top: 0;
-  background: #FFF;
+  ${media.lg`
+    position: fixed;
+    top: 0;
+    background: #FFF;
+  `}
 `;
 
 export const StyledListItem = styled.li`
@@ -22,14 +25,19 @@ export const StyledListItem = styled.li`
   flex-direction: row;
   align-items: flex-start;
   border-left: solid .5em #F5F5F5;
-  padding-bottom: 30em;
+  padding: 5em 0;
+  ${media.lg`
+    padding-bottom: 30em;
+  `}
 `;
 
 export const Border = styled.div`
-  height: 100%;
-  width: 20%;
-  margin-top: 1em;
-  border-top: solid .5em #F5F5F5;
+  ${media.lg`
+    width: 20%;
+    height: 100%;
+    margin-top: 1em;
+    border-top: solid .5em #F5F5F5;
+  `}
 `;
 
 export const YearProjects = styled.div`
@@ -42,9 +50,24 @@ export const YearProjects = styled.div`
 export const ListItemContainer = styled.div`
   display: flex;
   width: 100%;
-  flex: 0 0 45%;
-  flex-direction: column;
-  margin: 0 5% 5% 0;
+  flex-direction: row;
+  margin-bottom: 5%;
+  &:before {
+      content: '';
+      display: block;
+      border-top: solid .5em #F5F5F5;
+      margin-top: .5em;
+      width: 100%;
+      max-width: 5%;
+      ${media.lg`
+        display: none;
+      `}
+  }
+  ${media.lg`
+    flex-direction: column;
+    flex: 0 0 45%;
+    margin: 0 5% 5% 0;
+  `}
 `;
 
 export const ListItemContent = styled.div`

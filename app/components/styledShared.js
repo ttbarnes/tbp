@@ -152,8 +152,10 @@ export const FadeIn = styled.div`
 `;
 
 export const FadeInLong = styled.div`
-  animation: ${fadeInLong} 0.8s linear;
-  margin-top: -25em;
-  position: relative;
+  ${media.lg`
+    animation: ${fadeInLong} 0.8s linear;
+    margin-top: -25em;
+    position: relative;
+  `}
 `;
 
