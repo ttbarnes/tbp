@@ -5,7 +5,6 @@ import H1 from 'components/H1';
 import {
   StyledP,
   Root,
-  FlexRoot,
   FlexRootIntro,
   Flex,
   StyledH2,
@@ -34,15 +33,11 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           <div>
             <StyledH2>Hello! I{'\''}m Tony.</StyledH2>
             <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP>
+            <Intro>
+              <IntroP>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></IntroP>
+            </Intro>
           </div>
         </FlexRootIntro>
-
-        <FlexRoot>
-          <Flex></Flex>
-          <Intro>
-            <IntroP>Read <Link to="about">about me</Link>, <br />check out <Link to="projects">my projects</Link>, <br />or see <Link to="hobbies">what else I get up to.</Link></IntroP>
-          </Intro>
-        </FlexRoot>
       </Root>
     );
   }

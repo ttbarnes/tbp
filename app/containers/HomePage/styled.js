@@ -4,7 +4,7 @@ import H1 from 'components/H1';
 import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
 
 export const Root = styled.article`
-  max-width: 550px;
+  max-width: 650px;
   width: 100%;
   margin: 0 auto;
   ${media.md`
@@ -27,15 +27,6 @@ export const StyledP = styled.p`
   `}
 `;
 
-export const FlexRoot = styled.article`
-  text-align: center;
-  align-items: center;
-  ${media.sm`
-    display: flex;
-    text-align: left;
-  `}
-`;
-
 export const FlexRootIntro = styled.article`
 text-align: center;
   align-items: center;
@@ -48,9 +39,13 @@ text-align: center;
 `;
 
 export const Flex = styled.div`
-  flex: 0 0 160px;
+  flex: 0 0 180px;
+  ${media.sm`
+    flex: 0 0 200px;
+    margin-right: 20px;
+  `}
   ${media.md`
-    flex: 0 0 175px;
+    margin-right: 40px;
   `}
 `;
 
@@ -63,9 +58,12 @@ export const ImgWrap = styled.div`
 `;
 
 export const StyledImg = styled(Img)`
-  max-width: 130px;
+  max-width: 180px;
   border-radius: 50%;
   margin-bottom: 0.5em;
+  ${media.md`
+    max-width: 200px;
+  `}
 `;
 
 export const Intro = styled.div`

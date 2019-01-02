@@ -71,6 +71,7 @@ export const colors = {
   pink1: '#D381A9',
   pink2: '#db7093',
   pink3: '#EC0C8E',
+  pink4: '#F4009B',
   purple1: '#9B4367',
   purple2: '#794bb5',
   purple3: '#8A4182',
@@ -118,7 +119,8 @@ export const tagColors = {
   reactNative: colors.black1,
   docker: colors.blue8,
   ruby: colors.red5,
-  misc: colors.grey1
+  misc: colors.grey1,
+  graphQL: colors.pink4
 };
 
 const fadeIn = keyframes`
