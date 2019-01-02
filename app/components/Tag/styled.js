@@ -149,6 +149,10 @@ const backgroundTheme = (props) => {
       `background: ${tagColors.misc}`
     };
 
+    ${type.includes('GraphQL') &&
+      `background: ${tagColors.graphQL}`
+    };
+
   `;
 };
 
