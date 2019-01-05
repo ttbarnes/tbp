@@ -11,12 +11,36 @@ export const ListRoot = styled.ul`
   `}
 `;
 
+export const HeadingYearColumn = styled.div`
+  ${media.lg`
+    background: #FFF;
+    transform: translateX(-40%);
+    padding: 1.5em 0;
+    display: inline-flex;
+  `}
+`;
+
+export const HeadingYearContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
 export const HeadingYear = styled.p`
   font-size: 1.5em;
-  ${media.lg`
-    position: fixed;
-    top: 0;
-    background: #FFF;
+  margin-bottom: 0;
+`;
+
+export const HeadingYearSub = styled.p`
+  margin-bottom: 0;
+  font-size: .8em;
+`;
+
+const isLastItem = (props) => `
+  ${props.isLast && `
+    padding-bottom: 0;
   `}
 `;
 
@@ -29,6 +53,7 @@ export const StyledListItem = styled.li`
   ${media.lg`
     padding-bottom: 30em;
   `}
+  ${isLastItem}
 `;
 
 export const Border = styled.div`

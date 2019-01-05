@@ -12,10 +12,11 @@ export class ProjectsList extends React.PureComponent { // eslint-disable-line r
     return (
       <Root>
         <ListRoot>
-          {data && data.map((year) =>
+          {data && data.map((year, index) =>
             <ListItem
               key={year.year}
               {...year}
+              isLast={index === data.length - 1}
             />
           )}
         </ListRoot>

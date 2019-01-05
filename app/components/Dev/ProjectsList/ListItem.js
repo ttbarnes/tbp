@@ -5,7 +5,10 @@ import Tag from 'components/Tag';
 import H3 from 'components/H3';
 import {
   Root,
+  HeadingYearColumn,
+  HeadingYearContent,
   HeadingYear,
+  HeadingYearSub,
   StyledListItem,
   Border,
   YearProjects,
@@ -19,16 +22,25 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
   render() {
     const {
       year,
-      projects
+      yearSub,
+      projects,
+      isLast
     } = this.props;
 
     return (
       <Root>
         <LazyLoad height={650}>
           <FadeInLong>
-            <HeadingYear>{year}</HeadingYear>
+            <HeadingYearColumn>
+              <HeadingYearContent>
+                <HeadingYear>{year}</HeadingYear>
+                {year === 'Currently' && <HeadingYearSub>{yearSub}</HeadingYearSub>}
+              </HeadingYearContent>
+            </HeadingYearColumn>
 
-            <StyledListItem>
+            <StyledListItem
+              isLast={isLast}
+            >
               <Border />
               <YearProjects>
                 {projects && projects.map((project) =>
@@ -44,7 +56,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                           key={project.url}
                         >
                           view
-                    </a>
+                        </a>
                       }
 
                       <TagList>
@@ -69,12 +81,15 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 
 ListItem.propTypes = {
   year: PropTypes.string.isRequired,
-  projects: PropTypes.arrayOf(PropTypes.object)
+  yearSub: PropTypes.string,
+  projects: PropTypes.arrayOf(PropTypes.object),
+  isLast: PropTypes.bool
 };
 
 ListItem.defaultProps = {
-  date: '',
-  urls: []
+  yearSub: '',
+  urls: [],
+  isLast: false
 };
 
 export default ListItem;
