@@ -14,6 +14,7 @@ import {
   YearProjects,
   ListItemContainer,
   ListItemContent,
+  ProjectHeading,
   TagList,
   TagListItem
 } from './styled';
@@ -46,18 +47,20 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                 {projects && projects.map((project) =>
                   <ListItemContainer key={project.name}>
                     <ListItemContent>
-                      <H3>{project.name}</H3>
+                      <ProjectHeading>
+                        <H3 noMargin>{project.name}</H3>
 
-                      {project.url &&
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener"
-                          key={project.url}
-                        >
-                          view
-                        </a>
-                      }
+                        {project.url &&
+                          <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener"
+                            key={project.url}
+                          >
+                            view
+                          </a>
+                        }
+                      </ProjectHeading>
 
                       <TagList>
                         {project.tech && project.tech.map((item, index) => (
