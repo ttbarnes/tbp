@@ -98,6 +98,7 @@ export const ListItemContainer = styled.div`
 export const ListItemContent = styled.div`
   background: #F5F5F5;
   padding: 1em;
+  min-height: 124px;
 `;
 
 export const ProjectHeading = styled.div`
@@ -105,8 +106,12 @@ export const ProjectHeading = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: .5em;
+`;
+
+export const ProjectLink = styled.a`
+  margin-top: .4em;
 `;
 
 export const TagList = styled.ul`
@@ -120,5 +125,5 @@ export const TagListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-right: .1em;
+  padding-right: .2em;
 `;

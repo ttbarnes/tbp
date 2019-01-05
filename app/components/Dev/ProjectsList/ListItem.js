@@ -15,6 +15,7 @@ import {
   ListItemContainer,
   ListItemContent,
   ProjectHeading,
+  ProjectLink,
   TagList,
   TagListItem
 } from './styled';
@@ -51,14 +52,14 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                         <H3 noMargin>{project.name}</H3>
 
                         {project.url &&
-                          <a
+                          <ProjectLink
                             href={project.url}
                             target="_blank"
                             rel="noopener"
                             key={project.url}
                           >
                             view
-                          </a>
+                          </ProjectLink>
                         }
                       </ProjectHeading>
 
