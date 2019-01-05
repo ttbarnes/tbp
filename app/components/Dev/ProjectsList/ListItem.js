@@ -62,7 +62,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                       <TagList>
                         {project.tech && project.tech.map((item, index) => (
                           <TagListItem key={index}>
-                            <Tag type={item} />
+                            <Tag type={item} />{index !== project.tech.length - 1 && ', '}
                           </TagListItem>
                         ))}
                       </TagList>

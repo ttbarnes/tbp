@@ -103,11 +103,13 @@ export const ListItemContent = styled.div`
 export const TagList = styled.ul`
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-wrap: wrap;
 `;
 
 export const TagListItem = styled.li`
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  padding-right: .1em;
 `;

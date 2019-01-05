@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { colors, tagColors } from '../styledShared';
+// import { colors, tagColors } from '../styledShared';
 
+/*
 const backgroundTheme = (props) => {
   const type = props.type;
 
@@ -155,14 +156,10 @@ const backgroundTheme = (props) => {
 
   `;
 };
+*/
 
 const StyledTag = styled.div`
   display: inline-flex;
-  padding: 0.5em 1em;
-  margin: 0.3em 0.3em 0 0;
-  color: #FFF;
-  background: #AAA;
-  ${backgroundTheme};
   font-size: 0.85em;
 `;
 
