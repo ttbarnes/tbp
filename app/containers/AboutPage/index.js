@@ -34,7 +34,12 @@ export const renderGroup = (group) => {
     return (
       <StyledList>
         {groupTags.map((tag, i) =>
-          <StyledTag type={tag} key={i} index={i + 1} />
+          <StyledTag
+            type={tag}
+            key={i}
+            index={i + 1}
+            backgroundTheme
+          />
         )}
       </StyledList>
     );
