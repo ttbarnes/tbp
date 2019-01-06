@@ -314,6 +314,12 @@
           "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
         ],
         "url": "https://angular-poc-demos.firebaseapp.com"
+      },
+      {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "category": "Other",
+        "industry": "Coaching"
       }
     ]
   },
@@ -414,7 +420,7 @@
     ]
   },
   {
-    "year": "20XX-TBC",
+    "year": "2013-2014",
     "projects": [
       {
         "id": "robbie-williams",
@@ -459,6 +465,17 @@
         "industry": "Ecommerce"
       },
       {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "category": "Other",
+        "industry": "Travel"
+      }
+    ]
+  },
+  {
+    "year": "2013",
+    "projects": [
+      {
         "id": "hoover",
         "name": "Hoover Spares",
         "category": "Other",
@@ -480,88 +497,11 @@
         "industry": "Ecommerce"
       },
       {
-        "id": "farrell",
-        "name": "Farrell",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
         "id": "new-naturalists",
         "name": "New Naturalists",
         "category": "Other",
         "mini": true,
         "industry": "Ecommerce"
-      },
-      {
-        "id": "mr-waghu",
-        "name": "Mr Waghu",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
-        "id": "jbrand",
-        "name": "J Brand",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
-        "id": "werelse",
-        "name": "Werelse",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
-        "id": "wpfp",
-        "name": "Who Pays Full Price",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
-        "id": "cathy-brown-v2",
-        "name": "Cathy Brown",
-        "category": "Other",
-        "mini": true,
-        "industry": "Coaching"
-      },
-      {
-        "id": "mara-explorers",
-        "name": "Mara Explorers",
-        "category": "Other",
-        "mini": true,
-        "industry": "Travel"
-      },
-      {
-        "id": "powatag",
-        "name": "Powatag",
-        "category": "Other",
-        "mini": true,
-        "industry": "Fin Tech"
-      },
-      {
-        "id": "enterprising-britain",
-        "name": "Enterprising Britain",
-        "category": "Other",
-        "mini": true,
-        "industry": "Digital Transformation"
-      },
-      {
-        "id": "powa",
-        "name": "Powa",
-        "category": "Other",
-        "mini": true,
-        "industry": "Ecommerce"
-      },
-      {
-        "id": "mpowa",
-        "name": "mpowa",
-        "category": "Other",
-        "mini": true,
-        "industry": "Fin Tech"
       },
       {
         "id": "jquery/list-icon-manipulator",
@@ -583,13 +523,84 @@
         "category": "Other",
         "mini": true,
         "industry": "Tech"
+      }
+    ]
+  },
+  {
+    "year": "2012",
+    "projects": [
+      {
+        "id": "powatag",
+        "name": "Powatag",
+        "category": "Other",
+        "mini": true,
+        "industry": "Fin Tech"
+      },
+      {
+        "id": "enterprising-britain",
+        "name": "Enterprising Britain",
+        "category": "Other",
+        "mini": true,
+        "industry": "Digital Transformation"
+      },
+      {
+        "id": "farrell",
+        "name": "Farrell",
+        "category": "Other",
+        "mini": true,
+        "industry": "Ecommerce"
+      },
+      {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
+        "category": "Other",
+        "mini": true,
+        "industry": "Ecommerce"
       },
       {
         "id": "propax-malaysia",
         "name": "Propax Malaysia",
         "category": "Other",
-        "mini": true,
         "industry": "Shipping"
+      }
+    ]
+  },
+  {
+    "year": "2011",
+    "projects": [
+      {
+        "id": "powa",
+        "name": "Powa",
+        "category": "Other",
+        "mini": true,
+        "industry": "Ecommerce"
+      },
+      {
+        "id": "mpowa",
+        "name": "mpowa",
+        "category": "Other",
+        "mini": true,
+        "industry": "Fin Tech"
+      },
+      {
+        "id": "werelse",
+        "name": "Werelse",
+        "category": "Other",
+        "mini": true,
+        "industry": "Ecommerce"
+      },
+      {
+        "id": "jbrand",
+        "name": "J Brand",
+        "category": "Other",
+        "mini": true,
+        "industry": "Ecommerce"
+      },
+      {
+        "id": "wpfp",
+        "name": "Who Pays Full Price",
+        "category": "Other",
+        "industry": "Ecommerce"
       },
       {
         "id": "life-financial-solutions",
@@ -597,19 +608,22 @@
         "category": "Other",
         "mini": true,
         "industry": "Finance"
-      },
+      }
+    ]
+  },
+  {
+    "year": "2010",
+    "projects": [
       {
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
         "category": "Other",
-        "mini": true,
         "industry": "Health"
       },
       {
         "id": "gold-challenge",
         "name": "Gold Challenge",
         "category": "Other",
-        "mini": true,
         "industry": "Sports"
       }
     ]
