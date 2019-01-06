@@ -29,6 +29,4 @@ describe('<ProjectsList />', () => {
     ]);
     expect(actual).toBeTruthy();
   });
-
-  // todo: should render X category projects if activeFilter = ...
 });

@@ -46,8 +46,6 @@ describe('ProjectsList <ListItem />', () => {
     expect(actual).toBeTruthy();
   });
 
-  // todo: should render full stack if x...
-
   describe('when mini project', () => {
     const wrapperMini = shallow(
       <ListItem {...mock.project} handleClick={mock.clickFunc} id={mock.project.id} mini />
