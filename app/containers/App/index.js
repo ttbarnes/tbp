@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
-
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 import HomePage from 'containers/HomePage/loadable';
@@ -11,8 +10,6 @@ import ProjectsPage from 'containers/ProjectsPage/loadable';
 import HobbiesPage from 'containers/HobbiesPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
-
-import { MainContent } from './styled';
 
 
 // NOTE: location is not done as best as possible due to an
@@ -41,39 +38,36 @@ function App(props) {
 
       <Nav location={props.location} />
 
-      <MainContent location={props.location}>
-        <ConnectedSwitch>
+      <ConnectedSwitch>
 
-          <Route
-            exact
-            path="/"
-            component={HomePage}
-          />
-          <Route
-            path="/about"
-            component={AboutPage}
-          />
-          <Route
-            exact
-            path="/projects"
-            component={ProjectsPage}
-          />
-          <Route
-            path="/hobbies"
-            component={HobbiesPage}
-          />
-          <Route
-            path="/contact"
-            component={ContactPage}
-          />
-          <Route
-            path=""
-            component={NotFoundPage}
-          />
+        <Route
+          exact
+          path="/"
+          component={HomePage}
+        />
+        <Route
+          path="/about"
+          component={AboutPage}
+        />
+        <Route
+          exact
+          path="/projects"
+          component={ProjectsPage}
+        />
+        <Route
+          path="/hobbies"
+          component={HobbiesPage}
+        />
+        <Route
+          path="/contact"
+          component={ContactPage}
+        />
+        <Route
+          path=""
+          component={NotFoundPage}
+        />
 
-        </ConnectedSwitch>
-
-      </MainContent>
+      </ConnectedSwitch>
 
       <Footer location={props.location} />
 

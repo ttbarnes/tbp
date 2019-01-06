@@ -3,6 +3,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Projects from 'components/Dev/Projects';
+import PageContainer from '../PageContainer';
 import {
   setProjectsFilterByIndustry,
   setProjectsFilterByTech
@@ -24,13 +25,15 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
     } = this.props;
 
     return (
-      <Projects
-        projects={projects}
-        onClickFilterByIndustry={onClickFilterByIndustry}
-        onClickFilterByTech={onClickFilterByTech}
-        filterByIndustry={filterByIndustry}
-        filterByTech={filterByTech}
-      />
+      <PageContainer>
+        <Projects
+          projects={projects}
+          onClickFilterByIndustry={onClickFilterByIndustry}
+          onClickFilterByTech={onClickFilterByTech}
+          filterByIndustry={filterByIndustry}
+          filterByTech={filterByTech}
+        />
+      </PageContainer>
     );
   }
 }

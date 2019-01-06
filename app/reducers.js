@@ -4,8 +4,6 @@
 
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-
-import globalReducer from 'containers/App/reducer';
 import projectsReducers from 'containers/ProjectsPage/reducer';
 import hobbiesReducers from 'containers/HobbiesPage/reducer';
 import aboutReducers from 'containers/AboutPage/reducer';
@@ -16,7 +14,6 @@ import aboutReducers from 'containers/AboutPage/reducer';
 export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routerReducer,
-    global: globalReducer,
     projects: projectsReducers,
     hobbies: hobbiesReducers,
     about: aboutReducers,

@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
 import Tag from 'components/Tag';
+import PageContainer from '../PageContainer';
 import H2 from '../../components/H2';
 import A from '../../components/A';
 import { selectActivities } from './selectors';
@@ -45,7 +46,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
   render() {
     const { activities } = this.state;
     return (
-      <article>
+      <PageContainer>
 
         <Helmet
           title="Hobbies"
@@ -65,7 +66,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
         ) : (
           <p>Unable to load activities :(</p>
         )}
-      </article>
+      </PageContainer>
     );
   }
 }

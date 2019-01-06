@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 
@@ -7,7 +8,7 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
 
   render() {
     return (
-      <article>
+      <PageContainer>
 
         <Helmet
           title="Contact"
@@ -21,7 +22,7 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
         <p><a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
         <p><a href="http://twitter.com/ttbarnes" target="_blank" rel="noopener">{'@'}ttbarnes</a></p>
 
-      </article>
+      </PageContainer>
     );
   }
 }

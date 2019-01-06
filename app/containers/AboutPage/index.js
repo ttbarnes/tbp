@@ -5,6 +5,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { FadeIn } from 'components/styledShared';
+import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
@@ -77,7 +78,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
     } = this.props;
 
     return (
-      <article>
+      <PageContainer>
 
         <Helmet
           title="About"
@@ -100,7 +101,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           <p>Recently helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve also helped to deliver many multilingual/multi-country projects.</p>
 
           <p>On the side i{'\''}m building an app that combines various APIs from music platforms, as well as some tools/UIs that will assist crypto currency traders.
-           Previously built a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a> and worked on a <a href="http://www.plantstove.com" target="_blank" rel="noopener">startup idea</a>.</p>
+          Previously built a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a> and worked on a <a href="http://www.plantstove.com" target="_blank" rel="noopener">startup idea</a>.</p>
         </Intro>
 
         <ul>
@@ -115,7 +116,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           )}
         </ul>
 
-      </article>
+      </PageContainer>
     );
   }
 }
