@@ -102,16 +102,13 @@ export const ListItemContent = styled.div`
 `;
 
 export const ProjectHeading = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: .5em;
 `;
 
 export const ProjectLink = styled.a`
-  margin-top: .4em;
+  display: flex;
+  width: 100%;
+  margin-top: .5em;
 `;
 
 export const TagList = styled.ul`
@@ -126,4 +123,10 @@ export const TagListItem = styled.li`
   flex-direction: row;
   align-items: flex-end;
   padding-right: .2em;
+`;
+
+export const ProjectIndustry = styled.p`
+  font-size: 80%;
+  line-height: initial;
+  margin-top: .1em;
 `;

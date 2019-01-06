@@ -17,7 +17,8 @@ import {
   ProjectHeading,
   ProjectLink,
   TagList,
-  TagListItem
+  TagListItem,
+  ProjectIndustry
 } from './styled';
 
 export class ListItem extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -50,17 +51,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                     <ListItemContent>
                       <ProjectHeading>
                         <H4 noMargin>{project.name}</H4>
-
-                        {project.url &&
-                          <ProjectLink
-                            href={project.url}
-                            target="_blank"
-                            rel="noopener"
-                            key={project.url}
-                          >
-                            view
-                          </ProjectLink>
-                        }
+                        <ProjectIndustry>{project.industry}</ProjectIndustry>
                       </ProjectHeading>
 
                       <TagList>
@@ -70,6 +61,17 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                           </TagListItem>
                         ))}
                       </TagList>
+
+                      {project.url &&
+                        <ProjectLink
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener"
+                          key={project.url}
+                        >
+                          view
+                          </ProjectLink>
+                      }
 
                     </ListItemContent>
                   </ListItemContainer>

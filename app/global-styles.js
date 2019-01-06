@@ -38,6 +38,10 @@ injectGlobal`
     line-height: 1.5em;
   }
 
+  small {
+    font-size: 80%;
+  }
+
   ul,
   ol,
   li {
