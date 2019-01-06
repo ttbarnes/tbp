@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import { colors } from 'components/styledShared';
+import { colors, media } from 'components/styledShared';
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -85,18 +85,10 @@ injectGlobal`
     max-width: 100%;
   }
 
-
-   /* styles for 3rd party react components 
-      this is the quickest and simplest solution */
   .progress-bar-inner {
     background: rgba(75, 134, 167, 0.39);
     height: 100%;
     transition: all .2s ease;
-  }
-
-  .sb-soundplayer-play-icon {
-    width: 50px;
-    height: 50px;
   }
 
   .bm-burger-button {
@@ -105,6 +97,13 @@ injectGlobal`
     height: 22px;
     left: 1em;
     top: 1em;
+    ${media.lg`
+      display: none;
+    `}
+  }
+
+  .bm-menu-wrap {
+    top: 0;
   }
 
   .bm-burger-bars {
