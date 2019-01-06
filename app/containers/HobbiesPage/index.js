@@ -24,7 +24,10 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
         a.type === 'timelapse') {
       return (
         <ListItem key={a.videoId}>
-          <Tag type={a.type} />
+          <Tag
+            type={a.type}
+            backgroundTheme
+          />
           <H2>{a.title}</H2>
           <p>{a.description}</p>
           <A href={`https://www.youtube.com/watch?v=${a.videoId}`} target="_blank" rel="noopener">{`https://www.youtube.com/watch?v=${a.videoId}`}</A>
@@ -33,7 +36,10 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
-          <Tag type={a.type} />
+          <Tag
+            type={a.type}
+            backgroundTheme
+          />
           <H2>{a.title}</H2>
           <p>{a.description}</p>
           <A href={a.url} target="_blank" rel="noopener">{a.url}</A>
