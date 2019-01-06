@@ -131,7 +131,7 @@ const fadeIn = keyframes`
 
   to {
     opacity: 1;
-    margin-top: -10em;
+    margin-top: -15em;
   }
 `;
 
@@ -150,12 +150,12 @@ const fadeInLong = keyframes`
 
 export const FadeIn = styled.div`
   animation: ${fadeIn} 0.4s linear;
-  margin-top: -10em;
+  margin-top: -15em;
 `;
 
 export const FadeInLong = styled.div`
   ${media.lg`
-    animation: ${fadeInLong} 0.8s linear;
+    animation: ${fadeInLong} 0.6s linear;
     margin-top: -25em;
     position: relative;
   `}

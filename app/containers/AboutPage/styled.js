@@ -4,14 +4,21 @@ import Tag from 'components/Tag';
 import { media } from '../../components/styledShared';
 
 export const Intro = styled.div`
-  margin-bottom: 10em;
+  margin-bottom: 13em;
+`;
+
+const isLast = (props) => `
+  ${props.isLast && `
+    margin-bottom: 15em;
+  `}
 `;
 
 export const Row = styled.div`
   margin-bottom: 15em;
   ${media.sm`
-    margin-bottom: 20em;
+    margin-bottom: 30em;
   `}
+  ${isLast}
 `;
 
 export const StyledList = styled(List)`
@@ -35,4 +42,8 @@ const tagAnimation = (props) => `
 
 export const StyledTag = styled(Tag)`
   ${tagAnimation}
+`;
+
+export const TechList = styled.ul`
+  margin-top: 5em;
 `;

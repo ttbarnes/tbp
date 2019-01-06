@@ -17,7 +17,8 @@ import {
   Intro,
   Row,
   StyledList,
-  StyledTag
+  StyledTag,
+  TechList
 } from './styled';
 
 const groupsWithStyledTag = [
@@ -63,8 +64,8 @@ export const renderGroup = (group) => {
   return <p>{group.copy}</p>;
 };
 
-export const renderAboutSection = (group) =>
-  <Row>
+export const renderAboutSection = (group, isLast) =>
+  <Row isLast={isLast}>
     <FadeIn>
       <H3>{group.heading}</H3>
       {renderGroup(group)}
@@ -104,17 +105,21 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           Previously built a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a> and worked on a <a href="http://www.plantstove.com" target="_blank" rel="noopener">startup idea</a>.</p>
         </Intro>
 
-        <ul>
-          {tech.map((item) =>
-            <li key={item.heading}>
-              <LazyLoad height={400} once>
-                {renderAboutSection(
-                  item
-                )}
-              </LazyLoad>
-            </li>
-          )}
-        </ul>
+        <TechList>
+          {tech.map((item, index) => {
+            const isLast = tech.length - 1 === index;
+            return (
+              <li key={item.heading}>
+                <LazyLoad height={400} once>
+                  {renderAboutSection(
+                    item,
+                    isLast
+                  )}
+                </LazyLoad>
+              </li>
+            );
+          })}
+        </TechList>
 
       </PageContainer>
     );
