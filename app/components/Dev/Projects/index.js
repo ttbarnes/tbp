@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import H1 from 'components/H1';
+import H3 from 'components/H3';
 import ProjectsList from 'components/Dev/ProjectsList';
-import PageLink from 'components/PageLink';
+import ProjectsFooter from 'components/Dev/ProjectsFooter';
 
 function Projects(props) {
   return (
@@ -17,14 +18,13 @@ function Projects(props) {
 
       <H1 hide>Projects</H1>
 
+      <H3>I{'\''}ve built a few things........</H3>
+
       <ProjectsList
         data={props.projects}
       />
 
-      <br />
-      <br />
-      <PageLink to="/about">About</PageLink>
-      <PageLink to="/contact">Contact</PageLink>
+      <ProjectsFooter />
 
     </article>
   );
