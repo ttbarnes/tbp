@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import LazyLoad from 'react-lazyload';
 import { FadeInLong } from 'components/styledShared';
 import Tag from 'components/Tag';
-import H3 from 'components/H3';
+import H4 from 'components/H4';
 import {
   Root,
   HeadingYearColumn,
@@ -49,7 +49,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                   <ListItemContainer key={project.name}>
                     <ListItemContent>
                       <ProjectHeading>
-                        <H3 noMargin>{project.name}</H3>
+                        <H4 noMargin>{project.name}</H4>
 
                         {project.url &&
                           <ProjectLink

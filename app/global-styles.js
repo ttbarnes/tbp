@@ -30,7 +30,7 @@ injectGlobal`
   }
 
   h4 {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
   }
 
   p,

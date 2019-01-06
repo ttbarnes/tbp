@@ -7,7 +7,7 @@ export const Root = styled.div`
 
 export const ListRoot = styled.ul`
   ${media.lg`
-    margin: 35em -8em 0 2.5em;
+    margin: 28em -8em 0 2.5em;
   `}
 `;
 
