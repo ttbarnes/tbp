@@ -49,10 +49,19 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                 {projects && projects.map((project) =>
                   <ListItemContainer key={project.name}>
                     <ListItemContent>
+
                       <ProjectHeading>
                         <H4 noMargin>{project.name}</H4>
-                        <ProjectIndustry>{project.industry}</ProjectIndustry>
                       </ProjectHeading>
+
+                      <ProjectIndustry>{project.industry}</ProjectIndustry>
+
+                      {project.primaryTech &&
+                        <Tag
+                          type={project.primaryTech}
+                          backgroundTheme
+                        />
+                      }
 
                       <TagList>
                         {project.tech && project.tech.map((item, index) => (

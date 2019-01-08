@@ -99,10 +99,13 @@ export const ListItemContent = styled.div`
   background: #F5F5F5;
   padding: 1em;
   min-height: 124px;
+  position: relative;
 `;
 
 export const ProjectHeading = styled.div`
-  margin-bottom: .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const ProjectLink = styled.a`
@@ -128,5 +131,6 @@ export const TagListItem = styled.li`
 export const ProjectIndustry = styled.p`
   font-size: 80%;
   line-height: initial;
-  margin-top: .1em;
+  margin: .1em 0 2em 0;
+  color: #ACACAC;
 `;

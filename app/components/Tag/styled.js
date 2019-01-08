@@ -31,11 +31,16 @@ const backgroundTheme = (props) => {
     `};
 
     ${(type.includes('Full stack JS') ||
-      type.includes('MEAN stack')) &&
-      `background: ${tagColors.fullStack}`
-    };
+      type.includes('MEAN stack')) && `
+        background: ${tagColors.javascript};
+        color: #000;
+    `};
 
     ${type === 'React' &&
+      `background: ${tagColors.react}`
+    };
+
+    ${type === 'React UI' &&
       `background: ${tagColors.react}`
     };
 
@@ -61,6 +66,10 @@ const backgroundTheme = (props) => {
     };
 
     ${type.includes('Angular') &&
+      `background: ${tagColors.angular}`
+    };
+
+    ${type === 'Angular UI' &&
       `background: ${tagColors.angular}`
     };
 

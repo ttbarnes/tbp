@@ -17,7 +17,8 @@
           "JavaScript, ES6",
           "Webpack",
           "Ruby"
-        ]
+        ],
+        "primaryTech": "Full stack JS"
       }
     ]
   },
@@ -38,6 +39,7 @@
           "Flow",
           "Crypto Currency APIs"
         ],
+        "primaryTech": "Full stack JS",
         "highlights": [
           "From trading crypto currencies, I realised that I couldn't easily view all of my trades in one place",
           "As a proof of concept, I built an API and UI that combined and mapped trade history data from multiple exchanges",
@@ -82,7 +84,8 @@
           "ES6",
           "Sass",
           "Docker"
-        ]
+        ],
+        "primaryTech": "React UI"
       }
     ]
   },
@@ -102,7 +105,8 @@
           "ES6",
           "Webpack",
           "Sass"
-        ]
+        ],
+        "primaryTech": "React UI"
       },
       {
         "id": "fr-cms",
@@ -119,6 +123,7 @@
           "Webpack",
           "Sass"
         ],
+        "primaryTech": "Full stack JS",
         "moreInfoSoon": [
           "More info coming soon."
         ]
@@ -144,6 +149,7 @@
           "Webpack",
           "Aphrodite"
         ],
+        "primaryTech": "React UI",
         "url":"http://trainline.com"
       },
       {
@@ -152,7 +158,7 @@
         "category": "Other",
         "date": "2016 - 2017",
         "industry": "Media",
-        "mini": true
+        "primaryTech": "UI templates"
       }
     ]
   },
@@ -175,6 +181,7 @@
           "Stylus",
           "Webpack"
         ],
+        "primaryTech": "Full stack JS",
         "url":"http://www.plantstove.com"
       },
       {
@@ -191,6 +198,7 @@
           "Stylus",
           "Webpack"
         ],
+        "primaryTech": "Angular UI",
         "highlights": [
           "Redesign for mobiles/tablets/any device size",
           "Modular, component based architecture",
@@ -214,7 +222,8 @@
           "HTML5, CSS3",
           "Webpack",
           "Sass"
-        ]
+        ],
+        "primaryTech": "Angular UI"
       }
     ]
   },
@@ -236,6 +245,7 @@
           "Webpack",
           "Less"
         ],
+        "primaryTech": "Angular UI",
         "url": "http://networklocum.com"
       }
     ]
@@ -257,7 +267,8 @@
           "HTML5, CSS3",
           "Grunt",
           "Less"
-        ]
+        ],
+        "primaryTech": "Angular UI"
       },
       {
         "id": "mean-tweets",
@@ -274,6 +285,7 @@
           "Grunt",
           "Sass"
         ],
+        "primaryTech": "Full stack JS",
         "url": "https://mean-tweets.herokuapp.com"
       },
       {
@@ -289,6 +301,7 @@
           "Sass",
           "CSS3"
         ],
+        "primaryTech": "Angular UI",
         "highlights": [
           "Built an open source simple ticker directive for easy re-use in any project",
           "Automatically scrolls through a list of items, fading in/out",
@@ -298,7 +311,7 @@
       },
       {
         "id": "angular-poc-demos",
-        "name": "Angular proof of concept demos",
+        "name": "Angular POC demos",
         "category": "Web apps",
         "date": "2015",
         "industry": "Dev Tech",
@@ -309,6 +322,7 @@
           "Grunt",
           "Sass"
         ],
+        "primaryTech": "Angular UI",
         "highlights": [
           "Created whilst learning and seeking examples of some angular features",
           "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
@@ -319,7 +333,8 @@
         "id": "cathy-brown-v2",
         "name": "Cathy Brown",
         "category": "Other",
-        "industry": "Coaching"
+        "industry": "Coaching",
+        "primaryTech": "Wordpress"
       }
     ]
   },
@@ -339,6 +354,7 @@
           "Grunt",
           "Sass"
         ],
+        "primaryTech": "Angular UI",
         "url": "http://fifthweek.com"
       },
       {
@@ -355,6 +371,7 @@
           "Rails",
           "Photoshop, Sketch"
         ],
+        "primaryTech": "Angular UI",
         "url": "http://reedsy.com"
       },
       {
@@ -371,6 +388,7 @@
           "Gulp",
           "Photoshop"
         ],
+        "primaryTech": "Angular UI",
         "url": "http://tailster.com"
       }
     ]
@@ -389,7 +407,8 @@
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
-        ]
+        ],
+        "primaryTech": "UI templates"
       },
       {
         "id": "dvla-sell-a-vehicle-into-the-motor-trade",
@@ -402,7 +421,8 @@
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
-        ]
+        ],
+        "primaryTech": "UI templates"
       },
       {
         "id": "dvla-buy-a-vehicle-from-the-motor-trade",
@@ -415,7 +435,8 @@
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
-        ]
+        ],
+        "primaryTech": "UI templates"
       }
     ]
   },
@@ -426,49 +447,44 @@
         "id": "robbie-williams",
         "name": "Robbie Williams",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "collins-learning",
         "name": "Collins Learning",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "tolkien",
         "name": "Tolkien",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "electrolux",
         "name": "Electrolux Parts & Accessories",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "aeg",
         "name": "AEG Parts & Accessories",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Other",
-        "industry": "Travel"
+        "industry": "Travel",
+        "primaryTech": "Wordpress"
       }
     ]
   },
@@ -479,50 +495,46 @@
         "id": "hoover",
         "name": "Hoover Spares",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "the-store",
         "name": "The Store",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "william-curley",
         "name": "William Curley",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "new-naturalists",
         "name": "New Naturalists",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "jquery/list-icon-manipulator",
         "name": "List Icon Manipulator",
         "category": "Other",
-        "mini": true,
-        "industry": "Tech"
+        "industry": "Tech",
+        "primaryTech": "jQuery plugin"
       },
       {
         "id": "jquery/active-hover-states",
         "name": "Active Hover States",
         "category": "Other",
-        "mini": true,
-        "industry": "Tech"
+        "industry": "Tech",
+        "primaryTech": "jQuery plugin"
       },
       {
         "id": "jquery/portrolio",
         "name": "Portrolio",
         "category": "Other",
-        "mini": true,
-        "industry": "Tech"
+        "industry": "Tech",
+        "primaryTech": "jQuery plugin"
       }
     ]
   },
@@ -533,35 +545,32 @@
         "id": "powatag",
         "name": "Powatag",
         "category": "Other",
-        "mini": true,
         "industry": "Fin Tech"
       },
       {
         "id": "enterprising-britain",
         "name": "Enterprising Britain",
         "category": "Other",
-        "mini": true,
         "industry": "Digital Transformation"
       },
       {
         "id": "farrell",
         "name": "Farrell",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "mr-waghu",
         "name": "Mr Waghu",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "propax-malaysia",
         "name": "Propax Malaysia",
         "category": "Other",
-        "industry": "Shipping"
+        "industry": "Shipping",
+        "primaryTech": "UI templates"
       }
     ]
   },
@@ -572,42 +581,39 @@
         "id": "powa",
         "name": "Powa",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "mpowa",
         "name": "mpowa",
         "category": "Other",
-        "mini": true,
         "industry": "Fin Tech"
       },
       {
         "id": "werelse",
         "name": "Werelse",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "jbrand",
         "name": "J Brand",
         "category": "Other",
-        "mini": true,
         "industry": "Ecommerce"
       },
       {
         "id": "wpfp",
         "name": "Who Pays Full Price",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "Magento"
       },
       {
         "id": "life-financial-solutions",
         "name": "Life Financial Solutions",
         "category": "Other",
-        "mini": true,
-        "industry": "Finance"
+        "industry": "Finance",
+        "primaryTech": "UI templates"
       }
     ]
   },
@@ -618,13 +624,15 @@
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
         "category": "Other",
-        "industry": "Health"
+        "industry": "Health",
+        "primaryTech": "UI templates"
       },
       {
         "id": "gold-challenge",
         "name": "Gold Challenge",
         "category": "Other",
-        "industry": "Sports"
+        "industry": "Sports",
+        "primaryTech": "Joomla"
       }
     ]
   },
@@ -633,7 +641,8 @@
     "projects": [
       {
         "id": "evaluate-technologies",
-        "name": "Evaluate Technologies"
+        "name": "Evaluate Technologies",
+        "primaryTech": "UI templates"
       }
     ]
   }
