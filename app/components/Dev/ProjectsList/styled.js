@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { media } from '../../styledShared';
+import Tag from 'components/Tag';
+import { media, colors } from '../../styledShared';
 
 export const Root = styled.div`
   position: relative;
@@ -91,7 +92,7 @@ export const ListItemContainer = styled.div`
   ${media.lg`
     flex-direction: column;
     flex: 0 0 45%;
-    margin: 0 5% 5% 0;
+    margin: 0 5% 10% 0;
   `}
 `;
 
@@ -108,10 +109,27 @@ export const ProjectHeading = styled.div`
   align-items: center;
 `;
 
-export const ProjectLink = styled.a`
+export const ListItemFooter = styled.div`
   display: flex;
+  justify-content: flex-end;
   width: 100%;
-  margin-top: .5em;
+`;
+
+export const ProjectLink = styled.a`
+  padding: .2em;
+  font-size: .8em;
+  color: #000;
+  &:hover,
+  &:focus {
+    color: ${colors.blue4}
+  }
+`;
+
+export const PrimaryTechTag = styled(Tag)`
+  position: absolute;
+  top: -2.4em;
+  right: 0;
+  margin: 0;
 `;
 
 export const TagList = styled.ul`
@@ -131,6 +149,6 @@ export const TagListItem = styled.li`
 export const ProjectIndustry = styled.p`
   font-size: 80%;
   line-height: initial;
-  margin: .1em 0 2em 0;
+  margin: .1em 0 1em 0;
   color: #ACACAC;
 `;

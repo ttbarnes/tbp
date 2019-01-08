@@ -57,5 +57,6 @@ export const NavNavLink = styled(NavLink)`
   &:hover {
     background: ${colors.blue4};
     color: #FFF;
+    text-decoration: none;
   }
 `;

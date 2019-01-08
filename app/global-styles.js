@@ -69,7 +69,7 @@ injectGlobal`
 
   a:hover,
   a:focus {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   p {

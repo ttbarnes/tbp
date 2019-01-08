@@ -15,10 +15,12 @@ import {
   ListItemContainer,
   ListItemContent,
   ProjectHeading,
-  ProjectLink,
+  PrimaryTechTag,
   TagList,
   TagListItem,
-  ProjectIndustry
+  ProjectIndustry,
+  ListItemFooter,
+  ProjectLink
 } from './styled';
 
 export class ListItem extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -57,7 +59,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                       <ProjectIndustry>{project.industry}</ProjectIndustry>
 
                       {project.primaryTech &&
-                        <Tag
+                        <PrimaryTechTag
                           type={project.primaryTech}
                           backgroundTheme
                         />
@@ -71,6 +73,8 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                         ))}
                       </TagList>
 
+                    </ListItemContent>
+                    <ListItemFooter>
                       {project.url &&
                         <ProjectLink
                           href={project.url}
@@ -79,10 +83,10 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                           key={project.url}
                         >
                           view
-                          </ProjectLink>
+                        </ProjectLink>
                       }
+                    </ListItemFooter>
 
-                    </ListItemContent>
                   </ListItemContainer>
                 )}
               </YearProjects>
