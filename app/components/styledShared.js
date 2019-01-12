@@ -58,6 +58,9 @@ export const colors = {
   blue6: '#6B93D7',
   blue7: '#4264fb',
   blue8: '#029ded',
+  blue9: '#016087',
+  blue10: '#3B80C9',
+  blue11: '#5AD1F9',
   brown2: '#8d6748',
   brown3: '#e9ce99',
   green2: '#026e00',
@@ -67,6 +70,8 @@ export const colors = {
   orange2: '#ff6347',
   orange3: '#F89741',
   orange4: '#f47d31',
+  orange5: '#BC842B',
+  orange6: '#F26322',
   pink1: '#D381A9',
   pink2: '#db7093',
   pink3: '#EC0C8E',
@@ -82,7 +87,7 @@ export const colors = {
   red4: '#CF4646',
   red5: '#CC342D',
   yellow2: '#B2B36F',
-  yellow3: '#CFBD44',
+  yellow3: '#F3DD1D',
   yellow4: '#E8BD36',
 };
 
@@ -118,7 +123,13 @@ export const tagColors = {
   docker: colors.blue8,
   ruby: colors.red5,
   misc: colors.grey1,
-  graphQL: colors.pink4
+  graphQL: colors.pink4,
+  uiTemplates: colors.orange5,
+  wordPress: colors.blue9,
+  powaCms: colors.blue10,
+  jQuery: colors.blue11,
+  magento: colors.orange6,
+  joomla: colors.blue10
 };
 
 const fadeIn = keyframes`

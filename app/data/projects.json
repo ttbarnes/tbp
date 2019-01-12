@@ -85,7 +85,7 @@
           "Sass",
           "Docker"
         ],
-        "primaryTech": "React UI"
+        "primaryTech": "React"
       }
     ]
   },
@@ -106,7 +106,7 @@
           "Webpack",
           "Sass"
         ],
-        "primaryTech": "React UI"
+        "primaryTech": "React"
       },
       {
         "id": "fr-cms",
@@ -149,7 +149,7 @@
           "Webpack",
           "Aphrodite"
         ],
-        "primaryTech": "React UI",
+        "primaryTech": "React",
         "url":"http://trainline.com"
       },
       {
@@ -198,7 +198,7 @@
           "Stylus",
           "Webpack"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "highlights": [
           "Redesign for mobiles/tablets/any device size",
           "Modular, component based architecture",
@@ -223,7 +223,7 @@
           "Webpack",
           "Sass"
         ],
-        "primaryTech": "Angular UI"
+        "primaryTech": "Angular"
       }
     ]
   },
@@ -245,7 +245,7 @@
           "Webpack",
           "Less"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "url": "http://networklocum.com"
       }
     ]
@@ -268,7 +268,7 @@
           "Grunt",
           "Less"
         ],
-        "primaryTech": "Angular UI"
+        "primaryTech": "Angular"
       },
       {
         "id": "mean-tweets",
@@ -301,7 +301,7 @@
           "Sass",
           "CSS3"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "highlights": [
           "Built an open source simple ticker directive for easy re-use in any project",
           "Automatically scrolls through a list of items, fading in/out",
@@ -322,7 +322,7 @@
           "Grunt",
           "Sass"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "highlights": [
           "Created whilst learning and seeking examples of some angular features",
           "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
@@ -334,7 +334,7 @@
         "name": "Cathy Brown",
         "category": "Other",
         "industry": "Coaching",
-        "primaryTech": "Wordpress"
+        "primaryTech": "WordPress"
       }
     ]
   },
@@ -354,7 +354,7 @@
           "Grunt",
           "Sass"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "url": "http://fifthweek.com"
       },
       {
@@ -371,7 +371,7 @@
           "Rails",
           "Photoshop, Sketch"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "url": "http://reedsy.com"
       },
       {
@@ -388,7 +388,7 @@
           "Gulp",
           "Photoshop"
         ],
-        "primaryTech": "Angular UI",
+        "primaryTech": "Angular",
         "url": "http://tailster.com"
       }
     ]
@@ -447,44 +447,50 @@
         "id": "robbie-williams",
         "name": "Robbie Williams",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "collins-learning",
         "name": "Collins Learning",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "tolkien",
         "name": "Tolkien",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "electrolux",
         "name": "Electrolux Parts & Accessories",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "aeg",
         "name": "AEG Parts & Accessories",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "mara-explorers",
         "name": "Mara Explorers",
         "category": "Other",
         "industry": "Travel",
-        "primaryTech": "Wordpress"
+        "primaryTech": "WordPress"
       }
     ]
   },
@@ -495,25 +501,29 @@
         "id": "hoover",
         "name": "Hoover Spares",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "the-store",
         "name": "The Store",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "william-curley",
         "name": "William Curley",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "new-naturalists",
         "name": "New Naturalists",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "jquery/list-icon-manipulator",
@@ -545,25 +555,29 @@
         "id": "powatag",
         "name": "Powatag",
         "category": "Other",
-        "industry": "Fin Tech"
+        "industry": "Fin Tech",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "enterprising-britain",
         "name": "Enterprising Britain",
         "category": "Other",
-        "industry": "Digital Transformation"
+        "industry": "Digital Transformation",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "farrell",
         "name": "Farrell",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "mr-waghu",
         "name": "Mr Waghu",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "propax-malaysia",
@@ -581,25 +595,29 @@
         "id": "powa",
         "name": "Powa",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "mpowa",
         "name": "mpowa",
         "category": "Other",
-        "industry": "Fin Tech"
+        "industry": "Fin Tech",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "werelse",
         "name": "Werelse",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "jbrand",
         "name": "J Brand",
         "category": "Other",
-        "industry": "Ecommerce"
+        "industry": "Ecommerce",
+        "primaryTech": "UI templates, CMS"
       },
       {
         "id": "wpfp",

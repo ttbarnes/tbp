@@ -65,13 +65,15 @@ const bgTheme = (props) => {
         color: #000;
     `};
 
-    ${type === 'React' &&
-      `background: ${tagColors.react}`
-    };
+    ${type === 'React' && `
+      background: ${tagColors.react};
+      color: #000;
+    `};
 
-    ${type === 'React UI' &&
-      `background: ${tagColors.react}`
-    };
+    ${type === 'React UI' && `
+      background: ${tagColors.react};
+      color: #000;
+    `};
 
     ${type.includes('TypeScript') &&
       `background: ${tagColors.typescript}`
@@ -196,6 +198,31 @@ const bgTheme = (props) => {
     ${type.includes('GraphQL') &&
       `background: ${tagColors.graphQL}`
     };
+
+    ${type === 'UI templates' &&
+      `background: ${tagColors.uiTemplates}`
+    };
+
+    ${type === 'WordPress' &&
+      `background: ${tagColors.wordPress}`
+    };
+
+    ${type === 'UI templates, CMS' &&
+      `background: ${tagColors.powaCms}`
+    };
+
+    ${type === 'jQuery plugin' &&
+      `background: ${tagColors.jQuery}`
+    };
+
+    ${type === 'Magento' &&
+      `background: ${tagColors.magento}`
+    };
+
+    ${type === 'Joomla' &&
+      `background: ${tagColors.joomla}`
+    };
+
   `;
 };
 
