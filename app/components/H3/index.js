@@ -7,10 +7,17 @@ const noMargin = (props) => `
   `}
 `;
 
+const mobileOnly = (props) => `
+  ${props.mobileOnly && `
+    display: none;
+  `}
+`;
+
 const H3 = styled.h3`
   font-size: 1.2em;
   ${media.sm`
     font-size: 1.5em;
+    ${mobileOnly}
   `}
   ${noMargin}
 `;

@@ -18,7 +18,7 @@ function Projects(props) {
 
       <H1 hide>Projects</H1>
 
-      <H3>I{'\''}ve built a few things........</H3>
+      <H3 mobileOnly>Projects timeline</H3>
 
       <ProjectsList
         data={props.projects}

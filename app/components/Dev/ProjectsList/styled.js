@@ -8,7 +8,7 @@ export const Root = styled.div`
 
 export const ListRoot = styled.ul`
   ${media.lg`
-    margin: 28em -8em 0 2.5em;
+    margin: 24em -8em 0 2.5em;
   `}
 `;
 
@@ -118,7 +118,7 @@ export const ListItemFooter = styled.div`
 export const ProjectLink = styled.a`
   padding: .2em;
   font-size: .8em;
-  color: #000;
+  color: #B3B3B3;
   &:hover,
   &:focus {
     color: ${colors.blue4}
@@ -133,10 +133,10 @@ export const PrimaryTechTag = styled(Tag)`
 `;
 
 export const TagList = styled.ul`
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 `;
 
 export const TagListItem = styled.li`
