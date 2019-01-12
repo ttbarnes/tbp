@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import expect from 'expect';
 
 import { selectLocationState } from 'containers/App/selectors';
@@ -13,3 +15,5 @@ describe('selectLocationState', () => {
     expect(selectLocationState()(mockedState)).toEqual(route);
   });
 });
+
+/* eslint-enable */

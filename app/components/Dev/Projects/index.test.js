@@ -1,14 +1,12 @@
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
-import ProjectFilters from 'components/Dev/ProjectFilters';
 import ProjectsList from 'components/Dev/ProjectsList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import PageLink from 'components/PageLink';
 import Projects from './index';
 import projectsData from '../../../data/projects.json';
-
 
 const mock = {
   activeFilter: 'Something',
@@ -29,15 +27,6 @@ describe('<Projects />', () => {
       <H1>Projects</H1>,
       <H2>Some of the projects i{'\''}ve been a part of</H2>
     ]);
-    expect(actual).toBeTruthy();
-  });
-  it('should render <ProjectFilters /> with props', () => {
-    const actual = wrapper.containsMatchingElement(
-      <ProjectFilters
-        handleClick={mock.clickFunc}
-        activeFilter={mock.activeFilter}
-      />
-    );
     expect(actual).toBeTruthy();
   });
   it('should render <ProjectsList /> with props', () => {

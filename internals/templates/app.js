@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * app.js
  *
@@ -62,3 +63,5 @@ render();
 // it's not most important operation and if main code fails,
 // we do not want it installed
 install();
+
+/* eslint-enable */

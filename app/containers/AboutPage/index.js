@@ -41,6 +41,7 @@ export const renderGroup = (group) => {
             key={i}
             index={i + 1}
             backgroundTheme
+            large
           />
         )}
       </StyledList>

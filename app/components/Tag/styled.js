@@ -1,27 +1,56 @@
 import styled from 'styled-components';
 import { colors, tagColors } from '../styledShared';
 
-const backgroundTheme = (props) => {
-  const type = props.type;
-  if (!props.backgroundTheme) return null;
+const tag = `
+  font-size: 0.85em;
+  display: inline-flex;
+  padding: 0.5em 1em;
+  margin: 0.3em 0.3em 0 0;
+`;
+
+const large = (props) => {
+  if (props.large) {
+    return `
+      font-size: 1em;
+    `;
+  }
+  return null;
+};
+
+const noSpacing = (props) => {
+  if (props.noSpacing) {
+    return `
+      margin: 0;
+      padding: 0;
+    `;
+  }
+  return null;
+};
+
+// TODO: add if statements for each type
+// this will avoid undefined references in the compiled css
+const bgTheme = (props) => {
+  const {
+    type,
+    backgroundTheme
+  } = props;
+
+  if (!type || !backgroundTheme) return null;
 
   return `
-    padding: 0.5em 1em;
-    margin: 0.3em 0.3em 0 0;
     color: #FFF;
     background: #AAA;
-
     ${type === 'music' && `background: ${colors.blue2}`};
     ${type === 'fpv' && `background: ${colors.green4}`};
     ${type === 'timelapse' && `background: ${colors.yellow2}`};
 
     ${(type.includes('HTML') ||
       type.includes('CSS')) &&
-      `background: ${tagColors.htmlCss}`
+    `background: ${tagColors.htmlCss}`
     };
 
     ${type === 'Sass' &&
-      `background: ${tagColors.sass}`
+    `background: ${tagColors.sass}`
     };
 
     ${(type.includes('JavaScript') ||
@@ -117,7 +146,7 @@ const backgroundTheme = (props) => {
     ${type === 'Aphrodite' && `
       background: ${tagColors.aphrodite};
       color: #000;
-   `};
+    `};
 
     ${type === 'Stylus' &&
       `background: ${tagColors.stylus}`
@@ -167,15 +196,14 @@ const backgroundTheme = (props) => {
     ${type.includes('GraphQL') &&
       `background: ${tagColors.graphQL}`
     };
-
   `;
 };
 
-
 const StyledTag = styled.div`
-  display: inline-flex;
-  font-size: 0.85em;
-  ${backgroundTheme}
+  ${tag}
+  ${large}
+  ${noSpacing}
+  ${bgTheme}
 `;
 
 export default StyledTag;
