@@ -5,22 +5,27 @@
  * code.
  */
 
-/* eslint-disable import/no-unresolved, import/extensions */
+/* eslint-disable*/
 // Load the favicon
 // import 'file-loader?name=[name].[ext]!./favicon.ico';
-/* eslint-enable import/no-unresolved, import/extensions */
 
 // Import all the third party stuff
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
+import promisePolyfill from 'es6-promise';
+import polyfills from './polyfills';
 import createHistory from 'history/createBrowserHistory';
 import 'sanitize.css/sanitize.css';
 import App from 'containers/App';
 import ScrollToTop from 'components/ScrollToTop';
 import configureStore from './configureStore';
 import './global-styles';
+/* eslint-enable*/
+
+promisePolyfill.polyfill();
 
 const initialState = {};
 const history = createHistory();
