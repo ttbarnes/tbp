@@ -4,12 +4,11 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
-import Tag from 'components/Tag';
 import PageContainer from '../PageContainer';
 import H2 from '../../components/H2';
 import A from '../../components/A';
 import { selectActivities } from './selectors';
-import { ListItem } from './styled';
+import { ListItem, StyledTag } from './styled';
 
 export class HobbiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -24,7 +23,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
         a.type === 'timelapse') {
       return (
         <ListItem key={a.videoId}>
-          <Tag
+          <StyledTag
             type={a.type}
             backgroundTheme
             small
@@ -37,7 +36,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
     } else if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
-          <Tag
+          <StyledTag
             type={a.type}
             backgroundTheme
             small

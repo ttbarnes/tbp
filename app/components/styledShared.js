@@ -134,7 +134,7 @@ export const tagColors = {
 
 const fadeIn = keyframes`
   from {
-    opacity: .4;
+    opacity: 0;
     margin-top: 0;
   }
 
@@ -145,12 +145,17 @@ const fadeIn = keyframes`
 `;
 
 const fadeInLong = keyframes`
-  from {
-    opacity: .4;
+  0% {
+    opacity: 0;
     margin-top: 0;
   }
 
-  to {
+  50% {
+    opacity: 0.2;
+    margin-top: -12.5em;
+  }
+
+  100% {
     opacity: 1;
     margin-top: -25em;
   }
@@ -167,7 +172,7 @@ export const FadeIn = styled.div`
 `;
 
 export const FadeInLong = styled.div`
-  ${media.lg`
+  ${media.md`
     animation: ${fadeInLong} 0.6s linear;
     margin-top: -25em;
     position: relative;
