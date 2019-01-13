@@ -4,6 +4,7 @@ import LazyLoad from 'react-lazyload';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { Link } from 'react-router-dom';
 import { FadeIn } from 'components/styledShared';
 import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
@@ -57,8 +58,8 @@ export const renderGroup = (group) => {
   } else if (category === 'outro') {
     return (
       <div>
-        <p><a href="/contact">Get in touch</a></p>
-        <p>Check out <a href="/projects">some of the projects i{'\''}ve worked on</a></p>
+        <p><Link to="contact">Get in touch</Link></p>
+        <p>Check out <Link to="projects">some of the projects i{'\''}ve worked on</Link></p>
       </div>
     );
   }
