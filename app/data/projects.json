@@ -158,6 +158,11 @@
         "category": "Other",
         "date": "2016 - 2017",
         "industry": "Media",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript",
+          "Webpack"
+        ],
         "primaryTech": "UI templates"
       }
     ]
@@ -177,7 +182,7 @@
           "Angular",
           "Redux",
           "JavaScript, ES6",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Stylus",
           "Webpack"
         ],
@@ -194,7 +199,7 @@
           "Angular",
           "JavaScript, ES6",
           "Express, Node js",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Stylus",
           "Webpack"
         ],
@@ -219,7 +224,7 @@
           "JavaScript",
           "ES6",
           "d3.js",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Webpack",
           "Sass"
         ],
@@ -241,7 +246,7 @@
           "JavaScript",
           "ES6",
           "Redux",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Webpack",
           "Less"
         ],
@@ -264,7 +269,7 @@
           "AngularJS",
           "Highcharts",
           "JavaScript",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Grunt",
           "Less"
         ],
@@ -281,7 +286,7 @@
           "Express, Node js",
           "AngularJS",
           "JavaScript",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Grunt",
           "Sass"
         ],
@@ -299,7 +304,7 @@
           "JavaScript",
           "Grunt",
           "Sass",
-          "CSS3"
+          "HTML, CSS"
         ],
         "primaryTech": "Angular",
         "highlights": [
@@ -318,7 +323,7 @@
         "tech": [
           "AngularJS",
           "JavaScript",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Grunt",
           "Sass"
         ],
@@ -334,6 +339,12 @@
         "name": "Cathy Brown",
         "category": "Other",
         "industry": "Coaching",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "PHP",
+          "Gulp"
+        ],
         "primaryTech": "WordPress"
       }
     ]
@@ -350,7 +361,7 @@
         "tech": [
           "AngularJS",
           "JavaScript",
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Grunt",
           "Sass"
         ],
@@ -364,7 +375,7 @@
         "date": "2014-15",
         "industry": "Publishing",
         "tech": [
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Sass",
           "AngularJS",
           "JavaScript, jQuery",
@@ -381,7 +392,7 @@
         "date": "2014-15",
         "industry": "Pet Care",
         "tech": [
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Less",
           "AngularJS",
           "JavaScript",
@@ -390,6 +401,18 @@
         ],
         "primaryTech": "Angular",
         "url": "http://tailster.com"
+      },
+      {
+        "id": "sass-quick-start",
+        "name": "Sass quick start",
+        "category": "Other",
+        "industry": "Tech",
+        "tech": [
+          "Grunt",
+          "Gulp",
+          "JavaScript"
+        ],
+        "primaryTech": "JavaScript"
       }
     ]
   },
@@ -403,7 +426,7 @@
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
@@ -417,7 +440,7 @@
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
@@ -431,7 +454,7 @@
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
-          "HTML5, CSS3",
+          "HTML, CSS",
           "Sass",
           "JavaScript, jQuery",
           "Play, Scala"
@@ -448,6 +471,10 @@
         "name": "Robbie Williams",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -455,6 +482,10 @@
         "name": "Collins Learning",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -462,6 +493,10 @@
         "name": "Tolkien",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -469,6 +504,10 @@
         "name": "Electrolux Parts & Accessories",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -476,6 +515,10 @@
         "name": "AEG Parts & Accessories",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -483,6 +526,10 @@
         "name": "Zanussi Parts & Accessories",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -490,6 +537,11 @@
         "name": "Mara Explorers",
         "category": "Other",
         "industry": "Travel",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "Gulp"
+        ],
         "primaryTech": "WordPress"
       }
     ]
@@ -502,6 +554,10 @@
         "name": "Hoover Spares",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -509,6 +565,10 @@
         "name": "The Store",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -516,6 +576,10 @@
         "name": "William Curley",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -523,6 +587,10 @@
         "name": "New Naturalists",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -530,6 +598,9 @@
         "name": "List Icon Manipulator",
         "category": "Other",
         "industry": "Tech",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
         "primaryTech": "jQuery plugin"
       },
       {
@@ -537,6 +608,9 @@
         "name": "Active Hover States",
         "category": "Other",
         "industry": "Tech",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
         "primaryTech": "jQuery plugin"
       },
       {
@@ -544,6 +618,9 @@
         "name": "Portrolio",
         "category": "Other",
         "industry": "Tech",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
         "primaryTech": "jQuery plugin"
       }
     ]
@@ -556,6 +633,10 @@
         "name": "Powatag",
         "category": "Other",
         "industry": "Fin Tech",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -563,6 +644,10 @@
         "name": "Enterprising Britain",
         "category": "Other",
         "industry": "Digital Transformation",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -570,6 +655,10 @@
         "name": "Farrell",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -577,6 +666,10 @@
         "name": "Mr Waghu",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -584,6 +677,9 @@
         "name": "Propax Malaysia",
         "category": "Other",
         "industry": "Shipping",
+        "tech": [
+          "HTML, CSS"
+        ],
         "primaryTech": "UI templates"
       }
     ]
@@ -596,6 +692,10 @@
         "name": "Powa",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -603,6 +703,10 @@
         "name": "mpowa",
         "category": "Other",
         "industry": "Fin Tech",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -610,6 +714,10 @@
         "name": "Werelse",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -617,6 +725,10 @@
         "name": "J Brand",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates, CMS"
       },
       {
@@ -624,6 +736,11 @@
         "name": "Who Pays Full Price",
         "category": "Other",
         "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "PHP"
+        ],
         "primaryTech": "Magento"
       },
       {
@@ -631,6 +748,10 @@
         "name": "Life Financial Solutions",
         "category": "Other",
         "industry": "Finance",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
         "primaryTech": "UI templates"
       }
     ]
@@ -643,6 +764,9 @@
         "name": "Celebrity Smiles",
         "category": "Other",
         "industry": "Health",
+        "tech": [
+          "HTML, CSS"
+        ],
         "primaryTech": "UI templates"
       },
       {
@@ -650,6 +774,10 @@
         "name": "Gold Challenge",
         "category": "Other",
         "industry": "Sports",
+        "tech": [
+          "HTML, CSS",
+          "PHP"
+        ],
         "primaryTech": "Joomla"
       }
     ]
@@ -660,6 +788,10 @@
       {
         "id": "evaluate-technologies",
         "name": "Evaluate Technologies",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript"
+        ],
         "primaryTech": "UI templates"
       }
     ]
