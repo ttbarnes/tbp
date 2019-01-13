@@ -35,7 +35,7 @@ export const renderGroup = (group) => {
   const groupTags = group.tags;
   if (groupsWithStyledTag.includes(category)) {
     return (
-      <StyledList>
+      <StyledList className="no-li-margin">
         {groupTags.map((tag, i) =>
           <StyledTag
             type={tag}

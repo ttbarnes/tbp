@@ -4,7 +4,9 @@ import Tag from 'components/Tag';
 import { media } from '../../components/styledShared';
 
 export const Intro = styled.div`
-  margin-bottom: 13em;
+  ${media.sm`
+    margin-bottom: 13em;
+  `}
 `;
 
 const isLast = (props) => `
@@ -14,7 +16,7 @@ const isLast = (props) => `
 `;
 
 export const Row = styled.div`
-  margin-bottom: 15em;
+  margin-bottom: 8em;
   ${media.sm`
     margin-bottom: 30em;
   `}
@@ -32,11 +34,12 @@ const popUp = keyframes`
     margin-top: 8em;
   }
   to {
-    margin-top: -3em;
+    margin-top: 0.3em;
   }
 `;
 
 const tagAnimation = (props) => `
+  transition: all 0.3s ease;
   animation: ${popUp} 0.${props.index + 1}s linear;
 `;
 
@@ -45,5 +48,16 @@ export const StyledTag = styled(Tag)`
 `;
 
 export const TechList = styled.ul`
-  margin-top: 5em;
+  margin-top: 2.5em;
+  ${media.md`
+    margin-top: 5em;
+  `}
+`;
+
+export const TechListItem = styled.li`
+  border: solid 2px orange;
+  margin-bottom: 0;
+  ${media.md`
+    margin-bottom: 1em;
+  `}
 `;

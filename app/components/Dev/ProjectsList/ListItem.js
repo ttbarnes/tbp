@@ -62,6 +62,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                         <PrimaryTechTag
                           type={project.primaryTech}
                           backgroundTheme
+                          small
                         />
                       }
 
@@ -71,6 +72,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                             <Tag
                               type={item}
                               noSpacing
+                              small
                             />{index !== project.tech.length - 1 && ', '}
                           </TagListItem>
                         ))}

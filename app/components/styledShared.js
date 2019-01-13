@@ -144,7 +144,6 @@ const fadeIn = keyframes`
   }
 `;
 
-
 const fadeInLong = keyframes`
   from {
     opacity: .4;
@@ -158,8 +157,13 @@ const fadeInLong = keyframes`
 `;
 
 export const FadeIn = styled.div`
-  animation: ${fadeIn} 0.4s linear;
-  margin-top: -15em;
+  ${media.sm`
+    animation: ${fadeIn} 0.4s linear;
+    margin-top: -15em;
+  `}
+  ${media.lg`
+    margin-top: -15em;
+  `}
 `;
 
 export const FadeInLong = styled.div`

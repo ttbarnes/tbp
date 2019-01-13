@@ -27,6 +27,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
           <Tag
             type={a.type}
             backgroundTheme
+            small
           />
           <H2>{a.title}</H2>
           <p>{a.description}</p>
@@ -39,6 +40,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
           <Tag
             type={a.type}
             backgroundTheme
+            small
           />
           <H2>{a.title}</H2>
           <p>{a.description}</p>

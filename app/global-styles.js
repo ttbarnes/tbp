@@ -123,5 +123,9 @@ injectGlobal`
   .bm-overlay {
     background: rgba(0, 0, 0, 0.6) !important;
   }
+
+  ul.no-li-margin li {
+    margin-bottom: 0;
+  }
   
 `;

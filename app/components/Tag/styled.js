@@ -1,27 +1,27 @@
 import styled from 'styled-components';
-import { colors, tagColors } from '../styledShared';
+import { colors, tagColors, media } from '../styledShared';
 
 const tag = `
-  font-size: 0.85em;
+  font-size: .85em;
   display: inline-flex;
   padding: 0.5em 1em;
   margin: 0.3em 0.3em 0 0;
 `;
-
-const large = (props) => {
-  if (props.large) {
-    return `
-      font-size: 1em;
-    `;
-  }
-  return null;
-};
 
 const noSpacing = (props) => {
   if (props.noSpacing) {
     return `
       margin: 0;
       padding: 0;
+    `;
+  }
+  return null;
+};
+
+const small = (props) => {
+  if (props.small) {
+    return `
+      font-size: .85em;
     `;
   }
   return null;
@@ -46,11 +46,11 @@ const bgTheme = (props) => {
 
     ${(type.includes('HTML') ||
       type.includes('CSS')) &&
-    `background: ${tagColors.htmlCss}`
+      `background: ${tagColors.htmlCss}`
     };
 
     ${type === 'Sass' &&
-    `background: ${tagColors.sass}`
+      `background: ${tagColors.sass}`
     };
 
     ${(type.includes('JavaScript') ||
@@ -228,9 +228,12 @@ const bgTheme = (props) => {
 
 const StyledTag = styled.div`
   ${tag}
-  ${large}
   ${noSpacing}
   ${bgTheme}
+  ${media.sm`
+    font-size: 1em;
+  `}
+  ${small}
 `;
 
 export default StyledTag;
