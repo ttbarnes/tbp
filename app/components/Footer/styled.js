@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   media,
   colors,
@@ -33,7 +34,7 @@ export const ListItem = styled.li`
   ${ListItemShared}
 `;
 
-export const StyledLink = styled.a`
+const linkShared = `
   display: block;
   opacity: .3;
   padding: 1em 0.3em;
@@ -45,6 +46,14 @@ export const StyledLink = styled.a`
     text-decoration: underline;
     color: ${colors.blue4};
   }
+`;
+
+export const StyledLink = styled.a`
+  ${linkShared}
+`;
+
+export const StyledNavLink = styled(Link)`
+  ${linkShared}
 `;
 
 export const ListItemNoIcon = styled.li`

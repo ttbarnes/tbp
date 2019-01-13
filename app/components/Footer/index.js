@@ -23,6 +23,7 @@ import {
   ListRoot,
   ListItem,
   StyledLink,
+  StyledNavLink,
   ListItemNoIcon
 } from './styled';
 
@@ -69,7 +70,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
             </StyledLink>
           </ListItem>
           <ListItemNoIcon>
-            <StyledLink href="/hobbies">Hobbies</StyledLink>
+            <StyledNavLink to="/hobbies">Hobbies</StyledNavLink>
           </ListItemNoIcon>
         </ListRoot>
       </Root>
