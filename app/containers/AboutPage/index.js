@@ -58,8 +58,8 @@ export const renderGroup = (group) => {
   } else if (category === 'outro') {
     return (
       <div>
-        <p><Link to="contact">Get in touch</Link></p>
-        <p>Check out <Link to="projects">some of the projects i{'\''}ve worked on</Link></p>
+        <p><Link to="contact">Send me a message</Link></p>
+        <p><Link to="projects">See who i{'\''}ve worked with</Link></p>
       </div>
     );
   }
