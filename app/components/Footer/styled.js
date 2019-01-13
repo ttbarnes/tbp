@@ -13,6 +13,10 @@ export const Root = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  ${media.sm`
+    justify-content: center;
+  `}
   ${media.lg`
     padding-left:${CONTAINER_OFFSET_LEFT};
   `}
@@ -21,12 +25,17 @@ export const Root = styled.footer`
 export const ListRoot = styled.ul`
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  ${media.sm`
+    justify-content: center;
+  `}
 `;
 
+
 const ListItemShared = `
-  flexGrow: 1;
+  flex-grow: 1;
+  width: 3.5em;
   max-width: 3.5em;
 `;
 
