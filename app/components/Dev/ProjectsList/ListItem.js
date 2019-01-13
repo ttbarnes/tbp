@@ -77,8 +77,9 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                       </TagList>
 
                     </ListItemContent>
-                    <ListItemFooter>
-                      {project.url &&
+
+                    {project.url &&
+                      <ListItemFooter>
                         <ProjectLink
                           href={project.url}
                           target="_blank"
@@ -87,8 +88,8 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                         >
                           view
                         </ProjectLink>
-                      }
-                    </ListItemFooter>
+                      </ListItemFooter>
+                    }
 
                   </ListItemContainer>
                 )}

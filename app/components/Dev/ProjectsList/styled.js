@@ -4,6 +4,10 @@ import { media, colors } from '../../styledShared';
 
 export const Root = styled.div`
   position: relative;
+  padding: 1em 0;
+  ${media.lg`
+    padding: 0;
+  `}
 `;
 
 export const ListRoot = styled.ul`
@@ -31,12 +35,21 @@ export const HeadingYearContent = styled.div`
 
 export const HeadingYear = styled.p`
   font-size: 1.5em;
-  margin-bottom: 0;
+  margin-bottom: 2em;
+  text-decoration: underline;
+  ${media.lg`
+    margin-bottom: 0;
+    text-decoration: none;
+  `}
 `;
 
 export const HeadingYearSub = styled.p`
   margin-bottom: 0;
   font-size: .8em;
+  display: none;
+  ${media.lg`
+    display: block;
+  `}
 `;
 
 const isLastItem = (props) => `
@@ -49,10 +62,10 @@ export const StyledListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-left: solid .5em #F5F5F5;
-  padding: 5em 0;
+  padding: 0;
   ${media.lg`
-    padding-bottom: 30em;
+    border-left: solid .5em #F5F5F5;
+    padding: 5em 0 30em 0;
   `}
   ${isLastItem}
 `;
@@ -76,19 +89,14 @@ export const YearProjects = styled.div`
 export const ListItemContainer = styled.div`
   display: flex;
   width: 100%;
-  flex-direction: row;
-  margin-bottom: 5%;
-  &:before {
-      content: '';
-      display: block;
-      border-top: solid .5em #F5F5F5;
-      margin-top: .5em;
-      width: 100%;
-      max-width: 5%;
-      ${media.lg`
-        display: none;
-      `}
-  }
+  flex-direction: column;
+  margin-bottom: 15%;
+  ${media.sm`
+    margin-bottom: 10%;
+  `}
+  ${media.lg`
+    margin-bottom: 5%;
+  `}
   ${media.lg`
     flex-direction: column;
     flex: 0 0 45%;
@@ -99,8 +107,13 @@ export const ListItemContainer = styled.div`
 export const ListItemContent = styled.div`
   background: #F5F5F5;
   padding: 1em;
+  width: 100%;
   min-height: 124px;
   position: relative;
+  font-size: .95em;
+  ${media.lg`
+    font-size: 1em;
+  `}
 `;
 
 export const ProjectHeading = styled.div`
@@ -116,13 +129,16 @@ export const ListItemFooter = styled.div`
 `;
 
 export const ProjectLink = styled.a`
-  padding: .2em;
-  font-size: .8em;
-  color: #B3B3B3;
-  &:hover,
-  &:focus {
-    color: ${colors.blue4}
-  }
+  display: none;
+  ${media.lg`
+    padding: .2em;
+    font-size: .8em;
+    color: #B3B3B3;
+    &:hover,
+    &:focus {
+      color: ${colors.blue4}
+    }
+  `}
 `;
 
 export const PrimaryTechTag = styled(Tag)`
