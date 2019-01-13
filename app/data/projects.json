@@ -6,7 +6,6 @@
       {
         "id": "worldremit",
         "name": "WorldRemit",
-        "category": "Web apps",
         "date": "2018 - present",
         "industry": "Fin Tech",
         "tech": [
@@ -28,7 +27,6 @@
       {
         "id": "crypto-reports-combiner",
         "name": "Crypto Reports Combiner",
-        "category": "Web apps",
         "date": "2018",
         "industry": "Fin Tech",
         "tech": [
@@ -74,7 +72,6 @@
       {
         "id": "ihs-markit",
         "name": "IHS Markit",
-        "category": "Web apps",
         "date": "2017 - 2018",
         "industry": "Fin Tech",
         "tech": [
@@ -95,7 +92,6 @@
       {
         "id": "john-lewis",
         "name": "John Lewis",
-        "category": "Web apps",
         "date": "2017",
         "industry": "Ecommerce",
         "tech": [
@@ -111,7 +107,6 @@
       {
         "id": "fr-cms",
         "name": "FR CMS",
-        "category": "Web apps",
         "date": "2017 - present",
         "industry": "Entertainment",
         "tech": [
@@ -137,7 +132,6 @@
       {
         "id": "trainline",
         "name": "Trainline",
-        "category": "Web apps",
         "date": "2016-17",
         "industry": "Travel",
         "tech": [
@@ -155,7 +149,6 @@
       {
         "id": "full-fact",
         "name": "Full Fact",
-        "category": "Other",
         "date": "2016 - 2017",
         "industry": "Media",
         "tech": [
@@ -173,9 +166,8 @@
       {
         "id": "plantstove",
         "name": "Plantstove",
-        "category": "Web apps",
         "date": "2016",
-        "industry": "Food",
+        "industry": "Health/Food",
         "tech": [
           "MongoDB, Mongoose",
           "Express, Node js",
@@ -192,7 +184,6 @@
       {
         "id": "fiona-ross",
         "name": "Fiona Ross",
-        "category": "Web apps",
         "date": "2016 - present",
         "industry": "Entertainment",
         "tech": [
@@ -216,7 +207,6 @@
       {
         "id": "boots-betalabs",
         "name": "Boots BetaLabs",
-        "category": "Web apps",
         "date": "2016",
         "industry": "Health",
         "tech": [
@@ -238,7 +228,6 @@
       {
         "id": "network-locum",
         "name": "Network Locum",
-        "category": "Web apps",
         "date": "2015-16",
         "industry": "Health",
         "tech": [
@@ -261,7 +250,6 @@
       {
         "id": "saranac",
         "name": "Saranac",
-        "category": "Web apps",
         "date": "2015",
         "industry": "Fin Tech",
         "tech": [
@@ -278,9 +266,8 @@
       {
         "id": "mean-tweets",
         "name": "Mean tweets",
-        "category": "Web apps",
         "date": "2015",
-        "industry": "Dev Tech",
+        "industry": "Open source",
         "tech": [
           "MongoDB, Mongoose",
           "Express, Node js",
@@ -296,9 +283,8 @@
       {
         "id": "angular-ticker",
         "name": "Angular ticker",
-        "category": "Web apps",
         "date": "2015",
-        "industry": "Dev Tech",
+        "industry": "Open source",
         "tech": [
           "AngularJS",
           "JavaScript",
@@ -317,9 +303,8 @@
       {
         "id": "angular-poc-demos",
         "name": "Angular POC demos",
-        "category": "Web apps",
         "date": "2015",
-        "industry": "Dev Tech",
+        "industry": "Open source",
         "tech": [
           "AngularJS",
           "JavaScript",
@@ -337,8 +322,7 @@
       {
         "id": "cathy-brown-v2",
         "name": "Cathy Brown",
-        "category": "Other",
-        "industry": "Coaching",
+        "industry": "Health/Fitness",
         "tech": [
           "HTML, CSS",
           "JavaScript, jQuery",
@@ -355,7 +339,6 @@
       {
         "id": "fifthweek",
         "name": "Fifthweek",
-        "category": "Web apps",
         "date": "2014-2015",
         "industry": "Media",
         "tech": [
@@ -371,7 +354,6 @@
       {
         "id": "reedsy",
         "name": "Reedsy",
-        "category": "Web apps",
         "date": "2014-15",
         "industry": "Publishing",
         "tech": [
@@ -388,7 +370,6 @@
       {
         "id": "tailster",
         "name": "Tailster",
-        "category": "Web apps",
         "date": "2014-15",
         "industry": "Pet Care",
         "tech": [
@@ -405,8 +386,7 @@
       {
         "id": "sass-quick-start",
         "name": "Sass quick start",
-        "category": "Other",
-        "industry": "Tech",
+        "industry": "Open source",
         "tech": [
           "Grunt",
           "Gulp",
@@ -422,7 +402,6 @@
       {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
-        "category": "Web apps",
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
@@ -436,7 +415,6 @@
       {
         "id": "dvla-sell-a-vehicle-into-the-motor-trade",
         "name": "DVLA: Sell a vehicle into the motor trade",
-        "category": "Web apps",
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
@@ -450,7 +428,6 @@
       {
         "id": "dvla-buy-a-vehicle-from-the-motor-trade",
         "name": "DVLA: Buy a vehicle from the motor trade",
-        "category": "Web apps",
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
@@ -469,7 +446,6 @@
       {
         "id": "robbie-williams",
         "name": "Robbie Williams",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -480,7 +456,6 @@
       {
         "id": "collins-learning",
         "name": "Collins Learning",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -491,7 +466,6 @@
       {
         "id": "tolkien",
         "name": "Tolkien",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -502,7 +476,6 @@
       {
         "id": "electrolux",
         "name": "Electrolux Parts & Accessories",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -513,7 +486,6 @@
       {
         "id": "aeg",
         "name": "AEG Parts & Accessories",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -524,7 +496,6 @@
       {
         "id": "zanussi",
         "name": "Zanussi Parts & Accessories",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -535,7 +506,6 @@
       {
         "id": "mara-explorers",
         "name": "Mara Explorers",
-        "category": "Other",
         "industry": "Travel",
         "tech": [
           "HTML, CSS",
@@ -552,7 +522,6 @@
       {
         "id": "hoover",
         "name": "Hoover Spares",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -563,7 +532,6 @@
       {
         "id": "the-store",
         "name": "The Store",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -574,7 +542,6 @@
       {
         "id": "william-curley",
         "name": "William Curley",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -585,7 +552,6 @@
       {
         "id": "new-naturalists",
         "name": "New Naturalists",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -596,8 +562,7 @@
       {
         "id": "jquery/list-icon-manipulator",
         "name": "List Icon Manipulator",
-        "category": "Other",
-        "industry": "Tech",
+        "industry": "Open source",
         "tech": [
           "jQuery, JavaScript"
         ],
@@ -606,8 +571,7 @@
       {
         "id": "jquery/active-hover-states",
         "name": "Active Hover States",
-        "category": "Other",
-        "industry": "Tech",
+        "industry": "Open source",
         "tech": [
           "jQuery, JavaScript"
         ],
@@ -616,8 +580,7 @@
       {
         "id": "jquery/portrolio",
         "name": "Portrolio",
-        "category": "Other",
-        "industry": "Tech",
+        "industry": "Open source",
         "tech": [
           "jQuery, JavaScript"
         ],
@@ -631,7 +594,6 @@
       {
         "id": "powatag",
         "name": "Powatag",
-        "category": "Other",
         "industry": "Fin Tech",
         "tech": [
           "HTML, CSS",
@@ -642,7 +604,6 @@
       {
         "id": "enterprising-britain",
         "name": "Enterprising Britain",
-        "category": "Other",
         "industry": "Digital Transformation",
         "tech": [
           "HTML, CSS",
@@ -653,7 +614,6 @@
       {
         "id": "farrell",
         "name": "Farrell",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -664,7 +624,6 @@
       {
         "id": "mr-waghu",
         "name": "Mr Waghu",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -675,7 +634,6 @@
       {
         "id": "propax-malaysia",
         "name": "Propax Malaysia",
-        "category": "Other",
         "industry": "Shipping",
         "tech": [
           "HTML, CSS"
@@ -690,7 +648,6 @@
       {
         "id": "powa",
         "name": "Powa",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -701,7 +658,6 @@
       {
         "id": "mpowa",
         "name": "mpowa",
-        "category": "Other",
         "industry": "Fin Tech",
         "tech": [
           "HTML, CSS",
@@ -712,7 +668,6 @@
       {
         "id": "werelse",
         "name": "Werelse",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -723,7 +678,6 @@
       {
         "id": "jbrand",
         "name": "J Brand",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -734,7 +688,6 @@
       {
         "id": "wpfp",
         "name": "Who Pays Full Price",
-        "category": "Other",
         "industry": "Ecommerce",
         "tech": [
           "HTML, CSS",
@@ -746,7 +699,6 @@
       {
         "id": "life-financial-solutions",
         "name": "Life Financial Solutions",
-        "category": "Other",
         "industry": "Finance",
         "tech": [
           "HTML, CSS",
@@ -762,7 +714,6 @@
       {
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
-        "category": "Other",
         "industry": "Health",
         "tech": [
           "HTML, CSS"
@@ -772,7 +723,6 @@
       {
         "id": "gold-challenge",
         "name": "Gold Challenge",
-        "category": "Other",
         "industry": "Sports",
         "tech": [
           "HTML, CSS",
