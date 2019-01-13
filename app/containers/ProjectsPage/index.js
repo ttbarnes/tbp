@@ -2,6 +2,9 @@ import React, { PropTypes } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import Helmet from 'react-helmet';
+import H1 from 'components/H1';
+import H2 from 'components/H2';
 import Projects from 'components/Dev/Projects';
 import PageContainer from '../PageContainer';
 import {
@@ -26,6 +29,18 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
     return (
       <PageContainer>
+
+        <Helmet
+          title="Projects"
+          meta={[
+            { name: 'description', content: 'Dev projects' },
+          ]}
+        />
+
+        <H1 hide>Projects</H1>
+
+        <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
+
         <Projects
           projects={projects}
           onClickFilterByIndustry={onClickFilterByIndustry}
