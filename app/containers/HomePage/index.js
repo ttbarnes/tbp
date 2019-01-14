@@ -20,7 +20,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <Root>
         <Helmet
-          title="Front end developer, techy, musician"
+          title="Front end JavaScript developer, techy, musician"
           meta={[
             { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
           ]}

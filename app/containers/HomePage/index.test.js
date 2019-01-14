@@ -15,7 +15,7 @@ describe('<HomePage />', () => {
   it('should have a helmet component', () => {
     const actual = wrapper.containsMatchingElement(
       <Helmet
-        title="Front end developer, techy, musician"
+        title="Front end JavaScript developer, techy, musician"
         meta={[
           { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
         ]}
