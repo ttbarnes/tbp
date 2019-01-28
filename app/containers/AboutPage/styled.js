@@ -55,7 +55,6 @@ export const TechList = styled.ul`
 `;
 
 export const TechListItem = styled.li`
-  border: solid 2px orange;
   margin-bottom: 0;
   ${media.md`
     margin-bottom: 1em;

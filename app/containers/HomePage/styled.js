@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Img from 'components/Img';
 import H1 from 'components/H1';
 import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
@@ -68,11 +68,48 @@ export const StyledImg = styled(Img)`
 
 export const Intro = styled.div`
   padding-top: 0.5em;
+  position: relative;
 `;
 
 export const IntroP = styled.p`
   line-height: 2.2em;
   ${media.md`
     line-height: 1.5em;
+  `}
+`;
+
+
+const fadeInImage = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+export const FadeInImage = styled(StyledImg)`
+  ${media.sm`
+    animation: ${fadeInImage} 0.4s linear;
+  `}
+`;
+
+const fadeInOffset = keyframes`
+  from {
+    opacity: 0;
+    margin-top: -2em;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+`;
+
+export const FadeInOffset = styled.p`
+  ${media.sm`
+    animation: ${fadeInOffset} 0.4s linear;
+    margin-top: 0;
   `}
 `;
