@@ -8,7 +8,6 @@ import {
   FlexRootIntro,
   Flex,
   StyledH2,
-  StyledImg,
   Intro,
   IntroP,
   FadeInImage,
