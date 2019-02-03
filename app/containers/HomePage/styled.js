@@ -28,11 +28,12 @@ export const StyledP = styled.p`
 `;
 
 export const FlexRootIntro = styled.article`
-text-align: center;
+  text-align: center;
   align-items: center;
   margin-top: -2em;
   ${media.sm`
     display: flex;
+    align-items: flex-start;
     text-align: left;
     margin-top: 0;
   `}
@@ -49,10 +50,6 @@ export const Flex = styled.div`
   `}
 `;
 
-export const StyledH2 = styled(H1)`
-  margin: 0;
-`;
-
 export const ImgWrap = styled.div`
   padding-right: 1em;
 `;
@@ -66,24 +63,10 @@ export const StyledImg = styled(Img)`
   `}
 `;
 
-export const Intro = styled.div`
-  padding-top: 0.5em;
-  position: relative;
-`;
-
-export const IntroP = styled.p`
-  line-height: 2.2em;
-  ${media.md`
-    line-height: 1.5em;
-  `}
-`;
-
-
-const fadeInImage = keyframes`
-  from {
+const ImageKeyFrames = keyframes`
+  from, 50%, 85% {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -91,25 +74,96 @@ const fadeInImage = keyframes`
 
 export const FadeInImage = styled(StyledImg)`
   ${media.sm`
-    animation: ${fadeInImage} 0.4s linear;
+    animation: ${ImageKeyFrames} 1.5s linear;
   `}
 `;
 
-const fadeInOffset = keyframes`
-  from {
-    opacity: 0;
-    margin-top: -2em;
-  }
+export const StyledH2 = styled(H1)`
+  margin: 0;
+`;
 
+const HeadingHelloKeyFrames = keyframes`
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+`;
+
+export const HeadingHello = styled.span`
+  display: inline-block;
+  transition: all .6s ease;
+  animation: ${HeadingHelloKeyFrames} .6s linear;
+`;
+
+const HeadingSubKeyFrames = keyframes`
+  from, 50% {
+    opacity: 0;
+  }
   to {
     opacity: 1;
-    margin-top: 0;
   }
 `;
 
-export const FadeInOffset = styled.p`
+export const HeadingSub = styled.span`
+  display: inline-block;
+  transition: all 1s ease;
+  animation: ${HeadingSubKeyFrames} 1s linear;
+`;
+
+export const Intro = styled.div`
+  padding-top: 0.5em;
+  position: relative;
+  line-height: 2.2em;
+  ${media.md`
+    line-height: 1.5em;
+  `}
+`;
+
+const introCopyKeyFrames = keyframes`
+  from, 50%, 85% {
+    opacity: 0;
+    margin-left: -25%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+`;
+
+export const IntroCopy = styled.p`
   ${media.sm`
-    animation: ${fadeInOffset} 0.4s linear;
-    margin-top: 0;
+    animation: ${introCopyKeyFrames} 1.5s linear;
+    margin-bottom: 0;
   `}
 `;

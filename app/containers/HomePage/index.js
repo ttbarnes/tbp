@@ -8,10 +8,11 @@ import {
   FlexRootIntro,
   Flex,
   StyledH2,
+  HeadingHello,
+  HeadingSub,
   Intro,
-  IntroP,
   FadeInImage,
-  FadeInOffset
+  IntroCopy
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
@@ -32,14 +33,15 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             <FadeInImage src={TbImage} alt="Tony Barnes" />
           </Flex>
           <div>
-            <StyledH2>Hello! I{'\''}m Tony.</StyledH2>
-            <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP>
+            <StyledH2>
+              <HeadingHello>Hello!&nbsp;</HeadingHello>
+              <HeadingSub>I{'\''}m Tony.</HeadingSub>
+            </StyledH2>
+            {/* <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP> */}
             <Intro>
-              <IntroP>
-                <FadeInOffset>Read <Link to="about">about me</Link>, <br /></FadeInOffset>
-                <FadeInOffset>check out <Link to="projects">my projects</Link>, <br /></FadeInOffset>
-                <FadeInOffset>or see <Link to="hobbies">what else I get up to.</Link></FadeInOffset>
-              </IntroP>
+              <IntroCopy index="0">Read <Link to="about">about me</Link>, <br /></IntroCopy>
+              <IntroCopy index="1">check out <Link to="projects">my projects</Link>, <br /></IntroCopy>
+              <IntroCopy index="2">or see <Link to="hobbies">what else I get up to.</Link></IntroCopy>
             </Intro>
           </div>
         </FlexRootIntro>
