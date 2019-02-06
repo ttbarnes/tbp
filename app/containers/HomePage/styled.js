@@ -44,7 +44,7 @@ export const Flex = styled.div`
   ${media.sm`
     flex: 0 0 200px;
     margin-right: 20px;
-    justify-content: center;
+    justify-content: flex-end;
   `}
   ${media.md`
     margin-right: 40px;
@@ -68,15 +68,16 @@ export const StyledImg = styled(Img)`
 const ImageKeyFrames = keyframes`
   from, 50% {
     opacity: 0;
-    transform: rotate(360deg);
-    margin-top: -5em;
-    margin-left: -20em;
+    transform: rotate(-360deg);
   }
   65% {
-    opacity: .4;
+    opacity: 0;
   }
   from, 50% {
     width: 5%;
+  }
+  70% {
+    opacity: 0;
   }
   85% {
     width: 15%;
@@ -91,8 +92,8 @@ const ImageKeyFrames = keyframes`
 
 export const FadeInImage = styled(StyledImg)`
   ${media.sm`
-    animation: ${ImageKeyFrames} 1.5s linear;
-    transition: all 1.5s ease;
+    animation: ${ImageKeyFrames} 1.3s linear;
+    transition: all 1.3s ease;
     width: 100%;
   `}
 `;
@@ -173,7 +174,7 @@ export const Intro = styled.div`
 const styledTitlesKeyFrames = keyframes`
   from, 50%, 85% {
     opacity: 0;
-    bottom: -5em;
+    bottom: -3em;
   }
   to {
     opacity: 1;
@@ -184,7 +185,7 @@ const styledTitlesKeyFrames = keyframes`
 export const StyledTitles = styled.p`
   ${media.sm`
     position: relative;
-    animation: ${styledTitlesKeyFrames} 1.5s linear;
+    animation: ${styledTitlesKeyFrames} 1.3s linear;
     transition: all 1.5s ease;
   `}
 `;
@@ -200,7 +201,7 @@ const introCopyKeyFrames = keyframes`
 
 export const IntroCopy = styled.p`
   ${media.sm`
-    animation: ${introCopyKeyFrames} 3.5s linear;
+    animation: ${introCopyKeyFrames} 3s linear;
     margin-bottom: 0;
   `}
 `;
