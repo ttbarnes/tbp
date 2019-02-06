@@ -44,6 +44,7 @@ export const Flex = styled.div`
   ${media.sm`
     flex: 0 0 200px;
     margin-right: 20px;
+    justify-content: center;
   `}
   ${media.md`
     margin-right: 40px;
@@ -57,29 +58,48 @@ export const ImgWrap = styled.div`
 export const StyledImg = styled(Img)`
   max-width: 180px;
   border-radius: 50%;
-  margin-bottom: 0.5em;
+  margin: 0 auto .5em auto;
+  display: block;
   ${media.md`
     max-width: 200px;
   `}
 `;
 
 const ImageKeyFrames = keyframes`
-  from, 50%, 85% {
+  from, 50% {
     opacity: 0;
+    transform: rotate(360deg);
+    margin-top: -5em;
+    margin-left: -20em;
+  }
+  65% {
+    opacity: .4;
+  }
+  from, 50% {
+    width: 5%;
+  }
+  85% {
+    width: 15%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 `;
 
 export const FadeInImage = styled(StyledImg)`
   ${media.sm`
     animation: ${ImageKeyFrames} 1.5s linear;
+    transition: all 1.5s ease;
+    width: 100%;
   `}
 `;
 
 export const StyledH2 = styled(H1)`
   margin: 0;
+  padding-top: .2em;
 `;
 
 const HeadingHelloKeyFrames = keyframes`
@@ -150,20 +170,37 @@ export const Intro = styled.div`
   `}
 `;
 
-const introCopyKeyFrames = keyframes`
+const styledTitlesKeyFrames = keyframes`
   from, 50%, 85% {
     opacity: 0;
-    margin-left: -25%;
+    bottom: -5em;
   }
   to {
     opacity: 1;
-    margin-left: 0;
+    bottom: 0;
+  }
+`;
+
+export const StyledTitles = styled.p`
+  ${media.sm`
+    position: relative;
+    animation: ${styledTitlesKeyFrames} 1.5s linear;
+    transition: all 1.5s ease;
+  `}
+`;
+
+const introCopyKeyFrames = keyframes`
+  from, 50%, 80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 `;
 
 export const IntroCopy = styled.p`
   ${media.sm`
-    animation: ${introCopyKeyFrames} 1.5s linear;
+    animation: ${introCopyKeyFrames} 3.5s linear;
     margin-bottom: 0;
   `}
 `;

@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
 import H1 from 'components/H1';
 import {
-  StyledP,
   Root,
   FlexRootIntro,
   Flex,
@@ -12,6 +11,7 @@ import {
   HeadingSub,
   Intro,
   FadeInImage,
+  StyledTitles,
   IntroCopy
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
@@ -37,7 +37,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
               <HeadingHello>Hello!&nbsp;</HeadingHello>
               <HeadingSub>I{'\''}m Tony.</HeadingSub>
             </StyledH2>
-            {/* <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP> */}
+            <StyledTitles>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledTitles>
             <Intro>
               <IntroCopy index="0">Read <Link to="about">about me</Link>, <br /></IntroCopy>
               <IntroCopy index="1">check out <Link to="projects">my projects</Link>, <br /></IntroCopy>
