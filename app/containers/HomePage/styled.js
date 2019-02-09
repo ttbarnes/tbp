@@ -144,7 +144,9 @@ const HeadingHelloKeyFrames = keyframes`
 export const HeadingHello = styled.span`
   display: inline-block;
   transition: all .6s ease;
-  animation: ${HeadingHelloKeyFrames} .6s linear;
+  ${media.sm`
+    animation: ${HeadingHelloKeyFrames} .6s linear;
+  `}
 `;
 
 const HeadingSubKeyFrames = keyframes`
@@ -159,14 +161,17 @@ const HeadingSubKeyFrames = keyframes`
 export const HeadingSub = styled.span`
   display: inline-block;
   transition: all 1s ease;
-  animation: ${HeadingSubKeyFrames} 1s linear;
+  ${media.sm`
+    animation: ${HeadingSubKeyFrames} 1s linear;
+  `}
 `;
 
 export const Intro = styled.div`
-  padding-top: 0.5em;
+  padding-top: 1em;
   position: relative;
   line-height: 2.2em;
   ${media.md`
+    padding-top: 0.5em;
     line-height: 1.5em;
   `}
 `;
