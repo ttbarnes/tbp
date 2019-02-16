@@ -47,6 +47,7 @@
     "test:ie": "npm run test -- --browsers IE",
     "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
   },
+  "heroku-run-build-script": false,
   "lint-staged": {
     "*.js": "lint:eslint"
   },
