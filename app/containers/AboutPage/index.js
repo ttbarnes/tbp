@@ -93,6 +93,19 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <H1 hide>About</H1>
 
         <Intro>
+
+          <H2 h1Size>A passionate developer</H2>
+          <p>Specialising in bespoke web app development, i{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries.</p>
+
+          <p>I thoroughly enjoy understanding people{'\''}s needs and wants. I love taking concepts from the drawing board into a fully fledged application that is a pleasure to use.</p>
+
+          <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all developers, designers and stakeholders. By working in an agile way, the product/app can be improved upon and delivered incrementally.</p>
+
+          <p>Striving for clean and scalable solutions, I use the right tools for the job - there{'\''}s no need to reinvent the wheel.</p>
+
+          <p>Recently, i{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a>.{' '}Previously built FinTech UI{'\''}s with <a href="https://www.ihs.com" target="_blank" rel="noopener">IHS Markit.</a>{' '}. I{'\''}ve also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>.</p>
+      
+          {/*
           <H2 h1Size>A passionate front end/javascript developer</H2>
           <p>With many years of experience, I strive for clean and scalable solutions.</p>
 
@@ -105,6 +118,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>On the side i{'\''}m building an app that combines various APIs from music platforms, as well as some tools/UIs that will assist crypto currency traders.
           Previously built a <a href="https://github.com/therapy-records" target="_blank" rel="noopener">CMS</a> and worked on a <a href="http://www.plantstove.com" target="_blank" rel="noopener">startup idea</a>.</p>
+        */}
         </Intro>
 
         <TechList>

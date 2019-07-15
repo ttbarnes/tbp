@@ -33,7 +33,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
         <Helmet
           title="Projects"
           meta={[
-            { name: 'description', content: 'Dev projects' },
+            { name: 'description', content: 'Some of the projects i\'ve been a part of' },
           ]}
         />
 
