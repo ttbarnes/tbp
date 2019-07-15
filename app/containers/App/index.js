@@ -7,7 +7,6 @@ import Footer from 'components/Footer';
 import HomePage from 'containers/HomePage/loadable';
 import AboutPage from 'containers/AboutPage/loadable';
 import ProjectsPage from 'containers/ProjectsPage/loadable';
-import HobbiesPage from 'containers/HobbiesPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
 
@@ -53,10 +52,6 @@ function App(props) {
           exact
           path="/projects"
           component={ProjectsPage}
-        />
-        <Route
-          path="/hobbies"
-          component={HobbiesPage}
         />
         <Route
           path="/contact"
