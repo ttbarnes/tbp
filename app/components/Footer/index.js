@@ -4,25 +4,22 @@ import {
   IconGithub,
   IconLinkedIn,
   IconStackOverflow,
-  IconSoundCloud,
-  IconTwitter,
-  IconYouTube
+  IconTwitter
 } from '../../components/Icons';
 
 import {
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,
   SOCIAL_STACKOVERFLOW,
-  SOCIAL_SOUNDCLOUD,
   SOCIAL_TWITTER,
-  SOCIAL_YOUTUBE
 } from '../../constants';
 
 import {
   Root,
   ListRoot,
   ListItem,
-  StyledLink
+  StyledLink,
+  StyledCopyright
 } from './styled';
 
 class Footer extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -42,6 +39,11 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
               <IconTwitter />
             </StyledLink>
           </ListItem>
+          <ListItem aria-label="LinkedIn">
+            <StyledLink href={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
+              <IconLinkedIn />
+            </StyledLink>
+          </ListItem>
           <ListItem aria-label="Github">
             <StyledLink href={SOCIAL_GITHUB} target="_blank" rel="noopener">
               <IconGithub />
@@ -52,22 +54,10 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
               <IconStackOverflow />
             </StyledLink>
           </ListItem>
-          <ListItem aria-label="LinkedIn">
-            <StyledLink href={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
-              <IconLinkedIn />
-            </StyledLink>
-          </ListItem>
-          <ListItem aria-label="SoundCloud">
-            <StyledLink href={SOCIAL_SOUNDCLOUD} target="_blank" rel="noopener">
-              <IconSoundCloud />
-            </StyledLink>
-          </ListItem>
-          <ListItem aria-label="YouTube">
-            <StyledLink href={SOCIAL_YOUTUBE} target="_blank" rel="noopener">
-              <IconYouTube />
-            </StyledLink>
-          </ListItem>
         </ListRoot>
+        <StyledCopyright>
+          &copy; Barnes Code Ltd. Company no: 09719405
+        </StyledCopyright>
       </Root>
     );
   }

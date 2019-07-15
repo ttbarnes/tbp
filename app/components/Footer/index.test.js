@@ -6,17 +6,13 @@ import {
   IconGithub,
   IconLinkedIn,
   IconStackOverflow,
-  IconSoundCloud,
-  IconTwitter,
-  IconYouTube
+  IconTwitter
 } from '../../components/Icons';
 import {
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,
   SOCIAL_STACKOVERFLOW,
-  SOCIAL_SOUNDCLOUD,
-  SOCIAL_TWITTER,
-  SOCIAL_YOUTUBE
+  SOCIAL_TWITTER
 } from '../../constants';
 import {
   Root,
@@ -75,26 +71,6 @@ describe('<Footer />', () => {
         <ListItem aria-label="LinkedIn">
           <StyledLink href={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
             <IconLinkedIn />
-          </StyledLink>
-        </ListItem>
-      );
-      expect(actual).toBeTruthy();
-    });
-    it('soundcloud', () => {
-      const actual = wrapper.containsMatchingElement(
-        <ListItem aria-label="SoundCloud">
-          <StyledLink href={SOCIAL_SOUNDCLOUD} target="_blank" rel="noopener">
-            <IconSoundCloud />
-          </StyledLink>
-        </ListItem>
-      );
-      expect(actual).toBeTruthy();
-    });
-    it('youtube', () => {
-      const actual = wrapper.containsMatchingElement(
-        <ListItem aria-label="YouTube">
-          <StyledLink href={SOCIAL_YOUTUBE} target="_blank" rel="noopener">
-            <IconYouTube />
           </StyledLink>
         </ListItem>
       );

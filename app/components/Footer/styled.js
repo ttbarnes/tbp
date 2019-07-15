@@ -69,3 +69,13 @@ export const ListItemNoIcon = styled.li`
   ${ListItemShared}
   max-width: 4.3em;
 `;
+
+export const StyledCopyright = styled.p`
+  color: #BBBCBB;
+  margin-bottom: 1.5em;
+  font-size: 85%;
+  text-align: center;
+  ${media.sm`
+    font-size: 100%;
+  `}
+`;
