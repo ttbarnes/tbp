@@ -5,7 +5,7 @@ export const CONTAINER_MAX_WIDTH_XLG = 1200;
 export const CONTAINER_SPACING_VERTICAL = '4em';
 export const CONTAINER_SPACING_HORIZONTAL = '1em';
 export const CONTAINER_OFFSET_LEFT = '8.4em'; // 80px for nav
-export const NAV_MAX_WIDTH = 130;
+export const NAV_MAX_WIDTH = 140;
 export const FOOTER_HEIGHT = 60;
 
 export const media = {

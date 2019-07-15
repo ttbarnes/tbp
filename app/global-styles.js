@@ -74,6 +74,7 @@ injectGlobal`
 
   p {
     margin-top: 0;
+    font-size: 1.1em;
   }
 
   .no-margin {
