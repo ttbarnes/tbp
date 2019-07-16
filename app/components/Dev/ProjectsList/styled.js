@@ -12,10 +12,10 @@ export const Root = styled.div`
 
 export const ListRoot = styled.ul`
   ${media.md`
-    margin-top: 26em;
+    margin-top: 20em;
   `}
   ${media.lg`
-    margin: 26em -8em 0 2.5em;
+    margin: 17em -8em 0 2.5em;
   `}
 `;
 
@@ -67,11 +67,11 @@ export const StyledListItem = styled.li`
   align-items: flex-start;
   padding: 0;
   ${media.md`
-    padding: 5em 0 30em 0;
+    padding: 5em 0 15em 0;
   `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
-    padding: 5em 0 30em 0;
+    padding: 5em 0 25em 0;
   `}
   ${isLastItem}
 `;
