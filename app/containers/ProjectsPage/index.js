@@ -42,11 +42,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
         <H1 hide>Projects</H1>
 
-        {/* <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2> */}
-        {/* <H2 h1Size>I{'\''}ve been collaborating with...</H2> */}
-        {/* <H2 h1Size>I{'\''}ve been working with...</H2> */}
-        {/* <H2 h1Size>I{'\''}ve worked with...</H2> */}
-        <H2 h1Size>I{'\''}ve enjoyed working with...</H2>
+        <H2 h1Size>I{'\''}ve worked with some great people</H2>
 
         <ProjectsSummary projects={tempProjectsSummary} />
 

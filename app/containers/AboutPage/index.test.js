@@ -31,7 +31,7 @@ describe('<About />', () => {
       <Helmet
         title="About"
         meta={[
-          { name: 'description', content: 'About Tony Barnes' }
+          { name: 'description', content: 'A creative engineer with a passion' }
         ]}
       />
     );
