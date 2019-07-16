@@ -1,20 +1,45 @@
 [
     {
-        "name": "WorldRemit"
+        "name": "WorldRemit",
+        "colors": {
+            "bg": "#735996",
+            "text": "#FFF"
+        }
     },
     {
-        "name": "IHS Markit"
+        "name": "IHS Markit",
+        "colors": {
+            "bg": "#33383E",
+            "text": "#FFF"
+        }
     },
     {
-        "name": "John Lewis"
+        "name": "Trainline",
+        "colors": {
+            "bg": "#21314D",
+            "text": "#FFF"
+        }
     },
     {
-        "name": "Trainline"
+        "name": "Lantum",
+        "colors": {
+            "bg": "#03254e",
+            "text": "#FFF"
+        }
     },
     {
-        "name": "Network Locum"
+        "name": "John Lewis",
+        "colors": {
+            "bg": "#FFF",
+            "text": "#5C8017",
+            "border": "#5C8017"
+        }
     },
     {
-        "name": "Fiona Ross"
+        "name": "Fiona Ross",
+        "colors": {
+            "bg": "#282828",
+            "text": "#D4D4D4"
+        }
     }
 ]

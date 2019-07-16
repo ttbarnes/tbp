@@ -37,9 +37,6 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
               <HeadingHello>Hello!&nbsp;</HeadingHello>
               <HeadingSub>I{'\''}m Tony.</HeadingSub>
             </StyledH2>
-            {/*
-              <StyledTitles>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledTitles>
-            */}
             <StyledTitles>
               A Freelance, Front End/Full Stack JavaScript Developer
             </StyledTitles>

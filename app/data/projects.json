@@ -226,8 +226,8 @@
     "year": "2015-2016",
     "projects": [
       {
-        "id": "network-locum",
-        "name": "Network Locum",
+        "id": "lantum",
+        "name": "Lantum",
         "date": "2015-16",
         "industry": "Health",
         "tech": [
@@ -240,7 +240,7 @@
           "Less"
         ],
         "primaryTech": "Angular",
-        "url": "http://networklocum.com"
+        "url": "http://lantum.com"
       }
     ]
   },

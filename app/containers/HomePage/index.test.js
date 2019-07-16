@@ -17,7 +17,7 @@ describe('<HomePage />', () => {
       <Helmet
         title="Freelance Front End, Full Stack JavaScript Developer"
         meta={[
-          { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
+          { name: 'description', content: 'Freelance developer, London' },
         ]}
       />
     );

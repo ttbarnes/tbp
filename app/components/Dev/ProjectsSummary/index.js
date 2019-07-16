@@ -11,7 +11,13 @@ const ProjectsSummary = ({ projects }) => (
   <ListRoot>
     {projects.map((p) =>
       <ListItem key={p.name}>
-        <ListItemInner>
+        <ListItemInner
+          style={{
+            background: p.colors.bg,
+            color: p.colors.text,
+            border: `solid 1px ${p.colors.border}`
+          }}
+        >
           <ListItemCopy>{p.name}</ListItemCopy>
         </ListItemInner>
       </ListItem>
