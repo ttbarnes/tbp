@@ -1,4 +1,5 @@
 import projects from '../../data/projects.json';
+import projectsSummary from '../../data/projects-summary.json';
 
 import {
   SET_PROJECTS_FILTER_BY_INDUSTRY,
@@ -7,6 +8,7 @@ import {
 
 const initialState = {
   data: projects,
+  tempProjectsSummary: projectsSummary,
   filterByIndustry: '',
   filterByTech: ''
 };
