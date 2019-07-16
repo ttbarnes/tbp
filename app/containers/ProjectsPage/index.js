@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import Helmet from 'react-helmet';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
+import ProjectsSummary from 'components/Dev/ProjectsSummary';
 import Projects from 'components/Dev/Projects';
 import PageContainer from '../PageContainer';
 import {
@@ -12,6 +13,7 @@ import {
   setProjectsFilterByTech
 } from './actions';
 import {
+  selectTempProjectsSummary,
   selectProjectsData,
   selectProjectsFilterByIndustry,
   selectProjectsFilterByTech
@@ -20,6 +22,7 @@ import {
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
+      tempProjectsSummary,
       projects,
       onClickFilterByIndustry,
       onClickFilterByTech,
@@ -41,6 +44,11 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
         <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
 
+        <ProjectsSummary projects={tempProjectsSummary} />
+
+        <br />
+        <br />
+
         <Projects
           projects={projects}
           onClickFilterByIndustry={onClickFilterByIndustry}
@@ -54,6 +62,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 }
 
 ProjectsPage.propTypes = {
+  tempProjectsSummary: PropTypes.array,
   projects: PropTypes.array,
   onClickFilterByIndustry: PropTypes.func,
   onClickFilterByTech: PropTypes.func,
@@ -73,6 +82,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
+  tempProjectsSummary: selectTempProjectsSummary(),
   projects: selectProjectsData(),
   filterByIndustry: selectProjectsFilterByIndustry(),
   filterByTech: selectProjectsFilterByTech()
