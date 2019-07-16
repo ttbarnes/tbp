@@ -41,7 +41,6 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             <Intro>
               <IntroCopy index="0">Read <Link to="about">about me</Link>, <br /></IntroCopy>
               <IntroCopy index="1">check out <Link to="projects">my projects</Link>, <br /></IntroCopy>
-              <IntroCopy index="2">or see <Link to="hobbies">what else I get up to.</Link></IntroCopy>
             </Intro>
           </div>
         </FlexRootIntro>
