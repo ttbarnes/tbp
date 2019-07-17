@@ -1,5 +1,7 @@
 import { createSelector } from 'reselect';
 
+const selectProjectsSummary = () => (state) => state.projects.summary;
+
 const selectProjects = () => (state) => state.projects;
 
 const selectProjectsData = () => createSelector(
@@ -18,6 +20,7 @@ const selectProjectsFilterByTech = () => createSelector(
 );
 
 export {
+  selectProjectsSummary,
   selectProjectsData,
   selectProjectsFilterByIndustry,
   selectProjectsFilterByTech

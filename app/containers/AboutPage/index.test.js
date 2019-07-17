@@ -31,7 +31,7 @@ describe('<About />', () => {
       <Helmet
         title="About"
         meta={[
-          { name: 'description', content: 'About Tony Barnes' }
+          { name: 'description', content: 'A creative engineer with a passion' }
         ]}
       />
     );
@@ -87,7 +87,7 @@ describe('<About />', () => {
       const actual = groupWrapper.containsMatchingElement(
         <div>
           <p><Link to="/contact">Get in touch</Link></p>
-          <p>Check out some <Link to="/projects">projects i{'\''}ve worked on</Link></p>
+          <p><Link to="/clients">See who i{'\''}ve worked with</Link></p>
         </div>
       );
       expect(actual).toBeTruthy();

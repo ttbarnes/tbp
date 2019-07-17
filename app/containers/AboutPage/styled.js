@@ -5,7 +5,7 @@ import { media } from '../../components/styledShared';
 
 export const Intro = styled.div`
   ${media.sm`
-    margin-bottom: 13em;
+    margin-bottom: 12.5em;
   `}
 `;
 

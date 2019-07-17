@@ -39,7 +39,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
             <HeadingYearColumn>
               <HeadingYearContent>
                 <HeadingYear>{year}</HeadingYear>
-                {year === 'Currently' && <HeadingYearSub>{yearSub}</HeadingYearSub>}
+                {year === 'Timeline' && <HeadingYearSub>{yearSub}</HeadingYearSub>}
               </HeadingYearContent>
             </HeadingYearColumn>
 

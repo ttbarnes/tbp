@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import Helmet from 'react-helmet';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
+import ProjectsSummary from 'components/Dev/ProjectsSummary';
 import Projects from 'components/Dev/Projects';
 import PageContainer from '../PageContainer';
 import {
@@ -12,6 +13,7 @@ import {
   setProjectsFilterByTech
 } from './actions';
 import {
+  selectProjectsSummary,
   selectProjectsData,
   selectProjectsFilterByIndustry,
   selectProjectsFilterByTech
@@ -20,6 +22,7 @@ import {
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
+      projectsSummary,
       projects,
       onClickFilterByIndustry,
       onClickFilterByTech,
@@ -33,13 +36,15 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
         <Helmet
           title="Projects"
           meta={[
-            { name: 'description', content: 'Dev projects' },
+            { name: 'description', content: 'Some of the projects i\'ve been a part of' },
           ]}
         />
 
         <H1 hide>Projects</H1>
 
-        <H2 h1Size>Some of the projects i{'\''}ve been a part of</H2>
+        <H2 h1Size>I{'\''}ve worked with some great people</H2>
+
+        <ProjectsSummary projects={projectsSummary} />
 
         <Projects
           projects={projects}
@@ -54,6 +59,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 }
 
 ProjectsPage.propTypes = {
+  projectsSummary: PropTypes.array,
   projects: PropTypes.array,
   onClickFilterByIndustry: PropTypes.func,
   onClickFilterByTech: PropTypes.func,
@@ -73,6 +79,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
+  projectsSummary: selectProjectsSummary(),
   projects: selectProjectsData(),
   filterByIndustry: selectProjectsFilterByIndustry(),
   filterByTech: selectProjectsFilterByTech()

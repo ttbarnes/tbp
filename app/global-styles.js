@@ -121,6 +121,10 @@ injectGlobal`
     font-size: 1.15em;
   }
 
+  .bm-menu-wrap .bm-cross-button {
+    display: none;
+  }
+
   .bm-overlay {
     background: rgba(0, 0, 0, 0.6) !important;
   }

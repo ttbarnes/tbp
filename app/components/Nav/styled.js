@@ -41,7 +41,6 @@ export const ListRoot = styled.div`
 export const NavLinkRoot = styled(NavLink)`
   ${NavLinkShared}
   padding: 0.5em;
-  font-weight:bold;
   margin-bottom: 1em;
   ${media.lg`
     margin-bottom: .7em;

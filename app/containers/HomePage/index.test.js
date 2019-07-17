@@ -4,7 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
 import HomePage from './index';
-import { StyledH2, StyledP, StyledImg } from './styled';
+import { StyledH2, StyledTitle, StyledImg, IntroCopy } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
@@ -15,9 +15,9 @@ describe('<HomePage />', () => {
   it('should have a helmet component', () => {
     const actual = wrapper.containsMatchingElement(
       <Helmet
-        title="Front end JavaScript developer, techy, musician"
+        title="Freelance Front End, Full Stack JavaScript Developer"
         meta={[
-          { name: 'description', content: 'JavaScript developer, musician, cyclist, FPV pilot, tea drinker.' },
+          { name: 'description', content: 'Freelance developer, London' },
         ]}
       />
     );
@@ -34,7 +34,7 @@ describe('<HomePage />', () => {
   it('should have correct copy', () => {
     const actual = wrapper.containsAllMatchingElements([
       <StyledH2>Hello! I{'\''}m Tony.</StyledH2>,
-      <StyledP>Developer, musician, cyclist, FPV pilot, tea drinker.</StyledP>
+      <StyledTitle>A Freelance, Front End/Full Stack JavaScript Developer</StyledTitle>
     ]);
     expect(actual).toEqual(true);
   });
@@ -47,12 +47,7 @@ describe('<HomePage />', () => {
     expect(actual).toEqual(true);
 
     actual = wrapper.containsMatchingElement(
-      <Link to="projects">my projects</Link>,
-    );
-    expect(actual).toEqual(true);
-
-    actual = wrapper.containsMatchingElement(
-      <Link to="hobbies">what else I get up to.</Link>
+      <IntroCopy>See <Link to="projects">who i{'\''}ve worked with</Link></IntroCopy>
     );
     expect(actual).toEqual(true);
   });

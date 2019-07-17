@@ -6,8 +6,8 @@ import { StyledProjectsFooter } from './styled';
 const ProjectsFooter = () => (
   <StyledProjectsFooter>
     <H3>I love collaborating - maybe we could build something together?</H3>
-    <p><Link to="contact">Send me a message</Link></p>
-    <p><Link to="about">Read about my skills</Link></p>
+    <p>Send me a message: <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
+    <p><Link to="about">Read about me</Link></p>
   </StyledProjectsFooter>
 );
 

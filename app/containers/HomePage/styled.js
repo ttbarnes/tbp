@@ -4,7 +4,7 @@ import H1 from 'components/H1';
 import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
 
 export const Root = styled.article`
-  max-width: 650px;
+  max-width: 695px;
   width: 100%;
   margin: 0 auto;
   ${media.md`
@@ -31,7 +31,7 @@ export const FlexRootIntro = styled.article`
   text-align: center;
   align-items: center;
   margin-top: -2em;
-  ${media.sm`
+  ${media.md`
     display: flex;
     align-items: flex-start;
     text-align: left;
@@ -41,7 +41,7 @@ export const FlexRootIntro = styled.article`
 
 export const Flex = styled.div`
   flex: 0 0 180px;
-  ${media.sm`
+  ${media.md`
     flex: 0 0 200px;
     margin-right: 20px;
     justify-content: flex-end;
@@ -91,7 +91,7 @@ const ImageKeyFrames = keyframes`
 `;
 
 export const FadeInImage = styled(StyledImg)`
-  ${media.sm`
+  ${media.md`
     animation: ${ImageKeyFrames} 1.3s linear;
     transition: all 1.3s ease;
     width: 100%;
@@ -101,6 +101,7 @@ export const FadeInImage = styled(StyledImg)`
 export const StyledH2 = styled(H1)`
   margin: 0;
   padding-top: .2em;
+  margin-bottom: .25em;
 `;
 
 const HeadingHelloKeyFrames = keyframes`
@@ -144,7 +145,7 @@ const HeadingHelloKeyFrames = keyframes`
 export const HeadingHello = styled.span`
   display: inline-block;
   transition: all .6s ease;
-  ${media.sm`
+  ${media.md`
     animation: ${HeadingHelloKeyFrames} .6s linear;
   `}
 `;
@@ -161,12 +162,12 @@ const HeadingSubKeyFrames = keyframes`
 export const HeadingSub = styled.span`
   display: inline-block;
   transition: all 1s ease;
-  ${media.sm`
+  ${media.md`
     animation: ${HeadingSubKeyFrames} 1s linear;
   `}
 `;
 
-export const Intro = styled.div`
+export const Intro = styled.ul`
   padding-top: 1em;
   position: relative;
   line-height: 2.2em;
@@ -188,7 +189,16 @@ const styledTitlesKeyFrames = keyframes`
 `;
 
 export const StyledTitles = styled.p`
-  ${media.sm`
+  padding: 0 1em;
+  max-width: 330px;
+  margin: 0 auto;
+  ${media.xs`
+    padding: 0 0.5em;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  `}
+  ${media.md`
+    padding: 0;
     position: relative;
     animation: ${styledTitlesKeyFrames} 1.3s linear;
     transition: all 1.5s ease;
@@ -204,9 +214,11 @@ const introCopyKeyFrames = keyframes`
   }
 `;
 
-export const IntroCopy = styled.p`
-  ${media.sm`
+export const IntroCopy = styled.li`
+  margin-bottom: .5em;
+  ${media.md`
     animation: ${introCopyKeyFrames} 3s linear;
-    margin-bottom: 0;
+    list-style-type: disc;
+    margin-left: 1em;
   `}
 `;
