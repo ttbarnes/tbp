@@ -99,11 +99,11 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>I thoroughly enjoy understanding people{'\''}s needs and wants. I love taking concepts from the drawing board into a fully fledged application that is a pleasure to use.</p>
 
-          <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all developers, designers and stakeholders. By working in an agile way, the product/app can be improved upon and delivered incrementally which in turn, ensures high quality, real world results.</p>
+          <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all stakeholders. By working in an agile way, the product/app can be improved upon and delivered incrementally which in turn, ensures high quality, real world results.</p>
 
           <p>Striving for clean and scalable solutions, I make sure that the right tools are used for the job - there{'\''}s no need to reinvent the wheel.</p>
 
-          <p>Recently, i{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="clients">great people</Link>.</p>
+          <p>Recently, i{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and replatformed interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="clients">great people</Link>.</p>
 
           <p>I love to help - maybe we could talk? <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
 
