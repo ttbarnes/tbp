@@ -59,7 +59,7 @@ export const renderGroup = (group) => {
     return (
       <div>
         <p><Link to="contact">Send me a message</Link></p>
-        <p><Link to="projects">See who i{'\''}ve worked with</Link></p>
+        <p><Link to="clients">See who i{'\''}ve worked with</Link></p>
       </div>
     );
   }
@@ -103,7 +103,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Striving for clean and scalable solutions, I make sure that the right tools are used for the job - there{'\''}s no need to reinvent the wheel.</p>
 
-          <p>Recently, i{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="projects">great people</Link>.</p>
+          <p>Recently, i{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and built some awesome interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="clients">great people</Link>.</p>
 
           <p>I love to help - maybe we could talk? <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
 

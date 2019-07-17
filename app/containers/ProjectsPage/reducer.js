@@ -8,7 +8,7 @@ import {
 
 const initialState = {
   data: projects,
-  tempProjectsSummary: projectsSummary,
+  summary: projectsSummary,
   filterByIndustry: '',
   filterByTech: ''
 };

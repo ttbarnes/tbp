@@ -50,7 +50,7 @@ function App(props) {
         />
         <Route
           exact
-          path="/projects"
+          path="/clients"
           component={ProjectsPage}
         />
         <Route

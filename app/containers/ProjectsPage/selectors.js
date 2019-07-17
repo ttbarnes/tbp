@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-const selectTempProjectsSummary = () => (state) => state.projects.tempProjectsSummary;
+const selectProjectsSummary = () => (state) => state.projects.summary;
 
 const selectProjects = () => (state) => state.projects;
 
@@ -20,7 +20,7 @@ const selectProjectsFilterByTech = () => createSelector(
 );
 
 export {
-  selectTempProjectsSummary,
+  selectProjectsSummary,
   selectProjectsData,
   selectProjectsFilterByIndustry,
   selectProjectsFilterByTech

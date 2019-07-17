@@ -4,7 +4,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
 import HomePage from './index';
-import { StyledH2, StyledTitle, StyledImg } from './styled';
+import { StyledH2, StyledTitle, StyledImg, IntroCopy } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
@@ -47,7 +47,7 @@ describe('<HomePage />', () => {
     expect(actual).toEqual(true);
 
     actual = wrapper.containsMatchingElement(
-      <Link to="projects">what i{'\''}ve been up to</Link>
+      <IntroCopy>See <Link to="projects">who i{'\''}ve worked with</Link></IntroCopy>
     );
     expect(actual).toEqual(true);
   });

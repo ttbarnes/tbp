@@ -21,13 +21,6 @@
         }
     },
     {
-        "name": "Lantum",
-        "colors": {
-            "bg": "#03254e",
-            "text": "#FFF"
-        }
-    },
-    {
         "name": "John Lewis",
         "colors": {
             "bg": "#FFF",
@@ -36,10 +29,17 @@
         }
     },
     {
+        "name": "Lantum",
+        "colors": {
+            "bg": "#03254e",
+            "text": "#FFF"
+        }
+    },
+    {
         "name": "Fiona Ross",
         "colors": {
             "bg": "#282828",
-            "text": "#D4D4D4"
+            "text": "#E4E4E4"
         }
     }
 ]

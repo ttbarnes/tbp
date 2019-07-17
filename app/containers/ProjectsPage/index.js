@@ -13,7 +13,7 @@ import {
   setProjectsFilterByTech
 } from './actions';
 import {
-  selectTempProjectsSummary,
+  selectProjectsSummary,
   selectProjectsData,
   selectProjectsFilterByIndustry,
   selectProjectsFilterByTech
@@ -22,7 +22,7 @@ import {
 export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
-      tempProjectsSummary,
+      projectsSummary,
       projects,
       onClickFilterByIndustry,
       onClickFilterByTech,
@@ -44,7 +44,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
         <H2 h1Size>I{'\''}ve worked with some great people</H2>
 
-        <ProjectsSummary projects={tempProjectsSummary} />
+        <ProjectsSummary projects={projectsSummary} />
 
         <Projects
           projects={projects}
@@ -59,7 +59,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 }
 
 ProjectsPage.propTypes = {
-  tempProjectsSummary: PropTypes.array,
+  projectsSummary: PropTypes.array,
   projects: PropTypes.array,
   onClickFilterByIndustry: PropTypes.func,
   onClickFilterByTech: PropTypes.func,
@@ -79,7 +79,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  tempProjectsSummary: selectTempProjectsSummary(),
+  projectsSummary: selectProjectsSummary(),
   projects: selectProjectsData(),
   filterByIndustry: selectProjectsFilterByIndustry(),
   filterByTech: selectProjectsFilterByTech()

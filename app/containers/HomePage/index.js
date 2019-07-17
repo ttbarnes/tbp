@@ -42,7 +42,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             </StyledTitles>
             <Intro>
               <IntroCopy index="0">Read <Link to="about">about me</Link> <br /></IntroCopy>
-              <IntroCopy index="1">See <Link to="projects">what i{'\''}ve been up to</Link></IntroCopy>
+              <IntroCopy index="1">See <Link to="clients">who i{'\''}ve worked with</Link></IntroCopy>
             </Intro>
           </div>
         </FlexRootIntro>
