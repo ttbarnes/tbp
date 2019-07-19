@@ -9,8 +9,9 @@ import { FadeIn } from 'components/styledShared';
 import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
-import H3 from '../../components/H3';
+import H3 from '../../components/H3'
 import List from '../../components/List';
+import ServicesList from '../../components/ServicesList';
 import {
   selectAboutTech
 } from './selectors';
@@ -28,6 +29,25 @@ const groupsWithStyledTag = [
   'testing',
   'styling',
   'other'
+];
+
+const tempServices = [
+  {
+    name: 'Service A',
+    copy: 'test copy test copy testing the copy test test'
+  },
+  {
+    name: 'Service B',
+    copy: 'test copy test copy testing the copy test test'
+  },
+  {
+    name: 'Service C',
+    copy: 'test copy test copy testing the copy test test'
+  },
+  {
+    name: 'Service D',
+    copy: 'test copy test copy testing the copy test test'
+  }
 ];
 
 export const renderGroup = (group) => {
@@ -126,6 +146,9 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           })}
         </TechList>
         */}
+
+        <H3>What I can help with</H3>
+        <ServicesList services={tempServices} />
 
       </PageContainer>
     );
