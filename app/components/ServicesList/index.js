@@ -6,7 +6,8 @@ import {
   StyledH4,
   StyledService,
   StyledServiceInner,
-  StyledServiceIcon
+  StyledServiceIcon,
+  StyledCopy
 } from './styled';
 
 
@@ -27,7 +28,9 @@ const ServicesList = ({
             <StyledServiceIcon>
               {service.symbol}
             </StyledServiceIcon>
-            <p><small>{service.copy}</small></p>
+            <StyledCopy>
+              <p><small>{service.copy}</small></p>
+            </StyledCopy>
           </StyledServiceInner>
         </StyledService>
       )}

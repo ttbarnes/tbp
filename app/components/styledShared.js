@@ -39,6 +39,11 @@ export const media = {
       ${css(...args)}
     }
   `,
+  lg2: (...args) => css`
+    @media (min-width: 1150px) {
+      ${css(...args)}
+    }
+  `,
   xlg: (...args) => css`
     @media (min-width: 1200px) {
       ${css(...args)}
@@ -49,6 +54,7 @@ export const media = {
 export const colors = {
   black1: '#222',
   grey1: '#6F6F6F',
+  grey2: '#E9E9E9',
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
   blue2: '#4B86A4',

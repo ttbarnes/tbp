@@ -14,7 +14,7 @@ const mobileOnly = (props) => `
 `;
 
 const H3 = styled.h3`
-  font-size: 1.2em;
+  font-size: 1.5em;
   ${media.sm`
     font-size: 1.5em;
     ${mobileOnly}
