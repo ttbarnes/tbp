@@ -1,13 +1,24 @@
 import styled from 'styled-components';
 import { colors, media } from '../styledShared';
+import H4 from '../../components/H4';
+
+export const Root = styled.div`
+    width: calc(100% + 8em);
+    max-width: calc(100% + 8em);
+    margin: 0 -4em 2em -4em;
+    text-align: center;
+`;
+
+export const StyledH4 = styled(H4)`
+  font-weight: normal;
+  font-size: 1.2em;
+`;
 
 export const ListRoot = styled.ul`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: calc(100% + 2em);
-    max-width: calc(100% + 2em);
-    margin: 0 -1em 2em -1em;
+    margin: 3.5em 0;
 `;
 
 export const StyledService = styled.li`
@@ -31,6 +42,6 @@ export const StyledServiceInner = styled.div`
   text-align: center;
 `;
 
-export const StyledServiceIcon = styled.img`
-  max-width: 90px;
+export const StyledServiceIcon = styled.span`
+  font-size: 3.5em;
 `;

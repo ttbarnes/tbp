@@ -9,17 +9,16 @@ import { FadeIn } from 'components/styledShared';
 import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
-import H3 from '../../components/H3'
+import H3 from '../../components/H3';
 import List from '../../components/List';
 import ServicesList from '../../components/ServicesList';
-import {
-  selectAboutTech
-} from './selectors';
+import { selectServices } from '../../selectors/services';
 import {
   Intro,
   Row,
   StyledList,
-  StyledTag
+  StyledTag,
+  AboutFooter
   // TechList
 } from './styled';
 
@@ -29,25 +28,6 @@ const groupsWithStyledTag = [
   'testing',
   'styling',
   'other'
-];
-
-const tempServices = [
-  {
-    name: 'Service A',
-    copy: 'test copy test copy testing the copy test test'
-  },
-  {
-    name: 'Service B',
-    copy: 'test copy test copy testing the copy test test'
-  },
-  {
-    name: 'Service C',
-    copy: 'test copy test copy testing the copy test test'
-  },
-  {
-    name: 'Service D',
-    copy: 'test copy test copy testing the copy test test'
-  }
 ];
 
 export const renderGroup = (group) => {
@@ -96,9 +76,9 @@ export const renderAboutSection = (group, isLast) =>
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
-    // const {
-    //   tech
-    // } = this.props;
+    const {
+      services
+    } = this.props;
 
     return (
       <PageContainer>
@@ -113,7 +93,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <H1 hide>About</H1>
 
         <Intro>
-
           <H2 h1Size>A creative engineer with a passion</H2>
           <p>Specialising in bespoke web app development, I{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries.</p>
 
@@ -124,9 +103,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           <p>Striving for clean and scalable solutions, I make sure that the right tools are used for the job - there{'\''}s no need to reinvent the wheel.</p>
 
           <p>Recently, I{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and replatformed interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="clients">great people</Link>.</p>
-
-          <p>I love to help - maybe we could talk? <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
-
         </Intro>
 
         {/*
@@ -147,8 +123,15 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         </TechList>
         */}
 
-        <H3>What I can help with</H3>
-        <ServicesList services={tempServices} />
+        <ServicesList
+          heading="What I can help with"
+          services={services}
+        />
+
+        <AboutFooter>
+          <H3>Maybe I could help you?</H3>
+          <p>I{'\''}d love to talk. <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
+        </AboutFooter>
 
       </PageContainer>
     );
@@ -156,11 +139,11 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 }
 
 AboutPage.propTypes = {
-  tech: PropTypes.array
+  services: PropTypes.array.isRequired
 };
 
 const mapStateToProps = createStructuredSelector({
-  tech: selectAboutTech()
+  services: selectServices()
 });
 
 const withConnect = connect(mapStateToProps, {});

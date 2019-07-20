@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Consultation",
+    "copy": "Technical architecture, discovery, integrations, execution, delivery.",
+    "symbol": "🤔"
+  },
+  {
+    "name": "Web App Development",
+    "copy": "Bespoke Products, Management systems, re-platforming.",
+    "symbol": "🚀"
+  },
+  {
+    "name": "Websites",
+    "copy": "Website design, Static sites, dynamic content.",
+    "symbol": "🕸️"
+  },
+  {
+    "name": "User Experience, Design",
+    "copy": "Learner Personas, Prototypes, Wireframes, Atomic design.",
+    "symbol": "🎨"
+  },
+  {
+    "name": "Training, mentoring",
+    "copy": "Front End, JavaScript, React, Node; I'm always happy to help.",
+    "symbol": "📚"
+  },
+  {
+    "name": "Much more...",
+    "copy": "I frequently partner & collaborate with the best.",
+    "symbol": "🧐"
+  }
+]
