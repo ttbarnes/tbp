@@ -217,7 +217,7 @@ const introCopyKeyFrames = keyframes`
 export const IntroCopy = styled.li`
   margin-bottom: .5em;
   ${media.md`
-    animation: ${introCopyKeyFrames} 3s linear;
+    animation: ${introCopyKeyFrames} 3.5s linear;
     list-style-type: disc;
     margin-left: 1em;
   `}

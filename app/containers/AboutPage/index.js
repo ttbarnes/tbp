@@ -94,9 +94,10 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
         <Intro>
           <H2 h1Size>A creative engineer with a passion</H2>
-          <p>Specialising in bespoke web app development, I{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries.</p>
 
           <p>I thoroughly enjoy understanding people{'\''}s needs and wants. I love taking concepts from the drawing board to a fully fledged application that is a pleasure to use.</p>
+
+          <p>I{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries.</p>
 
           <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all stakeholders. By working in an agile way, the product/app can be built and delivered incrementally. This in turn ensures high quality, real world results.</p>
 
