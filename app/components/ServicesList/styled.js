@@ -14,6 +14,7 @@ export const Root = styled.div`
 export const StyledH4 = styled(H4)`
   font-weight: normal;
   font-size: 1.2em;
+  width: 100%;
   ${media.lg2`
     min-height: 73px;
     margin-bottom: 0;
@@ -28,6 +29,7 @@ export const ListRoot = styled.ul`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     margin: 2.5em 0;
 `;
 
@@ -36,9 +38,12 @@ export const StyledService = styled.li`
   width: 100%;
   ${media.sm`
     width: 50%;
+    max-width: 50%;
   `}
   ${media.lg2`
     flex: 0 0 33.333%;
+    width: 33.333%;
+    max-width: 33.333%;
   `}
 `;
 
@@ -47,6 +52,7 @@ export const StyledServiceInner = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   padding: 1em;
   background: ${colors.grey2};
   text-align: center;
@@ -64,6 +70,7 @@ export const StyledServiceIcon = styled.span`
 `;
 
 export const StyledCopy = styled.div`
+  width: 100%;
   ${media.sm`
     min-height: 73px;
     margin-bottom: 0;

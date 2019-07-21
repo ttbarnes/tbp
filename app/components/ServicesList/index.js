@@ -24,13 +24,15 @@ const ServicesList = ({
           key={service.name}
         >
           <StyledServiceInner>
+
             <StyledH4>{service.name}</StyledH4>
-            <StyledServiceIcon>
-              {service.symbol}
-            </StyledServiceIcon>
+
+            <StyledServiceIcon dangerouslySetInnerHTML={{ __html: service.symbol }} />
+
             <StyledCopy>
               <p><small>{service.copy}</small></p>
             </StyledCopy>
+
           </StyledServiceInner>
         </StyledService>
       )}
