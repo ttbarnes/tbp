@@ -7,6 +7,13 @@ import {
   CONTAINER_OFFSET_LEFT
 } from '../../components/styledShared';
 
+
+const paddingLeft = (props) => `
+  ${!props.fullScreen && `
+    padding-left: ${CONTAINER_OFFSET_LEFT};
+  `}
+`;
+
 export const Root = styled.footer`
   padding: 3em ${CONTAINER_SPACING_HORIZONTAL} 0 ${CONTAINER_SPACING_HORIZONTAL};
   /* duplicate flex parent prevents issue in IE. */
@@ -18,7 +25,7 @@ export const Root = styled.footer`
     justify-content: center;
   `}
   ${media.lg`
-    padding-left:${CONTAINER_OFFSET_LEFT};
+    ${paddingLeft}
   `}
 `;
 

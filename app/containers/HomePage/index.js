@@ -18,7 +18,8 @@ import {
   Intro,
   FadeInImage,
   StyledTitles,
-  IntroCopy
+  IntroCopy,
+  ServicesContainer
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
@@ -57,13 +58,12 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         </IntroRoot>
 
 
-        <br />
-        <br />
-
-        <ServicesList
-          heading="What I do"
-          services={services}
-        />
+        <ServicesContainer>
+          <ServicesList
+            heading="What I do"
+            services={services}
+          />
+        </ServicesContainer>
 
       </PageContainer>
     );

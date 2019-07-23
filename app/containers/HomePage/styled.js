@@ -13,12 +13,17 @@ export const IntroRoot = styled.article`
   text-align: center;
   align-items: center;
   margin-top: -2em;
+  margin-bottom: 5em;
   ${media.md`
     display: flex;
     align-items: flex-start;
     text-align: left;
     margin-top: 0;
+    margin-bottom: 10em;
     padding-top: ${CONTAINER_SPACING_VERTICAL};
+  `}
+  ${media.xlg`
+    margin-bottom: 12em;
   `}
 `;
 
@@ -204,7 +209,7 @@ export const StyledTitles = styled.p`
 `;
 
 const introCopyKeyFrames = keyframes`
-  from, 50%, 80% {
+  from, 50%, 75% {
     opacity: 0;
   }
   to {
@@ -215,8 +220,27 @@ const introCopyKeyFrames = keyframes`
 export const IntroCopy = styled.li`
   margin-bottom: .5em;
   ${media.md`
-    animation: ${introCopyKeyFrames} 3.5s linear;
+    animation: ${introCopyKeyFrames} 2.5s linear;
     list-style-type: disc;
     margin-left: 1em;
+  `}
+`;
+
+
+const servicesFadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+export const ServicesContainer = styled.div`
+  ${media.md`
+    animation: ${servicesFadeIn} 2.5s linear;
   `}
 `;

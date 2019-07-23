@@ -27,12 +27,8 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
     const { location } = this.props;
     const isHomePage = location && location.pathname === '/';
 
-    if (isHomePage) {
-      return null;
-    }
-
     return (
-      <Root>
+      <Root fullScreen={isHomePage}>
         <ListRoot>
           <ListItem aria-label="Twitter">
             <StyledLink href={SOCIAL_TWITTER} target="_blank" rel="noopener">
