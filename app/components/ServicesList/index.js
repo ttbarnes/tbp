@@ -17,7 +17,7 @@ const ServicesList = ({
   children
 }) => (
   <Root>
-    <H3>{heading}</H3>
+    {heading && <H3>{heading}</H3>}
     <ListRoot>
       {services && services.map((service) =>
         <StyledService
@@ -42,9 +42,13 @@ const ServicesList = ({
 );
 
 ServicesList.propTypes = {
-  heading: PropTypes.string.isRequired,
+  heading: PropTypes.string,
   services: PropTypes.array.isRequired,
   children: PropTypes.node
+};
+
+ServicesList.defaultProps = {
+  heading: ''
 };
 
 export default ServicesList;

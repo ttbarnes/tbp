@@ -20,7 +20,7 @@ export const StyledH4 = styled(H4)`
     margin-bottom: 0;
   `}
   ${media.xlg`
-    min-height: initial;
+    min-height: auto;
     margin-bottom: 1em;
   `}
 `;
@@ -78,6 +78,6 @@ export const StyledCopy = styled.div`
     align-items: center;
   `}
   ${media.xlg`
-    min-height: initial;
+    min-height: auto;
   `}
 `;
