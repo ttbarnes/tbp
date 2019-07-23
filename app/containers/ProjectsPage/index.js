@@ -31,7 +31,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
     } = this.props;
 
     return (
-      <PageContainer>
+      <PageContainer smallWidth>
 
         <Helmet
           title="Projects"

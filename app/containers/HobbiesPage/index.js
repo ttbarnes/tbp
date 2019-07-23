@@ -53,7 +53,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
   render() {
     const { activities } = this.state;
     return (
-      <PageContainer>
+      <PageContainer smallWidth>
 
         <Helmet
           title="Hobbies"

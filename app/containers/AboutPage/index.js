@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 // import LazyLoad from 'react-lazyload';
 import { compose } from 'redux';
@@ -81,7 +82,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
     } = this.props;
 
     return (
-      <PageContainer>
+      <PageContainer smallWidth>
 
         <Helmet
           title="About"

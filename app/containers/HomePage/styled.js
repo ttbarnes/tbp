@@ -1,14 +1,36 @@
 import styled, { keyframes } from 'styled-components';
+import {
+  CONTAINER_SPACING_VERTICAL,
+  media
+} from 'components/styledShared';
 import Img from 'components/Img';
 import H1 from 'components/H1';
-import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
 
-export const Root = styled.article`
+export const IntroRoot = styled.article`
   max-width: 695px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top: -2em;
   ${media.md`
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
     padding-top: ${CONTAINER_SPACING_VERTICAL};
+  `}
+`;
+
+export const Flex = styled.div`
+  flex: 0 0 180px;
+  ${media.md`
+    flex: 0 0 200px;
+    margin-right: 20px;
+    justify-content: flex-end;
+  `}
+  ${media.md`
+    margin-right: 40px;
   `}
 `;
 
@@ -24,30 +46,6 @@ export const StyledP = styled.p`
     margin-right: 0;
     margin-left: 0;
     max-width: 100%;
-  `}
-`;
-
-export const FlexRootIntro = styled.article`
-  text-align: center;
-  align-items: center;
-  margin-top: -2em;
-  ${media.md`
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    margin-top: 0;
-  `}
-`;
-
-export const Flex = styled.div`
-  flex: 0 0 180px;
-  ${media.md`
-    flex: 0 0 200px;
-    margin-right: 20px;
-    justify-content: flex-end;
-  `}
-  ${media.md`
-    margin-right: 40px;
   `}
 `;
 

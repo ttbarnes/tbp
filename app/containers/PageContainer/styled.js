@@ -8,14 +8,20 @@ import {
   NAV_MAX_WIDTH
 } from '../../components/styledShared';
 
+const isSmallWidth = (props) => `
+  ${props.smallWidth && `
+    padding-left: ${CONTAINER_OFFSET_LEFT};
+  `}
+`;
+
 export const StyledPageContainer = styled.article`
-margin: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   max-width: calc(${CONTAINER_MAX_WIDTH_LG}px - ${NAV_MAX_WIDTH * 2}px);
   padding: 0 ${CONTAINER_SPACING_HORIZONTAL} ${CONTAINER_SPACING_HORIZONTAL};
   ${media.lg`
-    padding-left: ${CONTAINER_OFFSET_LEFT}
+    ${isSmallWidth}
   `}
   ${media.xlg`
     max-width: calc(${CONTAINER_MAX_WIDTH_XLG}px - ${NAV_MAX_WIDTH * 2}px);

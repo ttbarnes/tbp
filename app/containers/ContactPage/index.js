@@ -8,7 +8,7 @@ export class ContactPage extends React.PureComponent { // eslint-disable-line re
 
   render() {
     return (
-      <PageContainer>
+      <PageContainer smallWidth>
 
         <Helmet
           title="Contact"
