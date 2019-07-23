@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import H3 from '../../components/H3';
 import {
   Root,
@@ -6,10 +7,9 @@ import {
   StyledH4,
   StyledService,
   StyledServiceInner,
-  StyledServiceIcon,
   StyledCopy
 } from './styled';
-
+import ServiceIcon from './ServiceIcon';
 
 const ServicesList = ({
   heading,
@@ -27,7 +27,7 @@ const ServicesList = ({
 
             <StyledH4>{service.name}</StyledH4>
 
-            <StyledServiceIcon dangerouslySetInnerHTML={{ __html: service.symbol }} />
+            <ServiceIcon name={service.name} />
 
             <StyledCopy>
               <p><small>{service.copy}</small></p>

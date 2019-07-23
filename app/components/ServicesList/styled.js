@@ -61,12 +61,8 @@ export const StyledServiceInner = styled.div`
   `}
 `;
 
-export const StyledServiceIcon = styled.span`
-  font-size: 2.5em;
-  padding-bottom: .25em;
-  ${media.lg`
-    font-size: 3.5em;
-  `}
+export const StyledIcon = styled.img`
+  margin-bottom: 1em;
 `;
 
 export const StyledCopy = styled.div`
