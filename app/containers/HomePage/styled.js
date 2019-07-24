@@ -108,7 +108,7 @@ export const FadeInImage = styled(StyledImg)`
   `}
 `;
 
-export const StyledH1MobileOnly = styled(H1)`
+export const IntroHeadingMobileOnly = styled(H1)`
   text-align: center;
   padding: .5em 0 1.25em 0;
   ${media.md`
@@ -189,7 +189,7 @@ export const Intro = styled.ul`
   `}
 `;
 
-export const StyledSpanAsH2 = styled.span`
+export const IntroHeading = styled.span`
   display: none;
   font-size: 1.8em;
   ${media.md`
@@ -211,7 +211,7 @@ const styledTitlesKeyFrames = keyframes`
   }
 `;
 
-export const StyledH2asP = styled(H2)`
+export const IntroSubHeading = styled(H2)`
   font-weight: normal;
   padding: 0 1em;
   max-width: 330px;

@@ -12,9 +12,9 @@ import PageContainer from '../PageContainer';
 import {
   IntroRoot,
   Flex,
-  StyledH1MobileOnly,
-  StyledSpanAsH2,
-  StyledH2asP,
+  IntroHeadingMobileOnly,
+  IntroHeading,
+  IntroSubHeading,
   HeadingHello,
   HeadingSub,
   Intro,
@@ -38,27 +38,31 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         />
 
 
-        <StyledH1MobileOnly>Hello!&nbsp;I{'\''}m Tony.</StyledH1MobileOnly>
+        <IntroHeadingMobileOnly>Hello!&nbsp;I{'\''}m Tony.</IntroHeadingMobileOnly>
 
         <IntroRoot>
+
           <Flex>
             <FadeInImage src={TbImage} alt="Tony in a suit" />
           </Flex>
+
           <div>
-            <StyledSpanAsH2>
+            <IntroHeading>
               <HeadingHello>Hello!&nbsp;</HeadingHello>
               <HeadingSub>I{'\''}m Tony.</HeadingSub>
-            </StyledSpanAsH2>
-            <StyledH2asP>
+            </IntroHeading>
+
+            <IntroSubHeading>
               Freelance, Front End/Full Stack JavaScript Developer specialising in bespoke web app development.
-            </StyledH2asP>
+            </IntroSubHeading>
+
             <Intro>
               <IntroCopy index="0"><Link to="about">Learn more</Link> <br /></IntroCopy>
               <IntroCopy index="1">See <Link to="clients">who i{'\''}ve worked with</Link></IntroCopy>
             </Intro>
+
           </div>
         </IntroRoot>
-
 
         <ServicesContainer>
           <ServicesList
