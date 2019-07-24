@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
 import H1 from 'components/H1';
+import { BoldLink } from 'components/styledShared';
 import ServicesList from 'components/ServicesList';
 import { selectServices } from '../../selectors/services';
 import PageContainer from '../PageContainer';
@@ -19,7 +20,7 @@ import {
   FadeInImage,
   StyledTitles,
   IntroCopy,
-  ServicesContainer
+  ServicesContainer,
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
@@ -62,7 +63,10 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           <ServicesList
             heading="What I do"
             services={services}
-          />
+          >
+            <br />
+            <p><BoldLink to="about">Find out more</BoldLink></p>
+          </ServicesList>
         </ServicesContainer>
 
       </PageContainer>

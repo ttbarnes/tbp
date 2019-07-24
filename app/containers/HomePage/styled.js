@@ -13,7 +13,13 @@ export const IntroRoot = styled.article`
   text-align: center;
   align-items: center;
   margin-top: -2em;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
+  /* ${media.xxxs`
+    margin-bottom: 3em;
+  `} */
+  ${media.sm`
+    margin-bottom: 5em;
+  `}
   ${media.md`
     display: flex;
     align-items: flex-start;
@@ -59,10 +65,13 @@ export const ImgWrap = styled.div`
 `;
 
 export const StyledImg = styled(Img)`
-  max-width: 180px;
+  max-width: 150px;
   border-radius: 50%;
   margin: 0 auto .5em auto;
   display: block;
+  ${media.xs`
+    max-width: 180px;
+  `}
   ${media.md`
     max-width: 200px;
   `}
@@ -195,7 +204,14 @@ export const StyledTitles = styled.p`
   padding: 0 1em;
   max-width: 330px;
   margin: 0 auto;
-  ${media.xs`
+  font-size: 1em;
+  ${media.xxs`
+    font-size: 1.1em;
+  `}
+  ${media.sm`
+    max-width: 500px;
+  `}
+  ${media.md`
     padding: 0 0.5em;
     max-width: 100%;
     margin: 0 0 1em 0;

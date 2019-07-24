@@ -34,6 +34,8 @@ export const ListRoot = styled.ul`
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  max-height: 80px;
+  overflow-y: hidden;
   ${media.sm`
     justify-content: center;
   `}

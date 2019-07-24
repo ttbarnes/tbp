@@ -30,7 +30,10 @@ export const ListRoot = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin: 2.5em 0;
+    margin: 1.5em 0;
+    ${media.sm`
+      margin: 2.5em 0;
+    `}
 `;
 
 export const StyledService = styled.li`

@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const CONTAINER_MAX_WIDTH_LG = 1100;
 export const CONTAINER_MAX_WIDTH_XLG = 1200;
@@ -185,3 +186,6 @@ export const FadeInLong = styled.div`
   `}
 `;
 
+export const BoldLink = styled(Link)`
+  font-weight: bold;
+`;
