@@ -5,6 +5,7 @@ import {
 } from 'components/styledShared';
 import Img from 'components/Img';
 import H1 from 'components/H1';
+import H2 from 'components/H2';
 
 export const IntroRoot = styled.article`
   max-width: 695px;
@@ -14,9 +15,6 @@ export const IntroRoot = styled.article`
   align-items: center;
   margin-top: -2em;
   margin-bottom: 3em;
-  /* ${media.xxxs`
-    margin-bottom: 3em;
-  `} */
   ${media.sm`
     margin-bottom: 5em;
   `}
@@ -110,10 +108,12 @@ export const FadeInImage = styled(StyledImg)`
   `}
 `;
 
-export const StyledH2 = styled(H1)`
-  margin: 0;
-  padding-top: .2em;
-  margin-bottom: .25em;
+export const StyledH1MobileOnly = styled(H1)`
+  text-align: center;
+  padding: .5em 0 1.25em 0;
+  ${media.md`
+    display: none;
+  `}
 `;
 
 const HeadingHelloKeyFrames = keyframes`
@@ -189,6 +189,17 @@ export const Intro = styled.ul`
   `}
 `;
 
+export const StyledSpanAsH2 = styled.span`
+  display: none;
+  font-size: 1.8em;
+  ${media.md`
+     display: block;
+     margin-bottom: .25em;
+     font-size: 2em;
+     font-weight: bold;
+  `}
+`;
+
 const styledTitlesKeyFrames = keyframes`
   from, 50%, 85% {
     opacity: 0;
@@ -200,7 +211,8 @@ const styledTitlesKeyFrames = keyframes`
   }
 `;
 
-export const StyledTitles = styled.p`
+export const StyledH2asP = styled(H2)`
+  font-weight: normal;
   padding: 0 1em;
   max-width: 330px;
   margin: 0 auto;
@@ -210,18 +222,19 @@ export const StyledTitles = styled.p`
   `}
   ${media.sm`
     max-width: 500px;
+    padding: 0;
   `}
   ${media.md`
-    padding: 0 0.5em;
     max-width: 100%;
     margin: 0 0 1em 0;
-  `}
-  ${media.md`
-    padding: 0;
     position: relative;
     animation: ${styledTitlesKeyFrames} 1.3s linear;
     transition: all 1.5s ease;
+
   `}
+  ${media.lg`
+    margin-top: 0;
+  `};
 `;
 
 const introCopyKeyFrames = keyframes`
@@ -241,7 +254,6 @@ export const IntroCopy = styled.li`
     margin-left: 1em;
   `}
 `;
-
 
 const servicesFadeIn = keyframes`
   from {

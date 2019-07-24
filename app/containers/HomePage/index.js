@@ -5,7 +5,6 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
-import H1 from 'components/H1';
 import { BoldLink } from 'components/styledShared';
 import ServicesList from 'components/ServicesList';
 import { selectServices } from '../../selectors/services';
@@ -13,12 +12,13 @@ import PageContainer from '../PageContainer';
 import {
   IntroRoot,
   Flex,
-  StyledH2,
+  StyledH1MobileOnly,
+  StyledSpanAsH2,
+  StyledH2asP,
   HeadingHello,
   HeadingSub,
   Intro,
   FadeInImage,
-  StyledTitles,
   IntroCopy,
   ServicesContainer,
 } from './styled';
@@ -37,20 +37,21 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           ]}
         />
 
-        <H1 hide>Tony Barnes</H1>
+
+        <StyledH1MobileOnly>Hello!&nbsp;I{'\''}m Tony.</StyledH1MobileOnly>
 
         <IntroRoot>
           <Flex>
-            <FadeInImage src={TbImage} alt="Tony Barnes" />
+            <FadeInImage src={TbImage} alt="Tony in a suit" />
           </Flex>
           <div>
-            <StyledH2>
+            <StyledSpanAsH2>
               <HeadingHello>Hello!&nbsp;</HeadingHello>
               <HeadingSub>I{'\''}m Tony.</HeadingSub>
-            </StyledH2>
-            <StyledTitles>
+            </StyledSpanAsH2>
+            <StyledH2asP>
               Freelance, Front End/Full Stack JavaScript Developer specialising in bespoke web app development.
-            </StyledTitles>
+            </StyledH2asP>
             <Intro>
               <IntroCopy index="0"><Link to="about">Learn more</Link> <br /></IntroCopy>
               <IntroCopy index="1">See <Link to="clients">who i{'\''}ve worked with</Link></IntroCopy>
