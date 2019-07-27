@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../components/styledShared';
+import { media } from '../styledShared';
 
 const H2 = styled.h2`
   margin-top: 1em;

@@ -1,12 +1,16 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import StyledTag from './styled';
 
 const Tag = (props) => {
-  if (!props.type) {
+  const { type } = props;
+
+  if (!type) {
     return null;
   }
   return (
-    <StyledTag {...props}>{props.type}</StyledTag>
+    <StyledTag {...props}>{type}</StyledTag>
   );
 };
 

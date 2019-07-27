@@ -5,7 +5,7 @@ import {
   colors,
   CONTAINER_SPACING_HORIZONTAL,
   CONTAINER_OFFSET_LEFT
-} from '../../components/styledShared';
+} from '../styledShared';
 
 
 const paddingLeft = (props) => `

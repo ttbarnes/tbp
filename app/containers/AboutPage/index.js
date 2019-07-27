@@ -32,12 +32,12 @@ const groupsWithStyledTag = [
 ];
 
 export const renderGroup = (group) => {
-  const category = group.category;
+  const { category } = group;
   const groupTags = group.tags;
   if (groupsWithStyledTag.includes(category)) {
     return (
       <StyledList className="no-li-margin">
-        {groupTags.map((tag, i) =>
+        {groupTags.map((tag, i) => (
           <StyledTag
             type={tag}
             key={i}
@@ -45,18 +45,18 @@ export const renderGroup = (group) => {
             backgroundTheme
             large
           />
-        )}
+        ))}
       </StyledList>
     );
-  } else if (groupTags && !groupsWithStyledTag.includes(category)) {
+  }
+  if (groupTags && !groupsWithStyledTag.includes(category)) {
     return (
       <List showListStyle>
-        {groupTags.map((i) =>
-          <p key={i}>{i}</p>
-        )}
+        {groupTags.map((i) => <p key={i}>{i}</p>)}
       </List>
     );
-  } else if (category === 'outro') {
+  }
+  if (category === 'outro') {
     return (
       <div>
         <p><Link to="contact">Send me a message</Link></p>
@@ -67,13 +67,14 @@ export const renderGroup = (group) => {
   return <p>{group.copy}</p>;
 };
 
-export const renderAboutSection = (group, isLast) =>
+export const renderAboutSection = (group, isLast) => (
   <Row isLast={isLast}>
     <FadeIn>
       <H3>{group.heading}</H3>
       {renderGroup(group)}
     </FadeIn>
-  </Row>;
+  </Row>
+);
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {

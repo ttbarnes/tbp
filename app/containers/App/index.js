@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
@@ -25,6 +26,8 @@ const ConnectedSwitch = connect(
 )(Switch);
 
 function App(props) {
+  const { location } = props;
+
   return (
     <div>
       <Helmet
@@ -35,7 +38,7 @@ function App(props) {
         ]}
       />
 
-      <Nav location={props.location} />
+      <Nav location={location} />
 
       <ConnectedSwitch>
 
@@ -64,18 +67,18 @@ function App(props) {
 
       </ConnectedSwitch>
 
-      <Footer location={props.location} />
+      <Footer location={location} />
 
     </div>
   );
 }
 
 App.propTypes = {
-  location: React.PropTypes.object
+  location: PropTypes.object
 };
 
 App.defaultProps = {
-  location: { pathname: '/' } // NOTE: temp. see below
+  location: { pathname: '/' }
 };
 
 export default App;

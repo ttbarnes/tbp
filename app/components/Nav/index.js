@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Menu from 'react-burger-menu';
 import { NAV_MAX_WIDTH } from '../styledShared';
@@ -11,7 +12,6 @@ import {
 const BurgerMenu = Menu.slide;
 
 class Nav extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   constructor(props) {
     super(props);
     this.state = {
@@ -27,11 +27,12 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   }
 
   setIsLargeScreen() {
+    const { isLargeScreen } = this.state;
     if (window.matchMedia('(min-width: 990px)').matches) {
       this.setState({
         isLargeScreen: true
       });
-    } else if (this.state.isLargeScreen) {
+    } else if (isLargeScreen) {
       this.setState({
         isLargeScreen: false
       });
@@ -71,7 +72,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 }
 
 Nav.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state) => ({

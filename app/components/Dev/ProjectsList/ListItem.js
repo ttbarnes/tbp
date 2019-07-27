@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import LazyLoad from 'react-lazyload';
 import { FadeInLong } from 'components/styledShared';
 import Tag from 'components/Tag';
@@ -48,7 +49,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
             >
               <Border />
               <YearProjects>
-                {projects && projects.map((project) =>
+                {projects && projects.map((project) => (
                   <ListItemContainer key={project.name}>
                     <ListItemContent>
 
@@ -58,17 +59,17 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 
                       <ProjectIndustry>{project.industry}</ProjectIndustry>
 
-                      {project.primaryTech &&
+                      {project.primaryTech && (
                         <PrimaryTechTag
                           type={project.primaryTech}
                           backgroundTheme
                           small
                         />
-                      }
+                      )}
 
                       <TagList>
                         {project.tech && project.tech.map((item, index) => (
-                          <TagListItem key={index}>
+                          <TagListItem key={item}>
                             <Tag
                               type={item}
                               noSpacing
@@ -80,7 +81,7 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 
                     </ListItemContent>
 
-                    {project.url &&
+                    {project.url && (
                       <ListItemFooter>
                         <ProjectLink
                           href={project.url}
@@ -91,10 +92,10 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
                           view
                         </ProjectLink>
                       </ListItemFooter>
-                    }
+                    )}
 
                   </ListItemContainer>
-                )}
+                ))}
               </YearProjects>
             </StyledListItem>
           </FadeInLong>
@@ -107,13 +108,12 @@ export class ListItem extends React.PureComponent { // eslint-disable-line react
 ListItem.propTypes = {
   year: PropTypes.string.isRequired,
   yearSub: PropTypes.string,
-  projects: PropTypes.arrayOf(PropTypes.object),
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
   isLast: PropTypes.bool
 };
 
 ListItem.defaultProps = {
   yearSub: '',
-  urls: [],
   isLast: false
 };
 

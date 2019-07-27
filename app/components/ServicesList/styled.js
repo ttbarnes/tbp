@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors, media } from '../styledShared';
-import H4 from '../../components/H4';
+import H4 from '../H4';
 
 export const Root = styled.div`
     text-align: center;

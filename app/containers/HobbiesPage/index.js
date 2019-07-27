@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -13,8 +15,9 @@ import { ListItem, StyledTag } from './styled';
 export class HobbiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
+    const { activities } = this.props;
     this.state = {
-      activities: this.props.activities
+      activities
     };
   }
 
@@ -33,7 +36,7 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
           <A href={`https://www.youtube.com/watch?v=${a.videoId}`} target="_blank" rel="noopener">{`https://www.youtube.com/watch?v=${a.videoId}`}</A>
         </ListItem>
       );
-    } else if (a.type === 'music') {
+    } if (a.type === 'music') {
       return (
         <ListItem key={a.url}>
           <StyledTag
@@ -80,6 +83,10 @@ export class HobbiesPage extends React.PureComponent { // eslint-disable-line re
 
 HobbiesPage.propTypes = {
   activities: PropTypes.array
+};
+
+HobbiesPage.defaultProps = {
+  activities: []
 };
 
 const mapStateToProps = createStructuredSelector({

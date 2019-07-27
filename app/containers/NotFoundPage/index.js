@@ -5,7 +5,6 @@ import H2 from '../../components/H2';
 import PageContainer from '../PageContainer';
 
 export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
       <PageContainer smallWidth>

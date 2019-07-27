@@ -5,7 +5,6 @@ import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 
 export class ContactPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
       <PageContainer smallWidth>

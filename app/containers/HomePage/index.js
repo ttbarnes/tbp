@@ -92,4 +92,3 @@ const withConnect = connect(mapStateToProps, {});
 export default compose(
   withConnect
 )(HomePage);
-

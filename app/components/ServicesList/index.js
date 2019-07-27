@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import H3 from '../../components/H3';
+import H3 from '../H3';
 import {
   Root,
   ListRoot,
@@ -19,7 +19,7 @@ const ServicesList = ({
   <Root>
     {heading && <H3>{heading}</H3>}
     <ListRoot>
-      {services && services.map((service) =>
+      {services && services.map((service) => (
         <StyledService
           key={service.name}
         >
@@ -35,7 +35,7 @@ const ServicesList = ({
 
           </StyledServiceInner>
         </StyledService>
-      )}
+      ))}
     </ListRoot>
     {children}
   </Root>
@@ -48,7 +48,8 @@ ServicesList.propTypes = {
 };
 
 ServicesList.defaultProps = {
-  heading: ''
+  heading: '',
+  children: null
 };
 
 export default ServicesList;

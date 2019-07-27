@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -8,10 +10,10 @@ import H2 from 'components/H2';
 import ProjectsSummary from 'components/Dev/ProjectsSummary';
 import Projects from 'components/Dev/Projects';
 import PageContainer from '../PageContainer';
-import {
-  setProjectsFilterByIndustry,
-  setProjectsFilterByTech
-} from './actions';
+// import {
+//   setProjectsFilterByIndustry,
+//   setProjectsFilterByTech
+// } from './actions';
 import {
   selectProjectsSummary,
   selectProjectsData,
@@ -23,11 +25,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   render() {
     const {
       projectsSummary,
-      projects,
-      onClickFilterByIndustry,
-      onClickFilterByTech,
-      filterByIndustry,
-      filterByTech
+      projects
     } = this.props;
 
     return (
@@ -48,10 +46,6 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
         <Projects
           projects={projects}
-          onClickFilterByIndustry={onClickFilterByIndustry}
-          onClickFilterByTech={onClickFilterByTech}
-          filterByIndustry={filterByIndustry}
-          filterByTech={filterByTech}
         />
       </PageContainer>
     );
@@ -59,24 +53,20 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 }
 
 ProjectsPage.propTypes = {
-  projectsSummary: PropTypes.array,
-  projects: PropTypes.array,
-  onClickFilterByIndustry: PropTypes.func,
-  onClickFilterByTech: PropTypes.func,
-  filterByIndustry: PropTypes.string,
-  filterByTech: PropTypes.string
+  projectsSummary: PropTypes.array.isRequired,
+  projects: PropTypes.array.isRequired
 };
 
-export function mapDispatchToProps(dispatch) {
-  return {
-    onClickFilterByIndustry: (industry) => {
-      dispatch(setProjectsFilterByIndustry(industry));
-    },
-    onClickFilterByTech: (tech) => {
-      dispatch(setProjectsFilterByTech(tech));
-    }
-  };
-}
+// export function mapDispatchToProps(dispatch) {
+//   return {
+//     onClickFilterByIndustry: (industry) => {
+//       dispatch(setProjectsFilterByIndustry(industry));
+//     },
+//     onClickFilterByTech: (tech) => {
+//       dispatch(setProjectsFilterByTech(tech));
+//     }
+//   };
+// }
 
 const mapStateToProps = createStructuredSelector({
   projectsSummary: selectProjectsSummary(),
@@ -86,7 +76,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(mapStateToProps, null);
 
 export default compose(
   withConnect

@@ -7,7 +7,7 @@ import {
   IconLinkedIn,
   IconStackOverflow,
   IconTwitter
-} from '../../components/Icons';
+} from '../Icons';
 import {
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,

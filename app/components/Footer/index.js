@@ -1,11 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   IconGithub,
   IconLinkedIn,
   IconStackOverflow,
   IconTwitter
-} from '../../components/Icons';
+} from '../Icons';
 
 import {
   SOCIAL_GITHUB,
@@ -60,7 +61,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
 }
 
 Footer.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state) => ({
