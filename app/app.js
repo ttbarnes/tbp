@@ -23,7 +23,7 @@ import App from 'containers/App';
 import ScrollToTop from 'components/ScrollToTop';
 import configureStore from './configureStore';
 import './global-styles';
-/* eslint-enable*/
+/* eslint-enable */
 
 promisePolyfill.polyfill();
 

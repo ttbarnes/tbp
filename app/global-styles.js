@@ -11,18 +11,13 @@ injectGlobal`
   }
 
   body {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-
 
   #app {
     background-color: #FFF;
     min-height: 100%;
     min-width: 100%;
-  }
-
-  h1,h2,h3,h4,h5 {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
   h3 {

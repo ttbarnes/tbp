@@ -5,7 +5,14 @@ import {
   colors,
   CONTAINER_SPACING_HORIZONTAL,
   CONTAINER_OFFSET_LEFT
-} from '../../components/styledShared';
+} from '../styledShared';
+
+
+const paddingLeft = (props) => `
+  ${!props.fullScreen && `
+    padding-left: ${CONTAINER_OFFSET_LEFT};
+  `}
+`;
 
 export const Root = styled.footer`
   padding: 3em ${CONTAINER_SPACING_HORIZONTAL} 0 ${CONTAINER_SPACING_HORIZONTAL};
@@ -18,7 +25,7 @@ export const Root = styled.footer`
     justify-content: center;
   `}
   ${media.lg`
-    padding-left:${CONTAINER_OFFSET_LEFT};
+    ${paddingLeft}
   `}
 `;
 
@@ -27,6 +34,8 @@ export const ListRoot = styled.ul`
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  max-height: 80px;
+  overflow-y: hidden;
   ${media.sm`
     justify-content: center;
   `}

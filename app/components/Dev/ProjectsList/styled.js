@@ -71,7 +71,7 @@ export const StyledListItem = styled.li`
   `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
-    padding: 5em 0 25em 0;
+    padding: 5em 0 20em 0;
   `}
   ${isLastItem}
 `;

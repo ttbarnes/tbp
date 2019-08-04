@@ -4,8 +4,9 @@ import Tag from 'components/Tag';
 import { media } from '../../components/styledShared';
 
 export const Intro = styled.div`
+  margin-bottom: 2em;
   ${media.sm`
-    margin-bottom: 12.5em;
+    margin-bottom: 4em;
   `}
 `;
 
@@ -59,4 +60,8 @@ export const TechListItem = styled.li`
   ${media.md`
     margin-bottom: 1em;
   `}
+`;
+
+export const AboutFooter = styled.div`
+  text-align: center;
 `;

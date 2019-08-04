@@ -1,13 +1,17 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import ProjectsList from 'components/Dev/ProjectsList';
 import ProjectsFooter from 'components/Dev/ProjectsFooter';
 
 function Projects(props) {
+  const { projects } = props;
+
   return (
     <div>
 
       <ProjectsList
-        data={props.projects}
+        data={projects}
       />
 
       <ProjectsFooter />
@@ -17,7 +21,7 @@ function Projects(props) {
 }
 
 Projects.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array.isRequired
 };
 
 export default Projects;

@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const CONTAINER_MAX_WIDTH_LG = 1100;
 export const CONTAINER_MAX_WIDTH_XLG = 1200;
@@ -39,6 +40,11 @@ export const media = {
       ${css(...args)}
     }
   `,
+  lg2: (...args) => css`
+    @media (min-width: 1150px) {
+      ${css(...args)}
+    }
+  `,
   xlg: (...args) => css`
     @media (min-width: 1200px) {
       ${css(...args)}
@@ -49,6 +55,7 @@ export const media = {
 export const colors = {
   black1: '#222',
   grey1: '#6F6F6F',
+  grey2: '#E9E9E9',
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
   blue2: '#4B86A4',
@@ -179,3 +186,6 @@ export const FadeInLong = styled.div`
   `}
 `;
 
+export const BoldLink = styled(Link)`
+  font-weight: bold;
+`;

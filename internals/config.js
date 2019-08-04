@@ -1,4 +1,4 @@
-const resolve = require('path').resolve;
+const resolve = require('path').resolve; // eslint-disable-line
 const pullAll = require('lodash/pullAll');
 const uniq = require('lodash/uniq');
 

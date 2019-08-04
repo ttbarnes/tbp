@@ -5,10 +5,9 @@ import H2 from '../../components/H2';
 import PageContainer from '../PageContainer';
 
 export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
-      <PageContainer>
+      <PageContainer smallWidth>
         <H1 hide>Oh no</H1>
         <H2 h1Size>Oh no, something has gone wrong :(</H2>
         <Link to="/">Start again</Link>

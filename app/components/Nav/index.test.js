@@ -5,8 +5,7 @@ import React from 'react';
 import Nav from './index';
 import {
   Root,
-  NavLinkRoot,
-  NavLink
+  NavLinkRoot
 } from './styled';
 import { NAV_MAX_WIDTH } from '../styledShared';
 const BurgerMenu = Menu.slide;
@@ -56,18 +55,6 @@ describe('<Nav />', () => {
       const actual = wrapper.containsMatchingElement(
         <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
       );
-      expect(actual).toEqual(true);
-    });
-
-    it('should render correct nav items ', () => {
-      const wrapper = shallow(
-        <Nav location={mockLocation} />
-      );
-      const actual = wrapper.containsAllMatchingElements([
-        <NavLink to="/about" activeClassName="active">About</NavLink>,
-        <NavLink to="/clients" activeClassName="active">Clients</NavLink>,
-        <NavLink to="/contact" activeClassName="active">Contact</NavLink>
-      ]);
       expect(actual).toEqual(true);
     });
   });

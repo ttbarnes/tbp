@@ -9,7 +9,7 @@ import {
 
 const ProjectsSummary = ({ projects }) => (
   <ListRoot>
-    {projects.map((p) =>
+    {projects.map((p) => (
       <ListItem key={p.name}>
         <ListItemInner
           style={{
@@ -21,12 +21,12 @@ const ProjectsSummary = ({ projects }) => (
           <ListItemCopy>{p.name}</ListItemCopy>
         </ListItemInner>
       </ListItem>
-    )}
+    ))}
   </ListRoot>
 );
 
 ProjectsSummary.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array.isRequired
 };
 
 export default ProjectsSummary;

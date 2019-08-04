@@ -2,7 +2,7 @@ import expect from 'expect';
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import LoadingIndicator from '../';
+import LoadingIndicator from '..';
 
 describe('<LoadingIndicator />', () => {
   it('should render an <div> tag', () => {
@@ -22,7 +22,7 @@ describe('<LoadingIndicator />', () => {
   });
 
   it('should not adopt an invalid attribute', () => {
-    const renderedComponent = shallow(<LoadingIndicator attribute={'test'} />);
+    const renderedComponent = shallow(<LoadingIndicator attribute="test" />);
     expect(renderedComponent.prop('attribute')).toBeUndefined();
   });
 });

@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { UL, LI } from './styled';
 
 function List(props) {
@@ -19,11 +21,11 @@ function List(props) {
         {items}
       </UL>
     );
-  } else if (children.length === 0) {
-    items = children[0];
+  }
+  if (children.length === 0) {
     return (
       <UL {...props}>
-        {items}
+        {children[0]}
       </UL>
     );
   }
@@ -34,6 +36,10 @@ export default List;
 
 List.propTypes = {
   children: PropTypes.array,
-  showListStyle: PropTypes.bool // eslint-disable-line react/no-unused-prop-types
+  showListStyle: PropTypes.bool
 };
 
+List.defaultProps = {
+  children: null,
+  showListStyle: false
+};

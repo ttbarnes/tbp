@@ -4,7 +4,9 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
 import HomePage from './index';
-import { StyledH2, StyledTitle, StyledImg, IntroCopy } from './styled';
+import {
+  FadeInImage, IntroCopy
+} from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
 
 describe('<HomePage />', () => {
@@ -26,16 +28,8 @@ describe('<HomePage />', () => {
 
   it('should render an image', () => {
     const actual = wrapper.containsMatchingElement(
-      <StyledImg src={TbImage} alt="Tony Barnes" />
+      <FadeInImage src={TbImage} alt="Tony in a suit" />
     );
-    expect(actual).toEqual(true);
-  });
-
-  it('should have correct copy', () => {
-    const actual = wrapper.containsAllMatchingElements([
-      <StyledH2>Hello! I{'\''}m Tony.</StyledH2>,
-      <StyledTitle>A Freelance, Front End/Full Stack JavaScript Developer</StyledTitle>
-    ]);
     expect(actual).toEqual(true);
   });
 

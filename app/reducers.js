@@ -6,6 +6,7 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import projectsReducers from 'containers/ProjectsPage/reducer';
 // import hobbiesReducers from 'containers/HobbiesPage/reducer';
+import servicesReducer from 'reducers/services';
 import aboutReducers from 'containers/AboutPage/reducer';
 
 /**
@@ -15,6 +16,7 @@ export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routerReducer,
     projects: projectsReducers,
+    services: servicesReducer,
     // hobbies: hobbiesReducers,
     about: aboutReducers,
     ...injectedReducers

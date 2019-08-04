@@ -1,14 +1,45 @@
 import styled, { keyframes } from 'styled-components';
+import {
+  CONTAINER_SPACING_VERTICAL,
+  media
+} from 'components/styledShared';
 import Img from 'components/Img';
 import H1 from 'components/H1';
-import { CONTAINER_SPACING_VERTICAL, media } from 'components/styledShared';
+import H2 from 'components/H2';
 
-export const Root = styled.article`
+export const IntroRoot = styled.article`
   max-width: 695px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin-top: -2em;
+  margin-bottom: 3em;
+  ${media.sm`
+    margin-bottom: 5em;
+  `}
   ${media.md`
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10em;
     padding-top: ${CONTAINER_SPACING_VERTICAL};
+  `}
+  ${media.xlg`
+    margin-bottom: 12em;
+  `}
+`;
+
+export const Flex = styled.div`
+  flex: 0 0 180px;
+  ${media.md`
+    flex: 0 0 200px;
+    margin-right: 20px;
+    justify-content: flex-end;
+  `}
+  ${media.md`
+    margin-right: 40px;
   `}
 `;
 
@@ -27,39 +58,18 @@ export const StyledP = styled.p`
   `}
 `;
 
-export const FlexRootIntro = styled.article`
-  text-align: center;
-  align-items: center;
-  margin-top: -2em;
-  ${media.md`
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    margin-top: 0;
-  `}
-`;
-
-export const Flex = styled.div`
-  flex: 0 0 180px;
-  ${media.md`
-    flex: 0 0 200px;
-    margin-right: 20px;
-    justify-content: flex-end;
-  `}
-  ${media.md`
-    margin-right: 40px;
-  `}
-`;
-
 export const ImgWrap = styled.div`
   padding-right: 1em;
 `;
 
 export const StyledImg = styled(Img)`
-  max-width: 180px;
+  max-width: 150px;
   border-radius: 50%;
   margin: 0 auto .5em auto;
   display: block;
+  ${media.xs`
+    max-width: 180px;
+  `}
   ${media.md`
     max-width: 200px;
   `}
@@ -98,10 +108,12 @@ export const FadeInImage = styled(StyledImg)`
   `}
 `;
 
-export const StyledH2 = styled(H1)`
-  margin: 0;
-  padding-top: .2em;
-  margin-bottom: .25em;
+export const IntroHeadingMobileOnly = styled(H1)`
+  text-align: center;
+  padding: .5em 0 1.25em 0;
+  ${media.md`
+    display: none;
+  `}
 `;
 
 const HeadingHelloKeyFrames = keyframes`
@@ -177,6 +189,17 @@ export const Intro = styled.ul`
   `}
 `;
 
+export const IntroHeading = styled.span`
+  display: none;
+  font-size: 1.8em;
+  ${media.md`
+     display: block;
+     margin-bottom: .25em;
+     font-size: 2em;
+     font-weight: bold;
+  `}
+`;
+
 const styledTitlesKeyFrames = keyframes`
   from, 50%, 85% {
     opacity: 0;
@@ -188,25 +211,34 @@ const styledTitlesKeyFrames = keyframes`
   }
 `;
 
-export const StyledTitles = styled.p`
+export const IntroSubHeading = styled(H2)`
+  font-weight: normal;
   padding: 0 1em;
   max-width: 330px;
   margin: 0 auto;
-  ${media.xs`
-    padding: 0 0.5em;
-    max-width: 100%;
-    margin: 0 0 1em 0;
+  font-size: 1em;
+  ${media.xxs`
+    font-size: 1.1em;
+  `}
+  ${media.sm`
+    max-width: 500px;
+    padding: 0;
   `}
   ${media.md`
-    padding: 0;
+    max-width: 100%;
+    margin: 0 0 1em 0;
     position: relative;
     animation: ${styledTitlesKeyFrames} 1.3s linear;
     transition: all 1.5s ease;
+
   `}
+  ${media.lg`
+    margin-top: 0;
+  `};
 `;
 
 const introCopyKeyFrames = keyframes`
-  from, 50%, 80% {
+  from, 50%, 75% {
     opacity: 0;
   }
   to {
@@ -217,8 +249,26 @@ const introCopyKeyFrames = keyframes`
 export const IntroCopy = styled.li`
   margin-bottom: .5em;
   ${media.md`
-    animation: ${introCopyKeyFrames} 3s linear;
+    animation: ${introCopyKeyFrames} 2.5s linear;
     list-style-type: disc;
     margin-left: 1em;
+  `}
+`;
+
+const servicesFadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+export const ServicesContainer = styled.div`
+  ${media.md`
+    animation: ${servicesFadeIn} 2.5s linear;
   `}
 `;
