@@ -62,6 +62,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
               <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
               <NavNavLink to="/about" activeClassName="active">About</NavNavLink>
               <NavNavLink to="/clients" activeClassName="active">Clients</NavNavLink>
+              <NavNavLink to="/technologies" activeClassName="active">Technologies</NavNavLink>
               <NavNavLink to="/contact" activeClassName="active">Contact</NavNavLink>
             </ListRoot>
           </div>

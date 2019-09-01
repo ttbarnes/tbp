@@ -1,80 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-// import LazyLoad from 'react-lazyload';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
-import { FadeIn } from 'components/styledShared';
 import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
 import H3 from '../../components/H3';
-import List from '../../components/List';
 import ServicesList from '../../components/ServicesList';
 import { selectServices } from '../../selectors/services';
 import {
   Intro,
-  Row,
-  StyledList,
-  StyledTag,
   AboutFooter
-  // TechList
 } from './styled';
-
-const groupsWithStyledTag = [
-  'lately',
-  'api',
-  'testing',
-  'styling',
-  'other'
-];
-
-export const renderGroup = (group) => {
-  const { category } = group;
-  const groupTags = group.tags;
-  if (groupsWithStyledTag.includes(category)) {
-    return (
-      <StyledList className="no-li-margin">
-        {groupTags.map((tag, i) => (
-          <StyledTag
-            type={tag}
-            key={i}
-            index={i + 1}
-            backgroundTheme
-            large
-          />
-        ))}
-      </StyledList>
-    );
-  }
-  if (groupTags && !groupsWithStyledTag.includes(category)) {
-    return (
-      <List showListStyle>
-        {groupTags.map((i) => <p key={i}>{i}</p>)}
-      </List>
-    );
-  }
-  if (category === 'outro') {
-    return (
-      <div>
-        <p><Link to="contact">Send me a message</Link></p>
-        <p><Link to="clients">See who I{'\''}ve worked with</Link></p>
-      </div>
-    );
-  }
-  return <p>{group.copy}</p>;
-};
-
-export const renderAboutSection = (group, isLast) => (
-  <Row isLast={isLast}>
-    <FadeIn>
-      <H3>{group.heading}</H3>
-      {renderGroup(group)}
-    </FadeIn>
-  </Row>
-);
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -107,24 +47,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
           <p>Recently, I{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems. Also helped change the world of travel at <a href="http://trainline.com" target="_blank" rel="noopener">Trainline</a> and replatformed interfaces with <a href="http://johnlewis.co.uk" target="_blank" rel="noopener">John Lewis</a>. I{'\''}ve worked with some <Link to="clients">great people</Link>.</p>
         </Intro>
-
-        {/*
-          <TechList>
-          {tech.map((item, index) => {
-            const isLast = tech.length - 1 === index;
-            return (
-              <li key={item.heading}>
-                <LazyLoad height={400} once>
-                  {renderAboutSection(
-                    item,
-                    isLast
-                  )}
-                </LazyLoad>
-              </li>
-            );
-          })}
-        </TechList>
-        */}
 
         <ServicesList
           heading="What I can help with"

@@ -8,6 +8,7 @@ import Footer from 'components/Footer';
 import HomePage from 'containers/HomePage/loadable';
 import AboutPage from 'containers/AboutPage/loadable';
 import ClientsPage from 'containers/ClientsPage/loadable';
+import TechnologiesPage from 'containers/TechnologiesPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
 
@@ -47,19 +48,29 @@ function App(props) {
           path="/"
           component={HomePage}
         />
+
         <Route
           path="/about"
           component={AboutPage}
         />
+
         <Route
           exact
           path="/clients"
           component={ClientsPage}
         />
+
+        <Route
+          exact
+          path="/technologies"
+          component={TechnologiesPage}
+        />
+
         <Route
           path="/contact"
           component={ContactPage}
         />
+
         <Route
           path=""
           component={NotFoundPage}
