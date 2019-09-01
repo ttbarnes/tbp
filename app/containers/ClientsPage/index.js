@@ -10,18 +10,12 @@ import H2 from 'components/H2';
 import ProjectsSummary from 'components/Dev/ProjectsSummary';
 import Projects from 'components/Dev/Projects';
 import PageContainer from '../PageContainer';
-// import {
-//   setProjectsFilterByIndustry,
-//   setProjectsFilterByTech
-// } from './actions';
 import {
   selectProjectsSummary,
-  selectProjectsData,
-  selectProjectsFilterByIndustry,
-  selectProjectsFilterByTech
+  selectProjectsData
 } from './selectors';
 
-export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class ClientsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
       projectsSummary,
@@ -52,32 +46,18 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   }
 }
 
-ProjectsPage.propTypes = {
+ClientsPage.propTypes = {
   projectsSummary: PropTypes.array.isRequired,
   projects: PropTypes.array.isRequired
 };
 
-// export function mapDispatchToProps(dispatch) {
-//   return {
-//     onClickFilterByIndustry: (industry) => {
-//       dispatch(setProjectsFilterByIndustry(industry));
-//     },
-//     onClickFilterByTech: (tech) => {
-//       dispatch(setProjectsFilterByTech(tech));
-//     }
-//   };
-// }
-
 const mapStateToProps = createStructuredSelector({
   projectsSummary: selectProjectsSummary(),
-  projects: selectProjectsData(),
-  filterByIndustry: selectProjectsFilterByIndustry(),
-  filterByTech: selectProjectsFilterByTech()
+  projects: selectProjectsData()
 });
-
 
 const withConnect = connect(mapStateToProps, null);
 
 export default compose(
   withConnect
-)(ProjectsPage);
+)(ClientsPage);
