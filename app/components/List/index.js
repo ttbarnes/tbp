@@ -35,11 +35,9 @@ function List(props) {
 export default List;
 
 List.propTypes = {
-  children: PropTypes.array,
-  showListStyle: PropTypes.bool
+  children: PropTypes.array
 };
 
 List.defaultProps = {
-  children: null,
-  showListStyle: false
+  children: null
 };

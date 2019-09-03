@@ -7,7 +7,3 @@ export const Intro = styled.div`
     margin-bottom: 4em;
   `}
 `;
-
-export const AboutFooter = styled.div`
-  text-align: center;
-`;

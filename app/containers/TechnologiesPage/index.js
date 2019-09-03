@@ -9,6 +9,7 @@ import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H3 from 'components/H3';
+import PageCta from 'components/PageCta';
 import { FadeIn } from 'components/styledShared';
 import List from 'components/List';
 import PageContainer from '../PageContainer';
@@ -95,6 +96,8 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
 
         <H2 h1Size>Technologies</H2>
 
+        <p>I{'\''}ve used a few things...</p>
+
         <TechList>
           {tech.map((item, index) => {
             const isLast = tech.length - 1 === index;
@@ -110,6 +113,12 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
             );
           })}
         </TechList>
+
+        <PageCta
+          heading="Maybe we could build something together?"
+          contactCopy="Send me a message"
+        />
+
 
       </PageContainer>
     );

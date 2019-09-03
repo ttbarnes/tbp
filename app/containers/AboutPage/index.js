@@ -8,13 +8,10 @@ import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
 import H1 from '../../components/H1';
 import H2 from '../../components/H2';
-import H3 from '../../components/H3';
+import PageCta from '../../components/PageCta';
 import ServicesList from '../../components/ServicesList';
 import { selectServices } from '../../selectors/services';
-import {
-  Intro,
-  AboutFooter
-} from './styled';
+import { Intro } from './styled';
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -53,10 +50,12 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           services={services}
         />
 
-        <AboutFooter>
-          <H3>Maybe I could help you?</H3>
-          <p>I{'\''}d love to talk. <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
-        </AboutFooter>
+        <PageCta
+          heading="Maybe I could help you?"
+          contactCopy="I'd love to talk"
+          noMargin
+          centerText
+        />
 
       </PageContainer>
     );

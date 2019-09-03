@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 import ProjectsList from 'components/Dev/ProjectsList';
-import ProjectsFooter from 'components/Dev/ProjectsFooter';
+import PageCta from 'components/PageCta';
 
 function Projects(props) {
   const { projects } = props;
@@ -14,7 +14,11 @@ function Projects(props) {
         data={projects}
       />
 
-      <ProjectsFooter />
+      <PageCta
+        heading="Maybe we could build something together?"
+        contactCopy="Send me a message"
+        secondCta={<p><Link to="about">Read about me</Link></p>}
+      />
 
     </div>
   );

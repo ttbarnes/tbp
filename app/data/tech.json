@@ -4,7 +4,8 @@
     "tags": [
       "React",
       "Redux",
-      "Observables"
+      "Observables",
+      "JavaScript"
     ]
   },
   {
@@ -14,7 +15,8 @@
       "Express",
       "GraphQL",
       "MongoDB, Mongoose",
-      "SSR"
+      "SSR",
+      "JavaScript"
     ]
   },
   {
@@ -37,8 +39,9 @@
     "tags": [
       "styled-components",
       "Aphrodite",
+      "Sass",
       "Stylus",
-      "Sass"
+      "Less"
     ]
   },
   {
@@ -49,7 +52,8 @@
       "Mocha", 
       "Shouldjs", 
       "Chai", 
-      "Karma"
+      "Karma",
+      "TDD"
     ]
   },
   {
@@ -73,6 +77,14 @@
       "Heroku",
       "TeamCity",
       "Jenkins"
+    ]
+  },
+  {
+    "heading": "It all started with",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript, jQuery"
     ]
   }
 ]
