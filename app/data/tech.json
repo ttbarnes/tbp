@@ -1,36 +1,39 @@
 [
   {
-    "heading": "Technically, I've recently been using...",
-    "category": "lately",
+    "heading": "UI/front end",
     "tags": [
       "React",
       "Redux",
+      "Observables"
+    ]
+  },
+  {
+    "heading": "Server side, APIs",
+    "tags": [
       "Node.js",
-      "Observables",
-      "Flow",
+      "Express",
+      "GraphQL",
+      "MongoDB, Mongoose",
       "SSR"
     ]
   },
   {
-    "heading": "..and taken an interest in...",
-    "category": "api",
+    "heading": "Static types",
     "tags": [
-      "React Native",
-      "GraphQL",
-      "Mapbox"
+      "Flow",
+      "TypeScript"
     ]
   },
   {
-    "heading": "I've been building api's with...",
-    "category": "api",
+    "heading": "Data Visualizations",
     "tags": [
-      "Node.js, Express",
-      "MongoDB, Mongoose"
+      "Mapbox",
+      "d3.js",
+      "Highcharts"
     ]
   },
   {
-    "heading": "..and styling with all the similar things",
-    "category": "styling",
+    "heading": "Styling",
     "tags": [
       "styled-components",
       "Aphrodite",
@@ -39,8 +42,7 @@
     ]
   },
   {
-    "heading": "I usually test with...",
-    "category": "testing",
+    "heading": "Testing",
     "tags": [
       "Enzyme", 
       "Jasmine", 
@@ -51,29 +53,26 @@
     ]
   },
   {
-    "heading": "I've also used these...",
-    "category": "other",
+    "heading": "Build tools",
     "tags": [
-      "TypeScript",
-      "WebSockets",
-      "Webpack"
+      "Webpack",
+      "Gulp"
     ]
   },
   {
-    "heading": "..and these..",
-    "category": "other",
+    "heading": "Also used",
     "tags": [
+      "WebSockets",
       "Angular",
-      "Gulp",
-      "d3.js",
-      "Highcharts",
-      "Heroku",
-      "TeamCity",
       "Many more..."
     ]
   },
   {
-    "heading": "Maybe we could build something together?",
-    "category": "outro"
+    "heading": "CI",
+    "tags": [
+      "Heroku",
+      "TeamCity",
+      "Jenkins"
+    ]
   }
 ]
