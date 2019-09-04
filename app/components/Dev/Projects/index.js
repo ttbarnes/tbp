@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import ProjectsList from 'components/Dev/ProjectsList';
+import TreeList from 'components/TreeList';
 import PageCta from 'components/PageCta';
 
 function Projects(props) {
@@ -10,7 +10,7 @@ function Projects(props) {
   return (
     <div>
 
-      <ProjectsList
+      <TreeList
         data={projects}
       />
 

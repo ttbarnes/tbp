@@ -4,10 +4,10 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Helmet from 'react-helmet';
-import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import H4 from 'components/H4';
+import TreeList from 'components/TreeList';
 import PageCta from 'components/PageCta';
 import { FadeIn } from 'components/styledShared';
 import PageContainer from '../PageContainer';
@@ -15,7 +15,6 @@ import {
   selectTech
 } from './selectors';
 import {
-  TechList,
   Row,
   StyledList,
   StyledTag
@@ -65,27 +64,14 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
 
         <H2 h1Size>I learn and use the best tools for the job</H2>
 
-        <TechList>
-          {tech.map((item, index) => {
-            const isLast = tech.length - 1 === index;
-            return (
-              <li key={item.heading}>
-                <LazyLoad height={400} once>
-                  {renderGroup(
-                    item,
-                    isLast
-                  )}
-                </LazyLoad>
-              </li>
-            );
-          })}
-        </TechList>
+        <TreeList
+          data={tech}
+        />
 
         <PageCta
           heading="Maybe we could build something together?"
           contactCopy="Send me a message"
         />
-
 
       </PageContainer>
     );

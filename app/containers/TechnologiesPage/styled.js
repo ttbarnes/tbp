@@ -5,21 +5,14 @@ import { media } from '../../components/styledShared';
 
 const isLast = (props) => `
   ${props.isLast && `
-    margin-bottom: 15em;
-  `}
-`;
-
-export const TechList = styled.ul`
-  margin-top: 15.5em;
-  ${media.md`
-    margin-top: 18em;
+    margin-bottom: 5em;
   `}
 `;
 
 export const Row = styled.div`
   margin-bottom: 8em;
   ${media.sm`
-    margin-bottom: 30em;
+    margin-bottom: 25em;
   `}
   ${isLast}
 `;

@@ -29,7 +29,7 @@ PageCta.propTypes = {
 };
 
 PageCta.defaultProps = {
-  secondCta: '',
+  secondCta: null,
   centerText: false,
   noMargin: false
 };

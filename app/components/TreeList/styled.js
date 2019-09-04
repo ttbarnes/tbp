@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Tag from 'components/Tag';
-import { media, colors } from '../../styledShared';
+import { media, colors } from '../styledShared';
 
 export const Root = styled.div`
   position: relative;
@@ -19,7 +19,7 @@ export const ListRoot = styled.ul`
   `}
 `;
 
-export const HeadingYearColumn = styled.div`
+export const HeadingColumn = styled.div`
   ${media.lg`
     background: #FFF;
     transform: translateX(-40%);
@@ -28,7 +28,7 @@ export const HeadingYearColumn = styled.div`
   `}
 `;
 
-export const HeadingYearContent = styled.div`
+export const HeadingContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@ export const HeadingYearContent = styled.div`
   width: 100%;
 `;
 
-export const HeadingYear = styled.p`
+export const Heading = styled.p`
   font-size: 1.5em;
   margin-bottom: 2em;
   text-decoration: underline;
@@ -46,7 +46,7 @@ export const HeadingYear = styled.p`
   `}
 `;
 
-export const HeadingYearSub = styled.p`
+export const SubHeading = styled.p`
   margin-bottom: 0;
   font-size: .8em;
   display: none;
@@ -67,11 +67,11 @@ export const StyledListItem = styled.li`
   align-items: flex-start;
   padding: 0;
   ${media.md`
-    padding: 5em 0 15em 0;
+    padding: 5em 0 10em 0;
   `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
-    padding: 5em 0 20em 0;
+    padding: 5em 0 15em 0;
   `}
   ${isLastItem}
 `;
@@ -85,7 +85,7 @@ export const Border = styled.div`
   `}
 `;
 
-export const YearProjects = styled.div`
+export const GroupItems = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

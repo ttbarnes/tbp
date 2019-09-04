@@ -1,8 +1,8 @@
 [
   {
-    "year": "Timeline",
-    "yearSub": "2018-2019",
-    "projects": [
+    "heading": "Timeline",
+    "subHeading": "2018-2019",
+    "items": [
       {
         "id": "worldremit",
         "name": "WorldRemit",
@@ -22,8 +22,8 @@
     ]
   },
   {
-    "year": "2018",
-    "projects": [
+    "heading": "2018",
+    "items": [
       {
         "id": "crypto-reports-combiner",
         "name": "Crypto Reports Combiner",
@@ -87,8 +87,8 @@
     ]
   },
   {
-    "year": "2017",
-    "projects": [
+    "heading": "2017",
+    "items": [
       {
         "id": "john-lewis",
         "name": "John Lewis",
@@ -127,8 +127,8 @@
     ]
   },
   {
-    "year": "2016-2017",
-    "projects": [
+    "heading": "2016-2017",
+    "items": [
       {
         "id": "trainline",
         "name": "Trainline",
@@ -161,8 +161,8 @@
     ]
   },
   {
-    "year": "2016",
-    "projects": [
+    "heading": "2016",
+    "items": [
       {
         "id": "plantstove",
         "name": "Plantstove",
@@ -223,8 +223,8 @@
     ]
   },
   {
-    "year": "2015-2016",
-    "projects": [
+    "heading": "2015-2016",
+    "items": [
       {
         "id": "lantum",
         "name": "Lantum",
@@ -245,8 +245,8 @@
     ]
   },
   {
-    "year": "2015",
-    "projects": [
+    "heading": "2015",
+    "items": [
       {
         "id": "saranac",
         "name": "Saranac",
@@ -334,8 +334,8 @@
     ]
   },
   {
-    "year": "2014-2015",
-    "projects": [
+    "heading": "2014-2015",
+    "items": [
       {
         "id": "fifthweek",
         "name": "Fifthweek",
@@ -395,8 +395,8 @@
     ]
   },
   {
-    "year": "2014",
-    "projects": [
+    "heading": "2014",
+    "items": [
       {
         "id": "dvla-personalised-registrations",
         "name": "DVLA: Personalised Registrations",
@@ -439,8 +439,8 @@
     ]
   },
   {
-    "year": "2013-2014",
-    "projects": [
+    "heading": "2013-2014",
+    "items": [
       {
         "id": "robbie-williams",
         "name": "Robbie Williams",
@@ -515,8 +515,8 @@
     ]
   },
   {
-    "year": "2013",
-    "projects": [
+    "heading": "2013",
+    "items": [
       {
         "id": "hoover",
         "name": "Hoover Spares",
@@ -587,8 +587,8 @@
     ]
   },
   {
-    "year": "2012",
-    "projects": [
+    "heading": "2012",
+    "items": [
       {
         "id": "powatag",
         "name": "Powatag",
@@ -641,8 +641,8 @@
     ]
   },
   {
-    "year": "2011",
-    "projects": [
+    "heading": "2011",
+    "items": [
       {
         "id": "powa",
         "name": "Powa",
@@ -707,8 +707,8 @@
     ]
   },
   {
-    "year": "2010",
-    "projects": [
+    "heading": "2010",
+    "items": [
       {
         "id": "celebrity-smiles",
         "name": "Celebrity Smiles",
@@ -731,8 +731,8 @@
     ]
   },
   {
-    "year": "2009-2010",
-    "projects": [
+    "heading": "2009-2010",
+    "items": [
       {
         "id": "evaluate-technologies",
         "name": "Evaluate Technologies",

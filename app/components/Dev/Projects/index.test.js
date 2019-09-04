@@ -1,7 +1,7 @@
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
-import ProjectsList from 'components/Dev/ProjectsList';
+import TreeList from 'components/TreeList';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
 import PageLink from 'components/PageLink';
@@ -29,9 +29,9 @@ describe('<Projects />', () => {
     ]);
     expect(actual).toBeTruthy();
   });
-  it('should render <ProjectsList /> with props', () => {
+  it('should render <TreeList /> with props', () => {
     const actual = wrapper.containsMatchingElement(
-      <ProjectsList
+      <TreeList
         handleClick={mock.clickFunc}
         data={mock.projects}
         activeFilter={mock.activeFilter}

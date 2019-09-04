@@ -1,6 +1,6 @@
 [
   {
-    "heading": "UI/front end",
+    "heading": "UI",
     "tags": [
       "React",
       "Redux",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "heading": "Data Visualizations",
+    "heading": "Data visualizations",
     "tags": [
       "Mapbox",
       "d3.js",
@@ -61,19 +61,19 @@
     ]
   },
   {
-    "heading": "Also used",
-    "tags": [
-      "WebSockets",
-      "Angular",
-      "Many more..."
-    ]
-  },
-  {
-    "heading": "Continuous Integration (CI)",
+    "heading": "Continuous integration (CI)",
     "tags": [
       "Heroku",
       "TeamCity",
       "Jenkins"
+    ]
+  },
+  {
+    "heading": "Also...",
+    "tags": [
+      "WebSockets",
+      "Angular",
+      "Many more..."
     ]
   },
   {
