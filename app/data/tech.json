@@ -4,8 +4,7 @@
     "tags": [
       "React",
       "Redux",
-      "Observables",
-      "JavaScript"
+      "Observables"
     ]
   },
   {
@@ -15,8 +14,7 @@
       "Express",
       "GraphQL",
       "MongoDB, Mongoose",
-      "SSR",
-      "JavaScript"
+      "SSR"
     ]
   },
   {
@@ -52,8 +50,7 @@
       "Mocha", 
       "Shouldjs", 
       "Chai", 
-      "Karma",
-      "TDD"
+      "Karma"
     ]
   },
   {
@@ -72,7 +69,7 @@
     ]
   },
   {
-    "heading": "CI",
+    "heading": "Continuous Integration (CI)",
     "tags": [
       "Heroku",
       "TeamCity",
@@ -84,7 +81,8 @@
     "tags": [
       "HTML",
       "CSS",
-      "JavaScript, jQuery"
+      "JavaScript",
+      "jQuery"
     ]
   }
 ]

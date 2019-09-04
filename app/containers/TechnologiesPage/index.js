@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import LazyLoad from 'react-lazyload';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
-import H3 from 'components/H3';
+import H4 from 'components/H4';
 import PageCta from 'components/PageCta';
 import { FadeIn } from 'components/styledShared';
-import List from 'components/List';
 import PageContainer from '../PageContainer';
 import {
   selectTech
@@ -23,58 +21,29 @@ import {
   StyledTag
 } from './styled';
 
-const groupsWithStyledTag = [
-  'lately',
-  'api',
-  'testing',
-  'styling',
-  'other'
-];
-
-export const renderGroup = (group) => {
-  const { category } = group;
+export const renderGroup = (group, isLast) => {
   const groupTags = group.tags;
-  if (groupsWithStyledTag.includes(category)) {
-    return (
-      <StyledList className="no-li-margin">
-        {groupTags.map((tag, i) => (
-          <StyledTag
-            type={tag}
-            key={i}
-            index={i + 1}
-            backgroundTheme
-            large
-          />
-        ))}
-      </StyledList>
-    );
-  }
-  if (groupTags && !groupsWithStyledTag.includes(category)) {
-    return (
-      <List showListStyle>
-        {groupTags.map((i) => <p key={i}>{i}</p>)}
-      </List>
-    );
-  }
-  if (category === 'outro') {
-    return (
-      <div>
-        <p><Link to="contact">Send me a message</Link></p>
-        <p><Link to="clients">See who I{'\''}ve worked with</Link></p>
-      </div>
-    );
-  }
-  return <p>{group.copy}</p>;
-};
+  return (
+    <Row isLast={isLast}>
+      <FadeIn>
+        <H4>{group.heading}</H4>
 
-export const renderAboutSection = (group, isLast) => (
-  <Row isLast={isLast}>
-    <FadeIn>
-      <H3>{group.heading}</H3>
-      {renderGroup(group)}
-    </FadeIn>
-  </Row>
-);
+        <StyledList className="no-li-margin">
+          {groupTags.map((tag, i) => (
+            <StyledTag
+              type={tag}
+              key={i}
+              index={i + 1}
+              backgroundTheme
+              large
+            />
+          ))}
+        </StyledList>
+
+      </FadeIn>
+    </Row>
+  );
+};
 
 export class TechnologiesPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -88,15 +57,13 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
         <Helmet
           title="Technologies"
           meta={[
-            { name: 'description', content: 'TODO' },
+            { name: 'description', content: 'I learn and use the best tools for the job' },
           ]}
         />
 
-        <H1 hide>Projects</H1>
+        <H1 hide>I learn and use the best tools for the job</H1>
 
-        <H2 h1Size>Technologies</H2>
-
-        <p>I{'\''}ve used a few things...</p>
+        <H2 h1Size>I learn and use the best tools for the job</H2>
 
         <TechList>
           {tech.map((item, index) => {
@@ -104,7 +71,7 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
             return (
               <li key={item.heading}>
                 <LazyLoad height={400} once>
-                  {renderAboutSection(
+                  {renderGroup(
                     item,
                     isLast
                   )}
