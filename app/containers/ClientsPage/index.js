@@ -26,13 +26,13 @@ export class ClientsPage extends React.PureComponent { // eslint-disable-line re
       <PageContainer smallWidth>
 
         <Helmet
-          title="Projects"
+          title="Clients"
           meta={[
             { name: 'description', content: 'Some of the projects i\'ve been a part of' },
           ]}
         />
 
-        <H1 hide>Projects</H1>
+        <H1 hide>Clients</H1>
 
         <H2 h1Size>I{'\''}ve worked with some great people</H2>
 
