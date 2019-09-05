@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import TreeGroup from './TreeGroup';
 import { Root, ListRoot } from './styled';
 
-const TreeList = ({ data }) => (
+const TreeList = ({ data, largeGroupHeight }) => (
   <Root>
-    <ListRoot>
+    <ListRoot largeGroupHeight={largeGroupHeight}>
       {data && data.map((group, index) => (
         <TreeGroup
           key={group.heading}
           {...group}
           isLast={index === data.length - 1}
+          largeGroupHeight={largeGroupHeight}
         />
       ))}
     </ListRoot>
@@ -18,7 +19,12 @@ const TreeList = ({ data }) => (
 );
 
 TreeList.propTypes = {
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
+  largeGroupHeight: PropTypes.bool
+};
+
+TreeList.defaultProps = {
+  largeGroupHeight: false
 };
 
 export default TreeList;

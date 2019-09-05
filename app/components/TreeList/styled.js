@@ -2,20 +2,35 @@ import styled from 'styled-components';
 import Tag from 'components/Tag';
 import { media, colors } from '../styledShared';
 
-export const Root = styled.div`
+export const Root = styled.li`
   position: relative;
   padding: 1em 0;
+  list-style-type: none;
   ${media.lg`
     padding: 0;
   `}
 `;
 
+const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
+  ${props.largeGroupHeight && `
+    margin: 14em 0 0 0;
+  `}
+`;
+
+const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
+  ${props.largeGroupHeight && `
+    margin: 17em -8em 0 2.5em;
+  `}
+`;
+
 export const ListRoot = styled.ul`
   ${media.md`
-    margin-top: 18em;
+    margin-top: 5em;
+    ${listRootIsLargeGroupHeightMediumBreakpoint}
   `}
   ${media.lg`
-    margin: 17em -8em 0 2.5em;
+    margin: 5em -8em 0 2.5em;
+    ${listRootIsLargeGroupHeightLargeBreakpoint}
   `}
 `;
 
@@ -61,6 +76,15 @@ const isLastItem = (props) => `
   `}
 `;
 
+const listItemIslargeGroupHeight = (props) => `
+  ${props.largeGroupHeight && `
+    padding: 0;
+    ${media.md`
+      padding: 5em 0 20em 0;
+    `}
+  `}
+`;
+
 export const StyledListItem = styled.li`
   display: flex;
   flex-direction: row;
@@ -71,9 +95,9 @@ export const StyledListItem = styled.li`
   `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
-    padding: 5em 0 15em 0;
   `}
   ${isLastItem}
+  ${listItemIslargeGroupHeight}
 `;
 
 export const Border = styled.div`

@@ -140,18 +140,6 @@ export const tagColors = {
 };
 
 const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    margin-top: 0;
-  }
-
-  to {
-    opacity: 1;
-    margin-top: -15em;
-  }
-`;
-
-const fadeInLong = keyframes`
   0% {
     opacity: 0;
     margin-top: 0;
@@ -159,24 +147,39 @@ const fadeInLong = keyframes`
 
   50% {
     opacity: 0.2;
-    margin-top: -8em;
+    margin-top: -2.5em;
   }
 
+  100% {
+    opacity: 1;
+    margin-top: -5em;
+  }
+`;
+
+export const FadeIn = styled.div`
+  ${media.md`
+    animation: ${fadeIn} 0.6s linear;
+    margin-top: -5em;
+    position: relative;
+  `}
+`;
+
+
+const fadeInLong = keyframes`
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  50% {
+    opacity: 0.2;
+    margin-top: -8em;
+  }
   100% {
     opacity: 1;
     margin-top: -13em;
   }
 `;
 
-export const FadeIn = styled.div`
-  ${media.sm`
-    animation: ${fadeIn} 0.4s linear;
-    margin-top: -10em;
-  `}
-  ${media.lg`
-    margin-top: -15em;
-  `}
-`;
 
 export const FadeInLong = styled.div`
   ${media.md`

@@ -12,6 +12,7 @@ function Projects(props) {
 
       <TreeList
         data={projects}
+        largeGroupHeight
       />
 
       <PageCta
