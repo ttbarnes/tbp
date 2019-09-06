@@ -56,6 +56,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           width={NAV_MAX_WIDTH}
           noOverlay={isLargeScreen}
           customCrossIcon={<span></span>}
+          disableCloseOnEsc
         >
           <div>
             <ListRoot>
