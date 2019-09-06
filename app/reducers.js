@@ -4,7 +4,7 @@
 
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import projectsReducers from 'containers/ProjectsPage/reducer';
+import projectsReducers from 'containers/ClientsPage/reducer';
 // import hobbiesReducers from 'containers/HobbiesPage/reducer';
 import servicesReducer from 'reducers/services';
 import aboutReducers from 'containers/AboutPage/reducer';

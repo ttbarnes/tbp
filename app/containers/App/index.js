@@ -7,7 +7,7 @@ import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 import HomePage from 'containers/HomePage/loadable';
 import AboutPage from 'containers/AboutPage/loadable';
-import ProjectsPage from 'containers/ProjectsPage/loadable';
+import ClientsPage from 'containers/ClientsPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
 
@@ -54,7 +54,7 @@ function App(props) {
         <Route
           exact
           path="/clients"
-          component={ProjectsPage}
+          component={ClientsPage}
         />
         <Route
           path="/contact"
