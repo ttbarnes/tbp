@@ -124,6 +124,10 @@ injectGlobal`
     background: rgba(0, 0, 0, 0.6) !important;
   }
 
+  .bm-item {
+    height: 100%;
+  }
+
   ul.no-li-margin li {
     margin-bottom: 0;
   }
