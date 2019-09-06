@@ -72,13 +72,12 @@ export const SubHeading = styled.p`
 
 const isLastItem = (props) => `
   ${props.isLast && `
-    padding-bottom: 0;
+    padding-bottom: 4.5em;
   `}
 `;
 
 const listItemIslargeGroupHeight = (props) => `
   ${props.largeGroupHeight && `
-    padding: 0;
     ${media.md`
       padding: 5em 0 20em 0;
     `}
