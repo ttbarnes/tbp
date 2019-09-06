@@ -45,28 +45,27 @@ export const HeadingColumn = styled.div`
 
 export const HeadingContent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   width: 100%;
+  ${media.lg`
+    justify-content: center;
+  `}
+`;
+
+const alwaysMargin = (props) => `
+  ${props.alwaysMargin && `
+    margin-bottom: 2em;
+  `}
 `;
 
 export const Heading = styled.p`
   font-size: 1.5em;
-  margin-bottom: 2em;
   text-decoration: underline;
+  ${alwaysMargin}
   ${media.lg`
     margin-bottom: 0;
     text-decoration: none;
-  `}
-`;
-
-export const SubHeading = styled.p`
-  margin-bottom: 0;
-  font-size: .8em;
-  display: none;
-  ${media.lg`
-    display: block;
   `}
 `;
 
@@ -182,6 +181,10 @@ export const TagList = styled.ul`
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-bottom: 3em;
+  ${media.lg`
+    margin-bottom: 0;
+  `}
 `;
 
 export const TagListItem = styled.li`

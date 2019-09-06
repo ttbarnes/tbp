@@ -12,7 +12,6 @@ import {
   HeadingColumn,
   HeadingContent,
   Heading,
-  SubHeading,
   StyledListItem,
   Border,
   GroupItems,
@@ -62,7 +61,6 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   renderGroup() {
     const {
       heading,
-      subHeading,
       items,
       tags,
       isLast,
@@ -73,8 +71,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
       <div>
         <HeadingColumn>
           <HeadingContent>
-            <Heading>{heading}</Heading>
-            {heading === 'Timeline' && <SubHeading>{subHeading}</SubHeading>}
+            <Heading alwaysMargin={largeGroupHeight}>{heading}</Heading>
           </HeadingContent>
         </HeadingColumn>
 
@@ -193,7 +190,6 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
 
 TreeGroup.propTypes = {
   heading: PropTypes.string.isRequired,
-  subHeading: PropTypes.string,
   items: PropTypes.arrayOf(PropTypes.object),
   tags: PropTypes.arrayOf(PropTypes.string),
   isLast: PropTypes.bool,
@@ -201,11 +197,10 @@ TreeGroup.propTypes = {
 };
 
 TreeGroup.defaultProps = {
-  subHeading: '',
   isLast: false,
   items: [],
   tags: [],
-  fadeInForTech: false
+  largeGroupHeight: false
 };
 
 export default TreeGroup;

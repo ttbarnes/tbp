@@ -26,13 +26,13 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
         <Helmet
           title="Technologies"
           meta={[
-            { name: 'description', content: 'I learn and use the best tools for the job' },
+            { name: 'description', content: 'I use the best tools for the job' },
           ]}
         />
 
         <H1 hide>Gest tools for the job</H1>
 
-        <H2 h1Size>I learn and use the best tools for the job</H2>
+        <H2 h1Size>I use the best tools for the job</H2>
 
         <TreeListContainer>
           <TreeList

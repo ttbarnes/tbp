@@ -18,18 +18,15 @@
     ]
   },
   {
-    "heading": "Static types",
+    "heading": "Testing",
     "tags": [
-      "Flow",
-      "TypeScript"
-    ]
-  },
-  {
-    "heading": "Data visualizations",
-    "tags": [
-      "Mapbox",
-      "d3.js",
-      "Highcharts"
+      "Enzyme",
+      "Jest",
+      "Mocha",
+      "Shouldjs",
+      "Chai",
+      "Jasmine",
+      "Karma"
     ]
   },
   {
@@ -43,14 +40,10 @@
     ]
   },
   {
-    "heading": "Testing",
+    "heading": "Static types",
     "tags": [
-      "Enzyme", 
-      "Jasmine", 
-      "Mocha", 
-      "Shouldjs", 
-      "Chai", 
-      "Karma"
+      "Flow",
+      "TypeScript"
     ]
   },
   {
@@ -66,6 +59,14 @@
       "Heroku",
       "TeamCity",
       "Jenkins"
+    ]
+  },
+  {
+    "heading": "Data visualizations",
+    "tags": [
+      "Mapbox",
+      "d3.js",
+      "Highcharts"
     ]
   },
   {

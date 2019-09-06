@@ -69,6 +69,7 @@ injectGlobal`
 
   p {
     margin-top: 0;
+    margin-bottom: 1em;
     font-size: 1.1em;
   }
 
