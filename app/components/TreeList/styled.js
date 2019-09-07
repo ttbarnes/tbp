@@ -40,7 +40,7 @@ const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
 
 const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
   ${props.largeGroupHeight && `
-    margin: 17em -8em 0 2.5em;
+    margin: 17em -6em 0 2.5em;
   `}
 `;
 
@@ -50,7 +50,7 @@ export const ListRoot = styled.ul`
     ${listRootIsLargeGroupHeightMediumBreakpoint}
   `}
   ${media.lg`
-    margin: 5em -8em 0 2.5em;
+    margin: 5em -6em 0 2.5em;
     ${listRootIsLargeGroupHeightLargeBreakpoint}
   `}
 `;
@@ -101,9 +101,7 @@ const isLastItem = (props) => `
 
 const listItemIslargeGroupHeight = (props) => `
   ${props.largeGroupHeight && `
-    ${media.md`
-      padding: 5em 0 20em 0;
-    `}
+    padding: 5em 0 15em 0;
   `}
 `;
 
@@ -115,9 +113,9 @@ export const StyledListItem = styled.li`
   ${media.lg`
     border-left: solid .5em #F5F5F5;
     padding: 5em 0 10em 0;
+    ${listItemIslargeGroupHeight}
     ${isLastItem}
   `}
-  ${listItemIslargeGroupHeight}
 `;
 
 export const Border = styled.div`
