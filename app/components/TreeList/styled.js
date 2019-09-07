@@ -1,25 +1,61 @@
 import styled from 'styled-components';
 import Tag from 'components/Tag';
-import { media, colors } from '../../styledShared';
+import { media, colors } from '../styledShared';
 
-export const Root = styled.div`
+export const Root = styled.li`
+  list-style-type: none;
+`;
+
+const rootIslargeGroupHeight = (props) => `
+  ${props.largeGroupHeight && `
+    padding-bottom: 13em;
+  `}
+`;
+
+const rootIsLast = (props) => `
+  ${props.isLast && `
+    padding-bottom: 0;
+  `}
+`;
+
+export const GroupRoot = styled.li`
   position: relative;
   padding: 1em 0;
+  list-style-type: none;
+  ${media.md`
+    padding: 0 0 7em 0;
+    ${rootIslargeGroupHeight}
+    ${rootIsLast}
+  `};
   ${media.lg`
     padding: 0;
   `}
 `;
 
-export const ListRoot = styled.ul`
-  ${media.md`
-    margin-top: 18em;
-  `}
-  ${media.lg`
-    margin: 17em -8em 0 2.5em;
+const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
+  ${props.largeGroupHeight && `
+    margin: 14em 0 0 0;
   `}
 `;
 
-export const HeadingYearColumn = styled.div`
+const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
+  ${props.largeGroupHeight && `
+    margin: 17em -6em 0 2.5em;
+  `}
+`;
+
+export const ListRoot = styled.ul`
+  ${media.md`
+    margin-top: 5em;
+    ${listRootIsLargeGroupHeightMediumBreakpoint}
+  `}
+  ${media.lg`
+    margin: 5em -6em 0 2.5em;
+    ${listRootIsLargeGroupHeightLargeBreakpoint}
+  `}
+`;
+
+export const HeadingColumn = styled.div`
   ${media.lg`
     background: #FFF;
     transform: translateX(-40%);
@@ -28,36 +64,44 @@ export const HeadingYearColumn = styled.div`
   `}
 `;
 
-export const HeadingYearContent = styled.div`
+export const HeadingContent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   width: 100%;
+  ${media.lg`
+    justify-content: center;
+  `}
 `;
 
-export const HeadingYear = styled.p`
-  font-size: 1.5em;
-  margin-bottom: 2em;
+const alwaysMargin = (props) => `
+  ${props.alwaysMargin && `
+    margin-bottom: 2em;
+  `}
+`;
+
+export const Heading = styled.p`
+  font-size: 1.3em;
   text-decoration: underline;
+  ${alwaysMargin}
+  ${media.md`
+    font-size: 1.5em;
+  `}
   ${media.lg`
     margin-bottom: 0;
     text-decoration: none;
   `}
 `;
 
-export const HeadingYearSub = styled.p`
-  margin-bottom: 0;
-  font-size: .8em;
-  display: none;
-  ${media.lg`
-    display: block;
+const isLastItem = (props) => `
+  ${props.isLast && `
+    padding-bottom: 4.5em;
   `}
 `;
 
-const isLastItem = (props) => `
-  ${props.isLast && `
-    padding-bottom: 0;
+const listItemIslargeGroupHeight = (props) => `
+  ${props.largeGroupHeight && `
+    padding: 5em 0 15em 0;
   `}
 `;
 
@@ -66,14 +110,12 @@ export const StyledListItem = styled.li`
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
-  ${media.md`
-    padding: 5em 0 15em 0;
-  `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
-    padding: 5em 0 20em 0;
+    padding: 5em 0 10em 0;
+    ${listItemIslargeGroupHeight}
+    ${isLastItem}
   `}
-  ${isLastItem}
 `;
 
 export const Border = styled.div`
@@ -85,7 +127,7 @@ export const Border = styled.div`
   `}
 `;
 
-export const YearProjects = styled.div`
+export const GroupItems = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -159,6 +201,10 @@ export const TagList = styled.ul`
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-bottom: 3em;
+  ${media.lg`
+    margin-bottom: 0;
+  `}
 `;
 
 export const TagListItem = styled.li`

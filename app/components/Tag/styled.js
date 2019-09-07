@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { colors, tagColors, media } from '../styledShared';
 
 const tag = `
-  font-size: .85em;
+  font-size: .9em;
   display: inline-flex;
   padding: 0.5em 1em;
-  margin: 0.3em 0.3em 0 0;
+  margin: 0.5em 0.3em 0 0;
 `;
 
 const spacing = (props) => {
@@ -213,7 +213,7 @@ const bgTheme = (props) => {
       `background: ${tagColors.powaCms}`
 };
 
-    ${type === 'jQuery plugin' &&
+    ${type === 'jQuery' &&
       `background: ${tagColors.jQuery}`
 };
 
@@ -223,6 +223,22 @@ const bgTheme = (props) => {
 
     ${type === 'Joomla' &&
       `background: ${tagColors.joomla}`
+};
+
+    ${type === 'TeamCity' &&
+        `background: ${tagColors.teamCity}`
+};
+
+    ${type === 'Jenkins' &&
+        `background: ${tagColors.jenkins}`
+};
+
+    ${type === 'Less' &&
+        `background: ${tagColors.less}`
+};
+
+    ${type === 'Jest' &&
+      `background: ${tagColors.jest}`
 };
 
   `;

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import ProjectsList from 'components/Dev/ProjectsList';
-import ProjectsFooter from 'components/Dev/ProjectsFooter';
+import { Link } from 'react-router-dom';
+import TreeList from 'components/TreeList';
+import PageCta from 'components/PageCta';
 
 function Projects(props) {
   const { projects } = props;
@@ -10,11 +10,16 @@ function Projects(props) {
   return (
     <div>
 
-      <ProjectsList
+      <TreeList
         data={projects}
+        largeGroupHeight
       />
 
-      <ProjectsFooter />
+      <PageCta
+        heading="Maybe we could build something together?"
+        contactCopy="Send me a message"
+        secondCta={<p><Link to="about">Read about me</Link></p>}
+      />
 
     </div>
   );

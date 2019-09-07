@@ -15,6 +15,10 @@ export const ListRoot = styled.ul`
     width: 100%;
     max-width: 100%;
     margin: 0;
+    margin-bottom: 2em;
+  `}
+  ${media.lg`
+    margin-bottom: 0;
   `}
 `;
 

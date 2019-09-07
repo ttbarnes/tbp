@@ -12,14 +12,14 @@ import {
   renderAboutSection,
   renderGroup
 } from './index';
-import aboutData from '../../data/about.json';
+import techData from '../../data/tech.json';
 import {
   Row,
   StyledTag,
   StyledList
 } from './styled';
 
-const mockTech = aboutData;
+const mockTech = techData;
 const mockTechLength = mockTech.length;
 
 describe('<About />', () => {

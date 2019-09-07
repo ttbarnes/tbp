@@ -7,7 +7,7 @@ import { routerReducer } from 'react-router-redux';
 import projectsReducers from 'containers/ClientsPage/reducer';
 // import hobbiesReducers from 'containers/HobbiesPage/reducer';
 import servicesReducer from 'reducers/services';
-import aboutReducers from 'containers/AboutPage/reducer';
+import techReducers from 'containers/TechnologiesPage/reducer';
 
 /**
  * Creates the main reducer with the asynchronously loaded ones
@@ -18,7 +18,7 @@ export default function createReducer(injectedReducers) {
     projects: projectsReducers,
     services: servicesReducer,
     // hobbies: hobbiesReducers,
-    about: aboutReducers,
+    tech: techReducers,
     ...injectedReducers
   });
 }

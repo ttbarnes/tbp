@@ -1,0 +1,89 @@
+[
+  {
+    "heading": "UI",
+    "tags": [
+      "React",
+      "Redux",
+      "Observables"
+    ]
+  },
+  {
+    "heading": "Server side, APIs",
+    "tags": [
+      "Node.js",
+      "Express",
+      "GraphQL",
+      "MongoDB, Mongoose",
+      "SSR"
+    ]
+  },
+  {
+    "heading": "Testing",
+    "tags": [
+      "Enzyme",
+      "Jest",
+      "Mocha",
+      "Shouldjs",
+      "Chai",
+      "Jasmine",
+      "Karma"
+    ]
+  },
+  {
+    "heading": "Styling",
+    "tags": [
+      "styled-components",
+      "Aphrodite",
+      "Sass",
+      "Stylus",
+      "Less"
+    ]
+  },
+  {
+    "heading": "Static types",
+    "tags": [
+      "Flow",
+      "TypeScript"
+    ]
+  },
+  {
+    "heading": "Build tools",
+    "tags": [
+      "Webpack",
+      "Gulp"
+    ]
+  },
+  {
+    "heading": "Continuous integration (CI)",
+    "tags": [
+      "Heroku",
+      "TeamCity",
+      "Jenkins"
+    ]
+  },
+  {
+    "heading": "Data visualizations",
+    "tags": [
+      "Mapbox",
+      "d3.js",
+      "Highcharts"
+    ]
+  },
+  {
+    "heading": "Also...",
+    "tags": [
+      "WebSockets",
+      "Angular",
+      "Many more..."
+    ]
+  },
+  {
+    "heading": "It all started with...",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery"
+    ]
+  }
+]
