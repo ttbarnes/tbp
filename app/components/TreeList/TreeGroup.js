@@ -8,7 +8,7 @@ import {
 import Tag from 'components/Tag';
 import H4 from 'components/H4';
 import {
-  Root,
+  GroupRoot,
   HeadingColumn,
   HeadingContent,
   Heading,
@@ -47,7 +47,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
 
   setIsLargeScreen() {
     const { isLargeScreen } = this.state;
-    if (window.matchMedia('(min-width: 768px)').matches) {
+    if (window.matchMedia('(min-width: 990px)').matches) {
       this.setState({
         isLargeScreen: true
       });
@@ -180,10 +180,15 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   }
 
   render() {
+    const { largeGroupHeight, isLast } = this.props;
+
     return (
-      <Root>
+      <GroupRoot
+        largeGroupHeight={largeGroupHeight}
+        isLast={isLast}
+      >
         {this.renderGroupContainer()}
-      </Root>
+      </GroupRoot>
     );
   }
 }

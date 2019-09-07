@@ -3,9 +3,30 @@ import Tag from 'components/Tag';
 import { media, colors } from '../styledShared';
 
 export const Root = styled.li`
+  list-style-type: none;
+`;
+
+const rootIslargeGroupHeight = (props) => `
+  ${props.largeGroupHeight && `
+    padding-bottom: 13em;
+  `}
+`;
+
+const rootIsLast = (props) => `
+  ${props.isLast && `
+    padding-bottom: 0;
+  `}
+`;
+
+export const GroupRoot = styled.li`
   position: relative;
   padding: 1em 0;
   list-style-type: none;
+  ${media.md`
+    padding: 0 0 7em 0;
+    ${rootIslargeGroupHeight}
+    ${rootIsLast}
+  `};
   ${media.lg`
     padding: 0;
   `}
@@ -60,9 +81,12 @@ const alwaysMargin = (props) => `
 `;
 
 export const Heading = styled.p`
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-decoration: underline;
   ${alwaysMargin}
+  ${media.md`
+    font-size: 1.5em;
+  `}
   ${media.lg`
     margin-bottom: 0;
     text-decoration: none;
@@ -88,13 +112,11 @@ export const StyledListItem = styled.li`
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
-  ${media.md`
-    padding: 5em 0 10em 0;
-  `}
   ${media.lg`
     border-left: solid .5em #F5F5F5;
+    padding: 5em 0 10em 0;
+    ${isLastItem}
   `}
-  ${isLastItem}
   ${listItemIslargeGroupHeight}
 `;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, tagColors, media } from '../styledShared';
 
 const tag = `
-  font-size: .85em;
+  font-size: .9em;
   display: inline-flex;
   padding: 0.5em 1em;
   margin: 0.5em 0.3em 0 0;
