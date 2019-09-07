@@ -54,6 +54,7 @@ export const media = {
 
 export const colors = {
   black1: '#222',
+  black2: '#161616',
   grey1: '#6F6F6F',
   grey2: '#E9E9E9',
   blueMain: '#d1dde6',
@@ -68,11 +69,13 @@ export const colors = {
   blue9: '#016087',
   blue10: '#3B80C9',
   blue11: '#5AD1F9',
+  blue12: '#1D365D',
   brown2: '#8d6748',
   brown3: '#e9ce99',
   green2: '#026e00',
   green3: '#7fc857',
   green4: '#369b8b',
+  green5: '#15C213',
   orange1: '#B38D6F',
   orange2: '#ff6347',
   orange3: '#F89741',
@@ -93,6 +96,7 @@ export const colors = {
   red3: '#E23337',
   red4: '#CF4646',
   red5: '#CC342D',
+  red6: '#D24939',
   yellow2: '#B2B36F',
   yellow3: '#F3DD1D',
   yellow4: '#E8BD36',
@@ -136,7 +140,11 @@ export const tagColors = {
   powaCms: colors.blue10,
   jQuery: colors.blue11,
   magento: colors.orange6,
-  joomla: colors.blue10
+  joomla: colors.blue10,
+  teamCity: colors.black2,
+  jenkins: colors.red6,
+  less: colors.blue12,
+  jest: colors.green5
 };
 
 const fadeIn = keyframes`

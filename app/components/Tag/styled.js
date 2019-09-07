@@ -213,7 +213,7 @@ const bgTheme = (props) => {
       `background: ${tagColors.powaCms}`
 };
 
-    ${type === 'jQuery plugin' &&
+    ${type === 'jQuery' &&
       `background: ${tagColors.jQuery}`
 };
 
@@ -223,6 +223,22 @@ const bgTheme = (props) => {
 
     ${type === 'Joomla' &&
       `background: ${tagColors.joomla}`
+};
+
+    ${type === 'TeamCity' &&
+        `background: ${tagColors.teamCity}`
+};
+
+    ${type === 'Jenkins' &&
+        `background: ${tagColors.jenkins}`
+};
+
+    ${type === 'Less' &&
+        `background: ${tagColors.less}`
+};
+
+    ${type === 'Jest' &&
+      `background: ${tagColors.jest}`
 };
 
   `;
