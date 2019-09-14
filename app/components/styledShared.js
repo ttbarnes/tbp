@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const CONTAINER_MAX_WIDTH_LG = 1100;
@@ -146,56 +146,6 @@ export const tagColors = {
   less: colors.blue12,
   jest: colors.green5
 };
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    margin-top: 0;
-  }
-
-  50% {
-    opacity: 0.2;
-    margin-top: -2.5em;
-  }
-
-  100% {
-    opacity: 1;
-    margin-top: -5em;
-  }
-`;
-
-export const FadeIn = styled.div`
-  ${media.md`
-    animation: ${fadeIn} 0.6s linear;
-    margin-top: -5em;
-    position: relative;
-  `}
-`;
-
-
-const fadeInLong = keyframes`
-  0% {
-    opacity: 0;
-    margin-top: 0;
-  }
-  50% {
-    opacity: 0.2;
-    margin-top: -8em;
-  }
-  100% {
-    opacity: 1;
-    margin-top: -13em;
-  }
-`;
-
-
-export const FadeInLong = styled.div`
-  ${media.md`
-    animation: ${fadeInLong} 0.6s linear;
-    margin-top: -13em;
-    position: relative;
-  `}
-`;
 
 export const BoldLink = styled(Link)`
   font-weight: bold;

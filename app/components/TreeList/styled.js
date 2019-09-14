@@ -1,6 +1,56 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Tag from 'components/Tag';
 import { media, colors } from '../styledShared';
+
+const groupFadeInShort = keyframes`
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  50% {
+    opacity: 0.2;
+    margin-top: -2.5em;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: -5em;
+  }
+`;
+
+export const GroupFadeInShort = styled.div`
+  ${media.md`
+    animation: ${groupFadeInShort} 0.6s linear;
+    margin-top: -5em;
+    position: relative;
+  `}
+`;
+
+
+const groupFadeIn = keyframes`
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  50% {
+    opacity: 0.2;
+    margin-top: -8em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -13em;
+  }
+`;
+
+
+export const GroupFadeIn = styled.div`
+  ${media.md`
+    animation: ${groupFadeIn} 0.6s linear;
+    margin-top: -13em;
+    position: relative;
+  `}
+`;
 
 export const Root = styled.li`
   list-style-type: none;
