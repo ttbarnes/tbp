@@ -1,13 +1,50 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { colors, media } from '../styledShared';
 import H4 from '../H4';
 
-export const Root = styled.div`
+const servicesFadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const servicesFadeInLong = keyframes`
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const containerAnimation = (props) => `
+  ${props.longAnimation ? `
+    animation: ${servicesFadeInLong} 2.5s linear;
+  ` : `animation: ${servicesFadeIn} 0.8s linear;`}
+`;
+
+export const ServicesContainer = styled.div`
+  ${containerAnimation}
+`;
+
+const rootMargin = (props) => `
+  ${props.longAnimation ? `
+      margin: 0 -4em 1em -4em;
+  ` : 'margin: 0 -4em 2em -4em;'}
+`;
+
+export const Root = styled(ServicesContainer)`
     text-align: center;
     ${media.lg2`
       width: calc(100% + 8em);
       max-width: calc(100% + 8em);
-      margin: 0 -4em 2em -4em;
+      ${rootMargin}
     `}
 `;
 

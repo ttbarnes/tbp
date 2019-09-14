@@ -14,9 +14,10 @@ import ServiceIcon from './ServiceIcon';
 const ServicesList = ({
   heading,
   services,
-  children
+  children,
+  longAnimation
 }) => (
-  <Root>
+  <Root longAnimation={longAnimation}>
     {heading && <H3>{heading}</H3>}
     <ListRoot>
       {services && services.map((service) => (
@@ -44,12 +45,14 @@ const ServicesList = ({
 ServicesList.propTypes = {
   heading: PropTypes.string,
   services: PropTypes.array.isRequired,
-  children: PropTypes.node
+  children: PropTypes.node,
+  longAnimation: PropTypes.bool
 };
 
 ServicesList.defaultProps = {
   heading: '',
-  children: null
+  children: null,
+  longAnimation: false
 };
 
 export default ServicesList;

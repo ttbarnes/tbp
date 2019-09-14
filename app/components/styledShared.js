@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const CONTAINER_MAX_WIDTH_LG = 1100;
@@ -149,4 +149,18 @@ export const tagColors = {
 
 export const BoldLink = styled(Link)`
   font-weight: bold;
+`;
+
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+export const FadeIn = styled.div`
+  animation: ${fadeIn} 0.8s linear;
 `;

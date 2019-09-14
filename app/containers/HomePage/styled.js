@@ -254,21 +254,3 @@ export const IntroCopy = styled.li`
     margin-left: 1em;
   `}
 `;
-
-const servicesFadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-export const ServicesContainer = styled.div`
-  ${media.md`
-    animation: ${servicesFadeIn} 2.5s linear;
-  `}
-`;
