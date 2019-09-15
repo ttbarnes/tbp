@@ -1,0 +1,676 @@
+[
+  {
+    "heading": "Currently",
+    "subHeading": "2018-2019",
+    "items": [
+      {
+        "id": "currently",
+        "name": "Various TBC",
+        "date": "2019 - present"
+      }
+    ]
+  },
+  {
+    "heading": "FinTech",
+    "items": [
+      {
+        "id": "worldremit",
+        "name": "WorldRemit",
+        "date": "2018-2019",
+        "industry": "FinTech",
+        "tech": [
+          "React",
+          "Redux",
+          "Express, Node js",
+          "SSR",
+          "JavaScript, ES6",
+          "Webpack",
+          "Ruby"
+        ],
+        "primaryTech": "Full stack JS"
+      },
+      {
+        "id": "ihs-markit",
+        "name": "IHS Markit",
+        "date": "2017 - 2018",
+        "industry": "FinTech",
+        "tech": [
+          "React",
+          "Redux",
+          "JavaScript",
+          "ES6",
+          "Sass",
+          "Docker"
+        ],
+        "primaryTech": "React"
+      },
+      {
+        "id": "crypto-reports-combiner",
+        "name": "Crypto Reports Combiner",
+        "date": "2018",
+        "industry": "FinTech",
+        "tech": [
+          "React",
+          "Redux",
+          "Express, Node js",
+          "JavaScript, ES6",
+          "Flow",
+          "Crypto Currency APIs"
+        ],
+        "primaryTech": "Full stack JS",
+        "highlights": [
+          "From trading crypto currencies, I realised that I couldn't easily view all of my trades in one place",
+          "As a proof of concept, I built an API and UI that combined and mapped trade history data from multiple exchanges",
+          "Added the ability to add notes and tags to each trade",
+          "Allowed users to download all history as a single CSV/PDF"
+        ]
+      },
+      {
+        "id": "saranac",
+        "name": "Saranac",
+        "date": "2015",
+        "industry": "FinTech",
+        "tech": [
+          "Express, Node js",
+          "AngularJS",
+          "Highcharts",
+          "JavaScript",
+          "HTML, CSS",
+          "Grunt",
+          "Less"
+        ],
+        "primaryTech": "Angular"
+      },
+      {
+        "id": "evaluate-technologies",
+        "name": "Evaluate Technologies",
+        "date": "2009 - 2010",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript"
+        ],
+        "primaryTech": "UI templates"
+      }
+    ]
+  },
+  {
+    "heading": "Ecommerce",
+    "items": [
+      {
+        "id": "john-lewis",
+        "name": "John Lewis",
+        "date": "2017",
+        "industry": "Ecommerce",
+        "tech": [
+          "React",
+          "Redux",
+          "JavaScript",
+          "ES6",
+          "Webpack",
+          "Sass"
+        ],
+        "primaryTech": "React"
+      },
+      {
+        "id": "robbie-williams",
+        "name": "Robbie Williams",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "collins-learning",
+        "name": "Collins Learning",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "tolkien",
+        "name": "Tolkien",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "electrolux",
+        "name": "Electrolux Parts & Accessories",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "aeg",
+        "name": "AEG Parts & Accessories",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "zanussi",
+        "name": "Zanussi Parts & Accessories",
+        "date": "2013-2014",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "hoover",
+        "name": "Hoover Spares",
+        "date": "2013",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "the-store",
+        "name": "The Store",
+        "date": "2013",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "william-curley",
+        "name": "William Curley",
+        "date": "2013",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "new-naturalists",
+        "name": "New Naturalists",
+        "date": "2013",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "farrell",
+        "name": "Farrell",
+        "date": "2012",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "mr-waghu",
+        "name": "Mr Waghu",
+        "date": "2012",
+        "industry": "Ecommerce",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "powa",
+        "name": "Powa",
+        "industry": "Ecommerce",
+        "date": "2011",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "werelse",
+        "name": "Werelse",
+        "industry": "Ecommerce",
+        "date": "2011",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "jbrand",
+        "name": "J Brand",
+        "industry": "Ecommerce",
+        "date": "2011",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery"
+        ],
+        "primaryTech": "UI templates, CMS"
+      },
+      {
+        "id": "wpfp",
+        "name": "Who Pays Full Price",
+        "industry": "Ecommerce",
+        "date": "2011",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "PHP"
+        ],
+        "primaryTech": "Magento"
+      }
+    ]
+  },
+  {
+    "heading": "Entertainment",
+    "items": [
+      {
+        "id": "fr-cms",
+        "name": "FR CMS",
+        "date": "2017 - present",
+        "industry": "Entertainment",
+        "tech": [
+          "React",
+          "Redux",
+          "MongoDB, Mongoose",
+          "Express, Node js",
+          "JavaScript, ES6",
+          "Webpack",
+          "Sass"
+        ],
+        "primaryTech": "Full stack JS",
+        "moreInfoSoon": [
+          "More info coming soon."
+        ]
+      },
+      {
+        "id": "fiona-ross",
+        "name": "Fiona Ross",
+        "date": "2016 - present",
+        "industry": "Entertainment",
+        "tech": [
+          "Angular",
+          "JavaScript, ES6",
+          "Express, Node js",
+          "HTML, CSS",
+          "Stylus",
+          "Webpack"
+        ],
+        "primaryTech": "Angular",
+        "highlights": [
+          "Redesign for mobiles/tablets/any device size",
+          "Modular, component based architecture",
+          "News feed from node API",
+          "Customised music player",
+          "Various smart features/components such as collaborators and gallery"
+        ],
+        "url": "http://fionaross.co.uk"
+      }
+    ]
+  },
+  {
+    "heading": "Media",
+    "items": [
+      {
+        "id": "full-fact",
+        "name": "Full Fact",
+        "date": "2016 - 2017",
+        "industry": "Media",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript",
+          "Webpack"
+        ],
+        "primaryTech": "UI templates"
+      },
+      {
+        "id": "fifthweek",
+        "name": "Fifthweek",
+        "date": "2014 - 2015",
+        "industry": "Media",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "HTML, CSS",
+          "Grunt",
+          "Sass"
+        ],
+        "primaryTech": "Angular",
+        "url": "http://fifthweek.com"
+      }
+    ]
+  },
+  {
+    "heading": "Health, Lifestyle",
+    "items": [
+      {
+        "id": "plantstove",
+        "name": "Plantstove",
+        "date": "2016",
+        "industry": "Health/Food",
+        "tech": [
+          "MongoDB, Mongoose",
+          "Express, Node js",
+          "Angular",
+          "Redux",
+          "JavaScript, ES6",
+          "HTML, CSS",
+          "Stylus",
+          "Webpack"
+        ],
+        "primaryTech": "Full stack JS",
+        "url":"http://www.plantstove.com"
+      },
+      {
+        "id": "boots-betalabs",
+        "name": "Boots BetaLabs",
+        "date": "2016",
+        "industry": "Health",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "ES6",
+          "d3.js",
+          "HTML, CSS",
+          "Webpack",
+          "Sass"
+        ],
+        "primaryTech": "Angular"
+      },
+      {
+        "id": "lantum",
+        "name": "Lantum",
+        "date": "2015 - 2016",
+        "industry": "Health",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "ES6",
+          "Redux",
+          "HTML, CSS",
+          "Webpack",
+          "Less"
+        ],
+        "primaryTech": "Angular",
+        "url": "http://lantum.com"
+      },
+      {
+        "id": "tailster",
+        "name": "Tailster",
+        "date": "2014 - 2015",
+        "industry": "Pet Care",
+        "tech": [
+          "HTML, CSS",
+          "Less",
+          "AngularJS",
+          "JavaScript",
+          "Gulp"
+        ],
+        "primaryTech": "Angular",
+        "url": "http://tailster.com"
+      },
+      {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "date": "2015",
+        "industry": "Health/Fitness",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "PHP",
+          "Gulp"
+        ],
+        "primaryTech": "WordPress"
+      },
+      {
+        "id": "gold-challenge",
+        "name": "Gold Challenge",
+        "date": "2010",
+        "industry": "Sports",
+        "tech": [
+          "HTML, CSS",
+          "PHP"
+        ],
+        "primaryTech": "Joomla"
+      }
+    ]
+  },
+  {
+    "heading": "Open source",
+    "items": [
+      {
+        "id": "mean-tweets",
+        "name": "Mean tweets",
+        "date": "2015",
+        "industry": "Open source",
+        "tech": [
+          "MongoDB, Mongoose",
+          "Express, Node js",
+          "AngularJS",
+          "JavaScript",
+          "HTML, CSS",
+          "Grunt",
+          "Sass"
+        ],
+        "primaryTech": "Full stack JS",
+        "url": "https://mean-tweets.herokuapp.com"
+      },
+      {
+        "id": "angular-ticker",
+        "name": "Angular ticker",
+        "date": "2015",
+        "industry": "Open source",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "Grunt",
+          "Sass",
+          "HTML, CSS"
+        ],
+        "primaryTech": "Angular",
+        "highlights": [
+          "Built an open source simple ticker directive for easy re-use in any project",
+          "Automatically scrolls through a list of items, fading in/out",
+          "Configurable timing"
+        ],
+        "url": "http://github.com/ttbarnes/angular-ticker"
+      },
+      {
+        "id": "angular-poc-demos",
+        "name": "Angular POC demos",
+        "date": "2015",
+        "industry": "Open source",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "HTML, CSS",
+          "Grunt",
+          "Sass"
+        ],
+        "primaryTech": "Angular",
+        "highlights": [
+          "Created whilst learning and seeking examples of some angular features",
+          "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
+        ],
+        "url": "https://angular-poc-demos.firebaseapp.com"
+      },
+      {
+        "id": "sass-quick-start",
+        "name": "Sass quick start",
+        "date": "2014 - 2015",
+        "industry": "Open source",
+        "tech": [
+          "Grunt",
+          "Gulp",
+          "JavaScript"
+        ],
+        "primaryTech": "JavaScript"
+      },
+      {
+        "id": "jquery/list-icon-manipulator",
+        "name": "List Icon Manipulator",
+        "date": "2013",
+        "industry": "Open source",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
+        "primaryTech": "jQuery plugin"
+      },
+      {
+        "id": "jquery/active-hover-states",
+        "name": "Active Hover States",
+        "date": "2013",
+        "industry": "Open source",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
+        "primaryTech": "jQuery plugin"
+      },
+      {
+        "id": "jquery/portrolio",
+        "name": "Portrolio",
+        "date": "2013",
+        "industry": "Open source",
+        "tech": [
+          "jQuery, JavaScript"
+        ],
+        "primaryTech": "jQuery plugin"
+      }
+    ]
+  },
+  {
+    "heading": "Publishing",
+    "items": [
+      {
+        "id": "reedsy",
+        "name": "Reedsy",
+        "date": "2014 - 2015",
+        "industry": "Publishing",
+        "tech": [
+          "HTML, CSS",
+          "Sass",
+          "AngularJS",
+          "JavaScript, jQuery",
+          "Rails"
+        ],
+        "primaryTech": "Angular",
+        "url": "http://reedsy.com"
+      }
+    ]
+  },
+  {
+    "heading": "Travel, Transportation",
+    "items": [
+      {
+        "id": "trainline",
+        "name": "Trainline",
+        "date": "2016 - 2017",
+        "industry": "Travel",
+        "tech": [
+          "React",
+          "Redux",
+          "TypeScript",
+          "JavaScript",
+          "ES6",
+          "Webpack",
+          "Aphrodite"
+        ],
+        "primaryTech": "React",
+        "url": "http://trainline.com"
+      },
+      {
+        "id": "dvla-personalised-registrations",
+        "name": "DVLA: Personalised Registrations",
+        "date": "2014",
+        "industry": "Digital Transformation",
+        "tech": [
+          "HTML, CSS",
+          "Sass",
+          "JavaScript, jQuery",
+          "Play, Scala"
+        ],
+        "primaryTech": "UI templates"
+      },
+      {
+        "id": "dvla-sell-a-vehicle-into-the-motor-trade",
+        "name": "DVLA: Sell a vehicle into the motor trade",
+        "date": "2014",
+        "industry": "Digital Transformation",
+        "tech": [
+          "HTML, CSS",
+          "Sass",
+          "JavaScript, jQuery",
+          "Play, Scala"
+        ],
+        "primaryTech": "UI templates"
+      },
+      {
+        "id": "dvla-buy-a-vehicle-from-the-motor-trade",
+        "name": "DVLA: Buy a vehicle from the motor trade",
+        "date": "2014",
+        "industry": "Digital Transformation",
+        "tech": [
+          "HTML, CSS",
+          "Sass",
+          "JavaScript, jQuery",
+          "Play, Scala"
+        ],
+        "primaryTech": "UI templates"
+      },
+      {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "date": "2013 - 2014",
+        "industry": "Travel",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "Gulp"
+        ],
+        "primaryTech": "WordPress"
+      },
+      {
+        "id": "propax-malaysia",
+        "name": "Propax Malaysia",
+        "date": "2012",
+        "industry": "Shipping",
+        "tech": [
+          "HTML, CSS"
+        ],
+        "primaryTech": "UI templates"
+      }
+    ]
+  },
+  {
+    "heading": "Many more..."
+  }
+]
