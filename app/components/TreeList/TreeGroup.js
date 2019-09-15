@@ -16,10 +16,9 @@ import {
   ListItemContainer,
   ListItemContent,
   ProjectHeading,
-  PrimaryTechTag,
   TagList,
   TagListItem,
-  ProjectIndustry,
+  Copy,
   ListItemFooter,
   ProjectLink
 } from './styled';
@@ -65,6 +64,9 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
       largeGroupHeight
     } = this.props;
 
+
+    const renderGroupContent = (isLast && !largeGroupHeight) || !isLast;
+
     return (
       <div>
         <HeadingColumn>
@@ -78,58 +80,62 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
             isLast={isLast}
             largeGroupHeight={largeGroupHeight}
           >
-            <Border />
-            <GroupItems>
-              {items && items.map((item) => (
-                <ListItemContainer key={item.name}>
-                  <ListItemContent>
 
-                    <ProjectHeading>
-                      <H4 noMargin>{item.name}</H4>
-                    </ProjectHeading>
+            {renderGroupContent && <Border />}
 
-                    <ProjectIndustry>{item.industry}</ProjectIndustry>
+            {renderGroupContent && (
+              <GroupItems>
+                {items && items.map((item) => (
+                  <ListItemContainer key={item.name}>
+                    <ListItemContent>
 
-                    {item.primaryTech && (
-                      <PrimaryTechTag
-                        type={item.primaryTech}
-                        backgroundTheme
-                        small
-                      />
+                      <ProjectHeading>
+                        <H4 noMargin>{item.name}</H4>
+                      </ProjectHeading>
+
+                      {item.summary && (
+                        <Copy>{item.summary}</Copy>
+                      )}
+
+                      {item.primaryTech && (
+                        <Copy>{item.primaryTech}</Copy>
+                      )}
+
+
+                    </ListItemContent>
+
+                    {item.url && (
+                      <ListItemFooter>
+                        <ProjectLink
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener"
+                          key={item.url}
+                        >
+                          view
+                        </ProjectLink>
+                      </ListItemFooter>
                     )}
 
-                  </ListItemContent>
+                  </ListItemContainer>
+                ))}
 
-                  {item.url && (
-                    <ListItemFooter>
-                      <ProjectLink
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener"
-                        key={item.url}
-                      >
-                        view
-                      </ProjectLink>
-                    </ListItemFooter>
-                  )}
+                {(tags && tags.length) ? (
+                  <TagList>
+                    {tags.map((tagItem) => (
+                      <TagListItem key={tagItem}>
+                        <Tag
+                          type={tagItem}
+                          backgroundTheme
+                        />
+                      </TagListItem>
+                    ))}
+                  </TagList>
+                ) : null}
 
-                </ListItemContainer>
-              ))}
+              </GroupItems>
+            )}
 
-              {(tags && tags.length) ? (
-                <TagList>
-                  {tags.map((tagItem) => (
-                    <TagListItem key={tagItem}>
-                      <Tag
-                        type={tagItem}
-                        backgroundTheme
-                      />
-                    </TagListItem>
-                  ))}
-                </TagList>
-              ) : null}
-
-            </GroupItems>
           </StyledListItem>
         </ul>
       </div>
@@ -137,14 +143,14 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   }
 
   renderGroupContainer() {
-    const { largeGroupHeight } = this.props;
+    const { largeGroupHeight, isLast } = this.props;
     const { isLargeScreen } = this.state;
 
     if (largeGroupHeight) {
       if (isLargeScreen) {
         return (
           <LazyLoad height={650}>
-            <GroupFadeIn>
+            <GroupFadeIn isLast={isLast} largeGroupHeight={largeGroupHeight}>
               {this.renderGroup()}
             </GroupFadeIn>
           </LazyLoad>
@@ -152,7 +158,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
       }
       return (
         <div>
-          <GroupFadeIn>
+          <GroupFadeIn isLast={isLast} largeGroupHeight={largeGroupHeight}>
             {this.renderGroup()}
           </GroupFadeIn>
         </div>
@@ -162,7 +168,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
     if (isLargeScreen) {
       return (
         <LazyLoad height={550}>
-          <GroupFadeInShort>
+          <GroupFadeInShort isLast={isLast}>
             {this.renderGroup()}
           </GroupFadeInShort>
         </LazyLoad>
@@ -170,7 +176,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
     }
     return (
       <div>
-        <GroupFadeInShort>
+        <GroupFadeInShort isLast={isLast}>
           {this.renderGroup()}
         </GroupFadeInShort>
       </div>
@@ -178,12 +184,13 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   }
 
   render() {
-    const { largeGroupHeight, isLast } = this.props;
+    const { isLast, largeGroupHeight, emptyLastItem } = this.props;
 
     return (
       <GroupRoot
         largeGroupHeight={largeGroupHeight}
         isLast={isLast}
+        emptyLastItem={emptyLastItem}
       >
         {this.renderGroupContainer()}
       </GroupRoot>
@@ -196,14 +203,16 @@ TreeGroup.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object),
   tags: PropTypes.arrayOf(PropTypes.string),
   isLast: PropTypes.bool,
-  largeGroupHeight: PropTypes.bool
+  largeGroupHeight: PropTypes.bool,
+  emptyLastItem: PropTypes.bool
 };
 
 TreeGroup.defaultProps = {
   isLast: false,
   items: [],
   tags: [],
-  largeGroupHeight: false
+  largeGroupHeight: false,
+  emptyLastItem: false
 };
 
 export default TreeGroup;

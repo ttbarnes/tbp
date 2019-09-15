@@ -2,6 +2,18 @@ import styled, { keyframes } from 'styled-components';
 import Tag from 'components/Tag';
 import { media, colors } from '../styledShared';
 
+const isLastGroupAnimation = (props) => `
+  ${(props.isLast && props.largeGroupHeight) && `
+    animation: none;
+  `}
+`;
+
+const isLastGroupMarginLargeBreakPoint = (props) => `
+  ${props.isLast && `
+    margin-top: -5em;
+  `}
+`;
+
 const groupFadeInShort = keyframes`
   0% {
     opacity: 0;
@@ -27,7 +39,6 @@ export const GroupFadeInShort = styled.div`
   `}
 `;
 
-
 const groupFadeIn = keyframes`
   0% {
     opacity: 0;
@@ -43,14 +54,18 @@ const groupFadeIn = keyframes`
   }
 `;
 
-
 export const GroupFadeIn = styled.div`
   ${media.md`
     animation: ${groupFadeIn} 0.6s linear;
     margin-top: -13em;
     position: relative;
-  `}
+  `};
+  ${isLastGroupAnimation}
+  ${media.lg`
+    ${isLastGroupMarginLargeBreakPoint}
+  `};
 `;
+
 
 export const Root = styled.li`
   list-style-type: none;
@@ -63,9 +78,7 @@ const rootIslargeGroupHeight = (props) => `
 `;
 
 const rootIsLast = (props) => `
-  ${props.isLast && `
-    padding-bottom: 0;
-  `}
+  ${(props.isLast && props.largeGroupHeight) && 'padding-bottom: 5em;'}
 `;
 
 export const GroupRoot = styled.li`
@@ -145,7 +158,8 @@ export const Heading = styled.p`
 
 const isLastItem = (props) => `
   ${props.isLast && `
-    padding-bottom: 4.5em;
+    padding-top: 0;
+    padding-bottom: 0;
   `}
 `;
 
@@ -264,7 +278,7 @@ export const TagListItem = styled.li`
   padding-right: .2em;
 `;
 
-export const ProjectIndustry = styled.p`
+export const Copy = styled.p`
   font-size: 80%;
   line-height: initial;
   margin: .1em 0 1em 0;

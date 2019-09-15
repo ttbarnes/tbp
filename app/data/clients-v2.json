@@ -18,6 +18,7 @@
         "name": "WorldRemit",
         "date": "2018-2019",
         "industry": "FinTech",
+        "summary": "MVP development",
         "tech": [
           "React",
           "Redux",
@@ -49,6 +50,7 @@
         "name": "Crypto Reports Combiner",
         "date": "2018",
         "industry": "FinTech",
+        "summary": "MVP development",
         "tech": [
           "React",
           "Redux",
@@ -85,6 +87,7 @@
         "id": "evaluate-technologies",
         "name": "Evaluate Technologies",
         "date": "2009 - 2010",
+        "industry": "FinTech",
         "tech": [
           "HTML, CSS",
           "JavaScript"
