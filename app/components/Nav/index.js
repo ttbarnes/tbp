@@ -15,33 +15,52 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   constructor(props) {
     super(props);
     this.state = {
+      menuOpen: false,
       isLargeScreen: false
     };
   }
 
   componentDidMount() {
-    this.setIsLargeScreen();
+    this.handleLargeScreen();
     window.addEventListener('resize', () => {
-      this.setIsLargeScreen();
+      this.handleLargeScreen();
     });
   }
 
-  setIsLargeScreen() {
-    const { isLargeScreen } = this.state;
+  handleLargeScreen() {
     if (window.matchMedia('(min-width: 990px)').matches) {
+      this.openMenu();
       this.setState({
         isLargeScreen: true
       });
-    } else if (isLargeScreen) {
+    } else {
+      this.closeMenu();
       this.setState({
         isLargeScreen: false
       });
     }
   }
 
+  closeMenu() {
+    this.toggleMenu(false);
+  }
+
+  openMenu() {
+    this.toggleMenu(true);
+  }
+
+  toggleMenu(bool) {
+    this.setState({
+      menuOpen: bool
+    });
+  }
+
   render() {
     const { location } = this.props;
-    const { isLargeScreen } = this.state;
+    const {
+      menuOpen,
+      isLargeScreen
+    } = this.state;
 
     const isHomePage = location && location.pathname === '/';
 
@@ -52,19 +71,52 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
     return (
       <Root>
         <BurgerMenu
-          isOpen={isLargeScreen}
+          isOpen={menuOpen}
+          onStateChange={(state) => this.toggleMenu(state.isOpen)}
           width={NAV_MAX_WIDTH}
-          noOverlay={isLargeScreen}
+          noOverlay={!menuOpen || isLargeScreen}
           customCrossIcon={<span></span>}
           disableCloseOnEsc
         >
           <div>
             <ListRoot>
-              <NavLinkRoot to="/" activeClassName="active">Tony Barnes</NavLinkRoot>
-              <NavNavLink to="/about" activeClassName="active">About</NavNavLink>
-              <NavNavLink to="/clients" activeClassName="active">Clients</NavNavLink>
-              <NavNavLink to="/technologies" activeClassName="active">Technologies</NavNavLink>
-              <NavNavLink to="/contact" activeClassName="active">Contact</NavNavLink>
+
+              <NavLinkRoot
+                to="/"
+                activeClassName="active"
+                onClick={() => !isLargeScreen && this.closeMenu()}
+              >Tony Barnes
+              </NavLinkRoot>
+
+              <NavNavLink
+                to="/about"
+                activeClassName="active"
+                onClick={() => !isLargeScreen && this.closeMenu()}
+              >
+                About
+              </NavNavLink>
+
+              <NavNavLink
+                to="/clients"
+                activeClassName="active"
+                onClick={() => !isLargeScreen && this.closeMenu()}
+              >Clients
+              </NavNavLink>
+
+              <NavNavLink
+                to="/technologies"
+                activeClassName="active"
+                onClick={() => !isLargeScreen && this.closeMenu()}
+              >Technologies
+              </NavNavLink>
+
+              <NavNavLink
+                to="/contact"
+                activeClassName="active"
+                onClick={() => !isLargeScreen && this.closeMenu()}
+              >Contact
+              </NavNavLink>
+
             </ListRoot>
           </div>
         </BurgerMenu>

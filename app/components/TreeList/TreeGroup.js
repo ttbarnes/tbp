@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LazyLoad from 'react-lazyload';
-import {
-  FadeIn,
-  FadeInLong
-} from 'components/styledShared';
 import Tag from 'components/Tag';
 import H4 from 'components/H4';
 import {
   GroupRoot,
+  GroupFadeInShort,
+  GroupFadeIn,
   HeadingColumn,
   HeadingContent,
   Heading,
@@ -146,17 +144,17 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
       if (isLargeScreen) {
         return (
           <LazyLoad height={650}>
-            <FadeInLong>
+            <GroupFadeIn>
               {this.renderGroup()}
-            </FadeInLong>
+            </GroupFadeIn>
           </LazyLoad>
         );
       }
       return (
         <div>
-          <FadeInLong>
+          <GroupFadeIn>
             {this.renderGroup()}
-          </FadeInLong>
+          </GroupFadeIn>
         </div>
       );
     }
@@ -164,17 +162,17 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
     if (isLargeScreen) {
       return (
         <LazyLoad height={550}>
-          <FadeIn>
+          <GroupFadeInShort>
             {this.renderGroup()}
-          </FadeIn>
+          </GroupFadeInShort>
         </LazyLoad>
       );
     }
     return (
       <div>
-        <FadeIn>
+        <GroupFadeInShort>
           {this.renderGroup()}
-        </FadeIn>
+        </GroupFadeInShort>
       </div>
     );
   }

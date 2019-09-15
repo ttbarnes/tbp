@@ -22,4 +22,3 @@ export const StyledPageCta = styled.div`
   `};
   ${noMargin}
 `;
-

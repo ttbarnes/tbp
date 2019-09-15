@@ -147,56 +147,20 @@ export const tagColors = {
   jest: colors.green5
 };
 
+export const BoldLink = styled(Link)`
+  font-weight: bold;
+`;
+
+
 const fadeIn = keyframes`
   0% {
     opacity: 0;
-    margin-top: 0;
   }
-
-  50% {
-    opacity: 0.2;
-    margin-top: -2.5em;
-  }
-
   100% {
     opacity: 1;
-    margin-top: -5em;
   }
 `;
 
 export const FadeIn = styled.div`
-  ${media.md`
-    animation: ${fadeIn} 0.6s linear;
-    margin-top: -5em;
-    position: relative;
-  `}
-`;
-
-
-const fadeInLong = keyframes`
-  0% {
-    opacity: 0;
-    margin-top: 0;
-  }
-  50% {
-    opacity: 0.2;
-    margin-top: -8em;
-  }
-  100% {
-    opacity: 1;
-    margin-top: -13em;
-  }
-`;
-
-
-export const FadeInLong = styled.div`
-  ${media.md`
-    animation: ${fadeInLong} 0.6s linear;
-    margin-top: -13em;
-    position: relative;
-  `}
-`;
-
-export const BoldLink = styled(Link)`
-  font-weight: bold;
+  animation: ${fadeIn} 0.8s linear;
 `;
