@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router-dom';
 import H1 from 'components/H1';
 import H2 from 'components/H2';
-import ProjectsSummary from 'components/Dev/ProjectsSummary';
-import Projects from 'components/Dev/Projects';
+import ClientsSummary from 'components/ClientsSummary';
+import TreeList from 'components/TreeList';
+import PageCta from 'components/PageCta';
 import PageContainer from '../PageContainer';
 import {
-  selectProjectsSummary,
-  selectProjectsData
+  selectClientsSummary,
+  selectClientsData
 } from './selectors';
 
 export class ClientsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     const {
-      projectsSummary,
-      projects
+      clientsSummary,
+      clients
     } = this.props;
 
     return (
@@ -36,24 +37,32 @@ export class ClientsPage extends React.PureComponent { // eslint-disable-line re
 
         <H2 h1Size>I{'\''}ve worked with some great people</H2>
 
-        <ProjectsSummary projects={projectsSummary} />
+        <ClientsSummary clients={clientsSummary} />
 
-        <Projects
-          projects={projects}
+        <TreeList
+          data={clients}
+          largeGroupHeight
         />
+
+        <PageCta
+          heading="Maybe we could build something together?"
+          contactCopy="Send me a message"
+          secondCta={<p><Link to="about">Read about me</Link></p>}
+        />
+
       </PageContainer>
     );
   }
 }
 
 ClientsPage.propTypes = {
-  projectsSummary: PropTypes.array.isRequired,
-  projects: PropTypes.array.isRequired
+  clientsSummary: PropTypes.array.isRequired,
+  clients: PropTypes.array.isRequired
 };
 
 const mapStateToProps = createStructuredSelector({
-  projectsSummary: selectProjectsSummary(),
-  projects: selectProjectsData()
+  clientsSummary: selectClientsSummary(),
+  clients: selectClientsData()
 });
 
 const withConnect = connect(mapStateToProps, null);

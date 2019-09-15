@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../styledShared';
+import { media } from '../styledShared';
 
 export const ListRoot = styled.ul`
   margin-bottom: 2em;

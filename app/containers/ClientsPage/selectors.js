@@ -1,15 +1,15 @@
 import { createSelector } from 'reselect';
 
-const selectProjectsSummary = () => (state) => state.projects.summary;
+const selectClients = () => (state) => state.clients;
 
-const selectProjects = () => (state) => state.projects;
+const selectClientsSummary = () => (state) => state.clients.summary;
 
-const selectProjectsData = () => createSelector(
-  selectProjects(),
-  (projectsState) => projectsState.data
+const selectClientsData = () => createSelector(
+  selectClients(),
+  (clientsState) => clientsState.data
 );
 
 export {
-  selectProjectsSummary,
-  selectProjectsData
+  selectClientsSummary,
+  selectClientsData
 };
