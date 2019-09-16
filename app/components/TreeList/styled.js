@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import Tag from 'components/Tag';
+import H4 from 'components/H4';
 import { media, colors } from '../styledShared';
 
 const isLastGroupAnimation = (props) => `
@@ -232,6 +233,10 @@ export const ProjectHeading = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+`;
+
+export const StyledH4 = styled(H4)`
+  font-weight: normal;
 `;
 
 export const ListItemFooter = styled.div`

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LazyLoad from 'react-lazyload';
 import Tag from 'components/Tag';
-import H4 from 'components/H4';
 import {
   GroupRoot,
   GroupFadeInShort,
@@ -20,7 +19,8 @@ import {
   TagListItem,
   Copy,
   ListItemFooter,
-  ProjectLink
+  ProjectLink,
+  StyledH4
 } from './styled';
 
 export class TreeGroup extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -87,10 +87,16 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
               <GroupItems>
                 {items && items.map((item) => (
                   <ListItemContainer key={item.name}>
-                    <ListItemContent>
+                    <ListItemContent
+                      style={item.colors && {
+                        background: item.colors.bg,
+                        color: item.colors.text,
+                        border: `solid 1px ${item.colors.border}`
+                      }}
+                    >
 
                       <ProjectHeading>
-                        <H4 noMargin>{item.name}</H4>
+                        <StyledH4 noMargin>{item.name}</StyledH4>
                       </ProjectHeading>
 
                       {item.summary && (
