@@ -1,16 +1,5 @@
 [
   {
-    "heading": "Currently",
-    "subHeading": "2018-2019",
-    "items": [
-      {
-        "id": "currently",
-        "name": "Various TBC",
-        "date": "2019 - present"
-      }
-    ]
-  },
-  {
     "heading": "FinTech",
     "items": [
       {
@@ -47,7 +36,7 @@
       },
       {
         "id": "crypto-reports-combiner",
-        "name": "Crypto Reports Combiner",
+        "name": "Crypto Reports",
         "date": "2018",
         "industry": "FinTech",
         "summary": "MVP development",
@@ -82,17 +71,144 @@
           "Less"
         ],
         "primaryTech": "Angular"
+      }
+    ]
+  },
+  {
+    "heading": "Travel, Transportation",
+    "items": [
+      {
+        "id": "trainline",
+        "name": "Trainline",
+        "date": "2016 - 2017",
+        "industry": "Travel",
+        "tech": [
+          "React",
+          "Redux",
+          "TypeScript",
+          "JavaScript",
+          "ES6",
+          "Webpack",
+          "Aphrodite"
+        ],
+        "primaryTech": "React",
+        "url": "http://trainline.com"
       },
       {
-        "id": "evaluate-technologies",
-        "name": "Evaluate Technologies",
-        "date": "2009 - 2010",
-        "industry": "FinTech",
+        "id": "dvla",
+        "name": "DVLA",
+        "summary": "Personalised Registrations, buying and selling vehicles",
+        "date": "2014",
+        "industry": "Digital Transformation",
         "tech": [
           "HTML, CSS",
-          "JavaScript"
+          "Sass",
+          "JavaScript, jQuery",
+          "Play, Scala"
         ],
         "primaryTech": "UI templates"
+      },
+      {
+        "id": "mara-explorers",
+        "name": "Mara Explorers",
+        "date": "2013 - 2014",
+        "industry": "Travel",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "Gulp"
+        ],
+        "primaryTech": "WordPress"
+      },
+      {
+        "id": "propax-malaysia",
+        "name": "Propax Malaysia",
+        "date": "2012",
+        "industry": "Shipping",
+        "tech": [
+          "HTML, CSS"
+        ],
+        "primaryTech": "UI templates"
+      }
+    ]
+  },
+  {
+    "heading": "Health, Lifestyle",
+    "items": [
+      {
+        "id": "plantstove",
+        "name": "Plantstove",
+        "date": "2016",
+        "industry": "Health/Food",
+        "tech": [
+          "MongoDB, Mongoose",
+          "Express, Node js",
+          "Angular",
+          "Redux",
+          "JavaScript, ES6",
+          "HTML, CSS",
+          "Stylus",
+          "Webpack"
+        ],
+        "primaryTech": "Full stack JS",
+        "url": "http://www.plantstove.com"
+      },
+      {
+        "id": "boots-betalabs",
+        "name": "Boots BetaLabs",
+        "date": "2016",
+        "industry": "Health",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "ES6",
+          "d3.js",
+          "HTML, CSS",
+          "Webpack",
+          "Sass"
+        ],
+        "primaryTech": "Angular"
+      },
+      {
+        "id": "lantum",
+        "name": "Lantum",
+        "date": "2015 - 2016",
+        "industry": "Health",
+        "tech": [
+          "AngularJS",
+          "JavaScript",
+          "ES6",
+          "Redux",
+          "HTML, CSS",
+          "Webpack",
+          "Less"
+        ],
+        "primaryTech": "Angular",
+        "url": "http://lantum.com"
+      },
+      {
+        "id": "cathy-brown-v2",
+        "name": "Cathy Brown",
+        "date": "2015",
+        "industry": "Health/Fitness",
+        "tech": [
+          "HTML, CSS",
+          "JavaScript, jQuery",
+          "PHP",
+          "Gulp"
+        ],
+        "primaryTech": "WordPress"
+      },
+      {
+        "id": "gold-challenge",
+        "name": "Gold Challenge",
+        "date": "2010",
+        "industry": "Sports",
+        "tech": [
+          "HTML, CSS",
+          "PHP"
+        ],
+        "primaryTech": "Joomla"
       }
     ]
   },
@@ -115,140 +231,8 @@
         "primaryTech": "React"
       },
       {
-        "id": "robbie-williams",
-        "name": "Robbie Williams",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "collins-learning",
-        "name": "Collins Learning",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "tolkien",
-        "name": "Tolkien",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "electrolux",
-        "name": "Electrolux Parts & Accessories",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "aeg",
-        "name": "AEG Parts & Accessories",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "zanussi",
-        "name": "Zanussi Parts & Accessories",
-        "date": "2013-2014",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "hoover",
-        "name": "Hoover Spares",
-        "date": "2013",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "the-store",
-        "name": "The Store",
-        "date": "2013",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "william-curley",
-        "name": "William Curley",
-        "date": "2013",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "new-naturalists",
-        "name": "New Naturalists",
-        "date": "2013",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "farrell",
-        "name": "Farrell",
-        "date": "2012",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "mr-waghu",
-        "name": "Mr Waghu",
-        "date": "2012",
-        "industry": "Ecommerce",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
         "id": "powa",
-        "name": "Powa",
+        "name": "Powa Technologies",
         "industry": "Ecommerce",
         "date": "2011",
         "tech": [
@@ -256,40 +240,6 @@
           "JavaScript, jQuery"
         ],
         "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "werelse",
-        "name": "Werelse",
-        "industry": "Ecommerce",
-        "date": "2011",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "jbrand",
-        "name": "J Brand",
-        "industry": "Ecommerce",
-        "date": "2011",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery"
-        ],
-        "primaryTech": "UI templates, CMS"
-      },
-      {
-        "id": "wpfp",
-        "name": "Who Pays Full Price",
-        "industry": "Ecommerce",
-        "date": "2011",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery",
-          "PHP"
-        ],
-        "primaryTech": "Magento"
       }
     ]
   },
@@ -298,7 +248,7 @@
     "items": [
       {
         "id": "fr-cms",
-        "name": "FR CMS",
+        "name": "Fiona Ross CMS",
         "date": "2017 - present",
         "industry": "Entertainment",
         "tech": [
@@ -369,101 +319,6 @@
         ],
         "primaryTech": "Angular",
         "url": "http://fifthweek.com"
-      }
-    ]
-  },
-  {
-    "heading": "Health, Lifestyle",
-    "items": [
-      {
-        "id": "plantstove",
-        "name": "Plantstove",
-        "date": "2016",
-        "industry": "Health/Food",
-        "tech": [
-          "MongoDB, Mongoose",
-          "Express, Node js",
-          "Angular",
-          "Redux",
-          "JavaScript, ES6",
-          "HTML, CSS",
-          "Stylus",
-          "Webpack"
-        ],
-        "primaryTech": "Full stack JS",
-        "url":"http://www.plantstove.com"
-      },
-      {
-        "id": "boots-betalabs",
-        "name": "Boots BetaLabs",
-        "date": "2016",
-        "industry": "Health",
-        "tech": [
-          "AngularJS",
-          "JavaScript",
-          "ES6",
-          "d3.js",
-          "HTML, CSS",
-          "Webpack",
-          "Sass"
-        ],
-        "primaryTech": "Angular"
-      },
-      {
-        "id": "lantum",
-        "name": "Lantum",
-        "date": "2015 - 2016",
-        "industry": "Health",
-        "tech": [
-          "AngularJS",
-          "JavaScript",
-          "ES6",
-          "Redux",
-          "HTML, CSS",
-          "Webpack",
-          "Less"
-        ],
-        "primaryTech": "Angular",
-        "url": "http://lantum.com"
-      },
-      {
-        "id": "tailster",
-        "name": "Tailster",
-        "date": "2014 - 2015",
-        "industry": "Pet Care",
-        "tech": [
-          "HTML, CSS",
-          "Less",
-          "AngularJS",
-          "JavaScript",
-          "Gulp"
-        ],
-        "primaryTech": "Angular",
-        "url": "http://tailster.com"
-      },
-      {
-        "id": "cathy-brown-v2",
-        "name": "Cathy Brown",
-        "date": "2015",
-        "industry": "Health/Fitness",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery",
-          "PHP",
-          "Gulp"
-        ],
-        "primaryTech": "WordPress"
-      },
-      {
-        "id": "gold-challenge",
-        "name": "Gold Challenge",
-        "date": "2010",
-        "industry": "Sports",
-        "tech": [
-          "HTML, CSS",
-          "PHP"
-        ],
-        "primaryTech": "Joomla"
       }
     ]
   },
@@ -539,137 +394,11 @@
         "primaryTech": "JavaScript"
       },
       {
-        "id": "jquery/list-icon-manipulator",
-        "name": "List Icon Manipulator",
-        "date": "2013",
+        "id": "jquery-plugins",
+        "name": "jQuery plugins",
         "industry": "Open source",
-        "tech": [
-          "jQuery, JavaScript"
-        ],
-        "primaryTech": "jQuery plugin"
-      },
-      {
-        "id": "jquery/active-hover-states",
-        "name": "Active Hover States",
         "date": "2013",
-        "industry": "Open source",
-        "tech": [
-          "jQuery, JavaScript"
-        ],
-        "primaryTech": "jQuery plugin"
-      },
-      {
-        "id": "jquery/portrolio",
-        "name": "Portrolio",
-        "date": "2013",
-        "industry": "Open source",
-        "tech": [
-          "jQuery, JavaScript"
-        ],
-        "primaryTech": "jQuery plugin"
-      }
-    ]
-  },
-  {
-    "heading": "Publishing",
-    "items": [
-      {
-        "id": "reedsy",
-        "name": "Reedsy",
-        "date": "2014 - 2015",
-        "industry": "Publishing",
-        "tech": [
-          "HTML, CSS",
-          "Sass",
-          "AngularJS",
-          "JavaScript, jQuery",
-          "Rails"
-        ],
-        "primaryTech": "Angular",
-        "url": "http://reedsy.com"
-      }
-    ]
-  },
-  {
-    "heading": "Travel, Transportation",
-    "items": [
-      {
-        "id": "trainline",
-        "name": "Trainline",
-        "date": "2016 - 2017",
-        "industry": "Travel",
-        "tech": [
-          "React",
-          "Redux",
-          "TypeScript",
-          "JavaScript",
-          "ES6",
-          "Webpack",
-          "Aphrodite"
-        ],
-        "primaryTech": "React",
-        "url": "http://trainline.com"
-      },
-      {
-        "id": "dvla-personalised-registrations",
-        "name": "DVLA: Personalised Registrations",
-        "date": "2014",
-        "industry": "Digital Transformation",
-        "tech": [
-          "HTML, CSS",
-          "Sass",
-          "JavaScript, jQuery",
-          "Play, Scala"
-        ],
-        "primaryTech": "UI templates"
-      },
-      {
-        "id": "dvla-sell-a-vehicle-into-the-motor-trade",
-        "name": "DVLA: Sell a vehicle into the motor trade",
-        "date": "2014",
-        "industry": "Digital Transformation",
-        "tech": [
-          "HTML, CSS",
-          "Sass",
-          "JavaScript, jQuery",
-          "Play, Scala"
-        ],
-        "primaryTech": "UI templates"
-      },
-      {
-        "id": "dvla-buy-a-vehicle-from-the-motor-trade",
-        "name": "DVLA: Buy a vehicle from the motor trade",
-        "date": "2014",
-        "industry": "Digital Transformation",
-        "tech": [
-          "HTML, CSS",
-          "Sass",
-          "JavaScript, jQuery",
-          "Play, Scala"
-        ],
-        "primaryTech": "UI templates"
-      },
-      {
-        "id": "mara-explorers",
-        "name": "Mara Explorers",
-        "date": "2013 - 2014",
-        "industry": "Travel",
-        "tech": [
-          "HTML, CSS",
-          "JavaScript, jQuery",
-          "Gulp"
-        ],
-        "primaryTech": "WordPress"
-      },
-      {
-        "id": "propax-malaysia",
-        "name": "Propax Malaysia",
-        "date": "2012",
-        "industry": "Shipping",
-        "tech": [
-          "HTML, CSS"
-        ],
-        "primaryTech": "UI templates"
+        "summary": "Portrolio, List icon manipulator, Active hover states"
       }
     ]
   },
