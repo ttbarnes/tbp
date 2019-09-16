@@ -62,7 +62,11 @@
           "As a proof of concept, I built an API and UI that combined and mapped trade history data from multiple exchanges",
           "Added the ability to add notes and tags to each trade",
           "Allowed users to download all history as a single CSV/PDF"
-        ]
+        ],
+        "colors": {
+          "bg": "#D1DDE6",
+          "text": "#000"
+        }
       },
       {
         "id": "saranac",
@@ -78,7 +82,11 @@
           "Grunt",
           "Less"
         ],
-        "primaryTech": "Angular"
+        "primaryTech": "Angular",
+        "colors": {
+          "bg": "#2E2D2E",
+          "text": "#FFF"
+        }
       }
     ]
   },
@@ -118,7 +126,11 @@
           "JavaScript, jQuery",
           "Play, Scala"
         ],
-        "primaryTech": "UI templates"
+        "primaryTech": "UI templates",
+        "colors": {
+          "bg": "#0B0C0C",
+          "text": "#FFF"
+        }
       },
       {
         "id": "mara-explorers",
@@ -130,7 +142,11 @@
           "JavaScript, jQuery",
           "Gulp"
         ],
-        "primaryTech": "WordPress"
+        "primaryTech": "WordPress",
+        "colors": {
+          "bg": "#9DB197",
+          "text": "#111010"
+        }
       },
       {
         "id": "propax-malaysia",
@@ -140,7 +156,11 @@
         "tech": [
           "HTML, CSS"
         ],
-        "primaryTech": "UI templates"
+        "primaryTech": "UI templates",
+        "colors": {
+          "bg": "#01633D",
+          "text": "#FFF"
+        }
       }
     ]
   },
@@ -163,7 +183,11 @@
           "Webpack"
         ],
         "primaryTech": "Full stack JS",
-        "url": "http://www.plantstove.com"
+        "url": "http://www.plantstove.com",
+        "colors": {
+          "bg": "#D1DDE6",
+          "text": "#000"
+        }
       },
       {
         "id": "boots-betalabs",
@@ -179,7 +203,12 @@
           "Webpack",
           "Sass"
         ],
-        "primaryTech": "Angular"
+        "primaryTech": "Angular",
+        "colors": {
+          "bg": "#FFF",
+          "text": "#151961",
+          "border": "#151961"
+        }
       },
       {
         "id": "lantum",
@@ -213,7 +242,11 @@
           "PHP",
           "Gulp"
         ],
-        "primaryTech": "WordPress"
+        "primaryTech": "WordPress",
+        "colors": {
+          "bg": "#1F1F1F",
+          "text": "#FFF"
+        }
       },
       {
         "id": "gold-challenge",
@@ -224,7 +257,12 @@
           "HTML, CSS",
           "PHP"
         ],
-        "primaryTech": "Joomla"
+        "primaryTech": "Joomla",
+        "colors": {
+          "bg": "#FFF",
+          "text": "#CB9D59",
+          "border": "#CB9D59"
+        }
       }
     ]
   },
@@ -260,7 +298,12 @@
           "HTML, CSS",
           "JavaScript, jQuery"
         ],
-        "primaryTech": "UI templates, CMS"
+        "primaryTech": "UI templates, CMS",
+        "colors": {
+          "bg": "#4A81C3",
+          "text": "#FFF"
+        }
+        
       }
     ]
   },
@@ -332,7 +375,12 @@
           "JavaScript",
           "Webpack"
         ],
-        "primaryTech": "UI templates"
+        "primaryTech": "UI templates",
+        "colors": {
+          "bg": "#FFF",
+          "text": "#222",
+          "border": "#222"
+        }
       },
       {
         "id": "fifthweek",
@@ -347,7 +395,11 @@
           "Sass"
         ],
         "primaryTech": "Angular",
-        "url": "http://fifthweek.com"
+        "url": "http://fifthweek.com",
+        "colors": {
+          "bg": "#A1B3EB",
+          "text": "#FFF"
+        }
       }
     ]
   },
