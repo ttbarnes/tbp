@@ -17,7 +17,11 @@
           "Webpack",
           "Ruby"
         ],
-        "primaryTech": "Full stack JS"
+        "primaryTech": "Full stack JS",
+        "colors": {
+          "bg": "#735996",
+          "text": "#FFF"
+        }
       },
       {
         "id": "ihs-markit",
@@ -32,7 +36,11 @@
           "Sass",
           "Docker"
         ],
-        "primaryTech": "React"
+        "primaryTech": "React",
+        "colors": {
+          "bg": "#33383E",
+          "text": "#FFF"
+        }
       },
       {
         "id": "crypto-reports-combiner",
@@ -92,7 +100,11 @@
           "Aphrodite"
         ],
         "primaryTech": "React",
-        "url": "http://trainline.com"
+        "url": "http://trainline.com",
+        "colors": {
+          "bg": "#21314D",
+          "text": "#FFF"
+        }
       },
       {
         "id": "dvla",
@@ -184,7 +196,11 @@
           "Less"
         ],
         "primaryTech": "Angular",
-        "url": "http://lantum.com"
+        "url": "http://lantum.com",
+        "colors": {
+          "bg": "#03254e",
+          "text": "#FFF"
+        }
       },
       {
         "id": "cathy-brown-v2",
@@ -228,7 +244,12 @@
           "Webpack",
           "Sass"
         ],
-        "primaryTech": "React"
+        "primaryTech": "React",
+        "colors": {
+          "bg": "#FFF",
+          "text": "#5C8017",
+          "border": "#5C8017"
+        }
       },
       {
         "id": "powa",
@@ -263,7 +284,11 @@
         "primaryTech": "Full stack JS",
         "moreInfoSoon": [
           "More info coming soon."
-        ]
+        ],
+        "colors": {
+          "bg": "#282828",
+          "text": "#E4E4E4"
+        }
       },
       {
         "id": "fiona-ross",
@@ -286,7 +311,11 @@
           "Customised music player",
           "Various smart features/components such as collaborators and gallery"
         ],
-        "url": "http://fionaross.co.uk"
+        "url": "http://fionaross.co.uk",
+        "colors": {
+          "bg": "#282828",
+          "text": "#E4E4E4"
+        }
       }
     ]
   },
