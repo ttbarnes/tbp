@@ -7,7 +7,7 @@
         "name": "WorldRemit",
         "date": "2018-2019",
         "industry": "FinTech",
-        "summary": "MVP development",
+        "summary": "Replatforming",
         "tech": [
           "React",
           "Redux",
@@ -40,14 +40,15 @@
         "colors": {
           "bg": "#33383E",
           "text": "#FFF"
-        }
+        },
+        "summary": "MVP development"
       },
       {
         "id": "crypto-reports-combiner",
         "name": "Crypto Reports",
         "date": "2018",
         "industry": "FinTech",
-        "summary": "MVP development",
+        "summary": "Prototype/proof of concept",
         "tech": [
           "React",
           "Redux",
@@ -86,7 +87,8 @@
         "colors": {
           "bg": "#2E2D2E",
           "text": "#FFF"
-        }
+        },
+        "summary": "MVP development"
       }
     ]
   },
@@ -112,12 +114,12 @@
         "colors": {
           "bg": "#21314D",
           "text": "#FFF"
-        }
+        },
+        "summary": "Replatforming"
       },
       {
         "id": "dvla",
         "name": "DVLA",
-        "summary": "Personalised Registrations, buying and selling vehicles",
         "date": "2014",
         "industry": "Digital Transformation",
         "tech": [
@@ -130,7 +132,8 @@
         "colors": {
           "bg": "#0B0C0C",
           "text": "#FFF"
-        }
+        },
+        "summary": "MVP development, digital transformation"
       },
       {
         "id": "mara-explorers",
@@ -146,7 +149,8 @@
         "colors": {
           "bg": "#9DB197",
           "text": "#111010"
-        }
+        },
+        "summary": "Static website"
       },
       {
         "id": "propax-malaysia",
@@ -160,7 +164,8 @@
         "colors": {
           "bg": "#01633D",
           "text": "#FFF"
-        }
+        },
+        "summary": "Static website"
       }
     ]
   },
@@ -187,7 +192,8 @@
         "colors": {
           "bg": "#D1DDE6",
           "text": "#000"
-        }
+        },
+        "summary": "MVP development"
       },
       {
         "id": "boots-betalabs",
@@ -208,7 +214,8 @@
           "bg": "#FFF",
           "text": "#151961",
           "border": "#151961"
-        }
+        },
+        "summary": "MVP development"
       },
       {
         "id": "lantum",
@@ -229,7 +236,8 @@
         "colors": {
           "bg": "#03254e",
           "text": "#FFF"
-        }
+        },
+        "summary": "Replatforming"
       },
       {
         "id": "cathy-brown-v2",
@@ -246,7 +254,8 @@
         "colors": {
           "bg": "#1F1F1F",
           "text": "#FFF"
-        }
+        },
+        "summary": "Static website"
       },
       {
         "id": "gold-challenge",
@@ -262,7 +271,8 @@
           "bg": "#FFF",
           "text": "#CB9D59",
           "border": "#CB9D59"
-        }
+        },
+        "summary": "Static website"
       }
     ]
   },
@@ -287,7 +297,8 @@
           "bg": "#FFF",
           "text": "#5C8017",
           "border": "#5C8017"
-        }
+        },
+        "summary": "Replatforming"
       },
       {
         "id": "powa",
@@ -302,37 +313,14 @@
         "colors": {
           "bg": "#4A81C3",
           "text": "#FFF"
-        }
-        
+        },
+        "summary": "Ecommerce websites, custom UI framework"
       }
     ]
   },
   {
     "heading": "Entertainment",
     "items": [
-      {
-        "id": "fr-cms",
-        "name": "Fiona Ross CMS",
-        "date": "2017 - present",
-        "industry": "Entertainment",
-        "tech": [
-          "React",
-          "Redux",
-          "MongoDB, Mongoose",
-          "Express, Node js",
-          "JavaScript, ES6",
-          "Webpack",
-          "Sass"
-        ],
-        "primaryTech": "Full stack JS",
-        "moreInfoSoon": [
-          "More info coming soon."
-        ],
-        "colors": {
-          "bg": "#282828",
-          "text": "#E4E4E4"
-        }
-      },
       {
         "id": "fiona-ross",
         "name": "Fiona Ross",
@@ -344,9 +332,16 @@
           "Express, Node js",
           "HTML, CSS",
           "Stylus",
-          "Webpack"
+          "Webpack",
+          "React",
+          "Redux",
+          "MongoDB, Mongoose",
+          "Express, Node js",
+          "JavaScript, ES6",
+          "Webpack",
+          "Sass"
         ],
-        "primaryTech": "Angular",
+        "primaryTech": "Full stack JS",
         "highlights": [
           "Redesign for mobiles/tablets/any device size",
           "Modular, component based architecture",
@@ -358,7 +353,8 @@
         "colors": {
           "bg": "#282828",
           "text": "#E4E4E4"
-        }
+        },
+        "summary": "Bespoke CMS, website"
       }
     ]
   },
@@ -399,7 +395,8 @@
         "colors": {
           "bg": "#A1B3EB",
           "text": "#FFF"
-        }
+        },
+        "summary": "MVP development"
       }
     ]
   },
@@ -421,7 +418,8 @@
           "Sass"
         ],
         "primaryTech": "Full stack JS",
-        "url": "https://mean-tweets.herokuapp.com"
+        "url": "https://mean-tweets.herokuapp.com",
+        "summary": "CRUD example with the MEAN stack"
       },
       {
         "id": "angular-ticker",
@@ -441,7 +439,8 @@
           "Automatically scrolls through a list of items, fading in/out",
           "Configurable timing"
         ],
-        "url": "http://github.com/ttbarnes/angular-ticker"
+        "url": "http://github.com/ttbarnes/angular-ticker",
+        "summary": "Vertical scroller for list items/feeds"
       },
       {
         "id": "angular-poc-demos",
@@ -460,7 +459,8 @@
           "Created whilst learning and seeking examples of some angular features",
           "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
         ],
-        "url": "https://angular-poc-demos.firebaseapp.com"
+        "url": "https://angular-poc-demos.firebaseapp.com",
+        "summary": "Simple examples of Angular features"
       },
       {
         "id": "sass-quick-start",
@@ -472,14 +472,15 @@
           "Gulp",
           "JavaScript"
         ],
-        "primaryTech": "JavaScript"
+        "primaryTech": "JavaScript",
+        "summary": "Sass complilation with Gulp or Grunt"
       },
       {
         "id": "jquery-plugins",
         "name": "jQuery plugins",
         "industry": "Open source",
         "date": "2013",
-        "summary": "Portrolio, List icon manipulator, Active hover states"
+        "summary": "Portrolio, List icon manipulator, ..."
       }
     ]
   },
