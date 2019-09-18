@@ -1,4 +1,4 @@
-import clients from '../../data/clients-v2.json';
+import clients from '../../data/clients.json';
 
 const initialState = {
   data: clients
