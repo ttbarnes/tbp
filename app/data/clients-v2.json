@@ -121,7 +121,7 @@
         "id": "dvla",
         "name": "DVLA",
         "date": "2014",
-        "industry": "Digital Transformation",
+        "industry": "Travel",
         "tech": [
           "HTML, CSS",
           "Sass",
@@ -156,7 +156,7 @@
         "id": "propax-malaysia",
         "name": "Propax Malaysia",
         "date": "2012",
-        "industry": "Shipping",
+        "industry": "Travel",
         "tech": [
           "HTML, CSS"
         ],
@@ -176,7 +176,7 @@
         "id": "plantstove",
         "name": "Plantstove",
         "date": "2016",
-        "industry": "Health/Food",
+        "industry": "Health/Lifestyle",
         "tech": [
           "MongoDB, Mongoose",
           "Express, Node js",
@@ -199,7 +199,7 @@
         "id": "boots-betalabs",
         "name": "Boots BetaLabs",
         "date": "2016",
-        "industry": "Health",
+        "industry": "Health/Lifestyle",
         "tech": [
           "AngularJS",
           "JavaScript",
@@ -243,7 +243,7 @@
         "id": "cathy-brown-v2",
         "name": "Cathy Brown",
         "date": "2015",
-        "industry": "Health/Fitness",
+        "industry": "Health/Lifestyle",
         "tech": [
           "HTML, CSS",
           "JavaScript, jQuery",
@@ -261,7 +261,7 @@
         "id": "gold-challenge",
         "name": "Gold Challenge",
         "date": "2010",
-        "industry": "Sports",
+        "industry": "Health/Lifestyle",
         "tech": [
           "HTML, CSS",
           "PHP"

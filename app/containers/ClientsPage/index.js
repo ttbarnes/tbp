@@ -38,7 +38,12 @@ export class ClientsPage extends React.PureComponent { // eslint-disable-line re
         <PageCta
           heading="Maybe we could build something together?"
           contactCopy="Send me a message"
-          secondCta={<p><Link to="about">Read about me</Link></p>}
+          secondCta={(
+            <div>
+              <p><Link to="about">Read about me</Link></p>
+              <p><Link to="technologies">See the technologies i{'\''}ve been using</Link></p>
+            </div>
+          )}
         />
 
       </PageContainer>
