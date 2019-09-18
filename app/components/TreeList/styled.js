@@ -70,6 +70,7 @@ export const GroupFadeIn = styled.div`
 
 export const Root = styled.li`
   list-style-type: none;
+  margin-bottom: 1em;
 `;
 
 const rootIslargeGroupHeight = (props) => `
@@ -104,7 +105,7 @@ const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
 
 const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
   ${props.largeGroupHeight && `
-    margin: 17em -6em 0 2.5em;
+    margin: 13em -6em 0 2.5em;
   `}
 `;
 
@@ -147,10 +148,10 @@ const alwaysMargin = (props) => `
 export const Heading = styled.p`
   font-size: 1.3em;
   text-decoration: underline;
-  ${alwaysMargin}
   ${media.md`
     font-size: 1.5em;
   `}
+  ${alwaysMargin};
   ${media.lg`
     margin-bottom: 0;
     text-decoration: none;
@@ -203,16 +204,14 @@ export const ListItemContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-bottom: 15%;
+  margin-bottom: 1em;
   ${media.sm`
-    margin-bottom: 10%;
-  `}
-  ${media.lg`
-    margin-bottom: 5%;
+    margin-bottom: 2em;
+    flex: 0 0 45%;
+    margin: 0 2.5% 5% 2.5%;
   `}
   ${media.lg`
     flex-direction: column;
-    flex: 0 0 45%;
     margin: 0 5% 10% 0;
   `}
 `;
@@ -288,4 +287,5 @@ export const Copy = styled.p`
   line-height: initial;
   margin: .1em 0 1em 0;
   color: #ACACAC;
+  opacity: .75;
 `;

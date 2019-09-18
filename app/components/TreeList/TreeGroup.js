@@ -100,7 +100,13 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
                       </ProjectHeading>
 
                       {item.summary && (
-                        <Copy>{item.summary}</Copy>
+                        <Copy
+                          style={item.colors && {
+                            color: item.colors.text
+                          }}
+                        >
+                          {item.summary}
+                        </Copy>
                       )}
 
                     </ListItemContent>
