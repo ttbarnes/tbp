@@ -103,11 +103,6 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
                         <Copy>{item.summary}</Copy>
                       )}
 
-                      {item.primaryTech && (
-                        <Copy>{item.primaryTech}</Copy>
-                      )}
-
-
                     </ListItemContent>
 
                     {item.url && (
