@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { media } from '../styledShared';
 
 const noMargin = (props) => `
-  ${props.noMargin && `
+  ${props.noMargin ? `
     margin: 0;
-  `}
+  ` : ''}
 `;
 
 const H4 = styled.h4`

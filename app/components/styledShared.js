@@ -161,6 +161,10 @@ const fadeIn = keyframes`
   }
 `;
 
+const FadeInAnimation = css`
+  ${fadeIn} 0.8s linear;
+`;
+
 export const FadeIn = styled.div`
-  animation: ${fadeIn} 0.8s linear;
+  animation: ${FadeInAnimation};
 `;

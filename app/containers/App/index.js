@@ -1,91 +1,86 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
 import Helmet from 'react-helmet';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
+import ScrollToTop from 'components/ScrollToTop';
 import HomePage from 'containers/HomePage/loadable';
 import AboutPage from 'containers/AboutPage/loadable';
 import ClientsPage from 'containers/ClientsPage/loadable';
 import TechnologiesPage from 'containers/TechnologiesPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
-
-
-// NOTE: location is not done as best as possible due to an
-// issue in latest version of react-router/react-router-redux
-// this is a workound whilst awaiting updates
-// for now, just have to wrap each component that needs `location` prop with react-redux connect
-// see https://github.com/ReactTraining/react-router/issues/5072
-const mapStateToProps = (state) => ({
-  location: state.route.location,
-});
-
-const ConnectedSwitch = connect(
-  mapStateToProps
-)(Switch);
+import GlobalStyle from '../../global-styles';
 
 function App(props) {
-  const { location } = props;
+  const { location, history } = props;
 
   return (
-    <div>
-      <Helmet
-        titleTemplate="%s - Tony Barnes"
-        defaultTitle="Tony Barnes"
-        meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' }
-        ]}
-      />
+    <ConnectedRouter history={history}>
+      <GlobalStyle />
+      <ScrollToTop>
+        <div>
+          <Helmet
+            titleTemplate="%s - Tony Barnes"
+            defaultTitle="Tony Barnes"
+            meta={[
+              { name: 'description', content: 'Freelance developer, London' }
+            ]}
+          />
 
-      <Nav location={location} />
+          <Nav location={location} />
 
-      <ConnectedSwitch>
+          <Switch>
 
-        <Route
-          exact
-          path="/"
-          component={HomePage}
-        />
+            <Route
+              exact
+              path="/"
+              component={HomePage}
+            />
 
-        <Route
-          path="/about"
-          component={AboutPage}
-        />
+            <Route
+              path="/about"
+              component={AboutPage}
+            />
 
-        <Route
-          exact
-          path="/clients"
-          component={ClientsPage}
-        />
+            <Route
+              exact
+              path="/clients"
+              component={ClientsPage}
+            />
 
-        <Route
-          exact
-          path="/technologies"
-          component={TechnologiesPage}
-        />
+            <Route
+              exact
+              path="/technologies"
+              component={TechnologiesPage}
+            />
 
-        <Route
-          path="/contact"
-          component={ContactPage}
-        />
+            <Route
+              path="/contact"
+              component={ContactPage}
+            />
 
-        <Route
-          path=""
-          component={NotFoundPage}
-        />
+            <Route
+              path=""
+              component={NotFoundPage}
+            />
 
-      </ConnectedSwitch>
+          </Switch>
 
-      <Footer location={location} />
+          <Footer location={location} />
 
-    </div>
+        </div>
+      </ScrollToTop>
+
+    </ConnectedRouter>
   );
 }
 
 App.propTypes = {
-  location: PropTypes.object
+  location: PropTypes.object,
+  history: PropTypes.object.isRequired
 };
 
 App.defaultProps = {

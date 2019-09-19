@@ -130,7 +130,7 @@ Nav.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  location: state.route.location,
+  location: state.router.location
 });
 
 const ConnectedNav = connect(

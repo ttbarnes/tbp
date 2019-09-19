@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Tag from 'components/Tag';
 import H4 from 'components/H4';
 import { media, colors } from '../styledShared';
@@ -32,9 +32,14 @@ const groupFadeInShort = keyframes`
   }
 `;
 
+const GroupFadeInShortAnimation = css`
+  ${groupFadeInShort} 0.6s linear;
+`;
+
 export const GroupFadeInShort = styled.div`
   ${media.md`
-    animation: ${groupFadeInShort} 0.6s linear;
+    /* animation: ${groupFadeInShort} 0.6s linear; */
+    animation: ${GroupFadeInShortAnimation};
     margin-top: -5em;
     position: relative;
   `}
@@ -55,9 +60,13 @@ const groupFadeIn = keyframes`
   }
 `;
 
+const GroupFadeInAnimation = css`
+  ${groupFadeIn} 0.6s linear;
+`;
+
 export const GroupFadeIn = styled.div`
   ${media.md`
-    animation: ${groupFadeIn} 0.6s linear;
+    animation: ${GroupFadeInAnimation};
     margin-top: -13em;
     position: relative;
   `};

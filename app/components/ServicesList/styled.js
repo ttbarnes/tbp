@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { colors, media } from '../styledShared';
 import H4 from '../H4';
 
@@ -23,15 +23,16 @@ const servicesFadeInLong = keyframes`
   }
 `;
 
-const containerAnimation = (props) => `
-  ${props.longAnimation ? `
-    animation: ${servicesFadeInLong} 2.5s linear;
-  ` : `animation: ${servicesFadeIn} 0.8s linear;`}
-`;
-
-export const ServicesContainer = styled.div`
-  ${containerAnimation}
-`;
+const ServicesFadeInAnimation = (props) => {
+  if (props.longAnimation) {
+    return (
+      css`${servicesFadeInLong} 2.5s linear`
+    );
+  }
+  return css`
+    ${servicesFadeIn} 0.8s linear
+  `;
+};
 
 const rootMargin = (props) => `
   ${props.longAnimation ? `
@@ -39,19 +40,23 @@ const rootMargin = (props) => `
   ` : 'margin: 0 -4em 2em -4em;'}
 `;
 
-export const Root = styled(ServicesContainer)`
-    text-align: center;
-    ${media.lg2`
-      width: calc(100% + 8em);
-      max-width: calc(100% + 8em);
-      ${rootMargin}
-    `}
+export const Root = styled.div`
+  text-align: center;
+  animation: ${ServicesFadeInAnimation};
+  ${media.lg2`
+    width: calc(100% + 8em);
+    max-width: calc(100% + 8em);
+    ${rootMargin}
+  `}
 `;
 
 export const StyledH4 = styled(H4)`
   font-weight: normal;
   font-size: 1.2em;
   width: 100%;
+  ${media.sm`
+    font-size: 1.2em;
+  `}
   ${media.lg2`
     min-height: 73px;
     margin-bottom: 0;
