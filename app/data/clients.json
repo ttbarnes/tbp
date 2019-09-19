@@ -256,23 +256,6 @@
           "text": "#FFF"
         },
         "summary": "Static website"
-      },
-      {
-        "id": "gold-challenge",
-        "name": "Gold Challenge",
-        "date": "2010",
-        "industry": "Health/Lifestyle",
-        "tech": [
-          "HTML, CSS",
-          "PHP"
-        ],
-        "primaryTech": "Joomla",
-        "colors": {
-          "bg": "#FFF",
-          "text": "#CB9D59",
-          "border": "#CB9D59"
-        },
-        "summary": "Static website"
       }
     ]
   },
@@ -394,8 +377,8 @@
         "primaryTech": "Angular",
         "url": "http://fifthweek.com",
         "colors": {
-          "bg": "#A1B3EB",
-          "text": "#FFF"
+          "bg": "#D1DDE6",
+          "text": "#000"
         },
         "summary": "MVP development"
       }
@@ -475,13 +458,6 @@
         ],
         "primaryTech": "JavaScript",
         "summary": "Sass complilation with Gulp or Grunt"
-      },
-      {
-        "id": "jquery-plugins",
-        "name": "jQuery plugins",
-        "industry": "Open source",
-        "date": "2013",
-        "summary": "Portrolio, List manipulator, Active states"
       }
     ]
   },
