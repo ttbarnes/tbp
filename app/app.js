@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import promisePolyfill from 'es6-promise';
 import App from 'containers/App';
-import polyfills from './polyfills'; // eslint-disable-line no-unused-vars
 import configureStore, { history } from './configureStore';
-
-promisePolyfill.polyfill();
-
 const initialState = {};
 const store = configureStore(initialState);
 

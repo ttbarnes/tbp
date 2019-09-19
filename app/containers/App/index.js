@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { ConnectedRouter } from 'connected-react-router';
 import Helmet from 'react-helmet';
 import { Switch, Route } from 'react-router';
+import promisePolyfill from 'es6-promise';
+import '@babel/polyfill';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
@@ -13,6 +15,7 @@ import TechnologiesPage from 'containers/TechnologiesPage/loadable';
 import ContactPage from 'containers/ContactPage/loadable';
 import NotFoundPage from 'containers/NotFoundPage/loadable';
 import GlobalStyle from '../../global-styles';
+promisePolyfill.polyfill();
 
 function App(props) {
   const { location, history } = props;
