@@ -4,7 +4,7 @@
 
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import projectsReducers from 'containers/ClientsPage/reducer';
+import clientsReducers from 'containers/ClientsPage/reducer';
 // import hobbiesReducers from 'containers/HobbiesPage/reducer';
 import servicesReducer from 'reducers/services';
 import techReducers from 'containers/TechnologiesPage/reducer';
@@ -15,7 +15,7 @@ import techReducers from 'containers/TechnologiesPage/reducer';
 export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routerReducer,
-    projects: projectsReducers,
+    clients: clientsReducers,
     services: servicesReducer,
     // hobbies: hobbiesReducers,
     tech: techReducers,

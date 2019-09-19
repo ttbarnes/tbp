@@ -1,6 +1,19 @@
 import styled, { keyframes } from 'styled-components';
 import Tag from 'components/Tag';
+import H4 from 'components/H4';
 import { media, colors } from '../styledShared';
+
+const isLastGroupAnimation = (props) => `
+  ${(props.isLast && props.largeGroupHeight) && `
+    animation: none;
+  `}
+`;
+
+const isLastGroupMarginLargeBreakPoint = (props) => `
+  ${props.isLast && `
+    margin-top: -5em;
+  `}
+`;
 
 const groupFadeInShort = keyframes`
   0% {
@@ -27,7 +40,6 @@ export const GroupFadeInShort = styled.div`
   `}
 `;
 
-
 const groupFadeIn = keyframes`
   0% {
     opacity: 0;
@@ -43,17 +55,22 @@ const groupFadeIn = keyframes`
   }
 `;
 
-
 export const GroupFadeIn = styled.div`
   ${media.md`
     animation: ${groupFadeIn} 0.6s linear;
     margin-top: -13em;
     position: relative;
-  `}
+  `};
+  ${isLastGroupAnimation}
+  ${media.lg`
+    ${isLastGroupMarginLargeBreakPoint}
+  `};
 `;
+
 
 export const Root = styled.li`
   list-style-type: none;
+  margin-bottom: 1em;
 `;
 
 const rootIslargeGroupHeight = (props) => `
@@ -63,9 +80,7 @@ const rootIslargeGroupHeight = (props) => `
 `;
 
 const rootIsLast = (props) => `
-  ${props.isLast && `
-    padding-bottom: 0;
-  `}
+  ${(props.isLast && props.largeGroupHeight) && 'padding-bottom: 5em;'}
 `;
 
 export const GroupRoot = styled.li`
@@ -90,7 +105,7 @@ const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
 
 const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
   ${props.largeGroupHeight && `
-    margin: 17em -6em 0 2.5em;
+    margin: 13em -6em 0 2.5em;
   `}
 `;
 
@@ -133,10 +148,10 @@ const alwaysMargin = (props) => `
 export const Heading = styled.p`
   font-size: 1.3em;
   text-decoration: underline;
-  ${alwaysMargin}
   ${media.md`
     font-size: 1.5em;
   `}
+  ${alwaysMargin};
   ${media.lg`
     margin-bottom: 0;
     text-decoration: none;
@@ -145,7 +160,8 @@ export const Heading = styled.p`
 
 const isLastItem = (props) => `
   ${props.isLast && `
-    padding-bottom: 4.5em;
+    padding-top: 0;
+    padding-bottom: 0;
   `}
 `;
 
@@ -188,16 +204,14 @@ export const ListItemContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-bottom: 15%;
+  margin-bottom: 1em;
   ${media.sm`
-    margin-bottom: 10%;
-  `}
-  ${media.lg`
-    margin-bottom: 5%;
+    margin-bottom: 2em;
+    flex: 0 0 45%;
+    margin: 0 2.5% 5% 2.5%;
   `}
   ${media.lg`
     flex-direction: column;
-    flex: 0 0 45%;
     margin: 0 5% 10% 0;
   `}
 `;
@@ -218,6 +232,10 @@ export const ProjectHeading = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+`;
+
+export const StyledH4 = styled(H4)`
+  font-weight: normal;
 `;
 
 export const ListItemFooter = styled.div`
@@ -264,9 +282,10 @@ export const TagListItem = styled.li`
   padding-right: .2em;
 `;
 
-export const ProjectIndustry = styled.p`
+export const Copy = styled.p`
   font-size: 80%;
   line-height: initial;
   margin: .1em 0 1em 0;
   color: #ACACAC;
+  opacity: .75;
 `;

@@ -7,9 +7,9 @@ import {
   ListItemCopy
 } from './styled';
 
-const ProjectsSummary = ({ projects }) => (
+const ClientsSummary = ({ clients }) => (
   <ListRoot>
-    {projects.map((p) => (
+    {clients.map((p) => (
       <ListItem key={p.name}>
         <ListItemInner
           style={{
@@ -25,8 +25,8 @@ const ProjectsSummary = ({ projects }) => (
   </ListRoot>
 );
 
-ProjectsSummary.propTypes = {
-  projects: PropTypes.array.isRequired
+ClientsSummary.propTypes = {
+  clients: PropTypes.array.isRequired
 };
 
-export default ProjectsSummary;
+export default ClientsSummary;

@@ -1,16 +1,14 @@
-import projects from '../../data/projects.json';
-import projectsSummary from '../../data/projects-summary.json';
+import clients from '../../data/clients.json';
 
 const initialState = {
-  data: projects,
-  summary: projectsSummary
+  data: clients
 };
 
-function projectsReducers(state = initialState, action) {
+function clientsReducer(state = initialState, action) {
   switch (action.type) {
     default:
       return state;
   }
 }
 
-export default projectsReducers;
+export default clientsReducer;
