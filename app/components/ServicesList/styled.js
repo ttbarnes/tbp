@@ -34,11 +34,12 @@ const ServicesFadeInAnimation = (props) => {
   `;
 };
 
-const rootMargin = (props) => `
-  ${props.longAnimation ? `
-      margin: 0 -4em 1em -4em;
-  ` : 'margin: 0 -4em 2em -4em;'}
-`;
+const rootMargin = (props) => {
+  if (props.longAnimation) {
+    return 'margin: 0 -4em 1em -4em;';
+  }
+  return 'margin: 0 -4em 2em -4em;';
+};
 
 export const Root = styled.div`
   text-align: center;

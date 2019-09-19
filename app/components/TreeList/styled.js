@@ -3,17 +3,19 @@ import Tag from 'components/Tag';
 import H4 from 'components/H4';
 import { media, colors } from '../styledShared';
 
-const isLastGroupAnimation = (props) => `
-  ${(props.isLast && props.largeGroupHeight) && `
-    animation: none;
-  `}
-`;
+const isLastGroupAnimation = (props) => {
+  if (props.isLast && props.largeGroupHeight) {
+    return 'animation: none !important;';
+  }
+  return '';
+};
 
-const isLastGroupMarginLargeBreakPoint = (props) => `
-  ${props.isLast && `
-    margin-top: -5em;
-  `}
-`;
+const isLastGroupMarginLargeBreakPoint = (props) => {
+  if (props.isLast) {
+    return 'margin-top: -5em;';
+  }
+  return '';
+};
 
 const groupFadeInShort = keyframes`
   0% {
@@ -38,7 +40,6 @@ const GroupFadeInShortAnimation = css`
 
 export const GroupFadeInShort = styled.div`
   ${media.md`
-    /* animation: ${groupFadeInShort} 0.6s linear; */
     animation: ${GroupFadeInShortAnimation};
     margin-top: -5em;
     position: relative;
@@ -82,15 +83,19 @@ export const Root = styled.li`
   margin-bottom: 1em;
 `;
 
-const rootIslargeGroupHeight = (props) => `
-  ${props.largeGroupHeight && `
-    padding-bottom: 13em;
-  `}
-`;
+const rootIslargeGroupHeight = (props) => {
+  if (props.largeGroupHeight) {
+    return 'padding-bottom: 13em;';
+  }
+  return '';
+};
 
-const rootIsLast = (props) => `
-  ${(props.isLast && props.largeGroupHeight) && 'padding-bottom: 5em;'}
-`;
+const rootIsLast = (props) => {
+  if (props.isLast && props.largeGroupHeight) {
+    return 'padding-bottom: 5em;';
+  }
+  return '';
+};
 
 export const GroupRoot = styled.li`
   position: relative;
@@ -106,17 +111,19 @@ export const GroupRoot = styled.li`
   `}
 `;
 
-const listRootIsLargeGroupHeightMediumBreakpoint = (props) => `
-  ${props.largeGroupHeight && `
-    margin: 14em 0 0 0;
-  `}
-`;
+const listRootIsLargeGroupHeightMediumBreakpoint = (props) => {
+  if (props.largeGroupHeight) {
+    return 'margin: 14em 0 0 0;';
+  }
+  return '';
+};
 
-const listRootIsLargeGroupHeightLargeBreakpoint = (props) => `
-  ${props.largeGroupHeight && `
-    margin: 13em -6em 0 2.5em;
-  `}
-`;
+const listRootIsLargeGroupHeightLargeBreakpoint = (props) => {
+  if (props.largeGroupHeight) {
+    return 'margin: 13em -6em 0 2.5em;';
+  }
+  return '';
+};
 
 export const ListRoot = styled.ul`
   ${media.md`
@@ -148,11 +155,12 @@ export const HeadingContent = styled.div`
   `}
 `;
 
-const alwaysMargin = (props) => `
-  ${props.alwaysMargin && `
-    margin-bottom: 2em;
-  `}
-`;
+const alwaysMargin = (props) => {
+  if (props.alwaysMargin) {
+    return 'margin-bottom: 2em;';
+  }
+  return '';
+};
 
 export const Heading = styled.p`
   font-size: 1.3em;
@@ -167,18 +175,19 @@ export const Heading = styled.p`
   `}
 `;
 
-const isLastItem = (props) => `
-  ${props.isLast && `
-    padding-top: 0;
-    padding-bottom: 0;
-  `}
-`;
+const isLastItem = (props) => {
+  if (props.isLast) {
+    return 'padding-bottom: 0;';
+  }
+  return '';
+};
 
-const listItemIslargeGroupHeight = (props) => `
-  ${props.largeGroupHeight && `
-    padding: 5em 0 15em 0;
-  `}
-`;
+const listItemIslargeGroupHeight = (props) => {
+  if (props.largeGroupHeight) {
+    return 'padding: 5em 0 15em 0;';
+  }
+  return '';
+};
 
 export const StyledListItem = styled.li`
   display: flex;

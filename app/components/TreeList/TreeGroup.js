@@ -76,14 +76,15 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
         </HeadingColumn>
 
         <ul>
-          <StyledListItem
-            isLast={isLast}
-            largeGroupHeight={largeGroupHeight}
-          >
+          {renderGroupContent && (
 
-            {renderGroupContent && <Border />}
+            <StyledListItem
+              isLast={isLast}
+              largeGroupHeight={largeGroupHeight}
+            >
 
-            {renderGroupContent && (
+              <Border />
+
               <GroupItems>
                 {items && items.map((item) => (
                   <ListItemContainer key={item.name}>
@@ -141,9 +142,9 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
                 ) : null}
 
               </GroupItems>
-            )}
 
-          </StyledListItem>
+            </StyledListItem>
+          )}
         </ul>
       </div>
     );

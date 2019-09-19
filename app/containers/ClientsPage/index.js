@@ -38,6 +38,7 @@ export class ClientsPage extends React.PureComponent { // eslint-disable-line re
         <PageCta
           heading="Maybe we could build something together?"
           contactCopy="Send me a message"
+          noMarginOnSmallScreen
           secondCta={(
             <div>
               <p><Link to="about">Read about me</Link></p>

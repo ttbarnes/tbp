@@ -43,6 +43,7 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
         <PageCta
           heading="Maybe we could build something together?"
           contactCopy="Send me a message"
+          noMarginOnSmallScreen
         />
 
       </PageContainer>
