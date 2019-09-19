@@ -23,7 +23,9 @@ import {
   StyledH4
 } from './styled';
 
-export class TreeGroup extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class TreeGroup extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  componentIsMounted = false;
+
   constructor() {
     super();
     this.state = {
@@ -32,6 +34,7 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   }
 
   componentDidMount() {
+    this.componentIsMounted = true;
     this.setIsLargeScreen();
     window.addEventListener('resize', () => {
       this.setIsLargeScreen();
@@ -39,19 +42,22 @@ export class TreeGroup extends React.PureComponent { // eslint-disable-line reac
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.setIsLargeScreen);
+    this.componentIsMounted = false;
+    window.removeEventListener('resize', this.setIsLargeScreen());
   }
 
   setIsLargeScreen() {
     const { isLargeScreen } = this.state;
-    if (window.matchMedia('(min-width: 990px)').matches) {
-      this.setState({
-        isLargeScreen: true
-      });
-    } else if (isLargeScreen) {
-      this.setState({
-        isLargeScreen: false
-      });
+    if (this.componentIsMounted) {
+      if (window.matchMedia('(min-width: 990px)').matches) {
+        this.setState({
+          isLargeScreen: true
+        });
+      } else if (isLargeScreen) {
+        this.setState({
+          isLargeScreen: false
+        });
+      }
     }
   }
 
