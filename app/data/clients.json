@@ -403,7 +403,11 @@
         ],
         "primaryTech": "Full stack JS",
         "url": "https://mean-tweets.herokuapp.com",
-        "summary": "CRUD example with the MEAN stack"
+        "summary": "CRUD example with the MEAN stack",
+        "colors": {
+          "bg": "#F3DD1D",
+          "text": "#000"
+        }
       },
       {
         "id": "angular-ticker",
@@ -424,7 +428,11 @@
           "Configurable timing"
         ],
         "url": "http://github.com/ttbarnes/angular-ticker",
-        "summary": "Vertical scroller for list items/feeds"
+        "summary": "Vertical scroller for list items/feeds",
+        "colors": {
+          "bg": "#CC342D",
+          "text": "#FFF"
+        }
       },
       {
         "id": "angular-poc-demos",
@@ -444,7 +452,11 @@
           "Various examples of forms, ng-repeat, services, directives, scope watch, testing"
         ],
         "url": "https://angular-poc-demos.firebaseapp.com",
-        "summary": "Simple examples of Angular features"
+        "summary": "Simple examples of Angular features",
+        "colors": {
+          "bg": "#CC342D",
+          "text": "#FFF"
+        }
       },
       {
         "id": "sass-quick-start",
@@ -457,7 +469,11 @@
           "JavaScript"
         ],
         "primaryTech": "JavaScript",
-        "summary": "Sass complilation with Gulp or Grunt"
+        "summary": "Sass complilation with Gulp or Grunt",
+        "colors": {
+          "bg": "#D381A9",
+          "text": "#FFF"
+        }
       }
     ]
   },
