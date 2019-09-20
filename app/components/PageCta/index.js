@@ -8,11 +8,13 @@ const PageCta = ({
   contactCopy,
   secondCta,
   centerText,
-  noMargin
+  noMargin,
+  noMarginOnSmallScreen
 }) => (
   <StyledPageCta
     centerText={centerText}
     noMargin={noMargin}
+    noMarginOnSmallScreen={noMarginOnSmallScreen}
   >
     <H3>{heading}</H3>
     <p>{contactCopy}: <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>
@@ -25,13 +27,15 @@ PageCta.propTypes = {
   contactCopy: PropTypes.string.isRequired,
   secondCta: PropTypes.element,
   centerText: PropTypes.bool,
-  noMargin: PropTypes.bool
+  noMargin: PropTypes.bool,
+  noMarginOnSmallScreen: PropTypes.bool
 };
 
 PageCta.defaultProps = {
   secondCta: null,
   centerText: false,
-  noMargin: false
+  noMargin: false,
+  noMarginOnSmallScreen: false
 };
 
 export default PageCta;
