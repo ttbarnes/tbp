@@ -241,6 +241,14 @@ const bgTheme = (props) => {
       `background: ${tagColors.jest}`
 };
 
+    ${type === 'AWS' &&
+      `background: ${tagColors.aws}`
+};
+
+    ${type === 'Cloudinary' &&
+      `background: ${tagColors.cloudinary}`
+};
+
   `;
 };
 

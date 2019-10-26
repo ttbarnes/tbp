@@ -70,6 +70,7 @@ export const colors = {
   blue10: '#3B80C9',
   blue11: '#5AD1F9',
   blue12: '#1D365D',
+  blue13: '#0071BA',
   brown2: '#8d6748',
   brown3: '#e9ce99',
   green2: '#026e00',
@@ -82,6 +83,7 @@ export const colors = {
   orange4: '#f47d31',
   orange5: '#BC842B',
   orange6: '#F26322',
+  orange7: '#FF9901',
   pink1: '#D381A9',
   pink2: '#db7093',
   pink3: '#EC0C8E',
@@ -144,7 +146,9 @@ export const tagColors = {
   teamCity: colors.black2,
   jenkins: colors.red6,
   less: colors.blue12,
-  jest: colors.green5
+  jest: colors.green5,
+  aws: colors.orange7,
+  cloudinary: colors.blue13
 };
 
 export const BoldLink = styled(Link)`

@@ -62,11 +62,18 @@
     ]
   },
   {
+    "heading": "Cloud services",
+    "tags": [
+      "AWS",
+      "Cloudinary"
+    ]
+  },
+  {
     "heading": "Data visualizations",
     "tags": [
-      "Mapbox",
       "d3.js",
-      "Highcharts"
+      "Highcharts",
+      "Mapbox"
     ]
   },
   {
