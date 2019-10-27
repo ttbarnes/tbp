@@ -38,7 +38,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
           <FadeIn>
             <p>I thoroughly enjoy understanding people{'\''}s needs and wants. I love taking concepts from the drawing board to a fully fledged application that is a pleasure to use.</p>
 
-            <p>I{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries. I{'\''}ve delivered many replatformed applications, digital transformation and greenfield projects.</p>
+            <p>I{'\''}ve worked with many individuals, teams and businesses over the years - ranging from startups and SMEs to large corporations in a wide range of industries. I{'\''}ve delivered many re-platformed applications, digital transformation and greenfield projects.</p>
 
             <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all stakeholders. By working in an agile way, the product/app can be built and delivered incrementally. This in turn ensures high quality results that solve real problems.</p>
 
