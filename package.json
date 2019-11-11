@@ -53,6 +53,7 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
+  "pre-push": "test:e2e",
   "babel": {
     "presets": [
       [
