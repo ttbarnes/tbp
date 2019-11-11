@@ -78,8 +78,7 @@ export const GroupFadeIn = styled.div`
 `;
 
 
-export const Root = styled.li`
-  list-style-type: none;
+export const Root = styled.div`
   margin-bottom: 1em;
 `;
 
