@@ -10,7 +10,11 @@ const Tag = (props) => {
     return null;
   }
   return (
-    <StyledTag {...props}>{type}</StyledTag>
+    <StyledTag
+      {...props}
+      className="tech-tag"
+    >{type}
+    </StyledTag>
   );
 };
 

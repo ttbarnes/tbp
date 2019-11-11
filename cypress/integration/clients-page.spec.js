@@ -20,7 +20,6 @@ describe('clients page', () => {
     });
 
     it('should render correct amount of groups', () => {
-
       cy
         .get(groupsElement).first()
         .should('be.visible')
