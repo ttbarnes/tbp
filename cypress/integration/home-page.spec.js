@@ -36,8 +36,8 @@ describe('home page', () => {
           .should('be.visible')
           .should('contain', 'Learn more')
           .click();
-        cy.url()
-          .should('include', '/about');
+
+        cy.url().should('include', '/about');
       });
 
       it('should render a link to `clients` page that takes me to the correct url', () => {
@@ -56,6 +56,7 @@ describe('home page', () => {
 
   it('should render a list of services', () => {
     const element = '.services';
+
     cy
       .get(element)
       .should('be.visible');

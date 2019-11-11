@@ -15,6 +15,7 @@ const PageCta = ({
     centerText={centerText}
     noMargin={noMargin}
     noMarginOnSmallScreen={noMarginOnSmallScreen}
+    className="page-cta"
   >
     <H3>{heading}</H3>
     <p>{contactCopy}: <a href="mailto:tony@tonybarnes.me">tony{'@'}tonybarnes.me</a></p>

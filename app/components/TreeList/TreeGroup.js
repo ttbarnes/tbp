@@ -93,7 +93,10 @@ export class TreeGroup extends React.Component { // eslint-disable-line react/pr
 
               <GroupItems>
                 {items && items.map((item) => (
-                  <ListItemContainer key={item.name}>
+                  <ListItemContainer
+                    key={item.name}
+                    className="project-card"
+                  >
                     <ListItemContent
                       style={item.colors && {
                         background: item.colors.bg,
