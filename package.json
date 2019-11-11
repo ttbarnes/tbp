@@ -45,6 +45,7 @@
     "test:firefox": "npm run test -- --browsers Firefox",
     "test:safari": "npm run test -- --browsers Safari",
     "test:ie": "npm run test -- --browsers IE",
+    "test:e2e": "npx cypress run",
     "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
   },
   "heroku-run-build-script": false,
@@ -156,6 +157,9 @@
       "operator-linebreak": 0,
       "react/no-array-index-key": 0
     },
+    "globals": {
+      "cy": true
+    },
     "settings": {
       "import/resolver": {
         "webpack": {
@@ -211,6 +215,7 @@
     "circular-dependency-plugin": "2.0.0",
     "coveralls": "2.11.15",
     "css-loader": "0.26.1",
+    "cypress": "^3.6.1",
     "enzyme": "3.10.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.1",

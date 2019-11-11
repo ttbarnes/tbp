@@ -42,10 +42,10 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <IntroRoot>
 
           <Flex>
-            <FadeInImage src={TbImage} alt="Tony in a suit" />
+            <FadeInImage src={TbImage} alt="Tony Barnes" />
           </Flex>
 
-          <div>
+          <div className="intro-heading">
             <IntroHeading>
               <HeadingHello>Hello!&nbsp;</HeadingHello>
               <HeadingSub>I{'\''}m Tony.</HeadingSub>

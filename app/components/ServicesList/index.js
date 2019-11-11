@@ -17,7 +17,10 @@ const ServicesList = ({
   children,
   longAnimation
 }) => (
-  <Root longAnimation={longAnimation}>
+  <Root
+    longAnimation={longAnimation}
+    className="services"
+  >
     {heading && <H3>{heading}</H3>}
     <ListRoot>
       {services && services.map((service) => (
