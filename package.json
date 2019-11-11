@@ -39,6 +39,7 @@
     "lint:js": "npm run lint:eslint -- . ",
     "lint:staged": "lint-staged",
     "pretest": "npm run test:clean && npm run lint",
+    "prepush": "npm run test:e2e",
     "test:clean": "rimraf ./coverage",
     "test": "cross-env NODE_ENV=test karma start internals/testing/karma.conf.js --single-run",
     "test:watch": "npm run test -- --auto-watch --no-single-run",
@@ -53,7 +54,9 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "prepush": ["npm run test:e2e"],
+  "prepush": [
+    "npm run prepush"
+  ],
   "babel": {
     "presets": [
       [
