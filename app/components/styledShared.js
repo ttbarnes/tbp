@@ -55,6 +55,7 @@ export const media = {
 export const colors = {
   black1: '#222',
   black2: '#161616',
+  black3: '#162332',
   grey1: '#6F6F6F',
   grey2: '#E9E9E9',
   blueMain: '#d1dde6',
@@ -93,6 +94,7 @@ export const colors = {
   purple3: '#8A4182',
   purple4: '#47475c',
   purple5: '#8669a9',
+  purple6: '#3f20ba',
   red1: '#A15748',
   red2: '#B88080',
   red3: '#E23337',
@@ -137,6 +139,7 @@ export const tagColors = {
   ruby: colors.red5,
   misc: colors.grey1,
   graphQL: colors.pink4,
+  apollo: colors.purple6,
   uiTemplates: colors.orange5,
   wordPress: colors.blue9,
   powaCms: colors.blue10,
@@ -148,7 +151,8 @@ export const tagColors = {
   less: colors.blue12,
   jest: colors.green5,
   aws: colors.orange7,
-  cloudinary: colors.blue13
+  cloudinary: colors.blue13,
+  cypress: colors.black3
 };
 
 export const BoldLink = styled(Link)`

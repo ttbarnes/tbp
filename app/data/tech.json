@@ -13,6 +13,7 @@
       "Node.js",
       "Express",
       "GraphQL",
+      "Apollo",
       "MongoDB, Mongoose",
       "SSR"
     ]
@@ -23,8 +24,9 @@
       "Enzyme",
       "Jest",
       "Mocha",
-      "Shouldjs",
       "Chai",
+      "Cypress",
+      "Shouldjs",
       "Jasmine",
       "Karma"
     ]

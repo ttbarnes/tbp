@@ -201,6 +201,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.graphQL}`
 };
 
+    ${(type === 'Apollo') &&
+        `background: ${tagColors.apollo}`
+};
+
     ${type === 'UI templates' &&
       `background: ${tagColors.uiTemplates}`
 };
@@ -247,6 +251,9 @@ const bgTheme = (props) => {
 
     ${type === 'Cloudinary' &&
       `background: ${tagColors.cloudinary}`
+};
+    ${type === 'Cypress' &&
+      `background: ${tagColors.cypress}`
 };
 
   `;
