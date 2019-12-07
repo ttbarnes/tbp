@@ -58,6 +58,7 @@ export const colors = {
   black3: '#162332',
   grey1: '#6F6F6F',
   grey2: '#E9E9E9',
+  grey3: '#16163780',
   blueMain: '#d1dde6',
   blueMainHover: '#aecee6',
   blue2: '#4B86A4',
@@ -152,7 +153,8 @@ export const tagColors = {
   jest: colors.green5,
   aws: colors.orange7,
   cloudinary: colors.blue13,
-  cypress: colors.black3
+  cypress: colors.black3,
+  bem: colors.grey3
 };
 
 export const BoldLink = styled(Link)`

@@ -256,6 +256,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.cypress}`
 };
 
+    ${type === 'BEM' &&
+      `background: ${tagColors.bem}`
+};
+
   `;
 };
 
