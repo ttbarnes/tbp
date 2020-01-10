@@ -1,53 +1,13 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { colors, media } from '../styledShared';
 import H4 from '../H4';
 
-const servicesFadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const servicesFadeInLong = keyframes`
-  from {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const ServicesFadeInAnimation = (props) => {
-  if (props.longAnimation) {
-    return (
-      css`${servicesFadeInLong} 2.5s linear`
-    );
-  }
-  return css`
-    ${servicesFadeIn} 0.8s linear
-  `;
-};
-
-const rootMargin = (props) => {
-  if (props.longAnimation) {
-    return 'margin: 0 -4em 1em -4em;';
-  }
-  return 'margin: 0 -4em 2em -4em;';
-};
-
 export const Root = styled.div`
   text-align: center;
-  animation: ${ServicesFadeInAnimation};
   ${media.lg2`
     width: calc(100% + 8em);
     max-width: calc(100% + 8em);
-    ${rootMargin}
+    margin: 0 -4em 2em -4em;
   `}
 `;
 

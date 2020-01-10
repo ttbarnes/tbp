@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import {
   CONTAINER_SPACING_VERTICAL,
   media
@@ -75,37 +75,19 @@ export const StyledImg = styled(Img)`
   `}
 `;
 
-const ImageKeyFrames = keyframes`
-  from, 50% {
-    opacity: 0;
-    transform: rotate(-360deg);
-  }
-  65% {
-    opacity: 0;
-  }
-  from, 50% {
-    width: 5%;
-  }
-  70% {
-    opacity: 0;
-  }
-  85% {
-    width: 15%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-`;
-
-export const FadeInImage = styled(StyledImg)`
-  ${media.md`
-    animation: ${ImageKeyFrames} 1.3s linear;
-    transition: all 1.3s ease;
-    width: 100%;
+export const Image = styled(StyledImg)`
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto .5em auto;
+  display: block;
+  ${media.xs`
+    max-width: 180px;
   `}
+  ${media.md`
+    width: 100%;
+    max-width: 200px;
+  `}
+
 `;
 
 export const IntroHeadingMobileOnly = styled(H1)`
@@ -116,67 +98,12 @@ export const IntroHeadingMobileOnly = styled(H1)`
   `}
 `;
 
-const HeadingHelloKeyFrames = keyframes`
-  0% {
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(3px) rotate(2deg);
-  }
-  20% {
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  30% {
-    transform: translateX(3px) rotate(2deg);
-  }
-  40% {
-    transform: translateX(-3px) rotate(-2deg);
-  }
-  50% {
-    transform: translateX(2px) rotate(1deg);
-  }
-  60% {
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  70% {
-    transform: translateX(2px) rotate(1deg);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(-2px) rotate(-1deg);
-  }
-  90% {
-    transform: translateX(1px) rotate(0);
-  }
-  100% {
-    transform: translateX(-1px) rotate(0);
-  }
-}
-`;
-
 export const HeadingHello = styled.span`
   display: inline-block;
-  transition: all .6s ease;
-  ${media.md`
-    animation: ${HeadingHelloKeyFrames} .6s linear;
-  `}
-`;
-
-const HeadingSubKeyFrames = keyframes`
-  from, 50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 `;
 
 export const HeadingSub = styled.span`
   display: inline-block;
-  transition: all 1s ease;
-  ${media.md`
-    animation: ${HeadingSubKeyFrames} 1s linear;
-  `}
 `;
 
 export const Intro = styled.ul`
@@ -200,17 +127,6 @@ export const IntroHeading = styled.span`
   `}
 `;
 
-const styledTitlesKeyFrames = keyframes`
-  from, 50%, 85% {
-    opacity: 0;
-    bottom: -3em;
-  }
-  to {
-    opacity: 1;
-    bottom: 0;
-  }
-`;
-
 export const IntroSubHeading = styled(H2)`
   font-weight: normal;
   padding: 0 1em;
@@ -228,8 +144,6 @@ export const IntroSubHeading = styled(H2)`
     max-width: 100%;
     margin: 0 0 1em 0;
     position: relative;
-    animation: ${styledTitlesKeyFrames} 1.3s linear;
-    transition: all 1.5s ease;
 
   `}
   ${media.lg`
@@ -237,19 +151,9 @@ export const IntroSubHeading = styled(H2)`
   `};
 `;
 
-const introCopyKeyFrames = keyframes`
-  from, 50%, 75% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
 export const IntroCopy = styled.li`
   margin-bottom: .5em;
   ${media.md`
-    animation: ${introCopyKeyFrames} 2.5s linear;
     list-style-type: disc;
     margin-left: 1em;
   `}

@@ -18,7 +18,7 @@ import {
   HeadingHello,
   HeadingSub,
   Intro,
-  FadeInImage,
+  Image,
   IntroCopy
 } from './styled';
 import TbImage from '../../assets/img/tony-barnes.jpg';
@@ -36,13 +36,12 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           ]}
         />
 
-
         <IntroHeadingMobileOnly>Hello!&nbsp;I{'\''}m Tony.</IntroHeadingMobileOnly>
 
         <IntroRoot>
 
           <Flex>
-            <FadeInImage src={TbImage} alt="Tony Barnes" />
+            <Image src={TbImage} alt="Tony Barnes" />
           </Flex>
 
           <div className="intro-heading">

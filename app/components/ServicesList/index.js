@@ -14,11 +14,9 @@ import ServiceIcon from './ServiceIcon';
 const ServicesList = ({
   heading,
   services,
-  children,
-  longAnimation
+  children
 }) => (
   <Root
-    longAnimation={longAnimation}
     className="services"
   >
     {heading && <H3>{heading}</H3>}
@@ -48,14 +46,12 @@ const ServicesList = ({
 ServicesList.propTypes = {
   heading: PropTypes.string,
   services: PropTypes.array.isRequired,
-  children: PropTypes.node,
-  longAnimation: PropTypes.bool
+  children: PropTypes.node
 };
 
 ServicesList.defaultProps = {
   heading: '',
-  children: null,
-  longAnimation: false
+  children: null
 };
 
 export default ServicesList;
