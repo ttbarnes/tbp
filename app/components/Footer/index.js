@@ -23,6 +23,8 @@ import {
   StyledCopyright
 } from './styled';
 
+import { VisuallyHiddenText } from '../styledShared';
+
 class Footer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { location } = this.props;
@@ -31,24 +33,28 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
     return (
       <Root fullScreen={isHomePage}>
         <ListRoot>
-          <ListItem aria-label="Twitter">
+          <ListItem>
             <StyledLink href={SOCIAL_TWITTER} target="_blank" rel="noopener">
               <IconTwitter />
+              <VisuallyHiddenText>Twitter</VisuallyHiddenText>
             </StyledLink>
           </ListItem>
-          <ListItem aria-label="LinkedIn">
+          <ListItem>
             <StyledLink href={SOCIAL_LINKEDIN} target="_blank" rel="noopener">
               <IconLinkedIn />
+              <VisuallyHiddenText>LinkedIn</VisuallyHiddenText>
             </StyledLink>
           </ListItem>
-          <ListItem aria-label="Github">
+          <ListItem>
             <StyledLink href={SOCIAL_GITHUB} target="_blank" rel="noopener">
               <IconGithub />
+              <VisuallyHiddenText>Github</VisuallyHiddenText>
             </StyledLink>
           </ListItem>
-          <ListItem aria-label="StackOverflow">
+          <ListItem>
             <StyledLink href={SOCIAL_STACKOVERFLOW} target="_blank" rel="noopener">
               <IconStackOverflow />
+              <VisuallyHiddenText>StackOverflow</VisuallyHiddenText>
             </StyledLink>
           </ListItem>
         </ListRoot>
