@@ -88,7 +88,7 @@ export const colors = {
   orange7: '#FF9901',
   pink1: '#D381A9',
   pink2: '#db7093',
-  pink3: '#EC0C8E',
+  pink3: '#DB0D85',
   pink4: '#F4009B',
   purple1: '#9B4367',
   purple2: '#794bb5',
@@ -161,7 +161,6 @@ export const BoldLink = styled(Link)`
   font-weight: bold;
 `;
 
-
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -172,7 +171,7 @@ const fadeIn = keyframes`
 `;
 
 const FadeInAnimation = css`
-  ${fadeIn} 0.8s linear;
+  ${fadeIn} 0.3s linear;
 `;
 
 export const FadeIn = styled.div`

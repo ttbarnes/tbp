@@ -20,7 +20,9 @@
         "primaryTech": "Full stack JS",
         "colors": {
           "bg": "#735996",
-          "text": "#FFF"
+          "text": "#FFF",
+          "summaryOpacity": "1",
+          "summaryText": "#E4E4E4"
         }
       },
       {

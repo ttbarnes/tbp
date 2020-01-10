@@ -80,7 +80,7 @@ export const ListItemNoIcon = styled.li`
 `;
 
 export const StyledCopyright = styled.p`
-  color: #BBBCBB;
+  color: #767676;
   margin-bottom: 1.5em;
   font-size: 85%;
   text-align: center;

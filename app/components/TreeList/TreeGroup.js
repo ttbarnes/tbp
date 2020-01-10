@@ -61,6 +61,26 @@ export class TreeGroup extends React.Component { // eslint-disable-line react/pr
     }
   }
 
+  handleInlineSummaryStyles(colorsObj) {
+    const {
+      summaryText,
+      summaryOpacity,
+      text
+    } = colorsObj;
+
+    const stylesObj = {};
+
+    if (summaryText) {
+      stylesObj.color = summaryText;
+    } else {
+      stylesObj.color = text;
+    }
+    if (summaryOpacity) {
+      stylesObj.opacity = summaryOpacity;
+    }
+    return stylesObj;
+  }
+
   renderGroup() {
     const {
       heading,
@@ -69,7 +89,6 @@ export class TreeGroup extends React.Component { // eslint-disable-line react/pr
       isLast,
       largeGroupHeight
     } = this.props;
-
 
     const renderGroupContent = (isLast && !largeGroupHeight) || !isLast;
 
@@ -106,14 +125,16 @@ export class TreeGroup extends React.Component { // eslint-disable-line react/pr
                     >
 
                       <ProjectHeading>
-                        <StyledH4 noMargin>{item.name}</StyledH4>
+                        <StyledH4
+                          noMargin
+                          style={{ color: item.colors.text }}
+                        >{item.name}
+                        </StyledH4>
                       </ProjectHeading>
 
                       {item.summary && (
                         <Copy
-                          style={item.colors && {
-                            color: item.colors.text
-                          }}
+                          style={this.handleInlineSummaryStyles(item.colors)}
                         >
                           {item.summary}
                         </Copy>
