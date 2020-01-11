@@ -22,7 +22,7 @@
           "bg": "#735996",
           "text": "#FFF",
           "summaryOpacity": "1",
-          "summaryText": "#E4E4E4"
+          "summaryText": "#FFF"
         }
       },
       {
@@ -281,7 +281,8 @@
         "colors": {
           "bg": "#FFF",
           "text": "#5C8017",
-          "border": "#5C8017"
+          "border": "#5C8017",
+          "summaryOpacity": "1"
         },
         "summary": "Replatforming"
       },
@@ -296,8 +297,9 @@
         ],
         "primaryTech": "UI templates, CMS",
         "colors": {
-          "bg": "#4A81C3",
-          "text": "#FFF"
+          "bg": "#007ACC",
+          "text": "#FFF",
+          "summaryOpacity": "1"
         },
         "summary": "Ecommerce websites, custom UI framework"
       }
@@ -433,7 +435,8 @@
         "summary": "Vertical scroller for list items/feeds",
         "colors": {
           "bg": "#CC342D",
-          "text": "#FFF"
+          "text": "#FFF",
+          "summaryOpacity": "1"
         }
       },
       {
@@ -457,7 +460,8 @@
         "summary": "Simple examples of Angular features",
         "colors": {
           "bg": "#CC342D",
-          "text": "#FFF"
+          "text": "#FFF",
+          "summaryOpacity": "1"
         }
       },
       {
@@ -473,8 +477,9 @@
         "primaryTech": "JavaScript",
         "summary": "Sass complilation with Gulp or Grunt",
         "colors": {
-          "bg": "#D381A9",
-          "text": "#FFF"
+          "bg": "#D70779",
+          "text": "#FFF",
+          "summaryOpacity": "1"
         }
       }
     ]

@@ -41,14 +41,15 @@ const bgTheme = (props) => {
 
   return `
     color: #FFF;
-    background: #AAA;
+    background: #DCDCDC;
     ${type === 'music' && `background: ${colors.blue2}`};
     ${type === 'fpv' && `background: ${colors.green4}`};
     ${type === 'timelapse' && `background: ${colors.yellow2}`};
 
     ${(type.includes('HTML') ||
-      type.includes('CSS')) &&
-      `background: ${tagColors.htmlCss}`
+      type.includes('CSS')) && `
+        color:#000;
+      `
 };
 
     ${type === 'Sass' &&
@@ -136,15 +137,17 @@ const bgTheme = (props) => {
 
     ${type === 'Chai' && `
       background: ${tagColors.chai};
-      color: ${colors.brown2}
+      color: #000;
     `};
 
     ${type === 'Karma' &&
       `background: ${tagColors.karma}`
 };
 
-    ${type === 'styled-components' &&
-      `background: ${tagColors.styledComponents}`
+    ${type === 'styled-components' && `
+      background: ${tagColors.styledComponents};
+      color: #000;
+    `
 };
 
     ${type === 'Aphrodite' && `
@@ -152,8 +155,10 @@ const bgTheme = (props) => {
       color: #000;
     `};
 
-    ${type === 'Stylus' &&
-      `background: ${tagColors.stylus}`
+    ${type === 'Stylus' && `
+      background: ${tagColors.stylus};
+      color: #000;
+    `
 };
 
     ${type === 'Gulp' &&
@@ -168,8 +173,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.highcharts}`
 };
 
-    ${type.includes('d3') &&
-      `background: ${tagColors.d3}`
+    ${type.includes('d3') && `
+      background: ${tagColors.d3};
+      color: #000;
+    `
 };
 
     ${type === 'Heroku' &&
@@ -180,8 +187,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.observables}`
 };
 
-    ${type === 'WebSockets' &&
-      `background: ${tagColors.websockets}`
+    ${type === 'WebSockets' && `
+      background: ${tagColors.websockets};
+      color: #000;
+    `
 };
 
     ${type === 'Docker' &&
@@ -217,8 +226,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.powaCms}`
 };
 
-    ${type === 'jQuery' &&
-      `background: ${tagColors.jQuery}`
+    ${type === 'jQuery' && `
+      background: ${tagColors.jQuery};
+      color: #000;
+    `
 };
 
     ${type === 'Magento' &&
@@ -245,8 +256,10 @@ const bgTheme = (props) => {
       `background: ${tagColors.jest}`
 };
 
-    ${type === 'AWS' &&
-      `background: ${tagColors.aws}`
+    ${type === 'AWS' && `
+      background: ${tagColors.aws};
+      color: #000;
+    `
 };
 
     ${type === 'Cloudinary' &&
@@ -256,9 +269,13 @@ const bgTheme = (props) => {
       `background: ${tagColors.cypress}`
 };
 
-    ${type === 'BEM' &&
-      `background: ${tagColors.bem}`
-};
+    ${type === 'BEM' && `
+      color: #000;
+    `};
+
+    ${type.includes('Many more') && `
+      color: #000;
+    `};
 
   `;
 };
