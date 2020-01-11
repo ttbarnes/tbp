@@ -34,7 +34,7 @@ describe('home page', () => {
         cy
           .get(element).first().children('a')
           .should('be.visible')
-          .should('contain', 'Learn more')
+          .should('contain', 'Find out more')
           .click();
 
         cy.url().should('include', '/about');

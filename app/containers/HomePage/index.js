@@ -55,7 +55,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             </IntroSubHeading>
 
             <Intro>
-              <IntroCopy index="0"><Link to="about">Learn more</Link> <br /></IntroCopy>
+              <IntroCopy index="0"><Link to="about">Find out more</Link> <br /></IntroCopy>
               <IntroCopy index="1">See <Link to="clients">who i{'\''}ve worked with</Link></IntroCopy>
             </Intro>
 
