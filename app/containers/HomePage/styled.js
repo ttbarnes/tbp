@@ -91,8 +91,8 @@ export const Image = styled(StyledImg)`
 `;
 
 export const IntroHeadingMobileOnly = styled(H1)`
-  text-align: center;
   padding: .5em 0 1.25em 0;
+  text-align: center;
   ${media.md`
     display: none;
   `}
