@@ -23,6 +23,7 @@
     "tags": [
       "Enzyme",
       "Jest",
+      "React Testing Library",
       "Mocha",
       "Chai",
       "Cypress",

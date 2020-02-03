@@ -277,6 +277,10 @@ const bgTheme = (props) => {
       color: #000;
     `};
 
+    ${type === 'React Testing Library' && `
+      background: #000;
+    `};
+
   `;
 };
 
