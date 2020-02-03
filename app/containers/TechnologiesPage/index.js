@@ -30,7 +30,7 @@ export class TechnologiesPage extends React.PureComponent { // eslint-disable-li
           ]}
         />
 
-        <H1 hide>Gest tools for the job</H1>
+        <H1 hide>Technologies</H1>
 
         <H2 h1Size>I use the best tools for the job</H2>
 
