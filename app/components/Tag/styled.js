@@ -281,6 +281,22 @@ const bgTheme = (props) => {
       background: #000;
     `};
 
+    ${type === 'Nunjucks' && `
+      background: #3d8137;
+    `};
+
+    ${type === 'Gatsby' && `
+      background: #000;
+    `};
+
+    ${type === 'Netlify' && `
+      background: #146396;
+    `};
+
+    ${type === 'Netlify CMS' && `
+      background: #313D3E;
+    `};
+
   `;
 };
 

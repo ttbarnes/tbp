@@ -4,7 +4,7 @@
     "tags": [
       "React",
       "Redux",
-      "Observables"
+      "Gatsby"
     ]
   },
   {
@@ -61,6 +61,7 @@
     "heading": "Continuous integration (CI)",
     "tags": [
       "Heroku",
+      "Netlify",
       "TeamCity",
       "Jenkins"
     ]
@@ -83,8 +84,11 @@
   {
     "heading": "Also...",
     "tags": [
+      "Observables",
       "WebSockets",
+      "Netlify CMS",
       "Angular",
+      "Nunjucks",
       "Many more..."
     ]
   },
