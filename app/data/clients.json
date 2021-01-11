@@ -349,6 +349,27 @@
     "heading": "Media",
     "items": [
       {
+        "id": "women-in-jazz-Media",
+        "name": "Women in Jazz Media",
+        "date": "2020 - 2021",
+        "industry": "Media",
+        "tech": [
+          "React",
+          "Gatsby",
+          "Netlify CMS",
+          "HTML, CSS",
+          "Sass",
+          "JavaScript"
+        ],
+        "primaryTech": "React",
+        "colors": {
+          "bg": "#2d3a46",
+          "text": "#FFF",
+          "border": "#FFF"
+        },
+        "summary": "Static website, UI templates"
+      },
+      {
         "id": "full-fact",
         "name": "Full Fact",
         "date": "2016 - 2017",
