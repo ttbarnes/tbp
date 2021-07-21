@@ -1,9 +1,11 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cb91fd2f-c86d-42c6-898d-a3cdfb3cab90/deploy-status)](https://app.netlify.com/sites/tbp-portfolio/deploys)
+
 # Portfolio site
 
 <a href="http://tonybarnes.me">Live site</a>
 
-Uses React, Redux, ES6, styled-components and more. Started with <a href="https://github.com/react-boilerplate/react-boilerplate">react boilerplate</a>
+Uses React, Redux and styled-components.
 
-This was built when I was first learning React. I would do things very differently now :)
+This was built many years ago when I was getting to grips with React. I would do things very differently now.
 
-`npm install && npm start` for all the things
+`npm install && npm start:dev` for all the things
