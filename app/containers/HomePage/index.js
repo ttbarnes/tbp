@@ -32,7 +32,10 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <Helmet
           title="Freelance Full Stack JavaScript Engineer"
           meta={[
-            { name: 'description', content: 'Freelance software engineer, London' },
+            {
+              name: 'description',
+              content: 'Freelance software engineer, London'
+            },
           ]}
         />
 
