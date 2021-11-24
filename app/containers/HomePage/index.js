@@ -30,9 +30,9 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       <PageContainer>
 
         <Helmet
-          title="Freelance Front End, Full Stack JavaScript Developer"
+          title="Freelance Full Stack JavaScript Engineer"
           meta={[
-            { name: 'description', content: 'Freelance developer, London' },
+            { name: 'description', content: 'Freelance software engineer, London' },
           ]}
         />
 
@@ -51,7 +51,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             </IntroHeading>
 
             <IntroSubHeading>
-              Freelance, Front End/Full Stack JavaScript Developer specialising in bespoke web app development.
+              Freelance, Full Stack JavaScript Engineer specialising in bespoke web app development and API design.
             </IntroSubHeading>
 
             <Intro>

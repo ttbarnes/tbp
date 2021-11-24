@@ -19,7 +19,7 @@ describe('home page', () => {
     it('should render a description', () => {
       const element = '.intro-heading h2';
 
-      const expected = 'Freelance, Front End/Full Stack JavaScript Developer specialising in bespoke web app development.';
+      const expected = 'Freelance, Full Stack JavaScript Engineer specialising in bespoke web app development.';
 
       cy
         .get(element).eq(0)
