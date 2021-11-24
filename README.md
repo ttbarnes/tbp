@@ -9,3 +9,4 @@ Uses React, Redux and styled-components.
 This was built many years ago when I was getting to grips with React. I would do things very differently now.
 
 `npm install && npm start:dev` for all the things
+
