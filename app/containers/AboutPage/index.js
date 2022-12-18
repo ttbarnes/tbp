@@ -43,8 +43,6 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
             <p>Striving for clean and scalable solutions, I make sure that the right tools and approaches are used for the job.</p>
 
             <p>I have found that breaking a project down into smaller, modular chunks is absolutely essential not only for engineering, but for collaboration, communication and feedback with all stakeholders. By working in an agile way, the product/app can be built and delivered incrementally. This in turn ensures high quality results that solve real problems.</p>
-
-            <p>I{'\''}ve worked with some <Link to="clients">great people</Link>. Recently, I{'\''}ve been making money transfers easier with <a href="https://www.worldremit.com" target="_blank" rel="noopener">WorldRemit</a> and building bespoke Content Management Systems.</p>
           </FadeIn>
         </Intro>
 
