@@ -1,0 +1,33 @@
+$black: #000;
+$blue: #1D4289;
+$grey: #D0D3D4;
+$white: #FFF;
+$yellow: #FFC845;
+
+.backgroundBlack {
+  background: $black;
+}
+
+.backgroundBlue {
+  background: $blue;
+}
+
+.backgroundGrey {
+  background: $grey;
+}
+
+.backgroundWhite {
+  background: $white;
+}
+
+.backgroundYellow {
+  background: $yellow;
+}
+
+.textBlack {
+  color: $black;
+}
+
+.textWhite {
+  color: $white;
+}

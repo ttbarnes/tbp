@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+}
+
+a {
+  color: #0064FF;
+  font-weight: bold;
+  text-decoration: underline;
+
+  &.link-black {
+    color: #000;
+  }
+
+  &.link-white {
+    color: #FFF;
+  }
+}
+
+.white-text {
+  color: #FFF;
+}
