@@ -1,8 +1,10 @@
-import mapTechnologiesArray, { classNameMap, technologyClassName } from '@/helpers/map-technologies-array';
+import mapTechnologiesSummary, { CLASS_NAME_MAP, technologyClassName, mapTechnologyItems, mapTechnologyGroups } from '@/helpers/map-technologies-array';
 import { TECHNICAL_SKILLS } from '@/content-strings';
 
+const { GROUPS, SUMMARY } = TECHNICAL_SKILLS;
+
 describe('helpers/map-technologies-array', () => {
-  describe('classNameMap', () => {
+  describe('CLASS_NAME_MAP', () => {
     it('should return an array of string mappings', () => {
       const expected = {
         '.': '-',
@@ -10,7 +12,7 @@ describe('helpers/map-technologies-array', () => {
         ' ': '-'
       };
 
-      expect(classNameMap).toEqual(expected);
+      expect(CLASS_NAME_MAP).toEqual(expected);
     });
   });
 
@@ -34,14 +36,46 @@ describe('helpers/map-technologies-array', () => {
     });
   });
   
-  describe('mapTechnologiesArray', () => {
-    it('should return an array of technologies with text and sanitised className properties', () => {
-      const result = mapTechnologiesArray();
+  describe('mapTechnologyItems', () => {
+    it('should return an array of items with text and sanitised className properties', () => {
+      const mockItems = SUMMARY;
 
-      const expected = TECHNICAL_SKILLS.SUMMARY.map((tech) => ({
-        text: tech,
-        className: technologyClassName(tech)
+      const result = mapTechnologiesSummary(mockItems);
+
+      const expected = mockItems.map((item) => ({
+        text: item,
+        className: technologyClassName(item)
       }));
+
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe('mapTechnologiesSummary', () => {
+    it('should return an array of technologies via mapTechnologyItems', () => {
+      const result = mapTechnologiesSummary();
+
+      const expected = mapTechnologyItems(SUMMARY);
+
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe('mapTechnologyGroups', () => {
+    it('should return an array of technologies groups and items via mapTechnologyItems', () => {
+      const result = mapTechnologyGroups();
+
+      const groupTitles = Object.keys(GROUPS);
+
+      const expected = groupTitles.map((key) => {
+        const group = GROUPS[key];
+        const itemTitles = Object.values(group.ITEMS);
+
+        return {
+          TITLE: group.TITLE,
+          ITEMS: mapTechnologyItems(itemTitles)
+        };
+      });
 
       expect(result).toEqual(expected);
     });

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import TechnicalSkills from './TechnicalSkills';
 import { ROUTES } from '@/constants';
-import mapTechnologiesArray from '@/helpers/map-technologies-array';
+import mapTechnologiesSummary from '@/helpers/map-technologies-array';
 import { assertLink } from '@/test-helpers';
 
 describe('components/TechnicalSkills', () => {
@@ -29,7 +29,7 @@ describe('components/TechnicalSkills', () => {
   });
 
   it('should render a list of technical skills', () => {
-    const technologies = mapTechnologiesArray();
+    const technologies = mapTechnologiesSummary();
 
     technologies.map((tech) => {
       const element = screen.getByText(tech.text);

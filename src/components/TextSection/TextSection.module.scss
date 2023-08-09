@@ -1,8 +1,24 @@
-$black: #000;
-$blue: #1D4289;
-$grey: #D0D3D4;
-$white: #FFF;
-$yellow: #FFC845;
+@import '@/styles/variables.scss';
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.containerLargePadding {
+  padding: 2em;
+
+  @media (min-width: 768px) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  @media (min-width: 1000px) {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
 
 .backgroundBlack {
   background: $black;

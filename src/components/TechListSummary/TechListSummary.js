@@ -1,8 +1,8 @@
-import mapTechnologiesArray from '@/helpers/map-technologies-array';
+import mapTechnologiesSummary from '@/helpers/map-technologies-array';
 import styles from './TechListSummary.module.scss';
 
 const TechListSummary = () => {
-  const technologies = mapTechnologiesArray();
+  const technologies = mapTechnologiesSummary();
   
   return (
     <ul

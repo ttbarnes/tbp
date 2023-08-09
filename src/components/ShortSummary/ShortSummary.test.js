@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import ShortSummary from './ShortSummary';
 import { BARNES_CODE } from '@/constants';
-import { assertLink } from '../../test-helpers';
+import { assertLink } from '@/test-helpers';
 
 describe('components/ShortSummary', () => {
   beforeEach(() => {

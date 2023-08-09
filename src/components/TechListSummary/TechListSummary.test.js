@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import TechListSummary from './TechListSummary';
-import mapTechnologiesArray from '@/helpers/map-technologies-array';
+import mapTechnologiesSummary from '@/helpers/map-technologies-array';
 
 describe('components/TechListSummary', () => {
   beforeEach(() => {
@@ -17,7 +17,7 @@ describe('components/TechListSummary', () => {
   });
 
   it('should render a list item for each tech skills', () => {
-    const technologies = mapTechnologiesArray();
+    const technologies = mapTechnologiesSummary();
 
     technologies.map((tech) => {
       const element = screen.getByText(tech.text, { selector: 'li' });

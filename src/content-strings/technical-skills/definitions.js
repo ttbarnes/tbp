@@ -2,7 +2,9 @@
 // AWS
 // Cloudinary
 
-// Netlify CMS
+// aphrodite
+
+// wordpress / magento ?
 
 // HTML
 // CSS
@@ -11,83 +13,135 @@
 
 
 const DEFINITIONS = {
-  ARCHITECTURE: 'Architecture',
-  AUTHENTICATION: 'Authentication',
+  ARCHITECTURE: {
+    TITLE: 'Architecture'
+  },
+  AUTHENTICATION: {
+    TITLE: 'Authentication'
+  },
   BUILD_TOOLS: {
-    WEBPACK: 'Webpack',
-    GULP: 'Gulp',
-    GRUNT: 'Grunt'
+    TITLE: 'Build tools',
+    ITEMS: {
+      WEBPACK: 'Webpack',
+      GULP: 'Gulp',
+      GRUNT: 'Grunt'
+    }
   },
   CI_CD: {
-    GHA: 'Github Actions',
-    HEROKU: 'Heroku',
-    NETLIFY: 'Netlify',
-    TEAM_CTIY: 'TeamCity',
-    JENKINS: 'Jenkins'
+    TITLE: 'CI, CD',
+    ITEMS: {
+      GHA: 'Github Actions',
+      NETLIFY: 'Netlify',
+      HEROKU: 'Heroku',
+      TEAM_CITY: 'TeamCity',
+      JENKINS: 'Jenkins'
+    }
   },
   DATABASE: {
-    SQL: 'SQL',
-    MONGODB_MONGOOSE: 'MongoDB, Mongoose'
+    TITLE: 'Database',
+    ITEMS: {
+      SQL: 'SQL',
+      SEQUELIZE: 'Sequelize',
+      MONGODB_MONGOOSE: 'MongoDB, Mongoose'
+    }
   },
   DATA_VISUALIZATION: {
-    D3: 'd3.js',
-    HIGHCHARTS: 'Highcharts',
-    MAPBOX: 'Mapbox'
+    TITLE: 'Data visualization',
+    ITEMS: {
+      D3: 'd3.js',
+      HIGHCHARTS: 'Highcharts',
+      MAPBOX: 'Mapbox'
+    }
   },
   HEADLESS_CMS: {
-    GATSBY: 'Gatsby',
-    NETLIFY: 'Netlify CMS'
+    TITLE: 'Headless CMS',
+    ITEMS: {
+      GATSBY: 'Gatsby',
+      NETLIFY: 'Netlify CMS',
+      KEYSTONE: 'KeystoneJS'
+    }
   },
   MISC_ALSO_OTHER: {
-    OBSERVABLES: 'Observables',
-    WEB_SOCKETS: 'WebSockets',
-    ANGULAR: 'Angular',
-    NUNJUCKS: 'Nunjucks'
+    TITLE: 'Misc',
+    ITEMS: {
+      OBSERVABLES: 'Observables',
+      WEB_SOCKETS: 'WebSockets',
+      ANGULAR: 'Angular',
+      NUNJUCKS: 'Nunjucks'
+    }
   },
   QUERYING: {
-    GRAPHQL: 'GraphQL',
-    APOLLO: 'Apollo'
+    TITLE: 'Querying - TODO rename probably',
+    ITEMS: {
+      GRAPHQL: 'GraphQL',
+      APOLLO: 'Apollo'
+    }
   },
-  SECURITY: 'Security, OWASP',
+  SECURITY: {
+    TITLE: 'Security, OWASP'
+  },
   SERVER_SIDE: {
-    NODE_EXPRESS: 'Node.js, express',
-    SSR: 'SSR'
+    TITLE: 'Server side',
+    ITEMS: {
+      NODE_EXPRESS: 'Node.js, express',
+      SSR: 'SSR (server side rendering)'
+    }
   },
   STATE_MANAGEMENT: {
-    REDUX: 'Redux'
+    TITLE: 'State management',
+    ITEMS: {
+      REDUX: 'Redux'
+    }
   },
   STATIC_TYPES: {
-    TYPESCRIPT: 'TypeScript',
-    FLOW: 'Flow'
+    TITLE: 'Static types',
+    ITEMS: {
+      TYPESCRIPT: 'TypeScript',
+      FLOW: 'Flow'
+    }
   },
   STYLING: {
-    STYLED_COMPONENTS: 'styled-components',
-    APHRODITE: 'Aphrodite',
-    SASS: 'Sass',
-    STYLUS: 'Stylus',
-    LESS: 'Less',
-    BEM: 'BEM'
+    TITLE: 'Styling',
+    ITEMS: {
+      STYLED_COMPONENTS: 'styled-components',
+      APHRODITE: 'Aphrodite',
+      SASS: 'Sass',
+      STYLUS: 'Stylus',
+      LESS: 'Less',
+      BEM: 'BEM'
+    }
   },
   TESTING: {
-    ENZYME: 'Enzyme',
-    JEST: 'Jest',
-    REACT_TESTING_LIBRARY: 'React Testing Library',
-    MOCHA: 'Mocha',
-    CHAI: 'Chai',
-    CYPRESS: 'Cypress',
-    SHOULD_JS: 'Shouldjs',
-    JASMINE: 'Jasmine',
-    KARMA: 'Karma'
+    TITLE: 'Testing, TDD, BDD',
+    ITEMS: {
+      ENZYME: 'Enzyme',
+      JEST: 'Jest',
+      REACT_TESTING_LIBRARY: 'React Testing Library',
+      MOCHA: 'Mocha',
+      CHAI: 'Chai',
+      CYPRESS: 'Cypress',
+      SHOULD_JS: 'Shouldjs',
+      JASMINE: 'Jasmine',
+      KARMA: 'Karma'
+    }
   },
   TOOLS: {
-    ESLINT: 'ESLint',
-    PRETTIER: 'Prettier'
+    TITLE: 'Tools',
+    ITEMS: {
+      ESLINT: 'ESLint',
+      PRETTIER: 'Prettier'
+    }
   },
   UI: {
-    NEXT_JS: 'Next.js',
-    REACT: 'React'
+    TITLE: 'UI',
+    ITEMS: {
+      NEXT_JS: 'Next.js',
+      REACT: 'React'
+    }
   },
-  VANILLA_JS: 'Vanilla JavaScript'
+  VANILLA_JS: {
+    TITLE: 'Vanilla JavaScript'
+  }
 };
 
 export default DEFINITIONS;

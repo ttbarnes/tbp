@@ -1,5 +1,7 @@
 import { TECHNICAL_SKILLS } from '@/content-strings';
 
+const { GROUPS, SUMMARY } = TECHNICAL_SKILLS;
+
 /**
  * Map of special characters to replace
  * For a clean CSS class name.
@@ -33,19 +35,56 @@ export const technologyClassName = (str) => {
 }
 
 /**
- * Map technical skills summary into an array of objects.
- * This is for UI list consumption.
- * @returns {Array}
+ * Map an array of technology skills
+ * This is for UI list consumption via summary and group mappings.
+ * @returns {Array} Array of skill objects
  */
-const mapTechnologiesArray = () => {
-  const technologies = TECHNICAL_SKILLS.SUMMARY;
-
-  const mapped = technologies.map((tech) => ({
-    text: tech,
-    className: technologyClassName(tech)
+export const mapTechnologyItems = (items) => {
+  const mapped = items.map((item) => ({
+    text: item,
+    className: technologyClassName(item)
   }));
 
   return mapped;
 };
 
-export default mapTechnologiesArray;
+/**
+ * Map a summary of technical skills
+ * @returns {Array} Simple technologies summary array of objects
+ */
+export const mapTechnologiesSummary = () => {
+  const technologies = SUMMARY;
+
+  const mapped = mapTechnologyItems(technologies);
+
+  return mapped;
+};
+
+/**
+ * Map groups of technical skills with child items
+ * @returns {Array} Technology groups array of objects
+ */
+export const mapTechnologyGroups = () => {
+  const groupTitles = Object.keys(GROUPS);
+
+  const mapped = groupTitles.map((key) => {
+    const group = GROUPS[key];
+
+    const mappedGroup = {
+      TITLE: group.TITLE,
+      ITEMS: []
+    };
+
+    if (group.ITEMS) {
+      const itemTitles = Object.values(group.ITEMS);
+
+      mappedGroup.ITEMS = mapTechnologyItems(itemTitles);
+    }
+
+    return mappedGroup;
+  });
+
+  return mapped;
+};
+
+export default mapTechnologiesSummary;

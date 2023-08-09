@@ -2,7 +2,7 @@ import Image from 'next/image';
 import TextSection from '@/components/TextSection';
 
 const Intro = () => (
-  <TextSection>
+  <TextSection largePadding>
     <h1><span>Hello!</span> I{"'"}m Tony.</h1>
     <p style={{ fontSize: '1.5em' }}>I write code and music.</p>
 

@@ -1,19 +1,27 @@
 import PropTypes from 'prop-types';
 import { getBackgoundColorClassName, getTextColorClassName } from './TextSection-className';
+import styles from './TextSection.module.scss';
 
 const TextSection = ({ 
   backgroundColor,
   textColor,
-  children
+  children,
+  largePadding
 }) => {
   const className = `
     ${getBackgoundColorClassName(backgroundColor)}
     ${getTextColorClassName(textColor)}
   `;
 
+  let innerContainerClassName = styles.container;
+
+  if (largePadding) {
+    innerContainerClassName += ` ${styles.containerLargePadding}`;
+  }
+
   return (
     <div className={className}>
-      <div className='container container-large-padding'>
+      <div className={innerContainerClassName}>
         {children}
       </div>
     </div>
@@ -27,12 +35,14 @@ TextSection.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
     PropTypes.string
-  ]).isRequired
+  ]).isRequired,
+  largePadding: PropTypes.bool
 };
 
 TextSection.defaultProps = {
   backgroundColor: 'white',
-  textColor: 'black'
+  textColor: 'black',
+  largePadding: true
 };
 
 export default TextSection;
