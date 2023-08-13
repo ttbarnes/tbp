@@ -1,4 +1,6 @@
-// TODO: object structure
+// TODO:
+// - object structure
+// - assertTargetBlank for social icons.
 
 export const assertLink = (
   element,

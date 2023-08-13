@@ -21,27 +21,59 @@ describe('components/FindMeOn', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should render a link to github', () => {
-    const element = screen.getAllByRole('link')[0];
+  describe('github', () => {
+    it('should render a link', () => {
+      const element = screen.getAllByRole('link')[0];
 
-    assertLink(element, GITHUB);
+      assertLink(element, GITHUB);
+    });
+
+    it('should render an image', () => {
+      const image = screen.getByAltText('GitHub icon');
+
+      expect(image.src).toContain('/social/gh.svg');
+    });
   });
 
-  it('should render a link to linkedin', () => {
-    const element = screen.getAllByRole('link')[1];
+  describe('linkedin', () => {
+    it('should render a link', () => {
+      const element = screen.getAllByRole('link')[1];
 
-    assertLink(element, LINKEDIN);
+      assertLink(element, LINKEDIN);
+    });
+
+    it('should render an image', () => {
+      const image = screen.getByAltText('LinkedIn icon');
+
+      expect(image.src).toContain('/social/in.svg');
+    });
   });
 
-  it('should render a link to twitter', () => {
-    const element = screen.getAllByRole('link')[2];
+  describe('twitter', () => {
+    it('should render a link', () => {
+      const element = screen.getAllByRole('link')[2];
 
-    assertLink(element, TWITTER);
+      assertLink(element, TWITTER);
+    });
+
+    it('should render an image', () => {
+      const image = screen.getByAltText('Twitter icon');
+
+      expect(image.src).toContain('/social/tw.svg');
+    });
   });
 
-  it('should render a link to instagram', () => {
-    const element = screen.getAllByRole('link')[3];
+  describe('instagram', () => {
+    it('should render a link', () => {
+      const element = screen.getAllByRole('link')[3];
 
-    assertLink(element, INSTAGRAM);
+      assertLink(element, INSTAGRAM);
+    });
+
+    it('should render an image', () => {
+      const image = screen.getByAltText('Instagram icon');
+
+      expect(image.src).toContain('/social/ig.svg');
+    });
   });
 });
