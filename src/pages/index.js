@@ -17,7 +17,7 @@ const HomePage = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
-    <main>
+    <main className='main-container'>
 
       <Intro />
 

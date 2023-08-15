@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Sidebar from '@/components/Sidebar';
 import TextSection from '@/components/TextSection';
-
 import TechnicalList from '@/components/TechnicalList';
 
 const TechnicalSkillsPage = () => (
@@ -13,16 +12,18 @@ const TechnicalSkillsPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main style={{ position: 'relative' }}>
+    <main className='main-container'>
 
       <TextSection largePadding>
         <h1>Tony{"'"}s technical skills</h1>
-        <p style={{ fontSize: '1.5em' }}>Example intro.</p>
+        <p style={{ fontSize: '1.5em' }}>I use the right tools for the job.</p>
       </TextSection>
 
       <Sidebar />
 
-      <TechnicalList />
+      <div className='main-content'>
+        <TechnicalList />
+      </div>
 
     </main>
   </>

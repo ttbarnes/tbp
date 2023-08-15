@@ -42,7 +42,8 @@ const DEFINITIONS = {
     ITEMS: {
       SQL: 'SQL',
       SEQUELIZE: 'Sequelize',
-      MONGODB_MONGOOSE: 'MongoDB, Mongoose'
+      MONGODB_MONGOOSE: 'MongoDB, Mongoose',
+      PRISMA: 'Prisma'
     }
   },
   DATA_VISUALIZATION: {
@@ -61,8 +62,8 @@ const DEFINITIONS = {
       KEYSTONE: 'KeystoneJS'
     }
   },
-  MISC_ALSO_OTHER: {
-    TITLE: 'Misc',
+  MISCELLANEOUS: {
+    TITLE: 'Miscellaneous',
     ITEMS: {
       OBSERVABLES: 'Observables',
       WEB_SOCKETS: 'WebSockets',
@@ -71,10 +72,9 @@ const DEFINITIONS = {
     }
   },
   QUERYING: {
-    TITLE: 'Querying - TODO rename probably',
+    TITLE: 'Query languages',
     ITEMS: {
-      GRAPHQL: 'GraphQL',
-      APOLLO: 'Apollo'
+      GRAPHQL: 'GraphQL'
     }
   },
   SECURITY: {
@@ -90,7 +90,8 @@ const DEFINITIONS = {
   STATE_MANAGEMENT: {
     TITLE: 'State management',
     ITEMS: {
-      REDUX: 'Redux'
+      REDUX: 'Redux',
+      APOLLO: 'Apollo'
     }
   },
   STATIC_TYPES: {

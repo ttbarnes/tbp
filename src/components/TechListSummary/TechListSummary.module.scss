@@ -28,6 +28,8 @@ $nodeJS: #026E00;
 
 $prettier: #C596C7;
 
+$prisma: #5A67B8;
+
 $react: #0DD8FF;
 $redux: #794bb5;
 
@@ -41,15 +43,29 @@ $typescript: #3178C6;
   color: $color
 }
 
-
-// TODO alphabetical ordering
-
 .apollo {
   @include theme($apollo, $white)
 }
 
 .cypress {
   @include theme($cypress, $black);
+}
+
+.eslint {
+  @include theme($eslint, $white);
+}
+
+.flow {
+  @include theme($flow, $black);
+}
+
+.gatsby {
+  @include theme($gatsby, $white);
+}
+
+.github-actions {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
 }
 
 .graphql {
@@ -60,29 +76,34 @@ $typescript: #3178C6;
   @include theme($heroku, $white);
 }
 
-.netlify,
-.netlify-cms {
-  @include theme($netlify, $black);
+.jasmine {
+  @include theme($jasmine, $white);
+}
+
+.jest {
+  @include theme($jest, $black);
+}
+
+.karma {
+  @include theme($karma, $white);
 }
 
 .keystonejs {
   @include theme($keystoneJS, $white);
 }
 
-.github-actions {
-  @include theme($black, $white);
-}
-
-.vanilla-javascript {
-  @include theme($javascript, $black);
-}
-
-.react {
-  @include theme($react, $black);
+.mocha {
+  @include theme($mocha, $white);
 }
 
 .next-js {
   @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}
+
+.netlify,
+.netlify-cms {
+  @include theme($netlify, $black);
 }
 
 .node-js-express,
@@ -90,58 +111,43 @@ $typescript: #3178C6;
   @include theme($nodeJS, $white);
 }
 
+.prettier {
+  @include theme($prettier, $black);
+}
+
+.prisma {
+  @include theme($prisma, $white);
+}
+
+.react {
+  @include theme($react, $black);
+}
+
+.react-testing-library {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}
+
 .redux {
   @include theme($redux, $white);
-}
-
-.gatsby {
-  @include theme($gatsby, $white);
-}
-
-.sql {
-  @include theme($sql, $white);
 }
 
 .sequelize {
   @include theme($sequelize, $white);
 }
 
-.eslint {
-  @include theme($eslint, $white);
-}
-
-.prettier {
-  @include theme($prettier, $black);
-}
-
-.typescript {
-  @include theme($typescript, $white);
-}
-
-.flow {
-  @include theme($flow, $black);
-}
-
-.jest {
-  @include theme($jest, $black);
-}
-
-.react-testing-library {
-  @include theme($black, $white);
-}
-
-.mocha {
-  @include theme($mocha, $white);
+.sql {
+  @include theme($sql, $white);
 }
 
 .shouldjs {
   @include theme($javascript, $black);
 }
 
-.jasmine {
-  @include theme($jasmine, $white);
+.typescript {
+  @include theme($typescript, $white);
 }
 
-.karma {
-  @include theme($karma, $white);
+.vanilla-javascript {
+  @include theme($javascript, $black);
 }

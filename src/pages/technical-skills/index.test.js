@@ -19,7 +19,7 @@ describe('pages/technical-skills', () => {
   });
 
   it('should render an intro', () => {
-    const expectedCopy = 'Example intro.';
+    const expectedCopy = 'I use the right tools for the job.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 
