@@ -1,5 +1,4 @@
 import mapTechnologiesSummary from '@/helpers/map-technologies-array';
-import styles from './TechListSummary.module.scss';
 
 const TechListSummary = () => {
   const technologies = mapTechnologiesSummary();
@@ -13,7 +12,7 @@ const TechListSummary = () => {
         return (
           <li
             key={tech.text}
-            className={`tag-list-item ${styles[tech.className]}`}
+            className={`tag-list-item ${tech.className}`}
           >
             {tech.text}
           </li>

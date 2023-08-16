@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className='container'>
           <h1>Tony{"'"}s quick thoughts</h1>
-          <p style={{ fontSize: '1.5em' }}>Some intro here.</p>
+          <p className='heading-caption'>Some intro here.</p>
         </div>
 
       </main>

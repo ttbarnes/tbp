@@ -16,7 +16,7 @@ const TechnicalSkillsPage = () => (
 
       <TextSection largePadding>
         <h1>Tony{"'"}s technical skills</h1>
-        <p style={{ fontSize: '1.5em' }}>I use the right tools for the job.</p>
+        <p className='heading-caption'>I use the right tools for the job.</p>
       </TextSection>
 
       <Sidebar />

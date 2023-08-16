@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import TextSection from '@/components/TextSection';
+import styles from './Intro.module.scss';
 
 const Intro = () => (
   <TextSection largePadding>
     <h1><span>Hello!</span> I{"'"}m Tony.</h1>
-    <p style={{ fontSize: '1.5em' }}>I write code and music.</p>
+    <p className='heading-caption'>I write code and music.</p>
 
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +18,7 @@ const Intro = () => (
         width={250}
         height={250}
         alt='Headshot of Tony Barnes'
-        style={{ objectFit: 'contain' }}
+        className={styles.image}
       />
     </motion.div>
 

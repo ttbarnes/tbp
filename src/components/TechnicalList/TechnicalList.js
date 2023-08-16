@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { mapTechnologyGroups } from '@/helpers/map-technologies-array';
 import TextSection from '@/components/TextSection';
-// TODO - extract
-import styles from '../../components/TechListSummary/TechListSummary.module.scss';
 
 const groups = mapTechnologyGroups();
 
@@ -27,7 +25,7 @@ const TechnicalList = () => (
                   whileInView={{ opacity: 1, transition: { duration: .5 } }}
                   viewport={{ once: true }}
                   key={tech.text}
-                  className={`tag-list-item ${styles[tech.className]}`}
+                  className={`tag-list-item ${tech.className}`}
                 >
                   {tech.text}
                 </motion.li>
