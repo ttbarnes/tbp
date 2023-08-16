@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
+import Metadata from '@/components/Head';
 import '@/styles/globals.scss';
 
 const App = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Metadata />
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 App.propTypes = {

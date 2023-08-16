@@ -1,16 +1,14 @@
-import Head from 'next/head';
+import Head from '@/components/Head';
+import { METADATA } from '@/content-strings';
 import Sidebar from '@/components/Sidebar';
 import TextSection from '@/components/TextSection';
 import TechnicalList from '@/components/TechnicalList';
 
 const TechnicalSkillsPage = () => (
   <>
-    <Head>
-      <title>Tony Barnes</title>
-      <meta name="description" content="TODO" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <Head
+      pageTitle={METADATA.PAGE_TITLES.TECHNICAL_SKILLS}
+    />
 
     <main className='main-container'>
 

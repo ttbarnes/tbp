@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Intro from '@/components/Intro';
 import ShortSummary from '@/components/ShortSummary';
 import Experience from '@/components/Experience';
@@ -10,13 +9,6 @@ import FindMeOn from '@/components/FindMeOn';
 
 const HomePage = () => (
   <>
-    <Head>
-      <title>Tony Barnes</title>
-      <meta name='description' content='TODO' />
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <link rel='icon' href='/favicon.ico' />
-    </Head>
-
     <main className='main-container'>
 
       <Intro />
