@@ -1,14 +1,12 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { METADATA } from '@/content-strings';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Tony Barnes</title>
-        <meta name="description" content="TODO" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head
+        pageTitle={METADATA.PAGE_TITLES.QUICK_THOUGHTS}
+      />
 
       <main className='main-container'>
 
