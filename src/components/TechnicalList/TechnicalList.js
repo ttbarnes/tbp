@@ -1,11 +1,10 @@
+import { motion } from 'framer-motion';
 import { mapTechnologyGroups } from '@/helpers/map-technologies-array';
 import TextSection from '@/components/TextSection';
 // TODO - extract
 import styles from '../../components/TechListSummary/TechListSummary.module.scss';
 
 const groups = mapTechnologyGroups();
-
-// TODO: should the aria label be "skills for X group"
 
 const TechnicalList = () => (
   <>
@@ -23,12 +22,15 @@ const TechnicalList = () => (
           >
             {group.ITEMS.map((tech) => {
               return (
-                <li
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { duration: .5 } }}
+                  viewport={{ once: true }}
                   key={tech.text}
                   className={`tag-list-item ${styles[tech.className]}`}
                 >
                   {tech.text}
-                </li>
+                </motion.li>
               );
             })}
           </ul>

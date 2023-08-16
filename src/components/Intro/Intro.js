@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import TextSection from '@/components/TextSection';
 
@@ -6,13 +7,19 @@ const Intro = () => (
     <h1><span>Hello!</span> I{"'"}m Tony.</h1>
     <p style={{ fontSize: '1.5em' }}>I write code and music.</p>
 
-    <Image
-      src='/tony-barnes.jpg'
-      width={250}
-      height={250}
-      alt='Headshot of Tony Barnes'
-      style={{ objectFit: 'contain' }}
-    />
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: .5 } }}
+      viewport={{ once: true }}
+    >
+      <Image
+        src='/tony-barnes.jpg'
+        width={250}
+        height={250}
+        alt='Headshot of Tony Barnes'
+        style={{ objectFit: 'contain' }}
+      />
+    </motion.div>
 
   </TextSection>
 );

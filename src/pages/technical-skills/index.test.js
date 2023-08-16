@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import 'intersection-observer';
 import TechnicalSkillsPage from '.';
 import { TECHNICAL_SKILLS } from '@/content-strings';
 
