@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import TextSection from '@/components/TextSection';
+import { NAME } from '@/content-strings';
 import styles from './Intro.module.scss';
 
 const Intro = () => (
@@ -17,7 +18,7 @@ const Intro = () => (
         src='/tony-barnes.jpg'
         width={250}
         height={250}
-        alt='Headshot of Tony Barnes'
+        alt={`Headshot of ${NAME}`}
         className={styles.image}
       />
     </motion.div>
