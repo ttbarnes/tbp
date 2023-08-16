@@ -25,7 +25,12 @@ describe('components/FindMeOn', () => {
     it('should render a link', () => {
       const element = screen.getAllByRole('link')[0];
 
-      assertLink(element, GITHUB);
+      assertLink({
+        element,
+        expectedHref: GITHUB,
+        assertRel: true,
+        assertTargetBlank: true
+      });
     });
 
     it('should render an image', () => {
@@ -39,7 +44,12 @@ describe('components/FindMeOn', () => {
     it('should render a link', () => {
       const element = screen.getAllByRole('link')[1];
 
-      assertLink(element, LINKEDIN);
+      assertLink({
+        element,
+        expectedHref: LINKEDIN,
+        assertRel: true,
+        assertTargetBlank: true
+      });
     });
 
     it('should render an image', () => {
@@ -53,7 +63,12 @@ describe('components/FindMeOn', () => {
     it('should render a link', () => {
       const element = screen.getAllByRole('link')[2];
 
-      assertLink(element, TWITTER);
+      assertLink({
+        element,
+        expectedHref: TWITTER,
+        assertRel: true,
+        assertTargetBlank: true
+      });
     });
 
     it('should render an image', () => {
@@ -67,7 +82,12 @@ describe('components/FindMeOn', () => {
     it('should render a link', () => {
       const element = screen.getAllByRole('link')[3];
 
-      assertLink(element, INSTAGRAM);
+      assertLink({
+        element,
+        expectedHref: INSTAGRAM,
+        assertRel: true,
+        assertTargetBlank: true
+      });
     });
 
     it('should render an image', () => {

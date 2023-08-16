@@ -40,7 +40,7 @@ describe('components/ShortSummary', () => {
       const expectedHref = BARNES_CODE.HREF;
       const expectedCopy = BARNES_CODE.TEXT;
 
-      assertLink(element, expectedHref, expectedCopy);
+      assertLink({ element, expectedHref, expectedCopy });
     });
   });
 

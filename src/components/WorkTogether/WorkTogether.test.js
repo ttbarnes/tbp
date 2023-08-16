@@ -40,11 +40,10 @@ describe('components/WorkTogether', () => {
 
     const expectedHref = `mailto:${EMAIL}`;
 
-    assertLink(
+    assertLink({
       element,
       expectedHref,
-      EMAIL,
-      false
-    );
+      expectedCopy: EMAIL
+    });
   });
 });

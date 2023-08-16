@@ -46,7 +46,11 @@ describe('components/Sidebar', () => {
 
       const expectedHref = `#${group.TITLE}`;
 
-      assertLink(link, expectedHref, group.TITLE);
+      assertLink({
+        element: link,
+        expectedHref,
+        expectedCopy: group.TITLE
+      });
     });
   });
 });

@@ -38,11 +38,10 @@ describe('components/TonyThoughts', () => {
   it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
     const element = screen.getByRole('link');
 
-    assertLink(
+    assertLink({
       element,
-      ROUTES.QUIICK_THOUGHTS,
-      'quick thoughts',
-      false
-    );
+      expectedHref: ROUTES.QUIICK_THOUGHTS,
+      expectedCopy: 'quick thoughts',
+    });
   });
 });

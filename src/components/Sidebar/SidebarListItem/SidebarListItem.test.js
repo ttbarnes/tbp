@@ -33,7 +33,11 @@ describe('components/Sidebar/SidebarListItem', () => {
     const expectedHref = `#${mockProps.title}`;
     const expectedCopy = mockProps.title;
     
-    assertLink(element, expectedHref, expectedCopy);
+    assertLink({ 
+      element,
+      expectedHref,
+      expectedCopy
+    });
   });
 
   it('should render small text', () => {

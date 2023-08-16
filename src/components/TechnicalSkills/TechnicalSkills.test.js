@@ -41,11 +41,10 @@ describe('components/TechnicalSkills', () => {
   it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
     const element = screen.getByRole('link');
 
-    assertLink(
+    assertLink({
       element,
-      ROUTES.TECHNICAL_SKILLS,
-      'View all technical skills',
-      false
-    );
+      expectedHref: ROUTES.TECHNICAL_SKILLS,
+      expectedCopy: 'View all technical skills',
+    });
   });
 });

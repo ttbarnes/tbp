@@ -1,17 +1,27 @@
-// TODO:
-// - object structure
-// - assertTargetBlank for social icons.
-
-export const assertLink = (
+/**
+ * Assert a link
+ * @param {HTMLElement} Link element to assert
+ * @param {String} Expected "href" attribute
+ * @param {String} Expected copy
+ * @param {Boolean} Flag for checking 'rel' attribute 
+ * @param {Boolean} Flag for checking 'target' attribute 
+ */
+export const assertLink = ({
   element,
   expectedHref,
   expectedCopy,
-  assertRelAttributes
-) => {
+  assertRel = false,
+  assertTargetBlank = false
+}) => {
+
   expect(element).toHaveAttribute('href', expectedHref);
 
-  if (assertRelAttributes) {
+  if (assertRel) {
     expect(element).toHaveAttribute('rel', 'noopener noreferrer');
+  }
+
+  if (assertTargetBlank) {
+    expect(element).toHaveAttribute('target', '_blank');
   }
 
   if (expectedCopy) {
