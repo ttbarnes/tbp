@@ -1,8 +1,11 @@
 @import '@/styles/variables.scss';
 
+$angular: #CF4646;
 $apollo: #3f20ba;
 
 $cypress: #A3E7CB;
+
+$d3js: #EF7234;
 
 $eslint: #4B32C3;
 
@@ -10,8 +13,11 @@ $flow: #E8BD36;
 
 $gatsby: #663399;
 $graphQL: #D70779;
+$grunt: #E48632;
+$gulp: #CF4647;
 
 $heroku: #79589F;
+$highcharts: #5749AD;
 
 $javascript: #F3DD1D;
 
@@ -21,10 +27,16 @@ $jest: #15C213;
 $karma: #00AEC8;
 $keystoneJS: #166BFF;
 
+$less: #1D365D;
+
 $mocha: #8D6748;
 
 $netlify: #32E6E2;
 $nodeJS: #026E00;
+
+$nunjucks: #3D8137;
+
+$observables: #DB0D85;
 
 $prettier: #C596C7;
 
@@ -33,14 +45,27 @@ $prisma: #5A67B8;
 $react: #0DD8FF;
 $redux: #794bb5;
 
+$sass: #BF4080;
+$styledComponents: #EEA4BC;
 $sql: #0074a3;
 $sequelize: #3B76C3;
+$stylus: #FF6347;
 
 $typescript: #3178C6;
+
+$webpack: #175D96;
 
 @mixin theme($background, $color) {
   background: $background;
   color: $color
+}
+
+.angular {
+  @include theme($angular, $white)
+}
+
+.aphrodite {
+  @include theme($javascript, $black)
 }
 
 .apollo {
@@ -49,6 +74,10 @@ $typescript: #3178C6;
 
 .cypress {
   @include theme($cypress, $black);
+}
+
+.d3-js {
+  @include theme($d3js, $white);
 }
 
 .eslint {
@@ -72,8 +101,20 @@ $typescript: #3178C6;
   @include theme($graphQL, $white);
 }
 
+.gulp {
+  @include theme($gulp, $white);
+}
+
+.grunt {
+  @include theme($grunt, $white);
+}
+
 .heroku {
   @include theme($heroku, $white);
+}
+
+.highcharts {
+  @include theme($highcharts, $white);
 }
 
 .jasmine {
@@ -90,6 +131,15 @@ $typescript: #3178C6;
 
 .keystonejs {
   @include theme($keystoneJS, $white);
+}
+
+.less {
+  @include theme($less, $white)
+}
+
+.mapbox {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
 }
 
 .mocha {
@@ -109,6 +159,14 @@ $typescript: #3178C6;
 .node-js-express,
 .mongodb-mongoose {
   @include theme($nodeJS, $white);
+}
+
+.nunjucks {
+  @include theme($nunjucks, $white);
+}
+
+.observables {
+  @include theme($observables, $white);
 }
 
 .prettier {
@@ -136,6 +194,18 @@ $typescript: #3178C6;
   @include theme($sequelize, $white);
 }
 
+.sass {
+  @include theme($sass, $white)
+}
+
+.styled-components {
+  @include theme($styledComponents, $black)
+}
+
+.stylus {
+  @include theme($stylus, $white)
+}
+
 .sql {
   @include theme($sql, $white);
 }
@@ -146,6 +216,10 @@ $typescript: #3178C6;
 
 .typescript {
   @include theme($typescript, $white);
+}
+
+.webpack {
+  @include theme($webpack, $white);
 }
 
 .vanilla-javascript {
