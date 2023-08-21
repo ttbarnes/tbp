@@ -9,7 +9,7 @@ const SideBarHeading = () => (
       className='white-text'
     >
       {NAME}
-    </Link>,
+    </Link>
   </h2>
 );
 

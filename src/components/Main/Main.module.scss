@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.container {
+  position: relative;
+}
+
+.pageHasSidebar {
+  padding-top: 3em;
+  
+  @media (min-width: $bp-large) {
+    padding-top: 0;
+    margin-left: 250px;
+  }
+}

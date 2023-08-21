@@ -35,6 +35,14 @@ describe('pages/technical-skills', () => {
     expect(element).toBeInTheDocument();
   });
 
+  it('should render `technical categories list` component', () => {
+    const expectedCopy = "Categories of Tony's technical skills";
+
+    const element = screen.getByLabelText(expectedCopy, { selector: 'ul' });
+
+    expect(element).toBeInTheDocument();
+  }); 
+
   it('should render `technical skills` component', () => {
     const firstGroup = TECHNICAL_SKILLS.GROUPS.BUILD_TOOLS;
 

@@ -1,3 +1,4 @@
+import Main from '@/components/Main';
 import Intro from '@/components/Intro';
 import ShortSummary from '@/components/ShortSummary';
 import Experience from '@/components/Experience';
@@ -9,7 +10,7 @@ import FindMeOn from '@/components/FindMeOn';
 
 const HomePage = () => (
   <>
-    <main className='main-container'>
+    <Main>
 
       <Intro />
 
@@ -27,7 +28,7 @@ const HomePage = () => (
 
       <FindMeOn />
         
-    </main>
+    </Main>
   </>
 );
 
