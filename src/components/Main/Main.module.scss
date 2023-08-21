@@ -9,6 +9,6 @@
   
   @media (min-width: $bp-large) {
     padding-top: 0;
-    margin-left: 250px;
+    margin-left: $sidebar-width;
   }
 }
