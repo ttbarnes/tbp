@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import SidebarListItem from './SidebarListItem';
 import { assertLink } from '@/test-helpers';
@@ -7,7 +7,8 @@ describe('components/Sidebar/SidebarListItem', () => {
   let container;
 
   const mockProps = {
-    title: 'Mock title'
+    title: 'Mock title',
+    onClick: jest.fn()
   };
 
   beforeEach(() => {
@@ -37,6 +38,16 @@ describe('components/Sidebar/SidebarListItem', () => {
       element,
       expectedHref,
       expectedCopy
+    });
+  });
+
+  describe('when clicking the link', () => {
+    it('should call props.onClick', () => {
+      const link = screen.getByRole('link');
+
+      fireEvent.click(link);
+
+      expect(mockProps.onClick).toHaveBeenCalledTimes(1);
     });
   });
 

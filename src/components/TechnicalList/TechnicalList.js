@@ -10,8 +10,9 @@ const TechnicalList = () => (
       <TextSection
         key={group.TITLE}
         largePadding={false}
+        id={group.TITLE}
       >
-        <h3 id={group.TITLE}>{group.TITLE}</h3>
+        <h3>{group.TITLE}</h3>
 
         {group.ITEMS ? (
           <ul

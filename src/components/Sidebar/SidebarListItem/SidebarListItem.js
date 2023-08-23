@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styles from './SidebarListItem.module.scss';
 
-const SidebarListItem = ({ title }) => (
+const SidebarListItem = ({ title, onClick }) => (
   <li
     key={title}
     className={styles.listItem}
@@ -10,6 +10,7 @@ const SidebarListItem = ({ title }) => (
     <Link
       href={`#${title}`}
       className={styles.listItemLink}
+      onClick={onClick}
     >
       <small>
         {title}
@@ -19,7 +20,8 @@ const SidebarListItem = ({ title }) => (
 );
 
 SidebarListItem.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default SidebarListItem;

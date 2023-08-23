@@ -9,9 +9,13 @@ const groups = mapTechnologyGroups();
 describe('components/Sidebar/TechnicalCategoriesList', () => {
   let container;
 
+  const mockProps = {
+    onClick: jest.fn()
+  };
+
   beforeEach(() => {
     const rendered = render(
-      <TechnicalCategoriesList />
+      <TechnicalCategoriesList {...mockProps} />
     );
 
     const { container: renderedContainer } = rendered;

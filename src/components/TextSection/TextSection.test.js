@@ -5,9 +5,13 @@ import TextSection from './TextSection';
 describe('components/TextSection', () => {
   let container;
 
+  const mockProps = {
+    id: 'mock-id'
+  };
+
   beforeEach(() => {
     const rendered = render(
-      <TextSection>
+      <TextSection {...mockProps}>
         <p>test child elmeent</p>
       </TextSection>
     );
@@ -30,6 +34,15 @@ describe('components/TextSection', () => {
 
     expect(element).toHaveClass('textBlack');
     expect(element).toHaveClass('backgroundWhite');
+  });
+
+  it('should render an id from props', () => {
+    const element = container.querySelector('div');
+
+    expect(element).toHaveClass('textBlack');
+    expect(element).toHaveClass('backgroundWhite');
+
+    expect(element).toHaveAttribute('id', mockProps.id);
   });
 
   describe('when backgroundColor and textColor props are passed', () => {

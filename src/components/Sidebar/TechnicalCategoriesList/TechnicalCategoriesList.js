@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { mapTechnologyGroups } from '@/helpers/map-technologies-array';
 import SidebarListItem from '../SidebarListItem';
 import styles from './TechnicalCategoriesList.module.scss';
 
 const groups = mapTechnologyGroups();
 
-const TechnicalCategoriesList = () => (
+const TechnicalCategoriesList = ({ onClick }) => (
   <nav className={styles.nav}>
     <ul
       aria-label="Categories of Tony's technical skills"
@@ -13,10 +14,19 @@ const TechnicalCategoriesList = () => (
         <SidebarListItem
           key={group.TITLE}
           title={group.TITLE}
+          onClick={onClick}
         />
       ))}
     </ul>
   </nav>
 );
+
+TechnicalCategoriesList.propTypes = {
+  onClick: PropTypes.func
+};
+
+TechnicalCategoriesList.defaultProps = {
+  onClick: null
+};
 
 export default TechnicalCategoriesList;

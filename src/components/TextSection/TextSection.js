@@ -6,7 +6,8 @@ const TextSection = ({
   backgroundColor,
   textColor,
   children,
-  largePadding
+  largePadding,
+  id
 }) => {
   const className = `
     ${getBackgoundColorClassName(backgroundColor)}
@@ -20,7 +21,10 @@ const TextSection = ({
   }
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      id={id}
+    >
       <div className={innerContainerClassName}>
         {children}
       </div>
@@ -35,14 +39,16 @@ TextSection.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
     PropTypes.string
-  ]).isRequired,
-  largePadding: PropTypes.bool
+  ]),
+  largePadding: PropTypes.bool,
+  id: PropTypes.string
 };
 
 TextSection.defaultProps = {
   backgroundColor: 'white',
   textColor: 'black',
-  largePadding: true
+  largePadding: true,
+  id: ''
 };
 
 export default TextSection;
