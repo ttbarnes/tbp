@@ -12,10 +12,15 @@
   background: $black;
 }
 
+.bm-burger-bars-hover {
+  opacity: 1 !important;
+}
+
 .bm-cross-button {
   position: fixed !important;
-  top: 1em !important;
+  top: .7em !important;
   right: 0 !important;
+  left: .5em !important;
   width: 80px !important;
   height: 50px !important;
   text-align: center;
@@ -35,9 +40,9 @@
 }
 
 .bm-cross {
-  background: $black;
-  width: .35em !important;
-  height: 2.5em !important;
+  background: $white;
+  width: .4em !important;
+  height: 2.7em !important;
 }
 
 .bm-menu-wrap {
