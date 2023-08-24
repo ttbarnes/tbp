@@ -3,6 +3,8 @@
 $angular: #CF4646;
 $apollo: #3f20ba;
 
+$bootstrap: #712CF9;
+
 $cypress: #A3E7CB;
 
 $d3js: #EF7234;
@@ -23,11 +25,14 @@ $javascript: #F3DD1D;
 
 $jasmine: #8A4182;
 $jest: #15C213;
+$jquery: #5AD1F9;
 
 $karma: #00AEC8;
 $keystoneJS: #166BFF;
 
 $less: #1D365D;
+
+$magento: #F36324;
 
 $mocha: #8D6748;
 
@@ -70,6 +75,10 @@ $webpack: #175D96;
 
 .apollo {
   @include theme($apollo, $white)
+}
+
+.bootstrap {
+  @include theme($bootstrap, $white);
 }
 
 .cypress {
@@ -125,6 +134,10 @@ $webpack: #175D96;
   @include theme($jest, $black);
 }
 
+.jquery {
+  @include theme($jquery, $black);
+}
+
 .karma {
   @include theme($karma, $white);
 }
@@ -135,6 +148,10 @@ $webpack: #175D96;
 
 .less {
   @include theme($less, $white)
+}
+
+.magento {
+  @include theme($magento, $white);
 }
 
 .mapbox {
@@ -220,6 +237,10 @@ $webpack: #175D96;
 
 .webpack {
   @include theme($webpack, $white);
+}
+
+.wordpress {
+  @include theme($black, $white);
 }
 
 .vanilla-javascript {

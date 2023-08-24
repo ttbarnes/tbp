@@ -11,6 +11,13 @@
 // JavaScript
 // jQuery
 
+const VANILLA_JS = {
+  TITLE: 'Vanilla JavaScript'
+};
+
+const TYPESCRIPT = {
+  TITLE: 'TypeScript'
+};
 
 const DEFINITIONS = {
   ARCHITECTURE: {
@@ -18,14 +25,6 @@ const DEFINITIONS = {
   },
   AUTHENTICATION: {
     TITLE: 'Authentication'
-  },
-  BUILD_TOOLS: {
-    TITLE: 'Build tools',
-    ITEMS: {
-      WEBPACK: 'Webpack',
-      GULP: 'Gulp',
-      GRUNT: 'Grunt'
-    }
   },
   CI_CD: {
     TITLE: 'CI, CD',
@@ -65,10 +64,10 @@ const DEFINITIONS = {
   MISCELLANEOUS: {
     TITLE: 'Miscellaneous',
     ITEMS: {
+      BESPOKE_CMS: 'Bespoke CMS',
       OBSERVABLES: 'Observables',
       WEB_SOCKETS: 'WebSockets',
-      ANGULAR: 'Angular',
-      NUNJUCKS: 'Nunjucks'
+      FLOW: 'Flow'
     }
   },
   QUERYING: {
@@ -84,7 +83,9 @@ const DEFINITIONS = {
     TITLE: 'Server side',
     ITEMS: {
       NODE_EXPRESS: 'Node.js, express',
-      SSR: 'SSR (server side rendering)'
+      SSR: 'SSR (server side rendering)',
+      VANILLA_JS: VANILLA_JS.TITLE,
+      TYPESCRIPT: TYPESCRIPT.TITLE
     }
   },
   STATE_MANAGEMENT: {
@@ -94,13 +95,13 @@ const DEFINITIONS = {
       APOLLO: 'Apollo'
     }
   },
-  STATIC_TYPES: {
-    TITLE: 'Static types',
-    ITEMS: {
-      TYPESCRIPT: 'TypeScript',
-      FLOW: 'Flow'
-    }
-  },
+  // STATIC_TYPES: {
+  //   TITLE: 'Static types',
+  //   ITEMS: {
+  //     TYPESCRIPT: TYPESCRIPT.TITLE,
+  //     FLOW: 'Flow'
+  //   }
+  // },
   STYLING: {
     TITLE: 'Styling',
     ITEMS: {
@@ -115,12 +116,12 @@ const DEFINITIONS = {
   TESTING: {
     TITLE: 'Testing, TDD, BDD',
     ITEMS: {
-      ENZYME: 'Enzyme',
       JEST: 'Jest',
       REACT_TESTING_LIBRARY: 'React Testing Library',
+      CYPRESS: 'Cypress',
+      ENZYME: 'Enzyme',
       MOCHA: 'Mocha',
       CHAI: 'Chai',
-      CYPRESS: 'Cypress',
       SHOULD_JS: 'Shouldjs',
       JASMINE: 'Jasmine',
       KARMA: 'Karma'
@@ -130,18 +131,35 @@ const DEFINITIONS = {
     TITLE: 'Tools',
     ITEMS: {
       ESLINT: 'ESLint',
-      PRETTIER: 'Prettier'
+      PRETTIER: 'Prettier',
+      WEBPACK: 'Webpack',
+      GULP: 'Gulp',
+      GRUNT: 'Grunt'
     }
   },
   UI: {
     TITLE: 'UI',
     ITEMS: {
       NEXT_JS: 'Next.js',
-      REACT: 'React'
+      REACT: 'React',
+      ANGULAR: 'Angular',
+      VANILLA_JS: VANILLA_JS.TITLE,
+      TYPESCRIPT: TYPESCRIPT.TITLE,
+      NUNJUCKS: 'Nunjucks',
+      DESIGN_SYSTEMS: 'Design systems'
     }
   },
-  VANILLA_JS: {
-    TITLE: 'Vanilla JavaScript'
+  VANILLA_JS,
+  HISTORICAL: {
+    TITLE: 'It all started with...',
+    ITEMS: {
+      HTML: 'HTML',
+      CSS: 'CSS',
+      JQUERY: 'jQuery',
+      BOOTSTRAP: 'Bootstrap',
+      WORDPRESS: 'WordPress',
+      MAGENTO: 'Magento'
+    },
   }
 };
 

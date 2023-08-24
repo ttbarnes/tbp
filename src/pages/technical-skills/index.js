@@ -32,3 +32,4 @@ const TechnicalSkillsPage = () => (
 );
 
 export default TechnicalSkillsPage;
+
