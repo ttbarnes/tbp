@@ -1,16 +1,3 @@
-
-// AWS
-// Cloudinary
-
-// aphrodite
-
-// wordpress / magento ?
-
-// HTML
-// CSS
-// JavaScript
-// jQuery
-
 const VANILLA_JS = {
   TITLE: 'Vanilla JavaScript'
 };
@@ -22,9 +9,6 @@ const TYPESCRIPT = {
 const DEFINITIONS = {
   ARCHITECTURE: {
     TITLE: 'Architecture'
-  },
-  AUTHENTICATION: {
-    TITLE: 'Authentication'
   },
   CI_CD: {
     TITLE: 'CI, CD',
@@ -67,6 +51,7 @@ const DEFINITIONS = {
       BESPOKE_CMS: 'Bespoke CMS',
       OBSERVABLES: 'Observables',
       WEB_SOCKETS: 'WebSockets',
+      OPEN_SOURCE: 'Open source',
       FLOW: 'Flow'
     }
   },
@@ -77,7 +62,18 @@ const DEFINITIONS = {
     }
   },
   SECURITY: {
-    TITLE: 'Security, OWASP'
+    TITLE: 'Security',
+    ITEMS: {
+      PEN: 'PEN tests',
+      DEPENDENCIES: 'Dependencies',
+      VULNERABILITIES: 'Vulnerabilities',
+      AUTHENTICATION: 'Authentication',
+      ACCESS_CONTROL: 'Access control',
+      OWASP: 'OWASP',
+      JWT: 'JWT (JSON Web Token)',
+      TWO_FACTOR_AUTH: '2FA (Two-Factor Authentication)',
+      PASSPORT: 'Passport.js',
+    }
   },
   SERVER_SIDE: {
     TITLE: 'Server side',
@@ -95,13 +91,6 @@ const DEFINITIONS = {
       APOLLO: 'Apollo'
     }
   },
-  // STATIC_TYPES: {
-  //   TITLE: 'Static types',
-  //   ITEMS: {
-  //     TYPESCRIPT: TYPESCRIPT.TITLE,
-  //     FLOW: 'Flow'
-  //   }
-  // },
   STYLING: {
     TITLE: 'Styling',
     ITEMS: {
