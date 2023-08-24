@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from './Main.module.scss'
+import { motion } from 'framer-motion';
+import styles from './Main.module.scss';
 
 const Main = ({ children, pageHasSidebar }) => {
   let className = styles.container;
@@ -9,9 +10,14 @@ const Main = ({ children, pageHasSidebar }) => {
   }
 
   return (
-    <main className={className}>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2 }}
+      className={className}
+    >
       {children}
-    </main>
+    </motion.main>
   );
 }
 
