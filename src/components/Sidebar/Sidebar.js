@@ -66,7 +66,6 @@ const Sidebar = ({ children }) => {
       disableCloseOnEsc
       disableOverlayClick={isDesktopOrLaptop}
       noOverlay={isDesktopOrLaptop}
-      noTransition
     >
       <div className={styles.container}>
         <div className={styles.innerContainer}>
