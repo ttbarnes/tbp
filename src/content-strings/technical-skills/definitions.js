@@ -37,6 +37,14 @@ const DEFINITIONS = {
       MAPBOX: 'Mapbox'
     }
   },
+  DOCUMENTATION: {
+    TITLE: 'Documentation',
+    ITEMS: {
+      TS_DOC: 'TSDoc',
+      JS_DOC: 'JSDoc',
+      SWAGGER: 'Swagger'
+    }
+  },
   HEADLESS_CMS: {
     TITLE: 'Headless CMS',
     ITEMS: {
