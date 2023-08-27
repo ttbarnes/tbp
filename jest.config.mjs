@@ -8,7 +8,7 @@ const createJestConfig = nextJest({
 const config = {
   testEnvironment: 'jest-environment-jsdom',
   globals: {
-    fetch: global.fetch,
+    fetch: global.fetch
   }
 };
 

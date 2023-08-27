@@ -44,7 +44,7 @@ describe('pages/technical-skills', () => {
   }); 
 
   it('should render `technical skills` component', () => {
-    const firstGroup = TECHNICAL_SKILLS.GROUPS.BUILD_TOOLS;
+    const firstGroup = TECHNICAL_SKILLS.GROUPS.CI_CD;
 
     const expectedCopy = `Tony's ${firstGroup.TITLE} technical skills`;
 

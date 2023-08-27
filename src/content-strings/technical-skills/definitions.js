@@ -134,6 +134,7 @@ const DEFINITIONS = {
       GRUNT: 'Grunt'
     }
   },
+  TYPESCRIPT,
   UI: {
     TITLE: 'UI',
     ITEMS: {
