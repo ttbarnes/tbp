@@ -55,7 +55,9 @@ $styledComponents: #EEA4BC;
 $sql: #0074a3;
 $sequelize: #3B76C3;
 $stylus: #FF6347;
+$swagger: #38B832;
 
+$tsdoc: #108938;
 $typescript: #3178C6;
 
 $webpack: #175D96;
@@ -150,6 +152,10 @@ $webpack: #175D96;
   @include theme($less, $white)
 }
 
+.jsdoc {
+  @include theme($javascript, $black);
+}
+
 .magento {
   @include theme($magento, $white);
 }
@@ -215,6 +221,10 @@ $webpack: #175D96;
   @include theme($sass, $white)
 }
 
+.shouldjs {
+  @include theme($javascript, $black);
+}
+
 .styled-components {
   @include theme($styledComponents, $black)
 }
@@ -227,8 +237,12 @@ $webpack: #175D96;
   @include theme($sql, $white);
 }
 
-.shouldjs {
-  @include theme($javascript, $black);
+.swagger {
+  @include theme($swagger, $white);
+}
+
+.tsdoc {
+  @include theme($tsdoc, $white);
 }
 
 .typescript {
