@@ -1,5 +1,6 @@
 import Head from '@/components/Head';
 import { METADATA } from '@/content-strings';
+import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import Main from '@/components/Main';
 import TechnicalCategoriesList from '@/components/Sidebar/TechnicalCategoriesList';
@@ -12,6 +13,8 @@ const TechnicalSkillsPage = () => (
       pageTitle={METADATA.PAGE_TITLES.TECHNICAL_SKILLS}
     />
 
+    <Header />
+    
     <Sidebar>
       <TechnicalCategoriesList />
     </Sidebar>

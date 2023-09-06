@@ -5,10 +5,22 @@ import TechnicalSkillsPage from '.';
 import { TECHNICAL_SKILLS } from '@/content-strings';
 
 describe('pages/technical-skills', () => {
+  let container;
+
   beforeEach(() => {
-    render(
+    const rendered = render(
       <TechnicalSkillsPage />
     );
+
+    const { container: renderedContainer } = rendered;
+
+    container = renderedContainer;
+  });
+
+  it('should render a header', () => {
+    const element = container.querySelector('header');
+
+    expect(element).toBeInTheDocument();
   });
 
   it('should render a heading', () => {
