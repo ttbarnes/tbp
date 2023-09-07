@@ -15,7 +15,7 @@ const TechnicalSkillsPage = () => (
 
     <Header />
     
-    <Sidebar>
+    <Sidebar alwaysOpenOnDesktop>
       <TechnicalCategoriesList />
     </Sidebar>
 

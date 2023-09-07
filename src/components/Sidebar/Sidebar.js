@@ -37,7 +37,7 @@ function useWindowSize() {
   return windowSize;
 }
 
-const Sidebar = ({ children }) => {
+const Sidebar = ({ children, alwaysOpenOnDesktop }) => {
   const size = useWindowSize();
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -50,13 +50,36 @@ const Sidebar = ({ children }) => {
     isDesktopOrLaptop = true;
   }
 
-  if (isDesktopOrLaptop) {
+  if (isDesktopOrLaptop && alwaysOpenOnDesktop) {
     menuIsOpenViaScreenSize = true;
   }
 
   const handleIsOpen = () => {
-    setMenuIsOpen(!menuIsOpen);
+    if (alwaysOpenOnDesktop) {
+      if (!isDesktopOrLaptop) {
+        setMenuIsOpen(!menuIsOpen);
+      }
+    } else {
+      setMenuIsOpen(!menuIsOpen);
+    }
   };
+
+  // TODO - helper function
+  let burgerBarClassName = '';
+  let burgerCrossClassName = '';
+
+  if (isDesktopOrLaptop) {
+    burgerBarClassName = 'bm-burger-bars-black';
+
+    burgerCrossClassName = 'bm-cross-black';
+  } else {
+    burgerBarClassName = 'bm-burger-bars-white';
+    burgerCrossClassName = 'bm-cross-white';
+  }
+
+  if (menuIsOpen) {
+    burgerCrossClassName = 'bm-cross-white';
+  }
 
   return (
     <Menu
@@ -64,8 +87,10 @@ const Sidebar = ({ children }) => {
       onOpen={handleIsOpen}
       onClose={handleIsOpen}
       disableCloseOnEsc
-      disableOverlayClick={isDesktopOrLaptop}
-      noOverlay={isDesktopOrLaptop}
+      disableOverlayClick={isDesktopOrLaptop && !menuIsOpen}
+      noOverlay={isDesktopOrLaptop && !menuIsOpen}
+      burgerBarClassName={burgerBarClassName}
+      crossClassName={burgerCrossClassName}
     >
       <div className={styles.container}>
         <div className={styles.innerContainer}>
@@ -85,7 +110,12 @@ Sidebar.propTypes = {
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
     PropTypes.string
-  ]).isRequired
+  ]).isRequired,
+  alwaysOpenOnDesktop: PropTypes.bool
+};
+
+Sidebar.defaultProps = {
+  alwaysOpenOnDesktop: false
 };
 
 export default Sidebar;

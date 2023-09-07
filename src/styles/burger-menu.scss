@@ -9,8 +9,16 @@
 }
 
 .bm-burger-bars {
-  background: $white;
+  // background: $white;
   height: 10% !important;
+}
+
+.bm-burger-bars-black {
+  background: $black;
+}
+
+.bm-burger-bars-white {
+  background: $white;
 }
 
 .bm-burger-bars-hover {
@@ -44,6 +52,14 @@
   background: $white;
   width: .2em !important;
   height: 2.7em !important;
+}
+
+.bm-cross-black {
+  background: $black;
+}
+
+.bm-cross-white {
+  background: $white;
 }
 
 .bm-menu-wrap {
