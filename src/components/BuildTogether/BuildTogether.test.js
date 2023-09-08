@@ -1,26 +1,26 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import WorkTogether from './WorkTogether';
+import BuildTogether from './BuildTogether';
 import { EMAIL } from '@/constants';
-import { assertLink } from '@/test-helpers';
+import { assertLink } from '@/test-helpers'
 
-describe('components/WorkTogether', () => {
+describe('components/BuildTogether', () => {
   beforeEach(() => {
     render(
-      <WorkTogether />
+      <BuildTogether />
     );
   });
 
   it('should render a heading', () => {
-    const expectedCopy = 'Maybe we could work together?';
+    const expectedCopy = 'Maybe we could build something together?';
 
-    const element = screen.getByText(expectedCopy, { selector: 'h2' });
+    const element = screen.getByText(expectedCopy, { selector: 'h3' });
 
     expect(element).toBeInTheDocument();
   });
 
-  it('should render `very friendly` copy', () => {
-    const expectedCopy = "I'm very friendly and love to collaborate - let's arrange a coffee/call.";
+  it('should renders `very friendly` copy', () => {
+    const expectedCopy = 'I\'m very friendly and love to collaborate.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p', exact: false });
 

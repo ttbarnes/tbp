@@ -6,6 +6,8 @@ import Main from '@/components/Main';
 import TechnicalCategoriesList from '@/components/Sidebar/TechnicalCategoriesList';
 import TextSection from '@/components/TextSection';
 import TechnicalList from '@/components/TechnicalList';
+import BuildTogether from '@/components/BuildTogether';
+import FindOutMore from '@/components/FindOutMore';
 
 const TechnicalSkillsPage = () => (
   <>
@@ -26,9 +28,18 @@ const TechnicalSkillsPage = () => (
         <p className='heading-caption'>I use the right tools for the job.</p>
       </TextSection>
 
-      <div className='main-content'>
-        <TechnicalList />
-      </div>
+      <TechnicalList />
+
+      <TextSection
+        largePadding={false}
+        backgroundColor='lightGrey'
+        textColor='black'
+      >
+        <BuildTogether />
+
+        <FindOutMore />
+
+      </TextSection>
 
     </Main>
   </>
