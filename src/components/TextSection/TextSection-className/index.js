@@ -16,6 +16,9 @@ export const getBackgoundColorClassName = (color) => {
     case 'grey':
       return styles.backgroundGrey;
 
+    case 'lightGrey':
+      return styles.backgroundLightGrey;
+
     case 'white':
       return styles.backgroundWhite;
 

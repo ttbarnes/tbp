@@ -27,6 +27,14 @@ describe('components/TextSection/TextSection-className', () => {
       });
     });
 
+    describe('when `lightGrey` string is passed', () => {
+      it('should return light grey background class', () => {
+        const result = getBackgoundColorClassName('lightGrey');
+
+        expect(result).toEqual(styles.backgroundLightGrey);
+      });
+    });
+
     describe('when `white` string is passed', () => {
       it('should return white background class', () => {
         const result = getBackgoundColorClassName('white');
