@@ -110,6 +110,17 @@ const DEFINITIONS = {
       BEM: 'BEM'
     }
   },
+  SYSTEM_INTEGRATIONS: {
+    TITLE: 'System integrations',
+    ITEMS: {
+      DATA_CONSUMPTION: 'Data consumption',
+      COMPLEX_DATA_MAPPING: 'Complex data mapping',
+      DATA_TRANSFORMATIONs: 'Data transformations'
+      // internal & external systems ?
+      // Receiving, consuming?
+      // APIs / data
+    }
+  },
   TESTING: {
     TITLE: 'Testing, TDD, BDD',
     ITEMS: {
