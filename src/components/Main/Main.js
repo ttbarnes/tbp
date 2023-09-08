@@ -2,8 +2,12 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import styles from './Main.module.scss';
 
-const Main = ({ children, pageHasSidebar }) => {
+const Main = ({ children, extraTopPadding, pageHasSidebar }) => {
   let className = styles.container;
+
+  if (extraTopPadding || pageHasSidebar) {
+    className = `${className} ${styles.extraTopPadding}`;
+  }
 
   if (pageHasSidebar) {
     className = `${className} ${styles.pageHasSidebar}`;
@@ -27,10 +31,12 @@ Main.propTypes = {
     PropTypes.element,
     PropTypes.string
   ]).isRequired,
+  extraTopPadding: PropTypes.bool,
   pageHasSidebar: PropTypes.bool
 };
 
 Main.defaultProps = {
+  extraTopPadding: false,
   pageHasSidebar: false
 };
 

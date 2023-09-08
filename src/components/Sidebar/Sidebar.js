@@ -37,7 +37,11 @@ function useWindowSize() {
   return windowSize;
 }
 
-const Sidebar = ({ children, alwaysOpenOnDesktop }) => {
+const Sidebar = ({
+  children,
+  alwaysOpenOnDesktop,
+  showCloseOnDesktop
+}) => {
   const size = useWindowSize();
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -67,6 +71,7 @@ const Sidebar = ({ children, alwaysOpenOnDesktop }) => {
   // TODO - helper function
   let burgerBarClassName = '';
   let burgerCrossClassName = '';
+  let crossButtonClassName = 'bm-cross-button';
 
   if (isDesktopOrLaptop) {
     burgerBarClassName = 'bm-burger-bars-black';
@@ -81,6 +86,10 @@ const Sidebar = ({ children, alwaysOpenOnDesktop }) => {
     burgerCrossClassName = 'bm-cross-white';
   }
 
+  if (showCloseOnDesktop) {
+    crossButtonClassName = `${crossButtonClassName} bm-cross-button-show-on-large-screen`;
+  }
+
   return (
     <Menu
       isOpen={menuIsOpenViaScreenSize || menuIsOpen}
@@ -90,6 +99,7 @@ const Sidebar = ({ children, alwaysOpenOnDesktop }) => {
       disableOverlayClick={isDesktopOrLaptop && !menuIsOpen}
       noOverlay={isDesktopOrLaptop && !menuIsOpen}
       burgerBarClassName={burgerBarClassName}
+      crossButtonClassName={crossButtonClassName}
       crossClassName={burgerCrossClassName}
     >
       <div className={styles.container}>
@@ -111,11 +121,13 @@ Sidebar.propTypes = {
     PropTypes.element,
     PropTypes.string
   ]).isRequired,
-  alwaysOpenOnDesktop: PropTypes.bool
+  alwaysOpenOnDesktop: PropTypes.bool,
+  showCloseOnDesktop: PropTypes.bool
 };
 
 Sidebar.defaultProps = {
-  alwaysOpenOnDesktop: false
+  alwaysOpenOnDesktop: false,
+  showCloseOnDesktop: false
 };
 
 export default Sidebar;

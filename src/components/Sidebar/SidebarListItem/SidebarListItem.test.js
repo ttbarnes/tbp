@@ -8,6 +8,7 @@ describe('components/Sidebar/SidebarListItem', () => {
 
   const mockProps = {
     title: 'Mock title',
+    href: '/mock-href',
     onClick: jest.fn()
   };
 
@@ -31,7 +32,7 @@ describe('components/Sidebar/SidebarListItem', () => {
   it('should render a link', () => {
     const element = screen.getByRole('link');
 
-    const expectedHref = `#${mockProps.title}`;
+    const expectedHref = mockProps.href;
     const expectedCopy = mockProps.title;
     
     assertLink({ 

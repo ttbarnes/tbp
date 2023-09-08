@@ -38,6 +38,7 @@
   @media (min-width: $bp-large) {
     display: none;
   }
+
   > div {
     right: 0 !important;
   }
@@ -45,6 +46,12 @@
     top: 0 !important;
     right: 0 !important;
     position: initial !important;
+  }
+}
+
+.bm-cross-button-show-on-large-screen {
+  @media (min-width: $bp-large) {
+    display: block;
   }
 }
 
@@ -68,7 +75,6 @@
 
 .bm-menu {
   background: $black;
-  padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
@@ -78,7 +84,7 @@
 
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  padding: 0;
 }
 
 .bm-item {

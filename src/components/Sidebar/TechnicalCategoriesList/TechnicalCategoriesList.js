@@ -14,6 +14,7 @@ const TechnicalCategoriesList = ({ onClick }) => (
         <SidebarListItem
           key={group.TITLE}
           title={group.TITLE}
+          href={`#${group.TITLE}`}
           onClick={onClick}
         />
       ))}
