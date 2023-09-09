@@ -25,7 +25,7 @@ describe('components/TechnicalList/TechnicalListGroup', () => {
   });
 
   it('should render a heading', () => {
-    const element = screen.getByText(mockProps.title, { selector: 'h3' });
+    const element = screen.getByText(mockProps.title, { selector: 'h2' });
 
     expect(element).toBeInTheDocument();
   });

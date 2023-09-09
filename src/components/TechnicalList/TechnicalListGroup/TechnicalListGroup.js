@@ -12,7 +12,7 @@ const TechnicalListGroup = ({ title, items }) => {
         id={title}
       >
         <>
-          <h3>{title}</h3>
+          <h2 className='h3-size'>{title}</h2>
 
           <ul
             className='tag-list no-margin'
