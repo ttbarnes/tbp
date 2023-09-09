@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TechnicalCategoriesList from './TechnicalCategoriesList';
 import { mapTechnologyGroups } from '@/helpers/map-technologies-array';
 import { assertLink } from '@/test-helpers';
+import TechnicalCategoriesList from './TechnicalCategoriesList';
 
 const groups = mapTechnologyGroups();
 
@@ -14,9 +14,7 @@ describe('components/Sidebar/TechnicalCategoriesList', () => {
   };
 
   beforeEach(() => {
-    const rendered = render(
-      <TechnicalCategoriesList {...mockProps} />
-    );
+    const rendered = render(<TechnicalCategoriesList {...mockProps} />);
 
     const { container: renderedContainer } = rendered;
 
@@ -24,7 +22,9 @@ describe('components/Sidebar/TechnicalCategoriesList', () => {
   });
 
   it('should render an unordered list with aria label', () => {
-    const element = screen.getByLabelText("Categories of Tony's technical skills");
+    const element = screen.getByLabelText(
+      "Categories of Tony's technical skills"
+    );
 
     expect(element).toBeInTheDocument();
   });

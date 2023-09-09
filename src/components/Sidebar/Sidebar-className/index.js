@@ -4,7 +4,11 @@
  * @param {Object} With flags: isDesktopOrLaptop, menuIsOpen, showCloseOnDesktop
  * @returns {Object}
  */
-const mapClassName = ({ isDesktopOrLaptop, menuIsOpen, showCloseOnDesktop }) => {
+const mapClassName = ({
+  isDesktopOrLaptop,
+  menuIsOpen,
+  showCloseOnDesktop
+}) => {
   let burgerBarClassName = '';
   let burgerCrossClassName = '';
   let crossButtonClassName = 'bm-cross-button';

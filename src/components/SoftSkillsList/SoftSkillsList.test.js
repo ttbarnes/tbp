@@ -1,13 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SoftSkillsList from './SoftSkillsList';
 import { SOFT_SKILLS } from '@/content-strings';
+import SoftSkillsList from './SoftSkillsList';
 
 describe('components/SoftSkillsList', () => {
   beforeEach(() => {
-    render(
-      <SoftSkillsList />
-    );
+    render(<SoftSkillsList />);
   });
 
   it('should render an unordered list with aria label', () => {
@@ -17,7 +15,7 @@ describe('components/SoftSkillsList', () => {
   });
 
   it('should render a list item for each soft skills', () => {
-    SOFT_SKILLS.map((skill) => {
+    SOFT_SKILLS.forEach((skill) => {
       const element = screen.getByText(skill, { selector: 'li' });
 
       expect(element).toBeInTheDocument();

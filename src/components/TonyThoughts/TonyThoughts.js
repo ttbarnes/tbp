@@ -9,8 +9,14 @@ const TonyThoughts = () => (
   >
     <h2>Tony thoughts</h2>
 
-    <p>I love to share knowledge, experiences, teach and mentor - It is invaluable and helps everyone.</p>
-    <p>I will be publishing a blog soon - In the meantime, here are some <Link href={ROUTES.QUICK_THOUGHTS}>quick thoughts</Link>.</p>
+    <p>
+      I love to share knowledge, experiences, teach and mentor - It is
+      invaluable and helps everyone.
+    </p>
+    <p>
+      I will be publishing a blog soon - In the meantime, here are some{' '}
+      <Link href={ROUTES.QUICK_THOUGHTS}>quick thoughts</Link>.
+    </p>
   </TextSection>
 );
 

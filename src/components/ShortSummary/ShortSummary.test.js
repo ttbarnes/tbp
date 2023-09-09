@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import ShortSummary from './ShortSummary';
 import { BARNES_CODE } from '@/constants';
 import { assertLink } from '@/test-helpers';
+import ShortSummary from './ShortSummary';
 
 describe('components/ShortSummary', () => {
   beforeEach(() => {
-    render(
-      <ShortSummary />
-    );
+    render(<ShortSummary />);
   });
 
   it('should render a heading', () => {
@@ -21,13 +19,18 @@ describe('components/ShortSummary', () => {
 
   describe('`as a...` copy', () => {
     it('should render', () => {
-      const firstCopy = 'As a Lead Full Stack JavaScript Developer and director of ';
+      const firstCopy =
+        'As a Lead Full Stack JavaScript Developer and director of ';
 
-      let element = screen.getByText(firstCopy, { selector: 'p', exact: false });
+      let element = screen.getByText(firstCopy, {
+        selector: 'p',
+        exact: false
+      });
 
       expect(element).toBeInTheDocument();
 
-      const lastCopy = 'I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.';
+      const lastCopy =
+        'I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.';
 
       element = screen.getByText(lastCopy, { selector: 'p', exact: false });
 
@@ -45,7 +48,8 @@ describe('components/ShortSummary', () => {
   });
 
   it('should render `have architected` copy', () => {
-    const expectedCopy = 'I have architected, built and maintained a lot of APIs, UIs and databases for many different types of industries and products or services.';
+    const expectedCopy =
+      'I have architected, built and maintained a lot of APIs, UIs and databases for many different types of industries and products or services.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 
@@ -53,7 +57,8 @@ describe('components/ShortSummary', () => {
   });
 
   it('should render `when not writing code` copy', () => {
-    const expectedCopy = "When I'm not writing code, you'll probably find me analysing something and figuring out how to tackle and transform opportunities into clean and scalable solutions.";
+    const expectedCopy =
+      "When I'm not writing code, you'll probably find me analysing something and figuring out how to tackle and transform opportunities into clean and scalable solutions.";
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 

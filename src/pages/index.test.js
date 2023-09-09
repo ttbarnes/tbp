@@ -5,15 +5,16 @@ import HomePage from '.';
 
 describe('pages/index', () => {
   beforeEach(() => {
-    render(
-      <HomePage />
-    );
+    render(<HomePage />);
   });
 
   it('should render `intro` section', () => {
     const expectedCopy = 'Tony.';
 
-    const element = screen.getByText(expectedCopy, { selector: 'h1', exact: false });
+    const element = screen.getByText(expectedCopy, {
+      selector: 'h1',
+      exact: false
+    });
 
     expect(element).toBeInTheDocument();
   });

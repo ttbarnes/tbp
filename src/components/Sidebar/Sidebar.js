@@ -13,14 +13,14 @@ function useWindowSize() {
 
   const [windowSize, setWindowSize] = useState({
     width: undefined,
-    height: undefined,
+    height: undefined
   });
 
   useEffect(() => {
     function handleResize() {
       setWindowSize({
         width: window.innerWidth,
-        height: window.innerHeight,
+        height: window.innerHeight
       });
     }
 
@@ -38,11 +38,7 @@ function useWindowSize() {
   return windowSize;
 }
 
-const Sidebar = ({
-  children,
-  alwaysOpenOnDesktop,
-  showCloseOnDesktop
-}) => {
+const Sidebar = ({ children, alwaysOpenOnDesktop, showCloseOnDesktop }) => {
   const size = useWindowSize();
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -69,15 +65,12 @@ const Sidebar = ({
     }
   };
 
-  const { 
-    burgerBarClassName,
-    burgerCrossClassName,
-    crossButtonClassName
-  } = getClassName({
-    isDesktopOrLaptop,
-    menuIsOpen,
-    showCloseOnDesktop
-  });
+  const { burgerBarClassName, burgerCrossClassName, crossButtonClassName } =
+    getClassName({
+      isDesktopOrLaptop,
+      menuIsOpen,
+      showCloseOnDesktop
+    });
 
   return (
     <Menu
@@ -95,14 +88,13 @@ const Sidebar = ({
         <div className={styles.innerContainer}>
           <SidebarHeading />
 
-          {isValidElement(children) && (
-            cloneElement(children, { onClick: handleIsOpen })
-          )}
+          {isValidElement(children) &&
+            cloneElement(children, { onClick: handleIsOpen })}
         </div>
-      </div> 
+      </div>
     </Menu>
-  )
-}
+  );
+};
 
 Sidebar.propTypes = {
   children: PropTypes.oneOfType([

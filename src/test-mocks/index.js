@@ -11,15 +11,15 @@ export const framerMotion = () => {
 
   const motion = {
     li: jest.fn().mockImplementation(({ children }) => <li>{children}</li>),
-    div: jest.fn().mockImplementation(({ children }) => <div>{children}</div>),
+    div: jest.fn().mockImplementation(({ children }) => <div>{children}</div>)
   };
 
   return {
     __esModule: true,
-    motion: motion,
+    motion,
     AnimatePresence: FakeAnimatePresence,
-    default: jest.fn(),
+    default: jest.fn()
   };
-}
+};
 
 export default framerMotion;

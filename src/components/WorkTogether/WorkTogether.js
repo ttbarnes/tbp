@@ -8,7 +8,10 @@ const WorkTogether = () => (
   >
     <h2>Maybe we could work together?</h2>
 
-    <p>I{"'"}m very friendly and love to collaborate - let{"'"}s arrange a coffee/call.</p>
+    <p>
+      I{"'"}m very friendly and love to collaborate - let{"'"}s arrange a
+      coffee/call.
+    </p>
 
     <p>
       <EmailAddress linkColorWhite />

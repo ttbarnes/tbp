@@ -6,13 +6,13 @@ const groups = mapTechnologyGroups();
 
 const TechnicalList = () => (
   <div className={styles.container}>
-    {groups.map((group) =>
+    {groups.map((group) => (
       <TechnicalListGroup
         key={group.TITLE}
         title={group.TITLE}
         items={group.ITEMS}
       />
-    )}
+    ))}
   </div>
 );
 

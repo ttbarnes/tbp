@@ -11,15 +11,11 @@ const FindOutMore = () => (
       className={styles.list}
     >
       <li className={styles.listItem}>
-        <Link href={ROUTES.ABOUT}>
-          About Tony
-        </Link>
+        <Link href={ROUTES.ABOUT}>About Tony</Link>
       </li>
 
       <li>
-        <Link href={ROUTES.QUICK_THOUGHTS}>
-          Tony{"'"}s quick thoughts
-        </Link>
+        <Link href={ROUTES.QUICK_THOUGHTS}>Tony{"'"}s quick thoughts</Link>
       </li>
     </ul>
   </div>

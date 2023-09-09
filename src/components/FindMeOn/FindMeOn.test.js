@@ -1,16 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import FindMeOn from './FindMeOn';
 import { SOCIAL_MEDIA } from '@/constants';
-import { assertLink } from '@/test-helpers'
+import { assertLink } from '@/test-helpers';
+import FindMeOn from './FindMeOn';
 
 const { GITHUB, LINKEDIN, TWITTER, INSTAGRAM } = SOCIAL_MEDIA;
 
 describe('components/FindMeOn', () => {
   beforeEach(() => {
-    render(
-      <FindMeOn />
-    );
+    render(<FindMeOn />);
   });
 
   it('should render a heading', () => {

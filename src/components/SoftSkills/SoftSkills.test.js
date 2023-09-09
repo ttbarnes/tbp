@@ -1,17 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SoftSkills from './SoftSkills';
 import { SOFT_SKILLS } from '@/content-strings';
+import SoftSkills from './SoftSkills';
 
 describe('components/SoftSkills', () => {
   beforeEach(() => {
-    render(
-      <SoftSkills />
-    );
+    render(<SoftSkills />);
   });
 
   it('should render a heading', () => {
-    const expectedCopy ='Some of my soft skills';
+    const expectedCopy = 'Some of my soft skills';
 
     const element = screen.getByText(expectedCopy, { selector: 'h2' });
 
@@ -30,7 +28,7 @@ describe('components/SoftSkills', () => {
     SOFT_SKILLS.map((skill) => {
       const element = screen.getByText(skill);
 
-      expect(element).toBeInTheDocument();
+      return expect(element).toBeInTheDocument();
     });
   });
 });

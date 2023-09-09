@@ -12,9 +12,7 @@ const SidebarListItem = ({ title, href, onClick }) => (
       className={styles.listItemLink}
       onClick={onClick}
     >
-      <small>
-        {title}
-      </small>
+      <small>{title}</small>
     </Link>
   </li>
 );

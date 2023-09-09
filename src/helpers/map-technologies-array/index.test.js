@@ -1,4 +1,10 @@
-import mapTechnologiesSummary, { CLASS_NAME_MAP, technologyClassName, mapTechnologyItems, mapTechnologyGroups } from '@/helpers/map-technologies-array';
+import {
+  CLASS_NAME_MAP,
+  technologyClassName,
+  mapTechnologyItems,
+  mapTechnologyGroups,
+  mapTechnologiesSummary
+} from '@/helpers/map-technologies-array';
 import { TECHNICAL_SKILLS } from '@/content-strings';
 
 const { GROUPS, SUMMARY } = TECHNICAL_SKILLS;
@@ -35,7 +41,7 @@ describe('helpers/map-technologies-array', () => {
       });
     });
   });
-  
+
   describe('mapTechnologyItems', () => {
     it('should return an array of items with text and sanitised className properties', () => {
       const mockItems = SUMMARY;

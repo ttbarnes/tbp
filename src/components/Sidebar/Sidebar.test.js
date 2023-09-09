@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Sidebar from './Sidebar';
 import { NAME } from '@/content-strings';
+import Sidebar from './Sidebar';
 
 describe('components/Sidebar', () => {
   let container;

@@ -3,9 +3,7 @@ import SidebarListItem from '../SidebarListItem';
 
 const PagesList = () => (
   <nav>
-    <ul
-      aria-label='Pages'
-    >
+    <ul aria-label='Pages'>
       <SidebarListItem
         title='About'
         href={ROUTES.ABOUT}

@@ -56,7 +56,7 @@ describe('components/TextSection', () => {
 
       const { container: renderedContainer } = rendered;
 
-      container = renderedContainer;      
+      container = renderedContainer;
     });
 
     it('should render different background and text color classes', () => {

@@ -12,9 +12,7 @@ describe('components/TechnicalList/TechnicalListGroupItemItem', () => {
   };
 
   beforeEach(() => {
-    render(
-      <TechnicalListGroupItem {...mockProps} />
-    );
+    render(<TechnicalListGroupItem {...mockProps} />);
   });
 
   it('should render a list item with text', () => {

@@ -23,9 +23,10 @@ export const getBackgoundColorClassName = (color) => {
       return styles.backgroundWhite;
 
     case 'yellow':
-      return styles.backgroundYellow
+      return styles.backgroundYellow;
 
-    default: ''
+    default:
+      return '';
   }
 };
 
@@ -40,8 +41,9 @@ export const getTextColorClassName = (color) => {
       return styles.textBlack;
 
     case 'white':
-      return styles.textWhite
+      return styles.textWhite;
 
-    default: ''
+    default:
+      return '';
   }
 };

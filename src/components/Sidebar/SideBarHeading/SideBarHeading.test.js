@@ -1,15 +1,13 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SideBarHeading from './SideBarHeading';
 import { NAME } from '@/content-strings';
+import SidebarHeading from './SidebarHeading';
 
-describe('components/Sidebar/SideBarHeading', () => {
+describe('components/Sidebar/SidebarHeading', () => {
   let container;
 
   beforeEach(() => {
-    const rendered = render(
-      <SideBarHeading />
-    );
+    const rendered = render(<SidebarHeading />);
 
     const { container: renderedContainer } = rendered;
 

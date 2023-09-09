@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import Intro from './Intro';
 import { NAME } from '@/content-strings';
+import Intro from './Intro';
 
 describe('components/Intro', () => {
   beforeEach(() => {
-    render(
-      <Intro />
-    );
+    render(<Intro />);
   });
 
   it('should render `hello` copy', () => {
@@ -22,7 +20,10 @@ describe('components/Intro', () => {
   it('should render a heading', () => {
     const expectedCopy = "I'm Tony";
 
-    const element = screen.getByText(expectedCopy, { selector: 'h1', exact: false });
+    const element = screen.getByText(expectedCopy, {
+      selector: 'h1',
+      exact: false
+    });
 
     expect(element).toBeInTheDocument();
   });

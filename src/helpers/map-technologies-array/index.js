@@ -24,15 +24,16 @@ export const CLASS_NAME_MAP = {
  */
 export const technologyClassName = (str) => {
   if (str) {
-    const REGEX = new RegExp(/[,. ]/g);
+    // const REGEX = new RegExp(/[,. ]/g);
+    const REGEX = /[,. ]/g;
 
-    const clean = str.replace(REGEX, matched => CLASS_NAME_MAP[matched]);
+    const clean = str.replace(REGEX, (matched) => CLASS_NAME_MAP[matched]);
 
     return clean.toLowerCase();
   }
 
   return '';
-}
+};
 
 /**
  * Map an array of technology skills
@@ -86,5 +87,3 @@ export const mapTechnologyGroups = () => {
 
   return mapped;
 };
-
-export default mapTechnologiesSummary;

@@ -1,4 +1,4 @@
-import mapTechnologiesSummary from '@/helpers/map-technologies-array';
+import { mapTechnologiesSummary } from '@/helpers/map-technologies-array';
 
 const technologies = mapTechnologiesSummary();
 

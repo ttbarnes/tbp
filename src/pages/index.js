@@ -11,7 +11,6 @@ import FindMeOn from '@/components/FindMeOn';
 const HomePage = () => (
   <>
     <Main>
-
       <Intro />
 
       <ShortSummary />
@@ -27,7 +26,6 @@ const HomePage = () => (
       <WorkTogether />
 
       <FindMeOn />
-        
     </Main>
   </>
 );

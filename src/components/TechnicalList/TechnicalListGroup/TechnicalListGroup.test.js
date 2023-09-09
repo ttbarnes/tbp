@@ -21,9 +21,7 @@ describe('components/TechnicalList/TechnicalListGroup', () => {
   };
 
   beforeEach(() => {
-    render(
-      <TechnicalListGroup {...mockProps} />
-    );
+    render(<TechnicalListGroup {...mockProps} />);
   });
 
   it('should render a heading', () => {
@@ -38,10 +36,10 @@ describe('components/TechnicalList/TechnicalListGroup', () => {
     const element = screen.getByLabelText(expectedCopy, { selector: 'ul' });
 
     expect(element).toBeInTheDocument();
-  }); 
+  });
 
   it('should render a list item for each tech skills', () => {
-    mockProps.items.map((tech) => {
+    mockProps.items.forEach((tech) => {
       const element = screen.getByText(tech.text, { selector: 'li' });
 
       expect(element).toBeInTheDocument();

@@ -44,18 +44,18 @@ describe('components/TextSection/TextSection-className', () => {
     });
 
     describe('when no string match is found', () => {
-      it('should return undefined', () => {
+      it('should return an empty string', () => {
         const result = getBackgoundColorClassName('rainbow');
 
-        expect(result).toEqual(undefined);
+        expect(result).toEqual('');
       });
     });
 
     describe('when no string is passed', () => {
-      it('should return undefined', () => {
+      it('should return an empty string', () => {
         const result = getBackgoundColorClassName();
 
-        expect(result).toEqual(undefined);
+        expect(result).toEqual('');
       });
     });
   });
@@ -78,18 +78,18 @@ describe('components/TextSection/TextSection-className', () => {
     });
 
     describe('when no string match is found', () => {
-      it('should return undefined', () => {
+      it('should return an empty string', () => {
         const result = getTextColorClassName('rainbow');
 
-        expect(result).toEqual(undefined);
+        expect(result).toEqual('');
       });
     });
 
     describe('when no string is passed', () => {
-      it('should return undefined', () => {
+      it('should return an empty string', () => {
         const result = getTextColorClassName();
 
-        expect(result).toEqual(undefined);
+        expect(result).toEqual('');
       });
     });
   });

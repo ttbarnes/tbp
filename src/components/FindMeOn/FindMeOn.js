@@ -83,10 +83,10 @@ const FindMeOn = () => (
             className={styles.image}
           />
           {INSTAGRAM}
-        </Link>    
+        </Link>
       </li>
     </ul>
-  </TextSection>  
+  </TextSection>
 );
 
 export default FindMeOn;

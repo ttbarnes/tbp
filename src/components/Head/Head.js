@@ -3,9 +3,7 @@ import NextHead from 'next/head';
 import { URL } from '@/constants';
 import { METADATA, NAME } from '@/content-strings';
 
-const {
-  DESCRIPTION, KEYWORDS
-} = METADATA;
+const { DESCRIPTION, KEYWORDS } = METADATA;
 
 const Head = ({ pageTitle }) => {
   let title = NAME;
@@ -23,28 +21,69 @@ const Head = ({ pageTitle }) => {
 
       <title>{title}</title>
 
-      <meta name='description' content={DESCRIPTION} />
-      <meta name='author' content={NAME} />
-      <meta name='keywords' content={KEYWORDS} />
+      <meta
+        name='description'
+        content={DESCRIPTION}
+      />
+      <meta
+        name='author'
+        content={NAME}
+      />
+      <meta
+        name='keywords'
+        content={KEYWORDS}
+      />
 
-      <meta property='og:type' content='website' />
-      <meta property='og:title' content={title} />
-      <meta property='og:description' content={DESCRIPTION} />
-      <meta property='og:url' content={URL} />
+      <meta
+        property='og:type'
+        content='website'
+      />
+      <meta
+        property='og:title'
+        content={title}
+      />
+      <meta
+        property='og:description'
+        content={DESCRIPTION}
+      />
+      <meta
+        property='og:url'
+        content={URL}
+      />
       <meta
         property='og:image'
         content='/og-image.jpg'
       />
 
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta property='twitter:domain' content={URL} />
-      <meta property='twitter:url' content={URL} />
-      <meta name='twitter:title' content={title} />
-      <meta name='twitter:description' content={DESCRIPTION} />
-      <meta name='twitter:image' content='/og-image.jpg' />
+      <meta
+        name='twitter:card'
+        content='summary_large_image'
+      />
+      <meta
+        property='twitter:domain'
+        content={URL}
+      />
+      <meta
+        property='twitter:url'
+        content={URL}
+      />
+      <meta
+        name='twitter:title'
+        content={title}
+      />
+      <meta
+        name='twitter:description'
+        content={DESCRIPTION}
+      />
+      <meta
+        name='twitter:image'
+        content='/og-image.jpg'
+      />
 
-    
-      <link rel='icon' href='/favicon.ico' />
+      <link
+        rel='icon'
+        href='/favicon.ico'
+      />
     </NextHead>
   );
 };

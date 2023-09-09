@@ -1,13 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { mapTechnologiesSummary } from '@/helpers/map-technologies-array';
 import TechListSummary from './TechListSummary';
-import mapTechnologiesSummary from '@/helpers/map-technologies-array';
 
 describe('components/TechListSummary', () => {
   beforeEach(() => {
-    render(
-      <TechListSummary />
-    );
+    render(<TechListSummary />);
   });
 
   it('should render an unordered list with aria label', () => {
@@ -19,7 +17,7 @@ describe('components/TechListSummary', () => {
   it('should render a list item for each tech skills', () => {
     const technologies = mapTechnologiesSummary();
 
-    technologies.map((tech) => {
+    technologies.forEach((tech) => {
       const element = screen.getByText(tech.text, { selector: 'li' });
 
       expect(element).toBeInTheDocument();

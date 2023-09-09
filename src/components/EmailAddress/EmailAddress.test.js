@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import EmailAddress from './EmailAddress';
 import { EMAIL } from '@/constants';
-import { assertLink } from '@/test-helpers'
+import { assertLink } from '@/test-helpers';
+import EmailAddress from './EmailAddress';
 
 describe('components/EmailAddress', () => {
   beforeEach(() => {
-    render(
-      <EmailAddress />
-    );
+    render(<EmailAddress />);
   });
 
   it('should render `my email is` copy', () => {

@@ -80,7 +80,7 @@ const DEFINITIONS = {
       OWASP: 'OWASP',
       JWT: 'JWT (JSON Web Token)',
       TWO_FACTOR_AUTH: '2FA (Two-Factor Authentication)',
-      PASSPORT: 'Passport.js',
+      PASSPORT: 'Passport.js'
     }
   },
   SERVER_SIDE: {
@@ -168,7 +168,7 @@ const DEFINITIONS = {
       BOOTSTRAP: 'Bootstrap',
       WORDPRESS: 'WordPress',
       MAGENTO: 'Magento'
-    },
+    }
   }
 };
 

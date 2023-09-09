@@ -1,15 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TechnicalSkills from './TechnicalSkills';
 import { ROUTES } from '@/constants';
-import mapTechnologiesSummary from '@/helpers/map-technologies-array';
+import { mapTechnologiesSummary } from '@/helpers/map-technologies-array';
 import { assertLink } from '@/test-helpers';
+import TechnicalSkills from './TechnicalSkills';
 
 describe('components/TechnicalSkills', () => {
   beforeEach(() => {
-    render(
-      <TechnicalSkills />
-    );
+    render(<TechnicalSkills />);
   });
 
   it('should render a heading', () => {
@@ -31,7 +29,7 @@ describe('components/TechnicalSkills', () => {
   it('should render a list of technical skills', () => {
     const technologies = mapTechnologiesSummary();
 
-    technologies.map((tech) => {
+    technologies.forEach((tech) => {
       const element = screen.getByText(tech.text);
 
       expect(element).toBeInTheDocument();
@@ -44,7 +42,7 @@ describe('components/TechnicalSkills', () => {
     assertLink({
       element,
       expectedHref: ROUTES.TECHNICAL_SKILLS,
-      expectedCopy: 'View all technical skills',
+      expectedCopy: 'View all technical skills'
     });
   });
 });

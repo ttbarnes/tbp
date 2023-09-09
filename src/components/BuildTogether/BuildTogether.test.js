@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import BuildTogether from './BuildTogether';
 import { EMAIL } from '@/constants';
-import { assertLink } from '@/test-helpers'
+import { assertLink } from '@/test-helpers';
+import BuildTogether from './BuildTogether';
 
 describe('components/BuildTogether', () => {
   beforeEach(() => {
-    render(
-      <BuildTogether />
-    );
+    render(<BuildTogether />);
   });
 
   it('should render a heading', () => {
@@ -20,9 +18,12 @@ describe('components/BuildTogether', () => {
   });
 
   it('should render `very friendly` copy', () => {
-    const expectedCopy = 'I\'m very friendly and love to collaborate.';
+    const expectedCopy = "I'm very friendly and love to collaborate.";
 
-    const element = screen.getByText(expectedCopy, { selector: 'p', exact: false });
+    const element = screen.getByText(expectedCopy, {
+      selector: 'p',
+      exact: false
+    });
 
     expect(element).toBeInTheDocument();
   });
@@ -30,7 +31,10 @@ describe('components/BuildTogether', () => {
   it('should render `my email is` copy', () => {
     const expectedCopy = 'My email address is';
 
-    const element = screen.getByText(expectedCopy, { selector: 'p', exact: false });
+    const element = screen.getByText(expectedCopy, {
+      selector: 'p',
+      exact: false
+    });
 
     expect(element).toBeInTheDocument();
   });

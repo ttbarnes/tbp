@@ -23,7 +23,7 @@ const Main = ({ children, extraTopPadding, pageHasSidebar }) => {
       {children}
     </motion.main>
   );
-}
+};
 
 Main.propTypes = {
   children: PropTypes.oneOfType([

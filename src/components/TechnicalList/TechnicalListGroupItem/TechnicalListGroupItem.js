@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const TechnicalListGroupItem = ({ text, className }) => (
   <motion.li
     initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1, transition: { duration: .5 } }}
+    whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
     viewport={{ once: true }}
     key={text}
     className={`tag-list-item ${className}`}

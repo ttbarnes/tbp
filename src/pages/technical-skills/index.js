@@ -11,18 +11,15 @@ import FindOutMore from '@/components/FindOutMore';
 
 const TechnicalSkillsPage = () => (
   <>
-    <Head
-      pageTitle={METADATA.PAGE_TITLES.TECHNICAL_SKILLS}
-    />
+    <Head pageTitle={METADATA.PAGE_TITLES.TECHNICAL_SKILLS} />
 
     <Header />
-    
+
     <Sidebar alwaysOpenOnDesktop>
       <TechnicalCategoriesList />
     </Sidebar>
 
     <Main pageHasSidebar>
-
       <TextSection largePadding>
         <h1>Tony{"'"}s technical skills</h1>
         <p className='heading-caption'>I use the right tools for the job.</p>
@@ -38,12 +35,9 @@ const TechnicalSkillsPage = () => (
         <BuildTogether />
 
         <FindOutMore />
-
       </TextSection>
-
     </Main>
   </>
 );
 
 export default TechnicalSkillsPage;
-

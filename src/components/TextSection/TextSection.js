@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
-import { getBackgoundColorClassName, getTextColorClassName } from './TextSection-className';
+import {
+  getBackgoundColorClassName,
+  getTextColorClassName
+} from './TextSection-className';
 import styles from './TextSection.module.scss';
 
-const TextSection = ({ 
+const TextSection = ({
   backgroundColor,
   textColor,
   children,
@@ -25,9 +28,7 @@ const TextSection = ({
       className={className}
       id={id}
     >
-      <div className={innerContainerClassName}>
-        {children}
-      </div>
+      <div className={innerContainerClassName}>{children}</div>
     </div>
   );
 };

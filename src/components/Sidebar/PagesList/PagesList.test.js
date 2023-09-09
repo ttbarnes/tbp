@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import PagesList from './PagesList';
 import { ROUTES } from '@/constants';
 import { assertLink } from '@/test-helpers';
+import PagesList from './PagesList';
 
 describe('components/Sidebar/PagesList', () => {
   let container;
@@ -12,9 +12,7 @@ describe('components/Sidebar/PagesList', () => {
   };
 
   beforeEach(() => {
-    const rendered = render(
-      <PagesList {...mockProps} />
-    );
+    const rendered = render(<PagesList {...mockProps} />);
 
     const { container: renderedContainer } = rendered;
 

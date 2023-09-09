@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TonyThoughts from './TonyThoughts';
 import { ROUTES } from '@/constants';
 import { assertLink } from '@/test-helpers';
+import TonyThoughts from './TonyThoughts';
 
 describe('components/TonyThoughts', () => {
   beforeEach(() => {
-    render(
-      <TonyThoughts />
-    );
+    render(<TonyThoughts />);
   });
 
   it('should render a heading', () => {
@@ -20,7 +18,8 @@ describe('components/TonyThoughts', () => {
   });
 
   it('should render `knowledge sharing` copy', () => {
-    const expectedCopy = 'I love to share knowledge, experiences, teach and mentor - It is invaluable and helps everyone.';
+    const expectedCopy =
+      'I love to share knowledge, experiences, teach and mentor - It is invaluable and helps everyone.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 
@@ -28,9 +27,13 @@ describe('components/TonyThoughts', () => {
   });
 
   it('should render `will be publishing` copy', () => {
-    const expectedCopy = 'I will be publishing a blog soon - In the meantime, here are some ';
+    const expectedCopy =
+      'I will be publishing a blog soon - In the meantime, here are some ';
 
-    const element = screen.getByText(expectedCopy, { selector: 'p', exact: false });
+    const element = screen.getByText(expectedCopy, {
+      selector: 'p',
+      exact: false
+    });
 
     expect(element).toBeInTheDocument();
   });
@@ -41,7 +44,7 @@ describe('components/TonyThoughts', () => {
     assertLink({
       element,
       expectedHref: ROUTES.QUIICK_THOUGHTS,
-      expectedCopy: 'quick thoughts',
+      expectedCopy: 'quick thoughts'
     });
   });
 });

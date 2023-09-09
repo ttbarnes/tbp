@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SidebarListItem from './SidebarListItem';
 import { assertLink } from '@/test-helpers';
+import SidebarListItem from './SidebarListItem';
 
 describe('components/Sidebar/SidebarListItem', () => {
   let container;
@@ -13,9 +13,7 @@ describe('components/Sidebar/SidebarListItem', () => {
   };
 
   beforeEach(() => {
-    const rendered = render(
-      <SidebarListItem {...mockProps} />
-    );
+    const rendered = render(<SidebarListItem {...mockProps} />);
 
     const { container: renderedContainer } = rendered;
 
@@ -28,14 +26,13 @@ describe('components/Sidebar/SidebarListItem', () => {
     expect(listItems.length).toEqual(1);
   });
 
-
   it('should render a link', () => {
     const element = screen.getByRole('link');
 
     const expectedHref = mockProps.href;
     const expectedCopy = mockProps.title;
-    
-    assertLink({ 
+
+    assertLink({
       element,
       expectedHref,
       expectedCopy
@@ -53,7 +50,9 @@ describe('components/Sidebar/SidebarListItem', () => {
   });
 
   it('should render small text', () => {
-    const smallElement = screen.getByText(mockProps.title, { selector: 'small' });
+    const smallElement = screen.getByText(mockProps.title, {
+      selector: 'small'
+    });
 
     expect(smallElement).toBeInTheDocument();
   });

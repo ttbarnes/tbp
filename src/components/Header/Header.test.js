@@ -5,9 +5,7 @@ import Header from './Header';
 describe('components/Header', () => {
   let container;
   beforeEach(() => {
-    const rendered = render(
-      <Header />
-    );
+    const rendered = render(<Header />);
 
     const { container: renderedContainer } = rendered;
 

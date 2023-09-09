@@ -3,7 +3,7 @@ import getClassName from '.';
 const baseParams = {
   isDesktopOrLaptop: false,
   menuIsOpen: false,
-  showCloseOnDesktop: false,
+  showCloseOnDesktop: false
 };
 
 describe('components/Sidebar/Sidebar-className', () => {

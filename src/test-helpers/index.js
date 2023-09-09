@@ -3,8 +3,8 @@
  * @param {HTMLElement} Link element to assert
  * @param {String} Expected "href" attribute
  * @param {String} Expected copy
- * @param {Boolean} Flag for checking 'rel' attribute 
- * @param {Boolean} Flag for checking 'target' attribute 
+ * @param {Boolean} Flag for checking 'rel' attribute
+ * @param {Boolean} Flag for checking 'target' attribute
  */
 export const assertLink = ({
   element,
@@ -13,7 +13,6 @@ export const assertLink = ({
   assertRel = false,
   assertTargetBlank = false
 }) => {
-
   expect(element).toHaveAttribute('href', expectedHref);
 
   if (assertRel) {
@@ -30,3 +29,5 @@ export const assertLink = ({
     expect(element).toHaveTextContent(expectedHref);
   }
 };
+
+export default assertLink;

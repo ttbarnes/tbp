@@ -1,14 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import FindOutMore from './FindOutMore';
 import { ROUTES } from '@/constants';
-import { assertLink } from '@/test-helpers'
+import { assertLink } from '@/test-helpers';
+import FindOutMore from './FindOutMore';
 
 describe('components/FindOutMore', () => {
   beforeEach(() => {
-    render(
-      <FindOutMore />
-    );
+    render(<FindOutMore />);
   });
 
   it('should render a heading', () => {
@@ -51,7 +49,7 @@ describe('components/FindOutMore', () => {
     assertLink({
       element,
       expectedHref: ROUTES.QUICK_THOUGHTS,
-      expectedCopy: 'Tony\'s quick thoughts'
+      expectedCopy: "Tony's quick thoughts"
     });
   });
 });

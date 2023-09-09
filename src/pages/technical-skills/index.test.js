@@ -1,16 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import TechnicalSkillsPage from '.';
 import { TECHNICAL_SKILLS } from '@/content-strings';
+import TechnicalSkillsPage from '.';
 
 describe('pages/technical-skills', () => {
   let container;
 
   beforeEach(() => {
-    const rendered = render(
-      <TechnicalSkillsPage />
-    );
+    const rendered = render(<TechnicalSkillsPage />);
 
     const { container: renderedContainer } = rendered;
 
@@ -53,7 +51,7 @@ describe('pages/technical-skills', () => {
     const element = screen.getByLabelText(expectedCopy, { selector: 'ul' });
 
     expect(element).toBeInTheDocument();
-  }); 
+  });
 
   it('should render `technical skills` component', () => {
     const firstGroup = TECHNICAL_SKILLS.GROUPS.CI_CD;

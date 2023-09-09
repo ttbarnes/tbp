@@ -1,8 +1,11 @@
 {
   "extends": [
+    "airbnb-base",
     "next/core-web-vitals",
     "prettier",
     "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
   "rules": {
@@ -19,5 +22,64 @@
   "env": {
     "jest": true,
     "es6": true
+  },
+  "root": true,
+  "plugins": [
+    "autofix",
+    "react",
+    "jest",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "alias": {
+        "map": [
+          [
+            "@/components",
+            "./src/components"
+          ],
+          [
+            "@/constants",
+            "./src/constants"
+          ],
+          [
+            "@/content-strings",
+            "./src/content-strings"
+          ],
+          [
+            "@/helpers",
+            "./src/helpers"
+          ],
+          [
+            "@/styles",
+            "./src/styles"
+          ],
+          [
+            "@/test-helpers",
+            "./src/test-helpers"
+          ]
+        ]
+      }
+    }
   }
 }
