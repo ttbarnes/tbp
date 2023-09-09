@@ -2,9 +2,12 @@
 
 $angular: #CF4646;
 $apollo: #3f20ba;
+$axe: #0077C8;
 
 $bootstrap: #712CF9;
 
+$chai: #30759C;
+$css: #214CE5;
 $cypress: #A3E7CB;
 
 $d3js: #EF7234;
@@ -16,13 +19,14 @@ $flow: #E8BD36;
 $gatsby: #663399;
 $graphQL: #D70779;
 $grunt: #E48632;
-$gulp: #CF4647;
+
+$gulpAndHtml: #CF4647;
 
 $heroku: #79589F;
+$html: #F14A29;
 $highcharts: #5749AD;
 
 $javascript: #F3DD1D;
-
 $jasmine: #8A4182;
 $jest: #15C213;
 $jquery: #5AD1F9;
@@ -31,6 +35,7 @@ $karma: #00AEC8;
 $keystoneJS: #166BFF;
 
 $less: #1D365D;
+$lighthouse: #2E55CB;
 
 $magento: #F36324;
 
@@ -39,9 +44,15 @@ $mocha: #8D6748;
 $netlify: #32E6E2;
 $nodeJS: #026E00;
 
+$npm: #C12127;
+
 $nunjucks: #3D8137;
 
 $observables: #DB0D85;
+
+$owasp: #25579D;
+
+$passportjs: #35DF79;
 
 $prettier: #C596C7;
 
@@ -56,9 +67,11 @@ $sql: #0074a3;
 $sequelize: #3B76C3;
 $stylus: #FF6347;
 
+
 $tsdoc: #108938;
 $typescript: #3178C6;
 
+$wcag: #1A5E9A;
 $webpack: #175D96;
 
 @mixin theme($background, $color) {
@@ -78,8 +91,20 @@ $webpack: #175D96;
   @include theme($apollo, $white)
 }
 
+.axe {
+  @include theme($axe, $white)
+}
+
 .bootstrap {
   @include theme($bootstrap, $white);
+}
+
+.chai {
+  @include theme($chai, $white);
+}
+
+.css {
+  @include theme($css, $white);
 }
 
 .cypress {
@@ -112,15 +137,19 @@ $webpack: #175D96;
 }
 
 .gulp {
-  @include theme($gulp, $white);
+  @include theme($gulpAndHtml, $white);
 }
 
 .grunt {
-  @include theme($grunt, $white);
+  @include theme($grunt, $black);
 }
 
 .heroku {
   @include theme($heroku, $white);
+}
+
+.html {
+  @include theme($gulpAndHtml, $white);
 }
 
 .highcharts {
@@ -140,7 +169,7 @@ $webpack: #175D96;
 }
 
 .karma {
-  @include theme($karma, $white);
+  @include theme($karma, $black);
 }
 
 .keystonejs {
@@ -151,12 +180,21 @@ $webpack: #175D96;
   @include theme($less, $white)
 }
 
+.lighthouse {
+  @include theme($lighthouse, $white)
+}
+
 .jsdoc {
   @include theme($javascript, $black);
 }
 
+.jwt-json-web-token {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}
+
 .magento {
-  @include theme($magento, $white);
+  @include theme($magento, $black);
 }
 
 .mapbox {
@@ -183,12 +221,24 @@ $webpack: #175D96;
   @include theme($nodeJS, $white);
 }
 
+.dependencies {
+  @include theme($npm, $white);
+}
+
 .nunjucks {
   @include theme($nunjucks, $white);
 }
 
 .observables {
   @include theme($observables, $white);
+}
+
+.owasp {
+  @include theme($owasp, $white);
+}
+
+.passport-js {
+  @include theme($passportjs, $black);
 }
 
 .prettier {
@@ -225,11 +275,11 @@ $webpack: #175D96;
 }
 
 .styled-components {
-  @include theme($styledComponents, $black)
+  @include theme($styledComponents, $black);
 }
 
 .stylus {
-  @include theme($stylus, $white)
+  @include theme($stylus, $black);
 }
 
 .sql {
@@ -240,12 +290,20 @@ $webpack: #175D96;
   @include theme($tsdoc, $white);
 }
 
+.teamcity {
+  @include theme($black, $white);
+}
+
 .tsdoc {
   @include theme($tsdoc, $white);
 }
 
 .typescript {
   @include theme($typescript, $white);
+}
+
+.wcag-aaa-compliance {
+  @include theme($wcag, $white);
 }
 
 .webpack {
@@ -258,4 +316,9 @@ $webpack: #175D96;
 
 .vanilla-javascript {
   @include theme($javascript, $black);
+}
+
+.vulnerabilities {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
 }

@@ -37,14 +37,6 @@ const DEFINITIONS = {
       MAPBOX: 'Mapbox'
     }
   },
-  DOCUMENTATION: {
-    TITLE: 'Documentation',
-    ITEMS: {
-      TS_DOC: 'TSDoc',
-      JS_DOC: 'JSDoc',
-      SWAGGER: 'Swagger'
-    }
-  },
   HEADLESS_CMS: {
     TITLE: 'Headless CMS',
     ITEMS: {
@@ -63,10 +55,12 @@ const DEFINITIONS = {
       FLOW: 'Flow'
     }
   },
-  QUERYING: {
-    TITLE: 'Query languages',
+  QUERYING_STATE_MANAGEMENT: {
+    TITLE: 'Query languages, state management',
     ITEMS: {
-      GRAPHQL: 'GraphQL'
+      APOLLO: 'Apollo',
+      GRAPHQL: 'GraphQL',
+      REDUX: 'Redux'
     }
   },
   SECURITY: {
@@ -90,13 +84,6 @@ const DEFINITIONS = {
       SSR: 'SSR (server side rendering)',
       VANILLA_JS: VANILLA_JS.TITLE,
       TYPESCRIPT: TYPESCRIPT.TITLE
-    }
-  },
-  STATE_MANAGEMENT: {
-    TITLE: 'State management',
-    ITEMS: {
-      REDUX: 'Redux',
-      APOLLO: 'Apollo'
     }
   },
   STYLING: {
@@ -135,14 +122,19 @@ const DEFINITIONS = {
       KARMA: 'Karma'
     }
   },
-  TOOLS: {
-    TITLE: 'Tools',
+  TOOLS_DOCUMENTATION: {
+    TITLE: 'Tools, documentation',
     ITEMS: {
       ESLINT: 'ESLint',
       PRETTIER: 'Prettier',
       WEBPACK: 'Webpack',
       GULP: 'Gulp',
-      GRUNT: 'Grunt'
+      GRUNT: 'Grunt',
+      TS_DOC: 'TSDoc',
+      JS_DOC: 'JSDoc',
+      SWAGGER: 'Swagger',
+      LIGHTHOUSE: 'Lighthouse',
+      AXE: 'Axe'
     }
   },
   TYPESCRIPT,
@@ -154,8 +146,10 @@ const DEFINITIONS = {
       ANGULAR: 'Angular',
       VANILLA_JS: VANILLA_JS.TITLE,
       TYPESCRIPT: TYPESCRIPT.TITLE,
-      NUNJUCKS: 'Nunjucks',
-      DESIGN_SYSTEMS: 'Design systems'
+      ACCESSIBILITY: 'Accessibility',
+      WCAG_AAA: 'WCAG AAA compliance',
+      DESIGN_SYSTEMS: 'Design systems',
+      NUNJUCKS: 'Nunjucks'
     }
   },
   VANILLA_JS,

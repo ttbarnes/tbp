@@ -15,7 +15,7 @@ describe('components/TechnicalList', () => {
 
   it('should render a heading with aria label for each group', () => {
     technologies.forEach((group) => {
-      const element = screen.getByText(group.TITLE, { selector: 'h3' });
+      const element = screen.getByText(group.TITLE, { selector: 'h2' });
 
       expect(element).toBeInTheDocument();
     });

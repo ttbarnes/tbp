@@ -15,7 +15,9 @@ describe('helpers/map-technologies-array', () => {
       const expected = {
         '.': '-',
         ',': '',
-        ' ': '-'
+        ' ': '-',
+        '(': '',
+        ')': ''
       };
 
       expect(CLASS_NAME_MAP).toEqual(expected);
@@ -23,8 +25,8 @@ describe('helpers/map-technologies-array', () => {
   });
 
   describe('technologyClassName', () => {
-    it('should replace full stops, commas and white space in a string and return as lowercase', () => {
-      const mockStr = 'Test.js, powered by XYZ';
+    it('should replace full stops, commas, brackets and white space in a string and return as lowercase', () => {
+      const mockStr = 'Test.js, powered by (XYZ)';
 
       const result = technologyClassName(mockStr);
 
