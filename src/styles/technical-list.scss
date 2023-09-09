@@ -55,7 +55,6 @@ $styledComponents: #EEA4BC;
 $sql: #0074a3;
 $sequelize: #3B76C3;
 $stylus: #FF6347;
-$swagger: #38B832;
 
 $tsdoc: #108938;
 $typescript: #3178C6;
@@ -88,7 +87,7 @@ $webpack: #175D96;
 }
 
 .d3-js {
-  @include theme($d3js, $white);
+  @include theme($d3js, $black);
 }
 
 .eslint {
@@ -238,7 +237,7 @@ $webpack: #175D96;
 }
 
 .swagger {
-  @include theme($swagger, $white);
+  @include theme($tsdoc, $white);
 }
 
 .tsdoc {
