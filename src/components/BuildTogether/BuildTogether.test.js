@@ -19,7 +19,7 @@ describe('components/BuildTogether', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should renders `very friendly` copy', () => {
+  it('should render `very friendly` copy', () => {
     const expectedCopy = 'I\'m very friendly and love to collaborate.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p', exact: false });
@@ -35,7 +35,7 @@ describe('components/BuildTogether', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should renders an email address link', () => {
+  it('should render an email address link', () => {
     const element = screen.getByRole('link');
 
     expect(element).toBeInTheDocument();

@@ -35,7 +35,7 @@ describe('components/WorkTogether', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should renders an email address link', () => {
+  it('should render an email address link', () => {
     const element = screen.getByRole('link');
 
     expect(element).toBeInTheDocument();
