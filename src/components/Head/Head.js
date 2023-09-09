@@ -52,7 +52,7 @@ const Head = ({ pageTitle }) => {
       />
       <meta
         property='og:image'
-        content='/og-image.jpg'
+        content='/og-image.png'
       />
 
       <meta
@@ -77,12 +77,22 @@ const Head = ({ pageTitle }) => {
       />
       <meta
         name='twitter:image'
-        content='/og-image.jpg'
+        content='/og-image.png'
+      />
+
+      <meta
+        name='theme-color'
+        content='#FFF'
       />
 
       <link
         rel='icon'
         href='/favicon.ico'
+      />
+
+      <link
+        rel='manifest'
+        href='/manifest.json'
       />
     </NextHead>
   );
