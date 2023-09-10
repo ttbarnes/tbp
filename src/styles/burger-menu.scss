@@ -8,13 +8,10 @@
   height: 2em;
 }
 
-.bm-burger-bars {
-  // background: $white;
-  height: 10% !important;
-}
-
 .bm-burger-bars-black {
-  background: $black;
+  background: $white;
+  box-shadow: 0 1px 1px #000;
+  border-bottom: solid 2px #000;
 }
 
 .bm-burger-bars-white {

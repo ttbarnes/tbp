@@ -15,4 +15,8 @@
   @media (min-width: $bp-large) {
     margin-left: $sidebar-width;
   }
+
+  @media (min-width: $bp-x-large) {
+    margin-left: 0;
+  }
 }

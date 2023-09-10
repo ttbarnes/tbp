@@ -1,3 +1,6 @@
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
+import PagesList from '@/components/Sidebar/PagesList';
 import Main from '@/components/Main';
 import Intro from '@/components/Intro';
 import ShortSummary from '@/components/ShortSummary';
@@ -10,6 +13,12 @@ import FindMeOn from '@/components/FindMeOn';
 
 const HomePage = () => (
   <>
+    <Header />
+
+    <Sidebar showCloseOnDesktop>
+      <PagesList />
+    </Sidebar>
+
     <Main>
       <Intro />
 
