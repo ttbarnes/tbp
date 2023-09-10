@@ -23,10 +23,13 @@ const QuickThoughtsPage = () => (
       <PagesList />
     </Sidebar>
 
-    <Main extraTopPadding>
+    <Main
+      pageHasSidebar
+      extraTopPadding
+    >
       <TextSection largePadding>
         <h1>Tony{"'"}s quick thoughts</h1>
-        <p className='heading-caption'>Some intro here.</p>
+        <p className='heading-caption'>Knowledge sharing is invaluable.</p>
       </TextSection>
 
       <QuickThought
