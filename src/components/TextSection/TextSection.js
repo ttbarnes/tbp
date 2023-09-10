@@ -38,6 +38,7 @@ TextSection.propTypes = {
   textColor: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
+    PropTypes.arrayOf(PropTypes.node),
     PropTypes.element,
     PropTypes.string
   ]),
