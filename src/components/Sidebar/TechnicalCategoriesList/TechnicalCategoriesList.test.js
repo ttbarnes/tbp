@@ -21,6 +21,14 @@ describe('components/Sidebar/TechnicalCategoriesList', () => {
     container = renderedContainer;
   });
 
+  it('should render a heading', () => {
+    const expectedCopy = 'Technical categories';
+
+    const element = screen.getByText(expectedCopy, { selector: 'h4' });
+
+    expect(element).toBeInTheDocument();
+  });
+
   it('should render an unordered list with aria label', () => {
     const element = screen.getByLabelText(
       "Categories of Tony's technical skills"

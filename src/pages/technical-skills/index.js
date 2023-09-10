@@ -3,6 +3,7 @@ import { METADATA } from '@/content-strings';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import Main from '@/components/Main';
+import PagesList from '@/components/Sidebar/PagesList';
 import TechnicalCategoriesList from '@/components/Sidebar/TechnicalCategoriesList';
 import TextSection from '@/components/TextSection';
 import TechnicalList from '@/components/TechnicalList';
@@ -16,7 +17,10 @@ const TechnicalSkillsPage = () => (
     <Header />
 
     <Sidebar alwaysOpenOnDesktop>
-      <TechnicalCategoriesList />
+      <>
+        <PagesList />
+        <TechnicalCategoriesList />
+      </>
     </Sidebar>
 
     <Main pageHasSidebar>
