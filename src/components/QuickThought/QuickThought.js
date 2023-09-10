@@ -25,8 +25,8 @@ const QuickThought = ({ content, backgroundColor, textColor }) => {
 
 QuickThought.propTypes = {
   content: PropTypes.shape({
-    HEADING: PropTypes.string.isRequired,
-    ITEMS: PropTypes.arrayOf(PropTypes.string).isRequired
+    HEADING: PropTypes.string,
+    ITEMS: PropTypes.arrayOf(PropTypes.string)
   }).isRequired,
   backgroundColor: PropTypes.string,
   textColor: PropTypes.string
