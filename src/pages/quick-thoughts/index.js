@@ -24,7 +24,6 @@ const QuickThoughtsPage = () => (
     </Sidebar>
 
     <Main
-      pageHasSidebar
       extraTopPadding
     >
       <TextSection largePadding>

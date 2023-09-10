@@ -17,7 +17,7 @@ const TextSection = ({
     ${getTextColorClassName(textColor)}
   `;
 
-  let innerContainerClassName = styles.container;
+  let innerContainerClassName = styles.innerContainer;
 
   if (largePadding) {
     innerContainerClassName += ` ${styles.containerLargePadding}`;
