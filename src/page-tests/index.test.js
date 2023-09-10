@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import HomePage from '.';
+import HomePage from '../pages';
 
 describe('pages/index', () => {
   beforeEach(() => {

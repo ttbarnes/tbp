@@ -14,6 +14,12 @@ const config = {
     './src/components/**',
     './src/helpers/**',
     './src/pages/**'
+  ],
+  roots: [
+    './src/components',
+    './src/helpers',
+    './src/pages',
+    './src/page-tests'
   ]
 };
 

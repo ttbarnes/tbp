@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
 import { TECHNICAL_SKILLS } from '@/content-strings';
-import TechnicalSkillsPage from '.';
+import TechnicalSkillsPage from '../../pages/technical-skills';
 
 describe('pages/technical-skills', () => {
   let container;
