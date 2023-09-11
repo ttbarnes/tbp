@@ -1,15 +1,18 @@
 export const SOFT_SKILLS = [
   'Team building',
+  'Leadership',
   'Communication',
+  'Managing expectations',
   'Teamwork, collaboration',
-  'Scalability',
-  'Problem solving',
+  'Analysis',
+  'Problem solving, critical thinking',
   'Adaptability',
+  'Long term planning',
+  'Empathy, emotional intelligence',
+  'Open mindedness',
   'Sprint planning',
-  'Auditing',
-  'Collaboration',
-  'Example',
-  'More exciting words'
+  'Backlog grooming',
+  'Creativity'
 ];
 
 export default SOFT_SKILLS;
