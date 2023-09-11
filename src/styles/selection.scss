@@ -1,0 +1,7 @@
+@mixin selectionDarkBackground () {
+  &::-moz-selection,
+  &::selection {
+    background: #FFF;
+    color: #000;
+  }
+}

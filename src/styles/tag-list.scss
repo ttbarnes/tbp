@@ -1,4 +1,5 @@
 @import '@/styles/variables.scss';
+@import '@/styles/selection.scss';
 
 .tag-list {
   display: flex;
@@ -19,4 +20,5 @@
 .tag-list-item-dark {
   background: $black;
   color: $white;
+  @include selectionDarkBackground();
 }
