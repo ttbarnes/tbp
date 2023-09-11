@@ -20,15 +20,6 @@ const DEFINITIONS = {
       JENKINS: 'Jenkins'
     }
   },
-  DATABASE: {
-    TITLE: 'Database',
-    ITEMS: {
-      SQL: 'SQL',
-      SEQUELIZE: 'Sequelize',
-      MONGODB_MONGOOSE: 'MongoDB, Mongoose',
-      PRISMA: 'Prisma'
-    }
-  },
   DATA_VISUALIZATION: {
     TITLE: 'Data visualization',
     ITEMS: {
@@ -55,14 +46,6 @@ const DEFINITIONS = {
       FLOW: 'Flow'
     }
   },
-  QUERYING_STATE_MANAGEMENT: {
-    TITLE: 'Query languages, state management',
-    ITEMS: {
-      APOLLO: 'Apollo',
-      GRAPHQL: 'GraphQL',
-      REDUX: 'Redux'
-    }
-  },
   SECURITY: {
     TITLE: 'Security',
     ITEMS: {
@@ -77,13 +60,25 @@ const DEFINITIONS = {
       PASSPORT: 'Passport.js'
     }
   },
-  SERVER_SIDE: {
-    TITLE: 'Server side',
+  SERVER_SIDE_DATABASES: {
+    TITLE: 'Server side, databases',
     ITEMS: {
       NODE_EXPRESS: 'Node.js, express',
-      SSR: 'SSR (server side rendering)',
+      SQL: 'SQL',
+      SEQUELIZE: 'Sequelize',
+      MONGODB_MONGOOSE: 'MongoDB, Mongoose',
+      PRISMA: 'Prisma'
+    }
+  },
+  CLIENT_AND_SERVER_SIDE: {
+    TITLE: 'Client and server side',
+    ITEMS: {
       VANILLA_JS: VANILLA_JS.TITLE,
-      TYPESCRIPT: TYPESCRIPT.TITLE
+      TYPESCRIPT: TYPESCRIPT.TITLE,
+      GRAPHQL: 'GraphQL',
+      NEXT_JS: 'Next.js',
+      APOLLO: 'Apollo',
+      SSR: 'SSR (server side rendering)'
     }
   },
   STYLING: {
@@ -141,11 +136,9 @@ const DEFINITIONS = {
   UI: {
     TITLE: 'UI',
     ITEMS: {
-      NEXT_JS: 'Next.js',
       REACT: 'React',
       ANGULAR: 'Angular',
-      VANILLA_JS: VANILLA_JS.TITLE,
-      TYPESCRIPT: TYPESCRIPT.TITLE,
+      REDUX: 'Redux',
       ACCESSIBILITY: 'Accessibility',
       WCAG_AAA: 'WCAG AAA compliance',
       DESIGN_SYSTEMS: 'Design systems',
