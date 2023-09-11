@@ -6,9 +6,7 @@ import styles from './Intro.module.scss';
 
 const Intro = () => (
   <TextSection largePadding>
-    <h1>
-      <span>Hello!</span> I{"'"}m Tony.
-    </h1>
+    <h1>Hello! I{"'"}m Tony.</h1>
     <p className='heading-caption'>I write code and music.</p>
 
     <motion.div
