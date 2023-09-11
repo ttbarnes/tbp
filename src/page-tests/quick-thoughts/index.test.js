@@ -4,11 +4,7 @@ import 'intersection-observer';
 import { QUICK_THOUGHTS } from '@/content-strings';
 import QuickThoughtsPage from '../../pages/quick-thoughts';
 
-const {
-  SOFTWARE_NOT_JUST_WRITING_CODE,
-  BE_QUICK_DONT_RUSH,
-  ACCESSIBLE_FROM_THE_START
-} = QUICK_THOUGHTS;
+const { BE_QUICK_DONT_RUSH, ACCESSIBLE_FROM_THE_START } = QUICK_THOUGHTS;
 
 describe('pages/technical-skills', () => {
   let container;
@@ -47,14 +43,6 @@ describe('pages/technical-skills', () => {
     const expectedCopy = 'Pages';
 
     const element = screen.getByLabelText(expectedCopy, { selector: 'ul' });
-
-    expect(element).toBeInTheDocument();
-  });
-
-  it('should render `SOFTWARE_NOT_JUST_WRITING_CODE` QuickThought component', () => {
-    const expectedCopy = SOFTWARE_NOT_JUST_WRITING_CODE.HEADING;
-
-    const element = screen.getByText(expectedCopy, { selector: 'h2' });
 
     expect(element).toBeInTheDocument();
   });

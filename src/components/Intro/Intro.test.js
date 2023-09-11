@@ -9,16 +9,8 @@ describe('components/Intro', () => {
     render(<Intro />);
   });
 
-  it('should render `hello` copy', () => {
-    const expectedCopy = 'Hello!';
-
-    const element = screen.getByText(expectedCopy, { selector: 'span' });
-
-    expect(element).toBeInTheDocument();
-  });
-
   it('should render a heading', () => {
-    const expectedCopy = "I'm Tony";
+    const expectedCopy = "Hello! I'm Tony";
 
     const element = screen.getByText(expectedCopy, {
       selector: 'h1',
