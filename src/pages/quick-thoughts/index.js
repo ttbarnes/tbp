@@ -7,11 +7,7 @@ import Main from '@/components/Main';
 import TextSection from '@/components/TextSection';
 import QuickThought from '@/components/QuickThought';
 
-const {
-  SOFTWARE_NOT_JUST_WRITING_CODE,
-  BE_QUICK_DONT_RUSH,
-  ACCESSIBLE_FROM_THE_START
-} = QUICK_THOUGHTS;
+const { BE_QUICK_DONT_RUSH, ACCESSIBLE_FROM_THE_START } = QUICK_THOUGHTS;
 
 const QuickThoughtsPage = () => (
   <>
@@ -28,12 +24,6 @@ const QuickThoughtsPage = () => (
         <h1>Tony{"'"}s quick thoughts</h1>
         <p className='heading-caption'>Knowledge sharing is invaluable.</p>
       </TextSection>
-
-      <QuickThought
-        content={SOFTWARE_NOT_JUST_WRITING_CODE}
-        backgroundColor='grey'
-        textColor='black'
-      />
 
       <QuickThought
         content={BE_QUICK_DONT_RUSH}
