@@ -1,3 +1,5 @@
+import Head from '@/components/Head';
+import { METADATA } from '@/content-strings';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import PagesList from '@/components/Sidebar/PagesList';
@@ -11,32 +13,39 @@ import TonyThoughts from '@/components/TonyThoughts';
 import WorkTogether from '@/components/WorkTogether';
 import FindMeOn from '@/components/FindMeOn';
 
-const HomePage = () => (
-  <>
-    <Header />
+const { DESCRIPTION } = METADATA;
 
-    <Sidebar showCloseOnDesktop>
-      <PagesList />
-    </Sidebar>
+const HomePage = () => {
+  const pageTitle = `Tony Barnes - ${DESCRIPTION}`;
 
-    <Main extraTopPadding>
-      <Intro />
+  return (
+    <>
+      <Header />
+      <Head bespokePageTitle={pageTitle} />
 
-      <ShortSummary />
+      <Sidebar showCloseOnDesktop>
+        <PagesList />
+      </Sidebar>
 
-      <Experience />
+      <Main extraTopPadding>
+        <Intro />
 
-      <TechnicalSkills />
+        <ShortSummary />
 
-      <SoftSkills />
+        <Experience />
 
-      <TonyThoughts />
+        <TechnicalSkills />
 
-      <WorkTogether />
+        <SoftSkills />
 
-      <FindMeOn />
-    </Main>
-  </>
-);
+        <TonyThoughts />
+
+        <WorkTogether />
+
+        <FindMeOn />
+      </Main>
+    </>
+  );
+};
 
 export default HomePage;

@@ -5,11 +5,15 @@ import { METADATA, NAME } from '@/content-strings';
 
 const { DESCRIPTION, KEYWORDS } = METADATA;
 
-const Head = ({ pageTitle }) => {
+const Head = ({ pageTitle, bespokePageTitle }) => {
   let title = NAME;
 
   if (pageTitle) {
     title = ` ${pageTitle} | ${NAME}`;
+  }
+
+  if (bespokePageTitle) {
+    title = bespokePageTitle;
   }
 
   return (
@@ -99,7 +103,8 @@ const Head = ({ pageTitle }) => {
 };
 
 Head.propTypes = {
-  pageTitle: PropTypes.string
+  pageTitle: PropTypes.string,
+  bespokePageTitle: PropTypes.string
 };
 
 Head.defaultProps = {
