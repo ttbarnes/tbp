@@ -3,7 +3,7 @@ export const QUICK_THOUGHTS = {
     HEADING: "Be quick, but don't rush",
     ITEMS: [
       'I am a huge advocate for iterative development and releasing in small chunks, however we should be mindful of the potential technical implications of moving quickly.',
-      "I have found that when developers rush and put something together without a clean and scalable approach, it can seem that the team has saved time when shipping a new feature. However in the long term, it's most likely that you\'ll be losing time.",
+      "I have found that when developers rush and put something together without a clean and scalable approach, it can seem that the team has saved time when shipping a new feature. However in the long term, it's most likely that you'll be losing time.",
       'Such approaches are great for proof of concepts and there are times where technical improvements can or should be made afterwards, but if a pattern of "clean it up later" evolves, it will cascade and create a large backlog of technical debt.',
       'Unscalable code can seriously hinder future development. Things become difficult to maintain and reuse - causing additional time and effort to deliver new requirements.',
       'Ultimately, this scenario can cost a business a lot of time and money, with probable instabilities and technical frustrations.',
