@@ -1,10 +1,12 @@
+@import '../../../styles/variables.scss';
+
 .listItem {
   margin-bottom: .5em;
 }
 
 .listItemLink {
   font-weight: 300;
-  color: #FFF;
+  color: $white;
 }
 
 .listItemLinkActive {
