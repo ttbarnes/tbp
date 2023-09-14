@@ -95,6 +95,11 @@ $webpack: #175D96;
   @include theme($axe, $white)
 }
 
+.bespoke-cms {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}
+
 .bootstrap {
   @include theme($bootstrap, $white);
 }
@@ -231,6 +236,11 @@ $webpack: #175D96;
 
 .observables {
   @include theme($observables, $white);
+}
+
+.open-source {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
 }
 
 .owasp {

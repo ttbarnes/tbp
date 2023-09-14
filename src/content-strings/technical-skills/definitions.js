@@ -41,9 +41,12 @@ const DEFINITIONS = {
     ITEMS: {
       BESPOKE_CMS: 'Bespoke CMS',
       OBSERVABLES: 'Observables',
-      WEB_SOCKETS: 'WebSockets',
+      FLOW: 'Flow',
       OPEN_SOURCE: 'Open source',
-      FLOW: 'Flow'
+      FUTURE_PROOFING: 'Future proofing',
+      SCALABILITY: 'Scalability',
+      DRY: 'DRY',
+      WEB_SOCKETS: 'WebSockets'
     }
   },
   SECURITY: {
