@@ -9,7 +9,10 @@ h5 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.7em;
+  @media (min-width: $bp-small) {
+    font-size: 3em;
+  }
 }
 
 h2 {
@@ -36,21 +39,21 @@ p {
 }
 
 a {
-  color: #0064FF;
+  color: $blueLight;
   font-weight: bold;
   text-decoration: underline;
 
   &.link-black {
-    color: #000;
+    color: $black;
   }
 
   &.link-white {
-    color: #FFF;
+    color: $white;
   }
 }
 
 .white-text {
-  color: #FFF;
+  color: $white;
 }
 
 .heading-caption {

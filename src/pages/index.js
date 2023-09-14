@@ -19,7 +19,7 @@ const HomePage = () => (
       <PagesList />
     </Sidebar>
 
-    <Main>
+    <Main extraTopPadding>
       <Intro />
 
       <ShortSummary />

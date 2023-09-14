@@ -137,7 +137,7 @@ const DEFINITIONS = {
   },
   TYPESCRIPT,
   UI: {
-    TITLE: 'UI',
+    TITLE: 'UI (Client side user interface)',
     ITEMS: {
       REACT: 'React',
       ANGULAR: 'Angular',

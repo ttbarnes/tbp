@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { EMAIL } from '@/constants';
+import { EMAIL, EMAIL_SUBJECT } from '@/constants';
 import { assertLink } from '@/test-helpers';
 import WorkTogether from './WorkTogether';
 
@@ -47,7 +47,7 @@ describe('components/WorkTogether', () => {
 
     assertLink({
       element,
-      expectedHref: `mailto:${EMAIL}`,
+      expectedHref: `mailto:${EMAIL}?subject=${EMAIL_SUBJECT}`,
       expectedCopy: EMAIL
     });
   });
