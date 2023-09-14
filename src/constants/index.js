@@ -5,3 +5,5 @@ export const URL = 'https://tonybarnes.me';
 
 export const EMAIL = 'tony@tonybarnes.me';
 export const EMAIL_SUBJECT = `Hello from ${URL}`;
+
+export const REPO = 'https://github.com/ttbarnes/tbp';
