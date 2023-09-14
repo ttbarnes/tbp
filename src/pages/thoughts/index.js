@@ -6,6 +6,7 @@ import PagesList from '@/components/Sidebar/PagesList';
 import Main from '@/components/Main';
 import TextSection from '@/components/TextSection';
 import QuickThought from '@/components/QuickThought';
+import GenericOutro from '@/components/GenericOutro';
 
 const { BE_QUICK_DONT_RUSH, ACCESSIBLE_FROM_THE_START } = TONYS_THOUGHTS;
 
@@ -36,6 +37,8 @@ const TonysThoughtsPage = () => (
         backgroundColor='black'
         textColor='white'
       />
+
+      <GenericOutro renderTechSkillsLink />
     </Main>
   </>
 );

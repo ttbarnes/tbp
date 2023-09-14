@@ -7,8 +7,7 @@ import PagesList from '@/components/Sidebar/PagesList';
 import TechnicalCategoriesList from '@/components/Sidebar/TechnicalCategoriesList';
 import TextSection from '@/components/TextSection';
 import TechnicalList from '@/components/TechnicalList';
-import BuildTogether from '@/components/BuildTogether';
-import FindOutMore from '@/components/FindOutMore';
+import GenericOutro from '@/components/GenericOutro';
 
 const TechnicalSkillsPage = () => (
   <>
@@ -31,15 +30,7 @@ const TechnicalSkillsPage = () => (
 
       <TechnicalList />
 
-      <TextSection
-        largePadding={false}
-        backgroundColor='lightGrey'
-        textColor='black'
-      >
-        <BuildTogether />
-
-        <FindOutMore />
-      </TextSection>
+      <GenericOutro renderThoughtsLink />
     </Main>
   </>
 );

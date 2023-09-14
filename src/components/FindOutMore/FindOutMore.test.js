@@ -23,10 +23,10 @@ describe('components/FindOutMore', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should render 2 list items', () => {
+  it('should render 1 list item by default', () => {
     const listItems = screen.getAllByRole('link');
 
-    expect(listItems.length).toEqual(2);
+    expect(listItems.length).toEqual(1);
   });
 
   it(`should render a link to ${ROUTES.ABOUT}`, () => {
@@ -41,15 +41,39 @@ describe('components/FindOutMore', () => {
     });
   });
 
-  it(`should render a link to ${ROUTES.TONYS_THOUGHTS}`, () => {
-    const element = screen.getAllByRole('link')[1];
+  describe('when renderThoughtsLink prop is provided', () => {
+    beforeEach(() => {
+      render(<FindOutMore renderThoughtsLink />);
+    });
 
-    expect(element).toBeInTheDocument();
+    it(`should render a link to ${ROUTES.TONYS_THOUGHTS}`, () => {
+      const element = screen.getAllByRole('link')[1];
 
-    assertLink({
-      element,
-      expectedHref: ROUTES.TONYS_THOUGHTS,
-      expectedCopy: "Tony's thoughts"
+      expect(element).toBeInTheDocument();
+
+      assertLink({
+        element,
+        expectedHref: ROUTES.TONYS_THOUGHTS,
+        expectedCopy: "Tony's thoughts"
+      });
+    });
+  });
+
+  describe('when renderTechSkillsLink prop is provided', () => {
+    beforeEach(() => {
+      render(<FindOutMore renderTechSkillsLink />);
+    });
+
+    it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
+      const element = screen.getAllByRole('link')[1];
+
+      expect(element).toBeInTheDocument();
+
+      assertLink({
+        element,
+        expectedHref: ROUTES.TECHNICAL_SKILLS,
+        expectedCopy: "Tony's technical skills"
+      });
     });
   });
 });
