@@ -6,7 +6,7 @@ const SidebarHeading = () => (
   <h2 className={styles.heading}>
     <Link
       href='/'
-      className='white-text'
+      className={`${styles.headingLink} white-text`}
     >
       {NAME}
     </Link>

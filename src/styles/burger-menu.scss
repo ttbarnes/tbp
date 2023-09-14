@@ -24,13 +24,12 @@
 
 .bm-cross-button {
   position: fixed !important;
-  top: .7em !important;
-  right: 0 !important;
-  left: .5em !important;
+  right: 0em !important;
   width: 80px !important;
   height: 50px !important;
   text-align: center;
   cursor: pointer;
+  transition: none;
 
   @media (min-width: $bp-large) {
     display: none;

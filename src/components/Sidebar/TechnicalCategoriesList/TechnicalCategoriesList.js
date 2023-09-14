@@ -7,7 +7,7 @@ const groups = mapTechnologyGroups();
 
 const TechnicalCategoriesList = ({ onClick }) => (
   <nav className={styles.nav}>
-    <h4>Technical categories</h4>
+    <h4 className={styles.heading}>Technical categories</h4>
 
     <ul aria-label="Categories of Tony's technical skills">
       {groups.map((group) => (
