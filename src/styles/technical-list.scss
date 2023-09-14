@@ -79,6 +79,11 @@ $webpack: #175D96;
   color: $color
 }
 
+@mixin blackTheme {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}
+
 .angular {
   @include theme($angular, $white)
 }
@@ -96,8 +101,7 @@ $webpack: #175D96;
 }
 
 .bespoke-cms {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .bootstrap {
@@ -133,8 +137,7 @@ $webpack: #175D96;
 }
 
 .github-actions {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .graphql {
@@ -194,8 +197,7 @@ $webpack: #175D96;
 }
 
 .jwt-json-web-token {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .magento {
@@ -203,8 +205,7 @@ $webpack: #175D96;
 }
 
 .mapbox {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .mocha {
@@ -212,8 +213,7 @@ $webpack: #175D96;
 }
 
 .next-js {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .netlify,
@@ -239,8 +239,7 @@ $webpack: #175D96;
 }
 
 .open-source {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .owasp {
@@ -264,8 +263,7 @@ $webpack: #175D96;
 }
 
 .react-testing-library {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
 
 .redux {
@@ -329,6 +327,5 @@ $webpack: #175D96;
 }
 
 .vulnerabilities {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
+  @include blackTheme;
 }
