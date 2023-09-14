@@ -15,7 +15,7 @@ const TonyThoughts = () => (
     </p>
     <p>
       I will be publishing a blog soon - In the meantime, here are some{' '}
-      <Link href={ROUTES.QUICK_THOUGHTS}>quick thoughts</Link>.
+      <Link href={ROUTES.TONYS_THOUGHTS}>quick thoughts</Link>.
     </p>
   </TextSection>
 );

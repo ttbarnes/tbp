@@ -41,15 +41,15 @@ describe('components/FindOutMore', () => {
     });
   });
 
-  it(`should render a link to ${ROUTES.QUICK_THOUGHTS}`, () => {
+  it(`should render a link to ${ROUTES.TONYS_THOUGHTS}`, () => {
     const element = screen.getAllByRole('link')[1];
 
     expect(element).toBeInTheDocument();
 
     assertLink({
       element,
-      expectedHref: ROUTES.QUICK_THOUGHTS,
-      expectedCopy: "Tony's quick thoughts"
+      expectedHref: ROUTES.TONYS_THOUGHTS,
+      expectedCopy: "Tony's thoughts"
     });
   });
 });

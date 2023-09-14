@@ -19,8 +19,8 @@ const PagesList = () => (
       />
 
       <SidebarListItem
-        title='Quick thoughts'
-        href={ROUTES.QUICK_THOUGHTS}
+        title="Tony's thoughts"
+        href={ROUTES.TONYS_THOUGHTS}
       />
     </ul>
   </nav>

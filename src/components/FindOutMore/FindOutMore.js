@@ -15,7 +15,7 @@ const FindOutMore = () => (
       </li>
 
       <li>
-        <Link href={ROUTES.QUICK_THOUGHTS}>Tony{"'"}s quick thoughts</Link>
+        <Link href={ROUTES.TONYS_THOUGHTS}>Tony{"'"}s thoughts</Link>
       </li>
     </ul>
   </div>

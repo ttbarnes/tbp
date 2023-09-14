@@ -57,15 +57,15 @@ describe('components/Sidebar/PagesList', () => {
     });
   });
 
-  it('should render `Quick thoughts` text and link via <SidebarListItem />', () => {
+  it("should render `Tony's thoughts` text and link via <SidebarListItem />", () => {
     const links = container.querySelectorAll('li a');
 
     const link = links[2];
 
     assertLink({
       element: link,
-      expectedHref: ROUTES.QUICK_THOUGHTS,
-      expectedCopy: 'Quick thoughts'
+      expectedHref: ROUTES.TONYS_THOUGHTS,
+      expectedCopy: "Tony's thoughts"
     });
   });
 });

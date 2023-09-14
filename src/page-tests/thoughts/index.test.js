@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import { QUICK_THOUGHTS } from '@/content-strings';
-import QuickThoughtsPage from '../../pages/quick-thoughts';
+import { TONYS_THOUGHTS } from '@/content-strings';
+import TonysThoughtsPage from '../../pages/thoughts';
 
-const { BE_QUICK_DONT_RUSH, ACCESSIBLE_FROM_THE_START } = QUICK_THOUGHTS;
+const { BE_QUICK_DONT_RUSH, ACCESSIBLE_FROM_THE_START } = TONYS_THOUGHTS;
 
-describe('pages/technical-skills', () => {
+describe('pages/thoughts', () => {
   let container;
 
   beforeEach(() => {
-    const rendered = render(<QuickThoughtsPage />);
+    const rendered = render(<TonysThoughtsPage />);
 
     const { container: renderedContainer } = rendered;
 
@@ -24,7 +24,7 @@ describe('pages/technical-skills', () => {
   });
 
   it('should render a heading', () => {
-    const expectedCopy = "Tony's quick thoughts";
+    const expectedCopy = "Tony's thoughts";
 
     const element = screen.getByText(expectedCopy, { selector: 'h1' });
 

@@ -38,12 +38,12 @@ describe('components/TonyThoughts', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
+  it(`should render a link to ${ROUTES.TONYS_THOUGHTS}`, () => {
     const element = screen.getByRole('link');
 
     assertLink({
       element,
-      expectedHref: ROUTES.QUIICK_THOUGHTS,
+      expectedHref: ROUTES.TONYS_THOUGHTS,
       expectedCopy: 'quick thoughts'
     });
   });

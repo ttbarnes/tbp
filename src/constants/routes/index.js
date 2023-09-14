@@ -1,7 +1,7 @@
 export const ROUTES = {
   ABOUT: '/',
   TECHNICAL_SKILLS: '/technical-skills',
-  QUICK_THOUGHTS: '/quick-thoughts'
+  TONYS_THOUGHTS: '/thoughts'
 };
 
 export default ROUTES;

@@ -1,4 +1,4 @@
-export const QUICK_THOUGHTS = {
+export const TONYS_THOUGHTS = {
   BE_QUICK_DONT_RUSH: {
     HEADING: "Be quick, but don't rush",
     ITEMS: [
@@ -25,4 +25,4 @@ export const QUICK_THOUGHTS = {
   }
 };
 
-export default QUICK_THOUGHTS;
+export default TONYS_THOUGHTS;
