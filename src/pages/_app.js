@@ -5,11 +5,20 @@ import { REPO } from '../constants';
 
 const isProdEnv = process.env.NODE_ENV === 'production';
 
+const easterEggMessages = {
+  hello: `Hello 👋`,
+  seeTheCode: 'Would you like to see the code?',
+  repoLink: `Here is the repo: ${REPO}`,
+  bonusPoints: 'Bonus points: Run a Lighthouse or Axe report 😉'
+};
+
+const { hello, seeTheCode, repoLink, bonusPoints } = easterEggMessages;
+
+const easterEggMessage = `${hello} ${seeTheCode} \n${repoLink} \n${bonusPoints}`;
+
 const App = ({ Component, pageProps }) => {
   if (isProdEnv) {
-    console.info(
-      `Hello 👋 Would you like to see the code? \nHere is the repo: ${REPO} \nBonus points: Run a Lighthouse report 😉`
-    );
+    console.info(easterEggMessage);
   }
 
   return (
