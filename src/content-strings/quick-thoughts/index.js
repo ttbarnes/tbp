@@ -8,7 +8,7 @@ export const TONYS_THOUGHTS = {
       'Unscalable code can seriously hinder future development. Things become difficult to maintain and reuse - causing additional time and effort to deliver new requirements.',
       'Ultimately, this scenario can cost a business a lot of time and money, with probable instabilities and technical frustrations.',
       'For example, a developer could quickly put together some logic in say 30 minutes, but in the future, another developer may need to spend 2 hours debugging and cleaning it up in order to start working on a new feature.',
-      'In this example, 2 hours has been spent on cleaning up a single piece of rushed logic. If this type of scenario is repeated and multiplied throughout a project, it can equate to weeks, months or even years of additional effort and funding.',
+      'In this example, 2 hours has been spent cleaning up a single piece of rushed logic. If this type of scenario is repeated, it can cascade into months or even years of additional effort and funding  - delaying features or enhancements that provide value.',
       "Make sure that what's moving quickly will not make you move slower in the future."
     ]
   },
@@ -17,8 +17,10 @@ export const TONYS_THOUGHTS = {
     ITEMS: [
       'Imagine a scenario where your application has 500 thousand users and after some marketing, user acquisition scales to 1 million.',
       'If 20% of the new users have for example sight or reading disabilities and your application is not accessible, 10 thousand of those new users could be unintentionally rejected and/or have a frustrating experience, probably to never return. This also introduces reputational risks.',
-      'Only since some certain technologies and patterns were introduced and become commonplace, have websites and applications run a risk of being inaccessible. There are lots of fancy designs or features that look great, but for some users, it can hinder the experience.',
-      'Keeping things simple generally helps with accessibility and also getting a product to market. Therefore, if a design starts with a simple MVP approach, it can be delivered quicker and simultaneously address accessibility concerns.',
+      'Only since some certain technologies and patterns were introduced and become commonplace, have websites and applications run a risk of becoming inaccessible.',
+      'There are many great designs and features out there that look fantastic, but for some users, it can hinder the experience and even make the user journey impossible to complete.',
+      'I recently worked on a project that passed an accessibility audit with the best possible level of compliance (WCAG AAA). We achieved this by prioritising accessibility from the very start.',
+      'Keeping things simple generally helps with accessibility - this can also help to get a product to market. Therefore, if a design starts with a simple MVP approach, it can be delivered quicker and simultaneously address accessibility concerns.',
       'Moving forward, the design can be iterated to enhance or streamline the user experience, without affecting the core accessible journey that has already been built. This also removes the risk of having to spend additional time retrofitting an application to become accessible.',
       'Keep it simple - for accessibility and delivery.'
     ]
