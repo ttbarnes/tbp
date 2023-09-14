@@ -57,28 +57,9 @@ describe('components/FindMeOn', () => {
     });
   });
 
-  describe('twitter', () => {
-    it('should render a link', () => {
-      const element = screen.getAllByRole('link')[2];
-
-      assertLink({
-        element,
-        expectedHref: TWITTER,
-        assertRel: true,
-        assertTargetBlank: true
-      });
-    });
-
-    it('should render an image', () => {
-      const image = screen.getByAltText('Twitter icon');
-
-      expect(image.src).toContain('/social/tw.svg');
-    });
-  });
-
   describe('instagram', () => {
     it('should render a link', () => {
-      const element = screen.getAllByRole('link')[3];
+      const element = screen.getAllByRole('link')[2];
 
       assertLink({
         element,
@@ -92,6 +73,25 @@ describe('components/FindMeOn', () => {
       const image = screen.getByAltText('Instagram icon');
 
       expect(image.src).toContain('/social/ig.svg');
+    });
+  });
+
+  describe('twitter', () => {
+    it('should render a link', () => {
+      const element = screen.getAllByRole('link')[3];
+
+      assertLink({
+        element,
+        expectedHref: TWITTER,
+        assertRel: true,
+        assertTargetBlank: true
+      });
+    });
+
+    it('should render an image', () => {
+      const image = screen.getByAltText('Twitter icon');
+
+      expect(image.src).toContain('/social/tw.svg');
     });
   });
 });
