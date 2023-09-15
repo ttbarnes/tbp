@@ -8,6 +8,7 @@ $bootstrap: #712CF9;
 
 $chai: #30759C;
 $css: #214CE5;
+$conventionalCommits: #FA6673;
 $cypress: #A3E7CB;
 
 $d3js: #EF7234;
@@ -114,6 +115,10 @@ $webpack: #175D96;
 
 .css {
   @include theme($css, $white);
+}
+
+.conventional-commits {
+  @include theme($conventionalCommits, $black);
 }
 
 .cypress {

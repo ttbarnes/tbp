@@ -46,7 +46,9 @@ const DEFINITIONS = {
       FUTURE_PROOFING: 'Future proofing',
       SCALABILITY: 'Scalability',
       DRY: 'DRY',
-      WEB_SOCKETS: 'WebSockets'
+      WEB_SOCKETS: 'WebSockets',
+      SEM_VER: 'SemVer',
+      CONVENTIONAL_COMMITS: 'Conventional Commits'
     }
   },
   SECURITY: {
