@@ -36,11 +36,11 @@ body {
 .main-content {
   padding-bottom: 2em;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bp-medium) {
     padding-bottom: 3em;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: $bp-medium-large) {
     padding-bottom: 5em;
   }
 }
