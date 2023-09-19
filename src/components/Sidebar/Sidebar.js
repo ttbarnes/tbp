@@ -83,6 +83,7 @@ const Sidebar = ({ children, alwaysOpenOnDesktop, showCloseOnDesktop }) => {
       burgerBarClassName={burgerBarClassName}
       crossButtonClassName={crossButtonClassName}
       crossClassName={burgerCrossClassName}
+      noTransition
     >
       <div className={styles.container}>
         <div className={styles.innerContainer}>
