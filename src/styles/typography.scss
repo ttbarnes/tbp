@@ -31,7 +31,8 @@ h3,
   }
 }
 
-h4 {
+h4,
+.h4-size {
   font-size: 1em;
   margin-bottom: 1em;
   text-decoration: underline;
@@ -55,6 +56,10 @@ a {
   &.link-white {
     color: $white;
   }
+}
+
+small {
+  font-size: 80%;
 }
 
 .white-text {

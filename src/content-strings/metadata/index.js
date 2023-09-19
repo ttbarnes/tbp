@@ -3,6 +3,8 @@ export const METADATA = {
   KEYWORDS:
     'Tony Barnes developer, full stack developer, javascript developer, node.js developer, full stack javascript developer, web developer',
   PAGE_TITLES: {
+    CLIENTS_PROJECTS: 'Clients, projects',
+    RECOMMENDATIONS: 'Recommendations',
     TECHNICAL_SKILLS: 'Technical skills',
     TONYS_THOUGHTS: "Tony's thoughts"
   }

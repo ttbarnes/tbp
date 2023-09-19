@@ -41,6 +41,24 @@ describe('components/FindOutMore', () => {
     });
   });
 
+  describe('when renderTechSkillsLink prop is provided', () => {
+    beforeEach(() => {
+      render(<FindOutMore renderTechSkillsLink />);
+    });
+
+    it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
+      const element = screen.getAllByRole('link')[1];
+
+      expect(element).toBeInTheDocument();
+
+      assertLink({
+        element,
+        expectedHref: ROUTES.TECHNICAL_SKILLS,
+        expectedCopy: "Tony's technical skills"
+      });
+    });
+  });
+
   describe('when renderThoughtsLink prop is provided', () => {
     beforeEach(() => {
       render(<FindOutMore renderThoughtsLink />);
@@ -59,20 +77,38 @@ describe('components/FindOutMore', () => {
     });
   });
 
-  describe('when renderTechSkillsLink prop is provided', () => {
+  describe('when renderClientsProjectsLink prop is provided', () => {
     beforeEach(() => {
-      render(<FindOutMore renderTechSkillsLink />);
+      render(<FindOutMore renderClientsProjectsLink />);
     });
 
-    it(`should render a link to ${ROUTES.TECHNICAL_SKILLS}`, () => {
+    it(`should render a link to ${ROUTES.CLIENTS_PROJECTS}`, () => {
       const element = screen.getAllByRole('link')[1];
 
       expect(element).toBeInTheDocument();
 
       assertLink({
         element,
-        expectedHref: ROUTES.TECHNICAL_SKILLS,
-        expectedCopy: "Tony's technical skills"
+        expectedHref: ROUTES.CLIENTS_PROJECTS,
+        expectedCopy: "Tony's clients, projects"
+      });
+    });
+  });
+
+  describe('when renderRecommendations prop is provided', () => {
+    beforeEach(() => {
+      render(<FindOutMore renderRecommendations />);
+    });
+
+    it(`should render a link to ${ROUTES.RECOMMENDATIONS}`, () => {
+      const element = screen.getAllByRole('link')[1];
+
+      expect(element).toBeInTheDocument();
+
+      assertLink({
+        element,
+        expectedHref: ROUTES.RECOMMENDATIONS,
+        expectedCopy: "Tony's recommendations"
       });
     });
   });

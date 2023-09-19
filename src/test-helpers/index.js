@@ -30,4 +30,23 @@ export const assertLink = ({
   }
 };
 
-export default assertLink;
+/**
+ * Assert list items length
+ * @param {HTMLElement} React testing library container
+ * @param {Integer} Expected amount of list items
+ */
+export const assertListItems = ({ container, expectedLength }) => {
+  const listItems = container.getElementsByTagName('li');
+
+  expect(listItems.length).toEqual(expectedLength);
+};
+
+/**
+ * Assert no list items length
+ * @param {HTMLElement} React testing library container
+ */
+export const assertNoListItems = (container) => {
+  const listItems = container.getElementsByTagName('li');
+
+  expect(listItems.length).toEqual(0);
+};

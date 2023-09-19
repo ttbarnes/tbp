@@ -17,7 +17,8 @@
           "netlify"
         ]
       }
-    ]
+    ],
+    "jest/expect-expect": "off"
   },
   "env": {
     "jest": true,

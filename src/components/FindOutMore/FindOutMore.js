@@ -3,7 +3,12 @@ import Link from 'next/link';
 import { ROUTES } from '@/constants';
 import styles from './FindOutMore.module.scss';
 
-const FindOutMore = ({ renderTechSkillsLink, renderThoughtsLink }) => (
+const FindOutMore = ({
+  renderTechSkillsLink,
+  renderThoughtsLink,
+  renderClientsProjectsLink,
+  renderRecommendations
+}) => (
   <div className={styles.container}>
     <h3>Find out more</h3>
 
@@ -25,6 +30,20 @@ const FindOutMore = ({ renderTechSkillsLink, renderThoughtsLink }) => (
         </li>
       )}
 
+      {renderClientsProjectsLink && (
+        <li className={styles.listItem}>
+          <Link href={ROUTES.CLIENTS_PROJECTS}>
+            Tony{"'"}s clients, projects
+          </Link>
+        </li>
+      )}
+
+      {renderRecommendations && (
+        <li className={styles.listItem}>
+          <Link href={ROUTES.RECOMMENDATIONS}>Tony{"'"}s recommendations</Link>
+        </li>
+      )}
+
       <li className={styles.listItem}>
         <Link href={ROUTES.ABOUT}>About Tony</Link>
       </li>
@@ -34,12 +53,16 @@ const FindOutMore = ({ renderTechSkillsLink, renderThoughtsLink }) => (
 
 FindOutMore.propTypes = {
   renderTechSkillsLink: PropTypes.bool,
-  renderThoughtsLink: PropTypes.bool
+  renderThoughtsLink: PropTypes.bool,
+  renderClientsProjectsLink: PropTypes.bool,
+  renderRecommendations: PropTypes.bool
 };
 
 FindOutMore.defaultProps = {
   renderTechSkillsLink: false,
-  renderThoughtsLink: false
+  renderThoughtsLink: false,
+  renderClientsProjectsLink: false,
+  renderRecommendations: false
 };
 
 export default FindOutMore;

@@ -22,6 +22,16 @@ const PagesList = () => (
         title="Tony's thoughts"
         href={ROUTES.TONYS_THOUGHTS}
       />
+
+      <SidebarListItem
+        title='Clients, projects'
+        href={ROUTES.CLIENTS_PROJECTS}
+      />
+
+      <SidebarListItem
+        title='Recommendations'
+        href={ROUTES.RECOMMENDATIONS}
+      />
     </ul>
   </nav>
 );

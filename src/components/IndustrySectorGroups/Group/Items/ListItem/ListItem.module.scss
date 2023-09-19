@@ -1,0 +1,30 @@
+@import '../../../../../styles/variables.scss';
+
+.listItem {
+  padding: 1em;
+  width: 100%;
+
+  @media (min-width: $bp-small) {
+    max-width: 60%;
+  }
+
+  @media (min-width: $bp-small) {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+.innerContainer {
+  padding: 1em;
+  @media (min-width: $bp-small) {
+    min-height: 150px;
+  }
+}
+
+.heading {
+  text-decoration: none;
+}
+
+.summary {
+  font-size: .8em;
+}

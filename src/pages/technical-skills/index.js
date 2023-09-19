@@ -30,7 +30,11 @@ const TechnicalSkillsPage = () => (
 
       <TechnicalList />
 
-      <GenericOutro renderThoughtsLink />
+      <GenericOutro
+        renderThoughtsLink
+        renderClientsProjectsLink
+        renderRecommendations
+      />
     </Main>
   </>
 );

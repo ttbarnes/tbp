@@ -38,7 +38,11 @@ const TonysThoughtsPage = () => (
         textColor='white'
       />
 
-      <GenericOutro renderTechSkillsLink />
+      <GenericOutro
+        renderTechSkillsLink
+        renderClientsProjectsLink
+        renderRecommendations
+      />
     </Main>
   </>
 );

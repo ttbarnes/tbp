@@ -28,7 +28,7 @@ describe('components/Sidebar/PagesList', () => {
   it('should render a list item via <SidebarListItem /> for each page', () => {
     const listItems = container.getElementsByTagName('li');
 
-    const expectedLength = 3;
+    const expectedLength = 5;
 
     expect(listItems.length).toEqual(expectedLength);
   });
@@ -66,6 +66,30 @@ describe('components/Sidebar/PagesList', () => {
       element: link,
       expectedHref: ROUTES.TONYS_THOUGHTS,
       expectedCopy: "Tony's thoughts"
+    });
+  });
+
+  it('should render `Clients, projects` text and link via <SidebarListItem />', () => {
+    const links = container.querySelectorAll('li a');
+
+    const link = links[3];
+
+    assertLink({
+      element: link,
+      expectedHref: ROUTES.CLIENTS_PROJECTS,
+      expectedCopy: 'Clients, projects'
+    });
+  });
+
+  it('should render `Recommendations` text and link via <SidebarListItem />', () => {
+    const links = container.querySelectorAll('li a');
+
+    const link = links[4];
+
+    assertLink({
+      element: link,
+      expectedHref: ROUTES.RECOMMENDATIONS,
+      expectedCopy: 'Recommendations'
     });
   });
 });
