@@ -19,7 +19,10 @@ const RecommendationsPgae = () => {
         <PagesList />
       </Sidebar>
 
-      <Main extraTopPadding>
+      <Main
+        pageHasSidebar
+        extraTopPadding
+      >
         <TextSection largePadding>
           <h1>Recommendations</h1>
         </TextSection>

@@ -3,28 +3,33 @@ import TextSection from '@/components/TextSection';
 import styles from './ListItem.module.scss';
 
 const ListItem = ({ author, authorText, role }) => (
-  <li>
+  <li className={styles.listItem}>
     <TextSection largePadding={false}>
-      <p>
-        <span>&ldquo;</span>
+      <blockquote>
+        <span className={styles.authorTextContainer}>
+          {authorText.map((text) => (
+            <p
+              key={text}
+              className={styles.authorText}
+            >
+              {text}
+            </p>
+          ))}
+        </span>
 
-        <span className={styles.authorText}>{authorText}</span>
-
-        <span>&rdquo;</span>
-      </p>
-
-      <p
-        aria-label={`Recommendation by ${author}. ${author}'s role is "${role}"`}
-      >
-        {author} - {role}
-      </p>
+        <footer
+          aria-label={`Recommendation by ${author}. ${author}'s role is "${role}"`}
+        >
+          {author} - {role}
+        </footer>
+      </blockquote>
     </TextSection>
   </li>
 );
 
 ListItem.propTypes = {
   author: PropTypes.string.isRequired,
-  authorText: PropTypes.string.isRequired,
+  authorText: PropTypes.arrayOf(PropTypes.string),
   role: PropTypes.string.isRequired
 };
 

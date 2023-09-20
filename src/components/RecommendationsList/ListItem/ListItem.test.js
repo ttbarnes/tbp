@@ -6,7 +6,7 @@ import ListItem from './ListItem';
 describe('components/RecommendationsList/ListItem', () => {
   const mockProps = {
     author: 'Mock author',
-    authorText: 'This is a recommendation',
+    authorText: ['Line 1', 'Line 2', 'Line 3'],
     role: 'CEO'
   };
 
@@ -27,26 +27,16 @@ describe('components/RecommendationsList/ListItem', () => {
   it('should render `author` and `role` copy', () => {
     const expectedCopy = `${author} - ${role}`;
 
-    const element = screen.getByText(expectedCopy, { selector: 'p' });
+    const element = screen.getByText(expectedCopy, { selector: 'footer' });
 
     expect(element).toBeInTheDocument();
   });
 
   it('should render `authorText` copy', () => {
-    const element = screen.getByText(authorText, { selector: 'span' });
+    authorText.forEach((text) => {
+      const element = screen.getByText(text, { selector: 'p' });
 
-    expect(element).toBeInTheDocument();
-  });
-
-  it('should render `open quote` symbol', () => {
-    const element = screen.getByText('“', { selector: 'span' });
-
-    expect(element).toBeInTheDocument();
-  });
-
-  it('should render `close quote` symbol', () => {
-    const element = screen.getByText('”', { selector: 'span' });
-
-    expect(element).toBeInTheDocument();
+      expect(element).toBeInTheDocument();
+    });
   });
 });

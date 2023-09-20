@@ -62,10 +62,40 @@ small {
   font-size: 80%;
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
 .white-text {
   color: $white;
 }
 
 .heading-caption {
   font-size: 1.5em;
+}
+
+
+blockquote {
+  margin: -1.5em 0 5em 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
+blockquote p:first-of-type:before {
+  content: '\201c';
+  position: absolute;
+  font-size: 5em;
+  color: $lightGrey;
+  line-height: .5em;
+  top: -.25em;
+  left: -.7em;
+}
+
+blockquote footer {
+  position: relative;
+  font-weight: bold;
 }
