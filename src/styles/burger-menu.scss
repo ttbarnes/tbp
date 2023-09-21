@@ -29,7 +29,6 @@
   height: 50px !important;
   text-align: center;
   cursor: pointer;
-  transition: none;
 
   @media (min-width: $bp-large) {
     display: none;
@@ -63,10 +62,6 @@
 
 .bm-cross-white {
   background: $white;
-}
-
-.bm-menu-wrap {
-  transition: all .1s ease !important;
 }
 
 .bm-menu {

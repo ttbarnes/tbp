@@ -48,6 +48,7 @@ a {
   color: $blueLight;
   font-weight: bold;
   text-decoration: underline;
+  word-break: break-word;
 
   &.link-black {
     color: $black;
