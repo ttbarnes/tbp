@@ -25,7 +25,7 @@ const ClientsProjectsPage = () => {
       >
         <TextSection largePadding>
           <h1>Clients, projects</h1>
-          <p className='heading-caption'>Intro here.</p>
+          <p className='heading-caption'>A small preview.</p>
         </TextSection>
 
         <IndustrySectorGroups />

@@ -296,46 +296,6 @@ export const CLIENTS_PROJECTS = [
     ]
   },
   {
-    heading: 'Entertainment',
-    items: [
-      {
-        id: 'fiona-ross',
-        name: 'Fiona Ross',
-        date: '2016 - present',
-        industry: 'Entertainment',
-        tech: [
-          'Angular',
-          'JavaScript, ES6',
-          'Express, Node js',
-          'HTML, CSS',
-          'Stylus',
-          'Webpack',
-          'React',
-          'Redux',
-          'MongoDB, Mongoose',
-          'Express, Node js',
-          'JavaScript, ES6',
-          'Webpack',
-          'Sass'
-        ],
-        primaryTech: 'Full stack JS',
-        highlights: [
-          'Redesign for mobiles/tablets/any device size',
-          'Modular, component based architecture',
-          'News feed from node API',
-          'Customised music player',
-          'Various smart features/components such as collaborators and gallery'
-        ],
-        url: 'http://fionaross.co.uk',
-        colors: {
-          bg: '#282828',
-          text: '#FFF'
-        },
-        summary: 'Bespoke CMS, website'
-      }
-    ]
-  },
-  {
     heading: 'Media',
     items: [
       {
@@ -398,6 +358,41 @@ export const CLIENTS_PROJECTS = [
       //   },
       //   summary: 'UI templates'
       // },
+      {
+        id: 'fiona-ross',
+        name: 'Fiona Ross',
+        date: '2016 - present',
+        industry: 'Entertainment',
+        tech: [
+          'Angular',
+          'JavaScript, ES6',
+          'Express, Node js',
+          'HTML, CSS',
+          'Stylus',
+          'Webpack',
+          'React',
+          'Redux',
+          'MongoDB, Mongoose',
+          'Express, Node js',
+          'JavaScript, ES6',
+          'Webpack',
+          'Sass'
+        ],
+        primaryTech: 'Full stack JS',
+        highlights: [
+          'Redesign for mobiles/tablets/any device size',
+          'Modular, component based architecture',
+          'News feed from node API',
+          'Customised music player',
+          'Various smart features/components such as collaborators and gallery'
+        ],
+        url: 'http://fionaross.co.uk',
+        colors: {
+          bg: '#282828',
+          text: '#FFF'
+        },
+        summary: 'Bespoke CMS, website'
+      },
       {
         id: 'fifthweek',
         name: 'Fifthweek',

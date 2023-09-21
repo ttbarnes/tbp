@@ -30,7 +30,7 @@ describe('pages/clients-projects', () => {
   });
 
   it('should render an intro', () => {
-    const expectedCopy = 'Intro here.';
+    const expectedCopy = 'A small preview.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 
