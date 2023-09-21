@@ -1,7 +1,7 @@
 export const RECOMMENDATIONS = [
   {
     authorText: [
-      'I have had the pleasure of working with Tony Barnes for the past 2 years working in the same team. He is one of the best among all people I have ever worked with.',
+      'I have had the pleasure of working with Tony for the past 2 years working in the same team. He is one of the best among all people I have ever worked with.',
       'Tony Barnes is an achievement oriented, multi-skilled, open minded and motivated web developer with a very strong work ethic. He has an extensive knowledge of modern development techniques, and his open minded approach could not be overestimated. I strongly recommend working with Tony.'
     ],
     author: 'Armand Rozanski',
@@ -20,6 +20,21 @@ export const RECOMMENDATIONS = [
     ],
     author: 'Tamique Weekes',
     role: 'Product @ Meta'
+  },
+  {
+    authorText: [
+      "I've had the pleasure of working closely with Tony for several years on both government and startup projects, and I wholeheartedly recommend him. Tony is an exceptional front-end developer who consistently turns design concepts into stunning user interfaces.",
+      "His attention to detail and dedication to excellence make him a valuable asset to any team. Tony's technical skills and collaborative nature truly set him apart. If you're looking for a top-tier front-end developer, Tony is your guy."
+    ],
+    author: 'Lawrence Wagerfield',
+    role: 'Founder/CEO of Bytescale'
+  },
+  {
+    authorText: [
+      "I really enjoyed working on Tony's front-end team at Powa. He is an exceptionally driven and self-motivated developer, always exploring the latest technologies. He has a knack for remaining unbeatably friendly and approachable even when under pressure and will always take the time to listen to his teammates and offer help and advice."
+    ],
+    author: 'Marek Muchlinski',
+    role: 'Front-end developer'
   }
 ];
 
