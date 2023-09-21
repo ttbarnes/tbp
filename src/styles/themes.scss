@@ -1,0 +1,9 @@
+@mixin theme($background, $color) {
+  background: $background;
+  color: $color
+}
+
+@mixin blackTheme {
+  @include theme($black, $white);
+  border: solid 1px $darkGrey;
+}

@@ -7,26 +7,17 @@ export const CLIENTS_PROJECTS = [
         name: 'UK Export Finance',
         date: '2022 - present',
         industry: 'FinTech',
-        summary: 'Replatforming, new product development',
-        colors: {
-          bg: '#FFF',
-          text: '#000',
-          border: '#000'
-        }
+        summary: 'Replatforming, new product development'
       },
       {
         id: 'foundry4',
         name: 'Foundry4',
         date: '2020-2022',
         industry: 'FinTech',
-        summary: 'Replatforming',
-        colors: {
-          bg: '#6853A2',
-          text: '#FFF'
-        }
+        summary: 'Replatforming'
       },
       {
-        id: 'worldremit',
+        id: 'world-remit',
         name: 'WorldRemit',
         date: '2018-2019',
         industry: 'FinTech',
@@ -40,13 +31,7 @@ export const CLIENTS_PROJECTS = [
           'Webpack',
           'Ruby'
         ],
-        primaryTech: 'Full stack JS',
-        colors: {
-          bg: '#813FD6',
-          text: '#FFF',
-          summaryOpacity: '1',
-          summaryText: '#FFF'
-        }
+        primaryTech: 'Full stack JS'
       },
       {
         id: 'ihs-markit',
@@ -55,10 +40,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'FinTech',
         tech: ['React', 'Redux', 'JavaScript', 'ES6', 'Sass', 'Docker'],
         primaryTech: 'React',
-        colors: {
-          bg: '#33383E',
-          text: '#FFF'
-        },
         summary: 'MVP development'
       },
       {
@@ -81,11 +62,7 @@ export const CLIENTS_PROJECTS = [
           'As a proof of concept, I built an API and UI that combined and mapped trade history data from multiple exchanges',
           'Added the ability to add notes and tags to each trade',
           'Allowed users to download all history as a single CSV/PDF'
-        ],
-        colors: {
-          bg: '#D1DDE6',
-          text: '#000'
-        }
+        ]
       },
       {
         id: 'saranac',
@@ -102,10 +79,6 @@ export const CLIENTS_PROJECTS = [
           'Less'
         ],
         primaryTech: 'Angular',
-        colors: {
-          bg: '#2E2D2E',
-          text: '#FFF'
-        },
         summary: 'MVP development'
       }
     ]
@@ -129,10 +102,6 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'React',
         url: 'http://trainline.com',
-        colors: {
-          bg: '#21314D',
-          text: '#FFF'
-        },
         summary: 'Replatforming'
       },
       {
@@ -142,10 +111,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'Travel',
         tech: ['HTML, CSS', 'Sass', 'JavaScript, jQuery', 'Play, Scala'],
         primaryTech: 'UI templates',
-        colors: {
-          bg: '#0B0C0C',
-          text: '#FFF'
-        },
         summary: 'MVP development, digital transformation'
       },
       {
@@ -155,10 +120,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'Travel',
         tech: ['HTML, CSS', 'JavaScript, jQuery', 'Gulp'],
         primaryTech: 'WordPress',
-        colors: {
-          bg: '#9DB197',
-          text: '#111010'
-        },
         summary: 'Static website'
       },
       {
@@ -168,10 +129,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'Travel',
         tech: ['HTML, CSS'],
         primaryTech: 'UI templates',
-        colors: {
-          bg: '#01633D',
-          text: '#FFF'
-        },
         summary: 'Static website'
       }
     ]
@@ -196,10 +153,6 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'Full stack JS',
         url: 'http://www.plantstove.com',
-        colors: {
-          bg: '#D1DDE6',
-          text: '#000'
-        },
         summary: 'MVP development'
       },
       {
@@ -217,11 +170,6 @@ export const CLIENTS_PROJECTS = [
           'Sass'
         ],
         primaryTech: 'Angular',
-        colors: {
-          bg: '#FFF',
-          text: '#151961',
-          border: '#151961'
-        },
         summary: 'MVP development'
       },
       {
@@ -240,10 +188,6 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'Angular',
         url: 'http://lantum.com',
-        colors: {
-          bg: '#03254e',
-          text: '#FFF'
-        },
         summary: 'Replatforming'
       },
       {
@@ -253,10 +197,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'Health/Lifestyle',
         tech: ['HTML, CSS', 'JavaScript, jQuery', 'PHP', 'Gulp'],
         primaryTech: 'WordPress',
-        colors: {
-          bg: '#1F1F1F',
-          text: '#FFF'
-        },
         summary: 'Static website'
       }
     ]
@@ -271,12 +211,6 @@ export const CLIENTS_PROJECTS = [
         industry: 'Ecommerce',
         tech: ['React', 'Redux', 'JavaScript', 'ES6', 'Webpack', 'Sass'],
         primaryTech: 'React',
-        colors: {
-          bg: '#FFF',
-          text: '#5C8017',
-          border: '#5C8017',
-          summaryOpacity: '1'
-        },
         summary: 'Replatforming'
       },
       {
@@ -286,11 +220,6 @@ export const CLIENTS_PROJECTS = [
         date: '2011',
         tech: ['HTML, CSS', 'JavaScript, jQuery'],
         primaryTech: 'UI templates, CMS',
-        colors: {
-          bg: '#007ACC',
-          text: '#FFF',
-          summaryOpacity: '1'
-        },
         summary: 'Ecommerce websites, custom UI framework'
       }
     ]
@@ -303,10 +232,6 @@ export const CLIENTS_PROJECTS = [
         name: 'Secret project (NDA)',
         date: '2022 - present',
         industry: 'Media',
-        colors: {
-          bg: '#000',
-          text: '#FFF'
-        },
         summary: 'Highly specialised, bespoke management system & integrations'
       },
       {
@@ -334,10 +259,6 @@ export const CLIENTS_PROJECTS = [
           'JavaScript'
         ],
         primaryTech: 'React',
-        colors: {
-          bg: '#2d3a46',
-          text: '#FFF'
-        },
         summary: 'Static website, UI templates'
       },
       // {
@@ -387,10 +308,6 @@ export const CLIENTS_PROJECTS = [
           'Various smart features/components such as collaborators and gallery'
         ],
         url: 'http://fionaross.co.uk',
-        colors: {
-          bg: '#282828',
-          text: '#FFF'
-        },
         summary: 'Bespoke CMS, website'
       },
       {
@@ -401,10 +318,6 @@ export const CLIENTS_PROJECTS = [
         tech: ['AngularJS', 'JavaScript', 'HTML, CSS', 'Grunt', 'Sass'],
         primaryTech: 'Angular',
         url: 'http://fifthweek.com',
-        colors: {
-          bg: '#D1DDE6',
-          text: '#000'
-        },
         summary: 'MVP development'
       }
     ]
@@ -428,11 +341,7 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'Full stack JS',
         url: 'https://mean-tweets.herokuapp.com',
-        summary: 'CRUD example with the MEAN stack',
-        colors: {
-          bg: '#F3DD1D',
-          text: '#000'
-        }
+        summary: 'CRUD example with the MEAN stack'
       },
       {
         id: 'angular-ticker',
@@ -447,12 +356,7 @@ export const CLIENTS_PROJECTS = [
           'Configurable timing'
         ],
         url: 'http://github.com/ttbarnes/angular-ticker',
-        summary: 'Vertical scroller for list items/feeds',
-        colors: {
-          bg: '#CC342D',
-          text: '#FFF',
-          summaryOpacity: '1'
-        }
+        summary: 'Vertical scroller for list items/feeds'
       },
       {
         id: 'angular-poc-demos',
@@ -466,12 +370,7 @@ export const CLIENTS_PROJECTS = [
           'Various examples of forms, ng-repeat, services, directives, scope watch, testing'
         ],
         url: 'https://angular-poc-demos.firebaseapp.com',
-        summary: 'Simple examples of Angular features',
-        colors: {
-          bg: '#CC342D',
-          text: '#FFF',
-          summaryOpacity: '1'
-        }
+        summary: 'Simple examples of Angular features'
       },
       {
         id: 'sass-quick-start',
@@ -480,12 +379,7 @@ export const CLIENTS_PROJECTS = [
         industry: 'Open source',
         tech: ['Grunt', 'Gulp', 'JavaScript'],
         primaryTech: 'JavaScript',
-        summary: 'Sass complilation with Gulp or Grunt',
-        colors: {
-          bg: '#D70779',
-          text: '#FFF',
-          summaryOpacity: '1'
-        }
+        summary: 'Sass complilation with Gulp or Grunt'
       }
     ]
   }

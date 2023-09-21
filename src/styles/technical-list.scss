@@ -75,16 +75,6 @@ $typescript: #3178C6;
 $wcag: #1A5E9A;
 $webpack: #175D96;
 
-@mixin theme($background, $color) {
-  background: $background;
-  color: $color
-}
-
-@mixin blackTheme {
-  @include theme($black, $white);
-  border: solid 1px $darkGrey;
-}
-
 .angular {
   @include theme($angular, $white)
 }

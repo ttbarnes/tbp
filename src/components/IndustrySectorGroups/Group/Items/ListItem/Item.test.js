@@ -6,13 +6,25 @@ import IndustrySectorGroupItem from './ListItem';
 
 const [firstIndustry] = CLIENTS_PROJECTS;
 
-describe('components/IndustrySectorGroups/Group/Items/Item', () => {
+describe('components/IndustrySectorGroups/Group/Items/ListItem', () => {
+  let container;
+
   const mockProps = {
     item: firstIndustry.items[0]
   };
 
   beforeEach(() => {
-    render(<IndustrySectorGroupItem {...mockProps} />);
+    const rendered = render(<IndustrySectorGroupItem {...mockProps} />);
+
+    const { container: renderedContainer } = rendered;
+
+    container = renderedContainer;
+  });
+
+  it("should render a class name from the item's ID", () => {
+    const element = container.querySelector('div');
+
+    expect(element).toHaveClass(mockProps.item.id);
   });
 
   it('should render a heading', () => {
