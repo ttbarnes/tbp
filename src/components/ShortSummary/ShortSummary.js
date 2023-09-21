@@ -14,6 +14,7 @@ const ShortSummary = () => (
       <Link
         href={BARNES_CODE.HREF}
         rel='noopener noreferrer'
+        target='_blank'
       >
         {BARNES_CODE.TEXT}
       </Link>
