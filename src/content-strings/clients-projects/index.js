@@ -7,21 +7,21 @@ export const CLIENTS_PROJECTS = [
         name: 'UK Export Finance',
         date: '2022 - present',
         industry: 'FinTech',
-        summary: 'Replatforming, new product development'
+        summary: 'Re-platforming, new product development'
       },
       {
         id: 'foundry4',
         name: 'Foundry4',
         date: '2020-2022',
         industry: 'FinTech',
-        summary: 'Replatforming'
+        summary: 'Re-platforming, digital transformation'
       },
       {
         id: 'world-remit',
         name: 'WorldRemit',
         date: '2018-2019',
         industry: 'FinTech',
-        summary: 'Replatforming',
+        summary: 'Re-platforming, modernisation',
         tech: [
           'React',
           'Redux',
@@ -84,6 +84,104 @@ export const CLIENTS_PROJECTS = [
     ]
   },
   {
+    heading: 'Media',
+    items: [
+      {
+        id: 'secret-project',
+        name: 'Secret project (NDA)',
+        date: '2022 - present',
+        industry: 'Media',
+        summary: 'Highly specialised, bespoke management system & integrations'
+      },
+      {
+        id: 'foolproof',
+        name: 'Foolproof',
+        date: '2019 - 2022',
+        industry: 'Media',
+        colors: {
+          bg: '#2E2E2E',
+          text: '#FFF'
+        },
+        summary: 'Consultancy, replatforming'
+      },
+      {
+        id: 'fiona-ross',
+        name: 'Therapy Records, Fiona Ross',
+        date: '2016 - present',
+        industry: 'Entertainment',
+        tech: [
+          'Angular',
+          'JavaScript, ES6',
+          'Express, Node js',
+          'HTML, CSS',
+          'Stylus',
+          'Webpack',
+          'React',
+          'Redux',
+          'MongoDB, Mongoose',
+          'Express, Node js',
+          'JavaScript, ES6',
+          'Webpack',
+          'Sass'
+        ],
+        primaryTech: 'Full stack JS',
+        highlights: [
+          'Redesign for mobiles/tablets/any device size',
+          'Modular, component based architecture',
+          'News feed from node API',
+          'Customised music player',
+          'Various smart features/components such as collaborators and gallery'
+        ],
+        url: 'http://fionaross.co.uk',
+        summary: 'Bespoke CMS, accompanying website(s)'
+      },
+      {
+        id: 'women-in-jazz-media',
+        name: 'Women in Jazz Media',
+        date: '2020 - 2021',
+        industry: 'Media',
+        tech: [
+          'React',
+          'Gatsby',
+          'Netlify CMS',
+          'HTML, CSS',
+          'Sass',
+          'JavaScript'
+        ],
+        primaryTech: 'React',
+        summary: 'Static website, UI templates'
+      },
+      // {
+      //   id: 'full-fact',
+      //   name: 'Full Fact',
+      //   date: '2016 - 2017',
+      //   industry: 'Media',
+      //   tech: [
+      //     'HTML, CSS',
+      //     'JavaScript',
+      //     'Webpack'
+      //   ],
+      //   primaryTech: 'UI templates',
+      //   colors: {
+      //     'bg: '#FFF',
+      //     'text: '#222',
+      //     'border: '#222'
+      //   },
+      //   summary: 'UI templates'
+      // },
+      {
+        id: 'fifthweek',
+        name: 'Fifthweek',
+        date: '2014 - 2015',
+        industry: 'Media',
+        tech: ['AngularJS', 'JavaScript', 'HTML, CSS', 'Grunt', 'Sass'],
+        primaryTech: 'Angular',
+        url: 'http://fifthweek.com',
+        summary: 'MVP development'
+      }
+    ]
+  },
+  {
     heading: 'Travel, Transportation',
     items: [
       {
@@ -102,7 +200,7 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'React',
         url: 'http://trainline.com',
-        summary: 'Replatforming'
+        summary: 'Re-platforming, modernisation'
       },
       {
         id: 'dvla',
@@ -188,7 +286,7 @@ export const CLIENTS_PROJECTS = [
         ],
         primaryTech: 'Angular',
         url: 'http://lantum.com',
-        summary: 'Replatforming'
+        summary: 'Re-platforming, modernisation'
       },
       {
         id: 'cathy-brown-v2',
@@ -211,7 +309,7 @@ export const CLIENTS_PROJECTS = [
         industry: 'Ecommerce',
         tech: ['React', 'Redux', 'JavaScript', 'ES6', 'Webpack', 'Sass'],
         primaryTech: 'React',
-        summary: 'Replatforming'
+        summary: 'Re-platforming, modernisation'
       },
       {
         id: 'powa',
@@ -221,104 +319,6 @@ export const CLIENTS_PROJECTS = [
         tech: ['HTML, CSS', 'JavaScript, jQuery'],
         primaryTech: 'UI templates, CMS',
         summary: 'Ecommerce websites, custom UI framework'
-      }
-    ]
-  },
-  {
-    heading: 'Media',
-    items: [
-      {
-        id: 'secret-project',
-        name: 'Secret project (NDA)',
-        date: '2022 - present',
-        industry: 'Media',
-        summary: 'Highly specialised, bespoke management system & integrations'
-      },
-      {
-        id: 'foolproof',
-        name: 'Foolproof',
-        date: '2019 - 2022',
-        industry: 'Media',
-        colors: {
-          bg: '#2E2E2E',
-          text: '#FFF'
-        },
-        summary: 'Consultancy, replatforming'
-      },
-      {
-        id: 'women-in-jazz-media',
-        name: 'Women in Jazz Media',
-        date: '2020 - 2021',
-        industry: 'Media',
-        tech: [
-          'React',
-          'Gatsby',
-          'Netlify CMS',
-          'HTML, CSS',
-          'Sass',
-          'JavaScript'
-        ],
-        primaryTech: 'React',
-        summary: 'Static website, UI templates'
-      },
-      // {
-      //   id: 'full-fact',
-      //   name: 'Full Fact',
-      //   date: '2016 - 2017',
-      //   industry: 'Media',
-      //   tech: [
-      //     'HTML, CSS',
-      //     'JavaScript',
-      //     'Webpack'
-      //   ],
-      //   primaryTech: 'UI templates',
-      //   colors: {
-      //     'bg: '#FFF',
-      //     'text: '#222',
-      //     'border: '#222'
-      //   },
-      //   summary: 'UI templates'
-      // },
-      {
-        id: 'fiona-ross',
-        name: 'Fiona Ross',
-        date: '2016 - present',
-        industry: 'Entertainment',
-        tech: [
-          'Angular',
-          'JavaScript, ES6',
-          'Express, Node js',
-          'HTML, CSS',
-          'Stylus',
-          'Webpack',
-          'React',
-          'Redux',
-          'MongoDB, Mongoose',
-          'Express, Node js',
-          'JavaScript, ES6',
-          'Webpack',
-          'Sass'
-        ],
-        primaryTech: 'Full stack JS',
-        highlights: [
-          'Redesign for mobiles/tablets/any device size',
-          'Modular, component based architecture',
-          'News feed from node API',
-          'Customised music player',
-          'Various smart features/components such as collaborators and gallery'
-        ],
-        url: 'http://fionaross.co.uk',
-        summary: 'Bespoke CMS, website'
-      },
-      {
-        id: 'fifthweek',
-        name: 'Fifthweek',
-        date: '2014 - 2015',
-        industry: 'Media',
-        tech: ['AngularJS', 'JavaScript', 'HTML, CSS', 'Grunt', 'Sass'],
-        primaryTech: 'Angular',
-        url: 'http://fifthweek.com',
-        summary: 'MVP development'
       }
     ]
   },
