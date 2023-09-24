@@ -24,7 +24,7 @@ export const RECOMMENDATIONS = [
   {
     authorText: [
       "I've had the pleasure of working closely with Tony for several years on both government and startup projects, and I wholeheartedly recommend him. Tony is an exceptional full-stack developer who consistently turns design concepts into fully functional apps.",
-      "His attention to detail and dedication to excellence make him a valuable asset to any team. Tony's technical skills and collaborative nature truly set him apart. If you're looking for a top-tier full-stack developer, Tony is your guy.",
+      "His attention to detail and dedication to excellence make him a valuable asset to any team. Tony's technical skills and collaborative nature truly set him apart. If you're looking for a top-tier full-stack developer, Tony is your guy."
     ],
     author: 'Lawrence Wagerfield',
     role: 'Founder/CEO of Bytescale'
@@ -35,6 +35,14 @@ export const RECOMMENDATIONS = [
     ],
     author: 'Steve Emecz',
     role: 'VP Partnerships at Tungsten Network'
+  },
+  {
+    authorText: [
+      'Tony is a great team player, pleasure to work with and a true professional, always ensuring he gives his upmost for the team. Tony is diligent, never missing any details and focused on delivering.',
+      'Tony really knows his domain area well and always offers good advice and insights, and is always part of the discussion offering good ideas and wanting to ensure we do the best job possible for the company and customers.'
+    ],
+    author: 'Mark Douglas',
+    role: 'Product Leader | Head of Product | Founder (Ex Tesco, Shazam, Skype, Microsoft)'
   },
   {
     authorText: [
