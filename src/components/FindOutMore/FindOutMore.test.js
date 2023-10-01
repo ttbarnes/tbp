@@ -108,7 +108,7 @@ describe('components/FindOutMore', () => {
       assertLink({
         element,
         expectedHref: ROUTES.RECOMMENDATIONS,
-        expectedCopy: "Tony's recommendations"
+        expectedCopy: 'Recommendations'
       });
     });
   });

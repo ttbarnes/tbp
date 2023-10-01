@@ -40,7 +40,7 @@ const FindOutMore = ({
 
       {renderRecommendations && (
         <li className={styles.listItem}>
-          <Link href={ROUTES.RECOMMENDATIONS}>Tony{"'"}s recommendations</Link>
+          <Link href={ROUTES.RECOMMENDATIONS}>Recommendations</Link>
         </li>
       )}
 
