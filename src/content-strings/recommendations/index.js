@@ -32,6 +32,13 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
+      'Tony Barnes is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
+    ],
+    author: 'Fiona Ross',
+    role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'
+  },
+  {
+    authorText: [
       "In addition to being an excellent developer, Tony also has the strategic vision to deliver as a lead developer. I thoroughly enjoyed working with Tony and didn't hesitate to bring him into important client situations. Would work with him again without question."
     ],
     author: 'Steve Emecz',
