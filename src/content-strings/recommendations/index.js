@@ -34,18 +34,18 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
+      'Tony is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced, but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
+    ],
+    author: 'Fiona Ross',
+    role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'
+  },
+  {
+    authorText: [
       'Tony is a great team player, pleasure to work with and a true professional, always ensuring he gives his upmost for the team. Tony is diligent, never missing any details and focused on delivering.',
       'Tony really knows his domain area well and always offers good advice and insights, and is always part of the discussion offering good ideas and wanting to ensure we do the best job possible for the company and customers.'
     ],
     author: 'Mark Douglas',
     role: 'Product Leader | Head of Product | Founder (Ex Tesco, Shazam, Skype, Microsoft)'
-  },
-  {
-    authorText: [
-      'Tony is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
-    ],
-    author: 'Fiona Ross',
-    role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'
   },
   {
     authorText: [
