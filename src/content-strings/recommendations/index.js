@@ -16,14 +16,6 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
-      'Tony is a great team player, pleasure to work with and a true professional, always ensuring he gives his upmost for the team. Tony is diligent, never missing any details and focused on delivering.',
-      'Tony really knows his domain area well and always offers good advice and insights, and is always part of the discussion offering good ideas and wanting to ensure we do the best job possible for the company and customers.'
-    ],
-    author: 'Mark Douglas',
-    role: 'Product Leader | Head of Product | Founder (Ex Tesco, Shazam, Skype, Microsoft)'
-  },
-  {
-    authorText: [
       'I have had the pleasure of working with Tony for the past 2 years working in the same team. He is one of the best among all people I have ever worked with.',
       'Tony is an achievement oriented, multi-skilled, open minded and motivated developer with a very strong work ethic. He has an extensive knowledge of modern development techniques, and his open minded approach could not be overestimated. I strongly recommend working with Tony.'
     ],
@@ -32,10 +24,35 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
-      'Tony Barnes is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
+      'As a designer, working with Tony was a genuine delight. His ability to communicate complex technical requirements and restrictions, as well as his patience in doing so, fostered a truly collaborative environment between the researchers, designers and developers in our team.',
+      'Tony was always willing to participate in co-design sessions with me and our content designer, and attended research and usability sessions with users. He actually cares about, and is able to build empathy for, the users whilst helping teams to navigate their way to simple solutions that meet both user and business needs.',
+      'Whilst he is a "techy", Tony also has a great eye for design and detail. His vast knowledge of the gov.uk design system meant he was able to make fast iterations to our service and recommendations of what would work better technically and for the user experience.',
+      "I would not hesitate to recommend Tony and would love the chance to work with him again. He's a great team mate and a great developer."
+    ],
+    author: 'Stephanie Buck',
+    role: 'Director - Illuminate UX'
+  },
+  {
+    authorText: [
+      'Tony is a great team player, pleasure to work with and a true professional, always ensuring he gives his upmost for the team. Tony is diligent, never missing any details and focused on delivering.',
+      'Tony really knows his domain area well and always offers good advice and insights, and is always part of the discussion offering good ideas and wanting to ensure we do the best job possible for the company and customers.'
+    ],
+    author: 'Mark Douglas',
+    role: 'Product Leader | Head of Product | Founder (Ex Tesco, Shazam, Skype, Microsoft)'
+  },
+  {
+    authorText: [
+      'Tony is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
     ],
     author: 'Fiona Ross',
     role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'
+  },
+  {
+    authorText: [
+      'Tony is one of those rare gems who is delightful to work with. Easy going team member with very strong work ethic. He pitches in, happily attending research sessions, and very ambitious getting his part of the project done always exceeding expectations. He is a pleasure to have on a project team.'
+    ],
+    author: 'Julie Woodall',
+    role: 'Research Design Leader, Woodall Miller Enterprises'
   },
   {
     authorText: [
