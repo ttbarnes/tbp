@@ -9,13 +9,6 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
-      'I really appreciated working with Tony at UK Export Finance. Dedicated, diligent and a clear sense of quality and standards. He was an absolutely key part of delivery especially when the project was under intense pressure and timescales. A great human and a great colleague. Thank you!'
-    ],
-    author: 'David Carboni',
-    role: 'CTO, Policy in Practice'
-  },
-  {
-    authorText: [
       'I have had the pleasure of working with Tony for the past 2 years working in the same team. He is one of the best among all people I have ever worked with.',
       'Tony is an achievement oriented, multi-skilled, open minded and motivated developer with a very strong work ethic. He has an extensive knowledge of modern development techniques, and his open minded approach could not be overestimated. I strongly recommend working with Tony.'
     ],
@@ -38,6 +31,13 @@ export const RECOMMENDATIONS = [
     ],
     author: 'Fiona Ross',
     role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'
+  },
+  {
+    authorText: [
+      'I really appreciated working with Tony at UK Export Finance. Dedicated, diligent and a clear sense of quality and standards. He was an absolutely key part of delivery especially when the project was under intense pressure and timescales. A great human and a great colleague. Thank you!'
+    ],
+    author: 'David Carboni',
+    role: 'CTO, Policy in Practice'
   },
   {
     authorText: [
