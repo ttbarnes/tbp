@@ -92,8 +92,13 @@ blockquote p:first-of-type:before {
   font-size: 5em;
   color: $lightGrey;
   line-height: .5em;
-  top: -.25em;
-  left: -.7em;
+  top: -0.35em;
+  left: -0.5em;
+
+  @media (min-width: $bp-medium) {
+    top: -.25em;
+    left: -.7em;
+  }
 }
 
 blockquote footer {
