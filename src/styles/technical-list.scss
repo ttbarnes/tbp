@@ -13,6 +13,7 @@ $cypress: #A3E7CB;
 
 $d3js: #EF7234;
 
+$electron: #9FEAF9;
 $eslint: #4B32C3;
 
 $flow: #E8BD36;
@@ -53,6 +54,7 @@ $observables: #DB0D85;
 
 $owasp: #25579D;
 
+$parcel: #F87171;
 $passportjs: #35DF79;
 
 $prettier: #C596C7;
@@ -117,6 +119,10 @@ $webpack: #175D96;
 
 .d3-js {
   @include theme($d3js, $black);
+}
+
+.electron {
+  @include theme($electron, $black);
 }
 
 .eslint {
@@ -241,6 +247,10 @@ $webpack: #175D96;
   @include theme($owasp, $white);
 }
 
+.parcel {
+  @include theme($parcel, $black);
+}
+
 .passport-js {
   @include theme($passportjs, $black);
 }
@@ -315,6 +325,10 @@ $webpack: #175D96;
 
 .wordpress {
   @include theme($black, $white);
+}
+
+.vanilla-css {
+  @include theme($css, $white);
 }
 
 .vanilla-javascript {

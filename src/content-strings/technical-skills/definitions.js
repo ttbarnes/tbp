@@ -83,7 +83,8 @@ const DEFINITIONS = {
       GRAPHQL: 'GraphQL',
       NEXT_JS: 'Next.js',
       APOLLO: 'Apollo',
-      SSR: 'SSR (server side rendering)'
+      SSR: 'SSR (server side rendering)',
+      ELECTRON: 'Electron'
     }
   },
   STYLING: {
@@ -94,7 +95,8 @@ const DEFINITIONS = {
       SASS: 'Sass',
       STYLUS: 'Stylus',
       LESS: 'Less',
-      BEM: 'BEM'
+      BEM: 'BEM',
+      CSS: 'Vanilla CSS'
     }
   },
   SYSTEM_INTEGRATIONS: {
@@ -128,6 +130,7 @@ const DEFINITIONS = {
       ESLINT: 'ESLint',
       PRETTIER: 'Prettier',
       WEBPACK: 'Webpack',
+      PARCEL: 'Parcel',
       GULP: 'Gulp',
       GRUNT: 'Grunt',
       TS_DOC: 'TSDoc',
@@ -155,7 +158,6 @@ const DEFINITIONS = {
     TITLE: 'It all started with...',
     ITEMS: {
       HTML: 'HTML',
-      CSS: 'CSS',
       JQUERY: 'jQuery',
       BOOTSTRAP: 'Bootstrap',
       WORDPRESS: 'WordPress',
