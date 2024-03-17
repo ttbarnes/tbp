@@ -18,7 +18,10 @@
         ]
       }
     ],
-    "jest/expect-expect": "off"
+    "jest/expect-expect": "off",
+    "no-console": ["error",
+      { "allow": ["info"] }
+    ]
   },
   "env": {
     "jest": true,
