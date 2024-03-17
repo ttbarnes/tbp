@@ -151,24 +151,6 @@ export const CLIENTS_PROJECTS = [
         primaryTech: 'React',
         summary: 'Static website, UI templates'
       },
-      // {
-      //   id: 'full-fact',
-      //   name: 'Full Fact',
-      //   date: '2016 - 2017',
-      //   industry: 'Media',
-      //   tech: [
-      //     'HTML, CSS',
-      //     'JavaScript',
-      //     'Webpack'
-      //   ],
-      //   primaryTech: 'UI templates',
-      //   colors: {
-      //     'bg: '#FFF',
-      //     'text: '#222',
-      //     'border: '#222'
-      //   },
-      //   summary: 'UI templates'
-      // },
       {
         id: 'fifthweek',
         name: 'Fifthweek',
