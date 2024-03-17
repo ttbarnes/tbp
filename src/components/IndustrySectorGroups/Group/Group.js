@@ -5,24 +5,20 @@ import TextSection from '@/components/TextSection';
 import Items from './Items';
 
 const Group = ({ group }) => {
-  if (isPopulatedArray(group.items)) {
-    return (
-      <motion.li
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
-        viewport={{ once: true }}
-        key={group.heading}
-      >
-        <TextSection largePadding={false}>
-          <h2 className='h3-size'>{group.heading}</h2>
+  return (
+    <motion.li
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
+      viewport={{ once: true }}
+      key={group.heading}
+    >
+      <TextSection largePadding={false}>
+        <h2 className='h3-size'>{group.heading}</h2>
 
-          <Items items={group.items} />
-        </TextSection>
-      </motion.li>
-    );
-  }
-
-  return null;
+        {isPopulatedArray(group.items) && <Items items={group.items} />}
+      </TextSection>
+    </motion.li>
+  );
 };
 
 Group.propTypes = {

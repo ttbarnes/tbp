@@ -13,6 +13,13 @@ const IndustrySectorGroups = () => (
         group={group}
       />
     ))}
+
+    <IndustrySectorGroup
+      key='And many more...'
+      group={{
+        heading: 'And many more...'
+      }}
+    />
   </ul>
 );
 

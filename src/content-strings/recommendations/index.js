@@ -27,7 +27,7 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
-      'Tony is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced, but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.',
+      'Tony is a highly committed and motivated professional. Having worked with Tony on several projects, each time he has shown himself to be not only incredibly knowledgeable, innovative and experienced, but refreshingly passionate about diversity and accessibility. Tony has shown himself to be tirelessly dedicated to ensuring his clients are not only happy but inspired. Highly recommend.'
     ],
     author: 'Fiona Ross',
     role: 'Founder of Women in Jazz Media and Creative Arts Education Specialist'

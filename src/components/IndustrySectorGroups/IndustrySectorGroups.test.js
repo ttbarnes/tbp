@@ -31,11 +31,18 @@ describe('components/IndustrySectorGroups', () => {
       (industry) => industry.items
     ).flat();
 
-    const expectedLength = industriesLength + industryItems.length;
+    // plus 1 for the additional "many more" group/item
+    const expectedLength = industriesLength + industryItems.length + 1;
 
     assertListItems({
       container,
       expectedLength
     });
+  });
+
+  it('should render a `many more` group item', () => {
+    const element = screen.getByText('And many more...');
+
+    expect(element).toBeInTheDocument();
   });
 });
