@@ -10,7 +10,7 @@ describe('components/ShortSummary', () => {
   });
 
   it('should render a heading', () => {
-    const expectedCopy = 'A little about me';
+    const expectedCopy = 'About me';
 
     const element = screen.getByText(expectedCopy, { selector: 'h2' });
 

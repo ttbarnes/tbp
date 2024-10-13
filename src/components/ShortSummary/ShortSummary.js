@@ -7,7 +7,7 @@ const ShortSummary = () => (
     backgroundColor='grey'
     textColor='black'
   >
-    <h2>A little about me</h2>
+    <h2>About me</h2>
 
     <p>
       As a Lead Full Stack JavaScript Developer and director of{' '}
