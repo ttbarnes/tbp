@@ -38,7 +38,11 @@ function useWindowSize() {
   return windowSize;
 }
 
-const Sidebar = ({ children, alwaysOpenOnDesktop, showCloseOnDesktop }) => {
+const Sidebar = ({
+  children,
+  alwaysOpenOnDesktop = false,
+  showCloseOnDesktop = false
+}) => {
   const size = useWindowSize();
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -105,11 +109,6 @@ Sidebar.propTypes = {
   ]).isRequired,
   alwaysOpenOnDesktop: PropTypes.bool,
   showCloseOnDesktop: PropTypes.bool
-};
-
-Sidebar.defaultProps = {
-  alwaysOpenOnDesktop: false,
-  showCloseOnDesktop: false
 };
 
 export default Sidebar;

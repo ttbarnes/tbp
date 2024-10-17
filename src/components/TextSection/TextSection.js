@@ -6,11 +6,11 @@ import {
 import styles from './TextSection.module.scss';
 
 const TextSection = ({
-  backgroundColor,
-  textColor,
+  backgroundColor = 'white',
+  textColor = 'black',
   children,
-  largePadding,
-  id
+  largePadding = true,
+  id = ''
 }) => {
   const className = `
     ${getBackgoundColorClassName(backgroundColor)}
@@ -44,13 +44,6 @@ TextSection.propTypes = {
   ]),
   largePadding: PropTypes.bool,
   id: PropTypes.string
-};
-
-TextSection.defaultProps = {
-  backgroundColor: 'white',
-  textColor: 'black',
-  largePadding: true,
-  id: ''
 };
 
 export default TextSection;

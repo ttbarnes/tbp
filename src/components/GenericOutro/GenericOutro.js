@@ -4,10 +4,10 @@ import BuildTogether from '@/components/BuildTogether';
 import FindOutMore from '@/components/FindOutMore';
 
 const GenericOutro = ({
-  renderTechSkillsLink,
-  renderThoughtsLink,
-  renderClientsProjectsLink,
-  renderRecommendations
+  renderTechSkillsLink = false,
+  renderThoughtsLink = false,
+  renderClientsProjectsLink = false,
+  renderRecommendations = false
 }) => (
   <TextSection
     largePadding={false}
@@ -30,13 +30,6 @@ GenericOutro.propTypes = {
   renderThoughtsLink: PropTypes.bool,
   renderClientsProjectsLink: PropTypes.bool,
   renderRecommendations: PropTypes.bool
-};
-
-GenericOutro.defaultProps = {
-  renderTechSkillsLink: false,
-  renderThoughtsLink: false,
-  renderClientsProjectsLink: false,
-  renderRecommendations: false
 };
 
 export default GenericOutro;

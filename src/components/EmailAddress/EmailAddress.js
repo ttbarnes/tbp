@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { EMAIL, EMAIL_SUBJECT } from '@/constants';
 
-const EmailAddress = ({ linkColorWhite }) => (
+const EmailAddress = ({ linkColorWhite = false }) => (
   <>
     My email address is{' '}
     <Link
@@ -16,10 +16,6 @@ const EmailAddress = ({ linkColorWhite }) => (
 
 EmailAddress.propTypes = {
   linkColorWhite: PropTypes.bool
-};
-
-EmailAddress.defaultProps = {
-  linkColorWhite: false
 };
 
 export default EmailAddress;

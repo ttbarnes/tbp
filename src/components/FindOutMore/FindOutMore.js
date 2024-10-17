@@ -4,10 +4,10 @@ import { ROUTES } from '@/constants';
 import styles from './FindOutMore.module.scss';
 
 const FindOutMore = ({
-  renderTechSkillsLink,
-  renderThoughtsLink,
-  renderClientsProjectsLink,
-  renderRecommendations
+  renderTechSkillsLink = false,
+  renderThoughtsLink = false,
+  renderClientsProjectsLink = false,
+  renderRecommendations = false
 }) => (
   <div className={styles.container}>
     <h3>Find out more</h3>
@@ -56,13 +56,6 @@ FindOutMore.propTypes = {
   renderThoughtsLink: PropTypes.bool,
   renderClientsProjectsLink: PropTypes.bool,
   renderRecommendations: PropTypes.bool
-};
-
-FindOutMore.defaultProps = {
-  renderTechSkillsLink: false,
-  renderThoughtsLink: false,
-  renderClientsProjectsLink: false,
-  renderRecommendations: false
 };
 
 export default FindOutMore;

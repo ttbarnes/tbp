@@ -5,7 +5,7 @@ import styles from './TechnicalCategoriesList.module.scss';
 
 const groups = mapTechnologyGroups();
 
-const TechnicalCategoriesList = ({ onClick }) => (
+const TechnicalCategoriesList = ({ onClick = null }) => (
   <nav className={styles.nav}>
     <h4 className={styles.heading}>Technical categories</h4>
 
@@ -24,10 +24,6 @@ const TechnicalCategoriesList = ({ onClick }) => (
 
 TechnicalCategoriesList.propTypes = {
   onClick: PropTypes.func
-};
-
-TechnicalCategoriesList.defaultProps = {
-  onClick: null
 };
 
 export default TechnicalCategoriesList;

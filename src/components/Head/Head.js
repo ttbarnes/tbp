@@ -5,7 +5,7 @@ import { METADATA, NAME } from '@/content-strings';
 
 const { DESCRIPTION, KEYWORDS } = METADATA;
 
-const Head = ({ pageTitle, bespokePageTitle }) => {
+const Head = ({ pageTitle = '', bespokePageTitle }) => {
   let title = NAME;
 
   if (pageTitle) {
@@ -105,10 +105,6 @@ const Head = ({ pageTitle, bespokePageTitle }) => {
 Head.propTypes = {
   pageTitle: PropTypes.string,
   bespokePageTitle: PropTypes.string
-};
-
-Head.defaultProps = {
-  pageTitle: ''
 };
 
 export default Head;
