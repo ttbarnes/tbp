@@ -308,6 +308,15 @@ export const CLIENTS_PROJECTS = [
     heading: 'Open source',
     items: [
       {
+        id: 'dry-cypress-examples',
+        name: 'DRY Cypress Examples',
+        date: '2024',
+        industry: 'Open source',
+        tech: ['Cypress', 'Express, Node js'],
+        primaryTech: 'Cypress',
+        summary: 'DRY approaches to E2E testing with Cypress '
+      },
+      {
         id: 'mean-tweets',
         name: 'Mean tweets',
         date: '2015',

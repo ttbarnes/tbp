@@ -85,6 +85,10 @@
   @include theme(#D1DDE6, $black);
 }
 
+.dry-cypress-examples {
+  @include theme(#A3E7CB, $black);
+}
+
 .mean-tweets {
   @include theme(#F3DD1D, $black);
 }
