@@ -71,6 +71,7 @@ const DEFINITIONS = {
       NODE_EXPRESS: 'Node.js, express',
       SQL: 'SQL',
       SEQUELIZE: 'Sequelize',
+      DATA_MIGRATION: 'Data migration',
       MONGODB_MONGOOSE: 'MongoDB, Mongoose',
       PRISMA: 'Prisma'
     }
