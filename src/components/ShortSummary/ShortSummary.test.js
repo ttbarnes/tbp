@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BARNES_CODE } from '@/constants';
-import { assertLink } from '@/test-helpers';
 import ShortSummary from './ShortSummary';
 
 describe('components/ShortSummary', () => {
@@ -19,36 +18,14 @@ describe('components/ShortSummary', () => {
 
   describe('`as a...` copy', () => {
     it('should render', () => {
-      const firstCopy =
-        'As a Lead Full Stack JavaScript Developer and director of ';
+      const firstCopy = `As a Lead Full Stack JavaScript Developer and director of ${BARNES_CODE.TEXT}, I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.`;
 
-      let element = screen.getByText(firstCopy, {
+      const element = screen.getByText(firstCopy, {
         selector: 'p',
-        exact: false
+        exact: true
       });
 
       expect(element).toBeInTheDocument();
-
-      const lastCopy =
-        'I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.';
-
-      element = screen.getByText(lastCopy, { selector: 'p', exact: false });
-
-      expect(element).toBeInTheDocument();
-    });
-
-    it(`should render a link to ${BARNES_CODE}`, () => {
-      const element = screen.getByRole('link');
-
-      const expectedHref = BARNES_CODE.HREF;
-      const expectedCopy = BARNES_CODE.TEXT;
-
-      assertLink({
-        element,
-        expectedHref,
-        expectedCopy,
-        assertTargetBlank: true
-      });
     });
   });
 

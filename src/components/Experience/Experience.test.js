@@ -8,7 +8,7 @@ describe('components/Experience', () => {
   });
 
   it('should render a heading', () => {
-    const expectedCopy = 'Over 14 years of experience';
+    const expectedCopy = 'Over 15 years of experience';
 
     const element = screen.getByText(expectedCopy, { selector: 'h2' });
 

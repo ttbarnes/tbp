@@ -5,7 +5,7 @@ const Experience = () => (
     backgroundColor='blue'
     textColor='white'
   >
-    <h2>Over 14 years of experience</h2>
+    <h2>Over 15 years of experience</h2>
 
     <p>
       Currently based in London, I{"'"}ve worked with many top tier companies

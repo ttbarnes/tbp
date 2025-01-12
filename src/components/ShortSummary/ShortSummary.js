@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import TextSection from '@/components/TextSection';
 import { BARNES_CODE } from '@/constants';
 
@@ -11,15 +10,8 @@ const ShortSummary = () => (
 
     <p>
       As a Lead Full Stack JavaScript Developer and director of{' '}
-      <Link
-        href={BARNES_CODE.HREF}
-        rel='noopener noreferrer'
-        target='_blank'
-      >
-        {BARNES_CODE.TEXT}
-      </Link>
-      , I specialise in bespoke web app development - particularly around
-      re-platforming and digital transformation projects.
+      {BARNES_CODE.TEXT}, I specialise in bespoke web app development -{' '}
+      particularly around re-platforming and digital transformation projects.
     </p>
 
     <p>

@@ -28,7 +28,7 @@ describe('pages/index', () => {
   });
 
   it('should render `experience` section', () => {
-    const expectedCopy = 'Over 14 years of experience';
+    const expectedCopy = 'Over 15 years of experience';
 
     const element = screen.getByText(expectedCopy, { selector: 'h2' });
 
