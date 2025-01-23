@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { BARNES_CODE } from '@/constants';
 import ShortSummary from './ShortSummary';
 
 describe('components/ShortSummary', () => {
@@ -18,7 +17,7 @@ describe('components/ShortSummary', () => {
 
   describe('`as a...` copy', () => {
     it('should render', () => {
-      const firstCopy = `As a Lead Full Stack JavaScript Developer and director of ${BARNES_CODE.TEXT}, I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.`;
+      const firstCopy = `As a Lead Full Stack JavaScript Developer, I specialise in bespoke web app development - particularly around re-platforming and digital transformation projects.`;
 
       const element = screen.getByText(firstCopy, {
         selector: 'p',

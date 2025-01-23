@@ -1,5 +1,4 @@
 import TextSection from '@/components/TextSection';
-import { BARNES_CODE } from '@/constants';
 
 const ShortSummary = () => (
   <TextSection
@@ -9,9 +8,9 @@ const ShortSummary = () => (
     <h2>About me</h2>
 
     <p>
-      As a Lead Full Stack JavaScript Developer and director of{' '}
-      {BARNES_CODE.TEXT}, I specialise in bespoke web app development -{' '}
-      particularly around re-platforming and digital transformation projects.
+      As a Lead Full Stack JavaScript Developer, I specialise in bespoke web app
+      development - particularly around re-platforming and digital
+      transformation projects.
     </p>
 
     <p>
