@@ -4,7 +4,7 @@ import TextSection from '@/components/TextSection';
 import { SOCIAL_MEDIA } from '@/constants';
 import styles from './FindMeOn.module.scss';
 
-const { GITHUB, LINKEDIN, INSTAGRAM } = SOCIAL_MEDIA;
+const { GITHUB, LINKEDIN } = SOCIAL_MEDIA;
 
 const FindMeOn = () => (
   <TextSection
@@ -47,24 +47,6 @@ const FindMeOn = () => (
             className={styles.image}
           />
           {LINKEDIN}
-        </Link>
-      </li>
-
-      <li className={styles.listItem}>
-        <Link
-          href={INSTAGRAM}
-          rel='noopener noreferrer'
-          target='_blank'
-          className={`white-text ${styles.link}`}
-        >
-          <Image
-            src='/social/ig.svg'
-            alt='Instagram icon'
-            width={40}
-            height={40}
-            className={styles.image}
-          />
-          {INSTAGRAM}
         </Link>
       </li>
     </ul>

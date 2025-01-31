@@ -1,7 +1,6 @@
 export const SOCIAL_MEDIA = {
   GITHUB: 'https://github.com/ttbarnes',
-  LINKEDIN: 'https://linkedin.com/in/ttbarnes',
-  INSTAGRAM: 'https://instagram.com/ttbarnes'
+  LINKEDIN: 'https://linkedin.com/in/ttbarnes'
 };
 
 const EXTERNAL_LINKS = {

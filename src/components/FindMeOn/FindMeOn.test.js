@@ -4,7 +4,7 @@ import { SOCIAL_MEDIA } from '@/constants';
 import { assertLink } from '@/test-helpers';
 import FindMeOn from './FindMeOn';
 
-const { GITHUB, LINKEDIN, INSTAGRAM } = SOCIAL_MEDIA;
+const { GITHUB, LINKEDIN } = SOCIAL_MEDIA;
 
 describe('components/FindMeOn', () => {
   beforeEach(() => {
@@ -54,25 +54,6 @@ describe('components/FindMeOn', () => {
       const image = screen.getByAltText('LinkedIn icon');
 
       expect(image.src).toContain('/social/in.svg');
-    });
-  });
-
-  describe('instagram', () => {
-    it('should render a link', () => {
-      const element = screen.getAllByRole('link')[2];
-
-      assertLink({
-        element,
-        expectedHref: INSTAGRAM,
-        assertRel: true,
-        assertTargetBlank: true
-      });
-    });
-
-    it('should render an image', () => {
-      const image = screen.getByAltText('Instagram icon');
-
-      expect(image.src).toContain('/social/ig.svg');
     });
   });
 });
