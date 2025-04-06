@@ -9,6 +9,15 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
+      'Tony has extensive technical expertise, and is passionate about doing things the right way, while remaining time- sensitive. He is committed to helping others and has brought good practices that have been shared across projects which developers have adopted, and we have all benefited from. After wrapping up on a project, he always makes a point of leaving notes for any future developer that picks up his work.',
+      'Tony also has a solid understanding of good User Experience design, often adding a viewpoint that is technically efficient whilst keeping the user in mind. And when he communicates these viewpoints, he has an excellent way of breaking down complex software engineering concepts into comprehendible explanations.',
+      "Lastly, Tony is just really lovely to work with. He brings a lightness to the team that makes for a really nice work environment. When we hit a roadblock, he doesn't sweat the small stuff and instead focuses on the best way to get past it. I have learnt a lot from him and am grateful for the fact. I have told him before, and will state it again; I am privileged to have gotten the chance to work with someone so kind who is also excellent at their job."
+    ],
+    author: 'Donna Omovbude',
+    role: 'Digital Data and Tech Business Analysis - UK Export Finance'
+  },
+  {
+    authorText: [
       'I have had the pleasure of working with Tony for the past 2 years working in the same team. He is one of the best among all people I have ever worked with.',
       'Tony is an achievement oriented, multi-skilled, open minded and motivated developer with a very strong work ethic. He has an extensive knowledge of modern development techniques, and his open minded approach could not be overestimated. I strongly recommend working with Tony.'
     ],
