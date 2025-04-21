@@ -8,9 +8,8 @@ const ShortSummary = () => (
     <h2>About me</h2>
 
     <p>
-      As a Lead Developer, I specialise in bespoke web app
-      development - particularly around re-platforming and digital
-      transformation projects.
+      As a Lead Developer, I specialise in bespoke web app development -{' '}
+      particularly around re-platforming and digital transformation projects.
     </p>
 
     <p>
