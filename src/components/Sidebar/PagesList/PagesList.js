@@ -23,6 +23,7 @@ const PagesList = () => (
         href={ROUTES.TONYS_THOUGHTS}
       />
 
+      {/*
       <SidebarListItem
         title='Clients, projects'
         href={ROUTES.CLIENTS_PROJECTS}
@@ -32,6 +33,7 @@ const PagesList = () => (
         title='Recommendations'
         href={ROUTES.RECOMMENDATIONS}
       />
+      */}
     </ul>
   </nav>
 );

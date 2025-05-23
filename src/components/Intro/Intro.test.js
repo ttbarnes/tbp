@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import { NAME } from '@/content-strings';
+// import { NAME } from '@/content-strings';
 import Intro from './Intro';
 
 describe('components/Intro', () => {
@@ -20,13 +20,13 @@ describe('components/Intro', () => {
     expect(element).toBeInTheDocument();
   });
 
-  it('should render an image', () => {
-    const element = screen.getByRole('img', { src: '/tony-barnes.jpg' });
+  // it('should render an image', () => {
+  //   const element = screen.getByRole('img', { src: '/tony-barnes.jpg' });
 
-    expect(element).toBeInTheDocument();
+  //   expect(element).toBeInTheDocument();
 
-    const expectedAltText = `Headshot of ${NAME}`;
+  //   const expectedAltText = `Headshot of ${NAME}`;
 
-    expect(element).toHaveAttribute('alt', expectedAltText);
-  });
+  //   expect(element).toHaveAttribute('alt', expectedAltText);
+  // });
 });

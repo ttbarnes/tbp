@@ -77,39 +77,39 @@ describe('components/FindOutMore', () => {
     });
   });
 
-  describe('when renderClientsProjectsLink prop is provided', () => {
-    beforeEach(() => {
-      render(<FindOutMore renderClientsProjectsLink />);
-    });
+  // describe('when renderClientsProjectsLink prop is provided', () => {
+  //   beforeEach(() => {
+  //     render(<FindOutMore renderClientsProjectsLink />);
+  //   });
 
-    it(`should render a link to ${ROUTES.CLIENTS_PROJECTS}`, () => {
-      const element = screen.getAllByRole('link')[1];
+  //   it(`should render a link to ${ROUTES.CLIENTS_PROJECTS}`, () => {
+  //     const element = screen.getAllByRole('link')[1];
 
-      expect(element).toBeInTheDocument();
+  //     expect(element).toBeInTheDocument();
 
-      assertLink({
-        element,
-        expectedHref: ROUTES.CLIENTS_PROJECTS,
-        expectedCopy: "Tony's clients, projects"
-      });
-    });
-  });
+  //     assertLink({
+  //       element,
+  //       expectedHref: ROUTES.CLIENTS_PROJECTS,
+  //       expectedCopy: "Tony's clients, projects"
+  //     });
+  //   });
+  // });
 
-  describe('when renderRecommendations prop is provided', () => {
-    beforeEach(() => {
-      render(<FindOutMore renderRecommendations />);
-    });
+  // describe('when renderRecommendations prop is provided', () => {
+  //   beforeEach(() => {
+  //     render(<FindOutMore renderRecommendations />);
+  //   });
 
-    it(`should render a link to ${ROUTES.RECOMMENDATIONS}`, () => {
-      const element = screen.getAllByRole('link')[1];
+  //   it(`should render a link to ${ROUTES.RECOMMENDATIONS}`, () => {
+  //     const element = screen.getAllByRole('link')[1];
 
-      expect(element).toBeInTheDocument();
+  //     expect(element).toBeInTheDocument();
 
-      assertLink({
-        element,
-        expectedHref: ROUTES.RECOMMENDATIONS,
-        expectedCopy: 'Recommendations'
-      });
-    });
-  });
+  //     assertLink({
+  //       element,
+  //       expectedHref: ROUTES.RECOMMENDATIONS,
+  //       expectedCopy: 'Recommendations'
+  //     });
+  //   });
+  // });
 });

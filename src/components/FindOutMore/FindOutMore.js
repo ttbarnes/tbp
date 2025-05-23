@@ -5,9 +5,9 @@ import styles from './FindOutMore.module.scss';
 
 const FindOutMore = ({
   renderTechSkillsLink = false,
-  renderThoughtsLink = false,
-  renderClientsProjectsLink = false,
-  renderRecommendations = false
+  renderThoughtsLink = false
+  // renderClientsProjectsLink = false,
+  // renderRecommendations = false
 }) => (
   <div className={styles.container}>
     <h3>Find out more</h3>
@@ -30,19 +30,19 @@ const FindOutMore = ({
         </li>
       )}
 
-      {renderClientsProjectsLink && (
+      {/* renderClientsProjectsLink && (
         <li className={styles.listItem}>
           <Link href={ROUTES.CLIENTS_PROJECTS}>
             Tony{"'"}s clients, projects
           </Link>
         </li>
-      )}
+      ) */}
 
-      {renderRecommendations && (
+      {/* renderRecommendations && (
         <li className={styles.listItem}>
           <Link href={ROUTES.RECOMMENDATIONS}>Recommendations</Link>
         </li>
-      )}
+      ) */}
 
       <li className={styles.listItem}>
         <Link href={ROUTES.ABOUT}>About Tony</Link>
@@ -53,9 +53,9 @@ const FindOutMore = ({
 
 FindOutMore.propTypes = {
   renderTechSkillsLink: PropTypes.bool,
-  renderThoughtsLink: PropTypes.bool,
-  renderClientsProjectsLink: PropTypes.bool,
-  renderRecommendations: PropTypes.bool
+  renderThoughtsLink: PropTypes.bool
+  // renderClientsProjectsLink: PropTypes.bool,
+  // renderRecommendations: PropTypes.bool
 };
 
 export default FindOutMore;
