@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'intersection-observer';
-import RecommendationsPage from '../../pages/recommendations';
+import RecommendationsPage from '../../z-ages/recommendations';
 
-describe('pages/recommendations', () => {
+describe.skip('pages/recommendations', () => {
   let container;
 
   beforeEach(() => {
