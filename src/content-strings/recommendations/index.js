@@ -65,7 +65,7 @@ export const RECOMMENDATIONS = [
   },
   {
     authorText: [
-      "In addition to being an excellent developer, Tony also has the strategic vision to deliver as a lead developer. I thoroughly enjoyed working with Tony and didn't hesitate to bring him into important client situations. Would work with him again without question."
+      "In addition to being an excellent developer, Tony also has the strategic vision to deliver as a Lead Engineer. I thoroughly enjoyed working with Tony and didn't hesitate to bring him into important client situations. Would work with him again without question."
     ],
     author: 'Steve Emecz',
     role: 'VP Partnerships at Tungsten Network'

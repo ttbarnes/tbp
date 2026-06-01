@@ -17,7 +17,7 @@ describe('components/Experience', () => {
 
   it('should render `worked with` copy', () => {
     const expectedCopy =
-      "Currently based in London, I've worked with many top tier companies and teams over the years, ranging from startups, agencies and SMEs to large corporations.";
+      'Currently based in London, I have worked with many top tier companies and teams - ranging from startups, agencies and SMEs to large corporations.';
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 
@@ -44,7 +44,7 @@ describe('components/Experience', () => {
 
   it('should render `have learnt` copy', () => {
     const expectedCopy =
-      "I have learnt and continue to learn a lot from these experiences, including what a team (technical or not) could, should and shouldn't do.";
+      "I have learnt and continue to learn a lot from these experiences, including what a team (technical or not) could, should or~ shouldn't do.";
 
     const element = screen.getByText(expectedCopy, { selector: 'p' });
 

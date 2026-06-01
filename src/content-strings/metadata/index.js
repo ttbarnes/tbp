@@ -1,6 +1,6 @@
 export const METADATA = {
   DESCRIPTION:
-    'Lead Developer specialising in bespoke web app development - particularly around re-platforming and digital transformation projects',
+    'Lead Engineer specialising in bespoke web app development - particularly around re-platforming and digital transformation projects',
   KEYWORDS:
     'Tony Barnes developer, full stack developer, javascript developer, node.js developer, full stack javascript developer, web developer',
   PAGE_TITLES: {

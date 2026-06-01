@@ -8,9 +8,9 @@ const Experience = () => (
     <h2>Over 15 years of experience</h2>
 
     <p>
-      Currently based in London, I{"'"}ve worked with many top tier companies
-      and teams over the years, ranging from startups, agencies and SMEs to
-      large corporations.
+      Currently based in London, I have worked with many top tier companies and
+      teams - startups, agencies, SMEs and large corporations; Public and
+      private sector.
     </p>
 
     <p>
@@ -19,14 +19,14 @@ const Experience = () => (
     </p>
 
     <p>
-      Notably, I have worked extensively with the UK government and also
-      Trainline (Europe{"'"}s leading train and coach app) during times of rapid
-      expansion/growth.
+      Notably, I have worked extensively with the UK government and Trainline
+      (Europe{"'"}s leading train and coach app) during times of rapid expansion
+      and growth.
     </p>
 
     <p>
       I have learnt and continue to learn a lot from these experiences,
-      including what a team (technical or not) could, should and shouldn{"'"}t
+      including what a team (technical or not) could, should, or shouldn{"'"}t
       do.
     </p>
   </TextSection>
