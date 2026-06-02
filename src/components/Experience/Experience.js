@@ -14,7 +14,7 @@ const Experience = () => (
     </p>
 
     <p>
-      Always eager to help and learn, I have worked in many different industries
+      Always eager to help, learn, understand and grow collaboratively, I have worked in many different industries
       such as financial tech, travel, ecommerce, music and many more.
     </p>
 
@@ -26,8 +26,7 @@ const Experience = () => (
 
     <p>
       I have learnt and continue to learn a lot from these experiences,
-      including what a team (technical or not) could, should, or shouldn{"'"}t
-      do.
+      including what a team could, should, or shouldn{"'"}t do.
     </p>
   </TextSection>
 );

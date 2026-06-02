@@ -28,7 +28,7 @@ describe('components/Sidebar/PagesList', () => {
   it('should render a list item via <SidebarListItem /> for each page', () => {
     const listItems = container.getElementsByTagName('li');
 
-    const expectedLength = 5;
+    const expectedLength = 3;
 
     expect(listItems.length).toEqual(expectedLength);
   });

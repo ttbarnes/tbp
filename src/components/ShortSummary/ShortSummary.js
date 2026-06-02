@@ -8,7 +8,7 @@ const ShortSummary = () => (
     <h2>About me</h2>
 
     <p>
-      As a Lead Engineer, I specialise in bespoke web app, API development,
+      As a Lead Engineer, I specialise in bespoke web apps, APIs,
       migrations, integrations and AI adoption, with extensive experience in
       re-platforming and digital transformation projects.
     </p>

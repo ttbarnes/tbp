@@ -17,7 +17,7 @@ describe('components/ShortSummary', () => {
 
   describe('`as a...` copy', () => {
     it('should render', () => {
-      const firstCopy = `As a Lead Engineer, I specialise in bespoke web app, API development, migrations, integrations and AI adoption, with extensive experience in re-platforming and digital transformation projects.`;
+      const firstCopy = `As a Lead Engineer, I specialise in bespoke web apps, APIs, migrations, integrations and AI adoption, with extensive experience in re-platforming and digital transformation projects.`;
 
       const element = screen.getByText(firstCopy, {
         selector: 'p',
